@@ -1,7 +1,7 @@
 {
   "name": "hapi-ninja",
   "description": "Boilerplate Hapi server example. Node.js, Hapi, and Swig.",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "author": "Saul Maddox",
   "private": false,
   "repository": {
@@ -26,7 +26,6 @@
     "hapi-auth-basic": "^1.1.1",
     "hapi-authorization": "^1.0.1",
     "hapi-cache-buster": "~0.2.0",
-    "hapi-goose": "^0.1.0",
     "hapi-named-routes": "~0.2.0",
     "joi": "^5.0.2",
     "mongoose": "^3.7.4",

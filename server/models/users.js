@@ -1,7 +1,7 @@
 var server = require('../../server');
-var mongoose = server.plugins['hapi-goose'].instance;
+var Mongoose = require('../config/database').Mongoose;
 
-exports.Usuarios = mongoose.model('Usuario', {
+exports.Usuarios = Mongoose.model('Usuario', {
 	nome : { type : String, required : true, index      : true  },
 	imagem : { type : String },
 	email : { type : String },

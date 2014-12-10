@@ -10,12 +10,6 @@ var goodOptions = {
 	}]
 };
 
-//Copyright (c) 2014, Tyler Hughes iampbt@gmail.com
-//Conect with mongoose database
-var gooseOptions = {
-	mongodb_uri: settings.mongodb_uri
-};
-
 // The Assets Configuaration Options
 var assetOptions = require(settings.rootPath + '/assets');
 
@@ -36,10 +30,6 @@ server.pack.register([
     {
         plugin: require("hapi-authorization"),
         options: authorizationOptions
-    },
- 	{
-        plugin: require("hapi-goose"),
-        options: gooseOptions
     },
     {
         plugin: require("hapi-assets"),

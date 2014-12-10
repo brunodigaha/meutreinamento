@@ -21,6 +21,9 @@ module.exports = server;
 // Bootstrap Hapi Server Plugins
 require('./server/config/plugins');
 
+// Database server init
+// require('./server/config/database');
+
 // Setup  method the authentication
 var validate = function (username, token, callback) {
 	Models = require('./server/models/users');
@@ -38,16 +41,6 @@ var validate = function (username, token, callback) {
 };
 server.auth.strategy('simple', 'basic', { validateFunc: validate, allowEmptyUsername: true });
 
-// You can also connect/disconnect with the database
-server.plugins['hapi-goose'].connect(function (err){
-	if (err) {
-		console.log(err);
-	}									
-});
-//server.plugins['hapi-goose'].disconnect();
-
-
-// Add the server routes
 server.route(require('./server/config/routes'));
 
 //Start the server
