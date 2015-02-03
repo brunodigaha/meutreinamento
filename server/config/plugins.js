@@ -2,45 +2,49 @@
 var settings = require('./settings'),
     server = require(settings.rootPath + '/server');
 
-// Options to pass into the 'Good' plugin
+// Options to pass into the 'Good' register
 var goodOptions = {
-	reporters: [{
-		reporter: require('good-console'),
-		args:[{ log: '*', request: '*' }]
-	}]
+    opsInterval: 5000,
+    reporters: [{
+        reporter: require('good-console'),
+        args:[{ ops: '*', request: '*', log: '*', response: '*', 'error': '*' }]
+    }]
 };
 
 // The Assets Configuaration Options
 var assetOptions = require(settings.rootPath + '/assets');
 
-//The Authorization Config Options 
+//The Authorization Config Options
 var authorizationOptions = {
 	roles: ['administrador','professor'],
 	hierarchy: false
 };
 
-server.pack.register([
+server.register([
     {
-        plugin: require("good"),
+        register: require("good"),
         options: goodOptions
     },
 	{
-        plugin: require("hapi-auth-basic"),
+        register: require("hapi-auth-basic"),
     },
     {
-        plugin: require("hapi-authorization"),
+        register: require("hapi-authorization"),
         options: authorizationOptions
     },
     {
-        plugin: require("hapi-assets"),
+        register: require("hapi-assets"),
         options: assetOptions
     },
     {
-        plugin: require("hapi-named-routes")
+        register: require("hapi-named-routes")
     },
     {
-        plugin: require("hapi-cache-buster")
+        register: require("hapi-cache-buster")
     }
-], function(err) {
-    if (err) throw err;
+], function (err) {
+    if (err) {
+        console.error('Failed to load a plugin:', err);
+        throw err;
+    }
 });
