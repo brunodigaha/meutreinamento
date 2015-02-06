@@ -4,7 +4,8 @@ module.exports = {
         handler: function(request, reply){
           // Render the view with the custom greeting
             reply.view('index', {
-                title: 'Awesome Boilerplate Homepage'
+                title: 'Awesome Boilerplate Homepage',
+                message: 'Index - Hello World!'
             });
         },
         id: 'index'

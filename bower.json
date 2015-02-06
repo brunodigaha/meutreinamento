@@ -1,14 +1,20 @@
 {
-  "name": "hapi-ninja",
-  "version": "0.2.2",
-  "homepage": "https://github.com/poeticninja/hapi-ninja",
-  "license": "MIT",
+  "name": "vittaPro",
+  "version": "4.0.0",
+  "homepage": "https://github.com/brucealex/vittapro.git",
+  "authors": [
+    "BrunoAlexandre <bruce_alex2006@hotmail.com>"
+  ],
+  "description": "Sistema para controle de fichas de treinamentos.",
+  "license": "privada",
+  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components",
-    "public/bower_components",
-    "test",
-    "tests"
-  ]
+    "src/bower_components"
+  ],
+  "devDependencies": {
+    "normalize.styl": "~3.0.0",
+    "jeet": "^6.1.2"
+  }
 }

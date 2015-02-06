@@ -1,0 +1,7 @@
+{
+    "name": "normalize.styl",
+    "version": "3.0.2",
+    "main": "normalize.styl",
+    "author": [ "Nicolas Gallagher", "Mathias Brouilly" ],
+    "ignore": []
+}

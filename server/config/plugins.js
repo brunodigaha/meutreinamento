@@ -4,7 +4,7 @@ var settings = require('./settings'),
 
 // Options to pass into the 'Good' register
 var goodOptions = {
-    opsInterval: 5000,
+    opsInterval: 50000,
     reporters: [{
         reporter: require('good-console'),
         args:[{ ops: '*', request: '*', log: '*', response: '*', 'error': '*' }]
