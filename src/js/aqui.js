@@ -4,3 +4,4 @@ function teste(nome){
 	console.log(nome + mensagem);
 }
 var x=10;
+alert("aqui ok !");
