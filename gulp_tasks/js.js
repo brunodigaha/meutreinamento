@@ -8,7 +8,8 @@ module.exports = function (gulp,plugins,path){
             .pipe(plugins.concat('main.js'))
             .pipe(plugins.uglify())
         .pipe(plugins.sourcemaps.write())
-        .pipe(gulp.dest(path.js));
+        .pipe(gulp.dest(path.js))
+        gulp.watch(path.jsdev, ['js']);
 	};
 };
 
