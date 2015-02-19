@@ -1,1 +1,0 @@
-function teste(o){var a="olá";console.log(o+a)}var x=10;alert("aqui14\n	");

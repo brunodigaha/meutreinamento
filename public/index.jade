@@ -7,8 +7,18 @@ html(lang="pt-br")
 		meta(name="description", content="")
 		meta(name="viewport", content="width=device-width, initial-scale=1")
 
-		link(href='/css/build/style.min-16045ff3.css', rel='stylesheet' )
-		script(src='/js/build/script.min-c6cd5c23.js', type='text/javascript' )
+		//- build:css /css/build/style.min.css
+		block css
+			link(rel='stylesheet', href='css/main.css')
+			link(rel='stylesheet', href='css/teste.css')
+		//- endbuild
+
+		//- build:js /js/build/script.min.js
+		block js
+			script(src='js/main.js')
+			script(src='js/teste.js')
+		//- endbuild
+
 	body
 
 		h1= title

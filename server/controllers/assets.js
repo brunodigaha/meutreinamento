@@ -15,7 +15,7 @@ module.exports = {
     css: {
         handler: {
             directory: { path: './public/css' }
-        },
+       },
         id:'css'
     },
     js: {

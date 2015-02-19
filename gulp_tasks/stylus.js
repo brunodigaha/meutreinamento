@@ -2,11 +2,11 @@
 process.chdir('../vittapro');
 module.exports = function (gulp,plugins,path){
 	return function() {
-    gulp.src(path.stylus)
-        .pipe(plugins.watch(path.stylus))
+    gulp.src(path.stylus_o)
+        .pipe(plugins.watch(path.stylus_o))
         .pipe(plugins.stylus({
-            compress: true
+            compress: false
         }))
-        .pipe(gulp.dest(path.css));
+        .pipe(gulp.dest(path.stylus_dev_d));
 	};
 };

@@ -1,1 +1,10 @@
-body{font:12px Helvetica,Arial,sans-serif}a.button{-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px}
+body {
+  background-color: #ddd;
+}
+h1 {
+  background-color: #ff0;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+  padding: 0.6em;
+}

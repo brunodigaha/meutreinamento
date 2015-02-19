@@ -15,12 +15,16 @@ function getTask(task) {
 }
 
 gulp.task('jade', getTask('jade'));
-gulp.task('move', getTask('move'));
+gulp.task('moveTemplates', getTask('moveTemplates'));
 gulp.task('stylus', getTask('stylus'));
-gulp.task('js', getTask('js'));
-gulp.task('imagemin', getTask('imagemin'));
+gulp.task('js-prod', getTask('js-prod'));
+gulp.task('jsValidate', getTask('jsValidate'));
 gulp.task('nodemon', getTask('nodemon'));
-gulp.task('browser-sync', ['nodemon'],getTask('browser-sync'));
+gulp.task('clear-build-all', getTask('clear-build-all'));
+gulp.task('browserSync', ['nodemon'],getTask('browserSync'));
 
-// Task Default
-gulp.task('default', ['jade', 'js', 'move', 'stylus', 'imagemin', 'browser-sync']);
+// Task development
+gulp.task('default',plugins.sequence(['clear-build-all','jsValidate','stylus'],'browserSync'));
+
+//task production
+gulp.task('prod', plugins.sequence('js-prod','moveTemplates'));

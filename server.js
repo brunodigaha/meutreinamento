@@ -13,7 +13,7 @@ server.connection({host: config.host, port: config.port});
 // Setup the views engine and folder
 server.views({
     engines: { jade: require('jade') },
-    path: './server/views',
+    path: ['./server/views','./public'],
     compileOptions: { pretty: true }
 });
 

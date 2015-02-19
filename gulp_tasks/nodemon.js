@@ -8,10 +8,8 @@ module.exports = function (gulp,plugins,path){
       ext: 'js jade html',
       ignore: [
         'gulpfile.js',
-        'assets.js',
         'gulp_tasks/',
         'node_modules/',
-        'public/',
         'server/views/'
       ]
     })

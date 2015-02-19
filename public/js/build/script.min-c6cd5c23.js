@@ -1,0 +1,1 @@
+function teste(o){console.log(o)}console.log("console ok 10"),console.log("passou");
