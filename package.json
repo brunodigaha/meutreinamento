@@ -3,18 +3,16 @@
   "description": "Sistema para controle de fichas de treinamentos.",
   "version": "4.0.0",
   "author": "Bruno Alexandre",
-  "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/brucealex/vittapro.git"
+    "url": "https://github.com/brucealex/vittapro"
   },
   "main": "server.js",
   "engines": {
     "node": "0.10.x"
   },
   "scripts": {
-    "start": "node server.js",
-    "postinstall": "bower install"
+    "start": "node server.js"
   },
   "dependencies": {
     "bcrypt": "^0.8.0",

@@ -1,8 +1,13 @@
 var Mongoose = require('mongoose'),
+    uriUtil = require('mongodb-uri'),
 	Config = require('./settings');
 
+var mongodbUri = 'mongodb://admin:123@ds047901.mongolab.com:47901/vittadb';
+var mongooseUri = uriUtil.formatMongoose(mongodbUri);
+
+
 mongo_uri = (Config.productionMode === true) ? Config.mongodb_uri.prod : Config.mongodb_uri.dev;	
-Mongoose.connect(mongo_uri);
+Mongoose.connect(mongooseUri);
 // Mongoose.set('debug', true);
 var db = Mongoose.connection;
 
