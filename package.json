@@ -9,7 +9,8 @@
   },
   "main": "server.js",
   "engines": {
-    "node": "0.10.x"
+    "node": "0.10.x",
+	"npm": "2.4.x"
   },
   "scripts": {
     "start": "node server.js"
