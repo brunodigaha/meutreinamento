@@ -194,30 +194,16 @@ th {
   .wrap input[type=checkbox]:checked ~ .posts {
     left: 33.3333333333333%;
     position: absolute;
-    *zoom: 1;
-    float: left;
-    clear: none;
-    text-align: inherit;
-    width: 65.6666666666667%;
-    margin-left: 0%;
-    margin-right: 3%;
-  }
-  .wrap input[type=checkbox]:checked ~ .posts:before,
-  .wrap input[type=checkbox]:checked ~ .posts:after {
-    content: '';
-    display: table;
-  }
-  .wrap input[type=checkbox]:checked ~ .posts:after {
-    clear: both;
-  }
-  .wrap input[type=checkbox]:checked ~ .posts:last-child {
-    margin-right: 0%;
   }
 }
 @media screen and (max-width: 769px) {
   .wrap input[type=checkbox]:checked ~ aside {
     left: 0px;
   }
+}
+body {
+  overflow: hidden;
+  height: 100%;
 }
 aside {
   position: absolute;
