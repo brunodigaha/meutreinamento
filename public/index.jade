@@ -16,13 +16,29 @@ html(lang="pt-br")
 		//- build:js /js/build/script.min.js
 		block js
 			script(src='js/main.js')
-			script(src='js/teste.js')
+			script(src='bower_components/holderjs/holder.js')
 		//- endbuild
 
 	body
 
-		h1= title
-		p= message
-		div bruno alexandre de souza.
-		img(src="images/paisagem.jpg")
-		a.button( href=path.about) GoogleMud
+		.wrap
+			input(type='checkbox' id='button')
+			aside
+				.alunos 
+					img(data-src='holder.js/30x30/#000:#fff')
+					img(data-src='holder.js/30x30/#000:#fff')
+					img(data-src='holder.js/30x30/#000:#fff')
+					img(data-src='holder.js/30x30/#000:#fff')
+					img(data-src='holder.js/30x30/#000:#fff')
+					img(data-src='holder.js/30x30/#000:#fff')
+				nav
+					a(href='#') Home
+					a(href='#') About
+					a(href='#') Services
+					a(href='#') Contact
+			.posts
+				label(for='button' onclick) Menu
+				.post
+					p 
+						fjds Tortor. Fusce iaculis. Aliquam rhoncus, diam quis tincidunt facilisis, sem quam luctus augue, ut posuere neque sem vitae neque.  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc faucibus posuere turpis. Sed laoreet, est sed gravida tempor, nibh enim fringilla quam, et dapibus mi enim sit amet risus. Nulla sollicitudin eros sit amet diam. Aliquam ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut et est. Donec semper nulla in ipsum. Integer elit. In pharetra lorem vel ante.  Sed sed justo. Curabitur consectetuer arcu. Etiam placerat est eget odio. Nulla facilisi. Nulla facilisi. 
+				

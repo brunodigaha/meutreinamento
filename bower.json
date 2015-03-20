@@ -14,7 +14,10 @@
     "src/bower_components"
   ],
   "devDependencies": {
-    "normalize.styl": "~3.0.0",
-    "jeet": "^6.1.2"
+    "holderjs": "~2.5.2"
+  },
+  "dependencies": {
+    "jeet": "~6.1.2",
+    "normalize.styl": "~3.0.2"
   }
 }
