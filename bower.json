@@ -18,6 +18,9 @@
   },
   "dependencies": {
     "jeet": "~6.1.2",
-    "normalize.styl": "~3.0.2"
+    "normalize.styl": "~3.0.2",
+    "rupture-by-jenius": "~0.6.1",
+    "kouto-swiss": "krkn/kouto-swiss#~0.11.10",
+    "bootstrap-stylus": "~4.0.3"
   }
 }
