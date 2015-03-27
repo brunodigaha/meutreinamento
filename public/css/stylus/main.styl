@@ -15,15 +15,20 @@
 		height 100%
 		col(3/12,gutter:1)
 		.alunos
+			overflow-y auto
 			col(1/4,gutter:0.1)
 			// background #444444
-			border-right 1px solid
+			border-right 1px solid #E2E1E1
 			height 100%
 			img
 				display block
 				border-radius 50%
 				margin 5%
 				center()
+			.alunos-selecionados
+				border-bottom 1.3px solid #E4E4E4
+			.alunos-sugeridos
+				// overflow-y scroll
 		.perfil
 			col(3/4,gutter:1)
 			.perfil-image
@@ -35,28 +40,31 @@
 					center()
 			a
 				display block
-				border-bottom 1px solid 
+				border-bottom 1px solid  #E4E4E4
 				color #1E0909
 				margin 0px
-				padding 8px 12px
+				padding 4em 8%
 				text-decoration none
 				font-weight normal
 				text-align center
 	.main
-		col(9/12,offset:3/12,gutter:1)
-		margin-top 4em
+		col(9/12,gutter:2)
+		shift(3/12,gutter:0)
+		background #CAF7CA
+		margin-top 5em
 		.professor
 			.btn-collapse
-				col(1/9,gutter:1)
+				col(1/9,gutter:0)
+				background #CFCFFB
 				position fixed
 				top 0px
-				visibility hidden
 			.professor-admin
-				col(3/9)
+				col(2/9,gutter: .6)
+				shift(7/9,gutter: 0)
+				background #CFCFFB 
 				position fixed
-				left (6/9*100)%
 				top 0px
 				text-align right
 				img
-					margin 2%
+					margin 1%
 					border-radius 20%
