@@ -1,5 +1,5 @@
 //Task validate js
-process.chdir('../vittapro');
+process.chdir('../meutreinamento');
 module.exports = function (gulp,plugins,path){
 	return function() {
 		  gulp.src('./public/js/**/*.js')

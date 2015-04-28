@@ -1,5 +1,5 @@
 //Task Move files To
-process.chdir('../vittapro');
+process.chdir('../meutreinamento');
 module.exports = function (gulp,plugins,path){
 	return function() {
 		  gulp.src('./public/index-prod.jade')

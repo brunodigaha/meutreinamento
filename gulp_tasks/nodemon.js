@@ -1,5 +1,5 @@
 //Task Nodemon
-process.chdir('../vittapro');
+process.chdir('../meutreinamento');
 module.exports = function (gulp,plugins,path){
   return  function (cb) {
     var called = false;

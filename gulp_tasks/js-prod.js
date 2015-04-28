@@ -1,5 +1,5 @@
 // Task build JS to production
-process.chdir('../vittapro');
+process.chdir('../meutreinamento');
 module.exports = function (gulp,plugins,path){
 	return function() {
 		  gulp.src(path.index_dev_o)

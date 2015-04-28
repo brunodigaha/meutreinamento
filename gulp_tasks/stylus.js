@@ -1,5 +1,5 @@
 // Task Stylus - https://github.com/stevelacy/gulp-stylus
-process.chdir('../vittapro');
+process.chdir('../meutreinamento');
 module.exports = function (gulp,plugins,path){
 	return function() {
     gulp.src(path.stylus_o)
