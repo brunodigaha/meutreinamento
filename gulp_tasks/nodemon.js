@@ -5,7 +5,7 @@ module.exports = function (gulp,plugins,path){
     var called = false;
     return plugins.nodemon({
       script: 'server.js',
-      ext: 'js jade html',
+      ext: 'jade',
       ignore: [
         'gulpfile.js',
         'gulp_tasks/',
@@ -20,9 +20,10 @@ module.exports = function (gulp,plugins,path){
       }
     })
     .on('restart', function () {
+		console.log("======================Restart Nodemon================");
       setTimeout(function () {
         plugins.browserSync.reload({ stream: false });
-      }, 1000);
+      }, 1100);
     });
   };
 };
