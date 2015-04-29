@@ -28,7 +28,7 @@
     "jade": "^1.9.1",
     "joi": "^5.0.2",
     "mongodb-uri": "^0.9.7",
-    "mongoose": "^3.7.4",
+    "mongoose": "^4.0.2",
     "rand-token": "^0.2.1",
     "require-directory": "~2.0.0"
   },
