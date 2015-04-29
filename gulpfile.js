@@ -7,24 +7,21 @@ var plugins = require('gulp-load-plugins')({
     pattern: ['gulp-*','browser-sync']
 });
 
-// assets is where you define your application assets and you can pass them into gulp.
-var assets = require('./assets');
-
 function getTask(task) {
-    return require('./gulp_tasks/' + task)(gulp, plugins, assets.path);
+    return require('./gulp_tasks/' + task)(gulp, plugins);
 }
 
-gulp.task('jade', getTask('jade'));
-gulp.task('moveTemplates', getTask('moveTemplates'));
+// Tasks development
 gulp.task('stylus', getTask('stylus'));
-gulp.task('js-prod', getTask('js-prod'));
-gulp.task('jsValidate', getTask('jsValidate'));
 gulp.task('nodemon', getTask('nodemon'));
-gulp.task('clear-build-all', getTask('clear-build-all'));
 gulp.task('browserSync', ['nodemon'],getTask('browserSync'));
 
+gulp.task('watch', function(){
+	gulp.watch(['public/css/stylus/**/*.styl','public/css/*.css'],['stylus']);
+});
+
 // Task development
-gulp.task('default',plugins.sequence(['clear-build-all','jsValidate','stylus'],'browserSync'));
+gulp.task('default',plugins.sequence(['stylus','watch'],'browserSync'));
 
 //task production
-gulp.task('prod', plugins.sequence('js-prod','moveTemplates'));
+// gulp.task('prod', plugins.sequence('js-prod','moveTemplates'));

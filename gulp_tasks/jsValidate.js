@@ -1,5 +1,4 @@
 //Task validate js
-process.chdir('../meutreinamento');
 module.exports = function (gulp,plugins,path){
 	return function() {
 		  gulp.src('./public/js/**/*.js')
@@ -7,7 +6,7 @@ module.exports = function (gulp,plugins,path){
 		  .pipe(plugins.jsvalidate())
 		  .on("error", plugins.notify.onError(function(error) {
         		return error.message;
-       		}))
+       		}));
 
 	};
 };

@@ -1,15 +1,17 @@
 //Task Nodemon
-process.chdir('../meutreinamento');
-module.exports = function (gulp,plugins,path){
+module.exports = function (gulp,plugins){
   return  function (cb) {
     var called = false;
     return plugins.nodemon({
       script: 'server.js',
-      ext: 'jade',
+      ext: 'js jade',
       ignore: [
         'gulpfile.js',
+		'public/js/',
+		'public/css',
         'gulp_tasks/',
         'node_modules/',
+		'bower_components',
         'server/views/'
       ]
     })
@@ -20,10 +22,9 @@ module.exports = function (gulp,plugins,path){
       }
     })
     .on('restart', function () {
-		console.log("======================Restart Nodemon================");
       setTimeout(function () {
         plugins.browserSync.reload({ stream: false });
-      }, 1100);
+      }, 1300);
     });
   };
 };
