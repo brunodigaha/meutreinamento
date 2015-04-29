@@ -1,8 +1,8 @@
 {
-  "name": "vittaPro",
-  "description": "Sistema para controle de fichas de treinamentos.",
+  "name": "Meu Treinamento",
+  "description": "Sistema para controle de fichas de treinamento para academias de musculação!",
   "version": "4.0.0",
-  "author": "Bruno Alexandre",
+  "author": "Bruno Alexandre de Souza",
   "repository": {
     "type": "git",
     "url": "https://github.com/brucealex/vittapro"
