@@ -1,0 +1,13 @@
+.wrap nav {
+  background-color: #444;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+}
+.wrap header {
+  background-color: #512da8;
+  height: 100px;
+}
+.wrap main {
+  background-color: #2196f3;
+}
