@@ -1,9 +1,9 @@
 {
   "name": "Meu Treinamento",
-  "version": "4.0.0",
-  "homepage": "https://github.com/brucealex/vittapro.git",
+  "version": "5.0.0",
+  "homepage": "https://github.com/brucealex/meutreinamento",
   "authors": [
-    "Bruno Alexandre de Souza <bruce_alex2006@hotmail.com>",
+    "Bruno Alexandre de Souza <bruce_alex2006@hotmail.com>"
   ],
   "description": "Sistema para controle de fichas de treinamento para academias de musculação!",
   "license": "privada",
@@ -11,15 +11,11 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "src/bower_components"
+    "bower_components"
   ],
-  "devDependencies": {
+  "dependencies": {
     "jeet": "~6.1.2",
     "normalize.styl": "~3.0.2",
     "rupture-by-jenius": "~0.6.1"
-  },
-  "dependencies": {
-    "modernizr": "~2.8.3",
-    "holderjs": "~2.6.0"
   }
 }

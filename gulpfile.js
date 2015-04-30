@@ -4,7 +4,7 @@
 var gulp    = require('gulp');
 
 var plugins = require('gulp-load-plugins')({
-    pattern: ['gulp-*','browser-sync']
+    pattern: ['gulp-*','browser-sync', 'browserify', 'vinyl-source-stream']
 });
 
 function getTask(task) {
@@ -15,9 +15,11 @@ function getTask(task) {
 gulp.task('stylus', getTask('stylus'));
 gulp.task('nodemon', getTask('nodemon'));
 gulp.task('browserSync', ['nodemon'],getTask('browserSync'));
+gulp.task('browserify',getTask('browserify'));
 
 gulp.task('watch', function(){
 	gulp.watch(['public/css/stylus/**/*.styl','public/css/*.css'],['stylus']);
+	gulp.watch(['public/js/app/**/*.js'],['browserify']);
 });
 
 // Task development
