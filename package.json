@@ -57,21 +57,16 @@
   },
   "browser": {
 	"angular": "./public/bower_components/angular/angular.js",
-    "holderjs": "./public/bower_components/holderjs/holder.js",
-    "modernizr": "./public/bower_components/modernizr/modernizr.js"
+    "ui-router": "./public/bower_components/angular-ui-router/release/angular-ui-router.js"
   },
   "browserify-shim": {
 	"angular": {
 		"exports": "angular",
 		"depends": null
 	},
-    "modernizr": {
-      "exports": "modernizr",
-      "depends": null
-    },
-    "holderjs": {
-      "exports": "holderjs",
-      "depends": null
+    "ui-router": {
+      "exports": "angular.module('ui.router')",
+      "depends": "angular"
     }
   }
 }

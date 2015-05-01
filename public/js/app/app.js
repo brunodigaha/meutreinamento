@@ -1,7 +1,10 @@
-var angular = require('angular');
-// var modernizr = require('modernizr');
-// var holderjs = require('holderjs');
+require('angular');
+require('ui-router');
 
-angular.module('app',[]).controller('MyCtrol',['$scope', function($scope){
+var app = angular.module('app',['ui.router']);
+
+app.controller('MyCtrol',['$scope', function($scope){
 	$scope.mensagem = "aluno";
 }]);
+
+
