@@ -23,7 +23,7 @@ gulp.task('watch', function(){
 });
 
 // Task development
-gulp.task('default',plugins.sequence(['stylus','watch'],'browserSync'));
+gulp.task('default',plugins.sequence(['stylus','browserify','watch'],'browserSync'));
 
 //task production
 // gulp.task('prod', plugins.sequence('js-prod','moveTemplates'));

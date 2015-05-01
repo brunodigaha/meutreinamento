@@ -2,7 +2,9 @@
 // Task browserify to compile files js
 module.exports = function (gulp,plugins){
 	return function() {
-		return plugins.browserify('./public/js/app/app.js')
+		return plugins.browserify('./public/js/app/app.js',{
+			debug:true 
+			})
 		.bundle()
 		.pipe(plugins.vinylSourceStream('./main.js'))
 		.pipe(gulp.dest('public/js'))
