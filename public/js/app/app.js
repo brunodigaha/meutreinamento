@@ -1,9 +1,10 @@
 require('angular');
-require('ui-router');
+require('modernizr');
+angular.module('app',[
+	require('ui-router').name
+])
 
-var app = angular.module('app',['ui.router']);
-
-app.controller('MyCtrol',['$scope', function($scope){
+.controller('MyCtrol',['$scope', function($scope){
 	$scope.mensagem = "aluno";
 }]);
 
