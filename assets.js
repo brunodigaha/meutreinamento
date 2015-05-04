@@ -10,7 +10,7 @@ module.exports = {
 	    css:    			'public/css/',
 	    jsdev:  			['src/js/**/*.js'],
 	    js:     			'public/js/',
-	    imgdev: 			['src/img/**/*.{jpg,png,svg}'],
+	    imgdev: 			['public/images/files/**/*.png'],
 	    img:    			'public/images',
 		build : 	[
 	    'server/config/*.*',
