@@ -1,11 +1,14 @@
-require('angular');
+//other dependencies
 require('modernizr');
-angular.module('app',[
+
+require('angular');
+
+//angular modules
+
+angular
+.module('app',[
 	require('ui-router').name
 ])
-
-.controller('MyCtrol',['$scope', function($scope){
-	$scope.mensagem = "aluno";
-}]);
+.config(require('./routes.js'));
 
 

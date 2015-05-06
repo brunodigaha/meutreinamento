@@ -4,7 +4,7 @@
 var gulp    = require('gulp');
 
 var plugins = require('gulp-load-plugins')({
-    pattern: ['gulp-*','browser-sync', 'browserify', 'vinyl-source-stream','css-sprite']
+    pattern: ['gulp-*','browser-sync', 'browserify', 'vinyl-source-stream','css-sprite','brfs']
 });
 
 function getTask(task) {
