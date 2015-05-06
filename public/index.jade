@@ -11,7 +11,7 @@ html(class="no-js" lang="pt-br")
 			script(type="text/javascript", src="js/scripts.js")
 	body(ng-app="app")
 		block main
-		div.wrap
-			nav(ui-view="alunos")
-			header(ui-view="perfil")
-			main(ui-view="conteudo")
+			section.wrap
+				section.aside(ui-view="aside")
+				section.header(ui-view="header")
+				section.content(ui-view="content")

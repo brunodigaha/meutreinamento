@@ -1,18 +1,21 @@
 .wrap
-	nav
+	.aside
 		col(1/16,gutter:0)
-		background-color palette('Grey', '800')
+		background-color palette('Grey', '600')
 		position fixed
 		height 100%
 		overflow-y auto
-	header
+		z-index 2
+	.header
 		col(15/16,gutter:0) // col(15/16,gutter:1)
 		shift(1/16,gutter:0)
-		background-color palette('Pink', '600')
-		// position fixed
-		height 50% 
-	main
+		background-color palette('Grey', '200')
+		position fixed
+		height 5em
+		z-index 2
+	.content
 		col(15/16,gutter:0) // col(15/16,gutter:1)
 		shift(1/16,gutter:0)
-		background-color palette('Deep Purple', '600')
-		// margin-top 100px
+		background-color palette('Grey', '50')
+		z-index 1
+		margin-top 5em

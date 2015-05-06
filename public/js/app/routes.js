@@ -7,14 +7,14 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider) 
 		.state('home', {
 			url:'/perfil',
 			views: {
-				'alunos': {
+				'aside': {
 					// controller: 'vimAController',
 					template: fs.readFileSync(__dirname + '/perfil/templates/alunos.html')
 				},
-				'perfil': {
+				'header': {
 					template: fs.readFileSync(__dirname + '/perfil/templates/perfil.html')
 				},
-				'conteudo': {
+				'content': {
 					template: fs.readFileSync(__dirname + '/perfil/templates/conteudo.html')  
 				}
 			}
