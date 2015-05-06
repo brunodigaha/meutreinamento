@@ -616,6 +616,78 @@ td {
 .wrap .header:last-child {
   margin-right: 0%;
 }
+.wrap .header .perfil {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 80%;
+  margin-left: 0%;
+  margin-right: 0%;
+  height: 5em;
+  background-color: #b2ebf2;
+  z-index: 2;
+}
+.wrap .header .perfil:before,
+.wrap .header .perfil:after {
+  content: '';
+  display: table;
+}
+.wrap .header .perfil:after {
+  clear: both;
+}
+.wrap .header .perfil:last-child {
+  margin-right: 0%;
+}
+.wrap .header .perfil .menu {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: 0%;
+  height: 25em;
+  position: absolute;
+  top: 5.8em;
+  left: 0.5em;
+  background-color: #b2ebf2;
+  z-index: 2;
+}
+.wrap .header .perfil .menu:before,
+.wrap .header .perfil .menu:after {
+  content: '';
+  display: table;
+}
+.wrap .header .perfil .menu:after {
+  clear: both;
+}
+.wrap .header .perfil .menu:last-child {
+  margin-right: 0%;
+}
+.wrap .header .user {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 20%;
+  margin-left: 0%;
+  margin-right: 0%;
+  height: 5em;
+  background-color: #b2dfdb;
+  z-index: 2;
+}
+.wrap .header .user:before,
+.wrap .header .user:after {
+  content: '';
+  display: table;
+}
+.wrap .header .user:after {
+  clear: both;
+}
+.wrap .header .user:last-child {
+  margin-right: 0%;
+}
 .wrap .content {
   *zoom: 1;
   float: left;

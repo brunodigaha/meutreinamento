@@ -1,6 +1,6 @@
 //other dependencies
-require('modernizr');
 require('holderjs');
+require('modernizr');
 
 require('angular');
 
