@@ -40,6 +40,7 @@
     "css-sprite": "^0.9.8",
     "gulp": "^3.8.11",
     "gulp-if": "^1.2.5",
+    "gulp-jade": "^1.0.0",
     "gulp-load-plugins": "^0.10.0",
     "gulp-nodemon": "^2.0.2",
     "gulp-notify": "^2.2.0",
@@ -53,7 +54,7 @@
   "browserify": {
     "transform": [
       "browserify-shim",
-	  "brfs"
+      "brfs"
     ]
   },
   "browser": {

@@ -565,25 +565,6 @@ td {
   width: 64px;
   height: 64px;
 }
-.wrap {
-  *zoom: 1;
-  width: auto;
-  max-width: 100%;
-  float: none;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 0;
-  padding-right: 0;
-}
-.wrap:before,
-.wrap:after {
-  content: '';
-  display: table;
-}
-.wrap:after {
-  clear: both;
-}
 .wrap nav {
   *zoom: 1;
   float: left;
@@ -619,7 +600,7 @@ td {
   position: relative;
   left: 6.25%;
   background-color: #d81b60;
-  height: 100px;
+  height: 50%;
 }
 .wrap header:before,
 .wrap header:after {
