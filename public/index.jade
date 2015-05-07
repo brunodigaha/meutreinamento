@@ -11,7 +11,4 @@ html(class="no-js" lang="pt-br")
 			script(type="text/javascript", src="js/scripts.js")
 	body(ng-app="app")
 		block main
-			section.wrap
-				section.aside(ui-view="aside")
-				section.header(ui-view="header")
-				section.content(ui-view="content")
+			section.wrap(ui-view="master")
