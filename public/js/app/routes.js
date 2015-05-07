@@ -15,12 +15,13 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider) 
 				},
 				'header@main': {
 					resolve: {
-						user: function(){
-							return {user: 'usuario12'};
+						userModel: function(userModel){
+							userModel.add_nome('usuario1212');
+							return userModel;
 						}
 					},
-					controller: function($scope, user) {
-						$scope.usuario = user.user;
+					controller: function($scope, userModel) {
+						$scope.userModel= userModel;
 					},
 					template: fs.readFileSync(__dirname + '/perfil/templates/header.html')
 				}
@@ -42,7 +43,15 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider) 
 					template: fs.readFileSync(__dirname + '/perfil/templates/content.html')  
 				},
 				'menu@main': {
-					template: "teste"
+					resolve: {
+						userModel: function(userModel){
+							return userModel;
+						}
+					},
+					controller: function($scope, userModel) {
+						$scope.userModel= userModel;
+					},
+					template: fs.readFileSync(__dirname + '/perfil/templates/teste.html')
 				}
 			}
 		});

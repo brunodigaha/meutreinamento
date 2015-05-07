@@ -10,6 +10,7 @@ angular
 .module('app',[
 	require('ui-router').name
 ])
+.factory('userModel', require('./userModel.js'))
 .config(require('./routes.js'));
 
 

@@ -573,7 +573,7 @@ td {
   width: 6.25%;
   margin-left: 0%;
   margin-right: 0%;
-  background-color: #757575;
+  background-color: #bdbdbd;
   position: fixed;
   height: 100%;
   overflow-y: auto;
@@ -625,7 +625,7 @@ td {
   margin-left: 0%;
   margin-right: 0%;
   height: 5em;
-  background-color: #b2ebf2;
+  background-color: #eee;
   z-index: 2;
 }
 .wrap .header .perfil:before,
@@ -651,7 +651,7 @@ td {
   position: absolute;
   top: 5.8em;
   left: 0.5em;
-  background-color: #b2ebf2;
+  background-color: #eee;
   z-index: 2;
 }
 .wrap .header .perfil .menu:before,
@@ -674,7 +674,7 @@ td {
   margin-left: 0%;
   margin-right: 0%;
   height: 5em;
-  background-color: #b2dfdb;
+  background-color: #e0e0e0;
   z-index: 2;
 }
 .wrap .header .user:before,
