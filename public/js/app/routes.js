@@ -1,7 +1,7 @@
 var fs = require('fs');
 
 module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider) {
-	$urlRouterProvider.otherwise('/home');
+	$urlRouterProvider.otherwise('/user/12');
 	$locationProvider.html5Mode(false);
 	$stateProvider
 		.state('main', {
@@ -9,6 +9,20 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider) 
 			views: {
 				'master': {
 					template: fs.readFileSync(__dirname + '/perfil/templates/master.html')  
+				},
+				'aside@main': {
+					template: fs.readFileSync(__dirname + '/perfil/templates/aside.html')
+				},
+				'header@main': {
+					resolve: {
+						user: function(){
+							return {user: 'usuario12'};
+						}
+					},
+					controller: function($scope, user) {
+						$scope.usuario = user.user;
+					},
+					template: fs.readFileSync(__dirname + '/perfil/templates/header.html')
 				}
 			}
 		})
@@ -22,17 +36,13 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider) 
 			}
 		})
 		.state('main.home', {
-			url: '/home',
+			url: '/user/{userId:int}',
 			views: {
-				'aside': {
-					// controller: 'vimAController',
-					template: fs.readFileSync(__dirname + '/perfil/templates/alunos.html')
+				'content@main': {
+					template: fs.readFileSync(__dirname + '/perfil/templates/content.html')  
 				},
-				'header': {
-					template: fs.readFileSync(__dirname + '/perfil/templates/perfil.html')
-				},
-				'content': {
-					template: fs.readFileSync(__dirname + '/perfil/templates/conteudo.html')  
+				'menu@main': {
+					template: "teste"
 				}
 			}
 		});
