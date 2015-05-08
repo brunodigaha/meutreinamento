@@ -68,10 +68,28 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider) 
 						}
 					},
 					controller: function($scope, userModel) {
-						var gm = $scope.userModel= userModel;
+						 $scope.userModel= userModel;
 					},
 					template: fs.readFileSync(__dirname + '/perfil/templates/teste.html')
 				}
+			}
+		})
+		.state('main.home.treinos', {
+			url: '/treinos',
+			views: {
+				'content@main': {
+					resolve: {
+						userModel: function(userModel){
+							return userModel;
+						}
+					},
+					controller: function($scope, userModel,$state,$stateParams) {
+						$scope.params = $stateParams;
+						$scope.state = $state.current;
+						$scope.userModel= userModel;
+					},
+					template: "treinos do alunos {{params}} {{state}}"  
+				},
 			}
 		});
 };
