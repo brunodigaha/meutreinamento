@@ -1,3 +1,2 @@
-section.aside(ui-view="aside")
-section.header(ui-view="header")
-section.content(ui-view="content")
+section.aside(ui-view="aside" ng-class="{'aside-open': userModel.clickon}")
+section.content-main(ui-view="content-main" ng-class="{'content-main-open': userModel.clickon}" )

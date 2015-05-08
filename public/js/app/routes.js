@@ -10,7 +10,26 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider) 
 				'master': {
 					template: fs.readFileSync(__dirname + '/perfil/templates/master.html')  
 				},
+				'content-main@main': {
+					resolve: {
+						userModel: function(userModel){
+							return userModel;
+						}
+					},
+					controller: function($scope, userModel) {
+						var gm = $scope.userModel= userModel;
+					},
+					template: fs.readFileSync(__dirname + '/perfil/templates/content-main.html')  
+				},
 				'aside@main': {
+					resolve: {
+						userModel: function(userModel){
+							return userModel;
+						}
+					},
+					controller: function($scope, userModel) {
+						var gm = $scope.userModel= userModel;
+					},
 					template: fs.readFileSync(__dirname + '/perfil/templates/aside.html')
 				},
 				'header@main': {
@@ -21,7 +40,7 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider) 
 						}
 					},
 					controller: function($scope, userModel) {
-						$scope.userModel= userModel;
+						var gm = $scope.userModel= userModel;
 					},
 					template: fs.readFileSync(__dirname + '/perfil/templates/header.html')
 				}
@@ -49,7 +68,7 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider) 
 						}
 					},
 					controller: function($scope, userModel) {
-						$scope.userModel= userModel;
+						var gm = $scope.userModel= userModel;
 					},
 					template: fs.readFileSync(__dirname + '/perfil/templates/teste.html')
 				}

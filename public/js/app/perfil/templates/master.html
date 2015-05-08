@@ -1,4 +1,3 @@
 
-<section ui-view="aside" class="aside"></section>
-<section ui-view="header" class="header"></section>
-<section ui-view="content" class="content"></section>
+<section ui-view="aside" ng-class="{'aside-open': userModel.clickon}" class="aside"></section>
+<section ui-view="content-main" ng-class="{'content-main-open': userModel.clickon}" class="content-main"></section>
