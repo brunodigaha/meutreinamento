@@ -17,7 +17,7 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider) 
 						}
 					},
 					controller: function($scope, userModel) {
-						var gm = $scope.userModel= userModel;
+						$scope.userModel= userModel;
 					},
 					template: fs.readFileSync(__dirname + '/perfil/templates/content-main.html')  
 				},

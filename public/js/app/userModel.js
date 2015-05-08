@@ -1,7 +1,7 @@
 module.exports = function () {
 	var userModel = {
 		nome: '',
-		clickon: true,
+		clickon: false,
 		url: ''
 	};
 

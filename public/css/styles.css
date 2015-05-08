@@ -659,6 +659,9 @@ td {
   width: 100%;
   margin-left: 0%;
   margin-right: 0%;
+  position: relative;
+  left: 6.25%;
+  position: fixed;
   background-color: #eee;
   height: 5em;
 }
@@ -678,7 +681,7 @@ td {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 80%;
+  width: 40%;
   margin-left: 0%;
   margin-right: 0%;
   height: 5em;
@@ -700,12 +703,12 @@ td {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 50%;
+  width: 36.36363636363637%;
   margin-left: 0%;
   margin-right: 0%;
   height: 25em;
   position: absolute;
-  top: 5.8em;
+  top: 6em;
   left: 0.5em;
   background-color: #eee;
 }
@@ -728,7 +731,9 @@ td {
   width: 20%;
   margin-left: 0%;
   margin-right: 0%;
-  height: 5em;
+  position: relative;
+  left: 80%;
+  position: fixed;
   background-color: #e0e0e0;
 }
 .wrap .content-main .header .user:before,
@@ -751,7 +756,7 @@ td {
   margin-left: 0%;
   margin-right: 0%;
   background-color: #fafafa;
-  margin-top: 5em;
+  margin-top: 6em;
 }
 .wrap .content-main .content:before,
 .wrap .content-main .content:after {
@@ -785,7 +790,4 @@ td {
 }
 .wrap .content-main-open:last-child {
   margin-right: 0%;
-}
-.open {
-  background-color: #f00 !important;
 }

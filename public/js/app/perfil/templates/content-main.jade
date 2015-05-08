@@ -1,2 +1,5 @@
-section.header(ui-view="header")
-section.content(ui-view="content")
+div(ng-if="!userModel.clickon")
+	section.header(ui-view="header")
+	section.content(ui-view="content")
+section(ng-ig="userModal.clickon")
+	p teste de texto

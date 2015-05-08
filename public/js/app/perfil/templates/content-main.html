@@ -1,3 +1,8 @@
 
-<section ui-view="header" class="header"></section>
-<section ui-view="content" class="content"></section>
+<div ng-if="!userModel.clickon">
+  <section ui-view="header" class="header"></section>
+  <section ui-view="content" class="content"></section>
+</div>
+<section ng-ig="userModal.clickon">
+  <p>teste de texto</p>
+</section>
