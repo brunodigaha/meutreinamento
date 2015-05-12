@@ -4,13 +4,13 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider) 
 	$urlRouterProvider.otherwise('/user/12');
 	$locationProvider.html5Mode(false);
 	$stateProvider
-		.state('main', {
+		.state('base', {
 			abstract: true,
 			views: {
 				'master': {
 					template: fs.readFileSync(__dirname + '/perfil/templates/master.html')  
 				},
-				'content-main@main': {
+				'content-main@base': {
 					resolve: {
 						userModel: function(userModel){
 							return userModel;
@@ -21,7 +21,7 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider) 
 					},
 					template: fs.readFileSync(__dirname + '/perfil/templates/content-main.html')  
 				},
-				'aside@main': {
+				'aside@base': {
 					resolve: {
 						userModel: function(userModel){
 							return userModel;
@@ -32,7 +32,7 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider) 
 					},
 					template: fs.readFileSync(__dirname + '/perfil/templates/aside.html')
 				},
-				'header@main': {
+				'header@base': {
 					resolve: {
 						userModel: function(userModel){
 							userModel.add_nome('usuario1212');
@@ -46,22 +46,15 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider) 
 				}
 			}
 		})
-		.state('login', {
-			url: '/login',
-			views: {
-				'master': {
-					// controller: 'vimAController',
-					template: "<h1><a ui-sref='main.home'> Entrar no sistema</a> </h1>"
-				},
-			}
-		})
-		.state('main.home', {
+		.state(require('./auth/auth-routes.js').login)
+		.state('base.home', {
 			url: '/user/{userId:int}',
+			// authenticate: true,
 			views: {
-				'content@main': {
+				'content@base': {
 					template: fs.readFileSync(__dirname + '/perfil/templates/content.html')  
 				},
-				'menu@main': {
+				'menu@base': {
 					resolve: {
 						userModel: function(userModel){
 							return userModel;
@@ -74,10 +67,11 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider) 
 				}
 			}
 		})
-		.state('main.home.treinos', {
+		.state('base.home.treinos', {
 			url: '/treinos',
+			// authenticate: true,
 			views: {
-				'content@main': {
+				'content@base': {
 					resolve: {
 						userModel: function(userModel){
 							return userModel;

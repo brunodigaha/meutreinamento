@@ -1,0 +1,14 @@
+module.exports = function () {
+	var loginModel = {
+		_identity: undefined,
+		_authenticated: 'false'
+	};
+
+	isAuthenticated: function () {
+		return _authenticated;
+	},
+
+	authenticate: function 
+
+	return loginModel;
+};
