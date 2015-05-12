@@ -27,7 +27,7 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider) 
 							return userModel;
 						}
 					},
-					controller: function($scope, userModel) {
+					controller: function($scope, userModel, Restangular) {
 						var gm = $scope.userModel= userModel;
 					},
 					template: fs.readFileSync(__dirname + '/perfil/templates/aside.html')

@@ -60,6 +60,8 @@
   "browser": {
     "angular": "./public/bower_components/angular/angular.js",
 	"angularCookies": "./public/bower_components/angular-cookies/angular-cookies.js",
+	"restAngular": "./public/bower_components/restangular/dist/restangular.js",
+	"lodash": "./public/bower_components/lodash/lodash.js",
 	"holderjs": "./public/bower_components/holderjs/holder.js",
     "modernizr": "./public/bower_components/modernizr/modernizr.js",
     "ui-router": "./public/bower_components/angular-ui-router/release/angular-ui-router.js"
@@ -72,6 +74,14 @@
     "angularCookies": {
       "exports": "angular.module('ngCookies')",
       "depends": "angular"
+    },
+    "lodash": {
+      "exports": "lodash",
+      "depends": null
+    },
+    "restAngular": {
+      "exports": "angular.module('restangular')",
+      "depends": ["angular","lodash"]
     },
     "holderjs": {
       "exports": "holderjs",
