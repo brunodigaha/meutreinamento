@@ -1,7 +1,7 @@
-module.exports = function ($rootScope, $state) {
+module.exports = function ($rootScope, $state, authService) {
 	$rootScope.$on("$stateChangeStart", function (event, toState, toParams, fromState, fromParams) {
 		// console.log('$stateChangeStart to '+toState.to+'- fired when the transition begins. toState,toParams : \n',toState, toParams);
-		if(toState.authenticate){
+		if(toState.authenticate && !authService.isAuthenticated()){
 			event.preventDefault();
 			$state.go("login");
 		}

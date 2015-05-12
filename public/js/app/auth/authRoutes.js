@@ -2,11 +2,11 @@ var fs = require('fs');
 module.exports = {
 
 	login : {
-		name: 'home',
+		name: 'login',
 		url: '/login',
 		views: {
 			'master': {
-				// controller: 'vimAController',
+				controller: 'loginController',
 				template: fs.readFileSync(__dirname + '/templates/login.html')  
 			},
 		}

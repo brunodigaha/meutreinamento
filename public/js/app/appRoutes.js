@@ -39,17 +39,20 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider) 
 							return userModel;
 						}
 					},
-					controller: function($scope, userModel) {
+					controller: function($scope, userModel, authService) {
 						var gm = $scope.userModel= userModel;
+						$scope.logout = function () {
+							authService.logout();
+						};
 					},
 					template: fs.readFileSync(__dirname + '/perfil/templates/header.html')
 				}
 			}
 		})
-		.state(require('./auth/auth-routes.js').login)
+		.state('login',require('./auth/authRoutes.js').login)
 		.state('base.home', {
 			url: '/user/{userId:int}',
-			// authenticate: true,
+			authenticate: true,
 			views: {
 				'content@base': {
 					template: fs.readFileSync(__dirname + '/perfil/templates/content.html')  
@@ -69,7 +72,7 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider) 
 		})
 		.state('base.home.treinos', {
 			url: '/treinos',
-			// authenticate: true,
+			authenticate: true,
 			views: {
 				'content@base': {
 					resolve: {

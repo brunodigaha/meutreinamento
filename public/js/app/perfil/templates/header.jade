@@ -11,3 +11,4 @@ section.perfil(ui-view="perfil")
 section.user(ui-view="user")
 	img(ng-src="holder.js/200x300/lava" style="max-width:40px; max-height:40px;border-radius:50%;")
 	span {{userModel.nome}}
+	button(ng-click='logout();') logout
