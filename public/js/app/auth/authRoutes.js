@@ -2,7 +2,6 @@ var fs = require('fs');
 module.exports = {
 
 	login : {
-		name: 'login',
 		url: '/login',
 		views: {
 			'master': {

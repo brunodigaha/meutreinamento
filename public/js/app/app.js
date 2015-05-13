@@ -12,6 +12,7 @@ angular
 	require('./auth/index.js').name
 ])
 .factory('userModel', require('./userModel.js'))
+.factory('RestangularCustom', require('./restangularCustom.js'))
 .config(require('./appRoutes.js'))
 .run(require('./appRun.js'));
 

@@ -8,7 +8,7 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider) 
 			abstract: true,
 			views: {
 				'master': {
-					template: fs.readFileSync(__dirname + '/perfil/templates/master.html')  
+					template: fs.readFileSync(__dirname + '/perfil/templates/master.html')	
 				},
 				'content-main@base': {
 					resolve: {
@@ -27,8 +27,10 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider) 
 							return userModel;
 						}
 					},
-					controller: function($scope, userModel, Restangular) {
+					controller: function($scope, userModel, RestangularCustom) {
 						var gm = $scope.userModel= userModel;
+						$scope.user = RestangularCustom.all('usuario').getList().$object;
+						
 					},
 					template: fs.readFileSync(__dirname + '/perfil/templates/aside.html')
 				},
@@ -85,7 +87,7 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider) 
 						$scope.state = $state.current;
 						$scope.userModel= userModel;
 					},
-					template: "treinos do alunos {{params}} {{state}}"  
+					template: "treinos do alunos {{params}} {{state}}"	
 				},
 			}
 		});

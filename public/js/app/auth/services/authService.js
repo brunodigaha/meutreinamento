@@ -1,4 +1,4 @@
-module.exports = function ($state,$cookies) {
+module.exports = function ($state,$cookies, Restangular) {
 	var authModel = {
 		identity: undefined,
 		authenticated: false
