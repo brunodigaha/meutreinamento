@@ -62,6 +62,7 @@
 	"angularCookies": "./public/bower_components/angular-cookies/angular-cookies.js",
 	"restAngular": "./public/bower_components/restangular/dist/restangular.js",
 	"lodash": "./public/bower_components/lodash/lodash.js",
+	"angularHolderjs": "./public/bower_components/angular-holderjs/src/holder.js",
 	"holderjs": "./public/bower_components/holderjs/holder.js",
     "modernizr": "./public/bower_components/modernizr/modernizr.js",
     "ui-router": "./public/bower_components/angular-ui-router/release/angular-ui-router.js"
@@ -86,6 +87,10 @@
     "holderjs": {
       "exports": "holderjs",
       "depends": null
+	},
+    "angularHolderjs": {
+      "exports": "angular.module('ngHolder')",
+      "depends": ["angular","holderjs"]
 	},
     "modernizr": {
       "exports": "modernizr",

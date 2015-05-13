@@ -1,5 +1,4 @@
 //other dependencies
-require('holderjs');
 require('modernizr');
 
 require('angular');
@@ -9,6 +8,7 @@ angular
 	require('ui-router').name,
 	require('restAngular').name,
 	require('angularCookies').name,
+	require('angularHolderjs').name,
 	require('./auth').name,
 	require('./core').name,
 	require('./user').name,

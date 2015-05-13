@@ -1,5 +1,5 @@
 section.perfil(ui-view="perfil")
-	img(ng-src="holder.js/200x300/vine/text:BRU/size:50" style="max-width:80px; max-height: 80px;border-radius:50%;")
+	img(holder="holder.js/200x300/vine/text:BRU/size:50" style="max-width:80px; max-height: 80px;border-radius:50%;")
 	span Bruno
 	span Treinos
 	section.menu(ui-view="menu")
@@ -9,6 +9,6 @@ section.perfil(ui-view="perfil")
 			li mensalidades
 			li avaliações
 section.user(ui-view="user")
-	img(ng-src="holder.js/200x300/lava" style="max-width:40px; max-height:40px;border-radius:50%;")
+	img(holder="holder.js/200x300/lava" style="max-width:40px; max-height:40px;border-radius:50%;")
 	span {{userModel.nome}}
 	button(ng-click='logout();') logout
