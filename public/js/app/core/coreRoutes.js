@@ -9,40 +9,34 @@ module.exports = {
 				},
 				'content-main@core': {
 					resolve: {
-						userModel: function(userModel){
-							return userModel;
+						eventsService: function(eventsService){
+							return eventsService;
 						}
 					},
-					controller: function($scope, userModel) {
-						$scope.userModel= userModel;
+					controller: function($scope, eventsService) {
+						$scope.eventsService= eventsService;
 					},
 					template: fs.readFileSync(__dirname + '/templates/content-main.html')  
 				},
 				'aside@core': {
 					resolve: {
-						userModel: function(userModel){
-							return userModel;
+						eventsService: function(eventsService){
+							return eventsService;
 						}
 					},
-					controller: function($scope, userModel, RestangularCustom) {
-						var gm = $scope.userModel= userModel;
+					controller: function($scope, eventsService, RestangularCustom) {
+						var gm = $scope.eventsService= eventsService;
 						$scope.user = RestangularCustom.all('usuario2').getList().$object;
 					},
 					template: fs.readFileSync(__dirname + '/templates/aside.html')
 				},
 				'header@core': {
 					resolve: {
-						userModel: function(userModel){
-							userModel.add_nome('usuario1212');
-							return userModel;
+						eventsService: function(eventsService){
+							return eventsService;
 						}
 					},
-					controller: function($scope, userModel, authService) {
-						var gm = $scope.userModel= userModel;
-						$scope.logout = function () {
-							authService.logout();
-						};
-					},
+					controller: 'headerController',
 					template: fs.readFileSync(__dirname + '/templates/header.html')
 				}
 			}

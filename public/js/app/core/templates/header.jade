@@ -1,8 +1,9 @@
 section.perfil(ui-view="perfil")
-	img(holder="holder.js/200x300/vine/text:BRU/size:50" style="max-width:80px; max-height: 80px;border-radius:50%;")
+	a(href='' ng-click="eventsService.toggle_menu();")
+		img(holder="holder.js/200x300/vine/text:BRU/size:50" style="max-width:80px; max-height: 80px;border-radius:50%;")
 	span Bruno
 	span Treinos
-	section.menu(ui-view="menu")
+	section.menu(ui-view="menu" ng-if="eventsService.menu" )
 		ul
 			li treinos
 			li Histórico de treinamentos
@@ -10,5 +11,6 @@ section.perfil(ui-view="perfil")
 			li avaliações
 section.user(ui-view="user")
 	img(holder="holder.js/200x300/lava" style="max-width:40px; max-height:40px;border-radius:50%;")
-	span {{userModel.nome}}
-	button(ng-click='logout();') logout
+	span Bruno
+	div
+		a(href='' ng-click='logout();') logout

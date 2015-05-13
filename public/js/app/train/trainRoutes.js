@@ -6,14 +6,14 @@ module.exports = {
 			views: {
 				'content@core': {
 					resolve: {
-						userModel: function(userModel){
-							return userModel;
+						eventsService: function(eventsService){
+							return eventsService;
 						}
 					},
-					controller: function($scope, userModel,$state,$stateParams) {
+					controller: function($scope, eventsService,$state,$stateParams) {
 						$scope.params = $stateParams;
 						$scope.state = $state.current;
-						$scope.userModel= userModel;
+						$scope.eventsService= eventsService;
 					},
 					template: "treinos do alunos {{params}} {{state}}"	
 				},

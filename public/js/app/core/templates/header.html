@@ -1,6 +1,6 @@
 
-<section ui-view="perfil" class="perfil"><img holder="holder.js/200x300/vine/text:BRU/size:50" style="max-width:80px; max-height: 80px;border-radius:50%;"/><span>Bruno</span><span>Treinos</span>
-  <section ui-view="menu" class="menu">
+<section ui-view="perfil" class="perfil"><a href="" ng-click="eventsService.toggle_menu();"><img holder="holder.js/200x300/vine/text:BRU/size:50" style="max-width:80px; max-height: 80px;border-radius:50%;"/></a><span>Bruno</span><span>Treinos</span>
+  <section ui-view="menu" ng-if="eventsService.menu" class="menu">
     <ul>
       <li>treinos</li>
       <li>Histórico de treinamentos</li>
@@ -9,6 +9,6 @@
     </ul>
   </section>
 </section>
-<section ui-view="user" class="user"><img holder="holder.js/200x300/lava" style="max-width:40px; max-height:40px;border-radius:50%;"/><span>{{userModel.nome}}</span>
-  <button ng-click="logout();">logout</button>
+<section ui-view="user" class="user"><img holder="holder.js/200x300/lava" style="max-width:40px; max-height:40px;border-radius:50%;"/><span>Bruno</span>
+  <div><a href="" ng-click="logout();">logout</a></div>
 </section>

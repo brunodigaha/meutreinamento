@@ -1,3 +1,4 @@
 module.exports = angular.module('core',[])
-		.factory('userModel', require('./services/userModel.js'))
+		.controller('headerController', require('./controllers/headerController.js'))
+		.factory('eventsService', require('./services/eventsService.js'))
 		.factory('RestangularCustom', require('./services/restangularCustom.js'));
