@@ -11,7 +11,7 @@ module.exports = function ($state,$cookies, Restangular) {
 
 	authModel.authenticate = function () {
 		authModel.authenticated = true;
-		$state.go('base.home', {userId: 12});
+		$state.go('core.user', {userId: 12});
 		$cookies.authenticated = true;
 	};
 
