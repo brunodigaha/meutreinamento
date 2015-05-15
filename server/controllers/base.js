@@ -8,6 +8,7 @@ module.exports = {
                 message: 'Index - Hello World!'
             });
         },
+		auth: false,
         id: 'index'
     },
     about: {
@@ -16,6 +17,7 @@ module.exports = {
                 title: 'Super Informative About Page'
             });
         },
+		auth: false,
         id: 'about'
     },
     missing: {
@@ -24,6 +26,7 @@ module.exports = {
                 title: 'Total Bummer 404 Page'
             }).code(404);
         },
+		auth: false,
         id: '404'
     }
 };
