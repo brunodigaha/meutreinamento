@@ -8,6 +8,8 @@ angular
 	require('ui-router').name,
 	require('restAngular').name,
 	require('angularCookies').name,
+	require('angularMessages').name,
+	require('angularMaterial').name,
 	require('angularHolderjs').name,
 	require('./auth').name,
 	require('./core').name,

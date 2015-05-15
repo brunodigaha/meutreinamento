@@ -62,6 +62,10 @@
     "angular": "./public/bower_components/angular/angular.js",
     "angularCookies": "./public/bower_components/angular-cookies/angular-cookies.js",
     "restAngular": "./public/bower_components/restangular/dist/restangular.js",
+    "angularAnimate": "./public/bower_components/angular-animate/angular-animate.js",
+    "angularAria": "./public/bower_components/angular-aria/angular-aria.js",
+    "angularMessages": "./public/bower_components/angular-messages/angular-messages.js",
+    "angularMaterial": "./public/bower_components/angular-material/angular-material.js",
     "lodash": "./public/bower_components/lodash/lodash.js",
     "angularHolderjs": "./public/bower_components/angular-holderjs/src/holder.js",
     "holderjs": "./public/bower_components/holderjs/holder.js",
@@ -72,6 +76,22 @@
     "angular": {
       "exports": "angular",
       "depends": null
+    },
+    "angularAnimate": {
+      "exports": "angular.module('ngAnimate')",
+      "depends": "angular"
+    },
+    "angularAria": {
+      "exports": "angular.module('ngAria')",
+      "depends": "angular"
+    },
+    "angularMessages": {
+      "exports": "angular.module('ngMessages')",
+      "depends": "angular"
+    },
+    "angularMaterial": {
+      "exports": "angular.module('ngMaterial')",
+      "depends": ["angular","angularAnimate","angularAria"]
     },
     "angularCookies": {
       "exports": "angular.module('ngCookies')",
