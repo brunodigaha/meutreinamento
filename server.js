@@ -27,9 +27,9 @@ require('./server/config/plugins');
 // require('./server/config/database');
 
 // Setup  method the authentication
-var validate = function (username, token, callback) {
+var validate = function (decoded, request, callback) {
 	Models = require('./server/models/users');
-	Models.Usuarios.findOne({"credencial.token": token },function(err, user) {
+	Models.Usuarios.findOne({"credencial.username": "bruno" },function(err, user) {
 		if (user === null) {
 			isValid = false;
 			permissao = null;
@@ -38,10 +38,15 @@ var validate = function (username, token, callback) {
 			isValid = true;
 			permissao = user.permissao;
 		}
-		callback(err, isValid, {usuario: user, role:permissao});
+		callback(err, isValid, {token: decoded, role:permissao});
 	});
 };
-server.auth.strategy('simple', 'basic', { validateFunc: validate, allowEmptyUsername: true });
+server.auth.strategy('jwt', 'jwt',true,
+{
+	key: config.privateKey,
+	validateFunc: validate,
+	verifyOptions: { ignoreExpiration: true}
+});
 
 server.route(require('./server/config/routes'));
 

@@ -26,7 +26,7 @@ server.register([
         options: goodOptions
     },
 	{
-        register: require("hapi-auth-basic"),
+        register: require("hapi-auth-jwt2"),
     },
     {
         register: require("hapi-authorization"),

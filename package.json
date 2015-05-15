@@ -20,12 +20,13 @@
     "good-console": "^4.1.0",
     "hapi": "^8.4.0",
     "hapi-assets": "^0.3.0",
-    "hapi-auth-basic": "^2.0.0",
+    "hapi-auth-jwt2": "^4.3.2",
     "hapi-authorization": "^2.1.2",
     "hapi-cache-buster": "^0.3.0",
     "hapi-named-routes": "^0.3.0",
     "jade": "^1.9.1",
     "joi": "^5.0.2",
+    "jsonwebtoken": "^5.0.0",
     "mongodb-uri": "^0.9.7",
     "mongoose": "^4.0.2",
     "rand-token": "^0.2.1",
@@ -59,11 +60,11 @@
   },
   "browser": {
     "angular": "./public/bower_components/angular/angular.js",
-	"angularCookies": "./public/bower_components/angular-cookies/angular-cookies.js",
-	"restAngular": "./public/bower_components/restangular/dist/restangular.js",
-	"lodash": "./public/bower_components/lodash/lodash.js",
-	"angularHolderjs": "./public/bower_components/angular-holderjs/src/holder.js",
-	"holderjs": "./public/bower_components/holderjs/holder.js",
+    "angularCookies": "./public/bower_components/angular-cookies/angular-cookies.js",
+    "restAngular": "./public/bower_components/restangular/dist/restangular.js",
+    "lodash": "./public/bower_components/lodash/lodash.js",
+    "angularHolderjs": "./public/bower_components/angular-holderjs/src/holder.js",
+    "holderjs": "./public/bower_components/holderjs/holder.js",
     "modernizr": "./public/bower_components/modernizr/modernizr.js",
     "ui-router": "./public/bower_components/angular-ui-router/release/angular-ui-router.js"
   },
@@ -82,16 +83,22 @@
     },
     "restAngular": {
       "exports": "angular.module('restangular')",
-      "depends": ["angular","lodash"]
+      "depends": [
+        "angular",
+        "lodash"
+      ]
     },
     "holderjs": {
       "exports": "holderjs",
       "depends": null
-	},
+    },
     "angularHolderjs": {
       "exports": "angular.module('ngHolder')",
-      "depends": ["angular","holderjs"]
-	},
+      "depends": [
+        "angular",
+        "holderjs"
+      ]
+    },
     "modernizr": {
       "exports": "modernizr",
       "depends": null
