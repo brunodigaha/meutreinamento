@@ -1,7 +1,5 @@
 
-<h1>Digite a senha para entrar no sistema</h1>
-<button ng-click="login();">Login</button>
-<md-content layout-padding="" style="position:absolute; left:50%; top:50%; transform: translate(-50%,-50%);">
+<section class="login">
   <form name="projectForm">
     <md-input-container>
       <label>Login</label>
@@ -18,5 +16,6 @@
         <div ng-message="required">Este campo é obrigatório.</div>
       </div>
     </md-input-container>
+    <md-button ng-click="login();" class="md-raised md-primary">Entrar</md-button>
   </form>
-</md-content>
+</section>

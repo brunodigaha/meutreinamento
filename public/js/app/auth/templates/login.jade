@@ -1,16 +1,16 @@
-h1 Digite a senha para entrar no sistema
-button(ng-click='login();') Login
-md-content(layout-padding="" style="position:absolute; left:50%; top:50%; transform: translate(-50%,-50%);")
-  form(name="projectForm")
-    md-input-container
-      label Login
-      input(type="text", md-maxlength="30", required="", name="description", ng-model="project.description")
-      div(ng-messages="projectForm.description.$error")
-        div(ng-message="required") Este campo é obrigatório.
-        div(ng-message="md-maxlength") Passou 30
-    md-input-container
-      label Senha
-      input(type="text", required="", name="clientName", ng-model="project.clientName")
-      div(ng-messages="projectForm.clientName.$error")
-        div(ng-message="required") Este campo é obrigatório.
+section.login
+	form(name="projectForm")
+		md-input-container
+			label Login
+			input(type="text", md-maxlength="30", required="", name="description", ng-model="project.description")
+			div(ng-messages="projectForm.description.$error")
+				div(ng-message="required") Este campo é obrigatório.
+				div(ng-message="md-maxlength") Passou 30
+		md-input-container
+			label Senha
+			input(type="text", required="", name="clientName", ng-model="project.clientName")
+			div(ng-messages="projectForm.clientName.$error")
+				div(ng-message="required") Este campo é obrigatório.
+		md-button(class="md-raised md-primary" ng-click="login();") Entrar
+
 
