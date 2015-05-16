@@ -797,24 +797,20 @@ td {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 30%;
 }
 .login button {
-  *zoom: 1;
-  width: auto;
-  max-width: 1440px;
-  float: none;
   display: block;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 0;
-  padding-right: 0;
-}
-.login button:before,
-.login button:after {
-  content: '';
-  display: table;
-}
-.login button:after {
   clear: both;
+  float: none;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.login button:first-child {
+  margin-left: auto;
+}
+.login button:last-child {
+  margin-right: auto;
 }

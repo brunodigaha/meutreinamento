@@ -1,19 +1,22 @@
 
 <section class="login">
-  <form name="projectForm">
+  <form name="loginForm">
     <md-input-container>
       <label>Login</label>
-      <input type="text" md-maxlength="30" required="" name="description" ng-model="project.description"/>
-      <div ng-messages="projectForm.description.$error">
-        <div ng-message="required">Este campo é obrigatório.</div>
-        <div ng-message="md-maxlength">Passou 30</div>
+      <input type="text" required="" name="login" ng-model="form.login"/>
+      <div ng-messages="loginForm.login.$error" role="alert">
+        <div ng-if="showRequiredError">
+          <div ng-message="required">Este campo é obrigatório.</div>
+        </div>
       </div>
     </md-input-container>
     <md-input-container>
       <label>Senha</label>
-      <input type="text" required="" name="clientName" ng-model="project.clientName"/>
-      <div ng-messages="projectForm.clientName.$error">
-        <div ng-message="required">Este campo é obrigatório.</div>
+      <input type="password" required="" name="senha" ng-model="form.senha"/>
+      <div ng-messages="loginForm.senha.$error" role="alert">
+        <div ng-if="showRequiredError">
+          <div ng-message="required">Este campo é obrigatório.</div>
+        </div>
       </div>
     </md-input-container>
     <md-button ng-click="login();" class="md-raised md-primary">Entrar</md-button>
