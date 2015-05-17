@@ -10,6 +10,7 @@ angular
 	require('angularCookies').name,
 	require('angularMessages').name,
 	require('angularMaterial').name,
+	require('angularFire').name,
 	require('angularHolderjs').name,
 	require('./auth').name,
 	require('./core').name,

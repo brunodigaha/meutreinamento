@@ -66,6 +66,8 @@
     "angularAria": "./public/bower_components/angular-aria/angular-aria.js",
     "angularMessages": "./public/bower_components/angular-messages/angular-messages.js",
     "angularMaterial": "./public/bower_components/angular-material/angular-material.js",
+    "firebase": "./public/bower_components/firebase/firebase.js",
+    "angularFire": "./public/bower_components/angularfire/dist/angularfire.js",
     "lodash": "./public/bower_components/lodash/lodash.js",
     "angularHolderjs": "./public/bower_components/angular-holderjs/src/holder.js",
     "holderjs": "./public/bower_components/holderjs/holder.js",
@@ -96,6 +98,14 @@
     "angularCookies": {
       "exports": "angular.module('ngCookies')",
       "depends": "angular"
+    },
+    "firebase": {
+      "exports": "firebase",
+      "depends": null
+    },
+    "angularFire": {
+      "exports": "angular.module('firebase')",
+      "depends": ["angular","firebase"]
     },
     "lodash": {
       "exports": "lodash",
