@@ -2,9 +2,7 @@ div
 	input(type:"text" ng-model="newUserName")
 	button(ng-click="addUser();") +User
 	p {{data | json}}
-	div
-		p(ng-repeat="user in users")
-			{{user|json}}
+	div(ng-repeat="user in users" ng-click="removeUser(user);") {{user.nome}}
 section.login
 	form(name="loginForm")
 		md-input-container
