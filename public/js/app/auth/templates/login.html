@@ -3,9 +3,7 @@
   <input type:"text="type:"text" ng-model="newUserName"/>
   <button ng-click="addUser();">+User</button>
   <p>{{data | json}}</p>
-  <div>
-    <p ng-repeat="user in users">{{user|json}}</p>
-  </div>
+  <div ng-repeat="user in users" ng-click="removeUser(user);">{{user.nome}}</div>
 </div>
 <section class="login">
   <form name="loginForm">

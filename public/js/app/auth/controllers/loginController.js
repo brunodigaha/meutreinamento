@@ -6,6 +6,9 @@ module.exports = function ($scope, authService,$firebaseArray) {
 			nome: $scope.newUserName
 		});
 	};
+	$scope.removeUser = function(user){
+		$scope.users.$remove(user);
+	};
 	// syncObject.$bindTo($scope,"data");
 	// $scope.data = $firebaseObject(URL);
 	// $scope.items=$firebase(newFirebase(URL+'/items'));
