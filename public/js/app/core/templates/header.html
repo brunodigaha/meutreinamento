@@ -1,14 +1,17 @@
 
-<section ui-view="perfil" class="perfil"><a href="" ng-click="eventsService.toggle_menu();"><img holder="holder.js/50x50?auto=yes&amp;random=yes&amp;text=BRU" class="user-no-active"/></a><span class="md-title">Bruno</span><span class="md-body-2">Treinos</span>
+<section ui-view="perfil" class="perfil"><a href="" ng-click="eventsService.toggle_menu();"><img holder="holder.js/80x80?auto=yes&amp;theme=sky&amp;text=BRU" class="user-selected"/></a>
+  <h5 class="user-name">Bruno</h5>
+  <hr class="line"/><code class="breadcrumb">Treinos</code>
   <section ui-view="menu" ng-if="eventsService.menu" class="menu">
     <ul>
-      <li class="md-body-2">treinos</li>
-      <li class="md-body-2">Histórico de treinamentos</li>
-      <li class="md-body-2">mensalidades</li>
-      <li class="md-body-2">avaliações</li>
+      <li>treinos</li>
+      <li>Histórico de treinamentos</li>
+      <li>mensalidades</li>
+      <li>avaliações</li>
     </ul>
   </section>
 </section>
-<section ui-view="user" class="user"><img holder="holder.js/50x50?auto=yes&amp;random=yes&amp;text=BRU" class="user-no-active"/><span class="md-title">Bruno</span>
-  <div><a href="" ng-click="logout();" class="md-body-2">logout</a></div>
+<section ui-view="user" class="user"><img holder="holder.js/50x50?auto=yes&amp;theme=sky&amp;text=BRU" class="admin-img"/>
+  <h6 class="admin-name">Bruno</h6>
+  <hr class="line"/><a href="" ng-click="logout();" class="logout">Sair</a>
 </section>

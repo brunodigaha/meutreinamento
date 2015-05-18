@@ -1,16 +1,17 @@
 section.perfil(ui-view="perfil")
 	a(href='' ng-click="eventsService.toggle_menu();")
-		img.user-no-active(holder='holder.js/50x50?auto=yes&random=yes&text=BRU')
-	span.md-title Bruno
-	span.md-body-2 Treinos
+		img.user-selected(holder='holder.js/80x80?auto=yes&theme=sky&text=BRU')
+	h5.user-name Bruno
+	hr.line
+	code.breadcrumb Treinos
 	section.menu(ui-view="menu" ng-if="eventsService.menu" )
 		ul
-			li.md-body-2 treinos
-			li.md-body-2 Histórico de treinamentos
-			li.md-body-2 mensalidades
-			li.md-body-2 avaliações
+			li treinos
+			li Histórico de treinamentos
+			li mensalidades
+			li avaliações
 section.user(ui-view="user")
-	img.user-no-active(holder='holder.js/50x50?auto=yes&random=yes&text=BRU')
-	span.md-title Bruno
-	div
-		a.md-body-2(href='' ng-click='logout();') logout
+	img.admin-img(holder='holder.js/50x50?auto=yes&theme=sky&text=BRU')
+	h6.admin-name Bruno
+	hr.line
+	a.logout(href='' ng-click='logout();') Sair
