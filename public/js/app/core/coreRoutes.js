@@ -26,7 +26,7 @@ module.exports = {
 					},
 					controller: function($scope, eventsService, RestangularCustom) {
 						var gm = $scope.eventsService= eventsService;
-						$scope.user = RestangularCustom.all('usuario2').getList().$object;
+						$scope.user = RestangularCustom.all('usuario').getList().$object;
 					},
 					template: fs.readFileSync(__dirname + '/templates/aside.html')
 				},
