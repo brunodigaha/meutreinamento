@@ -1,8 +1,9 @@
 var fs = require('fs');
 
 module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider) {
-	$urlRouterProvider.otherwise('/user/12');
 	$locationProvider.html5Mode(false);
+	$urlRouterProvider.otherwise('/user/12');
+	// $urlRouterProvider.when('/home', '/home/index');
 	$stateProvider
 
 		.state('core',require('./core/coreRoutes.js').core.core) 

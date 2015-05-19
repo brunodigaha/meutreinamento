@@ -3,6 +3,7 @@ module.exports = {
 	core : {
 		core : {
 			abstract: true,
+			// redirectTo: 'core.user',
 			views: {
 				'master': {
 					template: fs.readFileSync(__dirname + '/templates/master.html')	

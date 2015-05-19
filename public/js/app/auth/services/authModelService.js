@@ -7,40 +7,42 @@ module.exports = function ($state,$cookies, RestangularCustom) {
 		password: ''
 	};
 
-	authModel.isAuthenticated = function () {
-		if ($cookies.authenticated) return $cookies.authenticated;
-		return authModel.authenticated;
-	};
-
 	authModel.authenticate = function(token){
 		RestangularCustom.setDefaultHeaders({'Authorization': authModel.token});
 		authModel.token = token;
+		$cookies.token = token;
 		authModel.authenticated = true;
 	};
 
 	authModel.init_token = function(){
-		var token = $cookies.token;
-		if (token){
-			authModel.authenticate(token);
+		if(!authModel.authenticated && !!$cookies.token) {
+			authModel.authenticate($cookies.token);
+		}else if (!$cookies.token){
+			authModel.logout();
+			// authModel.authenticated = false;
+			// authModel.token = '';
+			// $cookies.token = '';
+			return false;
 		}
+		return true;
 	};
 
 
 	authModel.login = function () {
 		RestangularCustom.all('login').post({username:authModel.username, password:authModel.password}).then(function(response){
 			authModel.authenticate(response.headers('Authorization'));
-			console.log(authModel.token);
 			$state.go('core.user', {userId: 12});
-			$cookies.authenticated = true;
 		},function(){
 			console.log("Erro no Login (authModelService)");
 		});
 	};
 
 	authModel.logout = function () {
+		authModel.token = "";
+		$cookies.token = "";
 		authModel.authenticated = false;
-		$cookies.authenticated = "";
 		$state.go('login');
+		console.log("logout passou");
 	};
 
 	return authModel;

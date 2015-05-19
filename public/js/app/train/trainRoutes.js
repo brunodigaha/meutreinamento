@@ -15,7 +15,7 @@ module.exports = {
 						$scope.state = $state.current;
 						$scope.eventsService= eventsService;
 					},
-					template: "treinos do alunos {{params}} {{state}}"	
+					template: "treinos do alunos {{params}} {{state.url}}"	
 				},
 			}
 		}
