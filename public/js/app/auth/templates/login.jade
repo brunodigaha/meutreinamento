@@ -7,14 +7,14 @@ section.login
 	form(name="loginForm")
 		md-input-container
 			label Login
-			input(type="text",  required="", name="login", ng-model="form.login")
-			div(ng-messages="loginForm.login.$error" role="alert")
+			input(type="text",  required="", name="username", ng-model="userModel.username")
+			div(ng-messages="loginForm.username.$error" role="alert")
 				div(ng-if="showRequiredError")
 					div(ng-message="required") Este campo é obrigatório.
 		md-input-container
 			label Senha
-			input(type="password", required="", name="senha", ng-model="form.senha")
-			div(ng-messages="loginForm.senha.$error" role="alert")
+			input(type="password", required="", name="password", ng-model="userModel.password")
+			div(ng-messages="loginForm.password.$error" role="alert")
 				div(ng-if="showRequiredError")
 					div(ng-message="required") Este campo é obrigatório.
 		md-button(class="md-raised md-primary" ng-click="login();") Entrar

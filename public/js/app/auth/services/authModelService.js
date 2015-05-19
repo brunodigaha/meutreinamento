@@ -1,7 +1,9 @@
 module.exports = function ($state,$cookies, Restangular) {
 	var authModel = {
-		identity: undefined,
-		authenticated: false
+		currentUser: {},
+		authenticated: false,
+		username: '',
+		password: ''
 	};
 
 	authModel.isAuthenticated = function () {
@@ -9,7 +11,7 @@ module.exports = function ($state,$cookies, Restangular) {
 		return authModel.authenticated;
 	};
 
-	authModel.authenticate = function () {
+	authModel.login = function () {
 		authModel.authenticated = true;
 		$state.go('core.user', {userId: 12});
 		$cookies.authenticated = true;
