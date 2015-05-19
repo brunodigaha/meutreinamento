@@ -5,12 +5,11 @@ module.exports = function ($rootScope, $state,$stateParams, authModelService) {
 		// console.log("tostate", toState);
 		// console.log("toParam", toParams);
 		// console.log("fromParam", fromParams);
-		if(toState.authenticate && !authModelService.init_token()){
+		if(toState.authenticate && !authModelService.is_authenticated()){
 			event.preventDefault();
 			$state.go("login");
-		}else if(toState.name == 'login' && authModelService.authenticated) {
+		}else if(toState.name == 'login' && authModelService.is_authenticated()) {
 			event.preventDefault(); 
-			console.log("nao entrar login");
 			$state.go('core.user', {userId:12});
 		}
 	});
