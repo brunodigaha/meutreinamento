@@ -1,3 +1,3 @@
 module.exports = angular.module('auth',[])
-			.factory('authService', require('./services/authService.js'))
+			.factory('authModelService', require('./services/authModelService.js'))
 			.controller('loginController', require('./controllers/loginController.js'));

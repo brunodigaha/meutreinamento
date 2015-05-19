@@ -1,4 +1,4 @@
-module.exports = function ($scope, authService,$firebaseArray) {
+module.exports = function ($scope, authModelService,$firebaseArray) {
 	var URL = new Firebase("https://vitta.firebaseio.com/");
 	$scope.users  = $firebaseArray(URL);
 	$scope.addUser = function(){
@@ -14,7 +14,7 @@ module.exports = function ($scope, authService,$firebaseArray) {
 	// $scope.items=$firebase(newFirebase(URL+'/items'));
 	// $scope.data.$add({nome:"Bruno Alexandre"});
 	$scope.login = function () {
-		authService.authenticate();
+		authModelService.authenticate();
 	};
 	$scope.form = {
 		login: '',

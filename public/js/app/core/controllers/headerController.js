@@ -1,6 +1,6 @@
-module.exports = function ($scope, eventsService, authService) {
+module.exports = function ($scope, eventsService, authModelService) {
 	var model =  $scope.eventsService = eventsService;
 	$scope.logout = function () {
-		authService.logout();
+		authModelService.logout();
 	};
 };
