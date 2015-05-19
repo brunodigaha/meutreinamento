@@ -19,6 +19,17 @@ module.exports = {
 					},
 					template: fs.readFileSync(__dirname + '/templates/content-main.html')  
 				},
+				'content-search@core': {
+					resolve: {
+						eventsService: function(eventsService){
+							return eventsService;
+						}
+					},
+					controller: function($scope, eventsService) {
+						$scope.eventsService= eventsService;
+					},
+					template: fs.readFileSync(__dirname + '/templates/content-search.html')  
+				},
 				'aside@core': {
 					resolve: {
 						eventsService: function(eventsService){

@@ -5,6 +5,7 @@ module.exports = function (gulp,plugins){
 		return plugins.browserify('./public/js/app/app.js',{
 			debug:true 
 			})
+		.require(require.resolve('../public/bower_components/angular/angular.js'),{ expose: 'angular', dependes: null })
 		.on("error", plugins.notify.onError(function(error) {
 			return error.message;
 		}))
