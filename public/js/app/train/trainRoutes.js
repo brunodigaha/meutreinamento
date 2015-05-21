@@ -5,17 +5,12 @@ module.exports = {
 			authenticate: true,
 			views: {
 				'content@core': {
-					resolve: {
-						eventsService: function(eventsService){
-							return eventsService;
-						}
-					},
-					controller: function($scope, eventsService,$state,$stateParams) {
+					controller: function($scope, coreEventsService,$state,$stateParams) {
 						$scope.params = $stateParams;
 						$scope.state = $state.current;
-						$scope.eventsService= eventsService;
+						// $scope.eventsService= eventsService;
 					},
-					template: "treinos do alunos {{params}} {{state.url}}"	
+					template: fs.readFileSync(__dirname + '/templates/trainContent.html')
 				},
 			}
 		}

@@ -6,50 +6,27 @@ module.exports = {
 			// redirectTo: 'core.user',
 			views: {
 				'wrap': {
-					template: fs.readFileSync(__dirname + '/templates/wrap.html')
-				},
-				'content-main@core': {
-					resolve: {
-						eventsService: function(eventsService){
-							return eventsService;
-						}
-					},
-					controller: function($scope, eventsService) {
-						$scope.eventsService= eventsService;
-					},
-					template: fs.readFileSync(__dirname + '/templates/content-main.html')  
-				},
-				'content-search@core': {
-					resolve: {
-						eventsService: function(eventsService){
-							return eventsService;
-						}
-					},
-					controller: function($scope, eventsService) {
-						$scope.eventsService= eventsService;
-					},
-					template: fs.readFileSync(__dirname + '/templates/content-search.html')  
+					template: fs.readFileSync(__dirname + '/templates/coreWrap.html')
 				},
 				'aside@core': {
-					resolve: {
-						eventsService: function(eventsService){
-							return eventsService;
-						}
-					},
-					controller: function($scope, eventsService, RestangularCustom) {
-						var gm = $scope.eventsService= eventsService;
+					controller: function($scope, coreEventsService, RestangularCustom) {
+						var coreEvents = $scope.coreEvents = coreEventsService;
 						// $scope.user = RestangularCustom.all('usuario').getList().$object;
 					},
-					template: fs.readFileSync(__dirname + '/templates/aside.html')
+					template: fs.readFileSync(__dirname + '/templates/coreAside.html')
+				},
+				'contentMain@core': {
+					controller: function($scope, coreEventsService) {
+						var coreEvents = $scope.coreEvents = coreEventsService;
+					},
+					template: fs.readFileSync(__dirname + '/templates/coreContentMain.html')  
 				},
 				'header@core': {
-					resolve: {
-						eventsService: function(eventsService){
-							return eventsService;
-						}
-					},
 					controller: 'headerController',
-					template: fs.readFileSync(__dirname + '/templates/header.html')
+					template: fs.readFileSync(__dirname + '/templates/coreHeader.html')
+				},
+				'contentSearch@core': {
+					template: fs.readFileSync(__dirname + '/templates/coreContentSearch.html')  
 				}
 			}
 		}

@@ -1,0 +1,5 @@
+section(ng-if="!coreEvents.search")
+	section.header(ui-view="header")
+	section.content(ui-view="content")
+section(ng-if="coreEvents.search")
+	section(ui-view="contentSearch")

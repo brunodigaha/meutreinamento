@@ -8,7 +8,7 @@ module.exports = {
 					// expect($stateParams).toBe({userId: 12});
 				},
 				'content@core': {
-					template: fs.readFileSync(__dirname + '/templates/content.html')  
+					template: fs.readFileSync(__dirname + '/templates/userContent.html')  
 				}
 			}
 		}

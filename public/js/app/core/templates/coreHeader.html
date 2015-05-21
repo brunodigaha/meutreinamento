@@ -1,0 +1,17 @@
+
+<section ui-view="perfil" class="perfil"><a href="" ng-click="coreEvents.toggle_menu();"><img holder="holder.js/80x80?auto=yes&amp;theme=sky&amp;text=BRU" class="user-selected"/></a>
+  <h5 class="user-name">Bruno</h5>
+  <hr class="line"/><code class="breadcrumb">Treinos</code>
+  <section ui-view="menu" ng-if="coreEvents.menu" class="menu">
+    <ul>
+      <li>treinos</li>
+      <li>Histórico de treinamentos</li>
+      <li>mensalidades</li>
+      <li>avaliações</li>
+    </ul>
+  </section>
+</section>
+<section ui-view="user" class="user"><img holder="holder.js/50x50?auto=yes&amp;theme=sky&amp;text=BRU" class="admin-img"/>
+  <h6 class="admin-name">Bruno</h6>
+  <hr class="line"/><a href="" ng-click="logout();" class="logout">Sair</a>
+</section>
