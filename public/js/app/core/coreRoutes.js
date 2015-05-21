@@ -5,8 +5,8 @@ module.exports = {
 			abstract: true,
 			// redirectTo: 'core.user',
 			views: {
-				'master': {
-					template: fs.readFileSync(__dirname + '/templates/master.html')	
+				'wrap': {
+					template: fs.readFileSync(__dirname + '/templates/wrap.html')
 				},
 				'content-main@core': {
 					resolve: {

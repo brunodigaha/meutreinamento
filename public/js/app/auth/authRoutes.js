@@ -4,7 +4,7 @@ module.exports = {
 		login : {
 			authenticate: false,
 			views: {
-				'master': {
+				'wrap': {
 					resolve: {
 						init: function(authModelService, $state,$stateParams){
 							// console.log("token",authModelService.token,"authenticated", authModelService.authenticated,$state.current );
