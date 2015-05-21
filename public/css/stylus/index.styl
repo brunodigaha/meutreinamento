@@ -1,16 +1,22 @@
-// import external libraries
-@import "../../bower_components/jeet/stylus/jeet/index"
-@import "../../bower_components/normalize.styl/normalize"
-@import "../../bower_components/rupture-by-jenius/rupture/index"
-@import "../../bower_components/typographic/stylus/typographic.styl"
-@import "../../bower_components/google-material-color/dist/palette.styl"
+/////////// Base /////////////
+@import "./base/_dependencies.styl"
+@import "./base/_variables.styl"
+@import "./base/_mixins.styl"
+@import "./base/_utility.styl"
+@import "./base/_sprites.styl"
+@import "./base/_icons.styl"
 
-// global import files
-@import "./_variables.styl"
-@import "./_mixins.styl"
-@import "./_utility.styl"
-@import "./_icons.styl"
+////////// Layout ////////////
+@import "./layout/_grid.styl"
 
-// import templates
-@import "./_template.styl"
-@import "./_login.styl"
+///////// Templates //////////
+//auth
+@import "./templates/auth/_loginWrap.styl"
+//core
+@import "./templates/core/_coreAside.styl"
+@import "./templates/core/_coreHeader.styl"
+//user
+@import "./templates/user/userContent.styl"
+//train
+@import "./templates/train/trainContent.styl"
+

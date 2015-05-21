@@ -1,0 +1,21 @@
+ul
+	list-style none
+	margin 0
+	padding @margin
+	text-align center
+	li
+		margin 0.4em @margin
+		.user-search
+			@extend .img-responsive
+			width 50px
+			heigth @width
+		a
+			text-decoration @list-style
+			display block
+			.user-active
+				@extend .img-responsive
+				border 2px solid palette('Green', 'A700')
+				prefixer(box-sizing, border-box)
+			.user-no-active
+				@extend .img-responsive
+

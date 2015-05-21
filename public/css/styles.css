@@ -1,3 +1,5 @@
+@import "/bower_components/angular-material/angular-material.css";
+@import "/bower_components/animate.css/animate.css";
 /* normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -885,17 +887,20 @@ td {
   }
 }
 .img-responsive,
-.aside ul li .user-search,
-.aside ul li a .user-active,
-.aside ul li a .user-no-active,
-.content-main .header .perfil .user-selected,
-.content-main .header .user .admin-img {
+ul li .user-search,
+ul li a .user-active,
+ul li a .user-no-active,
+.perfil .user-selected,
+.user .admin-img {
   max-width: 100%;
   height: auto;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
+}
+.icon {
+  background-image: url("../images/sprites.png");
 }
 .icon {
   background-image: url("../images/sprites.png");
@@ -951,30 +956,6 @@ td {
 }
 .aside:last-child {
   margin-right: 0%;
-}
-.aside ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-.aside ul li {
-  margin: 0.4em 0;
-}
-.aside ul li .user-search {
-  width: 50px;
-  heigth: 50px;
-}
-.aside ul li a {
-  text-decoration: none;
-  display: block;
-}
-.aside ul li a .user-active {
-  border: 2px solid #00c853;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
 }
 .aside-open {
   *zoom: 1;
@@ -1043,118 +1024,6 @@ td {
 .content-main .header:last-child {
   margin-right: 0%;
 }
-.content-main .header .perfil {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 40%;
-  margin-left: 0%;
-  margin-right: 0%;
-  height: 5em;
-  background-color: #eee;
-}
-.content-main .header .perfil:before,
-.content-main .header .perfil:after {
-  content: '';
-  display: table;
-}
-.content-main .header .perfil:after {
-  clear: both;
-}
-.content-main .header .perfil:last-child {
-  margin-right: 0%;
-}
-.content-main .header .perfil .user-selected {
-  vertical-align: middle;
-  margin-top: 0.4em;
-  margin-left: 1em;
-}
-.content-main .header .perfil .user-name {
-  display: inline;
-  color: #424242;
-  font-weight: bold;
-}
-.content-main .header .perfil .line {
-  display: inline;
-  vertical-align: middle;
-}
-.content-main .header .perfil .breadcrumb {
-  display: inline;
-  color: #424242;
-}
-.content-main .header .perfil .menu {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 36.36363636363637%;
-  margin-left: 0%;
-  margin-right: 0%;
-  height: 25em;
-  position: absolute;
-  top: 6em;
-  left: 0.5em;
-  background-color: #eee;
-}
-.content-main .header .perfil .menu:before,
-.content-main .header .perfil .menu:after {
-  content: '';
-  display: table;
-}
-.content-main .header .perfil .menu:after {
-  clear: both;
-}
-.content-main .header .perfil .menu:last-child {
-  margin-right: 0%;
-}
-.content-main .header .user {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 20%;
-  margin-left: 0%;
-  margin-right: 0%;
-  position: relative;
-  left: 80%;
-  position: fixed;
-  height: 5em;
-  background-color: #e0e0e0;
-}
-.content-main .header .user:before,
-.content-main .header .user:after {
-  content: '';
-  display: table;
-}
-.content-main .header .user:after {
-  clear: both;
-}
-.content-main .header .user:last-child {
-  margin-right: 0%;
-}
-.content-main .header .user .admin-img {
-  vertical-align: middle;
-  margin-top: 1.2em;
-  margin-left: 1em;
-}
-.content-main .header .user .admin-name {
-  display: inline;
-  vertical-align: middle;
-  color: #424242;
-  font-weight: bold;
-}
-.content-main .header .user .line {
-  display: inline;
-  vertical-align: middle;
-}
-.content-main .header .user .logout {
-  display: inline;
-  color: #e53935;
-  margin-left: 0.6em;
-  text-decoration: none;
-  font-size: 0.8em;
-}
 .content-main .content {
   *zoom: 1;
   float: left;
@@ -1221,4 +1090,140 @@ td {
 }
 .login button:last-child {
   margin-right: auto;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+ul li {
+  margin: 0.4em 0;
+}
+ul li .user-search {
+  width: 50px;
+  heigth: 50px;
+}
+ul li a {
+  text-decoration: none;
+  display: block;
+}
+ul li a .user-active {
+  border: 2px solid #00c853;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.perfil {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 40%;
+  margin-left: 0%;
+  margin-right: 0%;
+  height: 5em;
+  background-color: #eee;
+}
+.perfil:before,
+.perfil:after {
+  content: '';
+  display: table;
+}
+.perfil:after {
+  clear: both;
+}
+.perfil:last-child {
+  margin-right: 0%;
+}
+.perfil .user-selected {
+  vertical-align: middle;
+  margin-top: 0.4em;
+  margin-left: 1em;
+}
+.perfil .user-name {
+  display: inline;
+  color: #424242;
+  font-weight: bold;
+}
+.perfil .line {
+  display: inline;
+  vertical-align: middle;
+}
+.perfil .breadcrumb {
+  display: inline;
+  color: #424242;
+}
+.perfil .menu {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 36.36363636363637%;
+  margin-left: 0%;
+  margin-right: 0%;
+  height: 25em;
+  position: absolute;
+  top: 6em;
+  left: 0.5em;
+  background-color: #eee;
+}
+.perfil .menu:before,
+.perfil .menu:after {
+  content: '';
+  display: table;
+}
+.perfil .menu:after {
+  clear: both;
+}
+.perfil .menu:last-child {
+  margin-right: 0%;
+}
+.user {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 20%;
+  margin-left: 0%;
+  margin-right: 0%;
+  position: relative;
+  left: 80%;
+  position: fixed;
+  height: 5em;
+  background-color: #e0e0e0;
+}
+.user:before,
+.user:after {
+  content: '';
+  display: table;
+}
+.user:after {
+  clear: both;
+}
+.user:last-child {
+  margin-right: 0%;
+}
+.user .admin-img {
+  vertical-align: middle;
+  margin-top: 1.2em;
+  margin-left: 1em;
+}
+.user .admin-name {
+  display: inline;
+  vertical-align: middle;
+  color: #424242;
+  font-weight: bold;
+}
+.user .line {
+  display: inline;
+  vertical-align: middle;
+}
+.user .logout {
+  display: inline;
+  color: #e53935;
+  margin-left: 0.6em;
+  text-decoration: none;
+  font-size: 0.8em;
 }

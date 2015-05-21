@@ -12,7 +12,8 @@ var goodOptions = {
 };
 
 // The Assets Configuaration Options
-var assetOptions = require(settings.rootPath + '/assets');
+// var assetOptions = require(settings.rootPath + '/assets');
+var assetOptions = {};
 
 //The Authorization Config Options
 var authorizationOptions = {

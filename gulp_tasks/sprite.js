@@ -8,6 +8,6 @@ module.exports = function(gulp,plugins) {
 				processor: 'stylus',
 				orientation: 'bindary-tree'
 			}))
-			.pipe(plugins.if('*.png', gulp.dest('./public/images/'), gulp.dest('./public/css/stylus/')));
+			.pipe(plugins.if('*.png', gulp.dest('./public/images/'), gulp.dest('./public/css/stylus/base')));
 	};
 };
