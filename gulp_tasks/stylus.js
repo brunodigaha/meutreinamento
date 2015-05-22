@@ -5,8 +5,10 @@ module.exports = function (gulp,plugins){
 		.pipe(plugins.stylus({
 			'compress': false,
 			'include css': true,
-			url: 'embedurl'
-
+			url: {
+				name: 'embedurl',
+				limit: false
+			}
 		}))
 		.pipe(plugins.rename('styles.css'))
 		.pipe(gulp.dest('public/css'))
