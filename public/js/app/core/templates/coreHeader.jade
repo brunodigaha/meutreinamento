@@ -1,19 +1,37 @@
 section.perfil(ui-view="perfil")
 	a(href='' ng-click="coreEvents.toggle_menu();")
 		img.user-selected(holder='holder.js/80x80?auto=yes&theme=sky&text=BRU')
-	h5.user-name Bruno
+	h4.user-name Bruno
 	hr.line
 	code.breadcrumb Treinos
 	section.menu(ui-view="menu" ng-if="coreEvents.menu" )
-		img.user-selected(holder='holder.js/40x40?auto=yes&theme=sky&text=BRU')
-		h6.user-name Bruno Alexandre
+		section.menu-header
+			img.user-selected(holder='holder.js/45x45?auto=yes&theme=sky&text=BRU')
+			h6.user-name Bruno Alexandre
+			img(class="icon-edit-user")
+			section.icons-header
+				img(class="icon-payments")
+				img(class="icon-notification")
+				img(class="icon-edit-user")
+
 		md-divider
-		span(class="icon icon-treinos tes")
-		ul
-			li treinos
-			li Histórico de treinamentos
-			li mensalidades
-			li avaliações
+
+		section.menu-content
+			p Plano de Treinamento
+			img(class="icon-edit-plan")
+			section.goal
+				img(class="icon-goal")
+			section.plan
+				h5 Ganho de Massa
+				p 2 semanas
+				p 3x por semana
+			section.icons-content
+				ul
+					li treinos
+					li Histórico de treinamentos
+					li mensalidades
+					li avaliações
+
 section.user(ui-view="user")
 	img.admin-img(holder='holder.js/50x50?auto=yes&theme=sky&text=BRU')
 	h6.admin-name Bruno

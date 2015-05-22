@@ -1,16 +1,30 @@
 
 <section ui-view="perfil" class="perfil"><a href="" ng-click="coreEvents.toggle_menu();"><img holder="holder.js/80x80?auto=yes&amp;theme=sky&amp;text=BRU" class="user-selected"/></a>
-  <h5 class="user-name">Bruno</h5>
+  <h4 class="user-name">Bruno</h4>
   <hr class="line"/><code class="breadcrumb">Treinos</code>
-  <section ui-view="menu" ng-if="coreEvents.menu" class="menu"><img holder="holder.js/40x40?auto=yes&amp;theme=sky&amp;text=BRU" class="user-selected"/>
-    <h6 class="user-name">Bruno Alexandre</h6>
-    <md-divider></md-divider><span class="icon icon-treinos tes"></span>
-    <ul>
-      <li>treinos</li>
-      <li>Histórico de treinamentos</li>
-      <li>mensalidades</li>
-      <li>avaliações</li>
-    </ul>
+  <section ui-view="menu" ng-if="coreEvents.menu" class="menu">
+    <section class="menu-header"><img holder="holder.js/45x45?auto=yes&amp;theme=sky&amp;text=BRU" class="user-selected"/>
+      <h6 class="user-name">Bruno Alexandre</h6><img class="icon-edit-user"/>
+      <section class="icons-header"><img class="icon-payments"/><img class="icon-notification"/><img class="icon-edit-user"/></section>
+    </section>
+    <md-divider></md-divider>
+    <section class="menu-content">
+      <p>Plano de Treinamento</p><img class="icon-edit-plan"/>
+      <section class="goal"><img class="icon-goal"/></section>
+      <section class="plan">
+        <h5>Ganho de Massa</h5>
+        <p>2 semanas</p>
+        <p>3x por semana</p>
+      </section>
+      <section class="icons-content">
+        <ul>
+          <li>treinos</li>
+          <li>Histórico de treinamentos</li>
+          <li>mensalidades</li>
+          <li>avaliações</li>
+        </ul>
+      </section>
+    </section>
   </section>
 </section>
 <section ui-view="user" class="user"><img holder="holder.js/50x50?auto=yes&amp;theme=sky&amp;text=BRU" class="admin-img"/>
