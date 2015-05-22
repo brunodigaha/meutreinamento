@@ -13,7 +13,7 @@ module.exports = {
 						}
 					},
 					controller: 'loginController',
-					template: fs.readFileSync(__dirname + '/templates/login.html')  
+					template: fs.readFileSync(__dirname + '/templates/loginWrap.html')  
 				},
 			}
 		}

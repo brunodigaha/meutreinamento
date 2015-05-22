@@ -1,4 +1,4 @@
-module.exports = function ($scope, authModelService,$firebaseArray) {
+module.exports = function ($scope,$timeout, authModelService,$firebaseArray) {
 	var userModel = $scope.userModel = authModelService;
 	// var URL = new Firebase("https://vitta.firebaseio.com/");
 	// $scope.users  = $firebaseArray(URL);
@@ -16,8 +16,9 @@ module.exports = function ($scope, authModelService,$firebaseArray) {
 	// $scope.data.$add({nome:"Bruno Alexandre"});
 	$scope.login = function () {
 		if (userModel.username && userModel.password){
+			userModel.loading = true;
 			console.log(userModel.username, userModel.password);
-			authModelService.login();
+			$timeout(authModelService.login,1000);
 		}
 	};
 };

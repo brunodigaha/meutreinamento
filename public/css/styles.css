@@ -10800,6 +10800,32 @@ ul li a .user-no-active,
 .content-main-open:last-child {
   margin-right: 0%;
 }
+.center-block {
+  *zoom: 1;
+  width: auto;
+  max-width: 1440px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+.center-block:before,
+.center-block:after {
+  content: '';
+  display: table;
+}
+.center-block:after {
+  clear: both;
+}
+.center {
+  position: absolute;
+  transform-style: preserve-3d;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .login {
   position: absolute;
   transform-style: preserve-3d;

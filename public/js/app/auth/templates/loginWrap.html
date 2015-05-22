@@ -1,12 +1,11 @@
 
-<div>
-  <input type:"text="type:"text" ng-model="newUserName"/>
-  <button ng-click="addUser();">+User</button>
-  <p>{{data | json}}</p>
-  <div ng-repeat="user in users" ng-click="removeUser(user);">{{user.nome}}</div>
-</div>
+<!-- div-->
+<!-- 	input(type:"text" ng-model="newUserName")-->
+<!-- 	button(ng-click="addUser();") +User-->
+<!-- 	p {{data | json}}-->
+<!-- 	div(ng-repeat="user in users" ng-click="removeUser(user);") {{user.nome}}-->
 <section class="login">
-  <form name="loginForm">
+  <form name="loginForm" ng-if="!userModel.loading">
     <md-input-container>
       <label>Login</label>
       <input type="text" required="" name="username" ng-model="userModel.username"/>
@@ -26,6 +25,7 @@
       </div>
     </md-input-container>
     <md-button ng-click="login();" class="md-raised md-primary">Entrar</md-button>
-    <h3>Login: admin Senha 123</h3>
+    <h5>Login: admin Senha 123</h5>
   </form>
+  <md-progress-circular ng-if="userModel.loading" md-mode="indeterminate" value="..." md-diameter="100" class="center"></md-progress-circular>
 </section>
