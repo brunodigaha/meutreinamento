@@ -1,6 +1,6 @@
 module.exports = function(gulp,plugins) {
 	return function() {
-		gulp.src('./public/images/files/**/*.png')
+		gulp.src('./public/images/files/*.png')
 			.pipe(plugins.cssSprite.stream({
 				name: 'sprites',
 				style: '_sprites.styl',

@@ -5,6 +5,10 @@ section.perfil(ui-view="perfil")
 	hr.line
 	code.breadcrumb Treinos
 	section.menu(ui-view="menu" ng-if="coreEvents.menu" )
+		img.user-selected(holder='holder.js/40x40?auto=yes&theme=sky&text=BRU')
+		h6.user-name Bruno Alexandre
+		md-divider
+		span(class="icon icon-treinos tes")
 		ul
 			li treinos
 			li Histórico de treinamentos

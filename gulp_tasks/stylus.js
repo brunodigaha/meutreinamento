@@ -3,7 +3,10 @@ module.exports = function (gulp,plugins){
 	return function() {
 		gulp.src('public/css/stylus/index.styl')
 		.pipe(plugins.stylus({
-			'compress': false
+			'compress': false,
+			'include css': true,
+			url: 'embedurl'
+
 		}))
 		.pipe(plugins.rename('styles.css'))
 		.pipe(gulp.dest('public/css'))
