@@ -10628,12 +10628,7 @@ td {
 .icon-edit-plan,
 .icon-notification,
 .icon-payments,
-.icon-goal,
-ul li .user-search,
-ul li a .user-active,
-ul li a .user-no-active,
-.perfil .user-selected,
-.user .admin-img {
+.icon-goal {
   max-width: 100%;
   height: auto;
   -webkit-border-radius: 50%;
@@ -10702,20 +10697,9 @@ ul {
 ul li {
   margin: 0.4em 0;
 }
-ul li .user-search {
-  width: 50px;
-  heigth: 50px;
-}
 ul li a {
   text-decoration: none;
   display: block;
-}
-ul li a .user-active {
-  border: 2px solid #00c853;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
 }
 .perfil {
   *zoom: 1;
@@ -10738,11 +10722,6 @@ ul li a .user-active {
 }
 .perfil:last-child {
   margin-right: 0%;
-}
-.perfil .user-selected {
-  vertical-align: middle;
-  margin-top: 0.4em;
-  margin-left: 1em;
 }
 .perfil .user-name {
   display: inline;
@@ -10907,11 +10886,6 @@ ul li a .user-active {
 .user:last-child {
   margin-right: 0%;
 }
-.user .admin-img {
-  vertical-align: middle;
-  margin-top: 1.2em;
-  margin-left: 1em;
-}
 .user .admin-name {
   display: inline;
   vertical-align: middle;
@@ -10960,7 +10934,7 @@ ul li a .user-active {
   background-color: #424242;
   position: fixed;
   height: 100%;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .aside:before,
 .aside:after {
@@ -11109,4 +11083,11 @@ ul li a .user-active {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+.active {
+  border: 2px solid #00c853;
 }

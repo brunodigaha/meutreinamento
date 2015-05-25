@@ -1,12 +1,12 @@
 section.perfil(ui-view="perfil")
 	a(href='' ng-click="coreEvents.toggle_menu();")
-		img.user-selected(holder='holder.js/80x80?auto=yes&theme=sky&text=BRU')
+		img(class="img-responsive" holder='holder.js/80x80?auto=yes&theme=sky&text=BRU')
 	h4.user-name Bruno
 	hr.line
 	code.breadcrumb Treinos
 	section.menu(ui-view="menu" ng-if="coreEvents.menu" )
 		section.menu-header
-			img.user-selected(holder='holder.js/45x45?auto=yes&theme=sky&text=BRU')
+			img(class="img-responsive" holder='holder.js/45x45?auto=yes&theme=sky&text=BRU')
 			h6.user-name Bruno Alexandre
 			img(class="icon-edit-user")
 			section.icons-header
@@ -33,7 +33,7 @@ section.perfil(ui-view="perfil")
 					li avaliações
 
 section.user(ui-view="user")
-	img.admin-img(holder='holder.js/50x50?auto=yes&theme=sky&text=BRU')
+	img(class="img-responsive" holder='holder.js/50x50?auto=yes&theme=sky&text=BRU')
 	h6.admin-name Bruno
 	hr.line
 	a.logout(href='' ng-click='logout();') Sair
