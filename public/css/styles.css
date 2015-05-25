@@ -10622,7 +10622,7 @@ td {
     padding: 0.4375em 0.875em;
   }
 }
-.img-responsive,
+.responsive,
 .icon-search,
 .icon-edit-user,
 .icon-edit-plan,
@@ -10631,10 +10631,6 @@ td {
 .icon-goal {
   max-width: 100%;
   height: auto;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
 }
 .icon {
   background-image: url("../images/sprites.png");
@@ -11087,6 +11083,11 @@ ul li a {
 .img-responsive {
   max-width: 100%;
   height: auto;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  margin: 0.1em;
 }
 .active {
   border: 2px solid #00c853;

@@ -1,6 +1,7 @@
-ul
-	li
-		img(class="icon-search" ng-click="coreEvents.toggle_search();")
-	li
-		a(href="#")
-			img(class="img-responsive active" holder='holder.js/50x50?auto=yes&random=yes&text=BRU')
+img(class="icon-search" ng-click="coreEvents.toggle_search();")
+// md-subheader.md-no-sticky Avatar with Secondary Action Icon
+md-list-item(ng-repeat="person in [1,2,2,4,5,6] track by $index")
+	img(class="img-responsive" alt="{{ person.name }}" holder='holder.js/50x50?auto=yes&random=yes&text=BRU')
+	p(ng-if="coreEvents.search") Bruno Alexandre
+	md-icon.md-secondary.md-hue-3(ng-if="coreEvents.search") md-svg-icon="communication:messenger", ng-click="doSecondaryAction($event)", aria-label="Open Chat", ng-class="{'md-primary': person.newMessage}")
+
