@@ -1,6 +1,6 @@
 var fs = require('fs');
 
-module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider) {
+module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider, $mdThemingProvider) {
 	$locationProvider.html5Mode(false);
 	$urlRouterProvider.otherwise('/user/12');
 	// $urlRouterProvider.when('/home', '/home/index');
@@ -16,4 +16,8 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider) 
 
 		.state('login',angular.extend(
 				{url:'/login'},require('./auth/authRoutes.js').auth.login));
+
+   // $mdThemingProvider.theme('default')
+    // .primaryPalette('brown')
+    // .accentPalette('orange');	
 };

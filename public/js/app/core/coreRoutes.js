@@ -9,9 +9,23 @@ module.exports = {
 					template: fs.readFileSync(__dirname + '/templates/coreWrap.html')
 				},
 				'aside@core': {
-					controller: function($scope, coreEventsService, RestangularCustom) {
+					controller: function($scope, coreEventsService, RestangularCustom, $mdDialog) {
 						var coreEvents = $scope.coreEvents = coreEventsService;
 						// $scope.user = RestangularCustom.all('usuario').getList().$object;
+					 $scope.doSecondaryAction = function(event) {
+						 var confirm = $mdDialog.confirm()
+						 .title('Você realmente deseja fechar este usuário?')
+						 .content('O usuário será fechado, para acesso a ele novamente é necessário reabrí-lo.')
+						 .ariaLabel('Lucky day')
+						 .ok('Fechar!')
+						 .cancel('Cancelar')
+						 .targetEvent(event);
+						 $mdDialog.show(confirm).then(function() {
+							 alert('O usuário foi fechado!');
+						 }, function() {
+							 alert('Foi cancelado');
+						 });
+					 };	
 					},
 					template: fs.readFileSync(__dirname + '/templates/coreAside.html')
 				},
@@ -26,7 +40,7 @@ module.exports = {
 					template: fs.readFileSync(__dirname + '/templates/coreHeader.html')
 				},
 				'contentSearch@core': {
-					template: fs.readFileSync(__dirname + '/templates/coreContentSearch.html')  
+					template: fs.readFileSync(__dirname + '/templates/coreContentSearch.html')	
 				}
 			}
 		}

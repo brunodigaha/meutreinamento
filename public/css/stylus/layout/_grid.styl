@@ -1,34 +1,36 @@
 // block css wrap
 .wrap
-	col(16/16,gutter:0)
+	col(12/12,gutter:0)
 // end css wrap
 
 	// block css aside
 	.aside
-		col(1/16,gutter:0)
-		background-color palette('Grey', '800')
+		col(1/12,gutter:0)
+		background-color palette('Grey', '600')
 		position fixed
 		height 100%
 		overflow-y auto
 	.aside-open
-		col(3/16,gutter:0)
+		@extend .aside
+		col(3/12,gutter:0)
 	// end css aside
 
 	// block css content
 	.content-main
-		col(15/16,gutter:0)
-		shift(1/16,gutter:0)
+		col(11/12,gutter:0)
+		shift(1/12,gutter:0)
 		.header
-			col(15/15,gutter:0) 
-			shift(1/16,gutter:0)
+			col(11/11,gutter:0) 
+			shift(1/12,gutter:0)
 			position fixed
-			background-color palette('Grey', '200')
+			background-color palette('Grey', '300')
 			height 5em
 		.content
-			col(16/16,gutter:0)
+			col(11/11,gutter:0)
 			background-color palette('Grey', '50')
 			margin-top 6em
 	.content-main-open
-		col(13/16,gutter:0)
-		shift(3/16,gutter:0)
+		@extend .content-main
+		col(9/12,gutter:0)
+		shift(3/12,gutter:0)
 	// end css content

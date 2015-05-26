@@ -1,6 +1,7 @@
 <img ng-click="coreEvents.toggle_search();" class="icon-search"/>
 <!-- md-subheader.md-no-sticky Avatar with Secondary Action Icon-->
-<md-list-item ng-repeat="person in [1,2,2,4,5,6] track by $index"><img alt="{{ person.name }}" holder="holder.js/50x50?auto=yes&amp;random=yes&amp;text=BRU" class="img-responsive"/>
-  <p ng-if="coreEvents.search">Bruno Alexandre</p>
-  <md-icon ng-if="coreEvents.search" class="md-secondary md-hue-3">md-svg-icon="communication:messenger", ng-click="doSecondaryAction($event)", aria-label="Open Chat", ng-class="{'md-primary': person.newMessage}")</md-icon>
-</md-list-item>
+<section ng-class="{'list-users': !coreEvents.search, 'list-users-open': coreEvents.search}" class="list-users">
+  <section ng-repeat="person in [1,2,2,4,5,6] track by $index"><img alt="{{ person.name }}" holder="holder.js/43x43?auto=yes&amp;random=yes&amp;text=BRU" class="img-responsive inline"/>
+    <p ng-if="coreEvents.search" class="inline">Bruno Alexandre</p><img ng-if="coreEvents.search" ng-click="doSecondaryAction($event)" class="icon-close"/>
+  </section>
+</section>
