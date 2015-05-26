@@ -10904,6 +10904,11 @@ td {
 .login button:last-child {
   margin-right: auto;
 }
+.search {
+  text-align: center;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
 .list-users,
 .list-users-open {
   *zoom: 1;
@@ -10913,6 +10918,7 @@ td {
   width: 100%;
   margin-left: 0%;
   margin-right: 0%;
+  margin-top: 0.2em;
   text-align: center;
 }
 .list-users:before,
@@ -10939,7 +10945,7 @@ td {
   color: #e0e0e0;
   vertical-align: middle;
 }
-.list-users-open img {
+.list-users-open ng-md-icon {
   cursor: pointer;
 }
 .perfil {

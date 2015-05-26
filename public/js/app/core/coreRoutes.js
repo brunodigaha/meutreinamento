@@ -23,7 +23,7 @@ module.exports = {
 						 $mdDialog.show(confirm).then(function() {
 							 alert('O usuário foi fechado!');
 						 }, function() {
-							 alert('Foi cancelado');
+							 // alert('Foi cancelado');
 						 });
 					 };	
 					},

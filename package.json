@@ -63,6 +63,7 @@
     "angularCookies": "./public/bower_components/angular-cookies/angular-cookies.js",
     "restAngular": "./public/bower_components/restangular/dist/restangular.js",
     "angularAnimate": "./public/bower_components/angular-animate/angular-animate.js",
+    "angularIcons": "./public/bower_components/angular-material-icons/angular-material-icons.min.js",
     "angularAria": "./public/bower_components/angular-aria/angular-aria.js",
     "angularMessages": "./public/bower_components/angular-messages/angular-messages.js",
     "angularMaterial": "./public/bower_components/angular-material/angular-material.js",
@@ -78,6 +79,10 @@
     "angular": {
       "exports": "angular",
       "depends": null
+    },
+    "angularIcons": {
+      "exports": "angular.module('ngMdIcons')",
+      "depends": "angular"
     },
     "angularAnimate": {
       "exports": "angular.module('ngAnimate')",

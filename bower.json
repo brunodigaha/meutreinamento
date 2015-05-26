@@ -30,6 +30,7 @@
     "firebase": "~2.2.4",
     "angularfire": "~1.1.1",
     "typographic": "~2.9.3",
-    "animate.css": "https://github.com/daneden/animate.css.git#3.3.0"
+    "animate.css": "https://github.com/daneden/animate.css.git#3.3.0",
+    "angular-material-icons": "~0.4.0"
   }
 }

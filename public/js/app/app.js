@@ -9,6 +9,7 @@ angular
 	require('restAngular').name,
 	require('angularCookies').name,
 	require('angularMessages').name,
+	require('angularIcons').name,
 	require('angularMaterial').name,
 	require('angularFire').name,
 	require('angularHolderjs').name,

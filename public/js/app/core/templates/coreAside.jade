@@ -1,8 +1,10 @@
-img(class="icon-search" ng-click="coreEvents.toggle_search();")
-// md-subheader.md-no-sticky Avatar with Secondary Action Icon
+// img(class="icon-search" ng-click="coreEvents.toggle_search();")
+section(class="search")
+	ng-md-icon(icon="search" style="fill:silver" options='{"duration":375}' size="55" ng-click="coreEvents.toggle_search()")
+// md-divider
 section(class="list-users"  ng-class="{'list-users': !coreEvents.search, 'list-users-open': coreEvents.search}")
 	section(ng-repeat="person in [1,2,2,4,5,6] track by $index")
-		img(class="img-responsive inline" alt="{{ person.name }}" holder='holder.js/43x43?auto=yes&random=yes&text=BRU')
+		img(class="img-responsive inline" alt="{{ person.name }}" holder='holder.js/50x50?auto=yes&random=yes&text=BRU')
 		p(class="inline" ng-if="coreEvents.search") Bruno Alexandre
-		img(class="icon-close" ng-if="coreEvents.search" ng-click="doSecondaryAction($event)")
+		ng-md-icon(icon="close" style="fill:white" options='{"duration":375}' size="40" ng-if="coreEvents.search" ng-click="doSecondaryAction($event)")
 

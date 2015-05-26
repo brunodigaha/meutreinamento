@@ -1,7 +1,12 @@
-<img ng-click="coreEvents.toggle_search();" class="icon-search"/>
-<!-- md-subheader.md-no-sticky Avatar with Secondary Action Icon-->
+
+<!-- img(class="icon-search" ng-click="coreEvents.toggle_search();")-->
+<section class="search">
+  <ng-md-icon icon="search" style="fill:silver" options="{&quot;duration&quot;:375}" size="55" ng-click="coreEvents.toggle_search()"></ng-md-icon>
+</section>
+<!-- md-divider-->
 <section ng-class="{'list-users': !coreEvents.search, 'list-users-open': coreEvents.search}" class="list-users">
-  <section ng-repeat="person in [1,2,2,4,5,6] track by $index"><img alt="{{ person.name }}" holder="holder.js/43x43?auto=yes&amp;random=yes&amp;text=BRU" class="img-responsive inline"/>
-    <p ng-if="coreEvents.search" class="inline">Bruno Alexandre</p><img ng-if="coreEvents.search" ng-click="doSecondaryAction($event)" class="icon-close"/>
+  <section ng-repeat="person in [1,2,2,4,5,6] track by $index"><img alt="{{ person.name }}" holder="holder.js/50x50?auto=yes&amp;random=yes&amp;text=BRU" class="img-responsive inline"/>
+    <p ng-if="coreEvents.search" class="inline">Bruno Alexandre</p>
+    <ng-md-icon icon="close" style="fill:white" options="{&quot;duration&quot;:375}" size="40" ng-if="coreEvents.search" ng-click="doSecondaryAction($event)"></ng-md-icon>
   </section>
 </section>
