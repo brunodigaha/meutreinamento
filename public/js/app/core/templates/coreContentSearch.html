@@ -1,2 +1,18 @@
 
-<p>Bruno Teste</p>
+<section class="search">
+  <md-input-container>
+    <label>Buscar Aluno</label>
+    <input type="text" ng-model="searchModel.search"/>
+  </md-input-container>
+</section>
+<md-subheader class="md-no-sticky">Alunos Sugeridos</md-subheader>
+<section class="suggestion">
+  <md-list-item ng-repeat="person in [1,2,2,4,5,6] track by $index"><img alt="{{ person.name }}" holder="holder.js/35x35?auto=yes&amp;random=yes&amp;text=BRU" class="img-responsive"/>
+  <p ng-if="coreEvents.search">Bruno Alexandre</p>
+  <ng-md-icon icon="add" style="fill:blue" size="35" ng-click="true"></ng-md-icon>
+</section>
+<section class="suggestion">
+  <md-list-item ng-repeat="person in [1,2,2,4,5,6] track by $index"><img alt="{{ person.name }}" holder="holder.js/35x35?auto=yes&amp;random=yes&amp;text=BRU" class="img-responsive"/>
+  <p ng-if="coreEvents.search">Bruno Alexandre</p>
+  <ng-md-icon icon="add" style="fill:blue" size="35" ng-click="true"></ng-md-icon>
+</section>
