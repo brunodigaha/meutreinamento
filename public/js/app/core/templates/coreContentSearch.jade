@@ -2,12 +2,25 @@ section.search
 	md-input-container
 		label Buscar Aluno
 		input(type="text", ng-model="searchModel.search")
-md-subheader.md-no-sticky Alunos Sugeridos
+h5 Alunos Sugeridos
 section.suggestion
-	<md-list-item ng-repeat="person in [1,2,2,4,5,6] track by $index"><img alt="{{ person.name }}" holder="holder.js/35x35?auto=yes&amp;random=yes&amp;text=BRU" class="img-responsive"/>
-	<p ng-if="coreEvents.search">Bruno Alexandre</p>
-	ng-md-icon(icon="add"  style="fill:blue" size="35" ng-click="true")
-section.suggestion
-	<md-list-item ng-repeat="person in [1,2,2,4,5,6] track by $index"><img alt="{{ person.name }}" holder="holder.js/35x35?auto=yes&amp;random=yes&amp;text=BRU" class="img-responsive"/>
-	<p ng-if="coreEvents.search">Bruno Alexandre</p>
-	ng-md-icon(icon="add"  style="fill:blue" size="35" ng-click="true")
+	section(ng-repeat="person in [1,2,2,4,4,4,4,4,4] track by $index")
+		<md-list-item><img alt="{{ person.name }}" holder="holder.js/35x35?auto=yes&amp;random=yes&amp;text=BRU" class="img-responsive"/>
+		<p ng-if="coreEvents.search">Bruno Alexandre</p>
+		ng-md-icon(icon="add"  style="fill:blue" size="35" ng-click="true")
+h5 Cadastar Aluno
+section.new-user
+	section.avatar
+		img(class="icon-avatar")
+		md-button(class="md-raised md-primary") Inserir Imagem
+	section.attributes
+		md-input-container
+			label Nome
+			input(type="text", ng-model="searchModel.name")
+		md-input-container
+			label Data Nascimento
+			input(type="date", ng-model="searchModel.nascimento")
+		md-input-container
+			label Email
+			input(type="email", ng-model="searchModel.email")
+	md-button(class="md-raised md-primary"  ng-click="true") Cadastrar

@@ -5,14 +5,32 @@
     <input type="text" ng-model="searchModel.search"/>
   </md-input-container>
 </section>
-<md-subheader class="md-no-sticky">Alunos Sugeridos</md-subheader>
+<h5>Alunos Sugeridos</h5>
 <section class="suggestion">
-  <md-list-item ng-repeat="person in [1,2,2,4,5,6] track by $index"><img alt="{{ person.name }}" holder="holder.js/35x35?auto=yes&amp;random=yes&amp;text=BRU" class="img-responsive"/>
-  <p ng-if="coreEvents.search">Bruno Alexandre</p>
-  <ng-md-icon icon="add" style="fill:blue" size="35" ng-click="true"></ng-md-icon>
+  <section ng-repeat="person in [1,2,2,4,4,4,4,4,4] track by $index">
+    <md-list-item><img alt="{{ person.name }}" holder="holder.js/35x35?auto=yes&amp;random=yes&amp;text=BRU" class="img-responsive"/>
+    <p ng-if="coreEvents.search">Bruno Alexandre</p>
+    <ng-md-icon icon="add" style="fill:blue" size="35" ng-click="true"></ng-md-icon>
+  </section>
 </section>
-<section class="suggestion">
-  <md-list-item ng-repeat="person in [1,2,2,4,5,6] track by $index"><img alt="{{ person.name }}" holder="holder.js/35x35?auto=yes&amp;random=yes&amp;text=BRU" class="img-responsive"/>
-  <p ng-if="coreEvents.search">Bruno Alexandre</p>
-  <ng-md-icon icon="add" style="fill:blue" size="35" ng-click="true"></ng-md-icon>
+<h5>Cadastar Aluno</h5>
+<section class="new-user">
+  <section class="avatar"><img class="icon-avatar"/>
+    <md-button class="md-raised md-primary">Inserir Imagem</md-button>
+  </section>
+  <section class="attributes">
+    <md-input-container>
+      <label>Nome</label>
+      <input type="text" ng-model="searchModel.name"/>
+    </md-input-container>
+    <md-input-container>
+      <label>Data Nascimento</label>
+      <input type="date" ng-model="searchModel.nascimento"/>
+    </md-input-container>
+    <md-input-container>
+      <label>Email</label>
+      <input type="email" ng-model="searchModel.email"/>
+    </md-input-container>
+  </section>
+  <md-button ng-click="true" class="md-raised md-primary">Cadastrar</md-button>
 </section>
