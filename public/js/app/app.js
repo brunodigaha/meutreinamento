@@ -13,6 +13,7 @@ angular
 	require('angularMaterial').name,
 	require('angularFire').name,
 	require('angularHolderjs').name,
+	require('angularUploadcare').name,
 	require('./auth').name,
 	require('./core').name,
 	require('./user').name,

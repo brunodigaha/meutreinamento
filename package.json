@@ -71,6 +71,7 @@
     "angularFire": "./public/bower_components/angularfire/dist/angularfire.js",
     "lodash": "./public/bower_components/lodash/lodash.js",
     "angularHolderjs": "./public/bower_components/angular-holderjs/src/holder.js",
+    "angularUploadcare": "./public/bower_components/angular-uploadcare/angular-uploadcare.js",
     "holderjs": "./public/bower_components/holderjs/holder.js",
     "modernizr": "./public/bower_components/modernizr/modernizr.js",
     "ui-router": "./public/bower_components/angular-ui-router/release/angular-ui-router.js"
@@ -126,6 +127,10 @@
     "holderjs": {
       "exports": "holderjs",
       "depends": null
+    },
+    "angularUploadcare": {
+      "exports": "angular.module('ng-uploadcare')",
+      "depends": "angular"
     },
     "angularHolderjs": {
       "exports": "angular.module('ngHolder')",

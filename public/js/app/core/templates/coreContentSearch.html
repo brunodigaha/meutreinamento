@@ -15,13 +15,13 @@
 </section>
 <h5>Cadastar Aluno</h5>
 <section class="new-user">
-  <section class="avatar"><img class="icon-avatar"/>
+  <section class="avatar"><img ng-if="!searchModel.image" class="icon-avatar"/><img ng-src="{{searchModel.image}}" ng-if="searchModel.image" class="img-responsive icon2"/>
     <md-button class="md-raised md-primary">Inserir Imagem</md-button>
   </section>
   <section class="attributes">
     <md-input-container>
       <label>Nome</label>
-      <input type="text" ng-model="searchModel.name"/>
+      <input type="text" ng-model="searchModel.image"/>
     </md-input-container>
     <md-input-container>
       <label>Data Nascimento</label>
@@ -33,4 +33,5 @@
     </md-input-container>
   </section>
   <md-button ng-click="true" class="md-raised md-primary">Cadastrar</md-button>
+  <uploadcare-widget ng-model="object.image.info.uuid" data-public-key="eb39c5def657fcd88946" data-locale="pt" data-tabs="file facebook gdrive dropbox instagram evernote flickr skydrive" data-images-only="true" data-path-value="true" data-preview-step="true" data-clearable="true" data-multiple="false" data-crop="free" on-upload-complete="onUCUploadComplete(info)" on-widget-ready="onUCWidgetReady(widget)" value="{{ object.image.info.cdnUrl }}"></uploadcare-widget>
 </section>

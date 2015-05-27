@@ -40,6 +40,16 @@ module.exports = {
 					template: fs.readFileSync(__dirname + '/templates/coreHeader.html')
 				},
 				'contentSearch@core': {
+					controller: function($scope) {
+						$scope.searchModel={};
+						$scope.onUCUploadComplete = function (info){
+							console.log(info);
+							$scope.searchModel.image=info.cdnUrl;
+							console.log(info.cdnURL);
+							$scope.$digest();
+
+						};
+					},
 					template: fs.readFileSync(__dirname + '/templates/coreContentSearch.html')	
 				}
 			}

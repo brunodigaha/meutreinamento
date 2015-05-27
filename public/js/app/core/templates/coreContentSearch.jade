@@ -11,12 +11,13 @@ section.suggestion
 h5 Cadastar Aluno
 section.new-user
 	section.avatar
-		img(class="icon-avatar")
+		img(class="icon-avatar" ng-if="!searchModel.image")
+		img(class="img-responsive icon2" ng-src="{{searchModel.image}}" ng-if="searchModel.image")
 		md-button(class="md-raised md-primary") Inserir Imagem
 	section.attributes
 		md-input-container
 			label Nome
-			input(type="text", ng-model="searchModel.name")
+			input(type="text", ng-model="searchModel.image")
 		md-input-container
 			label Data Nascimento
 			input(type="date", ng-model="searchModel.nascimento")
@@ -24,3 +25,4 @@ section.new-user
 			label Email
 			input(type="email", ng-model="searchModel.email")
 	md-button(class="md-raised md-primary"  ng-click="true") Cadastrar
+	uploadcare-widget(ng-model="object.image.info.uuid" data-public-key="eb39c5def657fcd88946" data-locale="pt" data-tabs="file facebook gdrive dropbox instagram evernote flickr skydrive" data-images-only="true" data-path-value="true" data-preview-step="true" data-clearable="true" data-multiple="false" data-crop="free" on-upload-complete="onUCUploadComplete(info)" on-widget-ready="onUCWidgetReady(widget)" value="{{ object.image.info.cdnUrl }}")
