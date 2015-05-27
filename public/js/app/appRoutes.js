@@ -18,6 +18,8 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider, 
 				{url:'/login'},require('./auth/authRoutes.js').auth.login));
 
    // $mdThemingProvider.theme('default')
-    // .primaryPalette('brown')
-    // .accentPalette('orange');	
+   //  .primaryPalette('brown')
+   //  .accentPalette('orange')
+   //  .warnPalette('red')
+    // .backgroundPalette('blue-grey');
 };

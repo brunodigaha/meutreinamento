@@ -35,7 +35,7 @@
   "devDependencies": {
     "bower": "~1.3.12",
     "brfs": "^1.4.0",
-    "browser-sync": "^2.7.0",
+    "browser-sync": "^2.7.5",
     "browserify": "^10.1.0",
     "browserify-shim": "^3.8.6",
     "css-sprite": "^0.9.8",
@@ -99,7 +99,11 @@
     },
     "angularMaterial": {
       "exports": "angular.module('ngMaterial')",
-      "depends": ["angular","angularAnimate","angularAria"]
+      "depends": [
+        "angular",
+        "angularAnimate",
+        "angularAria"
+      ]
     },
     "angularCookies": {
       "exports": "angular.module('ngCookies')",
@@ -111,7 +115,10 @@
     },
     "angularFire": {
       "exports": "angular.module('firebase')",
-      "depends": ["angular","firebase"]
+      "depends": [
+        "angular",
+        "firebase"
+      ]
     },
     "lodash": {
       "exports": "lodash",

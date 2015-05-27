@@ -5,33 +5,33 @@
     <input type="text" ng-model="searchModel.search"/>
   </md-input-container>
 </section>
-<h5>Alunos Sugeridos</h5>
+<h6>Alunos Sugeridos</h6>
 <section class="suggestion">
-  <section ng-repeat="person in [1,2,2,4,4,4,4,4,4] track by $index">
+  <section ng-repeat="person in [1,2,2,4,4,4] track by $index">
     <md-list-item><img alt="{{ person.name }}" holder="holder.js/35x35?auto=yes&amp;random=yes&amp;text=BRU" class="img-responsive"/>
     <p ng-if="coreEvents.search">Bruno Alexandre</p>
-    <ng-md-icon icon="add" style="fill:blue" size="35" ng-click="true"></ng-md-icon>
+    <ng-md-icon icon="add" style="fill:blue" size="25" ng-click="true"></ng-md-icon>
   </section>
 </section>
-<h5>Cadastar Aluno</h5>
+<h6>Cadastar Aluno</h6>
 <section class="new-user">
   <section class="avatar"><img ng-if="!searchModel.image" class="icon-avatar"/><img ng-src="{{searchModel.image}}" ng-if="searchModel.image" class="img-responsive icon2"/>
-    <md-button class="md-raised md-primary">Inserir Imagem</md-button>
+    <!-- md-button(class="md-raised md-primary") Inserir Imagem-->
+    <uploadcare-widget ng-model="object.image.info.uuid" data-public-key="eb39c5def657fcd88946" data-locale="pt" data-tabs="file facebook gdrive dropbox instagram evernote flickr skydrive" data-images-only="true" data-path-value="true" data-preview-step="true" data-clearable="true" data-multiple="false" data-crop="free" on-upload-complete="onUCUploadComplete(info)" on-widget-ready="onUCWidgetReady(widget)" value="{{ object.image.info.cdnUrl }}"></uploadcare-widget>
   </section>
   <section class="attributes">
     <md-input-container>
-      <label>Nome</label>
+      <label>Nome Completo</label>
       <input type="text" ng-model="searchModel.image"/>
     </md-input-container>
     <md-input-container>
-      <label>Data Nascimento</label>
-      <input type="date" ng-model="searchModel.nascimento"/>
+      <label>Telefone</label>
+      <input type="tel" ng-model="searchModel.email"/>
     </md-input-container>
     <md-input-container>
-      <label>Email</label>
-      <input type="email" ng-model="searchModel.email"/>
+      <label>Data de Nascimento</label>
+      <input type="date" ng-model="searchModel.nascimento"/>
     </md-input-container>
   </section>
   <md-button ng-click="true" class="md-raised md-primary">Cadastrar</md-button>
-  <uploadcare-widget ng-model="object.image.info.uuid" data-public-key="eb39c5def657fcd88946" data-locale="pt" data-tabs="file facebook gdrive dropbox instagram evernote flickr skydrive" data-images-only="true" data-path-value="true" data-preview-step="true" data-clearable="true" data-multiple="false" data-crop="free" on-upload-complete="onUCUploadComplete(info)" on-widget-ready="onUCWidgetReady(widget)" value="{{ object.image.info.cdnUrl }}"></uploadcare-widget>
 </section>

@@ -10705,7 +10705,13 @@ td {
 }
 .icon2 {
   width: 60px;
-  height: auto;
+  height: uuto;
+}
+/* bruno22
+*/
+md-input-container.md-default-theme label,
+md-input-container.md-default-theme .md-placeholder {
+  color: #808080;
 }
 .login {
   position: absolute;
@@ -10745,7 +10751,6 @@ td {
   margin-left: 0%;
   margin-right: 0%;
   margin-top: 0.2em;
-  text-align: center;
 }
 .list-users:before,
 .list-users-open:before,
@@ -10762,17 +10767,118 @@ td {
 .list-users-open:last-child {
   margin-right: 0%;
 }
-.list-users-open {
-  display: inline;
+.list-users img,
+.list-users-open img {
+  margin-bottom: 0.3em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
-.list-users-open p {
-  display: inline-block;
-  font-size: 1em;
+@media only screen and (min-width: 1800px) {
+  .list-users img,
+  .list-users-open img {
+    width: 90%;
+  }
+}
+.list-users-open section {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+.list-users-open section:before,
+.list-users-open section:after {
+  content: '';
+  display: table;
+}
+.list-users-open section:after {
+  clear: both;
+}
+.list-users-open section:nth-child(1n) {
+  margin-right: 0%;
+  float: right;
+}
+.list-users-open section:nth-child(1n+1) {
+  clear: both;
+}
+.list-users-open section img {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 24%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.list-users-open section img:before,
+.list-users-open section img:after {
+  content: '';
+  display: table;
+}
+.list-users-open section img:after {
+  clear: both;
+}
+.list-users-open section img:last-child {
+  margin-right: 0%;
+}
+.list-users-open section p {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 64%;
+  margin-left: 0%;
+  margin-right: 0%;
   color: #e0e0e0;
-  vertical-align: middle;
+  padding-top: 5%;
+  padding-left: 2%;
+  margin: 0;
+  font-size: 90%;
 }
-.list-users-open ng-md-icon {
+.list-users-open section p:before,
+.list-users-open section p:after {
+  content: '';
+  display: table;
+}
+.list-users-open section p:after {
+  clear: both;
+}
+.list-users-open section p:last-child {
+  margin-right: 0%;
+}
+@media only screen and (min-width: 1800px) {
+  .list-users-open section p {
+    padding-top: 8%;
+    font-size: 140%;
+  }
+}
+.list-users-open section ng-md-icon {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 10%;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding-top: 5%;
   cursor: pointer;
+}
+.list-users-open section ng-md-icon:before,
+.list-users-open section ng-md-icon:after {
+  content: '';
+  display: table;
+}
+.list-users-open section ng-md-icon:after {
+  clear: both;
+}
+.list-users-open section ng-md-icon:last-child {
+  margin-right: 0%;
+}
+.list-users-open section ng-md-icon svg {
+  max-width: 100%;
 }
 .perfil {
   *zoom: 1;
@@ -10977,8 +11083,24 @@ td {
   font-size: 0.8em;
 }
 .search {
-  padding-left: 5em;
-  padding-right: 5em;
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.search:before,
+.search:after {
+  content: '';
+  display: table;
+}
+.search:after {
+  clear: both;
+}
+.search:last-child {
+  margin-right: 0%;
 }
 .suggestion {
   *zoom: 1;
@@ -11005,9 +11127,9 @@ td {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 34%;
+  width: 48.5%;
   margin-left: 0%;
-  margin-right: 32%;
+  margin-right: 3%;
 }
 .suggestion section:before,
 .suggestion section:after {
@@ -11050,7 +11172,7 @@ td {
   clear: none;
   text-align: inherit;
   width: 33.33333333333333%;
-  margin-left: 0%;
+  margin-left: 16.666666666666664%;
   margin-right: 0%;
   text-align: center;
 }
@@ -11072,7 +11194,7 @@ td {
   text-align: inherit;
   width: 33.33333333333333%;
   margin-left: 0%;
-  margin-right: 33.33333333333333%;
+  margin-right: 16.666666666666664%;
 }
 .new-user .attributes:before,
 .new-user .attributes:after {
@@ -11083,5 +11205,25 @@ td {
   clear: both;
 }
 .new-user .attributes:last-child {
-  margin-right: 33.33333333333333%;
+  margin-right: 16.666666666666664%;
+}
+.new-user button {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 33.33333333333333%;
+  margin-left: 33.33333333333333%;
+  margin-right: 0%;
+}
+.new-user button:before,
+.new-user button:after {
+  content: '';
+  display: table;
+}
+.new-user button:after {
+  clear: both;
+}
+.new-user button:last-child {
+  margin-right: 0%;
 }
