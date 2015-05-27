@@ -11,6 +11,7 @@
 		height 100%
 		overflow-y auto
 	.aside-open
+		@extend .aside
 		col(3/12,gutter:0)
 	// end css aside
 
@@ -29,6 +30,7 @@
 			background-color palette('Grey', '50')
 			margin-top 6em
 	.content-main-open
+		@extend .content-main
 		col(9/12,gutter:0)
 		shift(3/12,gutter:0)
 	// end css content

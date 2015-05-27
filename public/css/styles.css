@@ -10508,7 +10508,8 @@ td {
 .wrap:last-child {
   margin-right: 0%;
 }
-.aside {
+.aside,
+.aside-open {
   *zoom: 1;
   float: left;
   clear: none;
@@ -10522,14 +10523,18 @@ td {
   overflow-y: auto;
 }
 .aside:before,
-.aside:after {
+.aside-open:before,
+.aside:after,
+.aside-open:after {
   content: '';
   display: table;
 }
-.aside:after {
+.aside:after,
+.aside-open:after {
   clear: both;
 }
-.aside:last-child {
+.aside:last-child,
+.aside-open:last-child {
   margin-right: 0%;
 }
 .aside-open {
@@ -10552,7 +10557,8 @@ td {
 .aside-open:last-child {
   margin-right: 0%;
 }
-.content-main {
+.content-main,
+.content-main-open {
   *zoom: 1;
   float: left;
   clear: none;
@@ -10564,17 +10570,22 @@ td {
   left: 8.333333333333332%;
 }
 .content-main:before,
-.content-main:after {
+.content-main-open:before,
+.content-main:after,
+.content-main-open:after {
   content: '';
   display: table;
 }
-.content-main:after {
+.content-main:after,
+.content-main-open:after {
   clear: both;
 }
-.content-main:last-child {
+.content-main:last-child,
+.content-main-open:last-child {
   margin-right: 0%;
 }
-.content-main .header {
+.content-main .header,
+.content-main-open .header {
   *zoom: 1;
   float: left;
   clear: none;
@@ -10589,17 +10600,22 @@ td {
   height: 5em;
 }
 .content-main .header:before,
-.content-main .header:after {
+.content-main-open .header:before,
+.content-main .header:after,
+.content-main-open .header:after {
   content: '';
   display: table;
 }
-.content-main .header:after {
+.content-main .header:after,
+.content-main-open .header:after {
   clear: both;
 }
-.content-main .header:last-child {
+.content-main .header:last-child,
+.content-main-open .header:last-child {
   margin-right: 0%;
 }
-.content-main .content {
+.content-main .content,
+.content-main-open .content {
   *zoom: 1;
   float: left;
   clear: none;
@@ -10611,14 +10627,18 @@ td {
   margin-top: 6em;
 }
 .content-main .content:before,
-.content-main .content:after {
+.content-main-open .content:before,
+.content-main .content:after,
+.content-main-open .content:after {
   content: '';
   display: table;
 }
-.content-main .content:after {
+.content-main .content:after,
+.content-main-open .content:after {
   clear: both;
 }
-.content-main .content:last-child {
+.content-main .content:last-child,
+.content-main-open .content:last-child {
   margin-right: 0%;
 }
 .content-main-open {

@@ -1,2 +1,2 @@
-section.aside(ui-view="aside" ng-class="{'aside-open animated slideInLeft': coreEvents.search}")
-section.content-main(ui-view="contentMain" ng-class="{'content-main-open animated zoomInUp': coreEvents.search}" )
+section(ui-view="aside" ng-class="{'aside':!coreEvents.search, 'aside-open': coreEvents.search}")
+section(ui-view="contentMain" ng-class="{'content-main':!coreEvents.search, 'content-main-open animated zoomInUp': coreEvents.search}" )
