@@ -2,27 +2,29 @@ section.search
 	md-input-container
 		label Buscar Aluno
 		input(type="text", ng-model="searchModel.search")
-h6 Alunos Sugeridos
+h5(class="suggestion") Alunos Sugeridos
 section.suggestion
 	section(ng-repeat="person in [1,2,2,4,4,4] track by $index")
 		<md-list-item><img alt="{{ person.name }}" holder="holder.js/35x35?auto=yes&amp;random=yes&amp;text=BRU" class="img-responsive"/>
 		<p ng-if="coreEvents.search">Bruno Alexandre</p>
 		ng-md-icon(icon="add"  style="fill:blue" size="25" ng-click="true")
-h6 Cadastar Aluno
+// md-subheader.md-no-sticky Cadastrar Aluno
 section.new-user
-	section.avatar
-		img(class="icon-avatar" ng-if="!searchModel.image")
-		img(class="img-responsive icon2" ng-src="{{searchModel.image}}" ng-if="searchModel.image")
-		// md-button(class="md-raised md-primary") Inserir Imagem
-		uploadcare-widget(ng-model="object.image.info.uuid" data-public-key="eb39c5def657fcd88946" data-locale="pt" data-tabs="file facebook gdrive dropbox instagram evernote flickr skydrive" data-images-only="true" data-path-value="true" data-preview-step="true" data-clearable="true" data-multiple="false" data-crop="free" on-upload-complete="onUCUploadComplete(info)" on-widget-ready="onUCWidgetReady(widget)" value="{{ object.image.info.cdnUrl }}")
-	section.attributes
-		md-input-container
-			label Nome Completo
-			input(type="text", ng-model="searchModel.image")
-		md-input-container
-			label Telefone
-			input(type="tel", ng-model="searchModel.email")
-		md-input-container
-			label Data de Nascimento
-			input(type="date", ng-model="searchModel.nascimento")
-	md-button(class="md-raised md-primary"  ng-click="true") Cadastrar
+	md-content
+		h6 Cadastrar Aluno
+		section.avatar
+			img(class="icon-avatar" ng-if="!searchModel.image")
+			img(class="img-responsive icon2" ng-src="{{searchModel.image}}" ng-if="searchModel.image")
+			// md-button(class="md-raised md-primary") Inserir Imagem
+			uploadcare-widget(ng-model="object.image.info.uuid" data-public-key="eb39c5def657fcd88946" data-locale="pt" data-tabs="file facebook gdrive dropbox instagram evernote flickr skydrive" data-images-only="true" data-path-value="true" data-preview-step="true" data-clearable="true" data-multiple="false" data-crop="free" on-upload-complete="onUCUploadComplete(info)" on-widget-ready="onUCWidgetReady(widget)" value="{{ object.image.info.cdnUrl }}")
+		section.attributes
+			md-input-container
+				label Nome Completo
+				input(ng-model="searchModel.name")
+			md-input-container
+				label Telefone
+				input(type="tel", ng-model="searchModel.email")
+			md-input-container
+				label Data de Nascimento
+				input(type="date", ng-model="searchModel.nascimento")
+		md-button(class="md-raised md-primary"  ng-click="true") Cadastrar Aluno

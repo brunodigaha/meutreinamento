@@ -17,9 +17,9 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider, 
 		.state('login',angular.extend(
 				{url:'/login'},require('./auth/authRoutes.js').auth.login));
 
-   // $mdThemingProvider.theme('default')
+   $mdThemingProvider.theme('default')
    //  .primaryPalette('brown')
    //  .accentPalette('orange')
    //  .warnPalette('red')
-    // .backgroundPalette('blue-grey');
+    .backgroundPalette('blue-grey');
 };

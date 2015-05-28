@@ -10625,6 +10625,7 @@ td {
   margin-right: 0%;
   background-color: #fafafa;
   margin-top: 6em;
+overflow-y
 }
 .content-main .content:before,
 .content-main-open .content:before,
@@ -10712,6 +10713,12 @@ td {
 md-input-container.md-default-theme label,
 md-input-container.md-default-theme .md-placeholder {
   color: #808080;
+}
+button:focus,
+svg:focus,
+ng-md-icon:focus,
+img:focus {
+  outline: 0;
 }
 .login {
   position: absolute;
@@ -11087,8 +11094,8 @@ md-input-container.md-default-theme .md-placeholder {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 100%;
-  margin-left: 0%;
+  width: 55.55555555555556%;
+  margin-left: 22.22222222222222%;
   margin-right: 0%;
 }
 .search:before,
@@ -11102,13 +11109,23 @@ md-input-container.md-default-theme .md-placeholder {
 .search:last-child {
   margin-right: 0%;
 }
+.search md-input-container {
+  margin: 0;
+  padding: 0;
+}
+h5.suggestion {
+  box-sizing: border-box;
+  padding-left: 25%;
+  padding-top: 0;
+  margin-top: 0;
+}
 .suggestion {
   *zoom: 1;
   float: left;
   clear: none;
   text-align: inherit;
-  width: 100%;
-  margin-left: 0%;
+  width: 77.77777777777779%;
+  margin-left: 11.11111111111111%;
   margin-right: 0%;
 }
 .suggestion:before,
@@ -11151,9 +11168,11 @@ md-input-container.md-default-theme .md-placeholder {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 100%;
-  margin-left: 0%;
+  width: 88.88888888888889%;
+  margin-left: 5.555555555555555%;
   margin-right: 0%;
+  margin-top: 1em;
+  margin-bottom: 2em;
 }
 .new-user:before,
 .new-user:after {
@@ -11166,15 +11185,21 @@ md-input-container.md-default-theme .md-placeholder {
 .new-user:last-child {
   margin-right: 0%;
 }
+.new-user h6 {
+  margin: 0;
+  padding: 0;
+  margin-left: 1em;
+}
 .new-user .avatar {
   *zoom: 1;
   float: left;
   clear: none;
   text-align: inherit;
-  width: 33.33333333333333%;
-  margin-left: 16.666666666666664%;
-  margin-right: 0%;
+  width: 37.6%;
+  margin-left: 6.5%;
+  margin-right: 4%;
   text-align: center;
+  margin-top: 4%;
 }
 .new-user .avatar:before,
 .new-user .avatar:after {
@@ -11192,9 +11217,10 @@ md-input-container.md-default-theme .md-placeholder {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 33.33333333333333%;
+  width: 40%;
   margin-left: 0%;
-  margin-right: 16.666666666666664%;
+  margin-right: 6.25%;
+  margin-bottom: 3%;
 }
 .new-user .attributes:before,
 .new-user .attributes:after {
@@ -11205,16 +11231,21 @@ md-input-container.md-default-theme .md-placeholder {
   clear: both;
 }
 .new-user .attributes:last-child {
-  margin-right: 16.666666666666664%;
+  margin-right: 6.25%;
+}
+.new-user .attributes md-input-container {
+  padding: 0;
 }
 .new-user button {
   *zoom: 1;
   float: left;
   clear: none;
   text-align: inherit;
-  width: 33.33333333333333%;
-  margin-left: 33.33333333333333%;
+  width: 60%;
+  margin-left: 20%;
   margin-right: 0%;
+  text-align: center;
+  margin-bottom: 3%;
 }
 .new-user button:before,
 .new-user button:after {
