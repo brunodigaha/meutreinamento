@@ -12,20 +12,20 @@ module.exports = {
 					controller: function($scope, coreEventsService, RestangularCustom, $mdDialog) {
 						var coreEvents = $scope.coreEvents = coreEventsService;
 						// $scope.user = RestangularCustom.all('usuario').getList().$object;
-					 $scope.doSecondaryAction = function(event) {
-						 var confirm = $mdDialog.confirm()
-						 .title('Você realmente deseja fechar este usuário?')
-						 .content('O usuário será fechado, para acesso a ele novamente é necessário reabrí-lo.')
-						 .ariaLabel('Lucky day')
-						 .ok('Fechar!')
-						 .cancel('Cancelar')
-						 .targetEvent(event);
-						 $mdDialog.show(confirm).then(function() {
-							 alert('O usuário foi fechado!');
-						 }, function() {
-							 // alert('Foi cancelado');
-						 });
-					 };	
+						$scope.doSecondaryAction = function(event) {
+							var confirm = $mdDialog.confirm()
+							.title('Você realmente deseja fechar este usuário?')
+							.content('O usuário será fechado, para acesso a ele novamente é necessário reabrí-lo.')
+							.ariaLabel('Lucky day')
+							.ok('Fechar !')
+							.cancel('Cancelar')
+							.targetEvent(event);
+							$mdDialog.show(confirm).then(function() {
+								alert('O usuário foi fechado !');
+							}, function() {
+								// alert('Foi cancelado');
+							});
+						};	
 					},
 					template: fs.readFileSync(__dirname + '/templates/coreAside.html')
 				},
@@ -40,14 +40,27 @@ module.exports = {
 					template: fs.readFileSync(__dirname + '/templates/coreHeader.html')
 				},
 				'contentSearch@core': {
-					controller: function($scope) {
-						$scope.searchModel={};
+					controller: function($scope,$mdDialog) {
 						$scope.onUCUploadComplete = function (info){
 							console.log(info);
 							$scope.searchModel.image=info.cdnUrl;
 							console.log(info.cdnURL);
 							$scope.$digest();
-
+						};
+						$scope.open_user = function(event) {
+							var confirm = $mdDialog.confirm()
+							.title('Deseja Abrir este Usuário?')
+							.content('A ficha do usuário será aberta para consultas')
+							.ariaLabel('Lucky day')
+							.ok('Abrir!')
+							.cancel('Cancelar')
+							.targetEvent(event);
+							$mdDialog.show(confirm).then(function() {
+								alert('O usuário foi Aberto!'); 
+							}, function() {
+								// alert('Foi cancelado');
+								console.log("cancelou abrir usuario");
+							});
 						};
 					},
 					template: fs.readFileSync(__dirname + '/templates/coreContentSearch.html')	

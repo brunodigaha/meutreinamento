@@ -8,10 +8,11 @@ module.exports = function (gulp,plugins){
       ignore: [
         'gulpfile.js',
 		'public/js/',
-		'public/css',
+		'public/css/',
+		'public/images/',
+		'public/bower_components/',
         'gulp_tasks/',
         'node_modules/',
-		'bower_components',
         'server/views/'
       ]
     })

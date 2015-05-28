@@ -31,7 +31,7 @@ exports.login = {
 				reply({success:false, message: err.message}).code(404);
 			}
 			else if (!usuario || usuario===null) {
-				reply({success:false, message: 'Usuário ou senha incorretos'}).code(404);
+				reply({success:false, message: 'Usuário ou senha incorreto'}).code(404);
 			}
 			else {
 				bcrypt.compare(request.payload.password, usuario.credencial.password, function (err,isValid){

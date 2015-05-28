@@ -11113,7 +11113,7 @@ img:focus {
   margin: 0;
   padding: 0;
 }
-h5.suggestion {
+h6.suggestion {
   box-sizing: border-box;
   padding-left: 25%;
   padding-top: 0;
@@ -11184,11 +11184,6 @@ h5.suggestion {
 }
 .new-user:last-child {
   margin-right: 0%;
-}
-.new-user h6 {
-  margin: 0;
-  padding: 0;
-  margin-left: 1em;
 }
 .new-user .avatar {
   *zoom: 1;

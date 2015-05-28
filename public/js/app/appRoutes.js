@@ -17,9 +17,15 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider, 
 		.state('login',angular.extend(
 				{url:'/login'},require('./auth/authRoutes.js').auth.login));
 
-   $mdThemingProvider.theme('default')
+   // $mdThemingProvider.theme('default')
+    // .primaryPalette('light-green')
+   //  .accentPalette('orange')
+   //  .warnPalette('red')
+    // .backgroundPalette('blue-grey');
+	$mdThemingProvider.theme('blue-grey')
    //  .primaryPalette('brown')
    //  .accentPalette('orange')
    //  .warnPalette('red')
     .backgroundPalette('blue-grey');
+
 };
