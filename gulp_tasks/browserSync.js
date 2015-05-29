@@ -8,7 +8,7 @@ module.exports = function (gulp,plugins){
 				// 'server/controllers/*.*',
 				// 'server/models/*.*',
 				'public/css/*.css',
-				'public/js/*.js',
+				// 'public/js/*.js',
 				'./server.js'
 			],
 			port: 8000,

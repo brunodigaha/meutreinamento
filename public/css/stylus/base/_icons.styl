@@ -17,13 +17,15 @@
 	content embedurl("../../../images/edit-plan.png")
 	@extend .responsive
 	width 1.2em
-.icon-notification
-	content embedurl("../../../images/notification.png")
-	@extend .responsive
-	width 2em
+span.icon-notification
+	&:before
+		content embedurl("../../../images/notification.png")
+		width 20px
 .icon-payments
-	content embedurl("../../../images/payments.png")
-	@extend .responsive
+	background-image embedurl("../../../images/payments.png")
+	background-repeat no-repeat
+	text-indent: -99999px;
+	display inline-block
 	width 2em
 .icon-goal
 	content embedurl("../../../images/goal.png")
