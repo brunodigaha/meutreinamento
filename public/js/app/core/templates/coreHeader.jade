@@ -1,9 +1,9 @@
 section.perfil(ui-view="perfil")
-	a(href='' ng-click="coreEvents.toggle_menu();")
-		img(class="img-responsive" holder='holder.js/80x80?auto=yes&theme=sky&text=BRU')
-	h4.user-name Bruno
-	hr.line
-	code.breadcrumb Treinos
+	section.user
+		section.user-img
+			img(class="img-responsive" ng-click="coreEvents.toggle_menu();" holder='holder.js/80x80?auto=yes&theme=sky&text=BRU')
+		h4.user-name Bruno
+		span.breadcrumb Treinos
 	section.menu(ui-view="menu" ng-if="coreEvents.menu" )
 		section.menu-header
 			img(class="img-responsive" holder='holder.js/45x45?auto=yes&theme=sky&text=BRU')
@@ -32,7 +32,7 @@ section.perfil(ui-view="perfil")
 					li mensalidades
 					li avaliações
 
-section.user(ui-view="user")
+section.user-admin(ui-view="user-admin")
 	img(class="img-responsive" holder='holder.js/50x50?auto=yes&theme=sky&text=BRU')
 	h6.admin-name Bruno
 	hr.line

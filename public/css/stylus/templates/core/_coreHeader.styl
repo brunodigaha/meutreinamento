@@ -2,22 +2,36 @@
 	col(6/15,gutter:0)
 	height 5em
 	background-color palette('Grey', '300')
-	.user-name
-		display inline
-		color palette('Grey', '600')
-		font-weight bold
-	.line
-		display inline
-		vertical-align middle
-	.breadcrumb
-		display inline
-		color palette('Grey', '600')
+	.user
+		col(5/5,gutter:0)
+		.user-img
+			col(1.1/5,gutter:0)
+			box-sizing border-box
+			text-align left
+			margin-left 1em
+			margin-top .2em
+		.user-name
+			col(1/5,gutter:0)
+			border-bottom 1px solid
+			position absolute
+			left 4.5em
+			top -1.5em
+			color palette('Grey', '600')
+			text-align left
+			font-weight bold
+		.breadcrumb
+			col(1/5,gutter:0)
+			position absolute
+			left 6.3em
+			top 2.5em
+			text-align right
+			color palette('Grey', '600')
 	.menu
 		col(4/11,gutter:0)
 		height 25em
 		position absolute
 		top 6em
-		left 0.5em
+		left 1em
 		background-color palette('Grey', '300')
 		padding 1em
 		.menu-header
@@ -45,7 +59,7 @@
 					display inline
 
 
-.user
+.user-admin
 	col(3/15,gutter:0)
 	shift(12/15,gutter:0)
 	position fixed

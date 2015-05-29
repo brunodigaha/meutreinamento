@@ -10909,18 +10909,101 @@ img:focus {
 .perfil:last-child {
   margin-right: 0%;
 }
-.perfil .user-name {
-  display: inline;
+.perfil .user {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.perfil .user:before,
+.perfil .user:after {
+  content: '';
+  display: table;
+}
+.perfil .user:after {
+  clear: both;
+}
+.perfil .user:last-child {
+  margin-right: 0%;
+}
+.perfil .user .user-img {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 22.000000000000004%;
+  margin-left: 0%;
+  margin-right: 0%;
+  box-sizing: border-box;
+  text-align: left;
+  margin-left: 1em;
+  margin-top: 0.2em;
+}
+.perfil .user .user-img:before,
+.perfil .user .user-img:after {
+  content: '';
+  display: table;
+}
+.perfil .user .user-img:after {
+  clear: both;
+}
+.perfil .user .user-img:last-child {
+  margin-right: 0%;
+}
+.perfil .user .user-name {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 20%;
+  margin-left: 0%;
+  margin-right: 0%;
+  border-bottom: 1px solid;
+  position: absolute;
+  left: 4.5em;
+  top: -1.5em;
   color: #757575;
+  text-align: left;
   font-weight: bold;
 }
-.perfil .line {
-  display: inline;
-  vertical-align: middle;
+.perfil .user .user-name:before,
+.perfil .user .user-name:after {
+  content: '';
+  display: table;
 }
-.perfil .breadcrumb {
-  display: inline;
+.perfil .user .user-name:after {
+  clear: both;
+}
+.perfil .user .user-name:last-child {
+  margin-right: 0%;
+}
+.perfil .user .breadcrumb {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 20%;
+  margin-left: 0%;
+  margin-right: 0%;
+  position: absolute;
+  left: 6.3em;
+  top: 2.5em;
+  text-align: right;
   color: #757575;
+}
+.perfil .user .breadcrumb:before,
+.perfil .user .breadcrumb:after {
+  content: '';
+  display: table;
+}
+.perfil .user .breadcrumb:after {
+  clear: both;
+}
+.perfil .user .breadcrumb:last-child {
+  margin-right: 0%;
 }
 .perfil .menu {
   *zoom: 1;
@@ -10933,7 +11016,7 @@ img:focus {
   height: 25em;
   position: absolute;
   top: 6em;
-  left: 0.5em;
+  left: 1em;
   background-color: #e0e0e0;
   padding: 1em;
 }
@@ -11047,7 +11130,7 @@ img:focus {
 .perfil .menu .menu-content .icons-content li {
   display: inline;
 }
-.user {
+.user-admin {
   *zoom: 1;
   float: left;
   clear: none;
@@ -11061,28 +11144,28 @@ img:focus {
   height: 5em;
   background-color: #e0e0e0;
 }
-.user:before,
-.user:after {
+.user-admin:before,
+.user-admin:after {
   content: '';
   display: table;
 }
-.user:after {
+.user-admin:after {
   clear: both;
 }
-.user:last-child {
+.user-admin:last-child {
   margin-right: 0%;
 }
-.user .admin-name {
+.user-admin .admin-name {
   display: inline;
   vertical-align: middle;
   color: #757575;
   font-weight: bold;
 }
-.user .line {
+.user-admin .line {
   display: inline;
   vertical-align: middle;
 }
-.user .logout {
+.user-admin .logout {
   display: inline;
   color: #e53935;
   margin-left: 0.6em;
