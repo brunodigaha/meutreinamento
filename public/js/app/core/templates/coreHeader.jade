@@ -6,23 +6,22 @@ section.perfil(ui-view="perfil")
 		span.breadcrumb Treinos
 	section.menu(ui-view="menu" ng-if="coreEvents.menu" )
 		section.menu-header
-			img(class="img-responsive" holder='holder.js/45x45?auto=yes&theme=sky&text=BRU')
-			h6.user-name Bruno Alexandre
-			img(class="icon-edit-user")
-			section.icons-header
-				span(class="icon-payments")
-				div(class="icon-notification teste")
-				img(class="icon-edit-user")
-
-		md-divider
-
+			section.perfil-user
+				section.img-user
+					img(class="img-responsive" holder='holder.js/45x45?auto=yes&theme=sky&text=BRU')
+				h6 Bruno Alexandre
+				ng-md-icon(icon="settings" style="fill:grey"  size="25" ng-click="true")
+		section.icons-header
+			ng-md-icon(icon="edit" style="fill:grey"  size="45" ng-click="true")
+			ng-md-icon(icon="edit" style="fill:grey"  size="45" ng-click="true")
+			ng-md-icon(icon="edit" style="fill:grey"  size="45" ng-click="true")
 		section.menu-content
 			p Plano de Treinamento
-			img(class="icon-edit-plan")
+			ng-md-icon(icon="launch" style="fill:silver"  size="25" ng-click="true")
 			section.goal
 				img(class="icon-goal")
 			section.plan
-				h5 Ganho de Massa
+				p Ganho de Massa
 				p 2 semanas
 				p 3x por semana
 			section.icons-content

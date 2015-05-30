@@ -27,19 +27,39 @@
 			text-align right
 			color palette('Grey', '600')
 	.menu
-		col(4/11,gutter:0)
-		height 25em
+		col(3.5/11,gutter:0)
+		box-sizing border-box
+		height 22em
 		position absolute
 		top 6em
 		left 1em
 		background-color palette('Grey', '300')
-		padding 1em
+		padding 0.5em
 		.menu-header
-			// col(4/4,gutter:0)
-			img
-				margin .5em
-			.icons-header
-				margin .1em
+			col(4/4,gutter:0)
+			.perfil-user
+				col(4/4,gutter:0)
+				.img-user
+					col(.7/4,gutter:0)
+					display inline-block
+					margin 0
+					padding 0
+				h6
+					col(2.5/4,gutter:0)
+					position absolute
+					margin 0
+					top 0,5em
+					left 3.5em
+				ng-md-icon
+					col(.5/4,gutter:0)
+					shift(2.8/4,gutter:0)
+					padding-top .5em
+					text-align center
+		.icons-header
+			col(5/5,gutter:0)
+			border-bottom 1px solid #D1D1D1
+			text-align center
+				
 		.menu-content
 			col(4/4,gutter:0)
 			p
@@ -50,15 +70,11 @@
 				col(2/4,gutter:0)
 			.plan
 				col(2/4,gutter:0)
-				h5
-					margin 0
 			.icons-content
 				col(1)
 				font-size .6em
 				li
 					display inline
-
-
 .user-admin
 	col(3/15,gutter:0)
 	shift(12/15,gutter:0)

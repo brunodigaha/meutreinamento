@@ -10665,32 +10665,6 @@ overflow-y
 .content-main-open:last-child {
   margin-right: 0%;
 }
-.center-block {
-  *zoom: 1;
-  width: auto;
-  max-width: 1440px;
-  float: none;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 0;
-  padding-right: 0;
-}
-.center-block:before,
-.center-block:after {
-  content: '';
-  display: table;
-}
-.center-block:after {
-  clear: both;
-}
-.center {
-  position: absolute;
-  transform-style: preserve-3d;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 .img-responsive {
   max-width: 100%;
   height: auto;
@@ -10702,14 +10676,9 @@ overflow-y
 .active {
   border: 2px solid #00c853;
 }
-.inline {
-  display: inline;
-}
 svg {
   max-width: 100%;
 }
-/* bruno22
-*/
 md-input-container.md-default-theme label,
 md-input-container.md-default-theme .md-placeholder {
   color: #808080;
@@ -10780,6 +10749,7 @@ img:focus {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  width: 60%;
 }
 @media only screen and (min-width: 1800px) {
   .list-users img,
@@ -11010,15 +10980,16 @@ img:focus {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 36.36363636363637%;
+  width: 31.818181818181817%;
   margin-left: 0%;
   margin-right: 0%;
-  height: 25em;
+  box-sizing: border-box;
+  height: 22em;
   position: absolute;
   top: 6em;
   left: 1em;
   background-color: #e0e0e0;
-  padding: 1em;
+  padding: 0.5em;
 }
 .perfil .menu:before,
 .perfil .menu:after {
@@ -11031,11 +11002,138 @@ img:focus {
 .perfil .menu:last-child {
   margin-right: 0%;
 }
-.perfil .menu .menu-header img {
-  margin: 0.5em;
+.perfil .menu .menu-header {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
 }
-.perfil .menu .menu-header .icons-header {
-  margin: 0.1em;
+.perfil .menu .menu-header:before,
+.perfil .menu .menu-header:after {
+  content: '';
+  display: table;
+}
+.perfil .menu .menu-header:after {
+  clear: both;
+}
+.perfil .menu .menu-header:last-child {
+  margin-right: 0%;
+}
+.perfil .menu .menu-header .perfil-user {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.perfil .menu .menu-header .perfil-user:before,
+.perfil .menu .menu-header .perfil-user:after {
+  content: '';
+  display: table;
+}
+.perfil .menu .menu-header .perfil-user:after {
+  clear: both;
+}
+.perfil .menu .menu-header .perfil-user:last-child {
+  margin-right: 0%;
+}
+.perfil .menu .menu-header .perfil-user .img-user {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 17.5%;
+  margin-left: 0%;
+  margin-right: 0%;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.perfil .menu .menu-header .perfil-user .img-user:before,
+.perfil .menu .menu-header .perfil-user .img-user:after {
+  content: '';
+  display: table;
+}
+.perfil .menu .menu-header .perfil-user .img-user:after {
+  clear: both;
+}
+.perfil .menu .menu-header .perfil-user .img-user:last-child {
+  margin-right: 0%;
+}
+.perfil .menu .menu-header .perfil-user h6 {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 62.5%;
+  margin-left: 0%;
+  margin-right: 0%;
+  position: absolute;
+  margin: 0;
+  top: 0, 5em;
+  left: 3.5em;
+}
+.perfil .menu .menu-header .perfil-user h6:before,
+.perfil .menu .menu-header .perfil-user h6:after {
+  content: '';
+  display: table;
+}
+.perfil .menu .menu-header .perfil-user h6:after {
+  clear: both;
+}
+.perfil .menu .menu-header .perfil-user h6:last-child {
+  margin-right: 0%;
+}
+.perfil .menu .menu-header .perfil-user ng-md-icon {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 12.5%;
+  margin-left: 0%;
+  margin-right: 0%;
+  position: relative;
+  left: 70%;
+  padding-top: 0.5em;
+  text-align: center;
+}
+.perfil .menu .menu-header .perfil-user ng-md-icon:before,
+.perfil .menu .menu-header .perfil-user ng-md-icon:after {
+  content: '';
+  display: table;
+}
+.perfil .menu .menu-header .perfil-user ng-md-icon:after {
+  clear: both;
+}
+.perfil .menu .menu-header .perfil-user ng-md-icon:last-child {
+  margin-right: 0%;
+}
+.perfil .menu .icons-header {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  border-bottom: 1px solid #d1d1d1;
+  text-align: center;
+}
+.perfil .menu .icons-header:before,
+.perfil .menu .icons-header:after {
+  content: '';
+  display: table;
+}
+.perfil .menu .icons-header:after {
+  clear: both;
+}
+.perfil .menu .icons-header:last-child {
+  margin-right: 0%;
 }
 .perfil .menu .menu-content {
   *zoom: 1;
@@ -11102,9 +11200,6 @@ img:focus {
 }
 .perfil .menu .menu-content .plan:last-child {
   margin-right: 0%;
-}
-.perfil .menu .menu-content .plan h5 {
-  margin: 0;
 }
 .perfil .menu .menu-content .icons-content {
   *zoom: 1;

@@ -5,18 +5,24 @@
     <h4 class="user-name">Bruno</h4><span class="breadcrumb">Treinos</span>
   </section>
   <section ui-view="menu" ng-if="coreEvents.menu" class="menu">
-    <section class="menu-header"><img holder="holder.js/45x45?auto=yes&amp;theme=sky&amp;text=BRU" class="img-responsive"/>
-      <h6 class="user-name">Bruno Alexandre</h6><img class="icon-edit-user"/>
-      <section class="icons-header"><span class="icon-payments"></span>
-        <div class="icon-notification teste"></div><img class="icon-edit-user"/>
+    <section class="menu-header">
+      <section class="perfil-user">
+        <section class="img-user"><img holder="holder.js/45x45?auto=yes&amp;theme=sky&amp;text=BRU" class="img-responsive"/></section>
+        <h6>Bruno Alexandre</h6>
+        <ng-md-icon icon="settings" style="fill:grey" size="25" ng-click="true"></ng-md-icon>
       </section>
     </section>
-    <md-divider></md-divider>
+    <section class="icons-header">
+      <ng-md-icon icon="edit" style="fill:grey" size="45" ng-click="true"></ng-md-icon>
+      <ng-md-icon icon="edit" style="fill:grey" size="45" ng-click="true"></ng-md-icon>
+      <ng-md-icon icon="edit" style="fill:grey" size="45" ng-click="true"></ng-md-icon>
+    </section>
     <section class="menu-content">
-      <p>Plano de Treinamento</p><img class="icon-edit-plan"/>
+      <p>Plano de Treinamento</p>
+      <ng-md-icon icon="launch" style="fill:silver" size="25" ng-click="true"></ng-md-icon>
       <section class="goal"><img class="icon-goal"/></section>
       <section class="plan">
-        <h5>Ganho de Massa</h5>
+        <p>Ganho de Massa</p>
         <p>2 semanas</p>
         <p>3x por semana</p>
       </section>
