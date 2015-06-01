@@ -12,27 +12,32 @@
 		margin-right auto
 		display block
 		width 60%
-		+hd()
-			width 90%
+		// +hd()
+		// 	width 60%
 .list-users-open
 	@extend .list-users
+	box-sizing border-box
+	padding-left .5em
+	padding-right .5em
 	section
 		col(1/1,cycle:1)
 		img
-			col(1.2/5,gutter:0)
+			col(1/5,gutter:0)
 		p
-			col(3.2/5,gutter:0)
+			col(3.4/5,gutter:0)
 			color palette('Grey', '300')
-			padding-top 5%
+			padding-top 3%
 			padding-left 2%
 			margin 0
-			font-size 90%
+			font-size .9em
+			+tablet(orientation: portrait)
+				font-size .8em
 			+hd()
 				padding-top 8%
 				font-size 140%
 		ng-md-icon
 			col(.5/5,gutter:0)
-			padding-top 5%
+			padding-top 2%
 			cursor pointer
 			svg
 				max-width 100%
