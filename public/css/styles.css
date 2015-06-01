@@ -10809,10 +10809,11 @@ img:focus {
   margin-left: 0%;
   margin-right: 0%;
   color: #e0e0e0;
-  padding-top: 3%;
+  padding-top: 0.5em;
   padding-left: 2%;
   margin: 0;
   font-size: 0.9em;
+  vertical-align: middle;
 }
 .list-users-open section p:before,
 .list-users-open section p:after {
@@ -10832,8 +10833,8 @@ img:focus {
 }
 @media only screen and (min-width: 1800px) {
   .list-users-open section p {
-    padding-top: 8%;
-    font-size: 140%;
+    padding-top: 0.9em;
+    font-size: 1.5em;
   }
 }
 .list-users-open section ng-md-icon {
@@ -10857,6 +10858,11 @@ img:focus {
 }
 .list-users-open section ng-md-icon:last-child {
   margin-right: 0%;
+}
+@media only screen and (min-width: 1800px) {
+  .list-users-open section ng-md-icon {
+    padding-top: 1.3em;
+  }
 }
 .list-users-open section ng-md-icon svg {
   max-width: 100%;
