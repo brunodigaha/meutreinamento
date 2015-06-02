@@ -9,7 +9,7 @@ module.exports = {
 					template: fs.readFileSync(__dirname + '/templates/coreWrap.html')
 				},
 				'aside@core': {
-					controller: function($scope, coreEventsService, RestangularCustom, $mdDialog) {
+					controller: function($scope, coreEventsService, RestangularCustom, $mdDialog, $mdToast, $animate) {
 						var coreEvents = $scope.coreEvents = coreEventsService;
 						// $scope.user = RestangularCustom.all('usuario').getList().$object;
 						$scope.doSecondaryAction = function(event) {
@@ -21,7 +21,18 @@ module.exports = {
 							.cancel('Cancelar')
 							.targetEvent(event);
 							$mdDialog.show(confirm).then(function() {
-								alert('O usuário foi fechado !');
+								// alert('O usuário foi Aberto com sucesso !');
+								$mdToast.show(
+									$mdToast.simple()
+										.content("AlunAluno Fechado com Sucesso!")
+										.position("top right")
+										.action('x')
+										.hideDelay(2500)
+								).then( function() {
+									alert("teste");
+								});
+								coreEventsService.toggle_search();
+
 							}, function() {
 								// alert('Foi cancelado');
 							});

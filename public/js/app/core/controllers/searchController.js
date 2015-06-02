@@ -1,4 +1,4 @@
-module.exports = function($scope,$mdDialog) {
+module.exports = function($scope,$mdDialog, $mdToast,$animate) {
 	$scope.onUCUploadComplete = function (info){
 		console.log(info);
 		$scope.image=info.cdnUrl;
@@ -14,7 +14,16 @@ module.exports = function($scope,$mdDialog) {
 		.cancel('Cancelar.')
 		.targetEvent(event);
 		$mdDialog.show(confirm).then(function() {
-			alert('O usuário foi Aberto!'); 
+			// alert('O usuário foi Aberto!'); 
+			$mdToast.show(
+				$mdToast.simple()
+					.content("Aberto com sucesso!")
+					.position("top right")
+					.action('x')
+					.hideDelay(2000)
+			).then( function() {
+				alert("teste");
+			});
 		}, function() {
 			// alert('Foi cancelado');
 			console.log("cancelou abrir usuario");
