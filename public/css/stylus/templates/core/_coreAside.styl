@@ -12,10 +12,11 @@
 		margin-right auto
 		display block
 		width 60%
+		cursor pointer
+		cursor hand
 		// +hd()
 		// 	width 60%
 .list-users-open
-	@extend .list-users
 	box-sizing border-box
 	padding-left .5em
 	padding-right .5em
@@ -23,6 +24,7 @@
 		col(1/1,cycle:1)
 		img
 			col(1/5,gutter:0)
+			margin-bottom .3em
 		p
 			col(3.4/5,gutter:0)
 			color palette('Grey', '300')

@@ -5,7 +5,7 @@ section(class="search-icon")
 // md-divider
 section(class="list-users"  ng-class="{'list-users': !coreEvents.search, 'list-users-open': coreEvents.search}")
 	section(ng-repeat="person in [1,2,2,4,5,6] track by $index")
-		img(class="img-responsive" alt="{{ person.name }}" holder='holder.js/60x60?auto=yes&random=yes&text=BRU')
+		img(class="img-responsive" ui-sref-active="active" ui-sref="core.user.treinos" alt="{{ person.name }}" holder='holder.js/60x60?auto=yes&random=yes&text=BRU')
 		p(ng-if="coreEvents.search") Bruno Alexandreeeee
 		ng-md-icon(icon="close" style="fill:white" options='{"duration":375}' size="35" ng-if="coreEvents.search" ng-click="doSecondaryAction($event)")
 
