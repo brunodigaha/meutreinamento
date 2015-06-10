@@ -31,12 +31,14 @@ section.perfil(ui-view="perfil")
 					p Treinos
 				section.history
 					ng-md-icon(icon="local_movies" style="fill:grey"  size="40" ng-click="true")
-					p Histórico de Treinamentos
+					p Histór
 				section.review
 					ng-md-icon(icon="straighten" style="fill:grey"  size="40" ng-click="true")
 					p Avaliações
 			section.btn-train
-				md-button(class="md-raised md-primary"  ng-click="true;") Treinar
+				md-button(class="md-raised md-primary"  ng-click="true;" id="btn-treinar")
+					ng-md-icon(icon="play_arrow" style="fill:white"  size="35" ng-click="true")
+					| Treinar
 
 section.user-admin(ui-view="user-admin")
 	img(class="img-responsive" holder='holder.js/50x50?auto=yes&theme=sky&text=BRU')

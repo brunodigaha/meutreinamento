@@ -11168,13 +11168,13 @@ img:focus {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 22.000000000000004%;
+  width: 20%;
   margin-left: 0%;
   margin-right: 0%;
   box-sizing: border-box;
   text-align: left;
   margin-left: 1em;
-  margin-top: 0.2em;
+  margin-top: 0.4em;
   cursor: pointer;
 }
 .perfil .user .user-img:before,
@@ -11268,6 +11268,11 @@ img:focus {
 .perfil .menu:last-child {
   margin-right: 0%;
 }
+@media only screen and (min-width: 400px) and (max-width: 1050px) {
+  .perfil .menu {
+    height: 25em;
+  }
+}
 .perfil .menu .menu-header {
   *zoom: 1;
   float: left;
@@ -11314,7 +11319,7 @@ img:focus {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 17.5%;
+  width: 12.5%;
   margin-left: 0%;
   margin-right: 0%;
   display: inline-block;
@@ -11386,12 +11391,12 @@ img:focus {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 100%;
+  width: 75%;
   margin-left: 0%;
   margin-right: 0%;
-  border-bottom: 1px solid #eee;
+  position: relative;
+  left: 15%;
   margin-bottom: 0.5em;
-  text-align: center;
 }
 .perfil .menu .icons-header:before,
 .perfil .menu .icons-header:after {
@@ -11404,54 +11409,32 @@ img:focus {
 .perfil .menu .icons-header:last-child {
   margin-right: 0%;
 }
-.perfil .menu .icons-header .dashboard {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 20.5%;
-  margin-left: 23.85%;
-  margin-right: 6%;
-}
-.perfil .menu .icons-header .dashboard:before,
-.perfil .menu .icons-header .dashboard:after {
-  content: '';
-  display: table;
-}
-.perfil .menu .icons-header .dashboard:after {
-  clear: both;
-}
-.perfil .menu .icons-header .dashboard:last-child {
-  margin-right: 0%;
-}
-.perfil .menu .icons-header .dashboard p {
-  margin: 0;
-  display: block;
-  font-weight: bold;
-  font-size: 0.9em;
-  color: #2196f3;
-}
-.perfil .menu .icons-header .notification {
+.perfil .menu .icons-header section {
   *zoom: 1;
   float: left;
   clear: none;
   text-align: inherit;
   width: 25%;
-  margin-left: 0%;
+  margin-left: 12.5%;
   margin-right: 0%;
+  text-align: center;
 }
-.perfil .menu .icons-header .notification:before,
-.perfil .menu .icons-header .notification:after {
+.perfil .menu .icons-header section:before,
+.perfil .menu .icons-header section:after {
   content: '';
   display: table;
 }
-.perfil .menu .icons-header .notification:after {
+.perfil .menu .icons-header section:after {
   clear: both;
 }
-.perfil .menu .icons-header .notification:last-child {
+.perfil .menu .icons-header section:nth-child(3n) {
   margin-right: 0%;
+  float: right;
 }
-.perfil .menu .icons-header .notification p {
+.perfil .menu .icons-header section:nth-child(3n+1) {
+  clear: both;
+}
+.perfil .menu .icons-header section p {
   margin: 0;
   display: block;
   font-weight: bold;
@@ -11466,6 +11449,7 @@ img:focus {
   width: 100%;
   margin-left: 0%;
   margin-right: 0%;
+  border-top: 1px solid #eee;
 }
 .perfil .menu .menu-content:before,
 .perfil .menu .menu-content:after {
@@ -11514,9 +11498,11 @@ img:focus {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 100%;
+  width: 87.5%;
   margin-left: 0%;
   margin-right: 0%;
+  position: relative;
+  left: 10%;
   margin-bottom: 0.5em;
 }
 .perfil .menu .menu-content .icons-content:before,
@@ -11530,84 +11516,32 @@ img:focus {
 .perfil .menu .menu-content .icons-content:last-child {
   margin-right: 0%;
 }
-.perfil .menu .menu-content .icons-content .train {
+.perfil .menu .menu-content .icons-content section {
   *zoom: 1;
   float: left;
   clear: none;
   text-align: inherit;
   width: 25%;
-  margin-left: 10%;
+  margin-left: 2.5%;
   margin-right: 0%;
   text-align: center;
 }
-.perfil .menu .menu-content .icons-content .train:before,
-.perfil .menu .menu-content .icons-content .train:after {
+.perfil .menu .menu-content .icons-content section:before,
+.perfil .menu .menu-content .icons-content section:after {
   content: '';
   display: table;
 }
-.perfil .menu .menu-content .icons-content .train:after {
+.perfil .menu .menu-content .icons-content section:after {
   clear: both;
 }
-.perfil .menu .menu-content .icons-content .train:last-child {
+.perfil .menu .menu-content .icons-content section:nth-child(4n) {
   margin-right: 0%;
+  float: right;
 }
-.perfil .menu .menu-content .icons-content .train p {
-  display: block;
-  color: #2196f3;
-  font-weight: bold;
-  font-size: 0.9em;
-  margin: 0;
-}
-.perfil .menu .menu-content .icons-content .history {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 25%;
-  margin-left: 0%;
-  margin-right: 0%;
-  text-align: center;
-}
-.perfil .menu .menu-content .icons-content .history:before,
-.perfil .menu .menu-content .icons-content .history:after {
-  content: '';
-  display: table;
-}
-.perfil .menu .menu-content .icons-content .history:after {
+.perfil .menu .menu-content .icons-content section:nth-child(4n+1) {
   clear: both;
 }
-.perfil .menu .menu-content .icons-content .history:last-child {
-  margin-right: 0%;
-}
-.perfil .menu .menu-content .icons-content .history p {
-  display: block;
-  color: #2196f3;
-  font-weight: bold;
-  font-size: 0.9em;
-  margin: 0;
-}
-.perfil .menu .menu-content .icons-content .review {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 25%;
-  margin-left: 0%;
-  margin-right: 0%;
-  text-align: center;
-}
-.perfil .menu .menu-content .icons-content .review:before,
-.perfil .menu .menu-content .icons-content .review:after {
-  content: '';
-  display: table;
-}
-.perfil .menu .menu-content .icons-content .review:after {
-  clear: both;
-}
-.perfil .menu .menu-content .icons-content .review:last-child {
-  margin-right: 0%;
-}
-.perfil .menu .menu-content .icons-content .review p {
+.perfil .menu .menu-content .icons-content section p {
   display: block;
   color: #2196f3;
   font-weight: bold;
@@ -11634,6 +11568,21 @@ img:focus {
 }
 .perfil .menu .menu-content .btn-train:last-child {
   margin-right: 0%;
+}
+.perfil .menu .menu-content .btn-train button.md-button {
+  width: 50%;
+  height: auto;
+  font-size: 90%;
+}
+.perfil .menu .menu-content .btn-train ng-md-icon svg {
+  position: absolute;
+  top: 0.1em;
+  left: 0.5em;
+}
+@media only screen and (min-width: 1050px) {
+  .perfil .menu .menu-content .btn-train ng-md-icon svg {
+    left: 1.5em;
+  }
 }
 .user-admin {
   *zoom: 1;

@@ -4,11 +4,11 @@
 	.user
 		col(5/5,gutter:0)
 		.user-img
-			col(1.1/5,gutter:0)
+			col(1/5,gutter:0)
 			box-sizing border-box
 			text-align left
 			margin-left 1em
-			margin-top .2em
+			margin-top .4em
 			cursor pointer
 		.user-name
 			col(1/5,gutter:0)
@@ -30,6 +30,8 @@
 		col(4.3/11,gutter:0)
 		box-sizing border-box
 		height 23em
+		+tablet()
+			height 25em
 		position absolute
 		top 6.3em
 		left 1em
@@ -42,7 +44,7 @@
 				col(4/4,gutter:0)
 				padding-left 1em
 				.img-user
-					col(.7/4,gutter:0)
+					col(.5/4,gutter:0)
 					display inline-block
 					margin 0
 					padding 0
@@ -59,29 +61,22 @@
 					padding-top .5em
 					text-align center
 		.icons-header
-			col(4/4,gutter:0)
-			.dashboard
-				col(1/4,.9/4,gutter:6)
-				p
-					margin 0
-					display block
-					font-weight bold
-					font-size .9em
-					color palette('Blue', '500')
-			.notification
-				col(1/4,gutter:0)
-				p
-					margin 0
-					display block
-					font-weight bold
-					font-size .9em
-					color palette('Blue', '500')
-			border-bottom 1px solid palette('Grey', '200')
+			col(3/4,gutter:0)
+			shift(.6/4,gutter:0)
 			margin-bottom .5em
-			text-align center
+			section
+				col(1/4,.5/4,cycle:3,gutter:0)
+				text-align center
+				p
+					margin 0
+					display block
+					font-weight bold
+					font-size .9em
+					color palette('Blue', '500')
 				
 		.menu-content
 			col(5/5,gutter:0)
+			border-top 1px solid palette('Grey', '200')
 			p
 				display inline
 				// font-weight bold
@@ -95,30 +90,14 @@
 				margin-bottom 1.5em
 				text-align center
 			.icons-content
-				col(8/8,gutter:0)
+				col(7/8,gutter:0)
+				shift(.8/8,gutter:0)
 				margin-bottom .5em
-				.train
-					col(2/8,.8/8,gutter:0)
+				section
+					col(2/8,.2/8,cycle:4,gutter:0)
 					text-align center
 					p
-						display block
-						color palette('Blue', '500')
-						font-weight bold
-						font-size .9em
-						margin 0
-				.history
-					col(2/8,gutter:0)
-					text-align center
-					p
-						display block
-						color palette('Blue', '500')
-						font-weight bold
-						font-size .9em
-						margin 0
-				.review
-					col(2/8,gutter:0)
-					text-align center
-					p
+
 						display block
 						color palette('Blue', '500')
 						font-weight bold
@@ -127,6 +106,17 @@
 			.btn-train
 				col(5/5,gutter:0)
 				text-align center
+				button.md-button
+					width 50%
+					height auto
+					font-size 90%
+				ng-md-icon
+					svg
+						position absolute
+						top .1em
+						left .5em
+						+desktop()
+							left 1.5em
 .user-admin
 	col(3/15,gutter:0)
 	shift(12/15,gutter:0)
