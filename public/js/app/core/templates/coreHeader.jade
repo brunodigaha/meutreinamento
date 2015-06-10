@@ -14,23 +14,29 @@ section.perfil(ui-view="perfil")
 				ng-md-icon(icon="settings" style="fill:grey"  size="25" ng-click="true")
 		section.icons-header
 			section.dashboard
-				ng-md-icon(icon="edit" style="fill:grey"  size="45" ng-click="true")
+				ng-md-icon(icon="dashboard" style="fill:grey"  size="40" ng-click="true")
 				p Dashboard
+			section.notification
+				ng-md-icon(icon="notifications" style="fill:grey"  size="40" ng-click="true")
+				p Notificações
 		section.menu-content
 			p Plano de Treinamento
 			ng-md-icon(icon="launch" style="fill:silver"  size="25" ng-click="true")
-			section.goal.icon-goal
-				p teste
 			section.plan
-				p Ganho de Massa
-				p 2 semanas
-				p 3x por semana
+				p 3 Semanas
+				md-progress-linear.md-primary(md-mode="determinate", value="40")
 			section.icons-content
-				ul
-					li treinos
-					li Histórico de treinamentos
-					li mensalidades
-					li avaliações
+				section.train
+					ng-md-icon(icon="assignment" style="fill:grey"  size="40" ng-click="true")
+					p Treinos
+				section.history
+					ng-md-icon(icon="local_movies" style="fill:grey"  size="40" ng-click="true")
+					p Histórico de Treinamentos
+				section.review
+					ng-md-icon(icon="straighten" style="fill:grey"  size="40" ng-click="true")
+					p Avaliações
+			section.btn-train
+				md-button(class="md-raised md-primary"  ng-click="true;") Treinar
 
 section.user-admin(ui-view="user-admin")
 	img(class="img-responsive" holder='holder.js/50x50?auto=yes&theme=sky&text=BRU')

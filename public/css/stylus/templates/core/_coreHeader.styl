@@ -1,7 +1,6 @@
 .perfil
 	col(6/15,gutter:0)
 	height 5em
-	background-color palette('Grey', '300')
 	.user
 		col(5/5,gutter:0)
 		.user-img
@@ -28,18 +27,20 @@
 			text-align right
 			color palette('Grey', '600')
 	.menu
-		col(3.5/11,gutter:0)
+		col(4.3/11,gutter:0)
 		box-sizing border-box
-		height 22em
+		height 23em
 		position absolute
-		top 6em
+		top 6.3em
 		left 1em
-		background-color palette('Grey', '300')
+		background-color white
+		border 1px solid palette('Grey', '300')
 		padding 0.5em
 		.menu-header
 			col(4/4,gutter:0)
 			.perfil-user
 				col(4/4,gutter:0)
+				padding-left 1em
 				.img-user
 					col(.7/4,gutter:0)
 					display inline-block
@@ -50,44 +51,87 @@
 					position absolute
 					font-size 1.2em
 					margin 0
-					top .4em
+					top .1em
 					left 3.5em
 				ng-md-icon
 					col(.5/4,gutter:0)
-					shift(2.8/4,gutter:0)
+					shift(2.5/4,gutter:0)
 					padding-top .5em
 					text-align center
 		.icons-header
-			col(5/5,gutter:0)
+			col(4/4,gutter:0)
 			.dashboard
-				col(5/5,gutter:0)
+				col(1/4,.9/4,gutter:6)
 				p
 					margin 0
-					font-size .8em
-			border-bottom 1px solid #D1D1D1
+					display block
+					font-weight bold
+					font-size .9em
+					color palette('Blue', '500')
+			.notification
+				col(1/4,gutter:0)
+				p
+					margin 0
+					display block
+					font-weight bold
+					font-size .9em
+					color palette('Blue', '500')
+			border-bottom 1px solid palette('Grey', '200')
+			margin-bottom .5em
 			text-align center
 				
 		.menu-content
-			col(4/4,gutter:0)
+			col(5/5,gutter:0)
 			p
 				display inline
+				// font-weight bold
 			img
 				margin .4em
-			.goal
-				col(2/4,gutter:0)
 			.plan
-				col(2/4,gutter:0)
+				col(5/5,gutter:0)
+				box-sizing border-box
+				padding-left 2.5em
+				padding-right 2.5em
+				margin-bottom 1.5em
+				text-align center
 			.icons-content
-				col(1)
-				font-size .6em
-				li
-					display inline
+				col(8/8,gutter:0)
+				margin-bottom .5em
+				.train
+					col(2/8,.8/8,gutter:0)
+					text-align center
+					p
+						display block
+						color palette('Blue', '500')
+						font-weight bold
+						font-size .9em
+						margin 0
+				.history
+					col(2/8,gutter:0)
+					text-align center
+					p
+						display block
+						color palette('Blue', '500')
+						font-weight bold
+						font-size .9em
+						margin 0
+				.review
+					col(2/8,gutter:0)
+					text-align center
+					p
+						display block
+						color palette('Blue', '500')
+						font-weight bold
+						font-size .9em
+						margin 0
+			.btn-train
+				col(5/5,gutter:0)
+				text-align center
 .user-admin
 	col(3/15,gutter:0)
 	shift(12/15,gutter:0)
 	position fixed
 	height 5em
-	background-color palette('Grey', '300')
 	.admin-name
 		display inline
 		vertical-align middle

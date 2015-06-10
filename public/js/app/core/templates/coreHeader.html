@@ -14,28 +14,37 @@
     </section>
     <section class="icons-header">
       <section class="dashboard">
-        <ng-md-icon icon="edit" style="fill:grey" size="45" ng-click="true"></ng-md-icon>
+        <ng-md-icon icon="dashboard" style="fill:grey" size="40" ng-click="true"></ng-md-icon>
         <p>Dashboard</p>
+      </section>
+      <section class="notification">
+        <ng-md-icon icon="notifications" style="fill:grey" size="40" ng-click="true"></ng-md-icon>
+        <p>Notificações</p>
       </section>
     </section>
     <section class="menu-content">
       <p>Plano de Treinamento</p>
       <ng-md-icon icon="launch" style="fill:silver" size="25" ng-click="true"></ng-md-icon>
-      <section class="goal icon-goal">
-        <p>teste</p>
-      </section>
       <section class="plan">
-        <p>Ganho de Massa</p>
-        <p>2 semanas</p>
-        <p>3x por semana</p>
+        <p>3 Semanas</p>
+        <md-progress-linear md-mode="determinate" value="40" class="md-primary"></md-progress-linear>
       </section>
       <section class="icons-content">
-        <ul>
-          <li>treinos</li>
-          <li>Histórico de treinamentos</li>
-          <li>mensalidades</li>
-          <li>avaliações</li>
-        </ul>
+        <section class="train">
+          <ng-md-icon icon="assignment" style="fill:grey" size="40" ng-click="true"></ng-md-icon>
+          <p>Treinos</p>
+        </section>
+        <section class="history">
+          <ng-md-icon icon="local_movies" style="fill:grey" size="40" ng-click="true"></ng-md-icon>
+          <p>Histórico de Treinamentos</p>
+        </section>
+        <section class="review">
+          <ng-md-icon icon="straighten" style="fill:grey" size="40" ng-click="true"></ng-md-icon>
+          <p>Avaliações</p>
+        </section>
+      </section>
+      <section class="btn-train">
+        <md-button ng-click="true;" class="md-raised md-primary">Treinar</md-button>
       </section>
     </section>
   </section>
