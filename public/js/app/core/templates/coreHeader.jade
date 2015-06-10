@@ -20,8 +20,14 @@ section.perfil(ui-view="perfil")
 				ng-md-icon(icon="notifications" style="fill:grey"  size="40" ng-click="true")
 				p Notificações
 		section.menu-content
-			p Plano de Treinamento
-			ng-md-icon(icon="launch" style="fill:silver"  size="25" ng-click="true")
+			section.plan-header
+				section.title-plan
+					p Plano de Treinamento
+				section.edit-plan
+					p Alterar plano
+				// md-select(placeholder='Plano', ng-model='plan' style="min-width:250px;")
+				// 	md-option(ng-repeat='plan in plans', value='{{plan}}') {{plan}}
+				// ng-md-icon(icon="launch" style="fill:silver"  size="25" ng-click="true")
 			section.plan
 				p 3 Semanas
 				md-progress-linear.md-primary(md-mode="determinate", value="40")
@@ -31,7 +37,7 @@ section.perfil(ui-view="perfil")
 					p Treinos
 				section.history
 					ng-md-icon(icon="local_movies" style="fill:grey"  size="40" ng-click="true")
-					p Histór
+					p   Histórico Treinamentos
 				section.review
 					ng-md-icon(icon="straighten" style="fill:grey"  size="40" ng-click="true")
 					p Avaliações

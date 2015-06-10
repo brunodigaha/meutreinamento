@@ -23,8 +23,17 @@
       </section>
     </section>
     <section class="menu-content">
-      <p>Plano de Treinamento</p>
-      <ng-md-icon icon="launch" style="fill:silver" size="25" ng-click="true"></ng-md-icon>
+      <section class="plan-header">
+        <section class="title-plan">
+          <p>Plano de Treinamento</p>
+        </section>
+        <section class="edit-plan">
+          <p>Alterar plano</p>
+        </section>
+        <!-- md-select(placeholder='Plano', ng-model='plan' style="min-width:250px;")-->
+        <!-- 	md-option(ng-repeat='plan in plans', value='{{plan}}') {{plan}}-->
+        <!-- ng-md-icon(icon="launch" style="fill:silver"  size="25" ng-click="true")-->
+      </section>
       <section class="plan">
         <p>3 Semanas</p>
         <md-progress-linear md-mode="determinate" value="40" class="md-primary"></md-progress-linear>
@@ -36,7 +45,7 @@
         </section>
         <section class="history">
           <ng-md-icon icon="local_movies" style="fill:grey" size="40" ng-click="true"></ng-md-icon>
-          <p>Histór</p>
+          <p>  Histórico Treinamentos</p>
         </section>
         <section class="review">
           <ng-md-icon icon="straighten" style="fill:grey" size="40" ng-click="true"></ng-md-icon>

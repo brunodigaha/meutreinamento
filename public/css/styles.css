@@ -11270,7 +11270,7 @@ img:focus {
 }
 @media only screen and (min-width: 400px) and (max-width: 1050px) {
   .perfil .menu {
-    height: 25em;
+    height: 26em;
   }
 }
 .perfil .menu .menu-header {
@@ -11437,7 +11437,6 @@ img:focus {
 .perfil .menu .icons-header section p {
   margin: 0;
   display: block;
-  font-weight: bold;
   font-size: 0.9em;
   color: #2196f3;
 }
@@ -11462,11 +11461,81 @@ img:focus {
 .perfil .menu .menu-content:last-child {
   margin-right: 0%;
 }
-.perfil .menu .menu-content p {
-  display: inline;
+.perfil .menu .menu-content .plan-header {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
 }
-.perfil .menu .menu-content img {
-  margin: 0.4em;
+.perfil .menu .menu-content .plan-header:before,
+.perfil .menu .menu-content .plan-header:after {
+  content: '';
+  display: table;
+}
+.perfil .menu .menu-content .plan-header:after {
+  clear: both;
+}
+.perfil .menu .menu-content .plan-header:last-child {
+  margin-right: 0%;
+}
+.perfil .menu .menu-content .plan-header .title-plan {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 60%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.perfil .menu .menu-content .plan-header .title-plan:before,
+.perfil .menu .menu-content .plan-header .title-plan:after {
+  content: '';
+  display: table;
+}
+.perfil .menu .menu-content .plan-header .title-plan:after {
+  clear: both;
+}
+.perfil .menu .menu-content .plan-header .title-plan:last-child {
+  margin-right: 0%;
+}
+.perfil .menu .menu-content .plan-header .title-plan p {
+  box-sizing: border-box;
+  font-size: 90%;
+  color: #939393;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+}
+.perfil .menu .menu-content .plan-header .edit-plan {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 40%;
+  margin-left: 0%;
+  margin-right: 0%;
+  text-align: right;
+}
+.perfil .menu .menu-content .plan-header .edit-plan:before,
+.perfil .menu .menu-content .plan-header .edit-plan:after {
+  content: '';
+  display: table;
+}
+.perfil .menu .menu-content .plan-header .edit-plan:after {
+  clear: both;
+}
+.perfil .menu .menu-content .plan-header .edit-plan:last-child {
+  margin-right: 0%;
+}
+.perfil .menu .menu-content .plan-header .edit-plan p {
+  box-sizing: border-box;
+  font-size: 70%;
+  font-weight: bold;
+  color: #2196f3;
+  margin-top: 0.3em;
+  padding-right: 0.9em;
 }
 .perfil .menu .menu-content .plan {
   *zoom: 1;
@@ -11493,6 +11562,10 @@ img:focus {
 .perfil .menu .menu-content .plan:last-child {
   margin-right: 0%;
 }
+.perfil .menu .menu-content .plan p {
+  margin: 0;
+  font-size: 80%;
+}
 .perfil .menu .menu-content .icons-content {
   *zoom: 1;
   float: left;
@@ -11502,7 +11575,7 @@ img:focus {
   margin-left: 0%;
   margin-right: 0%;
   position: relative;
-  left: 10%;
+  left: 3.75%;
   margin-bottom: 0.5em;
 }
 .perfil .menu .menu-content .icons-content:before,
@@ -11522,7 +11595,7 @@ img:focus {
   clear: none;
   text-align: inherit;
   width: 25%;
-  margin-left: 2.5%;
+  margin-left: 6.25%;
   margin-right: 0%;
   text-align: center;
 }
@@ -11534,17 +11607,18 @@ img:focus {
 .perfil .menu .menu-content .icons-content section:after {
   clear: both;
 }
-.perfil .menu .menu-content .icons-content section:nth-child(4n) {
+.perfil .menu .menu-content .icons-content section:nth-child(3n) {
   margin-right: 0%;
   float: right;
 }
-.perfil .menu .menu-content .icons-content section:nth-child(4n+1) {
+.perfil .menu .menu-content .icons-content section:nth-child(3n+1) {
   clear: both;
 }
 .perfil .menu .menu-content .icons-content section p {
   display: block;
+  line-height: 100%;
   color: #2196f3;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 0.9em;
   margin: 0;
 }

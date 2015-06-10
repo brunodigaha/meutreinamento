@@ -31,7 +31,7 @@
 		box-sizing border-box
 		height 23em
 		+tablet()
-			height 25em
+			height 26em
 		position absolute
 		top 6.3em
 		left 1em
@@ -70,18 +70,37 @@
 				p
 					margin 0
 					display block
-					font-weight bold
 					font-size .9em
 					color palette('Blue', '500')
 				
 		.menu-content
 			col(5/5,gutter:0)
 			border-top 1px solid palette('Grey', '200')
-			p
-				display inline
-				// font-weight bold
-			img
-				margin .4em
+			.plan-header
+				col(5/5,gutter:0)
+				.title-plan
+					col(3/5,gutter:0)
+					p
+						box-sizing border-box
+						font-size 90%
+						color #939393
+						margin-top .5em
+						margin-left .5em
+				.edit-plan
+					col(2/5,gutter:0)
+					text-align right
+					p
+						box-sizing border-box
+						font-size 70%
+						font-weight bold
+						color palette('Blue', '500')
+						margin-top .3em
+						padding-right .9em
+
+				// md-select-label
+				// 	col(2/5,gutter:0)
+				// 	top -1.2em
+				// 	font-size 80%
 			.plan
 				col(5/5,gutter:0)
 				box-sizing border-box
@@ -89,18 +108,21 @@
 				padding-right 2.5em
 				margin-bottom 1.5em
 				text-align center
+				p
+					margin 0
+					font-size 80%
 			.icons-content
 				col(7/8,gutter:0)
-				shift(.8/8,gutter:0)
+				shift(.3/8,gutter:0)
 				margin-bottom .5em
 				section
-					col(2/8,.2/8,cycle:4,gutter:0)
+					col(2/8,.5/8,cycle:3,gutter:0)
 					text-align center
 					p
-
 						display block
+						line-height: 100%;
 						color palette('Blue', '500')
-						font-weight bold
+						font-weight normal
 						font-size .9em
 						margin 0
 			.btn-train
