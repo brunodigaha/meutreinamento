@@ -40,10 +40,29 @@
 			height 26em
 		position absolute
 		top 6.3em
-		left 1em
+		left .5em
 		background-color white
+		box-shadow 0px 0px 3px rgba(0,0,0,0.1)
 		border 1px solid palette('Grey', '300')
 		padding 0.5em
+		.chat-bubble-arrow-border
+			border-color transparent transparent palette('Grey', '300') transparent
+			border-style solid
+			border-width 1em
+			height 0
+			width 0
+			position absolute
+			top -2em
+			left 1.6em
+		.chat-bubble-arrow
+			border-color transparent transparent #fff transparent
+			border-style solid
+			border-width 1em
+			height 0
+			width 0
+			position absolute
+			top -1.9em
+			left 1.6em
 		.menu-header
 			col(4/4,gutter:0)
 			.perfil-user
@@ -90,7 +109,8 @@
 						box-sizing border-box
 						font-size 90%
 						margin 0
-						color #939393
+						font-weight bold
+						color #aaaaaa
 						margin-top .5em
 						margin-left .5em
 				.edit-plan
@@ -118,6 +138,7 @@
 				text-align center
 				p
 					margin 0
+					color #aaaaaa
 					font-size 80%
 			.icons-content
 				col(7/8,gutter:0)
@@ -173,6 +194,7 @@
 		padding-left 1em
 		padding-right 1em
 		background-color white
+		box-shadow 0px 0px 3px rgba(0,0,0,0.1)
 		border 1px solid palette('Grey', '300')
 		p
 			margin 0

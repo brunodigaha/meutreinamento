@@ -10774,6 +10774,7 @@ span.icon-notification:before {
   margin-right: 0%;
   box-sizing: border-box;
   border-right: 1px solid #e0e0e0;
+  box-shadow: 5px 0 5px -5px rgba(0,0,0,0.1);
   position: fixed;
   height: 100%;
   overflow-y: auto;
@@ -10852,7 +10853,7 @@ span.icon-notification:before {
   position: relative;
   left: 8.333333333333332%;
   position: fixed;
-  border-bottom: 1px solid #f5f5f5;
+  border-bottom: 1px solid #eee;
   height: 5em;
 }
 .content-main .header:before,
@@ -11255,8 +11256,9 @@ img:focus {
   height: 22em;
   position: absolute;
   top: 6.3em;
-  left: 1em;
+  left: 0.5em;
   background-color: #fff;
+  box-shadow: 0px 0px 3px rgba(0,0,0,0.1);
   border: 1px solid #e0e0e0;
   padding: 0.5em;
 }
@@ -11324,6 +11326,26 @@ img:focus {
   .perfil .menu {
     height: 26em;
   }
+}
+.perfil .menu .chat-bubble-arrow-border {
+  border-color: transparent transparent #e0e0e0 transparent;
+  border-style: solid;
+  border-width: 1em;
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: -2em;
+  left: 1.6em;
+}
+.perfil .menu .chat-bubble-arrow {
+  border-color: transparent transparent #fff transparent;
+  border-style: solid;
+  border-width: 1em;
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: -1.9em;
+  left: 1.6em;
 }
 .perfil .menu .menu-header {
   *zoom: 1;
@@ -11557,7 +11579,8 @@ img:focus {
   box-sizing: border-box;
   font-size: 90%;
   margin: 0;
-  color: #939393;
+  font-weight: bold;
+  color: #aaa;
   margin-top: 0.5em;
   margin-left: 0.5em;
 }
@@ -11618,6 +11641,7 @@ img:focus {
 }
 .perfil .menu .menu-content .plan p {
   margin: 0;
+  color: #aaa;
   font-size: 80%;
 }
 .perfil .menu .menu-content .icons-content {
@@ -11817,6 +11841,7 @@ img:focus {
   padding-left: 1em;
   padding-right: 1em;
   background-color: #fff;
+  box-shadow: 0px 0px 3px rgba(0,0,0,0.1);
   border: 1px solid #e0e0e0;
 }
 .user-admin .options-admin:before,
