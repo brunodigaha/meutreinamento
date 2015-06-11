@@ -4,6 +4,7 @@ section.perfil(ui-view="perfil")
 			img(class="img-responsive" ng-click="coreEvents.toggle_menu();" holder='holder.js/80x80?auto=yes&theme=sky&text=BRU')
 		h4.user-name Bruno
 		span.breadcrumb Treinos
+			// ng-md-icon(icon="assignment" style="fill:grey"  size="40" ng-click="true")
 
 	section.menu(ui-view="menu" ng-if="coreEvents.menu" )
 		section.menu-header
@@ -29,7 +30,7 @@ section.perfil(ui-view="perfil")
 				// 	md-option(ng-repeat='plan in plans', value='{{plan}}') {{plan}}
 				// ng-md-icon(icon="launch" style="fill:silver"  size="25" ng-click="true")
 			section.plan
-				p 3 Semanas
+				p 2/5 Semanas
 				md-progress-linear.md-primary(md-mode="determinate", value="40")
 			section.icons-content
 				section.train
@@ -47,7 +48,16 @@ section.perfil(ui-view="perfil")
 					| Treinar
 
 section.user-admin(ui-view="user-admin")
-	img(class="img-responsive" holder='holder.js/50x50?auto=yes&theme=sky&text=BRU')
-	h6.admin-name Bruno
-	hr.line
-	a.logout(href='' ng-click='logout();') Sair
+	section.img-admin
+		img(class="img-responsive square" holder='holder.js/40x40?auto=yes&theme=sky&text=BRU')
+	section.admin-name
+		span Bruno
+	ng-md-icon(icon="expand_more" style="fill:grey"  size="30" ng-click="true")
+	// a.logout(href='' ng-click='logout();') Sair
+
+	section.options-admin
+		p Perfil
+		p Agenda
+		p Coleção Treinos
+		p Configurações
+		p Sair

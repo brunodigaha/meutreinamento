@@ -23,14 +23,20 @@
 			col(1/5,gutter:0)
 			position absolute
 			left 6.3em
-			top 2.5em
+			top 2.7em
 			text-align right
 			color palette('Grey', '600')
 	.menu
 		col(4.3/11,gutter:0)
+		+desktop()
+			col(3.8/11,gutter:0)
+		+hd()
+			col(3/11,gutter:0)
 		box-sizing border-box
-		height 23em
+		height 22em
 		+tablet()
+			height 24em
+		+tablet(orientation: portrait)
 			height 26em
 		position absolute
 		top 6.3em
@@ -83,6 +89,7 @@
 					p
 						box-sizing border-box
 						font-size 90%
+						margin 0
 						color #939393
 						margin-top .5em
 						margin-left .5em
@@ -91,6 +98,7 @@
 					text-align right
 					p
 						box-sizing border-box
+						margin 1em
 						font-size 70%
 						font-weight bold
 						color palette('Blue', '500')
@@ -143,19 +151,33 @@
 	col(3/15,gutter:0)
 	shift(12/15,gutter:0)
 	position fixed
-	height 5em
+	text-align right
+	.img-admin
+		col(.5/3,.8/3,gutter:0)
+		margin-top .4em
 	.admin-name
-		display inline
-		vertical-align middle
-		color palette('Grey', '600')
-		font-weight bold
-	.line
-		display inline
-		vertical-align middle
-	.logout
-		display inline
-		color palette('Red', '600')
-		margin-left 0.6em
-		text-decoration none
-		font-size 0.8em
+		col(1/3,gutter:1)
+		text-align right
+		padding-top .5em
+		color palette('Blue', '500')
+	ng-md-icon
+		col(.3/3,gutter:0)
+		text-align left
+		padding-top .5em
+	.options-admin
+		col(10/15, gutter:0)
+		position absolute
+		top 3em
+		right .7em
+		box-sizing border-box
+		padding-left 1em
+		padding-right 1em
+		background-color white
+		border 1px solid palette('Grey', '300')
+		p
+			margin 0
+			font-size 90%
+			color palette('Blue', '500')
+			text-align left
+			border-bottom 1px solid palette('Grey', '50')
 

@@ -2,7 +2,8 @@
 <section ui-view="perfil" class="perfil">
   <section class="user">
     <section class="user-img"><img ng-click="coreEvents.toggle_menu();" holder="holder.js/80x80?auto=yes&amp;theme=sky&amp;text=BRU" class="img-responsive"/></section>
-    <h4 class="user-name">Bruno</h4><span class="breadcrumb">Treinos</span>
+    <h4 class="user-name">Bruno</h4><span class="breadcrumb">Treinos
+      <!-- ng-md-icon(icon="assignment" style="fill:grey"  size="40" ng-click="true")--></span>
   </section>
   <section ui-view="menu" ng-if="coreEvents.menu" class="menu">
     <section class="menu-header">
@@ -35,7 +36,7 @@
         <!-- ng-md-icon(icon="launch" style="fill:silver"  size="25" ng-click="true")-->
       </section>
       <section class="plan">
-        <p>3 Semanas</p>
+        <p>2/5 Semanas</p>
         <md-progress-linear md-mode="determinate" value="40" class="md-primary"></md-progress-linear>
       </section>
       <section class="icons-content">
@@ -60,7 +61,16 @@
     </section>
   </section>
 </section>
-<section ui-view="user-admin" class="user-admin"><img holder="holder.js/50x50?auto=yes&amp;theme=sky&amp;text=BRU" class="img-responsive"/>
-  <h6 class="admin-name">Bruno</h6>
-  <hr class="line"/><a href="" ng-click="logout();" class="logout">Sair</a>
+<section ui-view="user-admin" class="user-admin">
+  <section class="img-admin"><img holder="holder.js/40x40?auto=yes&amp;theme=sky&amp;text=BRU" class="img-responsive square"/></section>
+  <section class="admin-name"><span>Bruno</span></section>
+  <ng-md-icon icon="expand_more" style="fill:grey" size="30" ng-click="true"></ng-md-icon>
+  <!-- a.logout(href='' ng-click='logout();') Sair-->
+  <section class="options-admin">
+    <p>Perfil</p>
+    <p>Agenda</p>
+    <p>Coleção Treinos</p>
+    <p>Configurações</p>
+    <p>Sair</p>
+  </section>
 </section>
