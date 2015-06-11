@@ -37,7 +37,7 @@
 		+tablet()
 			height 24em
 		+tablet(orientation: portrait)
-			height 26em
+			height 27em
 		position absolute
 		top 6.3em
 		left .5em
@@ -172,30 +172,56 @@
 	col(3/15,gutter:0)
 	shift(12/15,gutter:0)
 	position fixed
-	text-align right
+	box-sizing border-box
+	.notification-admin
+		col(.5/3,gutter:0)
+		ng-md-icon
+			padding-top 0
+			width 100%
 	.img-admin
-		col(.5/3,.8/3,gutter:0)
+		col(.5/3,gutter:1)
 		margin-top .4em
 	.admin-name
-		col(1/3,gutter:1)
-		text-align right
-		padding-top .5em
+		col(1.8/3,gutter:0)
 		color palette('Blue', '500')
-	ng-md-icon
-		col(.3/3,gutter:0)
-		text-align left
-		padding-top .5em
+		// span 
+		// 	line-height 80%
+		// 	vertical-align middle
+		// ng-md-icon
+		// 	svg
+		// 		vertical-align middle
+		// 		width 40%
 	.options-admin
-		col(10/15, gutter:0)
+		col(15/15, gutter:0)
+		+desktop()
+			col(12/15, gutter:0)
 		position absolute
 		top 3em
-		right .7em
+		right .5em
 		box-sizing border-box
 		padding-left 1em
 		padding-right 1em
 		background-color white
 		box-shadow 0px 0px 3px rgba(0,0,0,0.1)
 		border 1px solid palette('Grey', '300')
+		.chat-bubble-arrow-border
+			border-color transparent transparent palette('Grey', '300') transparent
+			border-style solid
+			border-width .6em
+			height 0
+			width 0
+			position absolute
+			top -1.2em
+			right 2.7em
+		.chat-bubble-arrow
+			border-color transparent transparent #fff transparent
+			border-style solid
+			border-width .6em
+			height 0
+			width 0
+			position absolute
+			top -1.1em
+			right 2.7em
 		p
 			margin 0
 			font-size 90%
