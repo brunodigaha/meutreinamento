@@ -68,10 +68,10 @@
     <ng-md-icon icon="notifications_none" style="fill:grey" size="40" ng-click="true"></ng-md-icon>
   </section>
   <section class="img-admin"><img holder="holder.js/40x40?auto=yes&amp;theme=sky&amp;text=BRU" class="img-responsive square"/></section>
-  <section class="admin-name"><span>Bruno
+  <section ng-click="toggle_options();" class="admin-name"><span>Bruno
       <ng-md-icon icon="expand_more" style="fill:grey" size="17" ng-click="true"></ng-md-icon></span></section>
   <!-- a.logout(href='' ng-click='logout();') Sair-->
-  <section class="options-admin">
+  <section ng-if="coreEvents.options" class="options-admin animated fadeIn">
     <section class="chat-bubble-arrow-border"></section>
     <section class="chat-bubble-arrow"></section>
     <ul>

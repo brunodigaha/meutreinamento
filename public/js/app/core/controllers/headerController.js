@@ -12,4 +12,7 @@ module.exports = function ($scope, coreEventsService, authModelService) {
 	$scope.logout = function () {
 		authModelService.logout();
 	};
+	$scope.toggle_options = function () {
+		coreEventsService.toggle_options();
+	};
 };

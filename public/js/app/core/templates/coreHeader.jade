@@ -54,12 +54,12 @@ section.user-admin(ui-view="user-admin")
 		ng-md-icon(icon="notifications_none" style="fill:grey"  size="40" ng-click="true")
 	section.img-admin
 		img(class="img-responsive square" holder='holder.js/40x40?auto=yes&theme=sky&text=BRU')
-	section.admin-name
+	section.admin-name(ng-click="toggle_options();")
 		span Bruno
 			ng-md-icon(icon="expand_more" style="fill:grey"  size="17" ng-click="true")
 	// a.logout(href='' ng-click='logout();') Sair
 
-	section.options-admin
+	section.options-admin(class="animated fadeIn" ng-if="coreEvents.options")
 		section.chat-bubble-arrow-border
 		section.chat-bubble-arrow
 		ul

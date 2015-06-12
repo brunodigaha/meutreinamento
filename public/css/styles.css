@@ -10948,7 +10948,8 @@ md-input-container.md-default-theme .md-placeholder {
 button:focus,
 svg:focus,
 ng-md-icon:focus,
-img:focus {
+img:focus,
+.admin-name:focus {
   outline: 0;
 }
 .login {
@@ -11848,6 +11849,7 @@ img:focus {
   width: 35%;
   margin-left: 0%;
   margin-right: 0%;
+  cursor: pointer;
   color: #2196f3;
 }
 .user-admin .admin-name:before,
@@ -11994,6 +11996,7 @@ img:focus {
 .user-admin .options-admin ul li {
   display: block;
   margin-bottom: 0.2em;
+  cursor: pointer;
   position: relative;
 }
 .user-admin .options-admin ul li p {
