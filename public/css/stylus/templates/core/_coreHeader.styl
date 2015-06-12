@@ -33,11 +33,6 @@
 		+hd()
 			col(3/11,gutter:0)
 		box-sizing border-box
-		height 22em
-		+tablet()
-			height 24em
-		+tablet(orientation: portrait)
-			height 27em
 		position absolute
 		top 6.3em
 		left .5em
@@ -169,38 +164,50 @@
 						+desktop()
 							left 1.5em
 .user-admin
-	col(3/15,gutter:0)
-	shift(12/15,gutter:0)
+	col(4/15,gutter:0)
+	shift(11/15,gutter:0)
 	position fixed
 	box-sizing border-box
 	.notification-admin
-		col(.5/3,gutter:0)
-		ng-md-icon
-			padding-top 0
-			width 100%
-	.img-admin
-		col(.5/3,gutter:1)
-		margin-top .4em
-	.admin-name
-		col(1.8/3,gutter:0)
-		color palette('Blue', '500')
-		// span 
-		// 	line-height 80%
-		// 	vertical-align middle
-		// ng-md-icon
-		// 	svg
-		// 		vertical-align middle
-		// 		width 40%
-	.options-admin
-		col(15/15, gutter:0)
+		col(.5/4,1/4,gutter:0)
 		+desktop()
-			col(12/15, gutter:0)
+			col(1/4,1/4,gutter:0)
+		ng-md-icon
+			display block
+			margin-top .3em
+			text-align center
+	.img-admin
+		col(.5/4,gutter:1)
+		text-align right
+		margin-top .4em
+		+desktop()
+			col(.5/4,gutter:0)
+	.admin-name
+		col(1.4/4,gutter:0)
+		+desktop()
+			col(1.5/4,gutter:0)
+		color palette('Blue', '500')
+		span 
+			display block
+			margin-top .5em
+			+desktop()
+				margin-top .9em
+			line-height 80%
+			ng-md-icon
+				display inline-block
+	.options-admin
+		col(14/15, gutter:0)
+		+desktop()
+			col(10/15, gutter:0)
 		position absolute
-		top 3em
+		top 3.5em
+		+tablet(orientation: portrait)
+			top 4em
 		right .5em
 		box-sizing border-box
 		padding-left 1em
 		padding-right 1em
+		padding-top .5em
 		background-color white
 		box-shadow 0px 0px 3px rgba(0,0,0,0.1)
 		border 1px solid palette('Grey', '300')
@@ -212,7 +219,9 @@
 			width 0
 			position absolute
 			top -1.2em
-			right 2.7em
+			right 4.7em
+			+hd()
+				right 6.5em
 		.chat-bubble-arrow
 			border-color transparent transparent #fff transparent
 			border-style solid
@@ -221,11 +230,22 @@
 			width 0
 			position absolute
 			top -1.1em
-			right 2.7em
-		p
+			right 4.7em
+			+hd()
+				right 6.5em
+		ul
 			margin 0
+			padding 0
 			font-size 90%
 			color palette('Blue', '500')
 			text-align left
-			border-bottom 1px solid palette('Grey', '50')
-
+			list-style none
+			li
+				display block
+				margin-bottom .2em
+				position relative
+				p
+					margin 0
+					margin-top .3em
+					margin-bottom .3em
+					border-top 1px solid palette('Grey', '200')
