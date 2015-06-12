@@ -23,7 +23,7 @@
 			col(1/5,gutter:0)
 			position absolute
 			left 6.3em
-			top 2.7em
+			top 2.8em
 			text-align right
 			color palette('Grey', '600')
 	.menu
@@ -153,9 +153,13 @@
 				col(5/5,gutter:0)
 				text-align center
 				button.md-button
-					width 50%
-					height auto
+					width 40%
+					min-width 15px
+					min-height 27px
+					line-height 27px
 					font-size 90%
+					margin 0
+					padding-left 1em
 				ng-md-icon
 					svg
 						position absolute
@@ -163,6 +167,42 @@
 						left .5em
 						+desktop()
 							left 1.5em
+
+.actions
+	col(5/15,gutter:0)
+	shift(6/15,gutter:0)
+	position fixed
+	box-sizing border-box
+	padding-left .3em
+	padding-top 1.5em
+	text-align center
+	button.md-button
+		width 40%
+		+desktop()
+			width 37%
+			min-height 45px
+			vertical-align middle
+			line-height 45px
+		+hd()
+			width 27%
+		min-width 15px
+		min-height 35px
+		line-height 35px
+		font-size 110%
+		margin 0
+		padding-left 1.4em
+		ng-md-icon
+			svg
+				position absolute
+				top .2em
+				+desktop()
+					top .3em
+				left .1em
+				+desktop()
+					left .8em
+
+
+
 .user-admin
 	col(4/15,gutter:0)
 	shift(11/15,gutter:0)
@@ -200,6 +240,8 @@
 		col(14/15, gutter:0)
 		+desktop()
 			col(10/15, gutter:0)
+		+hd()
+			col(7/15, gutter:0)
 		position absolute
 		top 3.5em
 		+tablet(orientation: portrait)

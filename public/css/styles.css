@@ -10952,6 +10952,9 @@ img:focus,
 .admin-name:focus {
   outline: 0;
 }
+button.md-button {
+  text-transform: none;
+}
 .login {
   position: absolute;
   transform-style: preserve-3d;
@@ -11230,7 +11233,7 @@ img:focus,
   margin-right: 0%;
   position: absolute;
   left: 6.3em;
-  top: 2.7em;
+  top: 2.8em;
   text-align: right;
   color: #757575;
 }
@@ -11712,9 +11715,13 @@ img:focus,
   margin-right: 0%;
 }
 .perfil .menu .menu-content .btn-train button.md-button {
-  width: 50%;
-  height: auto;
+  width: 40%;
+  min-width: 15px;
+  min-height: 27px;
+  line-height: 27px;
   font-size: 90%;
+  margin: 0;
+  padding-left: 1em;
 }
 .perfil .menu .menu-content .btn-train ng-md-icon svg {
   position: absolute;
@@ -11724,6 +11731,70 @@ img:focus,
 @media only screen and (min-width: 1050px) {
   .perfil .menu .menu-content .btn-train ng-md-icon svg {
     left: 1.5em;
+  }
+}
+.actions {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 33.33333333333333%;
+  margin-left: 0%;
+  margin-right: 0%;
+  position: relative;
+  left: 40%;
+  position: fixed;
+  box-sizing: border-box;
+  padding-left: 0.3em;
+  padding-top: 1.5em;
+  text-align: center;
+}
+.actions:before,
+.actions:after {
+  content: '';
+  display: table;
+}
+.actions:after {
+  clear: both;
+}
+.actions:last-child {
+  margin-right: 0%;
+}
+.actions button.md-button {
+  width: 40%;
+  min-width: 15px;
+  min-height: 35px;
+  line-height: 35px;
+  font-size: 110%;
+  margin: 0;
+  padding-left: 1.4em;
+}
+@media only screen and (min-width: 1050px) {
+  .actions button.md-button {
+    width: 37%;
+    min-height: 45px;
+    vertical-align: middle;
+    line-height: 45px;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .actions button.md-button {
+    width: 27%;
+  }
+}
+.actions button.md-button ng-md-icon svg {
+  position: absolute;
+  top: 0.2em;
+  left: 0.1em;
+}
+@media only screen and (min-width: 1050px) {
+  .actions button.md-button ng-md-icon svg {
+    top: 0.3em;
+  }
+}
+@media only screen and (min-width: 1050px) {
+  .actions button.md-button ng-md-icon svg {
+    left: 0.8em;
   }
 }
 .user-admin {
@@ -11935,6 +12006,28 @@ img:focus,
     clear: none;
     text-align: inherit;
     width: 66.66666666666666%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .user-admin .options-admin:before,
+  .user-admin .options-admin:after {
+    content: '';
+    display: table;
+  }
+  .user-admin .options-admin:after {
+    clear: both;
+  }
+  .user-admin .options-admin:last-child {
+    margin-right: 0%;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .user-admin .options-admin {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 46.666666666666664%;
     margin-left: 0%;
     margin-right: 0%;
   }

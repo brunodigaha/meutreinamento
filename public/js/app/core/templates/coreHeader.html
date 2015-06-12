@@ -2,8 +2,8 @@
 <section ui-view="perfil" class="perfil">
   <section class="user">
     <section class="user-img"><img ng-click="coreEvents.toggle_menu();" holder="holder.js/80x80?auto=yes&amp;theme=sky&amp;text=BRU" class="img-responsive"/></section>
-    <h4 class="user-name">Bruno</h4><span class="breadcrumb">Treinos
-      <!-- ng-md-icon(icon="assignment" style="fill:grey"  size="40" ng-click="true")--></span>
+    <h4 class="user-name">Bruno</h4><span class="breadcrumb">
+      <ng-md-icon icon="assignment" style="fill:grey" size="20" ng-click="true"></ng-md-icon>&nbsp;Treinos</span>
   </section>
   <section ui-view="menu" ng-if="coreEvents.menu" class="menu animated fadeIn">
     <section class="chat-bubble-arrow-border"></section>
@@ -57,11 +57,16 @@
       </section>
       <section class="btn-train">
         <md-button ng-click="true;" id="btn-treinar" class="md-raised md-primary">
-          <ng-md-icon icon="play_arrow" style="fill:white" size="35" ng-click="true"></ng-md-icon>Treinar
+          <ng-md-icon icon="play_arrow" style="fill:white" size="25" ng-click="true"></ng-md-icon>&nbsp;&nbsp;Treinar
         </md-button>
       </section>
     </section>
   </section>
+</section>
+<section class="actions">
+  <md-button ng-click="true;" id="action" class="md-raised md-primary">
+    <ng-md-icon icon="play_arrow" style="fill:white" size="32" ng-click="true"></ng-md-icon>&nbsp;&nbsp;Treinar
+  </md-button>
 </section>
 <section ui-view="user-admin" class="user-admin">
   <section class="notification-admin">
@@ -70,7 +75,6 @@
   <section class="img-admin"><img holder="holder.js/40x40?auto=yes&amp;theme=sky&amp;text=BRU" class="img-responsive square"/></section>
   <section ng-click="toggle_options();" class="admin-name"><span>Bruno
       <ng-md-icon icon="expand_more" style="fill:grey" size="17" ng-click="true"></ng-md-icon></span></section>
-  <!-- a.logout(href='' ng-click='logout();') Sair-->
   <section ng-if="coreEvents.options" class="options-admin animated fadeIn">
     <section class="chat-bubble-arrow-border"></section>
     <section class="chat-bubble-arrow"></section>
@@ -99,7 +103,7 @@
       <li>
         <ng-md-icon icon="vpn_key" style="fill:grey" size="17" ng-click="true"></ng-md-icon>&nbsp;&nbsp;Alterar Senha
       </li>
-      <li>
+      <li ng-click="logout();">
         <ng-md-icon icon="settings_power" style="fill:grey" size="17" ng-click="true"></ng-md-icon>&nbsp;&nbsp;Sair
       </li>
     </ul>
