@@ -58,11 +58,10 @@ section.actions
 section.user-admin(ui-view="user-admin")
 	section.notification-admin
 		ng-md-icon(icon="notifications_none" style="fill:grey"  size="40" ng-click="true")
-	section.img-admin
+	section.admin-name
 		img(class="img-responsive square" holder='holder.js/40x40?auto=yes&theme=sky&text=BRU')
-	section.admin-name(ng-click="toggle_options();")
-		span Bruno
-			ng-md-icon(icon="expand_more" style="fill:grey"  size="17" ng-click="true")
+		span(ng-click="toggle_options();") Bruno
+		ng-md-icon(icon="expand_more" style="fill:grey"  size="17" ng-click="true")
 
 	section.options-admin(class="animated fadeIn" ng-if="coreEvents.options")
 		section.chat-bubble-arrow-border

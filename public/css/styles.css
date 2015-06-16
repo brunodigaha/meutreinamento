@@ -11261,7 +11261,7 @@ button.md-button {
   top: 6.3em;
   left: 0.5em;
   background-color: #fff;
-  box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 3px rgba(0,0,0,0.1);
   border: 1px solid #e0e0e0;
   padding: 0.5em;
 }
@@ -11828,8 +11828,8 @@ button.md-button {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 12.5%;
-  margin-left: 25%;
+  width: 20%;
+  margin-left: 0%;
   margin-right: 0%;
 }
 .user-admin .notification-admin:before,
@@ -11849,8 +11849,8 @@ button.md-button {
     float: left;
     clear: none;
     text-align: inherit;
-    width: 25%;
-    margin-left: 25%;
+    width: 16.666666666666664%;
+    margin-left: 23.333333333333332%;
     margin-right: 0%;
   }
   .user-admin .notification-admin:before,
@@ -11867,51 +11867,16 @@ button.md-button {
 }
 .user-admin .notification-admin ng-md-icon {
   display: block;
-  margin-top: 0.3em;
   text-align: center;
 }
-.user-admin .img-admin {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 11.625%;
-  margin-left: 0%;
-  margin-right: 1%;
-  text-align: right;
-  margin-top: 0.4em;
-}
-.user-admin .img-admin:before,
-.user-admin .img-admin:after {
-  content: '';
-  display: table;
-}
-.user-admin .img-admin:after {
-  clear: both;
-}
-.user-admin .img-admin:last-child {
-  margin-right: 0%;
+@media only screen and (min-width: 400px) and (max-width: 1050px) {
+  .user-admin .notification-admin ng-md-icon {
+    margin-top: 0.2em;
+  }
 }
 @media only screen and (min-width: 1050px) {
-  .user-admin .img-admin {
-    *zoom: 1;
-    float: left;
-    clear: none;
-    text-align: inherit;
-    width: 12.5%;
-    margin-left: 0%;
-    margin-right: 0%;
-  }
-  .user-admin .img-admin:before,
-  .user-admin .img-admin:after {
-    content: '';
-    display: table;
-  }
-  .user-admin .img-admin:after {
-    clear: both;
-  }
-  .user-admin .img-admin:last-child {
-    margin-right: 0%;
+  .user-admin .notification-admin ng-md-icon {
+    margin-top: 0.5em;
   }
 }
 .user-admin .admin-name {
@@ -11919,9 +11884,11 @@ button.md-button {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 35%;
+  width: 80%;
   margin-left: 0%;
   margin-right: 0%;
+  box-sizing: border-box;
+  text-align: right;
   cursor: pointer;
   color: #2196f3;
 }
@@ -11942,9 +11909,10 @@ button.md-button {
     float: left;
     clear: none;
     text-align: inherit;
-    width: 37.5%;
+    width: 60%;
     margin-left: 0%;
     margin-right: 0%;
+    text-align: center;
   }
   .user-admin .admin-name:before,
   .user-admin .admin-name:after {
@@ -11958,18 +11926,12 @@ button.md-button {
     margin-right: 0%;
   }
 }
+.user-admin .admin-name img {
+  vertical-align: middle;
+}
 .user-admin .admin-name span {
-  display: block;
-  margin-top: 0.5em;
-  line-height: 80%;
-}
-@media only screen and (min-width: 1050px) {
-  .user-admin .admin-name span {
-    margin-top: 0.9em;
-  }
-}
-.user-admin .admin-name span ng-md-icon {
-  display: inline-block;
+  line-height: 280%;
+  margin-left: 0.1em;
 }
 .user-admin .options-admin {
   *zoom: 1;
@@ -11987,7 +11949,7 @@ button.md-button {
   padding-right: 1em;
   padding-top: 0.5em;
   background-color: #fff;
-  box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 3px rgba(0,0,0,0.1);
   border: 1px solid #e0e0e0;
 }
 .user-admin .options-admin:before,
@@ -12058,11 +12020,11 @@ button.md-button {
   width: 0;
   position: absolute;
   top: -1.2em;
-  right: 4.7em;
+  right: 2.5em;
 }
 @media only screen and (min-width: 1800px) {
   .user-admin .options-admin .chat-bubble-arrow-border {
-    right: 6.5em;
+    right: 4.5em;
   }
 }
 .user-admin .options-admin .chat-bubble-arrow {
@@ -12073,11 +12035,11 @@ button.md-button {
   width: 0;
   position: absolute;
   top: -1.1em;
-  right: 4.7em;
+  right: 2.5em;
 }
 @media only screen and (min-width: 1800px) {
   .user-admin .options-admin .chat-bubble-arrow {
-    right: 6.5em;
+    right: 4.5em;
   }
 }
 .user-admin .options-admin ul {
