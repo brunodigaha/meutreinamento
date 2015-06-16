@@ -11204,7 +11204,7 @@ button.md-button {
   width: 20%;
   margin-left: 0%;
   margin-right: 0%;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #e0e0e0;
   position: absolute;
   left: 4.5em;
   top: -1.5em;
@@ -11261,7 +11261,7 @@ button.md-button {
   top: 6.3em;
   left: 0.5em;
   background-color: #fff;
-  box-shadow: 0px 0px 3px rgba(0,0,0,0.1);
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
   border: 1px solid #e0e0e0;
   padding: 0.5em;
 }
@@ -11702,6 +11702,8 @@ button.md-button {
   margin-left: 0%;
   margin-right: 0%;
   text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 .perfil .menu .menu-content .btn-train:before,
 .perfil .menu .menu-content .btn-train:after {
@@ -11985,7 +11987,7 @@ button.md-button {
   padding-right: 1em;
   padding-top: 0.5em;
   background-color: #fff;
-  box-shadow: 0px 0px 3px rgba(0,0,0,0.1);
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
   border: 1px solid #e0e0e0;
 }
 .user-admin .options-admin:before,
