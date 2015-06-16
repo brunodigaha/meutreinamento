@@ -87,12 +87,12 @@
 			section
 				col(1/4,.5/4,cycle:3,gutter:0)
 				text-align center
+				cursor pointer
 				p
 					margin 0
 					display block
 					font-size .9em
 					color palette('Blue', '500')
-				
 		.menu-content
 			col(5/5,gutter:0)
 			border-top 1px solid palette('Grey', '200')
@@ -104,7 +104,6 @@
 						box-sizing border-box
 						font-size 90%
 						margin 0
-						font-weight bold
 						color #aaaaaa
 						margin-top .5em
 						margin-left .5em
@@ -115,10 +114,10 @@
 						box-sizing border-box
 						margin 1em
 						font-size 70%
-						font-weight bold
 						color palette('Blue', '500')
 						margin-top .3em
 						padding-right .9em
+						cursor pointer
 
 				// md-select-label
 				// 	col(2/5,gutter:0)
@@ -134,7 +133,7 @@
 				p
 					margin 0
 					color #aaaaaa
-					font-size 80%
+					font-size 70%
 			.icons-content
 				col(7/8,gutter:0)
 				shift(.3/8,gutter:0)
@@ -142,6 +141,7 @@
 				section
 					col(2/8,.5/8,cycle:3,gutter:0)
 					text-align center
+					cursor pointer
 					p
 						display block
 						line-height: 100%;
@@ -179,29 +179,13 @@
 	padding-top 1.5em
 	text-align center
 	button.md-button
-		width 40%
-		+desktop()
-			width 37%
-			min-height 45px
-			vertical-align middle
-			line-height 45px
-		+hd()
-			width 27%
+		width 35%
 		min-width 15px
-		min-height 35px
-		line-height 35px
-		font-size 110%
+		min-height 30px
+		line-height 30px
+		font-size 90%
 		margin 0
-		padding-left 1.4em
 		ng-md-icon
-			svg
-				position absolute
-				top .2em
-				+desktop()
-					top .3em
-				left .1em
-				+desktop()
-					left .8em
 
 .user-admin
 	col(4/15,gutter:0)
@@ -215,7 +199,9 @@
 		ng-md-icon
 			display block
 			+tablet()
-				margin-top .2em
+				margin-top .3em
+			+tablet(orientation: portrait)
+				margin-top .7em
 			+desktop()
 				margin-top .5em
 			text-align center
@@ -232,6 +218,10 @@
 			vertical-align middle
 		span 
 			line-height 280%
+			+tablet()
+				line-height 330%
+			+tablet(orientation: portrait)
+				line-height 450%
 			margin-left .1em
 	.options-admin
 		col(14/15, gutter:0)

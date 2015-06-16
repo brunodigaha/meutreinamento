@@ -51,9 +51,7 @@ section.perfil(ui-view="perfil")
 					| &nbsp;&nbsp;Treinar
 
 section.actions
-	md-button(class="md-raised md-primary"  ng-click="true;" id="action")
-		ng-md-icon(icon="play_arrow" style="fill:white"  size="32" ng-click="true")
-		| &nbsp;&nbsp;Treinar
+	md-button(class="md-raised md-primary"  ng-click="true;" id="action") Criar Treino
 
 section.user-admin(ui-view="user-admin")
 	section.notification-admin
@@ -61,7 +59,7 @@ section.user-admin(ui-view="user-admin")
 	section.admin-name
 		img(class="img-responsive square" holder='holder.js/40x40?auto=yes&theme=sky&text=BRU')
 		span(ng-click="toggle_options();") Bruno
-		ng-md-icon(icon="expand_more" style="fill:grey"  size="17" ng-click="true")
+			ng-md-icon(icon="expand_more" style="fill:grey"  size="17" ng-click="true")
 
 	section.options-admin(class="animated fadeIn" ng-if="coreEvents.options")
 		section.chat-bubble-arrow-border

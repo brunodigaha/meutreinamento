@@ -11485,6 +11485,7 @@ button.md-button {
   margin-left: 12.5%;
   margin-right: 0%;
   text-align: center;
+  cursor: pointer;
 }
 .perfil .menu .icons-header section:before,
 .perfil .menu .icons-header section:after {
@@ -11572,7 +11573,6 @@ button.md-button {
   box-sizing: border-box;
   font-size: 90%;
   margin: 0;
-  font-weight: bold;
   color: #aaa;
   margin-top: 0.5em;
   margin-left: 0.5em;
@@ -11602,10 +11602,10 @@ button.md-button {
   box-sizing: border-box;
   margin: 1em;
   font-size: 70%;
-  font-weight: bold;
   color: #2196f3;
   margin-top: 0.3em;
   padding-right: 0.9em;
+  cursor: pointer;
 }
 .perfil .menu .menu-content .plan {
   *zoom: 1;
@@ -11635,7 +11635,7 @@ button.md-button {
 .perfil .menu .menu-content .plan p {
   margin: 0;
   color: #aaa;
-  font-size: 80%;
+  font-size: 70%;
 }
 .perfil .menu .menu-content .icons-content {
   *zoom: 1;
@@ -11669,6 +11669,7 @@ button.md-button {
   margin-left: 6.25%;
   margin-right: 0%;
   text-align: center;
+  cursor: pointer;
 }
 .perfil .menu .menu-content .icons-content section:before,
 .perfil .menu .menu-content .icons-content section:after {
@@ -11763,41 +11764,13 @@ button.md-button {
   margin-right: 0%;
 }
 .actions button.md-button {
-  width: 40%;
+  width: 35%;
   min-width: 15px;
-  min-height: 35px;
-  line-height: 35px;
-  font-size: 110%;
+  min-height: 30px;
+  line-height: 30px;
+  font-size: 90%;
   margin: 0;
-  padding-left: 1.4em;
-}
-@media only screen and (min-width: 1050px) {
-  .actions button.md-button {
-    width: 37%;
-    min-height: 45px;
-    vertical-align: middle;
-    line-height: 45px;
-  }
-}
-@media only screen and (min-width: 1800px) {
-  .actions button.md-button {
-    width: 27%;
-  }
-}
-.actions button.md-button ng-md-icon svg {
-  position: absolute;
-  top: 0.2em;
-  left: 0.1em;
-}
-@media only screen and (min-width: 1050px) {
-  .actions button.md-button ng-md-icon svg {
-    top: 0.3em;
-  }
-}
-@media only screen and (min-width: 1050px) {
-  .actions button.md-button ng-md-icon svg {
-    left: 0.8em;
-  }
+ng-md-icon
 }
 .user-admin {
   *zoom: 1;
@@ -11871,7 +11844,12 @@ button.md-button {
 }
 @media only screen and (min-width: 400px) and (max-width: 1050px) {
   .user-admin .notification-admin ng-md-icon {
-    margin-top: 0.2em;
+    margin-top: 0.3em;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 1050px) and (orientation: portrait) {
+  .user-admin .notification-admin ng-md-icon {
+    margin-top: 0.7em;
   }
 }
 @media only screen and (min-width: 1050px) {
@@ -11932,6 +11910,16 @@ button.md-button {
 .user-admin .admin-name span {
   line-height: 280%;
   margin-left: 0.1em;
+}
+@media only screen and (min-width: 400px) and (max-width: 1050px) {
+  .user-admin .admin-name span {
+    line-height: 330%;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 1050px) and (orientation: portrait) {
+  .user-admin .admin-name span {
+    line-height: 450%;
+  }
 }
 .user-admin .options-admin {
   *zoom: 1;
