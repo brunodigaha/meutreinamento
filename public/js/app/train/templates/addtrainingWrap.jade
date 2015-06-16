@@ -1,1 +1,44 @@
-span(ncy-breadcrumb-last="")
+section.addtraining
+	section.user-add
+		h4.user-name-add Bruno
+		span.breadcrumb-add
+			ng-md-icon(icon="place" style="fill:grey"  size="20" ng-click="true")
+			span(ncy-breadcrumb-last="") &nbsp;{{getStatesChain}}
+		section.actions-add
+			a(ui-sref-active="sdd" ui-sref="core.user.training")
+				md-button Cancelar
+			md-button(class="md-raised md-primary"  ng-click="true;" id="action") Salvar Treino
+	section.trainings
+		md-radio-group(ng-model="data.group1")
+			md-radio-button.md-primary(value="A") Treino A
+			md-radio-button.md-primary(value="B") Treino B
+			md-radio-button.md-primary(value="C") Treino C
+	section.tabs
+		md-tabs(md-dynamic-height="", md-border-bottom="")
+			md-tab(label="Tríceps")
+				md-content.md-padding
+					md-chips(ng-model="true", readonly="true")
+						md-chip-template
+							strong Supino Reto
+							em Peito
+			md-tab(label="Bíceps")
+				md-content.md-paddin
+					p Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus
+			md-tab(label="Ombro")
+				md-content.md-paddin
+					p Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus
+			md-tab(label="Costas")
+				md-content.md-paddin
+					p Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus
+			md-tab(label="Peito")
+				md-content.md-paddin
+					p Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus
+			md-tab(label="Abdominal")
+				md-content.md-paddin
+					p Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus
+			md-tab(label="Perna")
+				md-content.md-paddin
+					p Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus
+			md-tab(label="Glúteo")
+				md-content.md-paddin
+					p Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus

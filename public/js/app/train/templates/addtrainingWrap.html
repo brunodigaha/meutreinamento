@@ -1,1 +1,64 @@
-<span ncy-breadcrumb-last=""></span>
+
+<section class="addtraining">
+  <section class="user-add">
+    <h4 class="user-name-add">Bruno</h4><span class="breadcrumb-add">
+      <ng-md-icon icon="place" style="fill:grey" size="20" ng-click="true"></ng-md-icon><span ncy-breadcrumb-last="">&nbsp;{{getStatesChain}}</span></span>
+    <section class="actions-add"><a ui-sref-active="sdd" ui-sref="core.user.training">
+        <md-button>Cancelar</md-button></a>
+      <md-button ng-click="true;" id="action" class="md-raised md-primary">Salvar Treino</md-button>
+    </section>
+  </section>
+  <section class="trainings">
+    <md-radio-group ng-model="data.group1">
+      <md-radio-button value="A" class="md-primary">Treino A</md-radio-button>
+      <md-radio-button value="B" class="md-primary">Treino B</md-radio-button>
+      <md-radio-button value="C" class="md-primary">Treino C</md-radio-button>
+    </md-radio-group>
+  </section>
+  <section class="tabs">
+    <md-tabs md-dynamic-height="" md-border-bottom="">
+      <md-tab label="Tríceps">
+        <md-content class="md-padding">
+          <md-chips ng-model="true" readonly="true">
+            <md-chip-template><strong>Supino Reto</strong><em>Peito</em></md-chip-template>
+          </md-chips>
+        </md-content>
+      </md-tab>
+      <md-tab label="Bíceps">
+        <md-content class="md-paddin">
+          <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus</p>
+        </md-content>
+      </md-tab>
+      <md-tab label="Ombro">
+        <md-content class="md-paddin">
+          <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus</p>
+        </md-content>
+      </md-tab>
+      <md-tab label="Costas">
+        <md-content class="md-paddin">
+          <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus</p>
+        </md-content>
+      </md-tab>
+      <md-tab label="Peito">
+        <md-content class="md-paddin">
+          <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus</p>
+        </md-content>
+      </md-tab>
+      <md-tab label="Abdominal">
+        <md-content class="md-paddin">
+          <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus</p>
+        </md-content>
+      </md-tab>
+      <md-tab label="Perna">
+        <md-content class="md-paddin">
+          <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus</p>
+        </md-content>
+      </md-tab>
+      <md-tab label="Glúteo">
+        <md-content class="md-paddin">
+          <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus</p>
+        </md-content>
+      </md-tab>
+    </md-tabs>
+  </section>
+</section>

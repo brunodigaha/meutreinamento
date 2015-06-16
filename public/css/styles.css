@@ -10949,7 +10949,8 @@ button:focus,
 svg:focus,
 ng-md-icon:focus,
 img:focus,
-.admin-name:focus {
+.admin-name:focus,
+span:focus {
   outline: 0;
 }
 button.md-button {
@@ -11803,7 +11804,7 @@ ng-md-icon
   clear: none;
   text-align: inherit;
   width: 20%;
-  margin-left: 0%;
+  margin-left: 13.333333333333334%;
   margin-right: 0%;
 }
 .user-admin .notification-admin:before,
@@ -11845,7 +11846,7 @@ ng-md-icon
 }
 @media only screen and (min-width: 400px) and (max-width: 1050px) {
   .user-admin .notification-admin ng-md-icon {
-    margin-top: 0.3em;
+    margin-top: 0.5em;
   }
 }
 @media only screen and (min-width: 400px) and (max-width: 1050px) and (orientation: portrait) {
@@ -11863,11 +11864,11 @@ ng-md-icon
   float: left;
   clear: none;
   text-align: inherit;
-  width: 80%;
+  width: 66.66666666666666%;
   margin-left: 0%;
   margin-right: 0%;
   box-sizing: border-box;
-  text-align: right;
+  text-align: left;
   cursor: pointer;
   color: #2196f3;
 }
@@ -11914,7 +11915,7 @@ ng-md-icon
 }
 @media only screen and (min-width: 400px) and (max-width: 1050px) {
   .user-admin .admin-name span {
-    line-height: 330%;
+    line-height: 310%;
   }
 }
 @media only screen and (min-width: 400px) and (max-width: 1050px) and (orientation: portrait) {
@@ -11998,7 +11999,7 @@ ng-md-icon
 }
 @media only screen and (min-width: 400px) and (max-width: 1050px) and (orientation: portrait) {
   .user-admin .options-admin {
-    top: 4em;
+    top: 4.5em;
   }
 }
 .user-admin .options-admin .chat-bubble-arrow-border {
@@ -12009,7 +12010,7 @@ ng-md-icon
   width: 0;
   position: absolute;
   top: -1.2em;
-  right: 2.5em;
+  right: 3.8em;
 }
 @media only screen and (min-width: 1800px) {
   .user-admin .options-admin .chat-bubble-arrow-border {
@@ -12024,7 +12025,7 @@ ng-md-icon
   width: 0;
   position: absolute;
   top: -1.1em;
-  right: 2.5em;
+  right: 3.8em;
 }
 @media only screen and (min-width: 1800px) {
   .user-admin .options-admin .chat-bubble-arrow {
@@ -12264,4 +12265,170 @@ h6.suggestion {
 }
 .new-user .attributes button:last-child {
   margin-right: auto;
+}
+.addtraining {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-top: 8em;
+}
+.addtraining:before,
+.addtraining:after {
+  content: '';
+  display: table;
+}
+.addtraining:after {
+  clear: both;
+}
+.addtraining:last-child {
+  margin-right: 0%;
+}
+.addtraining .user-add {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.addtraining .user-add:before,
+.addtraining .user-add:after {
+  content: '';
+  display: table;
+}
+.addtraining .user-add:after {
+  clear: both;
+}
+.addtraining .user-add:last-child {
+  margin-right: 0%;
+}
+.addtraining .user-add .user-name-add {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 20%;
+  margin-left: 0%;
+  margin-right: 0%;
+  border-bottom: 1px solid #e0e0e0;
+  position: absolute;
+  left: 1.5em;
+  top: -1.5em;
+  color: #757575;
+  text-align: left;
+  font-weight: bold;
+}
+.addtraining .user-add .user-name-add:before,
+.addtraining .user-add .user-name-add:after {
+  content: '';
+  display: table;
+}
+.addtraining .user-add .user-name-add:after {
+  clear: both;
+}
+.addtraining .user-add .user-name-add:last-child {
+  margin-right: 0%;
+}
+.addtraining .user-add .breadcrumb-add {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 20%;
+  margin-left: 0%;
+  margin-right: 0%;
+  position: absolute;
+  left: 2.1em;
+  top: 2.8em;
+  text-align: right;
+  color: #757575;
+}
+.addtraining .user-add .breadcrumb-add:before,
+.addtraining .user-add .breadcrumb-add:after {
+  content: '';
+  display: table;
+}
+.addtraining .user-add .breadcrumb-add:after {
+  clear: both;
+}
+.addtraining .user-add .breadcrumb-add:last-child {
+  margin-right: 0%;
+}
+.addtraining .user-add .actions-add {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 40%;
+  margin-left: 0%;
+  margin-right: 0%;
+  position: absolute;
+  text-align: right;
+  right: 2.1em;
+  top: 2em;
+}
+.addtraining .user-add .actions-add:before,
+.addtraining .user-add .actions-add:after {
+  content: '';
+  display: table;
+}
+.addtraining .user-add .actions-add:after {
+  clear: both;
+}
+.addtraining .user-add .actions-add:last-child {
+  margin-right: 0%;
+}
+.addtraining .user-add .actions-add button.md-button {
+  width: 35%;
+  min-width: 15px;
+  min-height: 30px;
+  line-height: 30px;
+  font-size: 90%;
+  margin: 0;
+}
+.addtraining .trainings {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  text-align: center;
+}
+.addtraining .trainings:before,
+.addtraining .trainings:after {
+  content: '';
+  display: table;
+}
+.addtraining .trainings:after {
+  clear: both;
+}
+.addtraining .trainings:last-child {
+  margin-right: 0%;
+}
+.addtraining .tabs {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.addtraining .tabs:before,
+.addtraining .tabs:after {
+  content: '';
+  display: table;
+}
+.addtraining .tabs:after {
+  clear: both;
+}
+.addtraining .tabs:last-child {
+  margin-right: 0%;
 }
