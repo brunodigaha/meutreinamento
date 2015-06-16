@@ -1,7 +1,7 @@
 {
   "name": "MeuTreinamento",
   "description": "Sistema para controle de fichas de treinamento para academias de musculação!",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "author": "Bruno Alexandre de Souza",
   "repository": {
     "type": "git",
@@ -74,6 +74,7 @@
     "angularUploadcare": "./public/bower_components/angular-uploadcare/angular-uploadcare.js",
     "holderjs": "./public/bower_components/holderjs/holder.js",
     "modernizr": "./public/bower_components/modernizr/modernizr.js",
+    "angularBreadcrumb": "./public/bower_components/angular-breadcrumb/dist/angular-breadcrumb.min.js",
     "ui-router": "./public/bower_components/angular-ui-router/release/angular-ui-router.js"
   },
   "browserify-shim": {
@@ -149,6 +150,10 @@
     "modernizr": {
       "exports": "modernizr",
       "depends": null
+    },
+    "angularBreadcrumb": {
+      "exports": "angular.module('ncy-angular-breadcrumb')",
+      "depends": "angular"
     },
     "ui-router": {
       "exports": "angular.module('ui.router')",

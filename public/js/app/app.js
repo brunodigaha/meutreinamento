@@ -1,11 +1,11 @@
 //other dependencies
 require('modernizr');
-
 require('angular');
 //angular modules
 angular
 .module('app',[
 	require('ui-router').name,
+	require('angularBreadcrumb').name,
 	require('restAngular').name,
 	require('angularCookies').name,
 	require('angularMessages').name,

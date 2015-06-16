@@ -2,7 +2,7 @@ module.exports = function () {
 	var eventsService = {
 		search: false,
 		menu: false,
-		options: false,
+		options: false
 	};
 	
 	eventsService.toggle_menu = function () {

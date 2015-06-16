@@ -4,8 +4,8 @@ section.perfil(ui-view="perfil")
 			img(class="img-responsive" ng-click="coreEvents.toggle_menu();" holder='holder.js/80x80?auto=yes&theme=sky&text=BRU')
 		h4.user-name Bruno
 		span.breadcrumb
-			ng-md-icon(icon="assignment" style="fill:grey"  size="20" ng-click="true")
-			| &nbsp;Treinos
+			ng-md-icon(icon="place" style="fill:grey"  size="20" ng-click="true")
+			span(ncy-breadcrumb-last="") &nbsp;{{getStatesChain}}
 
 	section.menu(ui-view="menu" class="animated fadeIn" ng-if="coreEvents.menu" )
 		section.chat-bubble-arrow-border
@@ -19,7 +19,7 @@ section.perfil(ui-view="perfil")
 		section.icons-header
 			section.dashboard
 				ng-md-icon(icon="dashboard" style="fill:grey"  size="40" ng-click="true")
-				p Dashboard
+				p Painel
 			section.notification
 				ng-md-icon(icon="notifications" style="fill:grey"  size="40" ng-click="true")
 				p Notificações

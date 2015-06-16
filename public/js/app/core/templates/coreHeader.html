@@ -3,7 +3,7 @@
   <section class="user">
     <section class="user-img"><img ng-click="coreEvents.toggle_menu();" holder="holder.js/80x80?auto=yes&amp;theme=sky&amp;text=BRU" class="img-responsive"/></section>
     <h4 class="user-name">Bruno</h4><span class="breadcrumb">
-      <ng-md-icon icon="assignment" style="fill:grey" size="20" ng-click="true"></ng-md-icon>&nbsp;Treinos</span>
+      <ng-md-icon icon="place" style="fill:grey" size="20" ng-click="true"></ng-md-icon><span ncy-breadcrumb-last="">&nbsp;{{getStatesChain}}</span></span>
   </section>
   <section ui-view="menu" ng-if="coreEvents.menu" class="menu animated fadeIn">
     <section class="chat-bubble-arrow-border"></section>
@@ -18,7 +18,7 @@
     <section class="icons-header">
       <section class="dashboard">
         <ng-md-icon icon="dashboard" style="fill:grey" size="40" ng-click="true"></ng-md-icon>
-        <p>Dashboard</p>
+        <p>Painel</p>
       </section>
       <section class="notification">
         <ng-md-icon icon="notifications" style="fill:grey" size="40" ng-click="true"></ng-md-icon>

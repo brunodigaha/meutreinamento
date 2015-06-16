@@ -3,6 +3,9 @@ module.exports = {
 	user : {
 		user : {
 			authenticate: true,
+			ncyBreadcrumb: {
+				label: 'Painel'
+			},
 			views: {
 				controller: function($stateParams) {
 					// expect($stateParams).toBe({userId: 12});
@@ -10,7 +13,7 @@ module.exports = {
 				'content@core': {
 					template: fs.readFileSync(__dirname + '/templates/userContent.html')  
 				}
-			}
+			},
 		}
 	}
 };
