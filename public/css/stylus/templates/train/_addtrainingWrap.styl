@@ -1,30 +1,36 @@
 .addtraining
 	col(6/6,gutter:0)
-	margin-top 8em
+	margin-top 1em
 	.user-add
 		col(5/5,gutter:0)
+		.user-img-add
+			col(.4/5,gutter:0)
+			position absolute
+			left .8em
+			top .5em
 		.user-name-add
 			col(1/5,gutter:0)
 			border-bottom 1px solid palette('Grey', '300')
 			position absolute
-			left 1.5em
-			top -1.5em
+			left 4.7em
+			top -1.7em
 			color palette('Grey', '600')
 			text-align left
 			font-weight bold
 		.breadcrumb-add
 			col(1/5,gutter:0)
 			position absolute
-			left 2.1em
+			left 5em
 			top 2.8em
 			text-align right
 			color palette('Grey', '600')
+				font-size 95%
 		.actions-add
 			col(2/5,gutter:0)
 			position absolute
 			text-align right
-			right 2.1em
-			top 2em
+			right 4.1em
+			top 1.3m
 			button.md-button
 				width 35%
 				min-width 15px
@@ -32,11 +38,27 @@
 				line-height 30px
 				font-size 90%
 				margin 0
-	.trainings
-		col(6/6,gutter:0)
-		text-align center
 	.tabs
-		col(6/6,gutter:0)
-		// shift(.5/6,gutter:0)
+		col(5/6,gutter:0)
+		shift(.5/6,gutter:0)
+		margin-top 5em
+		min-height 9em
+		+desktop()
+			col(4.8/6,gutter:0)
+			shift(.6/6,gutter:0)
+		+hd()
+			col(3/6,gutter:0)
+			shift(1.5/6,gutter:0)
+		+tablet()
+			md-tab-item.md-tab
+				padding 8px 8px
+				line-height 32px
+				font-size 12px
+	.new-training
+		col(4/6,gutter:0)
+		shift(1/6,gutter:0)
+		text-align center
+		border 1px solid
+
 
 

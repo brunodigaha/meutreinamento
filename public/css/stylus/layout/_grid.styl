@@ -6,6 +6,8 @@
 	// block css aside
 	.aside
 		col(1/12,gutter:0)
+		+desktop()
+			col(1/15,gutter:0)
 		box-sizing border-box
 		border-right 1px solid palette('Grey', '300')
 		box-shadow 5px 0 5px -5px rgba(0,0,0,0.1)
@@ -21,16 +23,28 @@
 	.content-main
 		col(11/12,gutter:0)
 		shift(1/12,gutter:0)
+		+desktop()
+			col(14/15,gutter:0)
+			shift(1/15,gutter:0)
 		.header
 			col(11/11,gutter:0) 
 			shift(1/12,gutter:0)
+			+desktop()
+				col(14/14,gutter:0)
+				shift(0/15,gutter:0)
 			position fixed
 			border-bottom 1px solid palette('Grey', '200')
 			// box-shadow 0 1px 1px -1px rgba(0,0,0,0.1)
 			height 5em
+			z-index 2
 		.content
 			col(11/11,gutter:0)
+			+desktop()
+				col(14/14,gutter:0)
+			box-sizing border-box
 			margin-top 6em
+			padding-left .3em
+			padding-right .3em
 			overflow-y
 	.content-main-open
 		@extend .content-main

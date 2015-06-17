@@ -6,7 +6,8 @@
 </section>
 <!-- md-divider-->
 <section ng-class="{'list-users': !coreEvents.search, 'list-users-open': coreEvents.search}" class="list-users">
-  <section ng-repeat="person in [1,2,2,4,5,6] track by $index"><img ui-sref-active="active" ui-sref="core.user.training" alt="{{ person.name }}" holder="holder.js/60x60?auto=yes&amp;random=yes&amp;text=BRU" class="img-responsive"/>
+  <section ng-repeat="person in [1,2,2,4,5,6] track by $index">
+    <!-- img(class="img-responsive" ui-sref-active="active" ui-sref="core.user.training" alt="{{ person.name }}" holder='holder.js/60x60?auto=yes&random=yes&text=BRU')--><img holder="holder.js/60x60?auto=yes&amp;theme=gray&amp;text=BRU" class="img-responsive"/>
     <p ng-if="coreEvents.search">Bruno Alexandreeeee</p>
     <ng-md-icon icon="close" style="fill:gray" options="{&quot;duration&quot;:375}" size="35" ng-if="coreEvents.search" ng-click="doSecondaryAction($event);"></ng-md-icon>
   </section>
