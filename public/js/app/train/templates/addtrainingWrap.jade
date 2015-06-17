@@ -1,15 +1,4 @@
 section.addtraining
-	section.user-add
-		section.user-img-add
-			img(class="img-responsive" ng-click="coreEvents.toggle_menu();" holder='holder.js/80x80?auto=yes&theme=graye&text=BRU')
-		h5.user-name-add Bruno
-		span.breadcrumb-add
-			ng-md-icon(icon="place" style="fill:grey"  size="20" ng-click="true")
-			span(ncy-breadcrumb-last="") &nbsp;{{getStatesChain}}
-		section.actions-add
-			a(ui-sref-active="sdd" ui-sref="core.user.training")
-				md-button Cancelar
-			md-button(class="md-raised md-primary"  ng-click="true;" id="action") Salvar Treino
 	section.tabs
 		md-tabs(md-dynamic-height="", md-border-bottom="")
 			md-tab(label="Tríceps")
@@ -40,4 +29,23 @@ section.addtraining
 				md-content.md-paddin
 					p Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus
 	section.new-training
-		p Treino A
+		section.header-add
+			md-select(placeholder='Treino', ng-model='plan' style="min-width:250px;")
+				md-option(ng-repeat='plan in plans', value='{{plan}}') {{plan}}
+		section.options-add
+			ng-md-icon(icon="launch" style="fill:white"  size="22" ng-click="true")
+			ng-md-icon(icon="expand_more" style="fill:white"  size="27" ng-click="true")
+		section.content-add
+			p Treino A
+	section.user-add
+		section.user-img-add
+			img(class="img-responsive" ng-click="coreEvents.toggle_menu();" holder='holder.js/80x80?auto=yes&theme=graye&text=BRU')
+		h5.user-name-add Bruno
+		span.breadcrumb-add
+			ng-md-icon(icon="place" style="fill:grey"  size="20" ng-click="true")
+			span(ncy-breadcrumb-last="") &nbsp;{{getStatesChain}}
+		section.actions-add
+			a(ui-sref-active="sdd" ui-sref="core.user.training")
+				md-button Cancelar
+			md-button(class="md-raised md-primary"  ng-click="true;" id="action") Salvar Treino
+

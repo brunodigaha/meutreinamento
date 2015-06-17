@@ -15,7 +15,7 @@ module.exports = {
 						// $scope.eventsService= eventsService;
 					},
 					template: fs.readFileSync(__dirname + '/templates/trainingContent.html')
-			},
+				},
 			}
 		},
 		addtraining : {
@@ -28,11 +28,28 @@ module.exports = {
 					controller: function($scope, coreEventsService,$state,$stateParams) {
 						$scope.params = $stateParams;
 						$scope.state = $state.current;
-						// $scope.eventsService= eventsService;
-					},
-					template: fs.readFileSync(__dirname + '/templates/addtrainingWrap.html')
+						$scope.plans = [
+							"Treino A",
+							"Treino B",
+							"Treino C",
+							"Treino D",
+							"Treino E",
+							"Treino F"
+						];
+						$scope.showGridBottomSheet = function($event) {
+							$mdBottomSheet.show({
+								templateUrl: 'bottom-sheet-grid-template.html',
+								controller: 'GridBottomSheetCtrl',
+								targetEvent: $event
+							}).then(function(clickedItem) {
+								alert(clickedItem.name + ' clicked!');
+							});
+						};
+					// $scope.eventsService= eventsService;
 				},
+				template: fs.readFileSync(__dirname + '/templates/addtrainingWrap.html')
 			}
 		}
 	}
+}
 };

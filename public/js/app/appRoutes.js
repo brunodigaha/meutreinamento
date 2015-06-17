@@ -25,6 +25,8 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider,$
    //  .accentPalette('orange')
    //  .warnPalette('red')
     // .backgroundPalette('blue');
+   $mdThemingProvider.theme('grey')
+    .primaryPalette('blue-grey');
 
 	// $breadcrumbProvider.setOptions({
 	// 	template : '<p> Bruno ng-repeat="step in steps | limitTo:-1"</p> <span> {{ng-bind-html="step.ncyBreadcrumbLabel"}} </span>'

@@ -1,14 +1,5 @@
 
 <section class="addtraining">
-  <section class="user-add">
-    <section class="user-img-add"><img ng-click="coreEvents.toggle_menu();" holder="holder.js/80x80?auto=yes&amp;theme=graye&amp;text=BRU" class="img-responsive"/></section>
-    <h5 class="user-name-add">Bruno</h5><span class="breadcrumb-add">
-      <ng-md-icon icon="place" style="fill:grey" size="20" ng-click="true"></ng-md-icon><span ncy-breadcrumb-last="">&nbsp;{{getStatesChain}}</span></span>
-    <section class="actions-add"><a ui-sref-active="sdd" ui-sref="core.user.training">
-        <md-button>Cancelar</md-button></a>
-      <md-button ng-click="true;" id="action" class="md-raised md-primary">Salvar Treino</md-button>
-    </section>
-  </section>
   <section class="tabs">
     <md-tabs md-dynamic-height="" md-border-bottom="">
       <md-tab label="Tríceps">
@@ -56,6 +47,26 @@
     </md-tabs>
   </section>
   <section class="new-training">
-    <p>Treino A</p>
+    <section class="header-add">
+      <md-select placeholder="Treino" ng-model="plan" style="min-width:250px;">
+        <md-option ng-repeat="plan in plans" value="{{plan}}">{{plan}}</md-option>
+      </md-select>
+    </section>
+    <section class="options-add">
+      <ng-md-icon icon="launch" style="fill:white" size="22" ng-click="true"></ng-md-icon>
+      <ng-md-icon icon="expand_more" style="fill:white" size="27" ng-click="true"></ng-md-icon>
+    </section>
+    <section class="content-add">
+      <p>Treino A</p>
+    </section>
+  </section>
+  <section class="user-add">
+    <section class="user-img-add"><img ng-click="coreEvents.toggle_menu();" holder="holder.js/80x80?auto=yes&amp;theme=graye&amp;text=BRU" class="img-responsive"/></section>
+    <h5 class="user-name-add">Bruno</h5><span class="breadcrumb-add">
+      <ng-md-icon icon="place" style="fill:grey" size="20" ng-click="true"></ng-md-icon><span ncy-breadcrumb-last="">&nbsp;{{getStatesChain}}</span></span>
+    <section class="actions-add"><a ui-sref-active="sdd" ui-sref="core.user.training">
+        <md-button>Cancelar</md-button></a>
+      <md-button ng-click="true;" id="action" class="md-raised md-primary">Salvar Treino</md-button>
+    </section>
   </section>
 </section>

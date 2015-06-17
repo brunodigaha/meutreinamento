@@ -2,5 +2,49 @@
 	col(8/8,gutter:0)
 	.trainings
 		col(3/8,gutter:0)
+		box-sizing border-box
+		p
+			font-size 90%
+			margin 0
+			color #aaaaaa
+			font-weight bold
+			margin-top .5em
+			margin-left .5em
+		md-radio-button
+			padding-left 2em
+			padding-right 3em
 	.train
-		col(5/8,gutter:0)
+		col(4.5/8,gutter:0)
+		.header-add
+			col(3/5,gutter:0)
+			box-sizing border-box
+			padding-left 1em
+			background palette('Grey', '600')
+			height 2.7em
+			span
+				display inline-block
+				font-size 140%
+				padding-top .4em
+				+desktop()
+					padding-top .4em
+				color palette('Grey', '50')
+		.options-add
+			col(2/5,gutter:0)
+			box-sizing border-box
+			background palette('Grey', '600')
+			height 2.7em
+			padding-top .4em
+			+desktop()
+				padding-top .6em
+			padding-right 1.3em
+			text-align right
+			ng-md-icon
+				padding-left 1em
+		.content-add
+			col(5/5,gutter:0)
+			box-sizing border-box
+			padding 1em
+			border 1px solid palette('Grey', '300')
+			min-height 19em
+
+

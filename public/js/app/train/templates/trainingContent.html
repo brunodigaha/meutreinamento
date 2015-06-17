@@ -3,13 +3,23 @@
 <!-- div(ncy-breadcrumb="")-->
 <section class="training">
   <section class="trainings">
+    <p>Treinos</p>
     <md-radio-group ng-model="data.group1">
       <md-radio-button value="A" class="md-primary">Treino A</md-radio-button>
       <md-radio-button value="B" class="md-primary">Treino B</md-radio-button>
       <md-radio-button value="C" class="md-primary">Treino C</md-radio-button>
+      <md-radio-button value="D" class="md-primary">Treino D</md-radio-button>
+      <md-radio-button value="E" class="md-primary">Treino E</md-radio-button>
     </md-radio-group>
   </section>
   <section class="train">
-    <h1>Treino A</h1>
+    <section class="header-add"><span>Treino A</span></section>
+    <section class="options-add">
+      <ng-md-icon icon="launch" style="fill:white" size="22" ng-click="true"></ng-md-icon>
+      <ng-md-icon icon="expand_more" style="fill:white" size="27" ng-click="true"></ng-md-icon>
+    </section>
+    <section class="content-add">
+      <p>Treino A</p>
+    </section>
   </section>
 </section>
