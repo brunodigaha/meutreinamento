@@ -5,6 +5,7 @@
     <h4 class="user-name">Bruno</h4><span class="breadcrumb">
       <ng-md-icon icon="place" style="fill:grey" size="20" ng-click="true"></ng-md-icon><span ncy-breadcrumb-last="">&nbsp;{{getStatesChain}}</span></span>
   </section>
+  <section ng-if="(coreEvents.menu || coreEvents.options)" ng-click="coreEvents.close_all();" class="close"></section>
   <section ui-view="menu" ng-if="coreEvents.menu" class="menu animated fadeIn">
     <section class="chat-bubble-arrow-border"></section>
     <section class="chat-bubble-arrow"></section>

@@ -26,6 +26,13 @@
 			top 2.8em
 			text-align right
 			color palette('Grey', '600')
+	.close
+		position fixed
+		top 0
+		left 0
+		height 100%
+		width 100%
+		z-index 4
 	.menu
 		col(4.3/11,gutter:0)
 		+desktop()
@@ -41,6 +48,7 @@
 		box-shadow: 0 8px 17px rgba(0,0,0,.2)
 		border 1px solid palette('Grey', '200')
 		padding 0.5em
+		z-index 6
 		.chat-bubble-arrow-border
 			border-color transparent transparent palette('Grey', '200') transparent
 			border-style solid
@@ -194,6 +202,7 @@
 	shift(11/15,gutter:0)
 	position fixed
 	box-sizing border-box
+	z-index 6
 	.notification-admin
 		col(.6/3,.4/3,gutter:0)
 		+desktop()

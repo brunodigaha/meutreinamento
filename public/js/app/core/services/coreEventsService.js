@@ -17,5 +17,10 @@ module.exports = function () {
 		eventsService.options = !eventsService.options;
 	};
 
+	eventsService.close_all = function () {
+		eventsService.menu = false;
+		eventsService.options = false;
+	};
+
 	return eventsService;
 };

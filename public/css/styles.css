@@ -11510,6 +11510,14 @@ a:visited {
 .perfil .user .breadcrumb:last-child {
   margin-right: 0%;
 }
+.perfil .close {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+}
 .perfil .menu {
   *zoom: 1;
   float: left;
@@ -11526,6 +11534,7 @@ a:visited {
   box-shadow: 0 8px 17px rgba(0,0,0,0.2);
   border: 1px solid #eee;
   padding: 0.5em;
+  z-index: 6;
 }
 .perfil .menu:before,
 .perfil .menu:after {
@@ -12047,6 +12056,7 @@ ng-md-icon
   left: 73.33333333333333%;
   position: fixed;
   box-sizing: border-box;
+  z-index: 6;
 }
 .user-admin:before,
 .user-admin:after {
