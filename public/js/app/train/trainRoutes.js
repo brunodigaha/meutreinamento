@@ -8,11 +8,23 @@ module.exports = {
 			},
 			views: {
 				'content@core': {
-					controller: function($scope, coreEventsService,$state,$stateParams) {
+					controller: function($scope,$mdBottomSheet,$timeout, coreEventsService,$state,$stateParams) {
 						$scope.params = $stateParams;
 						$scope.state = $state.current;
 						$scope.estado = $state.get();
 						// $scope.eventsService= eventsService;
+						$scope.showGridBottomSheet = function($event) {
+							$mdBottomSheet.show({
+								// template: fs.readFileSync(__dirname + '/templates/TrainingGridBottomSheet.html'),
+								template: '<md-bottom-sheet>Hello!</md-bottom-sheet>',
+								controller: 'TrainingGridBottomSheetCtrl',
+								// parent: angular.element(document.getElementById('aqui')),
+								targetEvent: $event
+							}).then(function(clickedItem) {
+								// alert(clickedItem.name + ' clicked!');
+								console.log("teste");
+							});
+						};
 					},
 					template: fs.readFileSync(__dirname + '/templates/trainingContent.html')
 				},
@@ -36,15 +48,6 @@ module.exports = {
 							"Treino E",
 							"Treino F"
 						];
-						$scope.showGridBottomSheet = function($event) {
-							$mdBottomSheet.show({
-								templateUrl: 'bottom-sheet-grid-template.html',
-								controller: 'GridBottomSheetCtrl',
-								targetEvent: $event
-							}).then(function(clickedItem) {
-								alert(clickedItem.name + ' clicked!');
-							});
-						};
 					// $scope.eventsService= eventsService;
 				},
 				template: fs.readFileSync(__dirname + '/templates/addtrainingWrap.html')

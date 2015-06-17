@@ -1,33 +1,35 @@
 section.addtraining
 	section.tabs
-		md-tabs(md-dynamic-height="", md-border-bottom="")
-			md-tab(label="Tríceps")
-				md-content.md-padding
-					md-chips(ng-model="true", readonly="true")
-						md-chip-template
-							strong Supino Reto
-							em Peito
-			md-tab(label="Bíceps")
-				md-content.md-paddin
-					p Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus
-			md-tab(label="Ombro")
-				md-content.md-paddin
-					p Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus
-			md-tab(label="Costas")
-				md-content.md-paddin
-					p Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus
-			md-tab(label="Peito")
-				md-content.md-paddin
-					p Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus
-			md-tab(label="Abdominal")
-				md-content.md-paddin
-					p Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus
-			md-tab(label="Perna")
-				md-content.md-paddin
-					p Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus
-			md-tab(label="Glúteo")
-				md-content.md-paddin
-					p Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus
+		md-card
+			md-card-content
+				md-tabs(md-dynamic-height="", md-border-bottom="")
+					md-tab(label="Tríceps")
+						md-content.md-padding
+							md-chips(ng-model="true", readonly="true")
+								md-chip-template
+									strong Supino Reto
+									em Peito
+					md-tab(label="Bíceps")
+						md-content.md-paddin
+							p Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus
+					md-tab(label="Ombro")
+						md-content.md-paddin
+							p Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus
+					md-tab(label="Costas")
+						md-content.md-paddin
+							p Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus
+					md-tab(label="Peito")
+						md-content.md-paddin
+							p Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus
+					md-tab(label="Abdominal")
+						md-content.md-paddin
+							p Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus
+					md-tab(label="Perna")
+						md-content.md-paddin
+							p Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus
+					md-tab(label="Glúteo")
+						md-content.md-paddin
+							p Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus
 	section.new-training
 		section.header-add
 			md-select(placeholder='Treino', ng-model='plan' style="min-width:250px;")

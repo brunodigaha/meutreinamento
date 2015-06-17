@@ -10773,7 +10773,7 @@ span.icon-notification:before {
   margin-left: 0%;
   margin-right: 0%;
   box-sizing: border-box;
-  border-right: 1px solid #e0e0e0;
+  border-right: 1px solid #eee;
   box-shadow: 5px 0 5px -5px rgba(0,0,0,0.1);
   position: fixed;
   height: 100%;
@@ -11410,8 +11410,8 @@ button.md-button {
   top: 6.3em;
   left: 0.5em;
   background-color: #fff;
-  box-shadow: 0px 0px 3px rgba(0,0,0,0.1);
-  border: 1px solid #e0e0e0;
+  box-shadow: 0 8px 17px rgba(0,0,0,0.2);
+  border: 1px solid #eee;
   padding: 0.5em;
 }
 .perfil .menu:before,
@@ -11470,7 +11470,7 @@ button.md-button {
   }
 }
 .perfil .menu .chat-bubble-arrow-border {
-  border-color: transparent transparent #e0e0e0 transparent;
+  border-color: transparent transparent #eee transparent;
   border-style: solid;
   border-width: 1em;
   height: 0;
@@ -12087,8 +12087,8 @@ ng-md-icon
   padding-right: 1em;
   padding-top: 0.5em;
   background-color: #fff;
-  box-shadow: 0px 0px 3px rgba(0,0,0,0.1);
-  border: 1px solid #e0e0e0;
+  box-shadow: 0 8px 17px rgba(0,0,0,0.2);
+  border: 1px solid #eee;
 }
 .user-admin .options-admin:before,
 .user-admin .options-admin:after {
@@ -12151,7 +12151,7 @@ ng-md-icon
   }
 }
 .user-admin .options-admin .chat-bubble-arrow-border {
-  border-color: transparent transparent #e0e0e0 transparent;
+  border-color: transparent transparent #eee transparent;
   border-style: solid;
   border-width: 0.6em;
   height: 0;
@@ -12434,6 +12434,30 @@ h6.suggestion {
 .training:last-child {
   margin-right: 0%;
 }
+@media only screen and (min-width: 1050px) {
+  .training {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 75%;
+    margin-left: 0%;
+    margin-right: 0%;
+    position: relative;
+    left: 12.5%;
+  }
+  .training:before,
+  .training:after {
+    content: '';
+    display: table;
+  }
+  .training:after {
+    clear: both;
+  }
+  .training:last-child {
+    margin-right: 0%;
+  }
+}
 .training .trainings {
   *zoom: 1;
   float: left;
@@ -12472,7 +12496,7 @@ h6.suggestion {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 56.25%;
+  width: 61.25000000000001%;
   margin-left: 0%;
   margin-right: 0%;
 }
@@ -12530,6 +12554,7 @@ h6.suggestion {
   width: 40%;
   margin-left: 0%;
   margin-right: 0%;
+  position: relative;
   box-sizing: border-box;
   background: #757575;
   height: 2.7em;
@@ -12624,6 +12649,9 @@ h6.suggestion {
 .addtraining .tabs:last-child {
   margin-right: 0%;
 }
+.addtraining .tabs md-card md-card-content {
+  min-height: 9em;
+}
 @media only screen and (min-width: 1050px) {
   .addtraining .tabs {
     *zoom: 1;
@@ -12689,6 +12717,7 @@ h6.suggestion {
   margin-right: 0%;
   position: relative;
   left: 16.666666666666664%;
+  margin-top: 3em;
 }
 .addtraining .new-training:before,
 .addtraining .new-training:after {
