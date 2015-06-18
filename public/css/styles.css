@@ -12775,6 +12775,9 @@ h6.suggestion {
 .addtraining .tabs md-card md-card-content {
   min-height: 9em;
 }
+.addtraining .tabs md-card md-card-content .md-chips .md-chip .md-chip-remove md-icon {
+  top: 40%;
+}
 @media only screen and (min-width: 1050px) {
   .addtraining .tabs {
     *zoom: 1;

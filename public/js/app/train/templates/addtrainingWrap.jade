@@ -5,21 +5,32 @@ section.addtraining
 				md-tabs(md-dynamic-height="", md-border-bottom="")
 					md-tab(label="Tríceps")
 						md-content.md-padding
-							md-chips(ng-model="true", readonly="true")
-								md-chip-template
-									strong Supino Reto
-									em Peito
+							// md-chips(ng-model="true", readonly="true")
+							// 	md-chip-template
+							// 		strong Supino Reto
+							// 		em Peito
 					md-tab(label="Bíceps")
 						md-content.md-paddin
-							p Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus
+						md-chips(ng-model="fruitNames" readonly="readonly" md-on-append="newVeg($chip)")
+							md-chip-template
+								span
+									strong {{$chip.name}}
+									em ({{$chip.type}})
 					md-tab(label="Ombro")
 						md-content.md-paddin
+							md-chips
+								md-chip(ng-click="alert('teste');") Ombro Lateral
+								md-chip Ombro Frontal
+								md-chip Ombro Lateral
+								md-chip Ombro Lateral
 							p Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus
 					md-tab(label="Costas")
 						md-content.md-paddin
 							p Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus
 					md-tab(label="Peito")
 						md-content.md-paddin
+							md-chips
+								button(md-chip-remove="") DEL
 							p Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus
 					md-tab(label="Abdominal")
 						md-content.md-paddin
@@ -38,7 +49,7 @@ section.addtraining
 			ng-md-icon(icon="launch" style="fill:white"  size="22" ng-click="true")
 			ng-md-icon(icon="expand_more" style="fill:white"  size="27" ng-click="true")
 		section.content-add
-			p Treino A
+				md-chips(ng-model="fruitNames2", readonly="readonly2")
 	section.user-add
 		section.user-img-add
 			img(class="img-responsive" ng-click="coreEvents.toggle_menu();" holder='holder.js/80x80?auto=yes&theme=graye&text=BRU')

@@ -6,18 +6,26 @@
         <md-tabs md-dynamic-height="" md-border-bottom="">
           <md-tab label="Tríceps">
             <md-content class="md-padding">
-              <md-chips ng-model="true" readonly="true">
-                <md-chip-template><strong>Supino Reto</strong><em>Peito</em></md-chip-template>
-              </md-chips>
+              <!-- md-chips(ng-model="true", readonly="true")-->
+              <!-- 	md-chip-template-->
+              <!-- 		strong Supino Reto-->
+              <!-- 		em Peito-->
             </md-content>
           </md-tab>
           <md-tab label="Bíceps">
-            <md-content class="md-paddin">
-              <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus</p>
-            </md-content>
+            <md-content class="md-paddin"></md-content>
+            <md-chips ng-model="fruitNames" readonly="readonly" md-on-append="newVeg($chip)">
+              <md-chip-template><span><strong>{{$chip.name}}</strong><em>({{$chip.type}})</em></span></md-chip-template>
+            </md-chips>
           </md-tab>
           <md-tab label="Ombro">
             <md-content class="md-paddin">
+              <md-chips>
+                <md-chip ng-click="alert('teste');">Ombro Lateral</md-chip>
+                <md-chip>Ombro Frontal</md-chip>
+                <md-chip>Ombro Lateral</md-chip>
+                <md-chip>Ombro Lateral</md-chip>
+              </md-chips>
               <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus</p>
             </md-content>
           </md-tab>
@@ -28,6 +36,9 @@
           </md-tab>
           <md-tab label="Peito">
             <md-content class="md-paddin">
+              <md-chips>
+                <button md-chip-remove="">DEL</button>
+              </md-chips>
               <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus</p>
             </md-content>
           </md-tab>
@@ -61,7 +72,7 @@
       <ng-md-icon icon="expand_more" style="fill:white" size="27" ng-click="true"></ng-md-icon>
     </section>
     <section class="content-add">
-      <p>Treino A</p>
+      <md-chips ng-model="fruitNames2" readonly="readonly2"></md-chips>
     </section>
   </section>
   <section class="user-add">
