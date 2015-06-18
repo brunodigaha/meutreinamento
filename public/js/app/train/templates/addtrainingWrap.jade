@@ -51,14 +51,15 @@ section.addtraining
 		section.content-add
 				md-chips(ng-model="fruitNames2", readonly="readonly2")
 	section.user-add
-		section.user-img-add
-			img(class="img-responsive" ng-click="coreEvents.toggle_menu();" holder='holder.js/80x80?auto=yes&theme=graye&text=BRU')
-		h5.user-name-add Bruno
-		span.breadcrumb-add
-			ng-md-icon(icon="place" style="fill:grey"  size="20" ng-click="true")
-			span(ncy-breadcrumb-last="") &nbsp;{{getStatesChain}}
-		section.actions-add
-			a(ui-sref-active="sdd" ui-sref="core.user.training")
-				md-button Cancelar
-			md-button(class="md-raised md-primary"  ng-click="true;" id="action") Salvar Treino
+		section.menu-add
+			section.user-img-add
+				img(class="img-responsive" ng-click="coreEvents.toggle_menu();" holder='holder.js/80x80?auto=yes&theme=graye&text=BRU')
+			h5.user-name-add Bruno
+			span.breadcrumb-add
+				ng-md-icon(icon="place" style="fill:grey"  size="20" ng-click="true")
+				span(ncy-breadcrumb-last="") &nbsp;{{getStatesChain}}
+			section.actions-add
+				a(ui-sref-active="sdd" ui-sref="core.user.training")
+					md-button Cancelar
+				md-button(class="md-raised md-primary"  ng-click="true;" id="action") Salvar Treino
 

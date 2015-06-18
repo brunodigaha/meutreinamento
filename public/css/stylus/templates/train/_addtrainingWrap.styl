@@ -32,7 +32,7 @@
 			col(4/6,gutter:0)
 			box-sizing border-box
 			padding-left 2em
-			background palette('Grey', '600')
+			background palette('Grey', '500')
 			height 55px
 			md-select
 				padding-top .9em
@@ -46,7 +46,7 @@
 		.options-add
 			col(2/6,gutter:0)
 			box-sizing border-box
-			background palette('Grey', '600')
+			background palette('Grey', '500')
 			height 55px
 			padding-top .7em
 			padding-right 1.3em
@@ -61,38 +61,47 @@
 			min-height 15em
 	.user-add
 		col(5/5,gutter:0)
-		.user-img-add
-			col(.4/5,gutter:0)
+		.menu-add
+			col(5/5,gutter:0)
+			background-color white
 			position absolute
-			left .8em
 			bottom 0
-		.user-name-add
-			col(1/5,gutter:0)
-			border-bottom 1px solid palette('Grey', '300')
-			position absolute
-			left 4.7em
-			bottom 1.7em
-			color palette('Grey', '600')
-			text-align left
-			font-weight bold
-		.breadcrumb-add
-			col(1/5,gutter:0)
-			position absolute
-			left 5em
-			bottom .4em
-			text-align right
-			color palette('Grey', '600')
-				font-size 95%
-		.actions-add
-			col(2/5,gutter:0)
-			position absolute
-			text-align right
-			right 5.1em
-			bottom 1.3em
-			button.md-button
-				width 35%
-				min-width 15px
-				min-height 30px
-				line-height 30px
-				font-size 90%
-				margin 0
+			left 0
+			width 100%
+			height 5.3em
+			box-shadow: 0 -3px 13px rgba(0,0,0,.1)
+			.user-img-add
+				col(.4/5,gutter:0)
+				position absolute
+				left .8em
+				bottom 0
+			.user-name-add
+				col(1/5,gutter:0)
+				border-bottom 1px solid palette('Grey', '300')
+				position absolute
+				left 4.7em
+				bottom 1.7em
+				color palette('Grey', '600')
+				text-align left
+				font-weight bold
+			.breadcrumb-add
+				col(1/5,gutter:0)
+				position absolute
+				left 5em
+				bottom .4em
+				text-align right
+				color palette('Grey', '600')
+					font-size 95%
+			.actions-add
+				col(2/5,gutter:0)
+				position absolute
+				text-align right
+				right 5.1em
+				bottom 1.7em
+				button.md-button
+					width 35%
+					min-width 15px
+					min-height 30px
+					line-height 30px
+					font-size 90%
+					margin 0
