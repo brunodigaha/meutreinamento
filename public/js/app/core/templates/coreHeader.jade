@@ -18,8 +18,9 @@ section.perfil(ui-view="perfil")
 				ng-md-icon(icon="settings" style="fill:grey"  size="25" ng-click="true")
 		section.icons-header
 			section.dashboard
-				ng-md-icon(icon="dashboard" style="fill:grey"  size="40" ng-click="true")
-				p Painel
+				a(ui-sref="core.user")
+					ng-md-icon(icon="dashboard" style="fill:grey"  size="40" ng-click="true")
+					p Painel
 			section.notification
 				ng-md-icon(icon="notifications" style="fill:grey"  size="40" ng-click="true")
 				p Notificações
@@ -37,8 +38,9 @@ section.perfil(ui-view="perfil")
 				md-progress-linear.md-primary(md-mode="determinate", value="40")
 			section.icons-content
 				section.train
-					ng-md-icon(icon="assignment" style="fill:grey"  size="40" ng-click="true")
-					p Treinos
+					a(ui-sref="core.user.training")
+						ng-md-icon(icon="assignment" style="fill:grey"  size="40" ng-click="true")
+						p Treinos
 				section.history
 					ng-md-icon(icon="local_movies" style="fill:grey"  size="40" ng-click="true")
 					p   Histórico Treinamentos

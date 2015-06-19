@@ -10905,7 +10905,7 @@ span.icon-notification:before {
   box-sizing: border-box;
   box-shadow: 5px 0 5px -5px rgba(0,0,0,0.1);
   position: fixed;
-  background-color: #009688;
+  background-color: #00897b;
   height: 100%;
   overflow-y: auto;
   z-index: 4;
@@ -11224,6 +11224,15 @@ img:focus,
 .admin-name:focus,
 span:focus {
   outline: 0;
+}
+button.md-button {
+  text-transform: none;
+}
+a.md-button.md-primary.md-raised,
+a.md-button.md-primary.md-fab,
+.md-button.md-primary.md-raised,
+.md-button.md-primary.md-fab {
+  font-weight: bold;
 }
 body {
   background-color: #f5f5f5;
