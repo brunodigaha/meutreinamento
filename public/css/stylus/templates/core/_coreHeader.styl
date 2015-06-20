@@ -12,20 +12,17 @@
 			cursor pointer
 		.user-name
 			col(1/5,gutter:0)
-			border-bottom 1px solid palette('Grey', '300')
+			border-bottom 1px solid palette('Grey', '400')
 			position absolute
-			left 4.5em
-			top -1.5em
-			color palette('Grey', '600')
+			left 3.5em
+			top -1.2em
 			text-align left
-			font-weight bold
 		.breadcrumb
 			col(1/5,gutter:0)
 			position absolute
-			left 6.3em
+			left 5.8em
 			top 2.8em
 			text-align right
-			color palette('Grey', '600')
 	.close
 		position fixed
 		top 0
@@ -189,13 +186,19 @@
 	padding-top 1.5em
 	text-align center
 	button.md-button
-		width 35%
+		width 33%
 		min-width 15px
-		min-height 30px
-		line-height 30px
-		font-size 90%
+		min-height 27px
+		line-height 27px
+		font-size 80%
 		margin 0
-		ng-md-icon
+		+desktop()
+			width 35%
+			min-width 15px
+			min-height 30px
+			line-height 30px
+			font-size 87%
+			margin 0
 
 .user-admin
 	col(4/15,gutter:0)

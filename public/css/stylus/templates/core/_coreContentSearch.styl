@@ -2,8 +2,7 @@
 	col(7/7, gutter:0)
 	box-sizing border-box
 	md-content.md-default-theme
-		background-color #eee
-		top 50%
+		background-color palette('Grey', '50') 
 		md-card
 			height:98vh
 			box-shadow 0 2px 9px 0 rgba(0,0,0,.26)
@@ -38,11 +37,13 @@
 					col(3.2/8,.5/8,gutter:4)
 					text-align center
 					margin-top 1.4em
+					.uploadcare-widget-button-open
+						background-color palette('Teal', '300')
 					+tablet(orientation: portrait)
 						margin-top 2.4em
 					.img-selected
 						width 50%
-						height 50%
+						height auto
 				.attributes
 					col(3.2/8,-.5/8,gutter:0)
 					margin-bottom .5em

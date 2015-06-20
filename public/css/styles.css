@@ -10905,7 +10905,7 @@ span.icon-notification:before {
   box-sizing: border-box;
   box-shadow: 5px 0 5px -5px rgba(0,0,0,0.1);
   position: fixed;
-  background-color: #00897b;
+  background-color: #009688;
   height: 100%;
   overflow-y: auto;
   z-index: 4;
@@ -10983,7 +10983,7 @@ span.icon-notification:before {
   margin-right: 0%;
   position: relative;
   left: 8.333333333333332%;
-  background-color: #f5f5f5;
+  background-color: #fafafa;
 }
 .content-main:before,
 .content-main-open:before,
@@ -11040,7 +11040,7 @@ span.icon-notification:before {
   margin-right: 0%;
   position: relative;
   left: 8.333333333333332%;
-  background-color: #fff;
+  background-color: #f5f5f5;
   position: fixed;
   box-shadow: 0 2px 8px 0 rgba(0,0,0,0.26);
   z-index: 2;
@@ -11157,7 +11157,7 @@ span.icon-notification:before {
 }
 .content-main .content md-content.md-default-theme,
 .content-main-open .content md-content.md-default-theme {
-  background-color: #f5f5f5;
+  background-color: #fafafa;
 }
 .content-main .content md-content.md-default-theme md-card,
 .content-main-open .content md-content.md-default-theme md-card {
@@ -11202,20 +11202,12 @@ span.icon-notification:before {
 }
 .active {
   border: 2px solid #00c853;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
 }
 .square {
   border-radius: 8%;
 }
 svg {
   max-width: 100%;
-}
-md-input-container.md-default-theme label,
-md-input-container.md-default-theme .md-placeholder {
-  color: #808080;
 }
 button:focus,
 svg:focus,
@@ -11500,13 +11492,11 @@ a:visited {
   width: 20%;
   margin-left: 0%;
   margin-right: 0%;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #bdbdbd;
   position: absolute;
-  left: 4.5em;
-  top: -1.5em;
-  color: #757575;
+  left: 3.5em;
+  top: -1.2em;
   text-align: left;
-  font-weight: bold;
 }
 .perfil .user .user-name:before,
 .perfil .user .user-name:after {
@@ -11528,10 +11518,9 @@ a:visited {
   margin-left: 0%;
   margin-right: 0%;
   position: absolute;
-  left: 6.3em;
+  left: 5.8em;
   top: 2.8em;
   text-align: right;
-  color: #757575;
 }
 .perfil .user .breadcrumb:before,
 .perfil .user .breadcrumb:after {
@@ -12070,13 +12059,22 @@ a:visited {
   margin-right: 0%;
 }
 .actions button.md-button {
-  width: 35%;
+  width: 33%;
   min-width: 15px;
-  min-height: 30px;
-  line-height: 30px;
-  font-size: 90%;
+  min-height: 27px;
+  line-height: 27px;
+  font-size: 80%;
   margin: 0;
-ng-md-icon
+}
+@media only screen and (min-width: 1050px) {
+  .actions button.md-button {
+    width: 35%;
+    min-width: 15px;
+    min-height: 30px;
+    line-height: 30px;
+    font-size: 87%;
+    margin: 0;
+  }
 }
 .user-admin {
   *zoom: 1;
@@ -12379,8 +12377,7 @@ ng-md-icon
   margin-right: 0%;
 }
 .search-wrap md-content.md-default-theme {
-  background-color: #eee;
-  top: 50%;
+  background-color: #fafafa;
 }
 .search-wrap md-content.md-default-theme md-card {
   height: 98vh;
@@ -12550,6 +12547,9 @@ ng-md-icon
 .search-wrap md-content.md-default-theme md-card .new-user .avatar:last-child {
   margin-right: 0%;
 }
+.search-wrap md-content.md-default-theme md-card .new-user .avatar .uploadcare-widget-button-open {
+  background-color: #4db6ac;
+}
 @media only screen and (min-width: 400px) and (max-width: 1050px) and (orientation: portrait) {
   .search-wrap md-content.md-default-theme md-card .new-user .avatar {
     margin-top: 2.4em;
@@ -12557,7 +12557,7 @@ ng-md-icon
 }
 .search-wrap md-content.md-default-theme md-card .new-user .avatar .img-selected {
   width: 50%;
-  height: 50%;
+  height: auto;
 }
 .search-wrap md-content.md-default-theme md-card .new-user .attributes {
   *zoom: 1;
