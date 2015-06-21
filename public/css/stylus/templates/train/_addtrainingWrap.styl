@@ -1,64 +1,62 @@
 .addtraining
 	col(6/6,gutter:0)
-	margin-top 1em
-	.tabs
-		col(4/6,gutter:0)
-		shift(1/6,gutter:0)
-		min-height 9em
-		md-card
-			md-card-content
-				min-height 9em
-				.md-chips
-					.md-chip
-						.md-chip-remove
-							md-icon
-								top 40%
-		+desktop()
-			col(4.8/6,gutter:0)
-			shift(.6/6,gutter:0)
-		+hd()
-			col(3/6,gutter:0)
-			shift(1.5/6,gutter:0)
-		+tablet()
-			md-tab-item.md-tab
-				padding 8px 8px
-				line-height 32px
-				font-size 12px
-	.new-training
-		col(4/6,gutter:0)
-		shift(1/6,gutter:0)
-		margin-top 3em
-		.header-add
-			col(4/6,gutter:0)
-			box-sizing border-box
-			padding-left 2em
-			background palette('Grey', '500')
-			height 55px
-			md-select
-				padding-top .9em
-				+desktop()
-					padding-top .4em
-			md-select-label.md-select-label
-				padding-top 0
-				margin 0
-				font-size 110%
-				color palette('Grey', '50')
-		.options-add
-			col(2/6,gutter:0)
-			box-sizing border-box
-			background palette('Grey', '500')
-			height 55px
-			padding-top .7em
-			padding-right 1.3em
-			text-align right
-			ng-md-icon
-				padding-left 1em
-		.content-add
+	md-content
+		background-color palette('Grey', '50') 
+		// min-height: 33vh
+		.tabs
 			col(6/6,gutter:0)
-			box-sizing border-box
-			padding 1em
-			border 1px solid palette('Grey', '300')
-			min-height 15em
+			// shift(1/6,gutter:0)
+			md-card
+				md-card-content
+					min-height 9em
+					.md-chips
+						.md-chip
+							.md-chip-remove
+								md-icon
+									top 40%
+			+hd()
+				col(3/6,gutter:0)
+				shift(1.5/6,gutter:0)
+			+tablet()
+				md-tab-item.md-tab
+					padding 8px 8px
+					line-height 32px
+					font-size 12px
+		.new-training
+			col(4/6,gutter:0)
+			shift(1/6,gutter:0)
+			margin-top 3em
+			.header-add
+				col(4/6,gutter:0)
+				box-sizing border-box
+				padding-left 2em
+				background palette('Blue Grey', '500')
+				height 55px
+				md-select
+					padding-top .9em
+					+desktop()
+						padding-top .4em
+				md-select-label.md-select-label
+					padding-top 0
+					margin 0
+					font-size 110%
+					color palette('Grey', '50')
+			.options-add
+				col(2/6,gutter:0)
+				box-sizing border-box
+				background palette('Blue Grey', '500')
+				height 55px
+				padding-top .7em
+				padding-right 1.3em
+				text-align right
+				ng-md-icon
+					padding-left 1em
+			.content-add
+				col(6/6,gutter:0)
+				box-sizing border-box
+				padding 1em
+				border 1px solid palette('Grey', '300')
+				min-height 15em
 	.user-add
 		col(5/5,gutter:0)
 		.menu-add
