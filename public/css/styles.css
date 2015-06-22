@@ -11101,8 +11101,6 @@ span.icon-notification:before {
   margin-right: 0%;
   box-sizing: border-box;
   margin-top: 5.3em;
-  padding-left: 1em;
-  padding-right: 1em;
 }
 .content-main .content:before,
 .content-main-open .content:before,
@@ -11228,6 +11226,7 @@ a.md-button.md-primary.md-fab,
 }
 body {
   background-color: #fafafa;
+  height: 100vh;
 }
 a {
   text-decoration: none;
@@ -11521,6 +11520,7 @@ a:visited {
   left: 5.8em;
   top: 2.8em;
   text-align: right;
+  color: #000;
 }
 .perfil .user .breadcrumb:before,
 .perfil .user .breadcrumb:after {
@@ -12706,7 +12706,7 @@ a:visited {
   margin-right: 0%;
   box-sizing: border-box;
   padding-left: 1em;
-  background: #607d8b;
+  background: #cfd8dc;
   height: 2.7em;
 }
 .training .train .header-add:before,
@@ -12722,9 +12722,9 @@ a:visited {
 }
 .training .train .header-add span {
   display: inline-block;
-  font-size: 140%;
-  padding-top: 0.4em;
-  color: #fafafa;
+  font-size: 110%;
+  padding-top: 0.5em;
+  color: #424242;
 }
 @media only screen and (min-width: 1050px) {
   .training .train .header-add span {
@@ -12741,7 +12741,7 @@ a:visited {
   margin-right: 0%;
   position: relative;
   box-sizing: border-box;
-  background: #607d8b;
+  background: #cfd8dc;
   height: 2.7em;
   padding-top: 0.4em;
   padding-right: 1.3em;
@@ -12798,9 +12798,9 @@ a:visited {
   margin-left: 0%;
   margin-right: 0%;
   box-sizing: border-box;
-  padding-left: 1em;
-  padding-right: 1em;
-  margin-top: 7em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin-top: 5.5em;
 }
 .addtraining:before,
 .addtraining:after {
@@ -12824,181 +12824,6 @@ a:visited {
     padding-left: 12%;
     padding-right: 12%;
   }
-}
-.addtraining md-content {
-  background-color: transparent;
-}
-.addtraining md-content md-card {
-  min-height: 80vh;
-  box-shadow: 0 2px 9px 0 rgba(0,0,0,0.26);
-}
-.addtraining md-content md-card .tabs {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 100%;
-  margin-left: 0%;
-  margin-right: 0%;
-}
-.addtraining md-content md-card .tabs:before,
-.addtraining md-content md-card .tabs:after {
-  content: '';
-  display: table;
-}
-.addtraining md-content md-card .tabs:after {
-  clear: both;
-}
-.addtraining md-content md-card .tabs:last-child {
-  margin-right: 0%;
-}
-.addtraining md-content md-card .tabs md-card md-card-content .md-chips .md-chip .md-chip-remove md-icon {
-  top: 40%;
-}
-@media only screen and (min-width: 1800px) {
-  .addtraining md-content md-card .tabs {
-    *zoom: 1;
-    float: left;
-    clear: none;
-    text-align: inherit;
-    width: 50%;
-    margin-left: 0%;
-    margin-right: 0%;
-    position: relative;
-    left: 25%;
-  }
-  .addtraining md-content md-card .tabs:before,
-  .addtraining md-content md-card .tabs:after {
-    content: '';
-    display: table;
-  }
-  .addtraining md-content md-card .tabs:after {
-    clear: both;
-  }
-  .addtraining md-content md-card .tabs:last-child {
-    margin-right: 0%;
-  }
-}
-@media only screen and (min-width: 400px) and (max-width: 1050px) {
-  .addtraining md-content md-card .tabs md-tab-item.md-tab {
-    padding: 8px 8px;
-    line-height: 32px;
-    font-size: 12px;
-  }
-}
-.addtraining md-content md-card .new-training {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 66.66666666666666%;
-  margin-left: 0%;
-  margin-right: 0%;
-  position: relative;
-  left: 16.666666666666664%;
-  margin-top: 3em;
-}
-.addtraining md-content md-card .new-training:before,
-.addtraining md-content md-card .new-training:after {
-  content: '';
-  display: table;
-}
-.addtraining md-content md-card .new-training:after {
-  clear: both;
-}
-.addtraining md-content md-card .new-training:last-child {
-  margin-right: 0%;
-}
-.addtraining md-content md-card .new-training .header-add {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 66.66666666666666%;
-  margin-left: 0%;
-  margin-right: 0%;
-  box-sizing: border-box;
-  padding-left: 2em;
-  background: #607d8b;
-  height: 55px;
-}
-.addtraining md-content md-card .new-training .header-add:before,
-.addtraining md-content md-card .new-training .header-add:after {
-  content: '';
-  display: table;
-}
-.addtraining md-content md-card .new-training .header-add:after {
-  clear: both;
-}
-.addtraining md-content md-card .new-training .header-add:last-child {
-  margin-right: 0%;
-}
-.addtraining md-content md-card .new-training .header-add md-select {
-  padding-top: 0.9em;
-}
-@media only screen and (min-width: 1050px) {
-  .addtraining md-content md-card .new-training .header-add md-select {
-    padding-top: 0.4em;
-  }
-}
-.addtraining md-content md-card .new-training .header-add md-select-label.md-select-label {
-  padding-top: 0;
-  margin: 0;
-  font-size: 110%;
-  color: #fafafa;
-}
-.addtraining md-content md-card .new-training .options-add {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 33.33333333333333%;
-  margin-left: 0%;
-  margin-right: 0%;
-  box-sizing: border-box;
-  background: #607d8b;
-  height: 55px;
-  padding-top: 0.7em;
-  padding-right: 1.3em;
-  text-align: right;
-}
-.addtraining md-content md-card .new-training .options-add:before,
-.addtraining md-content md-card .new-training .options-add:after {
-  content: '';
-  display: table;
-}
-.addtraining md-content md-card .new-training .options-add:after {
-  clear: both;
-}
-.addtraining md-content md-card .new-training .options-add:last-child {
-  margin-right: 0%;
-}
-.addtraining md-content md-card .new-training .options-add ng-md-icon {
-  padding-left: 1em;
-}
-.addtraining md-content md-card .new-training .content-add {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 100%;
-  margin-left: 0%;
-  margin-right: 0%;
-  box-sizing: border-box;
-  padding: 1em;
-  border: 1px solid #e0e0e0;
-  min-height: 15em;
-}
-.addtraining md-content md-card .new-training .content-add:before,
-.addtraining md-content md-card .new-training .content-add:after {
-  content: '';
-  display: table;
-}
-.addtraining md-content md-card .new-training .content-add:after {
-  clear: both;
-}
-.addtraining md-content md-card .new-training .content-add:last-child {
-  margin-right: 0%;
 }
 .addtraining .user-add {
   *zoom: 1;
@@ -13108,6 +12933,7 @@ a:visited {
   left: 5em;
   bottom: 0.4em;
   text-align: right;
+  color: #000;
   font-size: 97%;
 }
 .addtraining .user-add .menu-add .breadcrumb-add:before,
@@ -13152,4 +12978,193 @@ a:visited {
   line-height: 30px;
   font-size: 90%;
   margin: 0;
+}
+.addtraining md-content {
+  background-color: transparent;
+}
+.addtraining md-content md-card {
+  min-height: 80vh;
+  box-shadow: 0 2px 9px 0 rgba(0,0,0,0.26);
+}
+@media only screen and (min-width: 1050px) {
+  .addtraining md-content md-card {
+    min-height: 86vh;
+  }
+}
+.addtraining md-content md-card .tabs {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  min-height: 25vh;
+}
+.addtraining md-content md-card .tabs:before,
+.addtraining md-content md-card .tabs:after {
+  content: '';
+  display: table;
+}
+.addtraining md-content md-card .tabs:after {
+  clear: both;
+}
+.addtraining md-content md-card .tabs:last-child {
+  margin-right: 0%;
+}
+.addtraining md-content md-card .tabs md-card md-card-content .md-chips .md-chip .md-chip-remove md-icon {
+  top: 40%;
+}
+@media only screen and (min-width: 400px) and (max-width: 1050px) {
+  .addtraining md-content md-card .tabs md-tab-item.md-tab {
+    padding: 8px 8px;
+    line-height: 32px;
+    font-size: 12px;
+  }
+}
+.addtraining md-content md-card .new-training {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 83.33333333333334%;
+  margin-left: 0%;
+  margin-right: 0%;
+  position: relative;
+  left: 8.333333333333332%;
+  margin-top: 6em;
+  box-sizing: border-box;
+}
+.addtraining md-content md-card .new-training:before,
+.addtraining md-content md-card .new-training:after {
+  content: '';
+  display: table;
+}
+.addtraining md-content md-card .new-training:after {
+  clear: both;
+}
+.addtraining md-content md-card .new-training:last-child {
+  margin-right: 0%;
+}
+.addtraining md-content md-card .new-training .header-add {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: 0%;
+  box-sizing: border-box;
+  padding-left: 2em;
+  background-color: #cfd8dc;
+  height: 55px;
+  border-top-left-radius: 3px;
+}
+.addtraining md-content md-card .new-training .header-add:before,
+.addtraining md-content md-card .new-training .header-add:after {
+  content: '';
+  display: table;
+}
+.addtraining md-content md-card .new-training .header-add:after {
+  clear: both;
+}
+.addtraining md-content md-card .new-training .header-add:last-child {
+  margin-right: 0%;
+}
+.addtraining md-content md-card .new-training .header-add md-select {
+  padding-top: 0.8em;
+}
+@media only screen and (min-width: 1050px) {
+  .addtraining md-content md-card .new-training .header-add md-select {
+    padding-top: 0.4em;
+  }
+}
+.addtraining md-content md-card .new-training .header-add md-select-label.md-select-label {
+  padding-top: 0;
+  margin: 0;
+  font-size: 110%;
+  padding-left: 1em;
+  padding-right: 1em;
+  color: #424242;
+  border-radius: 3px;
+}
+.addtraining md-content md-card .new-training .options-add {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: 0%;
+  box-sizing: border-box;
+  background: #cfd8dc;
+  height: 55px;
+  padding-top: 0.7em;
+  border-top-right-radius: 3px;
+  padding-right: 1.3em;
+  text-align: right;
+}
+.addtraining md-content md-card .new-training .options-add:before,
+.addtraining md-content md-card .new-training .options-add:after {
+  content: '';
+  display: table;
+}
+.addtraining md-content md-card .new-training .options-add:after {
+  clear: both;
+}
+.addtraining md-content md-card .new-training .options-add:last-child {
+  margin-right: 0%;
+}
+@media only screen and (min-width: 1050px) {
+  .addtraining md-content md-card .new-training .options-add {
+    padding-top: 0.5em;
+  }
+}
+.addtraining md-content md-card .new-training .options-add ng-md-icon {
+  padding-left: 1em;
+}
+.addtraining md-content md-card .new-training .options-add button.md-button {
+  width: 38%;
+  min-width: 15px;
+  min-height: 27px;
+  line-height: 27px;
+  font-size: 80%;
+  margin: 0;
+}
+.addtraining md-content md-card .new-training .options-add button.md-button span {
+  color: #26a69a;
+}
+@media only screen and (min-width: 1050px) {
+  .addtraining md-content md-card .new-training .options-add button.md-button {
+    width: 40%;
+    min-width: 15px;
+    min-height: 31px;
+    line-height: 31px;
+    font-size: 85%;
+    margin: 0;
+  }
+}
+.addtraining md-content md-card .new-training .content-add {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  box-sizing: border-box;
+  padding: 1em;
+  border: 1px solid #cfd8dc;
+  min-height: 15em;
+}
+.addtraining md-content md-card .new-training .content-add:before,
+.addtraining md-content md-card .new-training .content-add:after {
+  content: '';
+  display: table;
+}
+.addtraining md-content md-card .new-training .content-add:after {
+  clear: both;
+}
+.addtraining md-content md-card .new-training .content-add:last-child {
+  margin-right: 0%;
 }
