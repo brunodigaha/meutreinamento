@@ -14,13 +14,14 @@
 		col(5/5,gutter:0)
 		.menu-add
 			col(5/5,gutter:0)
+			z-index 3
 			background-color palette('Grey', '100') 
 			// background -webkit-linear-gradient(90deg, #607D8B 27%, #78909C  73%)
 			// background    -moz-linear-gradient(90deg, #607D8B 27%, #78909C  73%)
 			// background     -ms-linear-gradient(90deg, #607D8B 27%, #78909C  73%)
 			// background      -o-linear-gradient(90deg, #607D8B 27%, #78909C  73%)
 			// background         linear-gradient(90deg, palette('Blue Grey', '600') 25%, palette('Blue Grey', '500') 75%)
-			position absolute
+			position fixed
 			top 0
 			left 0
 			width 100%
@@ -71,7 +72,7 @@
 			box-shadow 0 2px 9px 0 rgba(0,0,0,.26)
 			.tabs
 				col(6/6,gutter:0)
-				min-height 25vh
+				min-height 12vh
 				md-card
 					md-card-content
 						.md-chips
@@ -128,7 +129,7 @@
 						padding-left 1em
 					button.md-button
 						span
-							color palette('Teal', '400') 
+							color palette('Light Blue', '500') 
 							// font-weight bold
 						width 38%
 						min-width 15px
@@ -148,5 +149,5 @@
 					box-sizing border-box
 					padding 1em
 					border 1px solid palette('Blue Grey', '100')
-					min-height 15em
+					min-height 10em
 

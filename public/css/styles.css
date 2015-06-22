@@ -10905,7 +10905,7 @@ span.icon-notification:before {
   box-sizing: border-box;
   box-shadow: 5px 0 5px -5px rgba(0,0,0,0.1);
   position: fixed;
-  background-color: #009688;
+  background-color: #607d8b;
   height: 100%;
   overflow-y: auto;
   z-index: 4;
@@ -11217,12 +11217,6 @@ span:focus {
 }
 button.md-button {
   text-transform: none;
-}
-a.md-button.md-primary.md-raised,
-a.md-button.md-primary.md-fab,
-.md-button.md-primary.md-raised,
-.md-button.md-primary.md-fab {
-  font-weight: bold;
 }
 body {
   background-color: #fafafa;
@@ -12853,8 +12847,9 @@ a:visited {
   width: 100%;
   margin-left: 0%;
   margin-right: 0%;
+  z-index: 3;
   background-color: #f5f5f5;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -12999,7 +12994,7 @@ a:visited {
   width: 100%;
   margin-left: 0%;
   margin-right: 0%;
-  min-height: 25vh;
+  min-height: 12vh;
 }
 .addtraining md-content md-card .tabs:before,
 .addtraining md-content md-card .tabs:after {
@@ -13132,7 +13127,7 @@ a:visited {
   margin: 0;
 }
 .addtraining md-content md-card .new-training .options-add button.md-button span {
-  color: #26a69a;
+  color: #03a9f4;
 }
 @media only screen and (min-width: 1050px) {
   .addtraining md-content md-card .new-training .options-add button.md-button {
@@ -13155,7 +13150,7 @@ a:visited {
   box-sizing: border-box;
   padding: 1em;
   border: 1px solid #cfd8dc;
-  min-height: 15em;
+  min-height: 10em;
 }
 .addtraining md-content md-card .new-training .content-add:before,
 .addtraining md-content md-card .new-training .content-add:after {
