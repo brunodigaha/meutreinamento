@@ -21,7 +21,7 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider,$
 				{url:'/login'},require('./auth/authRoutes.js').auth.login));
 
    $mdThemingProvider.theme('default')
-    .primaryPalette('light-blue');
+    .primaryPalette('blue');
    //  .accentPalette('orange')
    //  .warnPalette('red')
     // .backgroundPalette('blue');

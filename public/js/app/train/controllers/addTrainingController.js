@@ -1,4 +1,5 @@
-module.exports = function($scope, coreEventsService,$state,$stateParams) {
+var fs = require('fs');
+module.exports = function($scope, coreEventsService,$state,$stateParams,$mdDialog) {
 	$scope.params = $stateParams;
 	$scope.state = $state.current;
 	$scope.plans = [
@@ -31,6 +32,20 @@ module.exports = function($scope, coreEventsService,$state,$stateParams) {
 			name: chip,
 			type: 'unknown'
 		};
+	};
+	$scope.importTraining = function(ev) {
+		$mdDialog.show({
+			controller: 'ImportDialogController',
+			// templateUrl: 'dialog1.tmpl.html',
+			template: fs.readFileSync(__dirname + '/../templates/ImportDialogTemplate.html'),
+			parent: angular.element(document.body),
+			targetEvent: ev,
+		})
+		.then(function(answer) {
+			$scope.alert = 'You said the information was "' + answer + '".';
+		}, function() {
+			$scope.alert = 'You cancelled the dialog.';
+		});
 	};
 
 };
