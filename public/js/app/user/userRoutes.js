@@ -4,7 +4,7 @@ module.exports = {
 		user : {
 			authenticate: true,
 			ncyBreadcrumb: {
-				label: 'Painel'
+				label: 'Painel Inicial'
 			},
 			views: {
 				controller: function($stateParams) {

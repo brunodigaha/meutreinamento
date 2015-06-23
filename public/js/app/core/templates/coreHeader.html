@@ -46,7 +46,7 @@
             <ng-md-icon icon="assignment" style="fill:grey" size="40" ng-click="true"></ng-md-icon>
             <p>Treinos</p></a></section>
         <section class="history">
-          <ng-md-icon icon="local_movies" style="fill:grey" size="40" ng-click="true"></ng-md-icon>
+          <ng-md-icon icon="local_movies" style="fill:grey" size="40" ng-click=""></ng-md-icon>
           <p>  Histórico Treinamentos</p>
         </section>
         <section class="review">
@@ -62,8 +62,10 @@
     </section>
   </section>
 </section>
-<section class="actions"><a ui-sref-active="sdd" ui-sref="core.user.addtraining">
-    <md-button ng-click="true;" id="action" class="md-raised md-primary">Criar Treino</md-button></a></section>
+<section class="actions">
+  <!-- a(ui-sref-active="sdd" ui-sref="core.user.addtraining")-->
+  <!-- 	md-button(class="md-raised md-primary") Inserir Treino-->
+</section>
 <section ui-view="user-admin" class="user-admin">
   <section class="notification-admin">
     <ng-md-icon icon="notifications_none" style="fill:grey" size="40" ng-click="true"></ng-md-icon>
@@ -90,7 +92,7 @@
         <ng-md-icon icon="settings" style="fill:grey" size="17" ng-click="true"></ng-md-icon>&nbsp;&nbsp;Configurações
       </li>
       <li>
-        <ng-md-icon icon="shopping_cart" style="fill:grey" size="17" ng-click="true"></ng-md-icon>&nbsp;&nbsp;Conta
+        <ng-md-icon icon="shopping_cart" style="fill:grey" size="17" ng-click="true"></ng-md-icon>&nbsp;&nbsp;Plano
       </li>
       <li>
         <p class="line"></p>

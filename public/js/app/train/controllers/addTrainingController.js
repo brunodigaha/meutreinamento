@@ -33,6 +33,9 @@ module.exports = function($scope, coreEventsService,$state,$stateParams,$mdDialo
 			type: 'unknown'
 		};
 	};
+	$scope.teste= function(){
+		alert("bruno");
+	};
 	$scope.importTraining = function(ev) {
 		$mdDialog.show({
 			controller: 'ImportDialogController',

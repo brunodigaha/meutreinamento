@@ -50,5 +50,25 @@
 			box-sizing border-box
 			border 1px solid palette('Grey', '300')
 			min-height 19em
+	.fab-action
+		position fixed
+		bottom 1.7em
+		right 1em
+		+desktop()
+			right 7em
+		+hd()
+			right 12em
+		.md-button.md-fab
+			// font-size 70%
+			width 60px
+			height 60px
+			padding-top .8em
+			+desktop()
+				width 80px
+				height 80px
+				padding-top 1.5em
+			box-shadow 0 6px 23px 0 #9E9E9E, 0 6px 11px 0 #a0a0a0;
+			background-color palette('Blue','700')
+
 
 

@@ -34,7 +34,7 @@ module.exports = {
 		addtraining : {
 			authenticate: true,
 			ncyBreadcrumb: {
-				label: 'Criar Treino'
+				label: 'Inserir Treino'
 			},
 			views: {
 				'wrap@': {
