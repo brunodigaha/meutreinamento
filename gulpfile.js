@@ -22,7 +22,7 @@ gulp.task('browserify',getTask('browserify'));
 gulp.task('js-watch',['browserify'],plugins.browserSync.reload);
 
 gulp.task('watch', function(){
-	gulp.watch(['public/css/stylus/**/*.styl','public/css/*.css'],['stylus']);
+	gulp.watch(['public/css/stylus/**/*.styl'],['stylus']);
 	gulp.watch(['public/js/app/**/*.jade'],['jade']);
 	gulp.watch(['public/images/files/**/*.png'],['sprite']);
 	gulp.watch(['public/js/app/**/*.js','public/js/app/**/*.html'],['js-watch']);

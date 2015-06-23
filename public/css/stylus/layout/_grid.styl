@@ -9,12 +9,12 @@
 		+desktop()
 			col(1/15,gutter:0)
 		box-sizing border-box
-		// border-right 1px solid palette('Grey', '200')
-		box-shadow 5px 0 5px -5px rgba(0,0,0,.1)
+		border-right 1px solid palette('Grey', '300')
+		// box-shadow 5px 0 3px -5px rgba(0,0,0,.1)
 		// box-shadow: 0 8px 10px rgba(0,0,0,.2)
 		position fixed
-		background-color palette('Blue Grey', '500')
-		// background         linear-gradient(90deg, palette('Blue Grey', '700') 10%, palette('Blue Grey', '600') 30%)
+		// background-color palette('Blue Grey', '500')
+		background-color white
 		height 100%
 		overflow-y auto
 		z-index 4
@@ -34,7 +34,8 @@
 		.header
 			col(11/11,gutter:0) 
 			shift(1/12,gutter:0)
-			background-color palette('Grey', '100') 
+			// background-color palette('Grey', '100') 
+			background-color white
 			// height 10em
 			// background-color palette('Blue Grey', '400')
 			// background -webkit-linear-gradient(90deg, #607D8B 27%, #78909C  73%)
@@ -47,11 +48,10 @@
 				shift(1/15,gutter:0)
 				position fixed
 			position fixed
-			// border-bottom 1px solid palette('Grey', '100')
-			// background-color palette('Grey', '500')
-			box-shadow 0 2px 8px 0 rgba(0,0,0,.26)
-			// box-shadow 0 1px 1px -1px rgba(0,0,0,0.1)
-			z-index 2
+			border-bottom 1px solid palette('Grey', '300')
+			// box-shadow 0 5px 3px -5px rgba(0,0,0,.1)
+			// box-shadow 0 2px 5px -2px rgba(0,0,0,0.25)
+			z-index 4
 		.content
 			col(11/11,gutter:0)
 			+desktop()
@@ -69,7 +69,8 @@
 					min-height:89vh
 					+desktop()
 						min-height:87vh
-					box-shadow 0 2px 9px 0 rgba(0,0,0,.26)
+					// box-shadow 0 1px 9px 0 rgba(0,0,0,.17)
+					// box-shadow 0 1px 9px 0 rgba(0,0,0,.23)
 			margin-top 5.3em
 			// padding-left .5em
 			// padding-right .5em
