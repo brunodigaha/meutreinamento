@@ -10,40 +10,42 @@
           </md-input-container>
           <ng-md-icon icon="search" style="fill:silver" size="50" ng-click="true;"></ng-md-icon>
         </section>
-        <h6 class="suggestion">Alunos Sugeridos</h6>
+        <!-- h6(class="suggestion") Alunos Sugeridos-->
         <section class="suggestion">
-          <section ng-repeat="person in [1,2,2,4,4,4] track by $index">
+          <section ng-repeat="person in [1,2,2,4,4,4,3,4] track by $index">
             <md-list-item><img holder="holder.js/35x35?auto=yes&amp;random=yes&amp;text=BRU" class="img-responsive"/>
               <p ng-if="coreEvents.search">Bruno Alexandre</p>
-              <ng-md-icon icon="add" style="fill:blue" size="25" ng-click="open_user($event);"></ng-md-icon>
+              <ng-md-icon icon="add" style="fill:DarkGray" size="23" ng-click="open_user($event);"></ng-md-icon>
             </md-list-item>
           </section>
         </section>
-        <section class="new-user">
-          <!-- md-toolbar.md-primary-->
-          <!-- 	.md-toolbar-tools-->
-          <!-- 		h2.md-flex Cadastrar Aluno-->
-          <!-- md-content(md-theme="blue-grey")-->
-          <h5>Cadastrar Aluno</h5>
-          <section class="avatar"><img ng-if="!image" class="icon-avatar"/><img ng-src="{{image}}" ng-if="image" class="img-responsive img-selected"/>
-            <uploadcare-widget ng-model="object.image.info.uuid" data-public-key="eb39c5def657fcd88946" data-locale="pt" data-tabs="file facebook gdrive dropbox instagram evernote flickr skydrive" data-images-only="true" data-path-value="true" data-preview-step="true" data-clearable="true" data-multiple="false" data-crop="free" on-upload-complete="onUCUploadComplete(info)" on-widget-ready="onUCWidgetReady(widget)" value="{{ object.image.info.cdnUrl }}"></uploadcare-widget>
-          </section>
-          <section class="attributes">
-            <md-input-container>
-              <label>Nome Completo</label>
-              <input ng-model="image"/>
-            </md-input-container>
-            <md-input-container>
-              <label>Telefone</label>
-              <input type="tel" ng-model="searchModel.email"/>
-            </md-input-container>
-            <md-input-container>
-              <label>Data de Nascimento</label>
-              <input type="date" ng-model="searchModel.nascimento"/>
-            </md-input-container>
-            <md-button ng-click="true;" class="md-raised md-primary">Cadastrar Aluno</md-button>
-          </section>
+        <section class="fab-action">
+          <md-button aria-label="Use Android" class="md-fab md-primary"><a ui-sref-active="sdd" ui-sref="core.user.addtraining">
+              <ng-md-icon icon="add" style="fill:white" size="38"></ng-md-icon></a>
+            <md-tooltip class="tooltipAction .left">Inserir Treino</md-tooltip>
+          </md-button>
         </section>
+        <!-- section.new-user-->
+        <!-- 	// md-toolbar.md-primary-->
+        <!-- 	// 	.md-toolbar-tools-->
+        <!-- 	// 		h2.md-flex Cadastrar Aluno-->
+        <!-- 	// md-content(md-theme="blue-grey")-->
+        <!-- 	h5 Cadastrar Aluno-->
+        <!-- 	section.avatar-->
+        <!-- 		img(class="icon-avatar" ng-if="!image")-->
+        <!-- 		img(class="img-responsive img-selected" ng-src="{{image}}" ng-if="image")-->
+        <!-- 		uploadcare-widget(ng-model="object.image.info.uuid" data-public-key="eb39c5def657fcd88946" data-locale="pt" data-tabs="file facebook gdrive dropbox instagram evernote flickr skydrive" data-images-only="true" data-path-value="true" data-preview-step="true" data-clearable="true" data-multiple="false" data-crop="free" on-upload-complete="onUCUploadComplete(info)" on-widget-ready="onUCWidgetReady(widget)" value="{{ object.image.info.cdnUrl }}")-->
+        <!-- 	section.attributes-->
+        <!-- 		md-input-container-->
+        <!-- 			label Nome Completo-->
+        <!-- 			input(ng-model="image")-->
+        <!-- 		md-input-container-->
+        <!-- 			label Telefone-->
+        <!-- 			input(type="tel", ng-model="searchModel.email")-->
+        <!-- 		md-input-container-->
+        <!-- 			label Data de Nascimento-->
+        <!-- 			input(type="date", ng-model="searchModel.nascimento")-->
+        <!-- 		md-button(class="md-raised md-primary"  ng-click="true;") Cadastrar Aluno-->
       </md-card-content>
     </md-card>
   </md-content>

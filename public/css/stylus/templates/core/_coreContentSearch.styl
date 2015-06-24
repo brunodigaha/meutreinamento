@@ -24,8 +24,26 @@
 				margin-top 0
 			.suggestion
 				col(7/9,1/9 -1/9, gutter:0)
+				margin-top 6em
 				section
 					col(1/2,cycle:2)
+			.fab-action
+				position fixed
+				bottom 1em
+				right 1em
+				.md-button.md-fab
+					// font-size 70%
+					width 60px
+					height 60px
+					padding-top .8em
+					+desktop()
+						width 80px
+						height 80px
+						padding-top 1.5em
+					box-shadow 0 3px 13px 0 #9E9E9E, 0 3px 5px 0 #a0a0a0;
+					background-color palette('Blue','700')
+
+
 			.new-user
 				col(8/9,.5/9 -.5/9,gutter:0)
 				margin-top 1em

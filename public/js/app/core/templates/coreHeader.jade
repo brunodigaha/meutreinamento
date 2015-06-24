@@ -1,7 +1,7 @@
 section.perfil(ui-view="perfil")
 	section.user
 		section.user-img
-			img(class="img-responsive" ng-click="coreEvents.toggle_menu();" holder='holder.js/80x80?auto=yes&theme=sky&text=BRU')
+			img(class="img-responsive" ng-click="coreEvents.toggle_menu();" holder='holder.js/80x80?auto=yes&theme=vine&text=BRU')
 		h3.user-name Bruno
 		span.breadcrumb
 			ng-md-icon(icon="place" style="fill:grey"  size="20" ng-click="true")
@@ -15,7 +15,7 @@ section.perfil(ui-view="perfil")
 				section.img-user
 					img(class="img-responsive" holder='holder.js/45x45?auto=yes&theme=sky&text=BRU')
 				h6 Bruno Alexandre
-				ng-md-icon(icon="settings" style="fill:grey"  size="25" ng-click="true")
+				ng-md-icon(icon="create" style="fill:grey"  size="22" ng-click="true")
 		section.icons-header
 			section.dashboard
 				a(ui-sref="core.user")
@@ -46,15 +46,15 @@ section.perfil(ui-view="perfil")
 					p   Histórico Treinamentos
 				section.review
 					ng-md-icon(icon="straighten" style="fill:grey"  size="40" ng-click="true")
-					p Avaliações
+					p Medidas
 			section.btn-train
 				md-button(class="md-raised md-primary"  ng-click="true;" id="btn-treinar")
 					ng-md-icon(icon="play_arrow" style="fill:white"  size="25" ng-click="true")
 					| &nbsp;&nbsp;Treinar
 
 section.actions
-	// a(ui-sref-active="sdd" ui-sref="core.user.addtraining")
-	// 	md-button(class="md-raised md-primary") Inserir Treino
+	a(ui-sref-active="sdd" ui-sref="core.user.addtraining")
+		md-button(class="md-raised md-primary") Inserir Treino
 
 section.user-admin(ui-view="user-admin")
 	section.notification-admin

@@ -11197,6 +11197,9 @@ span.icon-notification:before {
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
+.btn {
+  border: 1px solid #c0c0c0;
+}
 .active {
   border: 1px solid #00c853;
 }
@@ -11255,9 +11258,43 @@ a:visited {
   margin-right: auto;
 }
 .search-icon {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
   text-align: center;
   margin-top: 0.3em;
   margin-bottom: 0.3em;
+}
+.search-icon:before,
+.search-icon:after {
+  content: '';
+  display: table;
+}
+.search-icon:after {
+  clear: both;
+}
+.search-icon:last-child {
+  margin-right: 0%;
+}
+.search-icon img {
+  margin-bottom: 1.4em;
+  margin-top: 0.7em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 63% !important;
+  height: 63% !important;
+  cursor: pointer;
+  cursor: hand;
+}
+@media only screen and (min-width: 1800px) {
+  .search-icon img {
+    margin-top: 0.2em;
+  }
 }
 .list-users {
   *zoom: 1;
@@ -11349,12 +11386,12 @@ a:visited {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 68%;
+  width: 70%;
   margin-left: 0%;
   margin-right: 0%;
-  color: #fafafa;
   padding-top: 0.5em;
-  padding-left: 2%;
+  box-sizing: border-box;
+  padding-left: 1%;
   margin: 0;
   font-size: 0.9em;
   vertical-align: middle;
@@ -11386,7 +11423,7 @@ a:visited {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 10%;
+  width: 8%;
   margin-left: 0%;
   margin-right: 0%;
   padding-top: 2%;
@@ -12008,15 +12045,15 @@ a:visited {
 .perfil .menu .menu-content .btn-train button.md-button {
   width: 40%;
   min-width: 15px;
-  min-height: 27px;
-  line-height: 27px;
+  min-height: 34px;
+  line-height: 34px;
   font-size: 90%;
   margin: 0;
   padding-left: 1em;
 }
 .perfil .menu .menu-content .btn-train ng-md-icon svg {
   position: absolute;
-  top: 0.1em;
+  top: 0.3em;
   left: 0.5em;
 }
 @media only screen and (min-width: 1050px) {
@@ -12052,20 +12089,20 @@ a:visited {
   margin-right: 0%;
 }
 .actions button.md-button {
-  width: 33%;
+  width: 37%;
   min-width: 15px;
-  min-height: 27px;
-  line-height: 27px;
-  font-size: 80%;
+  min-height: 33px;
+  line-height: 33px;
+  font-size: 90%;
   margin: 0;
 }
 @media only screen and (min-width: 1050px) {
   .actions button.md-button {
-    width: 35%;
+    width: 40%;
     min-width: 15px;
-    min-height: 30px;
-    line-height: 30px;
-    font-size: 87%;
+    min-height: 43px;
+    line-height: 43px;
+    font-size: 108%;
     margin: 0;
   }
 }
@@ -12455,6 +12492,7 @@ a:visited {
   width: 77.77777777777779%;
   margin-left: 11.11111111111111%;
   margin-right: 0%;
+  margin-top: 6em;
 }
 .search-wrap md-content.md-default-theme md-card .suggestion:before,
 .search-wrap md-content.md-default-theme md-card .suggestion:after {
@@ -12490,6 +12528,25 @@ a:visited {
 }
 .search-wrap md-content.md-default-theme md-card .suggestion section:nth-child(2n+1) {
   clear: both;
+}
+.search-wrap md-content.md-default-theme md-card .fab-action {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+}
+.search-wrap md-content.md-default-theme md-card .fab-action .md-button.md-fab {
+  width: 60px;
+  height: 60px;
+  padding-top: 0.8em;
+  box-shadow: 0 3px 13px 0 #9e9e9e, 0 3px 5px 0 #a0a0a0;
+  background-color: #1976d2;
+}
+@media only screen and (min-width: 1050px) {
+  .search-wrap md-content.md-default-theme md-card .fab-action .md-button.md-fab {
+    width: 80px;
+    height: 80px;
+    padding-top: 1.5em;
+  }
 }
 .search-wrap md-content.md-default-theme md-card .new-user {
   *zoom: 1;
@@ -12781,35 +12838,6 @@ a:visited {
 .training .train .content-add:last-child {
   margin-right: 0%;
 }
-.training .fab-action {
-  position: fixed;
-  bottom: 0.1em;
-  right: 1em;
-}
-@media only screen and (min-width: 1050px) {
-  .training .fab-action {
-    right: 7em;
-  }
-}
-@media only screen and (min-width: 1800px) {
-  .training .fab-action {
-    right: 12em;
-  }
-}
-.training .fab-action .md-button.md-fab {
-  width: 60px;
-  height: 60px;
-  padding-top: 0.8em;
-  box-shadow: 0 6px 23px 0 #9e9e9e, 0 6px 11px 0 #a0a0a0;
-  background-color: #1976d2;
-}
-@media only screen and (min-width: 1050px) {
-  .training .fab-action .md-button.md-fab {
-    width: 80px;
-    height: 80px;
-    padding-top: 1.5em;
-  }
-}
 .addtraining {
   *zoom: 1;
   float: left;
@@ -12875,13 +12903,13 @@ a:visited {
   margin-left: 0%;
   margin-right: 0%;
   z-index: 3;
-  background-color: #f5f5f5;
+  background: #fff;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 5.3em;
-  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.26);
+  border-bottom: 1px solid #e0e0e0;
 }
 .addtraining .user-add .menu-add:before,
 .addtraining .user-add .menu-add:after {
@@ -13006,7 +13034,6 @@ a:visited {
 }
 .addtraining md-content md-card {
   min-height: 80vh;
-  box-shadow: 0 2px 9px 0 rgba(0,0,0,0.26);
 }
 @media only screen and (min-width: 1050px) {
   .addtraining md-content md-card {

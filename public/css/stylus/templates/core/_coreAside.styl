@@ -1,7 +1,20 @@
 .search-icon
+	col(3/3, gutter:0)
 	text-align center
 	margin-top .3em
 	margin-bottom .3em
+	img
+		margin-bottom 1.4em
+		margin-top .7em
+		+hd()
+			margin-top .2em
+		margin-left auto
+		margin-right auto
+		display block
+		width 63% !important
+		height 63% !important
+		cursor pointer
+		cursor hand
 
 .list-users
 	col(3/3, gutter:0)
@@ -28,10 +41,11 @@
 			+desktop()
 				width 18%
 		p
-			col(3.4/5,gutter:0)
-			color palette('Grey', '50')
+			col(3.5/5,gutter:0)
+			// color palette('Grey', '50')
 			padding-top .5em
-			padding-left 2%
+			box-sizing border-box
+			padding-left 1%
 			margin 0
 			font-size .9em
 			vertical-align middle
@@ -41,7 +55,7 @@
 				padding-top .9em
 				font-size 1.5em
 		ng-md-icon
-			col(.5/5,gutter:0)
+			col(.4/5,gutter:0)
 			padding-top 2%
 			+hd()
 				padding-top 1.3em
