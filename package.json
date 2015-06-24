@@ -61,6 +61,7 @@
   "browser": {
     "angular": "./public/bower_components/angular/angular.js",
     "angularCookies": "./public/bower_components/angular-cookies/angular-cookies.js",
+    "angularSortableView": "./public/bower_components/angular-sortable-view/src/angular-sortable-view.min.js",
     "restAngular": "./public/bower_components/restangular/dist/restangular.js",
     "angularAnimate": "./public/bower_components/angular-animate/angular-animate.js",
     "angularIcons": "./public/bower_components/angular-material-icons/angular-material-icons.min.js",
@@ -84,6 +85,10 @@
     },
     "angularIcons": {
       "exports": "angular.module('ngMdIcons')",
+      "depends": "angular"
+    },
+    "angularSortableView": {
+      "exports": "angular.module('angular-sortable-view')",
       "depends": "angular"
     },
     "angularAnimate": {

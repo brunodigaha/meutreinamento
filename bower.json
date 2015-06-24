@@ -33,6 +33,7 @@
     "animate.css": "https://github.com/daneden/animate.css.git#3.3.0",
     "angular-material-icons": "~0.4.0",
     "angular-uploadcare": "~0.1.2",
-    "angular-breadcrumb": "~0.4.0"
+    "angular-breadcrumb": "~0.4.0",
+    "angular-sortable-view": "~0.0.13"
   }
 }

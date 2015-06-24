@@ -140,74 +140,25 @@
             <md-button ng-click="importTraining($event);" class="md-raised">Importar Treino</md-button>
           </section>
           <section class="content-add">
-            <ul>
-              <li> 
-                <section class="drag">
-                  <!-- span grag-->
-                  <ng-md-icon icon="open_with" style="fill:black" size="20"></ng-md-icon>
-                </section>
-                <section class="exerc"><span>Crucifixo Inclinado</span></section>
-                <section class="volume"><span>3</span><span>x</span><span>12</span></section>
-                <section class="delete">
-                  <ng-md-icon icon="close" style="fill:black" size="20"></ng-md-icon>
-                </section>
-              </li>
-              <li> 
-                <section class="drag">
-                  <!-- span grag-->
-                  <ng-md-icon icon="open_with" style="fill:black" size="20"></ng-md-icon>
-                </section>
-                <section class="exerc"><span>Crucifixo Inclinado</span></section>
-                <section class="volume"><span>3</span><span>x</span><span>12</span></section>
-                <section class="delete">
-                  <ng-md-icon icon="close" style="fill:black" size="20"></ng-md-icon>
-                </section>
-              </li>
-              <li> 
-                <section class="drag">
-                  <!-- span grag-->
-                  <ng-md-icon icon="open_with" style="fill:black" size="20"></ng-md-icon>
-                </section>
-                <section class="exerc"><span>Crucifixo Inclinado</span></section>
-                <section class="volume"><span>3</span><span>x</span><span>12</span></section>
-                <section class="delete">
-                  <ng-md-icon icon="close" style="fill:black" size="20"></ng-md-icon>
-                </section>
-              </li>
-              <li> 
-                <section class="drag">
-                  <!-- span grag-->
-                  <ng-md-icon icon="open_with" style="fill:black" size="20"></ng-md-icon>
-                </section>
-                <section class="exerc"><span>Crucifixo Inclinado</span></section>
-                <section class="volume"><span>3</span><span>x</span><span>12</span></section>
-                <section class="delete">
-                  <ng-md-icon icon="close" style="fill:black" size="20"></ng-md-icon>
-                </section>
-              </li>
-              <li> 
-                <section class="drag">
-                  <!-- span grag-->
-                  <ng-md-icon icon="open_with" style="fill:black" size="20"></ng-md-icon>
-                </section>
-                <section class="exerc"><span>Crucifixo Inclinado</span></section>
-                <section class="volume"><span>3</span><span>x</span><span>12</span></section>
-                <section class="delete">
-                  <ng-md-icon icon="close" style="fill:black" size="20"></ng-md-icon>
-                </section>
-              </li>
-              <li> 
-                <section class="drag">
-                  <!-- span grag-->
-                  <ng-md-icon icon="open_with" style="fill:black" size="20"></ng-md-icon>
-                </section>
-                <section class="exerc"><span>Crucifixo Inclinado</span></section>
-                <section class="volume"><span>3</span><span>x</span><span>12</span></section>
-                <section class="delete">
-                  <ng-md-icon icon="close" style="fill:black" size="20"></ng-md-icon>
-                </section>
-              </li>
-            </ul>
+            <!-- .sortable-container.grid(sv-root="", sv-part="data.items4")-->
+            <!-- 	.well.grid(ng-repeat="item in [1,2,3,4,5,6,7,8] track by $index", sv-element="opts")-->
+            <!-- 		| {{item}}-->
+            <!-- 		span(sv-handle="") handle-->
+            <div sv-root="" sv-part="data.items4" class="sortable-container grid">
+              <ul ng-repeat="item in [1,2,3,4,5,6,7,8] track by $index" sv-element="opts">
+                <li> 
+                  <section class="drag">
+                    <!-- span grag-->
+                    <ng-md-icon icon="open_with" style="fill:black" size="20" sv-handle=""></ng-md-icon>
+                  </section>
+                  <section class="exerc"><span>Crucifixo Inclinado</span></section>
+                  <section class="volume"><span>3</span><span>x</span><span>12</span></section>
+                  <section class="delete">
+                    <ng-md-icon icon="close" style="fill:black" size="20"></ng-md-icon>
+                  </section>
+                </li>
+              </ul>
+            </div>
           </section>
         </section>
       </md-card-content>

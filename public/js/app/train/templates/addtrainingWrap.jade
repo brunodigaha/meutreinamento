@@ -120,76 +120,21 @@ section.addtraining
 						// ng-md-icon(icon="expand_more" style="fill:white"  size="27" ng-click="true")
 						md-button(class="md-raised"  ng-click="importTraining($event);") Importar Treino
 					section.content-add
-						ul
-							li 
-								section.drag
-									// span grag
-									ng-md-icon(icon="open_with" style="fill:black" size="20")
-								section.exerc
-									span Crucifixo Inclinado
-								section.volume
-									span 3
-									span x
-									span 12
-								section.delete
-									ng-md-icon(icon="close" style="fill:black" size="20")
-							li 
-								section.drag
-									// span grag
-									ng-md-icon(icon="open_with" style="fill:black" size="20")
-								section.exerc
-									span Crucifixo Inclinado
-								section.volume
-									span 3
-									span x
-									span 12
-								section.delete
-									ng-md-icon(icon="close" style="fill:black" size="20")
-							li 
-								section.drag
-									// span grag
-									ng-md-icon(icon="open_with" style="fill:black" size="20")
-								section.exerc
-									span Crucifixo Inclinado
-								section.volume
-									span 3
-									span x
-									span 12
-								section.delete
-									ng-md-icon(icon="close" style="fill:black" size="20")
-							li 
-								section.drag
-									// span grag
-									ng-md-icon(icon="open_with" style="fill:black" size="20")
-								section.exerc
-									span Crucifixo Inclinado
-								section.volume
-									span 3
-									span x
-									span 12
-								section.delete
-									ng-md-icon(icon="close" style="fill:black" size="20")
-							li 
-								section.drag
-									// span grag
-									ng-md-icon(icon="open_with" style="fill:black" size="20")
-								section.exerc
-									span Crucifixo Inclinado
-								section.volume
-									span 3
-									span x
-									span 12
-								section.delete
-									ng-md-icon(icon="close" style="fill:black" size="20")
-							li 
-								section.drag
-									// span grag
-									ng-md-icon(icon="open_with" style="fill:black" size="20")
-								section.exerc
-									span Crucifixo Inclinado
-								section.volume
-									span 3
-									span x
-									span 12
-								section.delete
-									ng-md-icon(icon="close" style="fill:black" size="20")
+						// .sortable-container.grid(sv-root="", sv-part="data.items4")
+						// 	.well.grid(ng-repeat="item in [1,2,3,4,5,6,7,8] track by $index", sv-element="opts")
+						// 		| {{item}}
+						// 		span(sv-handle="") handle
+						.sortable-container.grid(sv-root="", sv-part="data.items4")
+							ul(ng-repeat="item in [1,2,3,4,5,6,7,8] track by $index", sv-element="opts")
+								li 
+									section.drag
+										// span grag
+										ng-md-icon(icon="open_with" style="fill:black" size="20" sv-handle="")
+									section.exerc
+										span Crucifixo Inclinado
+									section.volume
+										span 3
+										span x
+										span 12
+									section.delete
+										ng-md-icon(icon="close" style="fill:black" size="20")

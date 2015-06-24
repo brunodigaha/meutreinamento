@@ -6,6 +6,7 @@ angular
 .module('app',[
 	require('ui-router').name,
 	require('angularBreadcrumb').name,
+	require('angularSortableView').name,
 	require('restAngular').name,
 	require('angularCookies').name,
 	require('angularMessages').name,
