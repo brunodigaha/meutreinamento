@@ -72,85 +72,137 @@
 			+desktop()
 				min-height:86vh
 			// box-shadow 0 2px 9px 0 rgba(0,0,0,.26)
-			.tabs
-				col(6/6,gutter:0)
-				min-height 25vh
-				md-card
-					md-card-content
+			md-card-content
+				.tabs
+					col(6/6,gutter:0)
+					min-height 18vh
+					md-chips
 						.md-chips
 							.md-chip
 								cursor pointer
-								.md-chip-remove
-									md-icon
-										top 40%
-				// +hd()
-				// 	col(5/6,gutter:0)
-				// 	shift(.5/6,gutter:0)
-				+tablet()
+								background-color white
+								border 1px solid palette('Blue Grey', '100')
+								font-size 85%
+								color palette('Grey','800')
+								+desktop()
+									font-size 100%
+					// +hd()
+					// 	col(5/6,gutter:0)
+					// 	shift(.5/6,gutter:0)
 					md-tab-item.md-tab
-						padding 8px 8px
-						line-height 32px
-						font-size 12px
-			.new-training
-				col(5/6,gutter:0)
-				shift(.5/6,gutter:0)
-				// margin-top 6em
-				box-sizing border-box
-				.header-add
-					col(3/6,gutter:0)
-					box-sizing border-box
-					padding-left 2em
-					background-color palette('Blue Grey', '100')
-					height 55px
-					border-top-left-radius 3px
-					md-select
-						padding-top .8em
-						+desktop()
-							padding-top .4em
-					md-select-label.md-select-label
-						padding-top 0
-						margin 0
-						font-size 110%
-						padding-left 1em
-						padding-right 1em
-						color palette('Grey', '800')
-						// box-shadow 0 2px 2px 0 rgba(0,0,0,.1)
-						// background-color palette('Blue Grey','100')
-						border-radius 3px
-				.options-add
-					col(3/6,gutter:0)
-					box-sizing border-box
-					background palette('Blue Grey', '100')
-					height 55px
-					padding-top .7em
-					border-top-right-radius 3px
-					+desktop()
-						padding-top .5em
-					padding-right 1.3em
-					text-align right
-					ng-md-icon
-						padding-left 1em
-					button.md-button
-						span
-							color palette('Light Blue', '500') 
-							// font-weight bold
-						width 38%
-						min-width 15px
-						min-height 27px
-						line-height 27px
-						font-size 80%
-						margin 0
-						+desktop()
-							width 40%
-							min-width 15px
-							min-height 31px
-							line-height 31px
-							font-size 85%
-							margin 0
-				.content-add
+						+tablet()
+							padding 8px 8px
+							line-height 32px
+							font-size 12px
+						
+				.new-training
 					col(6/6,gutter:0)
 					box-sizing border-box
-					padding 1em
-					border 1px solid palette('Blue Grey', '100')
-					min-height 9em
+					padding-left 2em
+					padding-right 2em
+					+desktop()
+						padding-left 5em
+						padding-right 5em
+					+hd()
+						padding-left 8em
+						padding-right 8em
+
+					// margin-top 6em
+					box-sizing border-box
+					.header-add
+						col(3/6,gutter:0)
+						box-sizing border-box
+						padding-left 2em
+						border-bottom 4px solid palette('Blue Grey','100')
+						height 55px
+						// border-top-left-radius 3px
+						md-select
+							padding-top .8em
+							+desktop()
+								padding-top .4em
+						md-select-label.md-select-label
+							padding-top 0
+							margin 0
+							font-size 110%
+							padding-left 1em
+							padding-right 1em
+							color palette('Grey', '800')
+							// box-shadow 0 2px 2px 0 rgba(0,0,0,.1)
+							// background-color palette('Blue Grey','100')
+							border-radius 3px
+					.options-add
+						col(3/6,gutter:0)
+						box-sizing border-box
+						border-bottom 4px solid palette('Blue Grey','100')
+						height 55px
+						padding-top .7em
+						border-top-right-radius 3px
+						+desktop()
+							padding-top .5em
+						padding-right 1.3em
+						text-align right
+						ng-md-icon
+							padding-left 1em
+						button.md-button
+							span
+								color palette('Light Blue', '500') 
+								// font-weight bold
+							width 38%
+							min-width 15px
+							min-height 27px
+							line-height 27px
+							font-size 80%
+							margin 0
+							+desktop()
+								width 40%
+								min-width 15px
+								min-height 31px
+								line-height 31px
+								font-size 85%
+								margin 0
+					.content-add
+						col(6/6,gutter:0)
+						box-sizing border-box
+						padding 1em
+						ul
+							col(5/6,gutter:0)
+							shift(.5/6,gutter:0)
+							+desktop()
+								col(4/6,gutter:0)
+								shift(1/6,gutter:0)
+							margin 0
+							padding 0
+							font-size 90%
+							// color palette('Blue', '500')
+							// text-align center
+							list-style none
+							li
+								border 1px solid palette('Blue Grey','100')
+								box-sizing border-box
+								margin-bottom .5em
+								col(11/11,gutter:0)
+								text-align center
+								color palette('Grey','700')
+								&:hover
+									background palette('Blue Grey','50')
+								.drag
+									col(.5/11,gutter:0)
+									margin-left .5em
+									cursor pointer
+									ng-md-icon
+										svg
+											vertical-align middle
+								.exerc
+									col(6/11,gutter:0)
+								.volume
+									col(3/11,gutter:0)
+								.delete
+									col(.5/11,gutter:0)
+									margin-left .5em
+									ng-md-icon
+										svg
+											vertical-align middle
+											&:hover
+												background palette('Grey','50')
+											cursor pointer
 

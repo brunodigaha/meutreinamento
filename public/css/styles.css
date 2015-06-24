@@ -11282,7 +11282,7 @@ a:visited {
 }
 .search-icon img {
   margin-bottom: 1.4em;
-  margin-top: 0.7em;
+  margin-top: 0.9em;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -11293,7 +11293,8 @@ a:visited {
 }
 @media only screen and (min-width: 1800px) {
   .search-icon img {
-    margin-top: 0.2em;
+    width: 50% !important;
+    height: 50% !important;
   }
 }
 .list-users {
@@ -11325,6 +11326,11 @@ a:visited {
   width: 60%;
   cursor: pointer;
   cursor: hand;
+}
+@media only screen and (min-width: 1800px) {
+  .list-users img {
+    width: 47%;
+  }
 }
 .list-users-open {
   box-sizing: border-box;
@@ -13040,7 +13046,7 @@ a:visited {
     min-height: 86vh;
   }
 }
-.addtraining md-content md-card .tabs {
+.addtraining md-content md-card md-card-content .tabs {
   *zoom: 1;
   float: left;
   clear: none;
@@ -13048,56 +13054,75 @@ a:visited {
   width: 100%;
   margin-left: 0%;
   margin-right: 0%;
-  min-height: 25vh;
+  min-height: 18vh;
 }
-.addtraining md-content md-card .tabs:before,
-.addtraining md-content md-card .tabs:after {
+.addtraining md-content md-card md-card-content .tabs:before,
+.addtraining md-content md-card md-card-content .tabs:after {
   content: '';
   display: table;
 }
-.addtraining md-content md-card .tabs:after {
+.addtraining md-content md-card md-card-content .tabs:after {
   clear: both;
 }
-.addtraining md-content md-card .tabs:last-child {
+.addtraining md-content md-card md-card-content .tabs:last-child {
   margin-right: 0%;
 }
-.addtraining md-content md-card .tabs md-card md-card-content .md-chips .md-chip {
+.addtraining md-content md-card md-card-content .tabs md-chips .md-chips .md-chip {
   cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #cfd8dc;
+  font-size: 85%;
+  color: #424242;
 }
-.addtraining md-content md-card .tabs md-card md-card-content .md-chips .md-chip .md-chip-remove md-icon {
-  top: 40%;
+@media only screen and (min-width: 1050px) {
+  .addtraining md-content md-card md-card-content .tabs md-chips .md-chips .md-chip {
+    font-size: 100%;
+  }
 }
 @media only screen and (min-width: 400px) and (max-width: 1050px) {
-  .addtraining md-content md-card .tabs md-tab-item.md-tab {
+  .addtraining md-content md-card md-card-content .tabs md-tab-item.md-tab {
     padding: 8px 8px;
     line-height: 32px;
     font-size: 12px;
   }
 }
-.addtraining md-content md-card .new-training {
+.addtraining md-content md-card md-card-content .new-training {
   *zoom: 1;
   float: left;
   clear: none;
   text-align: inherit;
-  width: 83.33333333333334%;
+  width: 100%;
   margin-left: 0%;
   margin-right: 0%;
-  position: relative;
-  left: 8.333333333333332%;
+  box-sizing: border-box;
+  padding-left: 2em;
+  padding-right: 2em;
   box-sizing: border-box;
 }
-.addtraining md-content md-card .new-training:before,
-.addtraining md-content md-card .new-training:after {
+.addtraining md-content md-card md-card-content .new-training:before,
+.addtraining md-content md-card md-card-content .new-training:after {
   content: '';
   display: table;
 }
-.addtraining md-content md-card .new-training:after {
+.addtraining md-content md-card md-card-content .new-training:after {
   clear: both;
 }
-.addtraining md-content md-card .new-training:last-child {
+.addtraining md-content md-card md-card-content .new-training:last-child {
   margin-right: 0%;
 }
-.addtraining md-content md-card .new-training .header-add {
+@media only screen and (min-width: 1050px) {
+  .addtraining md-content md-card md-card-content .new-training {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .addtraining md-content md-card md-card-content .new-training {
+    padding-left: 8em;
+    padding-right: 8em;
+  }
+}
+.addtraining md-content md-card md-card-content .new-training .header-add {
   *zoom: 1;
   float: left;
   clear: none;
@@ -13107,30 +13132,29 @@ a:visited {
   margin-right: 0%;
   box-sizing: border-box;
   padding-left: 2em;
-  background-color: #cfd8dc;
+  border-bottom: 4px solid #cfd8dc;
   height: 55px;
-  border-top-left-radius: 3px;
 }
-.addtraining md-content md-card .new-training .header-add:before,
-.addtraining md-content md-card .new-training .header-add:after {
+.addtraining md-content md-card md-card-content .new-training .header-add:before,
+.addtraining md-content md-card md-card-content .new-training .header-add:after {
   content: '';
   display: table;
 }
-.addtraining md-content md-card .new-training .header-add:after {
+.addtraining md-content md-card md-card-content .new-training .header-add:after {
   clear: both;
 }
-.addtraining md-content md-card .new-training .header-add:last-child {
+.addtraining md-content md-card md-card-content .new-training .header-add:last-child {
   margin-right: 0%;
 }
-.addtraining md-content md-card .new-training .header-add md-select {
+.addtraining md-content md-card md-card-content .new-training .header-add md-select {
   padding-top: 0.8em;
 }
 @media only screen and (min-width: 1050px) {
-  .addtraining md-content md-card .new-training .header-add md-select {
+  .addtraining md-content md-card md-card-content .new-training .header-add md-select {
     padding-top: 0.4em;
   }
 }
-.addtraining md-content md-card .new-training .header-add md-select-label.md-select-label {
+.addtraining md-content md-card md-card-content .new-training .header-add md-select-label.md-select-label {
   padding-top: 0;
   margin: 0;
   font-size: 110%;
@@ -13139,7 +13163,7 @@ a:visited {
   color: #424242;
   border-radius: 3px;
 }
-.addtraining md-content md-card .new-training .options-add {
+.addtraining md-content md-card md-card-content .new-training .options-add {
   *zoom: 1;
   float: left;
   clear: none;
@@ -13148,33 +13172,33 @@ a:visited {
   margin-left: 0%;
   margin-right: 0%;
   box-sizing: border-box;
-  background: #cfd8dc;
+  border-bottom: 4px solid #cfd8dc;
   height: 55px;
   padding-top: 0.7em;
   border-top-right-radius: 3px;
   padding-right: 1.3em;
   text-align: right;
 }
-.addtraining md-content md-card .new-training .options-add:before,
-.addtraining md-content md-card .new-training .options-add:after {
+.addtraining md-content md-card md-card-content .new-training .options-add:before,
+.addtraining md-content md-card md-card-content .new-training .options-add:after {
   content: '';
   display: table;
 }
-.addtraining md-content md-card .new-training .options-add:after {
+.addtraining md-content md-card md-card-content .new-training .options-add:after {
   clear: both;
 }
-.addtraining md-content md-card .new-training .options-add:last-child {
+.addtraining md-content md-card md-card-content .new-training .options-add:last-child {
   margin-right: 0%;
 }
 @media only screen and (min-width: 1050px) {
-  .addtraining md-content md-card .new-training .options-add {
+  .addtraining md-content md-card md-card-content .new-training .options-add {
     padding-top: 0.5em;
   }
 }
-.addtraining md-content md-card .new-training .options-add ng-md-icon {
+.addtraining md-content md-card md-card-content .new-training .options-add ng-md-icon {
   padding-left: 1em;
 }
-.addtraining md-content md-card .new-training .options-add button.md-button {
+.addtraining md-content md-card md-card-content .new-training .options-add button.md-button {
   width: 38%;
   min-width: 15px;
   min-height: 27px;
@@ -13182,11 +13206,11 @@ a:visited {
   font-size: 80%;
   margin: 0;
 }
-.addtraining md-content md-card .new-training .options-add button.md-button span {
+.addtraining md-content md-card md-card-content .new-training .options-add button.md-button span {
   color: #03a9f4;
 }
 @media only screen and (min-width: 1050px) {
-  .addtraining md-content md-card .new-training .options-add button.md-button {
+  .addtraining md-content md-card md-card-content .new-training .options-add button.md-button {
     width: 40%;
     min-width: 15px;
     min-height: 31px;
@@ -13195,7 +13219,7 @@ a:visited {
     margin: 0;
   }
 }
-.addtraining md-content md-card .new-training .content-add {
+.addtraining md-content md-card md-card-content .new-training .content-add {
   *zoom: 1;
   float: left;
   clear: none;
@@ -13205,17 +13229,186 @@ a:visited {
   margin-right: 0%;
   box-sizing: border-box;
   padding: 1em;
-  border: 1px solid #cfd8dc;
-  min-height: 9em;
 }
-.addtraining md-content md-card .new-training .content-add:before,
-.addtraining md-content md-card .new-training .content-add:after {
+.addtraining md-content md-card md-card-content .new-training .content-add:before,
+.addtraining md-content md-card md-card-content .new-training .content-add:after {
   content: '';
   display: table;
 }
-.addtraining md-content md-card .new-training .content-add:after {
+.addtraining md-content md-card md-card-content .new-training .content-add:after {
   clear: both;
 }
-.addtraining md-content md-card .new-training .content-add:last-child {
+.addtraining md-content md-card md-card-content .new-training .content-add:last-child {
   margin-right: 0%;
+}
+.addtraining md-content md-card md-card-content .new-training .content-add ul {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 83.33333333333334%;
+  margin-left: 0%;
+  margin-right: 0%;
+  position: relative;
+  left: 8.333333333333332%;
+  margin: 0;
+  padding: 0;
+  font-size: 90%;
+  list-style: none;
+}
+.addtraining md-content md-card md-card-content .new-training .content-add ul:before,
+.addtraining md-content md-card md-card-content .new-training .content-add ul:after {
+  content: '';
+  display: table;
+}
+.addtraining md-content md-card md-card-content .new-training .content-add ul:after {
+  clear: both;
+}
+.addtraining md-content md-card md-card-content .new-training .content-add ul:last-child {
+  margin-right: 0%;
+}
+@media only screen and (min-width: 1050px) {
+  .addtraining md-content md-card md-card-content .new-training .content-add ul {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 66.66666666666666%;
+    margin-left: 0%;
+    margin-right: 0%;
+    position: relative;
+    left: 16.666666666666664%;
+  }
+  .addtraining md-content md-card md-card-content .new-training .content-add ul:before,
+  .addtraining md-content md-card md-card-content .new-training .content-add ul:after {
+    content: '';
+    display: table;
+  }
+  .addtraining md-content md-card md-card-content .new-training .content-add ul:after {
+    clear: both;
+  }
+  .addtraining md-content md-card md-card-content .new-training .content-add ul:last-child {
+    margin-right: 0%;
+  }
+}
+.addtraining md-content md-card md-card-content .new-training .content-add ul li {
+  border: 1px solid #cfd8dc;
+  box-sizing: border-box;
+  margin-bottom: 0.5em;
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  text-align: center;
+  color: #616161;
+}
+.addtraining md-content md-card md-card-content .new-training .content-add ul li:before,
+.addtraining md-content md-card md-card-content .new-training .content-add ul li:after {
+  content: '';
+  display: table;
+}
+.addtraining md-content md-card md-card-content .new-training .content-add ul li:after {
+  clear: both;
+}
+.addtraining md-content md-card md-card-content .new-training .content-add ul li:last-child {
+  margin-right: 0%;
+}
+.addtraining md-content md-card md-card-content .new-training .content-add ul li:hover {
+  background: #eceff1;
+}
+.addtraining md-content md-card md-card-content .new-training .content-add ul li .drag {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 4.545454545454546%;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-left: 0.5em;
+  cursor: pointer;
+}
+.addtraining md-content md-card md-card-content .new-training .content-add ul li .drag:before,
+.addtraining md-content md-card md-card-content .new-training .content-add ul li .drag:after {
+  content: '';
+  display: table;
+}
+.addtraining md-content md-card md-card-content .new-training .content-add ul li .drag:after {
+  clear: both;
+}
+.addtraining md-content md-card md-card-content .new-training .content-add ul li .drag:last-child {
+  margin-right: 0%;
+}
+.addtraining md-content md-card md-card-content .new-training .content-add ul li .drag ng-md-icon svg {
+  vertical-align: middle;
+}
+.addtraining md-content md-card md-card-content .new-training .content-add ul li .exerc {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 54.54545454545454%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.addtraining md-content md-card md-card-content .new-training .content-add ul li .exerc:before,
+.addtraining md-content md-card md-card-content .new-training .content-add ul li .exerc:after {
+  content: '';
+  display: table;
+}
+.addtraining md-content md-card md-card-content .new-training .content-add ul li .exerc:after {
+  clear: both;
+}
+.addtraining md-content md-card md-card-content .new-training .content-add ul li .exerc:last-child {
+  margin-right: 0%;
+}
+.addtraining md-content md-card md-card-content .new-training .content-add ul li .volume {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 27.27272727272727%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.addtraining md-content md-card md-card-content .new-training .content-add ul li .volume:before,
+.addtraining md-content md-card md-card-content .new-training .content-add ul li .volume:after {
+  content: '';
+  display: table;
+}
+.addtraining md-content md-card md-card-content .new-training .content-add ul li .volume:after {
+  clear: both;
+}
+.addtraining md-content md-card md-card-content .new-training .content-add ul li .volume:last-child {
+  margin-right: 0%;
+}
+.addtraining md-content md-card md-card-content .new-training .content-add ul li .delete {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 4.545454545454546%;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-left: 0.5em;
+}
+.addtraining md-content md-card md-card-content .new-training .content-add ul li .delete:before,
+.addtraining md-content md-card md-card-content .new-training .content-add ul li .delete:after {
+  content: '';
+  display: table;
+}
+.addtraining md-content md-card md-card-content .new-training .content-add ul li .delete:after {
+  clear: both;
+}
+.addtraining md-content md-card md-card-content .new-training .content-add ul li .delete:last-child {
+  margin-right: 0%;
+}
+.addtraining md-content md-card md-card-content .new-training .content-add ul li .delete ng-md-icon svg {
+  vertical-align: middle;
+  cursor: pointer;
+}
+.addtraining md-content md-card md-card-content .new-training .content-add ul li .delete ng-md-icon svg:hover {
+  background: #fafafa;
 }

@@ -15,7 +15,12 @@
     <md-card>
       <md-card-content>
         <section class="tabs">
-          <md-tabs md-dynamic-height="" md-border-bottom="">
+          <md-tabs md-dynamic-height="true" md-border-bottom="false">
+            <md-tab label="Geral">
+              <md-content class="md-paddin">
+                <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus</p>
+              </md-content>
+            </md-tab>
             <md-tab label="Tríceps">
               <md-content class="md-padding">
                 <!-- md-chips(ng-model="true", readonly="true")-->
@@ -48,9 +53,11 @@
             </md-tab>
             <md-tab label="Bíceps">
               <md-content class="md-paddin"></md-content>
-              <md-chips ng-model="fruitNames" readonly="readonly" md-on-append="newVeg($chip)">
-                <md-chip-template><span><strong>{{$chip.name}}</strong><em>({{$chip.type}})</em></span></md-chip-template>
-              </md-chips>
+              <!-- md-chips(ng-model="fruitNames" readonly="readonly" md-on-append="newVeg($chip)")-->
+              <!-- 	md-chip-template-->
+              <!-- 		span-->
+              <!-- 			strong {{$chip.name}}-->
+              <!-- 			em ({{$chip.type}})-->
             </md-tab>
             <md-tab label="Ombro">
               <md-content class="md-paddin">
@@ -88,9 +95,6 @@
             </md-tab>
             <md-tab label="Peito">
               <md-content class="md-paddin">
-                <md-chips>
-                  <button md-chip-remove="">DEL</button>
-                </md-chips>
                 <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus</p>
               </md-content>
             </md-tab>
@@ -128,7 +132,74 @@
             <md-button ng-click="importTraining($event);" class="md-raised">Importar Treino</md-button>
           </section>
           <section class="content-add">
-            <md-chips ng-model="fruitNames2" readonly="readonly2"></md-chips>
+            <ul>
+              <li> 
+                <section class="drag">
+                  <!-- span grag-->
+                  <ng-md-icon icon="open_with" style="fill:black" size="20"></ng-md-icon>
+                </section>
+                <section class="exerc"><span>Crucifixo Inclinado</span></section>
+                <section class="volume"><span>3</span><span>x</span><span>12</span></section>
+                <section class="delete">
+                  <ng-md-icon icon="close" style="fill:black" size="20"></ng-md-icon>
+                </section>
+              </li>
+              <li> 
+                <section class="drag">
+                  <!-- span grag-->
+                  <ng-md-icon icon="open_with" style="fill:black" size="20"></ng-md-icon>
+                </section>
+                <section class="exerc"><span>Crucifixo Inclinado</span></section>
+                <section class="volume"><span>3</span><span>x</span><span>12</span></section>
+                <section class="delete">
+                  <ng-md-icon icon="close" style="fill:black" size="20"></ng-md-icon>
+                </section>
+              </li>
+              <li> 
+                <section class="drag">
+                  <!-- span grag-->
+                  <ng-md-icon icon="open_with" style="fill:black" size="20"></ng-md-icon>
+                </section>
+                <section class="exerc"><span>Crucifixo Inclinado</span></section>
+                <section class="volume"><span>3</span><span>x</span><span>12</span></section>
+                <section class="delete">
+                  <ng-md-icon icon="close" style="fill:black" size="20"></ng-md-icon>
+                </section>
+              </li>
+              <li> 
+                <section class="drag">
+                  <!-- span grag-->
+                  <ng-md-icon icon="open_with" style="fill:black" size="20"></ng-md-icon>
+                </section>
+                <section class="exerc"><span>Crucifixo Inclinado</span></section>
+                <section class="volume"><span>3</span><span>x</span><span>12</span></section>
+                <section class="delete">
+                  <ng-md-icon icon="close" style="fill:black" size="20"></ng-md-icon>
+                </section>
+              </li>
+              <li> 
+                <section class="drag">
+                  <!-- span grag-->
+                  <ng-md-icon icon="open_with" style="fill:black" size="20"></ng-md-icon>
+                </section>
+                <section class="exerc"><span>Crucifixo Inclinado</span></section>
+                <section class="volume"><span>3</span><span>x</span><span>12</span></section>
+                <section class="delete">
+                  <ng-md-icon icon="close" style="fill:black" size="20"></ng-md-icon>
+                </section>
+              </li>
+              <li> 
+                <section class="drag">
+                  <!-- span grag-->
+                  <ng-md-icon icon="open_with" style="fill:black" size="20"></ng-md-icon>
+                </section>
+                <section class="exerc"><span>Crucifixo Inclinado</span></section>
+                <section class="volume"><span>3</span><span>x</span><span>12</span></section>
+                <section class="delete">
+                  <ng-md-icon icon="close" style="fill:black" size="20"></ng-md-icon>
+                </section>
+              </li>
+            </ul>
           </section>
         </section>
       </md-card-content>
