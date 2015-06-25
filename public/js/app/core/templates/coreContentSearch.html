@@ -10,21 +10,34 @@
           </md-input-container>
           <ng-md-icon icon="search" style="fill:silver" size="50" ng-click="true;"></ng-md-icon>
         </section>
-        <!-- h6(class="suggestion") Alunos Sugeridos-->
-        <section class="suggestion">
-          <section ng-repeat="person in [1,2,2,4,4,4,3,4] track by $index">
-            <md-list-item><img holder="holder.js/35x35?auto=yes&amp;random=yes&amp;text=BRU" class="img-responsive"/>
-              <p ng-if="coreEvents.search">Bruno Alexandre</p>
-              <ng-md-icon icon="add" style="fill:DarkGray" size="23" ng-click="open_user($event);"></ng-md-icon>
-            </md-list-item>
+        <section class="content-search">
+          <section class="new-user">
+            <md-button class="md-raised md-primary">Cadastrar Aluno</md-button>
+          </section>
+          <section class="recent">
+            <h5>Alunos Fechados</h5>
+            <section ng-repeat="person in [1,2,2,4,4,4] track by $index">
+              <md-list-item><img holder="holder.js/35x35?auto=yes&amp;random=yes&amp;text=BRU" class="img-responsive"/>
+                <p ng-if="coreEvents.search">Bruno Alexandre</p>
+                <ng-md-icon icon="add" style="fill:DarkGray" size="23" ng-click="open_user($event);"></ng-md-icon>
+              </md-list-item>
+            </section>
+          </section>
+          <section class="new">
+            <h5>Últimos Cadastrados</h5>
+            <section ng-repeat="person in [1,2,2,4,4,4] track by $index">
+              <md-list-item><img holder="holder.js/35x35?auto=yes&amp;random=yes&amp;text=BRU" class="img-responsive"/>
+                <p ng-if="coreEvents.search">Bruno Alexandre</p>
+                <ng-md-icon icon="add" style="fill:DarkGray" size="23" ng-click="open_user($event);"></ng-md-icon>
+              </md-list-item>
+            </section>
           </section>
         </section>
-        <section class="fab-action">
-          <md-button aria-label="Use Android" class="md-fab md-primary"><a ui-sref-active="sdd" ui-sref="core.user.addtraining">
-              <ng-md-icon icon="add" style="fill:white" size="38"></ng-md-icon></a>
-            <md-tooltip class="tooltipAction .left">Inserir Treino</md-tooltip>
-          </md-button>
-        </section>
+        <!-- section.fab-action-->
+        <!-- 	md-button.md-fab.md-primary(aria-label="Use Android")-->
+        <!-- 		a(ui-sref-active="sdd" ui-sref="core.user.addtraining")-->
+        <!-- 			ng-md-icon(icon="add" style="fill:white"  size="38")-->
+        <!-- 		md-tooltip(class="tooltipAction .left") Inserir Treino-->
         <!-- section.new-user-->
         <!-- 	// md-toolbar.md-primary-->
         <!-- 	// 	.md-toolbar-tools-->
