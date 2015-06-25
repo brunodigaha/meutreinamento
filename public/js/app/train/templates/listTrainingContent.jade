@@ -1,0 +1,13 @@
+// p treinos do alunos {{params}} {{state.url}} {{estado}}
+// div(ncy-breadcrumb="")
+section.training
+	section.trainings
+		p Treinos
+		md-radio-group(ng-model="data.group1")
+			md-radio-button.md-primary(value="A") Treino A
+			md-radio-button.md-primary(value="B") Treino B
+			md-radio-button.md-primary(value="C") Treino C
+			md-radio-button.md-primary(value="D") Treino D
+			md-radio-button.md-primary(value="E") Treino E
+	section.training-wrap(ui-view='training')
+

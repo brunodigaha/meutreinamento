@@ -11,8 +11,11 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider,$
 		.state('core.user',angular.extend(
 				{url:'/user/{userId:int}'},require('./user/userRoutes.js').user.user))
 
-		.state('core.user.training',angular.extend(
-				{url:'/training'},require('./train/trainRoutes.js').train.training))
+		.state('core.user.listTraining',angular.extend(
+				{url:'/list-training'},require('./train/trainRoutes.js').train.listTraining))
+
+		.state('core.user.listTraining.training',angular.extend(
+				{url:'/{trainId:int}'},require('./train/trainRoutes.js').train.training))
 
 		.state('core.user.addtraining',angular.extend(
 				{url:'/training/add'},require('./train/trainRoutes.js').train.addtraining))

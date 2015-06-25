@@ -1,0 +1,16 @@
+
+<!-- p treinos do alunos {{params}} {{state.url}} {{estado}}-->
+<!-- div(ncy-breadcrumb="")-->
+<section class="training">
+  <section class="trainings">
+    <p>Treinos</p>
+    <md-radio-group ng-model="data.group1">
+      <md-radio-button value="A" class="md-primary">Treino A</md-radio-button>
+      <md-radio-button value="B" class="md-primary">Treino B</md-radio-button>
+      <md-radio-button value="C" class="md-primary">Treino C</md-radio-button>
+      <md-radio-button value="D" class="md-primary">Treino D</md-radio-button>
+      <md-radio-button value="E" class="md-primary">Treino E</md-radio-button>
+    </md-radio-group>
+  </section>
+  <section ui-view="training" class="training-wrap"></section>
+</section>

@@ -1,0 +1,62 @@
+.train
+	col(5/5,gutter:0)
+	.header-add
+		col(3/5,gutter:0)
+		box-sizing border-box
+		padding-left 2em
+		border-bottom 4px solid palette('Blue Grey','100')
+		height 2.7em
+		// text-align center
+		span
+			display inline-block
+			font-size 130%
+			padding-top .5em
+			+desktop()
+				padding-top .4em
+	.options-add
+		col(2/5,gutter:0)
+		position relative
+		box-sizing border-box
+		border-bottom 4px solid palette('Blue Grey','100')
+		height 2.7em
+		padding-top .4em
+		+desktop()
+			padding-top .6em
+		padding-right 1.3em
+		text-align right
+		ng-md-icon
+			padding-left 1em
+	.content-add
+		col(5/5,gutter:0)
+		box-sizing border-box
+		margin-top 2em
+		padding-left 1em
+		padding-right 1em
+		ul
+			col(6/6,gutter:0)
+			box-sizing border-box
+			margin 0
+			padding 0
+			font-size 90%
+			list-style none
+			li
+				col(12/12,gutter:0)
+				border-bottom 1px solid palette('Blue Grey','100')
+				line-height 45px
+				box-sizing border-box
+				margin-bottom .6em
+				vertical-align middle
+				text-align center
+				color palette('Grey','700')
+				&:hover
+					background palette('Blue Grey','50')
+				.exerc
+					col(5.5/11,gutter:0)
+					box-sizing border-box
+					text-align left
+					margin-left .9em
+				.volume
+					col(3/11,gutter:0)
+				.weight
+					col(2/11,gutter:0)
+

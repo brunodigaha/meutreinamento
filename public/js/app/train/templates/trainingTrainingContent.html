@@ -1,0 +1,20 @@
+
+<section class="train">
+  <section class="header-add"><span>Treino A</span></section>
+  <section class="options-add">
+    <ng-md-icon icon="launch" style="fill:grey" size="22"></ng-md-icon>
+    <!-- ng-md-icon(icon="expand_more" style="fill:grey"  size="27"  ng-click="showGridBottomSheet($event)")-->
+  </section>
+  <section id="training" class="content-add"> 
+    <!-- md-button-->
+    <!-- 	ng-md-icon(icon="launch" style="fill:gray"  size="32")-->
+    <!-- 	div  Zoom -->
+    <ul ng-repeat="exercicio in  [1,2,3,4,5,6,7,8] track by $index">
+      <li> 
+        <section class="exerc"><span>Agachamento Declinado</span></section>
+        <section class="volume"><span>3</span><span>x</span><span>12</span></section>
+        <section class="weight"><span>10kg</span></section>
+      </li>
+    </ul>
+  </section>
+</section>

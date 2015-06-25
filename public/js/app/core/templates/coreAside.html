@@ -5,7 +5,7 @@
   <ng-md-icon icon="keyboard_backspace" ng-show="coreEvents.search" style="fill:silver" size="65" ng-click="coreEvents.toggle_search();"></ng-md-icon>
 </section>
 <section ng-class="{'list-users': !coreEvents.search, 'list-users-open': coreEvents.search}" class="list-users">
-  <section ng-repeat="person in [1,2,3,4,5,6,7,8] track by $index"><img ui-sref-active="active" ui-sref="core.user.training" alt="{{ person.name }}" holder="holder.js/60x60?auto=yes&amp;random=yes&amp;text=BRU" class="img-responsive"/>
+  <section ng-repeat="person in [1,2,3,4,5,6,7,8] track by $index"><img ui-sref-active="active" ui-sref="core.user.listTraining" alt="{{ person.name }}" holder="holder.js/60x60?auto=yes&amp;random=yes&amp;text=BRU" class="img-responsive"/>
     <!-- img(class="img-responsive" ui-sref="core.user.training" holder='holder.js/60x60?auto=yes&theme=gray&text=BRU')-->
     <p ng-if="coreEvents.search">Bruno Alexandreeeee</p>
     <ng-md-icon icon="close" style="fill:silver" size="35" ng-if="coreEvents.search" ng-click="doSecondaryAction($event);"></ng-md-icon>
