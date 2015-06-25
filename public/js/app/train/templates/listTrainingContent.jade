@@ -4,10 +4,7 @@ section.training
 	section.trainings
 		p Treinos
 		md-radio-group(ng-model="data.group1")
-			md-radio-button.md-primary(value="A") Treino A
-			md-radio-button.md-primary(value="B") Treino B
-			md-radio-button.md-primary(value="C") Treino C
-			md-radio-button.md-primary(value="D") Treino D
-			md-radio-button.md-primary(value="E") Treino E
+			a(ui-sref="core.user.listTraining.training({trainId:{{$index}}})" ng-repeat="person in ['A','B','C','D','E'] track by $index") 
+				md-radio-button.md-primary(value="{{person}}") Treino {{person}}
 	section.training-wrap(ui-view='training')
 

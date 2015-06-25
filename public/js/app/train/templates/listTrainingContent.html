@@ -4,13 +4,8 @@
 <section class="training">
   <section class="trainings">
     <p>Treinos</p>
-    <md-radio-group ng-model="data.group1">
-      <md-radio-button value="A" class="md-primary">Treino A</md-radio-button>
-      <md-radio-button value="B" class="md-primary">Treino B</md-radio-button>
-      <md-radio-button value="C" class="md-primary">Treino C</md-radio-button>
-      <md-radio-button value="D" class="md-primary">Treino D</md-radio-button>
-      <md-radio-button value="E" class="md-primary">Treino E</md-radio-button>
-    </md-radio-group>
+    <md-radio-group ng-model="data.group1"><a ui-sref="core.user.listTraining.training({trainId:{{$index}}})" ng-repeat="person in ['A','B','C','D','E'] track by $index"> 
+        <md-radio-button value="{{person}}" class="md-primary">Treino {{person}}</md-radio-button></a></md-radio-group>
   </section>
   <section ui-view="training" class="training-wrap"></section>
 </section>

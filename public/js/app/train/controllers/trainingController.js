@@ -1,4 +1,4 @@
-module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$stateParams,$mdDialog) {
+module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$stateParams,$mdDialog,$mdBottomSheet) {
 	$scope.showGridBottomSheet = function($event) {
 		$mdBottomSheet.show({
 			// template: fs.readFileSync(__dirname + '/templates/TrainingGridBottomSheet.html'),
