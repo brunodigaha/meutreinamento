@@ -2,7 +2,7 @@
 section(class="search-icon")
 	// ng-md-icon(icon="search" ng-if="!coreEvents.search" style="fill:silver"  size="65" ng-click="coreEvents.toggle_search();")
 	img(class="img-responsive btn" ng-click="coreEvents.toggle_search();" ng-hide="coreEvents.search" holder='holder.js/70x70?&bg=FFFFFF&text=+&size=35&fg=9E9E9E')
-	ng-md-icon(icon="keyboard_backspace" ng-show="coreEvents.search"  ng-class="{'animated flip':coreEvents.search}" style="fill:silver" size="65" ng-click="coreEvents.toggle_search();")
+	ng-md-icon(icon="keyboard_backspace" ng-show="coreEvents.search"  style="fill:silver" size="65" ng-click="coreEvents.toggle_search();")
 section(class="list-users"  ng-class="{'list-users': !coreEvents.search, 'list-users-open': coreEvents.search}")
 	section(ng-repeat="person in [1,2,3,4,5,6,7,8] track by $index")
 		img(class="img-responsive" ui-sref-active="active" ui-sref="core.user.training" alt="{{ person.name }}" holder='holder.js/60x60?auto=yes&random=yes&text=BRU')

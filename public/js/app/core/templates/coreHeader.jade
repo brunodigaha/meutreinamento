@@ -7,7 +7,7 @@ section.perfil(ui-view="perfil")
 			ng-md-icon(icon="place" style="fill:grey"  size="20" ng-click="true")
 			span(ncy-breadcrumb-last="") &nbsp;{{getStatesChain}}
 	section.close(ng-if="(coreEvents.menu || coreEvents.options)" ng-click="coreEvents.close_all();")
-	section.menu(ui-view="menu" class="animated fadeIn" ng-if="coreEvents.menu" )
+	section.menu(ui-view="menu" ng-if="coreEvents.menu" )
 		section.chat-bubble-arrow-border
 		section.chat-bubble-arrow
 		section.menu-header
@@ -64,7 +64,7 @@ section.user-admin(ui-view="user-admin")
 		span(ng-click="toggle_options();") Bruno
 			ng-md-icon(icon="expand_more" style="fill:grey"  size="17")
 
-	section.options-admin(class="animated fadeIn" ng-if="coreEvents.options")
+	section.options-admin(ng-if="coreEvents.options")
 		section.chat-bubble-arrow-border
 		section.chat-bubble-arrow
 		ul
