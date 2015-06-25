@@ -12680,6 +12680,30 @@ a:visited {
     float: left;
     clear: none;
     text-align: inherit;
+    width: 87.5%;
+    margin-left: 0%;
+    margin-right: 0%;
+    position: relative;
+    left: 6.25%;
+  }
+  .training:before,
+  .training:after {
+    content: '';
+    display: table;
+  }
+  .training:after {
+    clear: both;
+  }
+  .training:last-child {
+    margin-right: 0%;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .training {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
     width: 75%;
     margin-left: 0%;
     margin-right: 0%;
@@ -12724,7 +12748,7 @@ a:visited {
   margin: 0;
   color: #aaa;
   font-weight: bold;
-  margin-top: 0.5em;
+  margin-top: 2.5em;
   margin-left: 0.5em;
 }
 .training .trainings md-radio-button {
@@ -12761,10 +12785,9 @@ a:visited {
   margin-left: 0%;
   margin-right: 0%;
   box-sizing: border-box;
-  padding-left: 1em;
+  padding-left: 2em;
   border-bottom: 4px solid #cfd8dc;
   height: 2.7em;
-  text-align: center;
 }
 .training .train .header-add:before,
 .training .train .header-add:after {
@@ -12831,7 +12854,9 @@ a:visited {
   margin-left: 0%;
   margin-right: 0%;
   box-sizing: border-box;
-  min-height: 19em;
+  margin-top: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 .training .train .content-add:before,
 .training .train .content-add:after {
@@ -12842,6 +12867,124 @@ a:visited {
   clear: both;
 }
 .training .train .content-add:last-child {
+  margin-right: 0%;
+}
+.training .train .content-add ul {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 90%;
+  list-style: none;
+}
+.training .train .content-add ul:before,
+.training .train .content-add ul:after {
+  content: '';
+  display: table;
+}
+.training .train .content-add ul:after {
+  clear: both;
+}
+.training .train .content-add ul:last-child {
+  margin-right: 0%;
+}
+.training .train .content-add ul li {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  border-bottom: 1px solid #cfd8dc;
+  line-height: 45px;
+  box-sizing: border-box;
+  margin-bottom: 0.6em;
+  vertical-align: middle;
+  text-align: center;
+  color: #616161;
+}
+.training .train .content-add ul li:before,
+.training .train .content-add ul li:after {
+  content: '';
+  display: table;
+}
+.training .train .content-add ul li:after {
+  clear: both;
+}
+.training .train .content-add ul li:last-child {
+  margin-right: 0%;
+}
+.training .train .content-add ul li:hover {
+  background: #eceff1;
+}
+.training .train .content-add ul li .exerc {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: 0%;
+  box-sizing: border-box;
+  text-align: left;
+  margin-left: 0.9em;
+}
+.training .train .content-add ul li .exerc:before,
+.training .train .content-add ul li .exerc:after {
+  content: '';
+  display: table;
+}
+.training .train .content-add ul li .exerc:after {
+  clear: both;
+}
+.training .train .content-add ul li .exerc:last-child {
+  margin-right: 0%;
+}
+.training .train .content-add ul li .volume {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 27.27272727272727%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.training .train .content-add ul li .volume:before,
+.training .train .content-add ul li .volume:after {
+  content: '';
+  display: table;
+}
+.training .train .content-add ul li .volume:after {
+  clear: both;
+}
+.training .train .content-add ul li .volume:last-child {
+  margin-right: 0%;
+}
+.training .train .content-add ul li .weight {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 18.181818181818183%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.training .train .content-add ul li .weight:before,
+.training .train .content-add ul li .weight:after {
+  content: '';
+  display: table;
+}
+.training .train .content-add ul li .weight:after {
+  clear: both;
+}
+.training .train .content-add ul li .weight:last-child {
   margin-right: 0%;
 }
 .addtraining {

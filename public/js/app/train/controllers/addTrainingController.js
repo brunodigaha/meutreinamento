@@ -105,6 +105,10 @@ module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$sta
 		},
 		{
 			ordem:5,
+			nome:'Agachamento Declinado'
+		},
+		{
+			ordem:6,
 			nome:'Supino Máquina'
 		}
 	];

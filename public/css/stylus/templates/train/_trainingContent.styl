@@ -1,6 +1,9 @@
 .training
 	col(8/8,gutter:0)
 	+desktop()
+		col(7/8,gutter:0)
+		shift(.5/8,gutter:0)
+	+hd()
 		col(6/8,gutter:0)
 		shift(1/8,gutter:0)
 	.trainings
@@ -11,7 +14,7 @@
 			margin 0
 			color #aaaaaa
 			font-weight bold
-			margin-top .5em
+			margin-top 2.5em
 			margin-left .5em
 		md-radio-button
 			padding-left 2em
@@ -22,10 +25,10 @@
 		.header-add
 			col(3/5,gutter:0)
 			box-sizing border-box
-			padding-left 1em
+			padding-left 2em
 			border-bottom 4px solid palette('Blue Grey','100')
 			height 2.7em
-			text-align center
+			// text-align center
 			span
 				display inline-block
 				font-size 130%
@@ -48,7 +51,34 @@
 		.content-add
 			col(5/5,gutter:0)
 			box-sizing border-box
-			min-height 19em
-
-
+			margin-top 2em
+			padding-left 1em
+			padding-right 1em
+			ul
+				col(6/6,gutter:0)
+				box-sizing border-box
+				margin 0
+				padding 0
+				font-size 90%
+				list-style none
+				li
+					col(12/12,gutter:0)
+					border-bottom 1px solid palette('Blue Grey','100')
+					line-height 45px
+					box-sizing border-box
+					margin-bottom .6em
+					vertical-align middle
+					text-align center
+					color palette('Grey','700')
+					&:hover
+						background palette('Blue Grey','50')
+					.exerc
+						col(5.5/11,gutter:0)
+						box-sizing border-box
+						text-align left
+						margin-left .9em
+					.volume
+						col(3/11,gutter:0)
+					.weight
+						col(2/11,gutter:0)
 
