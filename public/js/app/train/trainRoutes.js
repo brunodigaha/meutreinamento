@@ -7,12 +7,16 @@ module.exports = {
 				label: 'Treinos'
 			},
 			views: {
-				// resolve: {
-				// 		init: function($state){
-				// 			$state.go('core.user.listTraining.training',{'trainId':10});
-				// 			// $state.go('.child.grandchild');
-				// 			return {};
-				// 		}
+				resolve: {
+						init: function($state,$location){
+							// $state.go('core.user.listTraining.training',{'trainId':10});
+							// $state.go('.child.grandchild');
+							// $location.path('#/user/12/list-training/0');
+							return {};
+						}
+				},
+				// onEnter: function($state){
+				// 	$state.go('core.user.listTraining.training',{'trainId':10});
 				// },
 				'content@core': {
 					controller:'listTrainingController',

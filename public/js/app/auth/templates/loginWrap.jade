@@ -3,22 +3,23 @@
 // 	button(ng-click="addUser();") +User
 // 	p {{data | json}}
 // 	div(ng-repeat="user in users" ng-click="removeUser(user);") {{user.nome}}
-section.login
-	form(name="loginForm" ng-if="!userModel.loading")
-		md-input-container
-			label Login
-			input(type="text",  required="", name="username", ng-model="userModel.username")
-			div(ng-messages="loginForm.username.$error" role="alert")
-				div(ng-if="showRequiredError")
-					div(ng-message="required") Este campo é obrigatório.
-		md-input-container
-			label Senha
-			input(type="password", required="", name="password", ng-model="userModel.password")
-			div(ng-messages="loginForm.password.$error" role="alert")
-				div(ng-if="showRequiredError")
-					div(ng-message="required") Este campo é obrigatório.
-		md-button(class="md-raised md-primary"  ng-click="login();") Entrar
-		h5 Login: admin Senha 123
-	md-progress-circular(class="center" ng-if="userModel.loading" md-mode="indeterminate", value="...", md-diameter="100")
+section.login-wrap
+	section.login
+		form(name="loginForm")
+			md-input-container
+				label Login
+				input(type="text",  required="", name="username", ng-model="userModel.username")
+				div(ng-messages="loginForm.username.$error" role="alert")
+					div(ng-if="showRequiredError")
+						div(ng-message="required") Este campo é obrigatório.
+			md-input-container
+				label Senha
+				input(type="password", required="", name="password", ng-model="userModel.password")
+				div(ng-messages="loginForm.password.$error" role="alert")
+					div(ng-if="showRequiredError")
+						div(ng-message="required") Este campo é obrigatório.
+			md-progress-circular( ng-if="userModel.loading" md-mode="indeterminate", value="...", md-diameter="20")
+			md-button(class="md-raised md-primary"  ng-click="login();") Entrar
+			// h5 Login: admin Senha 123
 
 

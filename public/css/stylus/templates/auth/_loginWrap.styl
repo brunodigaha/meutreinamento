@@ -1,6 +1,21 @@
-.login
-	align(direction=both)
-	transform translate(-50%,-50%)
-	width 30%
-	button
-		stack()
+.login-wrap
+	col(1/1,gutter:0)
+	height 100%
+	width 100%
+	background url('../../../../images/backgroud.jpg') center center no-repeat fixed
+	background-size border-box
+	.login
+		box-sizing border-box
+		padding 1%
+		align(direction=both)
+		transform translate(-50%,-50%)
+		width 40%
+		background-color white
+		box-shadow 0 1px 9px 0 rgba(0,0,0,.17)
+		button
+			stack()
+	 		font-weight bold
+		form
+			md-progress-circular
+
+// body

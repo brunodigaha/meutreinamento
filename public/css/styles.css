@@ -10881,6 +10881,7 @@ span.icon-notification:before {
   width: 100%;
   margin-left: 0%;
   margin-right: 0%;
+  height: 100%;
 }
 .wrap:before,
 .wrap:after {
@@ -11235,16 +11236,44 @@ a:link {
 a:visited {
   text-decoration: none;
 }
-.login {
+.login-wrap {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  height: 100%;
+  width: 100%;
+  background: url("../../../../images/backgroud.jpg") center center no-repeat fixed;
+  background-size: border-box;
+}
+.login-wrap:before,
+.login-wrap:after {
+  content: '';
+  display: table;
+}
+.login-wrap:after {
+  clear: both;
+}
+.login-wrap:last-child {
+  margin-right: 0%;
+}
+.login-wrap .login {
+  box-sizing: border-box;
+  padding: 1%;
   position: absolute;
   transform-style: preserve-3d;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 30%;
+  width: 40%;
+  background-color: #fff;
+  box-shadow: 0 1px 9px 0 rgba(0,0,0,0.17);
 }
-.login button {
+.login-wrap .login button {
   display: block;
   clear: both;
   float: none;
@@ -11252,10 +11281,10 @@ a:visited {
   margin-left: auto;
   margin-right: auto;
 }
-.login button:first-child {
+.login-wrap .login button:first-child {
   margin-left: auto;
 }
-.login button:last-child {
+.login-wrap .login button:last-child {
   margin-right: auto;
 }
 .search-icon {
@@ -12413,7 +12442,7 @@ a:visited {
   margin-right: 0%;
 }
 .search-wrap md-content.md-default-theme {
-  background-color: #fafafa;
+  background-color: transparent;
 }
 .search-wrap md-content.md-default-theme md-card {
   height: 98vh;
