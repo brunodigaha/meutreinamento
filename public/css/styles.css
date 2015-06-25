@@ -11283,7 +11283,7 @@ a:visited {
 }
 .search-icon img {
   margin-bottom: 1.4em;
-  margin-top: 0.9em;
+  margin-top: 0.7em;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -11320,7 +11320,7 @@ a:visited {
   margin-right: 0%;
 }
 .list-users img {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.6em;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -11370,7 +11370,7 @@ a:visited {
   width: 20%;
   margin-left: 0%;
   margin-right: 0%;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.6em;
 }
 .list-users-open section img:before,
 .list-users-open section img:after {
@@ -12762,8 +12762,9 @@ a:visited {
   margin-right: 0%;
   box-sizing: border-box;
   padding-left: 1em;
-  background: #cfd8dc;
+  border-bottom: 4px solid #cfd8dc;
   height: 2.7em;
+  text-align: center;
 }
 .training .train .header-add:before,
 .training .train .header-add:after {
@@ -12778,9 +12779,8 @@ a:visited {
 }
 .training .train .header-add span {
   display: inline-block;
-  font-size: 110%;
+  font-size: 130%;
   padding-top: 0.5em;
-  color: #424242;
 }
 @media only screen and (min-width: 1050px) {
   .training .train .header-add span {
@@ -12797,7 +12797,7 @@ a:visited {
   margin-right: 0%;
   position: relative;
   box-sizing: border-box;
-  background: #cfd8dc;
+  border-bottom: 4px solid #cfd8dc;
   height: 2.7em;
   padding-top: 0.4em;
   padding-right: 1.3em;
@@ -12831,7 +12831,6 @@ a:visited {
   margin-left: 0%;
   margin-right: 0%;
   box-sizing: border-box;
-  border: 1px solid #e0e0e0;
   min-height: 19em;
 }
 .training .train .content-add:before,
@@ -13294,6 +13293,7 @@ a:visited {
 }
 .addtraining md-content md-card md-card-content .new-training .content-add ul li {
   border: 1px solid #cfd8dc;
+  background-color: #fff;
   box-sizing: border-box;
   margin-bottom: 0.5em;
   *zoom: 1;
@@ -13350,9 +13350,12 @@ a:visited {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 54.54545454545454%;
+  width: 50%;
   margin-left: 0%;
   margin-right: 0%;
+  box-sizing: border-box;
+  text-align: left;
+  margin-left: 0.9em;
 }
 .addtraining md-content md-card md-card-content .new-training .content-add ul li .exerc:before,
 .addtraining md-content md-card md-card-content .new-training .content-add ul li .exerc:after {
