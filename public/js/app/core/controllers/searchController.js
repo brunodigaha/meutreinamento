@@ -1,10 +1,5 @@
+var fs = require('fs');
 module.exports = function($scope,$mdDialog, $mdToast,$animate) {
-	$scope.onUCUploadComplete = function (info){
-		console.log(info);
-		$scope.image=info.cdnUrl;
-		console.log(info.cdnURL);
-		$scope.$digest();
-	};
 	$scope.open_user = function(event) {
 		var confirm = $mdDialog.confirm()
 		.title('Deseja Abrir este Usuário?')
@@ -29,4 +24,19 @@ module.exports = function($scope,$mdDialog, $mdToast,$animate) {
 			console.log("cancelou abrir usuario");
 		});
 	};
+	$scope.new_user = function(ev) {
+		$mdDialog.show({
+			controller: 'searchDialogController',
+			// templateUrl: 'dialog1.tmpl.html',
+			template: fs.readFileSync(__dirname + '/../templates/searchDialogTemplate.html'),
+			parent: angular.element(document.body),
+			targetEvent: ev,
+		})
+		.then(function(answer) {
+			$scope.alert = 'You said the information was "' + answer + '".';
+		}, function() {
+			$scope.alert = 'You cancelled the dialog.';
+		});
+	};
+
 };
