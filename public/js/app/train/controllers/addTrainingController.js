@@ -86,6 +86,28 @@ module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$sta
 
 
 
+	$scope.exercicios= [
+		{
+			ordem:1,
+			nome:'Supino Reto'
+		},
+		{
+			ordem:2,
+			nome:'Supino Inclinado'
+		},
+		{
+			ordem:3,
+			nome:'Supino Declinado'
+		},
+		{
+			ordem:4,
+			nome:'Crucifixo'
+		},
+		{
+			ordem:5,
+			nome:'Supino Máquina'
+		}
+	];
 
 	$scope.params = $stateParams;
 	$scope.state = $state.current;

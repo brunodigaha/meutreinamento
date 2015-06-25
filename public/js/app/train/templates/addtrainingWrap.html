@@ -17,17 +17,13 @@
         <section class="tabs">
           <md-tabs md-dynamic-height="true" md-border-bottom="false">
             <md-tab label="Geral">
-              <md-content class="md-paddin">
-                <md-tab label="Geral">
-                  <md-content class="md-paddin"></md-content>
-                  <section class="autocompletedemoCustomTemplate">
-                    <md-autocomplete ng-disabled="isDisabled" md-no-cache="noCache" md-selected-item="selectedItem" md-search-text-change="searchTextChange(searchText)" md-search-text="searchText" md-selected-item-change="selectedItemChange(item)" md-items="item in querySearch(searchText)" md-item-text="item.display" md-min-length="0" placeholder="Digite aqui o nome do exercício que deseja inserir" md-menu-class="autocomplete-custom-template">
-                      <md-item-template><span class="item-title">
-                          <md-icon md-svg-icon="img/icons/octicon-repo.svg"></md-icon><span> {{item.name}} </span></span><span class="item-metadata"><span class="item-metastat"><strong>{{item.watchers}}</strong>watchers</span><span class="item-metastat"><strong>{{item.forks}}</strong></span></span></md-item-template>
-                    </md-autocomplete>
-                  </section>
-                </md-tab>
-              </md-content>
+              <md-content class="md-paddin"></md-content>
+              <section class="autocompletedemoCustomTemplate">
+                <md-autocomplete ng-disabled="isDisabled" md-no-cache="noCache" md-selected-item="selectedItem" md-search-text-change="searchTextChange(searchText)" md-search-text="searchText" md-selected-item-change="selectedItemChange(item)" md-items="item in querySearch(searchText)" md-item-text="item.display" md-min-length="0" placeholder="Digite aqui o nome do exercício que deseja inserir" md-menu-class="autocomplete-custom-template">
+                  <md-item-template><span class="item-title">
+                      <md-icon md-svg-icon="img/icons/octicon-repo.svg"></md-icon><span> {{item.name}} </span></span><span class="item-metadata"><span class="item-metastat"><strong>{{item.watchers}}</strong>watchers</span><span class="item-metastat"><strong>{{item.forks}}</strong></span></span></md-item-template>
+                </md-autocomplete>
+              </section>
             </md-tab>
             <md-tab label="Tríceps">
               <md-content class="md-padding">
@@ -139,26 +135,23 @@
             <!-- ng-md-icon(icon="expand_more" style="fill:white"  size="27" ng-click="true")-->
             <md-button ng-click="importTraining($event);" class="md-raised">Importar Treino</md-button>
           </section>
-          <section class="content-add">
+          <section sv-root="" sv-part="exercicios" class="content-add">
             <!-- .sortable-container.grid(sv-root="", sv-part="data.items4")-->
             <!-- 	.well.grid(ng-repeat="item in [1,2,3,4,5,6,7,8] track by $index", sv-element="opts")-->
             <!-- 		| {{item}}-->
             <!-- 		span(sv-handle="") handle-->
-            <div sv-root="" sv-part="data.items4" class="sortable-container grid">
-              <ul ng-repeat="item in [1,2,3,4,5,6,7,8] track by $index" sv-element="opts">
-                <li> 
-                  <section class="drag">
-                    <!-- span grag-->
-                    <ng-md-icon icon="open_with" style="fill:black" size="20" sv-handle=""></ng-md-icon>
-                  </section>
-                  <section class="exerc"><span>Crucifixo Inclinado</span></section>
-                  <section class="volume"><span>3</span><span>x</span><span>12</span></section>
-                  <section class="delete">
-                    <ng-md-icon icon="close" style="fill:black" size="20"></ng-md-icon>
-                  </section>
-                </li>
-              </ul>
-            </div>
+            <ul ng-repeat="exercicio in exercicios" sv-element="opts">
+              <li> 
+                <section sv-handle="" class="drag">
+                  <ng-md-icon icon="open_with" style="fill:black" size="20"></ng-md-icon>
+                </section>
+                <section class="exerc"><span>{{exercicio.nome}}</span></section>
+                <section class="volume"><span>3</span><span>x</span><span>12</span></section>
+                <section class="delete">
+                  <ng-md-icon icon="close" style="fill:black" size="20"></ng-md-icon>
+                </section>
+              </li>
+            </ul>
           </section>
         </section>
       </md-card-content>
