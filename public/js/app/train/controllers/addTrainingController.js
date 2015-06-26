@@ -203,6 +203,7 @@ module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$sta
 		$scope.close_all = false;
 		$scope.position.x=-500;
 		$scope.position.y=-500;
+		$scope.index = null;
 	};
 
 

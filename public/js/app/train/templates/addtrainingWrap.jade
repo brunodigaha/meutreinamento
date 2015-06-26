@@ -123,7 +123,7 @@ section.addtraining
 						// 		| {{item}}
 						// 		span(sv-handle="") handle
 						ul(ng-repeat="exercicio in exercicios", sv-element="opts")
-							li 
+							li(ng-class="{'exerc-select': $index==index}")
 								section.drag(sv-handle="")
 									ng-md-icon(icon="open_with" style="fill:black" size="20")
 								section.exerc
