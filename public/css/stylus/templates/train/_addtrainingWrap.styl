@@ -110,8 +110,17 @@
 
 					// margin-top 6em
 					box-sizing border-box
+					.background-wrap
+						position fixed
+						top 0
+						left 0
+						height 100%
+						width 100%
+						z-index 4
 					.weight-add
 						position fixed
+						z-index 6
+					.weight-add
 						.weight-content
 							col(1.2/12,gutter:0)
 							position fixed
@@ -137,6 +146,8 @@
 							.right
 								col(5/12,gutter:0)
 								border 1px solid palette('Blue Grey','300')  
+								box-sizing border-box
+								background-color white
 								background-color white
 								box-sizing border-box
 							.minus

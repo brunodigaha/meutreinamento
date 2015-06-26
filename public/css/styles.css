@@ -11216,7 +11216,8 @@ ng-md-icon:focus,
 img:focus,
 .admin-name:focus,
 span:focus,
-md-chip:focus {
+md-chip:focus,
+section:focus {
   outline: 0;
 }
 button.md-button {
@@ -13356,8 +13357,17 @@ a:visited {
     padding-right: 8em;
   }
 }
+.addtraining md-content md-card md-card-content .new-training .background-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+}
 .addtraining md-content md-card md-card-content .new-training .weight-add {
   position: fixed;
+  z-index: 6;
 }
 .addtraining md-content md-card md-card-content .new-training .weight-add .weight-content {
   *zoom: 1;
@@ -13461,6 +13471,8 @@ a:visited {
   margin-left: 0%;
   margin-right: 0%;
   border: 1px solid #90a4ae;
+  box-sizing: border-box;
+  background-color: #fff;
   background-color: #fff;
   box-sizing: border-box;
 }

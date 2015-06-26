@@ -172,8 +172,8 @@ module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$sta
 		repeticao: 0
 	};
 	$scope.alt='repeticao';
-	$scope.select_left= true;
-	$scope.index = 0;
+	$scope.index = null;
+	$scope.close_all = false;
 	$scope.plus_weight = function(){
 		if ($scope.alt=='serie'){
 			$scope.exercicios[$scope.index].serie= $scope.exercicios[$scope.index].serie+1;
@@ -181,7 +181,7 @@ module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$sta
 			$scope.exercicios[$scope.index].repeticao= $scope.exercicios[$scope.index].repeticao+1;
 			// console.log($scope.exercicios[index]);
 		}
-		// $scope.exercicio_select = $scope.exercicios[index];
+		$scope.exercicio_select = $scope.exercicios[$scope.index];
 	};
 	$scope.minus_weight = function(){
 		if ($scope.alt=='serie'){
@@ -190,24 +190,29 @@ module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$sta
 			$scope.exercicios[$scope.index].repeticao= $scope.exercicios[$scope.index].repeticao-1;
 			// console.log($scope.exercicios[index]);
 		}
-		// $scope.exercicio_select = $scope.exercicios[index];
+		$scope.exercicio_select = $scope.exercicios[$scope.index];
+	};
+	$scope.toggle_volume = function(){
+		if ($scope.alt == 'serie'){
+			$scope.alt= 'repeticao';
+		}else{
+			$scope.alt='serie';
+		}
+	};
+	$scope.close = function (){
+		$scope.close_all = false;
+		$scope.position.x=-500;
+		$scope.position.y=-500;
 	};
 
 
-
-
 	$scope.weight_add = function(ev,exercicio,index) {
-		// console.log(ev);
-		// console.log(ev.pageX);
+		$scope.index = index;
+		$scope.close_all = true;
 		$scope.position.x=ev.pageX;
 		$scope.position.y=ev.pageY;
-		$scope.index = index;
-		// $scope.exercicios[index].serie=10;
+		$scope.alt='repeticao';
 		$scope.exercicio_select = $scope.exercicios[index];
-		// console.log(index);
-		// console.log($scope.exercicios[index]);
-		// console.log(ev.pageY);
-		// $scope.$digest();
 	};
 	$scope.importTraining = function(ev) {
 		$mdDialog.show({
