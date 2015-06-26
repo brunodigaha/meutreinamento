@@ -13330,6 +13330,7 @@ a:visited {
   box-sizing: border-box;
   padding-left: 2em;
   padding-right: 2em;
+  position: relative;
   box-sizing: border-box;
 }
 .addtraining md-content md-card md-card-content .new-training:before,
@@ -13354,6 +13355,145 @@ a:visited {
     padding-left: 8em;
     padding-right: 8em;
   }
+}
+.addtraining md-content md-card md-card-content .new-training .weight-add {
+  position: fixed;
+}
+.addtraining md-content md-card md-card-content .new-training .weight-add .weight-content {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 10%;
+  margin-left: 0%;
+  margin-right: 0%;
+  position: fixed;
+  max-width: 120px;
+  box-sizing: border-box;
+  padding-left: 0.7%;
+  padding-right: 0.7%;
+  text-align: center;
+  font-size: 70%;
+  background-color: #f5f5f5;
+}
+.addtraining md-content md-card md-card-content .new-training .weight-add .weight-content:before,
+.addtraining md-content md-card md-card-content .new-training .weight-add .weight-content:after {
+  content: '';
+  display: table;
+}
+.addtraining md-content md-card md-card-content .new-training .weight-add .weight-content:after {
+  clear: both;
+}
+.addtraining md-content md-card md-card-content .new-training .weight-add .weight-content:last-child {
+  margin-right: 0%;
+}
+.addtraining md-content md-card md-card-content .new-training .weight-add .weight-content .plus {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  font-size: 190%;
+}
+.addtraining md-content md-card md-card-content .new-training .weight-add .weight-content .plus:before,
+.addtraining md-content md-card md-card-content .new-training .weight-add .weight-content .plus:after {
+  content: '';
+  display: table;
+}
+.addtraining md-content md-card md-card-content .new-training .weight-add .weight-content .plus:after {
+  clear: both;
+}
+.addtraining md-content md-card md-card-content .new-training .weight-add .weight-content .plus:last-child {
+  margin-right: 0%;
+}
+.addtraining md-content md-card md-card-content .new-training .weight-add .weight-content .left {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 41.66666666666667%;
+  margin-left: 0%;
+  margin-right: 0%;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #90a4ae;
+}
+.addtraining md-content md-card md-card-content .new-training .weight-add .weight-content .left:before,
+.addtraining md-content md-card md-card-content .new-training .weight-add .weight-content .left:after {
+  content: '';
+  display: table;
+}
+.addtraining md-content md-card md-card-content .new-training .weight-add .weight-content .left:after {
+  clear: both;
+}
+.addtraining md-content md-card md-card-content .new-training .weight-add .weight-content .left:last-child {
+  margin-right: 0%;
+}
+.addtraining md-content md-card md-card-content .new-training .weight-add .weight-content .middle {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 16.666666666666664%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.addtraining md-content md-card md-card-content .new-training .weight-add .weight-content .middle:before,
+.addtraining md-content md-card md-card-content .new-training .weight-add .weight-content .middle:after {
+  content: '';
+  display: table;
+}
+.addtraining md-content md-card md-card-content .new-training .weight-add .weight-content .middle:after {
+  clear: both;
+}
+.addtraining md-content md-card md-card-content .new-training .weight-add .weight-content .middle:last-child {
+  margin-right: 0%;
+}
+.addtraining md-content md-card md-card-content .new-training .weight-add .weight-content .right {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 41.66666666666667%;
+  margin-left: 0%;
+  margin-right: 0%;
+  border: 1px solid #90a4ae;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.addtraining md-content md-card md-card-content .new-training .weight-add .weight-content .right:before,
+.addtraining md-content md-card md-card-content .new-training .weight-add .weight-content .right:after {
+  content: '';
+  display: table;
+}
+.addtraining md-content md-card md-card-content .new-training .weight-add .weight-content .right:after {
+  clear: both;
+}
+.addtraining md-content md-card md-card-content .new-training .weight-add .weight-content .right:last-child {
+  margin-right: 0%;
+}
+.addtraining md-content md-card md-card-content .new-training .weight-add .weight-content .minus {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  font-size: 250%;
+}
+.addtraining md-content md-card md-card-content .new-training .weight-add .weight-content .minus:before,
+.addtraining md-content md-card md-card-content .new-training .weight-add .weight-content .minus:after {
+  content: '';
+  display: table;
+}
+.addtraining md-content md-card md-card-content .new-training .weight-add .weight-content .minus:after {
+  clear: both;
+}
+.addtraining md-content md-card md-card-content .new-training .weight-add .weight-content .minus:last-child {
+  margin-right: 0%;
 }
 .addtraining md-content md-card md-card-content .new-training .header-add {
   *zoom: 1;

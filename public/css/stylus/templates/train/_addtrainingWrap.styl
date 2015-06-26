@@ -100,6 +100,7 @@
 					box-sizing border-box
 					padding-left 2em
 					padding-right 2em
+					position relative
 					+desktop()
 						padding-left 5em
 						padding-right 5em
@@ -109,6 +110,37 @@
 
 					// margin-top 6em
 					box-sizing border-box
+					.weight-add
+						position fixed
+						.weight-content
+							col(1.2/12,gutter:0)
+							position fixed
+							max-width 120px
+							box-sizing border-box
+							padding-left .7%
+							padding-right .7%
+							text-align center
+							font-size 70%
+							background-color palette('Grey','100') 
+							// border 1px solid palette('Blue Grey','300')  
+							.plus
+								col(12/12,gutter:0)
+								font-size 190%
+							.left
+								col(5/12,gutter:0)
+								box-sizing border-box
+								background-color white
+								border 1px solid palette('Blue Grey','300')  
+							.middle
+								col(2/12,gutter:0)
+							.right
+								col(5/12,gutter:0)
+								border 1px solid palette('Blue Grey','300')  
+								background-color white
+								box-sizing border-box
+							.minus
+								col(12/12,gutter:0)
+								font-size 250%
 					.header-add
 						col(3/6,gutter:0)
 						box-sizing border-box

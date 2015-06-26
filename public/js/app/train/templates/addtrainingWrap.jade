@@ -130,7 +130,23 @@ section.addtraining
 									span {{exercicio.nome}}
 								section.volume
 									span 3
-									span x
+									span(ng-click="weight_add($event);") x
 									span 12
 								section.delete
 									ng-md-icon(icon="close" style="fill:black" size="20")
+					section.weight-add(style="top:{{position.y - 50}}px;left:{{position.x - 48}}px;")
+						section.weight-content
+							section.plus
+								span
+									ng-md-icon(icon="keyboard_arrow_up" style="fill:black"  size="20")
+							section.left
+								span 3
+							section.middle 
+								span :
+							section.right 
+								span 10
+							section.minus 
+								span
+									ng-md-icon(icon="expand_more" style="fill:black"  size="20")
+
+

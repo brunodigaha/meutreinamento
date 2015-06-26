@@ -149,6 +149,18 @@ module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$sta
 	$scope.teste= function(){
 		alert("bruno");
 	};
+	$scope.position = {
+		x: -500,
+		y: -500
+	};
+	$scope.weight_add = function(ev) {
+		console.log(ev);
+		console.log(ev.pageX);
+		$scope.position.x=ev.pageX;
+		$scope.position.y=ev.pageY;
+		console.log(ev.pageY);
+		$scope.$digest();
+	};
 	$scope.importTraining = function(ev) {
 		$mdDialog.show({
 			controller: 'ImportDialogController',
