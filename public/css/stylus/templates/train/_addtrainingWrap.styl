@@ -117,6 +117,8 @@
 						height 100%
 						width 100%
 						z-index 4
+						background-color palette('Grey','300')
+						opacity .1
 					.weight-add
 						position fixed
 						z-index 6
@@ -130,22 +132,26 @@
 							padding-right .7%
 							text-align center
 							font-size 70%
-							background-color palette('Grey','100') 
-							// border 1px solid palette('Blue Grey','300')  
+							// background-color palette('Blue Grey','50') 
+							background-color white
+							border 1px solid palette('Blue Grey','50')  
 							.plus
 								col(12/12,gutter:0)
 								font-size 190%
 								cursor pointer
+								ng-md-icon
+									svg
+										margin-top 4%
 							.left
 								col(5/12,gutter:0)
 								box-sizing border-box
 								background-color white
-								border 1px solid palette('Blue Grey','300')  
+								border 1px solid palette('Blue Grey','100')  
 							.middle
 								col(2/12,gutter:0)
 							.right
 								col(5/12,gutter:0)
-								border 1px solid palette('Blue Grey','300')  
+								border 1px solid palette('Blue Grey','100')  
 								box-sizing border-box
 								background-color white
 								background-color white
@@ -154,8 +160,12 @@
 								col(12/12,gutter:0)
 								font-size 250%
 								cursor pointer
+								ng-md-icon
+									svg
+										margin-top 6%
 							.border-red
 								border 1px solid palette('Red','700')  
+								 color palette('Red','700')  
 					.header-add
 						col(3/6,gutter:0)
 						box-sizing border-box
@@ -233,8 +243,8 @@
 								col(12/12,gutter:0)
 								text-align center
 								color palette('Grey','700')
-								&:hover
-									background palette('Blue Grey','50')
+								// &:hover
+								// 	background palette('Blue Grey','50')
 								.drag
 									col(1/11,gutter:0)
 									margin-left .5em
