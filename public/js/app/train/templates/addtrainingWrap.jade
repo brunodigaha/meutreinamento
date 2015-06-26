@@ -131,7 +131,7 @@ section.addtraining
 								section.volume
 									span(ng-click="weight_add($event,exercicio,$index);") {{exercicio.serie}}x{{exercicio.repeticao}}
 								section.delete
-									ng-md-icon(icon="close" style="fill:black" size="20")
+									ng-md-icon(icon="close" ng-click="remove($index);" style="fill:black" size="20")
 					section.background-wrap(ng-show="close_all" ng-click="close();")
 					section.weight-add(style="top:{{position.y - 50}}px;left:{{position.x - 48}}px;")
 						section.weight-content

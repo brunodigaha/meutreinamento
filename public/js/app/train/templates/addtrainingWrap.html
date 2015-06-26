@@ -148,7 +148,7 @@
                 <section class="exerc"><span>{{exercicio.nome}}</span></section>
                 <section class="volume"><span ng-click="weight_add($event,exercicio,$index);">{{exercicio.serie}}x{{exercicio.repeticao}}</span></section>
                 <section class="delete">
-                  <ng-md-icon icon="close" style="fill:black" size="20"></ng-md-icon>
+                  <ng-md-icon icon="close" ng-click="remove($index);" style="fill:black" size="20"></ng-md-icon>
                 </section>
               </li>
             </ul>
