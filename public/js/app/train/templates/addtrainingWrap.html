@@ -146,7 +146,7 @@
                   <ng-md-icon icon="open_with" style="fill:black" size="20"></ng-md-icon>
                 </section>
                 <section class="exerc"><span>{{exercicio.nome}}</span></section>
-                <section class="volume"><span ng-click="weight_add($event);">3x12</span></section>
+                <section class="volume"><span ng-click="weight_add($event,exercicio,$index);">{{exercicio.serie}}x{{exercicio.repeticao}}</span></section>
                 <section class="delete">
                   <ng-md-icon icon="close" style="fill:black" size="20"></ng-md-icon>
                 </section>
@@ -155,12 +155,12 @@
           </section>
           <section style="top:{{position.y - 50}}px;left:{{position.x - 48}}px;" class="weight-add">
             <section class="weight-content">
-              <section class="plus"><span>
+              <section ng-click="plus_weight();" class="plus"><span>
                   <ng-md-icon icon="keyboard_arrow_up" style="fill:black" size="20"></ng-md-icon></span></section>
-              <section class="left"><span>3</span></section>
+              <section class="left"><span>{{exercicio_select.serie}}</span></section>
               <section class="middle"> <span>:</span></section>
-              <section class="right"> <span>10</span></section>
-              <section class="minus"> <span>
+              <section class="right"> <span>{{exercicio_select.repeticao}}</span></section>
+              <section ng-click="minus_weight();" class="minus"><span>
                   <ng-md-icon icon="expand_more" style="fill:black" size="20"></ng-md-icon></span></section>
             </section>
           </section>

@@ -129,21 +129,21 @@ section.addtraining
 								section.exerc
 									span {{exercicio.nome}}
 								section.volume
-									span(ng-click="weight_add($event);") 3x12
+									span(ng-click="weight_add($event,exercicio,$index);") {{exercicio.serie}}x{{exercicio.repeticao}}
 								section.delete
 									ng-md-icon(icon="close" style="fill:black" size="20")
 					section.weight-add(style="top:{{position.y - 50}}px;left:{{position.x - 48}}px;")
 						section.weight-content
-							section.plus
+							section.plus(ng-click="plus_weight();")
 								span
 									ng-md-icon(icon="keyboard_arrow_up" style="fill:black"  size="20")
 							section.left
-								span 3
+								span {{exercicio_select.serie}}
 							section.middle 
 								span :
 							section.right 
-								span 10
-							section.minus 
+								span {{exercicio_select.repeticao}}
+							section.minus(ng-click="minus_weight();")
 								span
 									ng-md-icon(icon="expand_more" style="fill:black"  size="20")
 

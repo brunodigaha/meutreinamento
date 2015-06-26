@@ -13396,6 +13396,7 @@ a:visited {
   margin-left: 0%;
   margin-right: 0%;
   font-size: 190%;
+  cursor: pointer;
 }
 .addtraining md-content md-card md-card-content .new-training .weight-add .weight-content .plus:before,
 .addtraining md-content md-card md-card-content .new-training .weight-add .weight-content .plus:after {
@@ -13483,6 +13484,7 @@ a:visited {
   margin-left: 0%;
   margin-right: 0%;
   font-size: 250%;
+  cursor: pointer;
 }
 .addtraining md-content md-card md-card-content .new-training .weight-add .weight-content .minus:before,
 .addtraining md-content md-card md-card-content .new-training .weight-add .weight-content .minus:after {
@@ -13494,6 +13496,9 @@ a:visited {
 }
 .addtraining md-content md-card md-card-content .new-training .weight-add .weight-content .minus:last-child {
   margin-right: 0%;
+}
+.addtraining md-content md-card md-card-content .new-training .weight-add .weight-content .border-red {
+  border: 1px solid #d32f2f;
 }
 .addtraining md-content md-card md-card-content .new-training .header-add {
   *zoom: 1;

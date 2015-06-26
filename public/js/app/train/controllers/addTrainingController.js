@@ -89,27 +89,39 @@ module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$sta
 	$scope.exercicios= [
 		{
 			ordem:1,
-			nome:'Supino Reto'
+			nome:'Supino Reto',
+			serie: 3,
+			repeticao: 12
 		},
 		{
 			ordem:2,
-			nome:'Supino Inclinado'
+			nome:'Supino Inclinado',
+			serie: 3,
+			repeticao: 10
 		},
 		{
 			ordem:3,
-			nome:'Supino Declinado'
+			nome:'Supino Declinado',
+			serie: 3,
+			repeticao: 10
 		},
 		{
 			ordem:4,
-			nome:'Crucifixo'
+			nome:'Crucifixo',
+			serie: 3,
+			repeticao: 12
 		},
 		{
 			ordem:5,
-			nome:'Agachamento Declinado'
+			nome:'Agachamento Declinado',
+			serie: 3,
+			repeticao: 12
 		},
 		{
 			ordem:6,
-			nome:'Supino Máquina'
+			nome:'Supino Máquina',
+			serie: 3,
+			repeticao: 12
 		}
 	];
 
@@ -153,13 +165,49 @@ module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$sta
 		x: -500,
 		y: -500
 	};
-	$scope.weight_add = function(ev) {
-		console.log(ev);
-		console.log(ev.pageX);
+	$scope.exercicio_select = {
+		ordem:6,
+		nome:'Supino Máquina',
+		serie: 0,
+		repeticao: 0
+	};
+	$scope.alt='repeticao';
+	$scope.select_left= true;
+	$scope.index = 0;
+	$scope.plus_weight = function(){
+		if ($scope.alt=='serie'){
+			$scope.exercicios[$scope.index].serie= $scope.exercicios[$scope.index].serie+1;
+		}else if ($scope.alt == 'repeticao'){
+			$scope.exercicios[$scope.index].repeticao= $scope.exercicios[$scope.index].repeticao+1;
+			// console.log($scope.exercicios[index]);
+		}
+		// $scope.exercicio_select = $scope.exercicios[index];
+	};
+	$scope.minus_weight = function(){
+		if ($scope.alt=='serie'){
+			$scope.exercicios[$scope.index].serie= $scope.exercicios[$scope.index].serie-1;
+		}else if ($scope.alt == 'repeticao'){
+			$scope.exercicios[$scope.index].repeticao= $scope.exercicios[$scope.index].repeticao-1;
+			// console.log($scope.exercicios[index]);
+		}
+		// $scope.exercicio_select = $scope.exercicios[index];
+	};
+
+
+
+
+	$scope.weight_add = function(ev,exercicio,index) {
+		// console.log(ev);
+		// console.log(ev.pageX);
 		$scope.position.x=ev.pageX;
 		$scope.position.y=ev.pageY;
-		console.log(ev.pageY);
-		$scope.$digest();
+		$scope.index = index;
+		// $scope.exercicios[index].serie=10;
+		$scope.exercicio_select = $scope.exercicios[index];
+		// console.log(index);
+		// console.log($scope.exercicios[index]);
+		// console.log(ev.pageY);
+		// $scope.$digest();
 	};
 	$scope.importTraining = function(ev) {
 		$mdDialog.show({
