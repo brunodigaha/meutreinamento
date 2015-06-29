@@ -13307,6 +13307,10 @@ a:visited {
 .addtraining md-content md-card md-card-content .tabs:last-child {
   margin-right: 0%;
 }
+.addtraining md-content md-card md-card-content .tabs md-chips md-content .item-select,
+.addtraining md-content md-card md-card-content .tabs md-tab-content md-content .item-select {
+  background-color: #eceff1;
+}
 .addtraining md-content md-card md-card-content .tabs md-chips md-content span,
 .addtraining md-content md-card md-card-content .tabs md-tab-content md-content span {
   cursor: pointer;

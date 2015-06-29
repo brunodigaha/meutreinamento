@@ -32,7 +32,7 @@
             <!-- 						strong {{item.forks}}-->
             <md-tab label="{{list.grupo}}" ng-repeat=" list in list_exercicios">
               <md-content class="md-padding">
-                <section><span ng-click="insert($index, list);" ng-repeat="exerc in list.exercicios">{{exerc}}</span></section>
+                <section><span ng-click="insert($index, list);" ng-class="{'item-select': exerc.select }" ng-repeat="exerc in list.exercicios">{{exerc.nome}}</span></section>
               </md-content>
             </md-tab>
           </md-tabs>
@@ -54,7 +54,7 @@
             <!-- 		| {{item}}-->
             <!-- 		span(sv-handle="") handle-->
             <ul ng-repeat="exercicio in exercicios" sv-element="opts">
-              <li ng-class="{'exerc-select': $index==index}">
+              <li ng-class="{'exerc-select': $index==index}" class="animated pulse">
                 <section sv-handle="" class="drag">
                   <ng-md-icon icon="open_with" style="fill:black" size="20"></ng-md-icon>
                 </section>

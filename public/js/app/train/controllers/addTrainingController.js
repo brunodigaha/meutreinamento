@@ -75,10 +75,23 @@ module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$sta
 		{
 			grupo: "Bíceps",
 			exercicios: [
-				"Biceps Testa",
-				"Bíceps Barra",
-				"Bíceps Alternada",
-				"Bíceps Martelo"
+				{
+					nome:"Biceps Testa",
+					select: false
+				},
+				{
+					nome:"Bíceps Barra",
+					select: false
+				},
+				{
+					nome:"Bíceps Alternada",
+					select: false
+			
+				},
+				{
+					nome:"Bíceps Martelo",
+					select: false
+				}
 			]
 		},
 		{
@@ -159,10 +172,13 @@ module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$sta
 	];
 	$scope.insert = function(index,grupo){
 		// item=grupo.exercicios.splice(index,1);
+		teste = grupo.exercicios[index];
+		teste.select = true;
+		console.log(grupo.exercicios[index]);
 		item=grupo.exercicios[index];
 		$scope.exercicios.push(
 			{
-			nome:item,
+			nome:item.nome,
 			serie: 3,
 			repeticao: 12
 			}
