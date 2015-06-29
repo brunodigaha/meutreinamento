@@ -29,7 +29,7 @@ section.perfil(ui-view="perfil")
 				section.title-plan
 					p Plano de Treinamento
 				section.edit-plan
-					p Alterar plano
+					p(ng-click="edit_plan($event);") Alterar plano
 				// md-select(placeholder='Plano', ng-model='plan' style="min-width:250px;")
 				// 	md-option(ng-repeat='plan in plans', value='{{plan}}') {{plan}}
 				// ng-md-icon(icon="launch" style="fill:silver"  size="25" ng-click="true")
