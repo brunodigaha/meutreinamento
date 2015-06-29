@@ -13226,7 +13226,7 @@ a:visited {
   margin-left: 0%;
   margin-right: 0%;
   position: absolute;
-  left: 5em;
+  left: 5.6em;
   bottom: 0.4em;
   text-align: right;
   color: #000;
@@ -13313,7 +13313,9 @@ a:visited {
   border-radius: 16px;
   padding-right: 7px;
   padding-left: 7px;
-  margin-right: 7px;
+  margin-right: 9px;
+  line-height: 26px;
+  vertical-align: middle;
   margin-top: 7px;
   text-align: left;
   display: inline-block;

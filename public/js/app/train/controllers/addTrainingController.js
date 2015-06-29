@@ -71,6 +71,66 @@ module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$sta
 	};
 
 	}
+	$scope.list_exercicios = [
+		{
+			grupo: "Bíceps",
+			exercicios: [
+				"Biceps Testa",
+				"Bíceps Barra",
+				"Bíceps Alternada",
+				"Bíceps Martelo"
+			]
+		},
+		{
+			grupo: "Tríceps",
+			exercicios: [
+				"Tríceps Testa",
+				"Tríceps Supinado",
+				"Tríceps Corda"
+			]
+		},
+		{
+			grupo: "Ombro",
+			exercicios: [
+				"Ombro Frontal",
+				"Ombro Lateral",
+				"Ombro Máquina"
+			]
+		},
+		{
+			grupo: "Costas",
+			exercicios: [
+				"Polia Frontal",
+				"Remada Alta",
+				"Puxada Unilateral"
+			]
+		},
+		{
+			grupo: "Peito",
+			exercicios: [
+				"Supino Reto",
+				"Supino Inclinado",
+				"Crucifixo"
+			]
+		},
+		{
+			grupo: "Perna",
+			exercicios: [
+				"Leg Press",
+				"Agachamento",
+				"Adução",
+				"Abdução",
+				"Extenção",
+				"Flexão"
+			]
+		},
+		{
+			grupo: "Abdominal",
+			exercicios: [
+				"Prancha"
+			]
+		}
+	];
 
 	$scope.exercicios= [
 		{
@@ -84,30 +144,6 @@ module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$sta
 			nome:'Supino Inclinado',
 			serie: 3,
 			repeticao: 10
-		},
-		{
-			ordem:3,
-			nome:'Supino Declinado',
-			serie: 3,
-			repeticao: 10
-		},
-		{
-			ordem:4,
-			nome:'Crucifixo',
-			serie: 3,
-			repeticao: 12
-		},
-		{
-			ordem:5,
-			nome:'Agachamento Declinado',
-			serie: 3,
-			repeticao: 12
-		},
-		{
-			ordem:6,
-			nome:'Supino Máquina',
-			serie: 3,
-			repeticao: 12
 		}
 	];
 
@@ -121,8 +157,16 @@ module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$sta
 		"Treino E",
 		"Treino F"
 	];
-	$scope.teste= function(){
-		alert("bruno");
+	$scope.insert = function(index,grupo){
+		// item=grupo.exercicios.splice(index,1);
+		item=grupo.exercicios[index];
+		$scope.exercicios.push(
+			{
+			nome:item,
+			serie: 3,
+			repeticao: 12
+			}
+		);
 	};
 	$scope.position = {
 		x: -500,
