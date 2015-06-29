@@ -13307,17 +13307,24 @@ a:visited {
 .addtraining md-content md-card md-card-content .tabs:last-child {
   margin-right: 0%;
 }
-.addtraining md-content md-card md-card-content .tabs md-chips .md-chips .md-chip {
+.addtraining md-content md-card md-card-content .tabs md-chips md-content span,
+.addtraining md-content md-card md-card-content .tabs md-tab-content md-content span {
   cursor: pointer;
+  border-radius: 16px;
+  padding-right: 7px;
+  padding-left: 7px;
+  margin-right: 7px;
+  margin-top: 7px;
+  text-align: left;
+  display: inline-block;
   background-color: #fff;
   border: 1px solid #cfd8dc;
-  font-size: 85%;
+  font-size: 75%;
   color: #424242;
 }
-@media only screen and (min-width: 1050px) {
-  .addtraining md-content md-card md-card-content .tabs md-chips .md-chips .md-chip {
-    font-size: 100%;
-  }
+.addtraining md-content md-card md-card-content .tabs md-chips md-content span:hover,
+.addtraining md-content md-card md-card-content .tabs md-tab-content md-content span:hover {
+  background: #eceff1;
 }
 @media only screen and (min-width: 400px) and (max-width: 1050px) {
   .addtraining md-content md-card md-card-content .tabs md-tab-item.md-tab {

@@ -1,90 +1,76 @@
 var fs = require('fs');
 module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$stateParams,$mdDialog) {
+	var self = $scope;
+	self.simulateQuery = false;
+	self.isDisabled    = false;
+	self.repos         = loadAll();
+	self.querySearch   = querySearch;
+	self.selectedItemChange = selectedItemChange;
+	self.searchTextChange   = searchTextChange;
+	/**
+	 * Search for repos... use $timeout to simulate
+	 * remote dataservice call.
+	 */
+	function querySearch (query) {
+		var results = query ? self.repos.filter( createFilterFor(query) ) : self.repos,
+			deferred;
+		if (self.simulateQuery) {
+			deferred = $q.defer();
+			$timeout(function () { deferred.resolve( results ); }, Math.random() * 1000, false);
+			return deferred.promise;
+		} else {
+			return results;
+		}
+	}
 
+	function searchTextChange(text) {
+		$log.info('Text changed to ' + text);
+	}
 
+	function selectedItemChange(item) {
+		$log.info('Item changed to ' + JSON.stringify(item));
+	}
 
-    var self = $scope;
+	/**
+	 * Build `components` list of key/value pairs
+	 */
+	function loadAll() {
+		var repos = [
+		{
+			'name'      : 'Supino Reto'
+		},
+		{
+			'name'      : 'Supino Inclinado'
+		},
+		{
+			'name'      : 'Crucifixo'
+		},
+		{
+			'name'      : 'Flay'
+		},
+		{
+			'name'      : 'Biceps Testa',
+			'url'       : 'https://github.com/angular/material-start',
+			'watchers'  : '81',
+			'forks'     : '303',
+		}
+		];
+		return repos.map( function (repo) {
+				repo.value = repo.name.toLowerCase();
+				return repo;
+				});
+	}
+	/**
+	 * Create filter function for a query string
+	 */
+	function createFilterFor(query) {
+		var lowercaseQuery = angular.lowercase(query);
 
-    self.simulateQuery = false;
-    self.isDisabled    = false;
+	return function filterFn(item) {
+		return (item.value.indexOf(lowercaseQuery) === 0);
+	};
 
-    self.repos         = loadAll();
-    self.querySearch   = querySearch;
-    self.selectedItemChange = selectedItemChange;
-    self.searchTextChange   = searchTextChange;
-
-    // ******************************
-    // Internal methods
-    // ******************************
-
-    /**
-     * Search for repos... use $timeout to simulate
-     * remote dataservice call.
-     */
-    function querySearch (query) {
-      var results = query ? self.repos.filter( createFilterFor(query) ) : self.repos,
-          deferred;
-      if (self.simulateQuery) {
-        deferred = $q.defer();
-        $timeout(function () { deferred.resolve( results ); }, Math.random() * 1000, false);
-        return deferred.promise;
-      } else {
-        return results;
-      }
-    }
-
-    function searchTextChange(text) {
-      $log.info('Text changed to ' + text);
-    }
-
-    function selectedItemChange(item) {
-      $log.info('Item changed to ' + JSON.stringify(item));
-    }
-
-    /**
-     * Build `components` list of key/value pairs
-     */
-    function loadAll() {
-      var repos = [
-        {
-          'name'      : 'Supino Reto'
-        },
-        {
-          'name'      : 'Supino Inclinado'
-        },
-        {
-          'name'      : 'Crucifixo'
-        },
-        {
-          'name'      : 'Flay'
-        },
-        {
-          'name'      : 'Biceps Testa',
-          'url'       : 'https://github.com/angular/material-start',
-          'watchers'  : '81',
-          'forks'     : '303',
-        }
-      ];
-      return repos.map( function (repo) {
-        repo.value = repo.name.toLowerCase();
-        return repo;
-      });
-    }
-
-    /**
-     * Create filter function for a query string
-     */
-    function createFilterFor(query) {
-      var lowercaseQuery = angular.lowercase(query);
-
-      return function filterFn(item) {
-        return (item.value.indexOf(lowercaseQuery) === 0);
-      };
-
-    }
-
-
-
+	}
 
 	$scope.exercicios= [
 		{
@@ -135,29 +121,6 @@ module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$sta
 		"Treino E",
 		"Treino F"
 	];
-	$scope.readonly = true;
-	$scope.readonly2 = true;
-	$scope.fruitNames2 = ['Bíceps Barra', 'Rosca Alternada', 'Rosca Investida','Rosca V', 'Rosca Alteres'];
-	$scope.fruitNames= [
-		{
-			'name' : 'Bíceps Barra',
-			'type' : 'Brassica'
-		},
-		{
-			'name' : 'Bíceps V',
-			'type' : 'Brassica'
-		},
-		{
-			'name' : 'Bíceps Alternado',
-			'type' : 'Umbelliferous'
-		}
-	]; 
-	$scope.newVeg = function(chip) {
-		return {
-			name: chip,
-			type: 'unknown'
-		};
-	};
 	$scope.teste= function(){
 		alert("bruno");
 	};
@@ -208,8 +171,6 @@ module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$sta
 	$scope.remove = function(index){
 		$scope.exercicios.splice(index,1);
 	};
-
-
 
 	$scope.weight_add = function(ev,exercicio,index) {
 		$scope.index = index;
