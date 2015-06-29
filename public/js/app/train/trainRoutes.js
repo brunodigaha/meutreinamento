@@ -47,6 +47,18 @@ module.exports = {
 					template: fs.readFileSync(__dirname + '/templates/addtrainingWrap.html')
 				}
 			}
+		},
+		collectionTraining : {
+			authenticate: true,
+			ncyBreadcrumb: {
+				label: 'Coleção Treinos'
+			},
+			views: {
+				'content@core': {
+					controller: 'collectionTrainingController',
+					template: fs.readFileSync(__dirname + '/templates/collectionTrainingContent.html')
+				}
+			}
 		}
 	}
 };
