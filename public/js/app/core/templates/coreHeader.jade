@@ -72,8 +72,9 @@ section.user-admin(ui-view="user-admin")
 				ng-md-icon(icon="person" style="fill:grey"  size="17" ng-click="true")
 				| &nbsp;&nbsp;Perfil
 			li
-				ng-md-icon(icon="event" style="fill:grey"  size="17" ng-click="true")
-				| &nbsp;&nbsp;Agenda
+				a(ui-sref="core.user.schedule")
+					ng-md-icon(icon="event" style="fill:grey"  size="17" ng-click="true")
+					| &nbsp;&nbsp;Agenda
 			li
 				a(ui-sref="core.user.collectionTraining")
 					ng-md-icon(icon="local_library" style="fill:grey"  size="17" ng-click="true")
