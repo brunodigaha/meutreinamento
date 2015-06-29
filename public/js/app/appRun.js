@@ -1,10 +1,11 @@
-module.exports = function ($rootScope, $state,$stateParams, authModelService) {
+module.exports = function ($rootScope, $state,$stateParams,coreEventsService, authModelService) {
 	$rootScope.$on("$stateChangeStart", function (event, toState, toParams, fromState, fromParams) {
 		// console.log('$stateChangeStart to '+toState.to+'- fired when the transition begins. toState,toParams : \n',toState, toParams);
 		// console.log("fromSate",fromState);
 		// console.log("tostate", toState);
 		// console.log("toParam", toParams);
 		// console.log("fromParam", fromParams);
+		coreEventsService.close_all();
 		if(toState.authenticate && !authModelService.is_authenticated()){
 			event.preventDefault();
 			$state.go("login");
