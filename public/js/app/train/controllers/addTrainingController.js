@@ -97,50 +97,107 @@ module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$sta
 		{
 			grupo: "Tríceps",
 			exercicios: [
-				"Tríceps Testa",
-				"Tríceps Supinado",
-				"Tríceps Corda"
+				{
+					nome:"Tríceps Testa",
+					select: false
+				},
+				{
+					nome:"Tríceps Supinado",
+					select: false
+				},
+				{
+					nome:"Tríceps Corda",
+					select: false
+				}
 			]
 		},
 		{
 			grupo: "Ombro",
 			exercicios: [
-				"Ombro Frontal",
-				"Ombro Lateral",
-				"Ombro Máquina"
+				{
+					nome:"Ombro Frontal",
+					select: false
+				},
+				{
+					nome:"Ombro Lateral",
+					select: false
+				},
+				{
+					nome:"Ombro Máquina",
+					select: false
+				}
 			]
 		},
 		{
 			grupo: "Costas",
 			exercicios: [
-				"Polia Frontal",
-				"Remada Alta",
-				"Puxada Unilateral"
+				{
+					nome:"Polia Frontal",
+					select: false
+				},
+				{
+					nome:"Remada Alta",
+					select: false
+				},
+				{
+					nome:"Puxada Unilateral",
+					select: false
+				}
 			]
 		},
 		{
 			grupo: "Peito",
 			exercicios: [
-				"Supino Reto",
-				"Supino Inclinado",
-				"Crucifixo"
+				{
+					nome:"Supino Reto",
+					select: false
+				},
+				{
+					nome:"Supino Inclinado",
+					select: false
+				},
+				{
+					nome:"Crucifixo",
+					select: false
+				}
 			]
 		},
 		{
 			grupo: "Perna",
 			exercicios: [
-				"Leg Press",
-				"Agachamento",
-				"Adução",
-				"Abdução",
-				"Extenção",
-				"Flexão"
+				{
+					nome:"Leg Press",
+					select: false
+				},
+				{
+					nome:"Agachamento",
+					select: false
+				},
+				{
+					nome:"Adução",
+					select: false
+				},
+				{
+					nome:"Abdução",
+					select: false
+				},
+				{
+					nome:"Extenção",
+					select: false
+				},
+				{
+					nome:"Flexão",
+					select: false
+				}
 			]
 		},
 		{
 			grupo: "Abdominal",
 			exercicios: [
-				"Prancha"
+				{
+					nome:"Prancha",
+					select: false
+				}
 			]
 		}
 	];
