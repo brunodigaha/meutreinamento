@@ -23,6 +23,9 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider,$
 		.state('core.user.addtraining',angular.extend(
 				{url:'/training/add'},require('./train/trainRoutes.js').train.addtraining))
 
+		.state('core.user.trainingHistory',angular.extend(
+				{url:'/training-history'},require('./train/trainRoutes.js').train.trainingHistory))
+
 		.state('core.user.collectionTraining',angular.extend(
 				{url:'/collection-training'},require('./train/trainRoutes.js').train.collectionTraining))
 

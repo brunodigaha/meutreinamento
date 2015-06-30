@@ -12780,7 +12780,6 @@ md-dialog md-toolbar h1 {
 }
 md-dialog md-dialog-content .new-user .avatar {
   text-align: center;
-  margin-bottom: 4%;
 }
 md-dialog md-dialog-content .new-user .avatar img {
   max-width: 20%;
@@ -13998,4 +13997,7 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
 .collection-wrap h1 {
   font-size: 50px;
   color: #008000;
+}
+.history-wrap h1 {
+  color: #800080;
 }

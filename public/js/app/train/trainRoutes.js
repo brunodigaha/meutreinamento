@@ -48,6 +48,18 @@ module.exports = {
 				}
 			}
 		},
+		trainingHistory : {
+			authenticate: true,
+			ncyBreadcrumb: {
+				label: 'Histórico Treinos'
+			},
+			views: {
+				'content@core': {
+					controller: 'historyTrainingController',
+					template: fs.readFileSync(__dirname + '/templates/historyTrainingContent.html')
+				}
+			}
+		},
 		collectionTraining : {
 			authenticate: true,
 			ncyBreadcrumb: {
