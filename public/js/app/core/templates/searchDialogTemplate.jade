@@ -1,9 +1,10 @@
 md-dialog(aria-label="Mango (Fruit)")
-	md-toolbar
+	md-toolbar(md-theme="grey") 
 		.md-toolbar-tools
-			h2 Cadastrar Novo Aluno
+			h1 Cadastrar Novo Aluno
 			span(flex="")
-			md-button(ng-click="answer('not applicable')") Cancelar
+			// md-button(ng-click="answer('not applicable')") Cancelar
+			ng-md-icon(icon="close" ng-click="answer('not applicable')" style="fill:white" size="25")
 	md-dialog-content
 		section.new-user
 			// md-toolbar.md-primary

@@ -1,4 +1,6 @@
 module.exports = function($scope, coreEventsService,$state,$stateParams,$mdDialog) {
+	$scope.duracao=2;
+	$scope.frequencia=3;
 	$scope.hide = function() {
 		$mdDialog.hide();
 	};
