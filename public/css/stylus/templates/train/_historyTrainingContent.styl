@@ -1,3 +1,22 @@
 .history-wrap
-	h1
-		color purple
+	col(12/12,gutter:0)
+	.history-menu
+		col(10/12,gutter:0)
+		shift(1/12,gutter:0)
+		margin-bottom 3%
+		md-tabs
+			border-bottom 1px solid palette('Blue Grey','50')
+			md-tab-item.md-tab
+				color palette('Blue','500')
+				// font-weight bold
+				+tablet()
+					padding 13px 13px
+					line-height 27px
+					font-size 12px
+			.md-tab.md-active, md-tabs .md-tab.md-focused
+				color black
+				background-color palette('Grey','50')
+	.history-content
+		col(12/12,gutter:0)
+
+

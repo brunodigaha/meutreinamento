@@ -1,4 +1,11 @@
 
 <section class="history-wrap">
-  <h1>Histórico de Treinamentos</h1>
+  <section class="history-menu">
+    <md-tabs md-center-tabs="true" md-selected="1">
+      <md-tab label="{{$index+1}} Semana" ng-repeat="person in [1,2,3,4,5] track by $index"></md-tab>
+    </md-tabs>
+  </section>
+  <section ui-view="history" class="history-content">
+    <p>teste</p>
+  </section>
 </section>

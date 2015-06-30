@@ -42,8 +42,9 @@ section.perfil(ui-view="perfil")
 						ng-md-icon(icon="assignment" style="fill:grey"  size="40" ng-click="true")
 						p Treinos
 				section.history
-					ng-md-icon(icon="local_movies" style="fill:grey"  size="40" ng-click="")
-					p   Histórico Treinamentos
+					a(ui-sref="core.user.trainingHistory")
+						ng-md-icon(icon="local_movies" style="fill:grey"  size="40" ng-click="")
+						p   Histórico Treinamentos
 				section.review
 					ng-md-icon(icon="straighten" style="fill:grey"  size="40" ng-click="true")
 					p Medidas

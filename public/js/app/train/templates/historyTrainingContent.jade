@@ -1,2 +1,8 @@
 section.history-wrap
-	h1 Histórico de Treinamentos
+	section.history-menu
+		md-tabs(md-center-tabs="true" md-selected="1")
+			md-tab(label="{{$index+1}} Semana" ng-repeat="person in [1,2,3,4,5] track by $index")
+	section.history-content(ui-view="history")
+		p teste
+	
+
