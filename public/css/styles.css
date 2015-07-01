@@ -2,7 +2,7 @@
  * Angular Material Design
  * https://github.com/angular/material
  * @license MIT
- * v0.10.0-master-7ca139a
+ * v0.10.0
  */
 /* mixin definition ; sets LTR and RTL within the same style call */
 html, body {
@@ -3032,15 +3032,7 @@ md-bottom-sheet {
   position: relative;
   outline: none;
   border: 0;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: inline-table;
   padding: 0 6px;
   margin: 6px 8px;
   line-height: 36px;
@@ -3093,12 +3085,6 @@ md-bottom-sheet {
     width: 56px;
     height: 56px;
     vertical-align: middle;
-    -webkit-flex-grow: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
-    -webkit-flex-shrink: 0;
-        -ms-flex-negative: 0;
-            flex-shrink: 0;
     border-radius: 50%;
     background-clip: padding-box;
     overflow: hidden;
@@ -3133,6 +3119,8 @@ md-bottom-sheet {
       background-clip: padding-box;
       overflow: hidden;
       -webkit-mask-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC'); }
+    .md-button.md-fab md-icon {
+      margin-top: 0; }
     .md-button.md-fab.md-mini {
       line-height: 40px;
       width: 40px;
@@ -3329,6 +3317,20 @@ md-checkbox {
       html[dir=rtl] md-checkbox .md-label span {
         margin-right: 10px; }
 
+md-content {
+  display: block;
+  position: relative;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; }
+  md-content[md-scroll-y] {
+    overflow-y: auto;
+    overflow-x: hidden; }
+  md-content[md-scroll-x] {
+    overflow-x: auto;
+    overflow-y: hidden; }
+  md-content.autoScroll {
+    -webkit-overflow-scrolling: auto; }
+
 .md-contact-chips .md-chips .md-chip {
   padding: 0 8px 0 0; }
   .md-contact-chips .md-chips .md-chip .md-contact-avatar {
@@ -3453,20 +3455,6 @@ md-checkbox {
     border: 1px solid #fff; }
   .md-chip-input-container md-autocomplete {
     border: none; } }
-
-md-content {
-  display: block;
-  position: relative;
-  overflow: auto;
-  -webkit-overflow-scrolling: touch; }
-  md-content[md-scroll-y] {
-    overflow-y: auto;
-    overflow-x: hidden; }
-  md-content[md-scroll-x] {
-    overflow-x: auto;
-    overflow-y: hidden; }
-  md-content.autoScroll {
-    -webkit-overflow-scrolling: auto; }
 
 .md-dialog-is-showing {
   max-height: 100%; }
@@ -3995,13 +3983,7 @@ md-list-item.md-no-proxy, md-list-item .md-no-style {
     text-align: left;
     text-transform: none;
     width: 100%;
-    white-space: normal;
-    -webkit-flex-direction: inherit;
-        -ms-flex-direction: inherit;
-            flex-direction: inherit;
-    -webkit-align-items: inherit;
-        -ms-flex-align: inherit;
-            align-items: inherit; }
+    white-space: normal; }
   md-list-item.md-no-proxy:focus, md-list-item .md-no-style:focus {
     outline: none; }
 md-list-item.md-with-secondary {
@@ -6479,21 +6461,6 @@ md-slider {
   md-slider.md-default-theme .md-track {
     border-bottom: 1px solid #fff; } }
 
-.md-sticky-clone {
-  z-index: 2;
-  top: 0;
-  left: 0;
-  right: 0;
-  position: absolute !important;
-  -webkit-transform: translate3d(-9999px, -9999px, 0);
-          transform: translate3d(-9999px, -9999px, 0); }
-  .md-sticky-clone[sticky-state="active"] {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0); }
-    .md-sticky-clone[sticky-state="active"]:not(.md-sticky-no-effect) .md-subheader-inner {
-      -webkit-animation: subheaderStickyHoverIn 0.3s ease-out both;
-              animation: subheaderStickyHoverIn 0.3s ease-out both; }
-
 @-webkit-keyframes subheaderStickyHoverIn {
   0% {
     box-shadow: 0 0 0 0 transparent; }
@@ -6551,6 +6518,21 @@ md-slider {
   .md-subheader .md-subheader-content {
     z-index: 1;
     position: relative; }
+
+.md-sticky-clone {
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute !important;
+  -webkit-transform: translate3d(-9999px, -9999px, 0);
+          transform: translate3d(-9999px, -9999px, 0); }
+  .md-sticky-clone[sticky-state="active"] {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
+    .md-sticky-clone[sticky-state="active"]:not(.md-sticky-no-effect) .md-subheader-inner {
+      -webkit-animation: subheaderStickyHoverIn 0.3s ease-out both;
+              animation: subheaderStickyHoverIn 0.3s ease-out both; }
 
 md-switch {
   display: -webkit-flex;
