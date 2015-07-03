@@ -230,6 +230,7 @@ module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$sta
 	$scope.insert = function(index,grupo){
 		$scope.glued = true;
 		item=grupo.exercicios[index];
+		item.select = true;
 		$scope.exercicios.push(
 			{
 			nome:item.nome,
