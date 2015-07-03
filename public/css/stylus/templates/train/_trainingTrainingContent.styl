@@ -2,10 +2,8 @@
 	col(5/5,gutter:0)
 	box-sizing border-box
 	margin-top 1em
-	md-content
-		// height:69vh !important
-		md-card
-			min-height:49vh !important
+	md-card
+		min-height:49vh !important
 	.header-add
 		col(3/5,gutter:0)
 		box-sizing border-box
@@ -31,38 +29,51 @@
 		padding-right 1.3em
 		text-align right
 		ng-md-icon
-			padding-left 1em
+			padding-right 2em
 	.content-add
 		col(5/5,gutter:0)
 		box-sizing border-box
-		margin-top 2em
+		margin-top .5em
 		padding-left 1em
 		padding-right 1em
-		ul
-			col(6/6,gutter:0)
-			box-sizing border-box
-			margin 0
-			padding 0
-			font-size 90%
-			list-style none
-			li
-				col(12/12,gutter:0)
-				border-bottom 1px solid palette('Blue Grey','100')
-				line-height 45px
+		+desktop()
+			margin-top 1.5em
+			padding-left 1.7em
+			padding-right 1.7em
+		md-content
+			height:64vh !important
+			+tablet(orientation: portrait)
+				height:48vh !important
+			ul
+				col(6/6,gutter:0)
 				box-sizing border-box
-				margin-bottom .6em
-				vertical-align middle
-				text-align center
-				color palette('Grey','700')
-				&:hover
-					background palette('Blue Grey','50')
-				.exerc
-					col(5.5/11,gutter:0)
+				margin 0
+				padding 0
+				font-size 90%
+				list-style none
+				li
+					col(12/12,gutter:0)
+					border-bottom 1px solid palette('Grey','100')
+					line-height 35px
+					font-size 95%
+					margin-bottom .4em
+					+desktop()
+						line-height 43px
+						margin-bottom .5em
+						font-size 100%
 					box-sizing border-box
-					text-align left
-					margin-left .9em
-				.volume
-					col(3/11,gutter:0)
-				.weight
-					col(2/11,gutter:0)
+					vertical-align middle
+					text-align center
+					color palette('Grey','700')
+					&:hover
+						background palette('Blue Grey','50')
+					.exerc
+						col(5.5/11,gutter:0)
+						box-sizing border-box
+						text-align left
+						margin-left .9em
+					.volume
+						col(3/11,gutter:0)
+					.weight
+						col(2/11,gutter:0)
 
