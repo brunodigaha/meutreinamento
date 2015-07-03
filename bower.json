@@ -34,6 +34,7 @@
     "angular-material-icons": "~0.4.0",
     "angular-uploadcare": "~0.1.2",
     "angular-breadcrumb": "~0.4.0",
-    "angular-sortable-view": "~0.0.13"
+    "angular-sortable-view": "~0.0.13",
+    "angular-scroll-glue": "~2.0.6"
   }
 }

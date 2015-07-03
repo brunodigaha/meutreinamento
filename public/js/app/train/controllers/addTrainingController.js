@@ -228,10 +228,7 @@ module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$sta
 		"Treino F"
 	];
 	$scope.insert = function(index,grupo){
-		// item=grupo.exercicios.splice(index,1);
-		teste = grupo.exercicios[index];
-		teste.select = true;
-		console.log(grupo.exercicios[index]);
+		$scope.glued = true;
 		item=grupo.exercicios[index];
 		$scope.exercicios.push(
 			{
@@ -252,6 +249,7 @@ module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$sta
 		repeticao: 0
 	};
 	$scope.alt='repeticao';
+	$scope.glued = true;
 	$scope.index = null;
 	$scope.close_all = false;
 	$scope.plus_weight = function(){

@@ -7,6 +7,7 @@ angular
 	require('ui-router').name,
 	require('angularBreadcrumb').name,
 	require('angularSortableView').name,
+	require('angularScroll').name,
 	require('restAngular').name,
 	require('angularCookies').name,
 	require('angularMessages').name,

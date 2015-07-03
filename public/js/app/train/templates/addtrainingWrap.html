@@ -38,24 +38,20 @@
           </md-tabs>
         </section>
         <section class="new-training">
-          <md-content>
-            <md-card>
-              <md-card-content>
-                <section class="header-add">
-                  <md-select placeholder="Treino" ng-model="plan" style="min-width:250px;">
-                    <md-option ng-repeat="plan in plans" value="{{plan}}">{{plan}}</md-option>
-                  </md-select>
-                </section>
-                <section class="options-add">
-                  <!-- ng-md-icon(icon="launch" style="fill:white"  size="22" ng-click="true")-->
-                  <!-- ng-md-icon(icon="expand_more" style="fill:white"  size="27" ng-click="true")-->
-                  <md-button ng-click="importTraining($event);" class="md-raised">Importar Treino</md-button>
-                </section>
-                <section sv-root="" sv-part="exercicios" class="content-add">
-                  <!-- .sortable-container.grid(sv-root="", sv-part="data.items4")-->
-                  <!-- 	.well.grid(ng-repeat="item in [1,2,3,4,5,6,7,8] track by $index", sv-element="opts")-->
-                  <!-- 		| {{item}}-->
-                  <!-- 		span(sv-handle="") handle-->
+          <md-card>
+            <md-card-content>
+              <section class="header-add">
+                <md-select placeholder="Treino" ng-model="plan" style="min-width:250px;">
+                  <md-option ng-repeat="plan in plans" value="{{plan}}">{{plan}}</md-option>
+                </md-select>
+              </section>
+              <section class="options-add">
+                <!-- ng-md-icon(icon="launch" style="fill:white"  size="22" ng-click="true")-->
+                <!-- ng-md-icon(icon="expand_more" style="fill:white"  size="27" ng-click="true")-->
+                <md-button ng-click="importTraining($event);" class="md-raised">Importar Treino</md-button>
+              </section>
+              <section sv-root="" sv-part="exercicios" class="content-add">
+                <md-content scroll-glue="glued">
                   <ul ng-repeat="exercicio in exercicios" sv-element="opts">
                     <li ng-class="{'exerc-select': $index==index}" class="animated pulse">
                       <section sv-handle="" class="drag">
@@ -68,7 +64,7 @@
                       </section>
                     </li>
                   </ul>
-                </section>
+                </md-content>
                 <section ng-show="close_all" ng-click="close();" class="background-wrap"></section>
                 <section style="top:{{position.y - 50}}px;left:{{position.x - 48}}px;" class="weight-add">
                   <section class="weight-content">
@@ -81,9 +77,9 @@
                         <ng-md-icon icon="expand_more" style="fill:black" size="25"></ng-md-icon></span></section>
                   </section>
                 </section>
-              </md-card-content>
-            </md-card>
-          </md-content>
+              </section>
+            </md-card-content>
+          </md-card>
         </section>
       </md-card-content>
     </md-card>
