@@ -170,6 +170,98 @@ module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$sta
 					select: false
 				},
 				{
+					nome:"Leg Press",
+					select: false
+				},
+				{
+					nome:"Leg Press",
+					select: false
+				},
+				{
+					nome:"Leg Press",
+					select: false
+				},
+				{
+					nome:"Leg Press",
+					select: false
+				},
+				{
+					nome:"Leg Press",
+					select: false
+				},
+				{
+					nome:"Leg Press",
+					select: false
+				},
+				{
+					nome:"Leg Press",
+					select: false
+				},
+				{
+					nome:"Leg Press",
+					select: false
+				},
+				{
+					nome:"Leg Press",
+					select: false
+				},
+				{
+					nome:"Leg Press",
+					select: false
+				},
+				{
+					nome:"Leg Press",
+					select: false
+				},
+				{
+					nome:"Leg Press",
+					select: false
+				},
+				{
+					nome:"Leg Press",
+					select: false
+				},
+				{
+					nome:"Leg Press",
+					select: false
+				},
+				{
+					nome:"Leg Press",
+					select: false
+				},
+				{
+					nome:"Leg Press",
+					select: false
+				},
+				{
+					nome:"Leg Press",
+					select: false
+				},
+				{
+					nome:"Leg Press",
+					select: false
+				},
+				{
+					nome:"Leg Press",
+					select: false
+				},
+				{
+					nome:"Leg Press",
+					select: false
+				},
+				{
+					nome:"Leg Press",
+					select: false
+				},
+				{
+					nome:"Leg Press",
+					select: false
+				},
+				{
+					nome:"Leg Press",
+					select: false
+				},
+				{
 					nome:"Agachamento",
 					select: false
 				},

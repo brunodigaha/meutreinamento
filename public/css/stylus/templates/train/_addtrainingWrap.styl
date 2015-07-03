@@ -9,7 +9,7 @@
 	+hd()
 		padding-left 12%
 		padding-right 12%
-	margin-top 5.5em
+	margin-top 4.0em
 	.user-add
 		col(5/5,gutter:0)
 		.menu-add
@@ -26,7 +26,7 @@
 			top 0
 			left 0
 			width 100%
-			height 5.3em
+			height 3.9em
 			border-bottom 1px solid palette('Grey', '300')
 			// box-shadow 0 2px 8px 0 rgba(0,0,0,.26)
 			.user-img-add
@@ -38,16 +38,18 @@
 				col(1/5,gutter:0)
 				border-bottom 1px solid palette('Grey', '400')
 				position absolute
-				left 4.7em
-				bottom 1.7em
+				left 3.7em
+				bottom .9em
+				font-size 140%
+				line-height 35px
 				// color palette('Grey', '100')
 				text-align left
 				font-weight bold
 			.breadcrumb-add
 				col(1/5,gutter:0)
 				position absolute
-				left 5.6em
-				bottom .4em
+				left 5.5em
+				bottom -.1em
 				text-align right
 				color black
 				font-size 97%
@@ -56,7 +58,7 @@
 				position absolute
 				text-align right
 				right 5.1em
-				bottom 1.7em
+				bottom 1.1em
 				button.md-button
 					width 35%
 					min-width 15px
@@ -68,14 +70,14 @@
 	md-content
 		background-color transparent 
 		md-card
-			min-height:84vh
+			min-height:88vh
 			+desktop()
-				min-height:86vh
+				min-height:90vh
 			// box-shadow 0 2px 9px 0 rgba(0,0,0,.26)
 			md-card-content
 				.tabs
 					col(6/6,gutter:0)
-					min-height 18vh
+					min-height 19vh
 					md-chips
 					md-tab-content
 						md-content
@@ -234,7 +236,7 @@
 								box-sizing border-box
 								padding 1em
 								md-content
-									height:43vh !important
+									height:40vh !important
 									+desktop()
 										height:49vh !important
 									ul
@@ -251,6 +253,7 @@
 										list-style none
 										.exerc-select
 											background-color palette('Blue Grey','50')
+											border 1px solid palette('Red','200')  
 										li
 											border 1px solid palette('Blue Grey','100')
 											background-color white
@@ -259,6 +262,7 @@
 											col(12/12,gutter:0)
 											text-align center
 											color palette('Grey','700')
+											background-color palette('Grey','50')
 											// &:hover
 											// 	background palette('Blue Grey','50')
 											.drag
