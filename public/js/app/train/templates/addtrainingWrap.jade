@@ -48,8 +48,8 @@ section.addtraining
 									md-button(class="md-raised"  ng-click="importTraining($event);") Importar Treino
 								section.content-add(sv-root="" sv-part="exercicios")
 									md-content(scroll-glue="glued")
-										ul(ng-repeat="exercicio in exercicios", sv-element="opts")
-											li(class= "animated pulse" ng-class="{'exerc-select': $index==index}")
+										ul
+											li(ng-repeat="exercicio in exercicios" sv-element="opts" class= "animated pulse" ng-class="{'exerc-select': $index==index}")
 												section.drag(sv-handle="")
 													ng-md-icon(icon="open_with" style="fill:black" size="20")
 												section.exerc

@@ -53,8 +53,8 @@
               </section>
               <section sv-root="" sv-part="exercicios" class="content-add">
                 <md-content scroll-glue="glued">
-                  <ul ng-repeat="exercicio in exercicios" sv-element="opts">
-                    <li ng-class="{'exerc-select': $index==index}" class="animated pulse">
+                  <ul>
+                    <li ng-repeat="exercicio in exercicios" sv-element="opts" ng-class="{'exerc-select': $index==index}" class="animated pulse">
                       <section sv-handle="" class="drag">
                         <ng-md-icon icon="open_with" style="fill:black" size="20"></ng-md-icon>
                       </section>
