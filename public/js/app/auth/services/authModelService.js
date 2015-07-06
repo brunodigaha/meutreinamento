@@ -10,22 +10,22 @@ module.exports = function ($state,$cookies, RestangularCustom) {
 	authModel.set_login = function(token){
 		RestangularCustom.setDefaultHeaders({'Authorization': authModel.token});
 		authModel.token = token;
-		$cookies.token = token;
+		$cookies.put('token',token);
 	};
 
 	authModel.reset_login = function () {
 			RestangularCustom.setDefaultHeaders({"Authorization": ""});
 			authModel.token = "";
-			$cookies.token = ""; 
+			$cookies.put('token', ""); 
 	};
 
 	authModel.is_authenticated = function () {
-		var cookieToken = $cookies.token;
+		var cookieToken = $cookies.get('token');
 		if (cookieToken) {
 			authModel.set_login(cookieToken);
 			return true;
 		}
-		$cookies.token = '';
+		$cookies.put('token', ""); 
 		console.log("passou sem token");
 		return false;
 	};

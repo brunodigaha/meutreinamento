@@ -376,8 +376,11 @@ module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$sta
 		$scope.position.y=-500;
 		$scope.index = null;
 	};
-	$scope.remove = function(index){
-		$scope.exercicios.splice(index,1);
+	$scope.remove = function($index){
+		// var idx = $scope.exercicios.indexOf(exercicio);
+		// $scope.exercicios.splice(idx,1);
+		$scope.exercicios.splice($index,1);
+
 	};
 
 	$scope.weight_add = function(ev,exercicio,index) {
