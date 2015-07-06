@@ -40,16 +40,16 @@ section.addtraining
 						md-card
 							md-card-content
 								section.header-add
-									md-select(placeholder='Treino', ng-model='plan' style="min-width:250px;")
+									md-select(placeholder='Nome do Treino', ng-model='plan' style="min-width:250px;")
 										md-option(ng-repeat='plan in plans', value='{{plan}}') {{plan}}
 								section.options-add
 									// ng-md-icon(icon="launch" style="fill:white"  size="22" ng-click="true")
 									// ng-md-icon(icon="expand_more" style="fill:white"  size="27" ng-click="true")
 									md-button(class="md-raised"  ng-click="importTraining($event);") Importar Treino
 								section.content-add(sv-root="" sv-part="exercicios")
-									md-content(scroll-glue="glued")
+									md-content(scroll-glue="scroll.glued")
 										ul
-											li(ng-repeat="exercicio in exercicios" sv-element="opts" class= "animated pulse" ng-class="{'exerc-select': $index==index}")
+											li(ng-repeat="exercicio in exercicios" sv-element="opts" ng-class="{'exerc-select': $index==index}")
 												section.drag(sv-handle="")
 													ng-md-icon(icon="open_with" style="fill:black" size="20")
 												section.exerc

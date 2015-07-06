@@ -2,7 +2,7 @@
  * Angular Material Design
  * https://github.com/angular/material
  * @license MIT
- * v0.10.0-master-9a5fc4c
+ * v0.10.0-master-621bdf7
  */
 /* mixin definition ; sets LTR and RTL within the same style call */
 html, body {
@@ -3504,7 +3504,7 @@ md-dialog {
   max-width: 80%;
   max-height: 80%;
   position: relative;
-  overflow: hidden;
+  overflow: auto;
   box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.14), 0px 16px 24px 2px rgba(0, 0, 0, 0.098), 0px 6px 30px 5px rgba(0, 0, 0, 0.084);
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -11355,14 +11355,6 @@ a:link {
 a:visited {
   text-decoration: none;
 }
-.animate-enter {
-  -webkit-transition: 5s linear all;
-  transition: 5s linear all;
-  opacity: 0;
-}
-.animate-enter.animate-enter-active {
-  opacity: 1;
-}
 .login-wrap {
   *zoom: 1;
   float: left;
@@ -14033,9 +14025,42 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
 }
 .addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul .exerc-select {
   background-color: #eceff1;
-  border: 1px solid #ef9a9a;
+  color: #000;
+  border: 1px solid #b0bec5;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li {
+.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li.ng-enter {
+  -webkit-animation: 0.7s pulse;
+  -moz-animation: 0.7s pulse;
+  -o-animation: 0.7s pulse;
+  animation: 0.7s pulse;
+  opacity: 0;
+  background-color: #eceff1;
+  border: 1px solid #b0bec5;
+  color: #000;
+}
+.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li.ng-enter.ng-enter-active,
+.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li.ng-move.ng-move-active {
+  opacity: 1;
+}
+.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content .sv-helper {
+  font-size: 110%;
+  color: #000;
+  line-height: 38px;
+  background-color: #eceff1;
+  border: 1px solid #b0bec5;
+}
+.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content .sv-candidate {
+  opacity: 0.3;
+}
+.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li.ng-leave {
+  -webkit-animation: 1s zoomOut;
+  -moz-animation: 1s zoomOut;
+  -o-animation: 1s zoomOut;
+  animation: 1s zoomOut;
+  background-color: #eceff1;
+  opacity: 1;
+}
+.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li {
   border: 1px solid #cfd8dc;
   background-color: #fff;
   box-sizing: border-box;
@@ -14051,18 +14076,18 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   color: #616161;
   background-color: #fafafa;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li:before,
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li:after {
+.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li:before,
+.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li:after {
   content: '';
   display: table;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li:after {
+.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li:after {
   clear: both;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li:last-child {
+.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li:last-child {
   margin-right: 0%;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .drag {
+.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li .drag {
   *zoom: 1;
   float: left;
   clear: none;
@@ -14073,21 +14098,21 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   margin-left: 0.5em;
   cursor: pointer;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .drag:before,
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .drag:after {
+.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li .drag:before,
+.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li .drag:after {
   content: '';
   display: table;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .drag:after {
+.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li .drag:after {
   clear: both;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .drag:last-child {
+.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li .drag:last-child {
   margin-right: 0%;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .drag ng-md-icon svg {
+.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li .drag ng-md-icon svg {
   vertical-align: middle;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .exerc {
+.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li .exerc {
   *zoom: 1;
   float: left;
   clear: none;
@@ -14099,18 +14124,18 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   text-align: left;
   margin-left: 0.9em;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .exerc:before,
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .exerc:after {
+.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li .exerc:before,
+.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li .exerc:after {
   content: '';
   display: table;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .exerc:after {
+.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li .exerc:after {
   clear: both;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .exerc:last-child {
+.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li .exerc:last-child {
   margin-right: 0%;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .volume {
+.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li .volume {
   *zoom: 1;
   float: left;
   clear: none;
@@ -14119,18 +14144,18 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   margin-left: 0%;
   margin-right: 0%;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .volume:before,
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .volume:after {
+.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li .volume:before,
+.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li .volume:after {
   content: '';
   display: table;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .volume:after {
+.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li .volume:after {
   clear: both;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .volume:last-child {
+.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li .volume:last-child {
   margin-right: 0%;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .delete {
+.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li .delete {
   *zoom: 1;
   float: left;
   clear: none;
@@ -14140,22 +14165,22 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   margin-right: 0%;
   margin-left: 0.5em;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .delete:before,
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .delete:after {
+.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li .delete:before,
+.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li .delete:after {
   content: '';
   display: table;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .delete:after {
+.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li .delete:after {
   clear: both;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .delete:last-child {
+.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li .delete:last-child {
   margin-right: 0%;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .delete ng-md-icon svg {
+.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li .delete ng-md-icon svg {
   vertical-align: middle;
   cursor: pointer;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .delete ng-md-icon svg:hover {
+.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li .delete ng-md-icon svg:hover {
   background: #fafafa;
 }
 .collection-wrap h1 {

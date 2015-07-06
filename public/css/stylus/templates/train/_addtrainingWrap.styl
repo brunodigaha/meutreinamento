@@ -179,7 +179,7 @@
 												margin-top 6%
 									.border-red
 										border 1px solid palette('Red','700')  
-										 color palette('Red','700')  
+										color palette('Red','700')  
 							.header-add
 								col(3/6,gutter:0)
 								box-sizing border-box
@@ -254,7 +254,49 @@
 										list-style none
 										.exerc-select
 											background-color palette('Blue Grey','50')
-											border 1px solid palette('Red','200')  
+											color black
+											border 1px solid palette('Blue Grey','200')  
+
+										li.ng-enter
+											-webkit-animation 0.7s pulse
+											-moz-animation 0.7s pulse
+											-o-animation 0.7s pulse
+											animation 0.7s pulse
+											opacity 0
+											background-color palette('Blue Grey','50')
+											border 1px solid palette('Blue Grey','200')  
+											color black
+										// li.ng-move
+										// 	-webkit-transition:0.5s linear all;
+										// 	-moz-transition:0.5s linear all;
+										// 	-o-transition:0.5s linear all;
+										// 	transition:0.5s linear all;
+											// opacity:0;
+										li.ng-enter.ng-enter-active,
+										li.ng-move.ng-move-active
+											opacity 1
+										.sv-helper
+											font-size 110%
+											color black
+											line-height 38px
+											background-color palette('Blue Grey','50')
+											border 1px solid palette('Blue Grey','200')  
+										.sv-candidate
+											opacity 0.3
+										li
+											&.ng-leave
+												-webkit-animation 1s zoomOut
+												-moz-animation 1s zoomOut
+												-o-animation 1s zoomOut
+												animation 1s zoomOut
+												background-color palette('Blue Grey','50')
+												opacity 1
+											// &.ng-leave-active
+											// 	opacity 0
+											// 	@keyframes zoomOut {
+											// 		from { opacity:1; }
+											// 		to { opacity:0; }
+											// 	}
 										li
 											border 1px solid palette('Blue Grey','100')
 											background-color white

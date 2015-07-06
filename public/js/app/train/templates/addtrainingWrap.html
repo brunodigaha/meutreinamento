@@ -42,7 +42,7 @@
           <md-card>
             <md-card-content>
               <section class="header-add">
-                <md-select placeholder="Treino" ng-model="plan" style="min-width:250px;">
+                <md-select placeholder="Nome do Treino" ng-model="plan" style="min-width:250px;">
                   <md-option ng-repeat="plan in plans" value="{{plan}}">{{plan}}</md-option>
                 </md-select>
               </section>
@@ -52,9 +52,9 @@
                 <md-button ng-click="importTraining($event);" class="md-raised">Importar Treino</md-button>
               </section>
               <section sv-root="" sv-part="exercicios" class="content-add">
-                <md-content scroll-glue="glued">
+                <md-content scroll-glue="scroll.glued">
                   <ul>
-                    <li ng-repeat="exercicio in exercicios" sv-element="opts" ng-class="{'exerc-select': $index==index}" class="animated pulse">
+                    <li ng-repeat="exercicio in exercicios" sv-element="opts" ng-class="{'exerc-select': $index==index}">
                       <section sv-handle="" class="drag">
                         <ng-md-icon icon="open_with" style="fill:black" size="20"></ng-md-icon>
                       </section>

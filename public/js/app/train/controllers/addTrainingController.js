@@ -320,7 +320,8 @@ module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$sta
 		"Treino F"
 	];
 	$scope.insert = function(index,grupo){
-		$scope.glued = true;
+		// $scope.glued = true;
+		$scope.scroll = {glued:true};
 		item=grupo.exercicios[index];
 		item.select = true;
 		$scope.exercicios.push(
@@ -342,7 +343,7 @@ module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$sta
 		repeticao: 0
 	};
 	$scope.alt='repeticao';
-	$scope.glued = true;
+	$scope.scroll = {glued:true};
 	$scope.index = null;
 	$scope.close_all = false;
 	$scope.plus_weight = function(){
