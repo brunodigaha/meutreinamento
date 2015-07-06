@@ -13855,6 +13855,7 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   margin-right: 0%;
   box-sizing: border-box;
   padding-left: 2em;
+  padding-right: 30%;
   border-bottom: 4px solid #cfd8dc;
   height: 55px;
 }
@@ -14029,10 +14030,10 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   border: 1px solid #b0bec5;
 }
 .addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li.ng-enter {
-  -webkit-animation: 0.7s pulse;
-  -moz-animation: 0.7s pulse;
-  -o-animation: 0.7s pulse;
-  animation: 0.7s pulse;
+  -webkit-animation: 0.8s pulse;
+  -moz-animation: 0.8s pulse;
+  -o-animation: 0.8s pulse;
+  animation: 0.8s pulse;
   opacity: 0;
   background-color: #eceff1;
   border: 1px solid #b0bec5;
@@ -14048,9 +14049,10 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   line-height: 38px;
   background-color: #eceff1;
   border: 1px solid #b0bec5;
+  opacity: 0.8;
 }
 .addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content .sv-candidate {
-  opacity: 0.3;
+  opacity: 0.5;
 }
 .addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li.ng-leave {
   -webkit-animation: 1s zoomOut;
