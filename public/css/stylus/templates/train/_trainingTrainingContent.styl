@@ -2,78 +2,117 @@
 	col(5/5,gutter:0)
 	box-sizing border-box
 	margin-top 1em
+	position relative
 	md-card
 		min-height:49vh !important
-	.header-add
-		col(3/5,gutter:0)
-		box-sizing border-box
-		padding-left 2em
-		border-bottom 4px solid palette('Blue Grey','100')
-		height 2.7em
-		// text-align center
-		span
-			display inline-block
-			font-size 130%
-			padding-top .5em
+		.header-add
+			col(3/5,gutter:0)
+			box-sizing border-box
+			padding-left 2em
+			border-bottom 4px solid palette('Blue Grey','100')
+			height 2.7em
+			// text-align center
+			span
+				display inline-block
+				font-size 140%
+				padding-top .5em
+				color palette('Blue Grey','600')
+				font-weight bold
+				+desktop()
+					padding-top .4em
+		.options-add
+			col(2/5,gutter:0)
+			position relative
+			box-sizing border-box
+			border-bottom 4px solid palette('Blue Grey','100')
+			height 2.7em
+			padding-top .4em
 			+desktop()
-				padding-top .4em
-	.options-add
-		col(2/5,gutter:0)
-		position relative
-		box-sizing border-box
-		border-bottom 4px solid palette('Blue Grey','100')
-		height 2.7em
-		padding-top .4em
-		+desktop()
-			padding-top .6em
-		padding-right 1.3em
-		text-align right
-		ng-md-icon
-			padding-right 2em
-	.content-add
-		col(5/5,gutter:0)
-		box-sizing border-box
-		margin-top .5em
-		padding-left 1em
-		padding-right 1em
-		+desktop()
-			margin-top 1.5em
-			padding-left 1.7em
-			padding-right 1.7em
-		md-content
-			height:64vh !important
-			+tablet(orientation: portrait)
-				height:48vh !important
-			ul
-				col(6/6,gutter:0)
+				padding-top .6em
+			padding-right 1.3em
+			text-align right
+			ng-md-icon
+				padding-right 2.5em
+			.close-train-menu
+				position fixed
+				top 0
+				left 0
+				width 100%
+				height 100%
+				z-index 5
+			.train-menu
+				col(4/5,gutter:0)
 				box-sizing border-box
-				margin 0
-				padding 0
-				font-size 90%
-				list-style none
-				li
-					col(12/12,gutter:0)
-					border-bottom 1px solid palette('Grey','100')
-					line-height 35px
-					font-size 95%
-					margin-bottom .4em
-					+desktop()
-						line-height 43px
-						margin-bottom .5em
-						font-size 100%
+				position absolute
+				top .1em
+				left 2em
+				z-index 6
+				background-color white
+				border 1px solid palette('Grey', '100')
+				box-shadow 0 2px 4px 1px rgba(0,0,0,.1)
+				ul
+					margin 0
+					padding 0
+					font-size 110%
+					text-align left
+					list-style none
+					li
+						display block
+						color palette('Blue', '500')
+						line-height 220%
+						cursor pointer
+						position relative
+						a
+							padding-left .8em
+							padding-right .8em
+						&:hover
+							background palette('Grey','50')
+
+
+		.content-add
+			col(5/5,gutter:0)
+			box-sizing border-box
+			margin-top .5em
+			padding-left 1em
+			padding-right 1em
+			+desktop()
+				margin-top 1.5em
+				padding-left 1.7em
+				padding-right 1.7em
+			md-content
+				height:64vh !important
+				+tablet(orientation: portrait)
+					height:48vh !important
+				ul
+					col(6/6,gutter:0)
 					box-sizing border-box
-					vertical-align middle
-					text-align center
-					color palette('Grey','700')
-					&:hover
-						background palette('Blue Grey','50')
-					.exerc
-						col(5.5/11,gutter:0)
+					margin 0
+					padding 0
+					font-size 90%
+					list-style none
+					li
+						col(12/12,gutter:0)
+						border-bottom 1px solid palette('Grey','100')
+						line-height 35px
+						font-size 95%
+						margin-bottom .4em
+						+desktop()
+							line-height 43px
+							margin-bottom .5em
+							font-size 100%
 						box-sizing border-box
-						text-align left
-						margin-left .9em
-					.volume
-						col(3/11,gutter:0)
-					.weight
-						col(2/11,gutter:0)
+						vertical-align middle
+						text-align center
+						color palette('Grey','700')
+						&:hover
+							background palette('Blue Grey','50')
+						.exerc
+							col(5.5/11,gutter:0)
+							box-sizing border-box
+							text-align left
+							margin-left .9em
+						.volume
+							col(3/11,gutter:0)
+						.weight
+							col(2/11,gutter:0)
 

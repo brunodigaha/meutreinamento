@@ -5,7 +5,17 @@
       <section class="header-add"><span>Treino A</span></section>
       <section class="options-add">
         <!-- ng-md-icon(icon="launch" style="fill:grey"  size="22")-->
-        <ng-md-icon icon="expand_more" style="fill:grey" size="32"></ng-md-icon>
+        <ng-md-icon icon="settings" ng-click="open_train_menu();" style="fill:grey" size="27"></ng-md-icon>
+        <section ng-if="train_menu.menu" ng-click="close_train_menu();" class="close-train-menu"></section>
+        <section ng-if="train_menu.menu" class="train-menu">
+          <ul>
+            <li> <a></a>Visualizar</li>
+            <li> <a></a>Editar</li>
+            <li> <a></a>Salvar</li>
+            <li> <a></a>Imprimir</li>
+            <li> <a></a>Treinar</li>
+          </ul>
+        </section>
       </section>
       <section id="training" class="content-add"> 
         <!-- md-button-->

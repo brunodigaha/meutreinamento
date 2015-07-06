@@ -31,7 +31,7 @@ module.exports = {
 			},
 			views: {
 				'training@core.user.listTraining': {
-					controller:'trainingController',
+					controller:'trainingTrainingController',
 					template: fs.readFileSync(__dirname + '/templates/trainingTrainingContent.html')
 				},
 			}

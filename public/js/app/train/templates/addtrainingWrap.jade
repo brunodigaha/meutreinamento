@@ -34,7 +34,7 @@ section.addtraining
 								md-tab(label="{{list.grupo}}" ng-repeat=" list in list_exercicios" )
 									md-content.md-padding
 										section
-											span(ng-click="insert($index, list);" ng-class="{'item-select': exerc.select }" ng-repeat="exerc in list.exercicios")
+											span(ng-click="insert($index, list);" ng-class="{'item-select animated pulse': exerc.select }" ng-repeat="exerc in list.exercicios")
 												| {{exerc.nome}}
 				section.new-training
 						md-card

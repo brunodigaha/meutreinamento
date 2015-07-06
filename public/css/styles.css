@@ -11741,6 +11741,7 @@ a:visited {
   left: 0.5em;
   background-color: #fff;
   border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px 1px rgba(0,0,0,0.1);
   padding: 0.5em;
   z-index: 6;
 }
@@ -12428,6 +12429,7 @@ a:visited {
   padding-top: 0.5em;
   background-color: #fff;
   border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px 1px rgba(0,0,0,0.1);
 }
 .user-admin .options-admin:before,
 .user-admin .options-admin:after {
@@ -13134,6 +13136,7 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   margin-right: 0%;
   box-sizing: border-box;
   margin-top: 1em;
+  position: relative;
 }
 .train:before,
 .train:after {
@@ -13149,7 +13152,7 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
 .train md-card {
   min-height: 49vh !important;
 }
-.train .header-add {
+.train md-card .header-add {
   *zoom: 1;
   float: left;
   clear: none;
@@ -13162,28 +13165,30 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   border-bottom: 4px solid #cfd8dc;
   height: 2.7em;
 }
-.train .header-add:before,
-.train .header-add:after {
+.train md-card .header-add:before,
+.train md-card .header-add:after {
   content: '';
   display: table;
 }
-.train .header-add:after {
+.train md-card .header-add:after {
   clear: both;
 }
-.train .header-add:last-child {
+.train md-card .header-add:last-child {
   margin-right: 0%;
 }
-.train .header-add span {
+.train md-card .header-add span {
   display: inline-block;
-  font-size: 130%;
+  font-size: 140%;
   padding-top: 0.5em;
+  color: #546e7a;
+  font-weight: bold;
 }
 @media only screen and (min-width: 1050px) {
-  .train .header-add span {
+  .train md-card .header-add span {
     padding-top: 0.4em;
   }
 }
-.train .options-add {
+.train md-card .options-add {
   *zoom: 1;
   float: left;
   clear: none;
@@ -13199,26 +13204,83 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   padding-right: 1.3em;
   text-align: right;
 }
-.train .options-add:before,
-.train .options-add:after {
+.train md-card .options-add:before,
+.train md-card .options-add:after {
   content: '';
   display: table;
 }
-.train .options-add:after {
+.train md-card .options-add:after {
   clear: both;
 }
-.train .options-add:last-child {
+.train md-card .options-add:last-child {
   margin-right: 0%;
 }
 @media only screen and (min-width: 1050px) {
-  .train .options-add {
+  .train md-card .options-add {
     padding-top: 0.6em;
   }
 }
-.train .options-add ng-md-icon {
-  padding-right: 2em;
+.train md-card .options-add ng-md-icon {
+  padding-right: 2.5em;
 }
-.train .content-add {
+.train md-card .options-add .close-train-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+.train md-card .options-add .train-menu {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 80%;
+  margin-left: 0%;
+  margin-right: 0%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0.1em;
+  left: 2em;
+  z-index: 6;
+  background-color: #fff;
+  border: 1px solid #f5f5f5;
+  box-shadow: 0 2px 4px 1px rgba(0,0,0,0.1);
+}
+.train md-card .options-add .train-menu:before,
+.train md-card .options-add .train-menu:after {
+  content: '';
+  display: table;
+}
+.train md-card .options-add .train-menu:after {
+  clear: both;
+}
+.train md-card .options-add .train-menu:last-child {
+  margin-right: 0%;
+}
+.train md-card .options-add .train-menu ul {
+  margin: 0;
+  padding: 0;
+  font-size: 110%;
+  text-align: left;
+  list-style: none;
+}
+.train md-card .options-add .train-menu ul li {
+  display: block;
+  color: #2196f3;
+  line-height: 220%;
+  cursor: pointer;
+  position: relative;
+}
+.train md-card .options-add .train-menu ul li a {
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+.train md-card .options-add .train-menu ul li:hover {
+  background: #fafafa;
+}
+.train md-card .content-add {
   *zoom: 1;
   float: left;
   clear: none;
@@ -13231,33 +13293,33 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   padding-left: 1em;
   padding-right: 1em;
 }
-.train .content-add:before,
-.train .content-add:after {
+.train md-card .content-add:before,
+.train md-card .content-add:after {
   content: '';
   display: table;
 }
-.train .content-add:after {
+.train md-card .content-add:after {
   clear: both;
 }
-.train .content-add:last-child {
+.train md-card .content-add:last-child {
   margin-right: 0%;
 }
 @media only screen and (min-width: 1050px) {
-  .train .content-add {
+  .train md-card .content-add {
     margin-top: 1.5em;
     padding-left: 1.7em;
     padding-right: 1.7em;
   }
 }
-.train .content-add md-content {
+.train md-card .content-add md-content {
   height: 64vh !important;
 }
 @media only screen and (min-width: 400px) and (max-width: 1050px) and (orientation: portrait) {
-  .train .content-add md-content {
+  .train md-card .content-add md-content {
     height: 48vh !important;
   }
 }
-.train .content-add md-content ul {
+.train md-card .content-add md-content ul {
   *zoom: 1;
   float: left;
   clear: none;
@@ -13271,18 +13333,18 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   font-size: 90%;
   list-style: none;
 }
-.train .content-add md-content ul:before,
-.train .content-add md-content ul:after {
+.train md-card .content-add md-content ul:before,
+.train md-card .content-add md-content ul:after {
   content: '';
   display: table;
 }
-.train .content-add md-content ul:after {
+.train md-card .content-add md-content ul:after {
   clear: both;
 }
-.train .content-add md-content ul:last-child {
+.train md-card .content-add md-content ul:last-child {
   margin-right: 0%;
 }
-.train .content-add md-content ul li {
+.train md-card .content-add md-content ul li {
   *zoom: 1;
   float: left;
   clear: none;
@@ -13299,28 +13361,28 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   text-align: center;
   color: #616161;
 }
-.train .content-add md-content ul li:before,
-.train .content-add md-content ul li:after {
+.train md-card .content-add md-content ul li:before,
+.train md-card .content-add md-content ul li:after {
   content: '';
   display: table;
 }
-.train .content-add md-content ul li:after {
+.train md-card .content-add md-content ul li:after {
   clear: both;
 }
-.train .content-add md-content ul li:last-child {
+.train md-card .content-add md-content ul li:last-child {
   margin-right: 0%;
 }
 @media only screen and (min-width: 1050px) {
-  .train .content-add md-content ul li {
+  .train md-card .content-add md-content ul li {
     line-height: 43px;
     margin-bottom: 0.5em;
     font-size: 100%;
   }
 }
-.train .content-add md-content ul li:hover {
+.train md-card .content-add md-content ul li:hover {
   background: #eceff1;
 }
-.train .content-add md-content ul li .exerc {
+.train md-card .content-add md-content ul li .exerc {
   *zoom: 1;
   float: left;
   clear: none;
@@ -13332,18 +13394,18 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   text-align: left;
   margin-left: 0.9em;
 }
-.train .content-add md-content ul li .exerc:before,
-.train .content-add md-content ul li .exerc:after {
+.train md-card .content-add md-content ul li .exerc:before,
+.train md-card .content-add md-content ul li .exerc:after {
   content: '';
   display: table;
 }
-.train .content-add md-content ul li .exerc:after {
+.train md-card .content-add md-content ul li .exerc:after {
   clear: both;
 }
-.train .content-add md-content ul li .exerc:last-child {
+.train md-card .content-add md-content ul li .exerc:last-child {
   margin-right: 0%;
 }
-.train .content-add md-content ul li .volume {
+.train md-card .content-add md-content ul li .volume {
   *zoom: 1;
   float: left;
   clear: none;
@@ -13352,18 +13414,18 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   margin-left: 0%;
   margin-right: 0%;
 }
-.train .content-add md-content ul li .volume:before,
-.train .content-add md-content ul li .volume:after {
+.train md-card .content-add md-content ul li .volume:before,
+.train md-card .content-add md-content ul li .volume:after {
   content: '';
   display: table;
 }
-.train .content-add md-content ul li .volume:after {
+.train md-card .content-add md-content ul li .volume:after {
   clear: both;
 }
-.train .content-add md-content ul li .volume:last-child {
+.train md-card .content-add md-content ul li .volume:last-child {
   margin-right: 0%;
 }
-.train .content-add md-content ul li .weight {
+.train md-card .content-add md-content ul li .weight {
   *zoom: 1;
   float: left;
   clear: none;
@@ -13372,15 +13434,15 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   margin-left: 0%;
   margin-right: 0%;
 }
-.train .content-add md-content ul li .weight:before,
-.train .content-add md-content ul li .weight:after {
+.train md-card .content-add md-content ul li .weight:before,
+.train md-card .content-add md-content ul li .weight:after {
   content: '';
   display: table;
 }
-.train .content-add md-content ul li .weight:after {
+.train md-card .content-add md-content ul li .weight:after {
   clear: both;
 }
-.train .content-add md-content ul li .weight:last-child {
+.train md-card .content-add md-content ul li .weight:last-child {
   margin-right: 0%;
 }
 .addtraining {

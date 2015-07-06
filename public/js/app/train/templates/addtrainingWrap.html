@@ -33,7 +33,7 @@
             <!-- 						strong {{item.forks}}-->
             <md-tab label="{{list.grupo}}" ng-repeat=" list in list_exercicios">
               <md-content class="md-padding">
-                <section><span ng-click="insert($index, list);" ng-class="{'item-select': exerc.select }" ng-repeat="exerc in list.exercicios">{{exerc.nome}}</span></section>
+                <section><span ng-click="insert($index, list);" ng-class="{'item-select animated pulse': exerc.select }" ng-repeat="exerc in list.exercicios">{{exerc.nome}}</span></section>
               </md-content>
             </md-tab>
           </md-tabs>
