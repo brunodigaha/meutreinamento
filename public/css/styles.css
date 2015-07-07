@@ -12690,11 +12690,11 @@ a:visited {
     float: left;
     clear: none;
     text-align: inherit;
-    width: 77.77777777777779%;
+    width: 66.66666666666666%;
     margin-left: 0%;
     margin-right: 0%;
     position: relative;
-    left: 11.11111111111111%;
+    left: 16.666666666666664%;
   }
   .search-wrap md-content.md-default-theme md-card .content-search:before,
   .search-wrap md-content.md-default-theme md-card .content-search:after {
@@ -13162,7 +13162,7 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   margin-right: 0%;
   box-sizing: border-box;
   padding-left: 2em;
-  border-bottom: 4px solid #cfd8dc;
+  border-bottom: 4px solid #42a5f5;
   height: 2.7em;
 }
 .train md-card .header-add:before,
@@ -13198,7 +13198,7 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   margin-right: 0%;
   position: relative;
   box-sizing: border-box;
-  border-bottom: 4px solid #cfd8dc;
+  border-bottom: 4px solid #42a5f5;
   height: 2.7em;
   padding-top: 0.4em;
   padding-right: 1.3em;
@@ -13279,6 +13279,7 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
 }
 .train md-card .options-add .train-menu ul li:hover {
   background: #fafafa;
+  border-bottom: 1px solid #f8bbd0;
 }
 .train md-card .content-add {
   *zoom: 1;
@@ -13380,7 +13381,7 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   }
 }
 .train md-card .content-add md-content ul li:hover {
-  background: #eceff1;
+  background: #fafafa;
 }
 .train md-card .content-add md-content ul li .exerc {
   *zoom: 1;
@@ -13918,7 +13919,7 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   box-sizing: border-box;
   padding-left: 2em;
   padding-right: 30%;
-  border-bottom: 4px solid #cfd8dc;
+  border-bottom: 4px solid #42a5f5;
   height: 55px;
 }
 .addtraining md-content md-card md-card-content .new-training md-card md-card-content .header-add:before,
@@ -13959,7 +13960,7 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   margin-left: 0%;
   margin-right: 0%;
   box-sizing: border-box;
-  border-bottom: 4px solid #cfd8dc;
+  border-bottom: 4px solid #42a5f5;
   height: 55px;
   padding-top: 0.7em;
   border-top-right-radius: 3px;
