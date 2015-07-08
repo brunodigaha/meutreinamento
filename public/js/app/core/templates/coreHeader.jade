@@ -2,9 +2,12 @@ section.perfil(ui-view="perfil")
 	section.user
 		section.user-img
 			img(class="img-responsive" ng-click="coreEvents.toggle_menu();" holder='holder.js/80x80?auto=yes&theme=vine&text=BRU')
+		section.icon-home
+			a(ui-sref="core.user.home.planTraining")
+				ng-md-icon(icon="home" style="fill:grey"  size="60")
 		h3.user-name Bruno
 		span.breadcrumb
-			ng-md-icon(icon="place" style="fill:grey"  size="20" ng-click="true")
+			ng-md-icon(icon="place" style="fill:grey"  size="20")
 			span(ncy-breadcrumb-last="") &nbsp;{{getStatesChain}}
 	section.close(ng-if="(coreEvents.menu || coreEvents.options)" ng-click="coreEvents.close_all();")
 	section.menu(ui-view="menu" ng-if="coreEvents.menu" )
@@ -18,12 +21,13 @@ section.perfil(ui-view="perfil")
 				ng-md-icon(icon="create" style="fill:grey"  size="22" ng-click="true")
 		section.icons-header
 			section.dashboard
-				a(ui-sref="core.user")
+				a(ui-sref="core.user.home.planTraining")
 					ng-md-icon(icon="dashboard" style="fill:grey"  size="40" ng-click="true")
 					p Painel
 			section.notification
-				ng-md-icon(icon="notifications" style="fill:grey"  size="40" ng-click="true")
-				p Notificações
+				a(ui-sref="core.user.home.planTraining")
+					ng-md-icon(icon="notifications" style="fill:grey"  size="40" ng-click="true")
+					p Notificações
 		section.menu-content
 			section.plan-header
 				section.title-plan

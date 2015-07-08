@@ -11661,6 +11661,36 @@ a:visited {
 .perfil .user .user-img:last-child {
   margin-right: 0%;
 }
+.perfil .user .icon-home {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 6%;
+  margin-left: 0%;
+  margin-right: 0%;
+  position: absolute;
+  left: 5.5em;
+  top: 0.6em;
+  text-align: left;
+  cursor: pointer;
+}
+.perfil .user .icon-home:before,
+.perfil .user .icon-home:after {
+  content: '';
+  display: table;
+}
+.perfil .user .icon-home:after {
+  clear: both;
+}
+.perfil .user .icon-home:last-child {
+  margin-right: 0%;
+}
+@media only screen and (min-width: 1050px) {
+  .perfil .user .icon-home {
+    top: 0.9em;
+  }
+}
 .perfil .user .user-name {
   *zoom: 1;
   float: left;
@@ -11671,7 +11701,7 @@ a:visited {
   margin-right: 0%;
   border-bottom: 1px solid #bdbdbd;
   position: absolute;
-  left: 3.5em;
+  left: 5.5em;
   top: -1.2em;
   text-align: left;
 }
@@ -11695,7 +11725,7 @@ a:visited {
   margin-left: 0%;
   margin-right: 0%;
   position: absolute;
-  left: 5.8em;
+  left: 8.8em;
   top: 2.8em;
   text-align: right;
   color: #000;
@@ -12223,11 +12253,11 @@ a:visited {
   margin-left: 0%;
   margin-right: 0%;
   position: relative;
-  left: 40%;
+  left: 43.333333333333336%;
   position: fixed;
   box-sizing: border-box;
   padding-left: 0.3em;
-  padding-top: 1.5em;
+  padding-top: 1.3em;
   text-align: center;
 }
 .actions:before,
