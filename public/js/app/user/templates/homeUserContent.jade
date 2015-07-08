@@ -1,4 +1,9 @@
 section.home-wrap
-	p Menu
+	section.home-menu
+		md-tabs(md-center-tabs="true" md-selected="0")
+			md-tab(label="Plano Treinamento")
+			md-tab(label="Painel")
+			md-tab(label="Notificações")
+			md-tab(label="Perfil")
 	section.home-content-wrap(ui-view="home-content")
 		p home view

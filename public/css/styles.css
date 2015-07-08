@@ -13018,6 +13018,47 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
 .home-wrap:last-child {
   margin-right: 0%;
 }
+.home-wrap .home-menu {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  box-sizing: border-box;
+  padding-right: 1em;
+  padding-left: 1em;
+}
+.home-wrap .home-menu:before,
+.home-wrap .home-menu:after {
+  content: '';
+  display: table;
+}
+.home-wrap .home-menu:after {
+  clear: both;
+}
+.home-wrap .home-menu:last-child {
+  margin-right: 0%;
+}
+@media only screen and (min-width: 1050px) {
+  .home-wrap .home-menu {
+    padding-right: 5em;
+    padding-left: 5em;
+  }
+}
+.home-wrap .home-menu md-tabs {
+  border-bottom: 1px solid #cfd8dc;
+}
+.home-wrap .home-menu md-tabs md-tab-item.md-tab {
+  color: #2196f3;
+  font-weight: bold;
+}
+.home-wrap .home-menu md-tabs .md-tab.md-active,
+.home-wrap .home-menu md-tabs md-tabs .md-tab.md-focused {
+  color: #000;
+  background-color: #fafafa;
+}
 .home-wrap .home-content-wrap {
   *zoom: 1;
   float: left;
@@ -13043,7 +13084,7 @@ section.plan-wrap {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 100%;
+  width: 83.33333333333334%;
   margin-left: 0%;
   margin-right: 0%;
   position: relative;
@@ -14350,7 +14391,7 @@ section.plan-wrap h1 {
   margin-right: 0%;
 }
 .history-wrap .history-menu md-tabs {
-  border-bottom: 1px solid #eceff1;
+  border-bottom: 1px solid #cfd8dc;
 }
 .history-wrap .history-menu md-tabs md-tab-item.md-tab {
   color: #2196f3;
