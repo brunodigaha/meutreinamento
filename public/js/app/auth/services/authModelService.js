@@ -49,7 +49,7 @@ module.exports = function ($state,$cookies, RestangularCustom) {
 		RestangularCustom.all('login').post({username:authModel.username, password:authModel.password}).then(function(response){
 			authModel.loading = false;
 			authModel.set_login(response.headers('Authorization'));
-			$state.go('core.user', {userId: 12});
+			$state.go('core.user.home.planTraining', {userId: 12});
 		},function(){
 			authModel.loading = false;
 			console.log("Erro no Login (authModelService)");
