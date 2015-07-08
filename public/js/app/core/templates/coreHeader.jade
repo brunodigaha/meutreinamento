@@ -27,14 +27,16 @@ section.perfil(ui-view="perfil")
 		section.menu-content
 			section.plan-header
 				section.title-plan
-					p Plano de Treinamento
+					a(ui-sref="core.user.home.planTraining")
+						p Plano de Treinamento
+							ng-md-icon(icon="launch" style="fill:silver"  size="20")
 				section.edit-plan
-					p(ng-click="edit_plan($event);") Alterar plano
+					p(ng-click="edit_plan($event);") Editar plano
 				// md-select(placeholder='Plano', ng-model='plan' style="min-width:250px;")
 				// 	md-option(ng-repeat='plan in plans', value='{{plan}}') {{plan}}
 				// ng-md-icon(icon="launch" style="fill:silver"  size="25" ng-click="true")
 			section.plan
-				p 2/5 Semanas
+				p 2 de 5 Semanas
 				md-progress-linear.md-primary(md-mode="determinate", value="40")
 			section.icons-content
 				section.train

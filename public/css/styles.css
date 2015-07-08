@@ -12026,7 +12026,7 @@ a:visited {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 60%;
+  width: 70%;
   margin-left: 0%;
   margin-right: 0%;
 }
@@ -12043,11 +12043,10 @@ a:visited {
 }
 .perfil .menu .menu-content .plan-header .title-plan p {
   box-sizing: border-box;
-  font-size: 90%;
   margin: 0;
-  color: #aaa;
-  font-weight: bold;
-  margin-top: 0.5em;
+  color: #2196f3;
+  cursor: pointer;
+  margin-top: 0.8em;
   margin-left: 0.5em;
 }
 .perfil .menu .menu-content .plan-header .edit-plan {
@@ -12055,7 +12054,7 @@ a:visited {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 40%;
+  width: 30%;
   margin-left: 0%;
   margin-right: 0%;
   text-align: right;
@@ -12073,7 +12072,6 @@ a:visited {
 }
 .perfil .menu .menu-content .plan-header .edit-plan p {
   box-sizing: border-box;
-  margin: 1em;
   font-size: 70%;
   color: #2196f3;
   margin-top: 0.3em;
@@ -12091,7 +12089,7 @@ a:visited {
   box-sizing: border-box;
   padding-left: 2.5em;
   padding-right: 2.5em;
-  margin-bottom: 1.5em;
+  margin-bottom: 0.5em;
   text-align: center;
 }
 .perfil .menu .menu-content .plan:before,
@@ -12107,8 +12105,8 @@ a:visited {
 }
 .perfil .menu .menu-content .plan p {
   margin: 0;
-  color: #aaa;
-  font-size: 70%;
+  color: #757575;
+  font-size: 75%;
 }
 .perfil .menu .menu-content .icons-content {
   *zoom: 1;
@@ -12121,6 +12119,7 @@ a:visited {
   position: relative;
   left: 3.75%;
   margin-bottom: 0.5em;
+  vertical-align: top;
 }
 .perfil .menu .menu-content .icons-content:before,
 .perfil .menu .menu-content .icons-content:after {
@@ -12166,6 +12165,12 @@ a:visited {
   font-weight: normal;
   font-size: 0.9em;
   margin: 0;
+}
+.perfil .menu .menu-content .icons-content .history ng-md-icon svg {
+  padding-top: 0.8em;
+}
+.perfil .menu .menu-content .icons-content .review ng-md-icon svg {
+  padding-top: 1em;
 }
 .perfil .menu .menu-content .btn-train {
   *zoom: 1;

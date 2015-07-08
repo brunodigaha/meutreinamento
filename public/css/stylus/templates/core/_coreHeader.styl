@@ -107,21 +107,19 @@
 			.plan-header
 				col(5/5,gutter:0)
 				.title-plan
-					col(3/5,gutter:0)
+					col(3.5/5,gutter:0)
 					p
 						box-sizing border-box
-						font-size 90%
 						margin 0
-						color #aaaaaa
-						font-weight bold
-						margin-top .5em
+						color palette('Blue', '500')
+						cursor pointer
+						margin-top .8em
 						margin-left .5em
 				.edit-plan
-					col(2/5,gutter:0)
+					col(1.5/5,gutter:0)
 					text-align right
 					p
 						box-sizing border-box
-						margin 1em
 						font-size 70%
 						color palette('Blue', '500')
 						margin-top .3em
@@ -137,16 +135,17 @@
 				box-sizing border-box
 				padding-left 2.5em
 				padding-right 2.5em
-				margin-bottom 1.5em
+				margin-bottom .5em
 				text-align center
 				p
 					margin 0
-					color #aaaaaa
-					font-size 70%
+					color palette('Grey', '600')
+					font-size 75%
 			.icons-content
 				col(7/8,gutter:0)
 				shift(.3/8,gutter:0)
 				margin-bottom .5em
+				vertical-align top
 				section
 					col(2/8,.5/8,cycle:3,gutter:0)
 					text-align center
@@ -158,6 +157,14 @@
 						font-weight normal
 						font-size .9em
 						margin 0
+				.history
+					ng-md-icon
+						svg
+							padding-top .8em
+				.review
+					ng-md-icon
+						svg
+							padding-top 1em
 			.btn-train
 				col(5/5,gutter:0)
 				text-align center
