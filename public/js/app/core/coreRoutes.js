@@ -2,6 +2,7 @@ var fs = require('fs');
 module.exports = {
 	core : {
 		core : {
+			authenticate: true,
 			abstract: true,
 			// redirectTo: 'core.user',
 			views: {

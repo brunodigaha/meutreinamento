@@ -12998,6 +12998,71 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
 .schedule-wrap h1 {
   color: #00f;
 }
+.home-wrap {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.home-wrap:before,
+.home-wrap:after {
+  content: '';
+  display: table;
+}
+.home-wrap:after {
+  clear: both;
+}
+.home-wrap:last-child {
+  margin-right: 0%;
+}
+.home-wrap .home-content-wrap {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.home-wrap .home-content-wrap:before,
+.home-wrap .home-content-wrap:after {
+  content: '';
+  display: table;
+}
+.home-wrap .home-content-wrap:after {
+  clear: both;
+}
+.home-wrap .home-content-wrap:last-child {
+  margin-right: 0%;
+}
+section.plan-wrap {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  position: relative;
+  left: 8.333333333333332%;
+}
+section.plan-wrap:before,
+section.plan-wrap:after {
+  content: '';
+  display: table;
+}
+section.plan-wrap:after {
+  clear: both;
+}
+section.plan-wrap:last-child {
+  margin-right: 0%;
+}
+section.plan-wrap h1 {
+  color: #008000;
+}
 .training {
   *zoom: 1;
   float: left;

@@ -2,7 +2,7 @@ var fs = require('fs');
 
 module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider,$breadcrumbProvider, $mdThemingProvider) {
 	$locationProvider.html5Mode(false);
-	$urlRouterProvider.otherwise('/user/12');
+	$urlRouterProvider.otherwise('/user/12/training-history');
 	// $urlRouterProvider.when('/home', '/home/index');
 	$stateProvider
 
@@ -10,6 +10,12 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider,$
 
 		.state('core.user',angular.extend(
 				{url:'/user/{userId:int}'},require('./user/userRoutes.js').user.user))
+
+		.state('core.user.home',require('./user/userRoutes.js').user.home)
+
+		.state('core.user.home.planTraining',angular.extend(
+				{url:'/plan-training'},require('./user/userRoutes.js').user.planTraining))
+
 
 		.state('core.user.schedule',angular.extend(
 				{url:'/schedule'},require('./user/userRoutes.js').user.schedule))
