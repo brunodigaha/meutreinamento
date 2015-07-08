@@ -2,7 +2,7 @@
  * Angular Material Design
  * https://github.com/angular/material
  * @license MIT
- * v0.10.0-master-621bdf7
+ * v0.10.1-rc1-master-a6430ca
  */
 /* mixin definition ; sets LTR and RTL within the same style call */
 html, body {
@@ -139,11 +139,11 @@ input[type="search"] {
 html, body {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
+  min-height: 100%;
   -webkit-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased; }
-
-md-select, md-card, md-list, md-toolbar, ul, ol, p, h1, h2, h3, h4, h5, h6 {
-  text-rendering: optimizeLegibility; }
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 /************
  * Headings
@@ -2677,6 +2677,8 @@ md-autocomplete {
     position: relative;
     overflow: visible;
     height: 40px; }
+    md-autocomplete md-autocomplete-wrap.md-menu-showing {
+      z-index: 51; }
     md-autocomplete md-autocomplete-wrap md-progress-linear[md-mode=indeterminate] {
       position: absolute;
       bottom: 0;
@@ -2805,7 +2807,7 @@ md-autocomplete {
 md-backdrop {
   z-index: 50;
   background-color: transparent;
-  position: absolute;
+  position: fixed;
   height: 100%;
   left: 0;
   right: 0; }
@@ -3034,15 +3036,10 @@ md-bottom-sheet {
   position: relative;
   outline: none;
   border: 0;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-block;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
   padding: 0 6px;
   margin: 6px 8px;
   line-height: 36px;
@@ -3097,12 +3094,6 @@ md-bottom-sheet {
     width: 56px;
     height: 56px;
     vertical-align: middle;
-    -webkit-flex-grow: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
-    -webkit-flex-shrink: 0;
-        -ms-flex-negative: 0;
-            flex-shrink: 0;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
     border-radius: 50%;
     background-clip: padding-box;
@@ -3491,7 +3482,7 @@ md-content {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -3512,12 +3503,12 @@ md-dialog {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column; }
-  md-dialog.transition-in {
+  md-dialog.md-transition-in {
     opacity: 1;
     transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
     -webkit-transform: translate3d(0, 0, 0) scale(1);
             transform: translate3d(0, 0, 0) scale(1); }
-  md-dialog.transition-out {
+  md-dialog.md-transition-out {
     transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
     -webkit-transform: translate3d(0, 100%, 0) scale(0.2);
             transform: translate3d(0, 100%, 0) scale(0.2); }
@@ -3900,7 +3891,7 @@ md-input-container {
   md-input-container.md-input-has-value .md-placeholder {
     transition: none;
     opacity: 0; }
-  md-input-container:not(.md-input-has-value) input:not(:focus) {
+  md-input-container:not(.md-input-has-value) input:not(:focus), md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-ampm-field, md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-day-field, md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-hour-field, md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-millisecond-field, md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-minute-field, md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-month-field, md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-second-field, md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-week-field, md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-year-field, md-input-container:not(.md-input-has-value) input:not(:focus)::-webkit-datetime-edit-text {
     color: transparent; }
   md-input-container .md-input {
     -webkit-order: 2;
@@ -3932,7 +3923,6 @@ md-input-container {
             order: 3;
     position: relative; }
   md-input-container ng-message, md-input-container data-ng-message, md-input-container x-ng-message, md-input-container [ng-message], md-input-container [data-ng-message], md-input-container [x-ng-message], md-input-container .md-char-counter {
-    -webkit-font-smoothing: antialiased;
     position: absolute;
     font-size: 12px;
     line-height: 24px; }
@@ -6391,6 +6381,8 @@ md-slider {
     left: 0;
     right: 0;
     height: 100%; }
+  md-slider .md-track-ticks canvas {
+    width: 100%; }
   md-slider .md-thumb-container {
     position: absolute;
     left: 0;
@@ -13161,8 +13153,8 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   margin-left: 0%;
   margin-right: 0%;
   box-sizing: border-box;
-  padding-left: 2em;
-  border-bottom: 4px solid #42a5f5;
+  padding-left: 4em;
+  border-bottom: 3px solid #2196f3;
   height: 2.7em;
 }
 .train md-card .header-add:before,
@@ -13176,12 +13168,14 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
 .train md-card .header-add:last-child {
   margin-right: 0%;
 }
+.train md-card .header-add h2 {
+  display: inline;
+}
 .train md-card .header-add span {
   display: inline-block;
-  font-size: 140%;
+  font-size: 180%;
   padding-top: 0.5em;
-  color: #546e7a;
-  font-weight: bold;
+  color: #000;
 }
 @media only screen and (min-width: 1050px) {
   .train md-card .header-add span {
@@ -13198,10 +13192,10 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   margin-right: 0%;
   position: relative;
   box-sizing: border-box;
-  border-bottom: 4px solid #42a5f5;
+  border-bottom: 3px solid #2196f3;
   height: 2.7em;
   padding-top: 0.4em;
-  padding-right: 1.3em;
+  padding-right: 2.3em;
   text-align: right;
 }
 .train md-card .options-add:before,
@@ -13262,6 +13256,8 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
 .train md-card .options-add .train-menu ul {
   margin: 0;
   padding: 0;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
   font-size: 110%;
   text-align: left;
   list-style: none;
@@ -13278,8 +13274,7 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   padding-right: 0.8em;
 }
 .train md-card .options-add .train-menu ul li:hover {
-  background: #fafafa;
-  border-bottom: 1px solid #f8bbd0;
+  background: #f5f5f5;
 }
 .train md-card .content-add {
   *zoom: 1;
@@ -13353,14 +13348,13 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   width: 100%;
   margin-left: 0%;
   margin-right: 0%;
-  border-bottom: 1px solid #f5f5f5;
-  line-height: 35px;
+  border-bottom: 1px solid #eee;
+  line-height: 40px;
   font-size: 95%;
-  margin-bottom: 0.4em;
   box-sizing: border-box;
   vertical-align: middle;
   text-align: center;
-  color: #616161;
+  color: #424242;
 }
 .train md-card .content-add md-content ul li:before,
 .train md-card .content-add md-content ul li:after {
@@ -13375,8 +13369,7 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
 }
 @media only screen and (min-width: 1050px) {
   .train md-card .content-add md-content ul li {
-    line-height: 43px;
-    margin-bottom: 0.5em;
+    line-height: 55px;
     font-size: 100%;
   }
 }
@@ -13388,12 +13381,12 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   float: left;
   clear: none;
   text-align: inherit;
-  width: 50%;
+  width: 63.63636363636363%;
   margin-left: 0%;
   margin-right: 0%;
   box-sizing: border-box;
   text-align: left;
-  margin-left: 0.9em;
+  padding-left: 0.4em;
 }
 .train md-card .content-add md-content ul li .exerc:before,
 .train md-card .content-add md-content ul li .exerc:after {
@@ -13411,7 +13404,7 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   float: left;
   clear: none;
   text-align: inherit;
-  width: 27.27272727272727%;
+  width: 15.454545454545453%;
   margin-left: 0%;
   margin-right: 0%;
 }
@@ -13431,7 +13424,7 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   float: left;
   clear: none;
   text-align: inherit;
-  width: 18.181818181818183%;
+  width: 15.454545454545453%;
   margin-left: 0%;
   margin-right: 0%;
 }
@@ -13919,7 +13912,7 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   box-sizing: border-box;
   padding-left: 2em;
   padding-right: 30%;
-  border-bottom: 4px solid #42a5f5;
+  border-bottom: 3px solid #2196f3;
   height: 55px;
 }
 .addtraining md-content md-card md-card-content .new-training md-card md-card-content .header-add:before,
@@ -13934,22 +13927,15 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   margin-right: 0%;
 }
 .addtraining md-content md-card md-card-content .new-training md-card md-card-content .header-add md-select {
-  padding-top: 0.8em;
+  padding-top: 0.3em;
   margin: 0;
+  font-size: 155%;
 }
 @media only screen and (min-width: 1050px) {
   .addtraining md-content md-card md-card-content .new-training md-card md-card-content .header-add md-select {
-    padding-top: 0.4em;
+    padding-top: 0.2em;
+    font-size: 140%;
   }
-}
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .header-add md-select-label.md-select-label {
-  padding-top: 0;
-  margin: 0;
-  font-size: 110%;
-  padding-left: 1em;
-  padding-right: 1em;
-  color: #424242;
-  border-radius: 3px;
 }
 .addtraining md-content md-card md-card-content .new-training md-card md-card-content .options-add {
   *zoom: 1;
@@ -13960,9 +13946,9 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   margin-left: 0%;
   margin-right: 0%;
   box-sizing: border-box;
-  border-bottom: 4px solid #42a5f5;
+  border-bottom: 3px solid #2196f3;
   height: 55px;
-  padding-top: 0.7em;
+  padding-top: 0.5em;
   border-top-right-radius: 3px;
   padding-right: 1.3em;
   text-align: right;
@@ -14107,12 +14093,12 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   opacity: 1;
 }
 .addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content .sv-helper {
-  font-size: 110%;
+  font-size: 120%;
   color: #000;
   line-height: 38px;
   background-color: #eceff1;
   border: 1px solid #b0bec5;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 .addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content .sv-candidate {
   opacity: 0.5;
@@ -14138,8 +14124,7 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   margin-left: 0%;
   margin-right: 0%;
   text-align: center;
-  color: #616161;
-  background-color: #fafafa;
+  color: #424242;
 }
 .addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li:before,
 .addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li:after {
@@ -14173,6 +14158,9 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
 }
 .addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li .drag:last-child {
   margin-right: 0%;
+}
+.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li .drag:hover {
+  zoom: 1.1;
 }
 .addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li .drag ng-md-icon svg {
   vertical-align: middle;
@@ -14246,7 +14234,8 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   cursor: pointer;
 }
 .addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li .delete ng-md-icon svg:hover {
-  background: #fafafa;
+  background: #ffebee;
+  zoom: 1.4;
 }
 .collection-wrap h1 {
   font-size: 50px;

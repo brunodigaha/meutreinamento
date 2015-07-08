@@ -185,30 +185,33 @@
 								box-sizing border-box
 								padding-left 2em
 								padding-right 30%
-								border-bottom 4px solid palette('Blue','400')
+								border-bottom 3px solid palette('Blue','500')
 								height 55px
 								// border-top-left-radius 3px
 								md-select
-									padding-top .8em
+									padding-top .3em
 									margin 0
+									font-size 155%
 									+desktop()
-										padding-top .4em
-								md-select-label.md-select-label
-									padding-top 0
-									margin 0
-									font-size 110%
-									padding-left 1em
-									padding-right 1em
-									color palette('Grey', '800')
-									// box-shadow 0 2px 2px 0 rgba(0,0,0,.1)
-									// background-color palette('Blue Grey','100')
-									border-radius 3px
+										padding-top .2em
+										font-size 140%
+								// md-select-label.md-select-label
+								// 	padding-top 0
+								// 	margin 0
+								// 	font-size 110%
+								// 	padding-left 1em
+								// 	padding-right 1em
+								// 	color palette('Grey', '800')
+								// 	color red
+								// 	// box-shadow 0 2px 2px 0 rgba(0,0,0,.1)
+								// 	// background-color palette('Blue Grey','100')
+								// 	border-radius 3px
 							.options-add
 								col(3/6,gutter:0)
 								box-sizing border-box
-								border-bottom 4px solid palette('Blue','400')
+								border-bottom 3px solid palette('Blue','500')
 								height 55px
-								padding-top .7em
+								padding-top .5em
 								border-top-right-radius 3px
 								+desktop()
 									padding-top .5em
@@ -277,12 +280,12 @@
 										li.ng-move.ng-move-active
 											opacity 1
 										.sv-helper
-											font-size 110%
+											font-size 120%
 											color black
 											line-height 38px
 											background-color palette('Blue Grey','50')
 											border 1px solid palette('Blue Grey','200')  
-											opacity 0.8
+											opacity 0.9
 										.sv-candidate
 											opacity 0.5
 										li
@@ -306,14 +309,16 @@
 											margin-bottom .5em
 											col(12/12,gutter:0)
 											text-align center
-											color palette('Grey','700')
-											background-color palette('Grey','50')
+											color palette('Grey','800')
+											// background-color palette('Grey','50')
 											// &:hover
 											// 	background palette('Blue Grey','50')
 											.drag
 												col(1/11,gutter:0)
 												margin-left .5em
 												cursor pointer
+												&:hover
+													zoom 1.1
 												ng-md-icon
 													svg
 														vertical-align middle
@@ -331,6 +336,7 @@
 													svg
 														vertical-align middle
 														&:hover
-															background palette('Grey','50')
+															background palette('Red','50')
+															zoom 1.4
 														cursor pointer
 

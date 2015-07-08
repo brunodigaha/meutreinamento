@@ -8,28 +8,29 @@
 		.header-add
 			col(3/5,gutter:0)
 			box-sizing border-box
-			padding-left 2em
-			border-bottom 4px solid palette('Blue','400')
+			padding-left 4em
+			border-bottom 3px solid palette('Blue','500')
 			height 2.7em
 			// text-align center
+			h2
+				display inline
 			span
 				display inline-block
-				font-size 140%
+				font-size 180%
 				padding-top .5em
-				color palette('Blue Grey','600')
-				font-weight bold
+				color black
 				+desktop()
 					padding-top .4em
 		.options-add
 			col(2/5,gutter:0)
 			position relative
 			box-sizing border-box
-			border-bottom 4px solid palette('Blue','400')
+			border-bottom 3px solid palette('Blue','500')
 			height 2.7em
 			padding-top .4em
 			+desktop()
 				padding-top .6em
-			padding-right 1.3em
+			padding-right 2.3em
 			text-align right
 			ng-md-icon
 				padding-right 2.5em
@@ -53,6 +54,8 @@
 				ul
 					margin 0
 					padding 0
+					margin-top .5em
+					margin-bottom .5em
 					font-size 110%
 					text-align left
 					list-style none
@@ -66,8 +69,8 @@
 							padding-left .8em
 							padding-right .8em
 						&:hover
-							background palette('Grey','50')
-							border-bottom 1px solid rgb(248,187,208)
+							background palette('Grey','100')
+							// border-bottom 1px solid rgb(248,187,208)
 
 
 		.content-add
@@ -93,27 +96,25 @@
 					list-style none
 					li
 						col(12/12,gutter:0)
-						border-bottom 1px solid palette('Grey','100')
-						line-height 35px
+						border-bottom 1px solid palette('Grey','200')
+						line-height 40px
 						font-size 95%
-						margin-bottom .4em
 						+desktop()
-							line-height 43px
-							margin-bottom .5em
+							line-height 55px
 							font-size 100%
 						box-sizing border-box
 						vertical-align middle
 						text-align center
-						color palette('Grey','700')
+						color palette('Grey','800')
 						&:hover
 							background palette('Grey','50')
 						.exerc
-							col(5.5/11,gutter:0)
+							col(7/11,gutter:0)
 							box-sizing border-box
 							text-align left
-							margin-left .9em
+							padding-left .4em
 						.volume
-							col(3/11,gutter:0)
+							col(1.7/11,gutter:0)
 						.weight
-							col(2/11,gutter:0)
+							col(1.7/11,gutter:0)
 
