@@ -1,7 +1,9 @@
 section.history-wrap
 	section.history-menu
 		md-tabs(md-center-tabs="true" md-selected="1")
-			md-tab(label="{{$index+1}} Semana" ng-repeat="person in [1,2,3,4,5] track by $index")
+			md-tab(ng-repeat="person in [1,2,3,4,5] track by $index")
+				md-tab-label
+					a(href="") {{$index+1}} Semana
 	section.history-content(ui-view="history")
 		p teste
 	

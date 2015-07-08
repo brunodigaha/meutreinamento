@@ -14377,11 +14377,9 @@ section.plan-wrap h1 {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 83.33333333333334%;
+  width: 100%;
   margin-left: 0%;
   margin-right: 0%;
-  position: relative;
-  left: 8.333333333333332%;
   margin-bottom: 3%;
 }
 .history-wrap .history-menu:before,
@@ -14394,6 +14392,30 @@ section.plan-wrap h1 {
 }
 .history-wrap .history-menu:last-child {
   margin-right: 0%;
+}
+@media only screen and (min-width: 1050px) {
+  .history-wrap .history-menu {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 83.33333333333334%;
+    margin-left: 0%;
+    margin-right: 0%;
+    position: relative;
+    left: 8.333333333333332%;
+  }
+  .history-wrap .history-menu:before,
+  .history-wrap .history-menu:after {
+    content: '';
+    display: table;
+  }
+  .history-wrap .history-menu:after {
+    clear: both;
+  }
+  .history-wrap .history-menu:last-child {
+    margin-right: 0%;
+  }
 }
 .history-wrap .history-menu md-tabs {
   border-bottom: 1px solid #cfd8dc;
