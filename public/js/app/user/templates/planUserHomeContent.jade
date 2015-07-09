@@ -8,6 +8,7 @@ section.plan-wrap
 					ng-md-icon(icon="gps_fixed" style="fill:grey"  size="25")
 					| Ganho de Peso
 			section.plan-time
+				section.card
 				span duração
 				span frequencia semanal
 				span treinamentos realizados
@@ -15,7 +16,9 @@ section.plan-wrap
 		section.plan-trainings
 			md-card
 				md-card-content
-					h3 Treinos
+					a(ui-sref="core.user.listTraining")
+						h3 Treinos
+							ng-md-icon(icon="launch" style="fill:silver"  size="24")
 					md-content
 						md-subheader
 						training(name="A")
@@ -46,11 +49,14 @@ section.plan-wrap
 						training(name="g")
 						training(name="h")
 				div.md-actions(layout="row", layout-align="end center")
-					md-button(class="md-raised md-primary") Inserir Treino
+					a(ui-sref-active="sdd" ui-sref="core.user.addtraining")
+						md-button(class="md-raised md-primary") Inserir Treino
 		section.plan-historical
 			md-card
 				md-card-content
-					h3 Histórico Treinamentos
+					a(ui-sref="core.user.trainingHistory")
+						h3 Histórico Treinamentos
+							ng-md-icon(icon="launch" style="fill:silver"  size="24")
 					md-content
 						md-subheader
 						p conteudo

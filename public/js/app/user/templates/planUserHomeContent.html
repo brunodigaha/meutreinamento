@@ -10,14 +10,18 @@
           <ng-md-icon icon="gps_fixed" style="fill:grey" size="25"></ng-md-icon>Ganho de Peso
         </h1>
       </section>
-      <section class="plan-time"><span>duração</span><span>frequencia semanal</span><span>treinamentos realizados</span></section>
+      <section class="plan-time">
+        <section class="card"></section><span>duração</span><span>frequencia semanal</span><span>treinamentos realizados</span>
+      </section>
     </section>
   </section>
   <section class="plan-cards">
     <section class="plan-trainings">
       <md-card>
-        <md-card-content>
-          <h3>Treinos</h3>
+        <md-card-content><a ui-sref="core.user.listTraining">
+            <h3>Treinos
+              <ng-md-icon icon="launch" style="fill:silver" size="24"></ng-md-icon>
+            </h3></a>
           <md-content>
             <md-subheader></md-subheader>
             <training name="A"></training>
@@ -49,15 +53,16 @@
             <training name="h"></training>
           </md-content>
         </md-card-content>
-        <div layout="row" layout-align="end center" class="md-actions">
-          <md-button class="md-raised md-primary">Inserir Treino</md-button>
-        </div>
+        <div layout="row" layout-align="end center" class="md-actions"><a ui-sref-active="sdd" ui-sref="core.user.addtraining">
+            <md-button class="md-raised md-primary">Inserir Treino</md-button></a></div>
       </md-card>
     </section>
     <section class="plan-historical">
       <md-card>
-        <md-card-content>
-          <h3>Histórico Treinamentos</h3>
+        <md-card-content><a ui-sref="core.user.trainingHistory">
+            <h3>Histórico Treinamentos
+              <ng-md-icon icon="launch" style="fill:silver" size="24"></ng-md-icon>
+            </h3></a>
           <md-content>
             <md-subheader></md-subheader>
             <p>conteudo</p>
