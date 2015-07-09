@@ -18,15 +18,15 @@ section.perfil(ui-view="perfil")
 				section.img-user
 					img(class="img-responsive" holder='holder.js/45x45?auto=yes&theme=sky&text=BRU')
 				h6 Bruno Alexandre
-				ng-md-icon(icon="create" style="fill:grey"  size="22" ng-click="true")
+				ng-md-icon(icon="create" style="fill:silver"  size="22")
 		section.icons-header
 			section.dashboard
 				a(ui-sref="core.user.home.planTraining")
-					ng-md-icon(icon="dashboard" style="fill:grey"  size="40" ng-click="true")
+					ng-md-icon(icon="dashboard" style="fill:grey"  size="40")
 					p Painel
 			section.notification
 				a(ui-sref="core.user.home.planTraining")
-					ng-md-icon(icon="notifications" style="fill:grey"  size="40" ng-click="true")
+					ng-md-icon(icon="notifications" style="fill:grey"  size="40")
 					p Notificações
 		section.menu-content
 			section.plan-header
@@ -45,18 +45,18 @@ section.perfil(ui-view="perfil")
 			section.icons-content
 				section.train
 					a(ui-sref="core.user.listTraining")
-						ng-md-icon(icon="assignment" style="fill:grey"  size="40" ng-click="true")
+						ng-md-icon(icon="assignment" style="fill:grey"  size="40")
 						p Treinos
 				section.history
 					a(ui-sref="core.user.trainingHistory")
-						ng-md-icon(icon="local_movies" style="fill:grey"  size="40" ng-click="")
+						ng-md-icon(icon="local_movies" style="fill:grey"  size="40")
 						p   Histórico Treinamentos
 				section.review
-					ng-md-icon(icon="straighten" style="fill:grey"  size="40" ng-click="true")
+					ng-md-icon(icon="straighten" style="fill:grey"  size="40")
 					p Medidas
 			section.btn-train
-				md-button(class="md-raised md-primary"  ng-click="true;" id="btn-treinar")
-					ng-md-icon(icon="play_arrow" style="fill:white"  size="25" ng-click="true")
+				md-button(class="md-raised md-primary"  id="btn-treinar")
+					ng-md-icon(icon="play_arrow" style="fill:white"  size="25")
 					| &nbsp;&nbsp;Treinar
 
 section.actions
@@ -76,29 +76,29 @@ section.user-admin(ui-view="user-admin")
 		section.chat-bubble-arrow
 		ul
 			li 
-				ng-md-icon(icon="person" style="fill:grey"  size="17" ng-click="true")
+				ng-md-icon(icon="person" style="fill:grey"  size="17")
 				| &nbsp;&nbsp;Perfil
 			li
 				a(ui-sref="core.user.schedule")
-					ng-md-icon(icon="event" style="fill:grey"  size="17" ng-click="true")
+					ng-md-icon(icon="event" style="fill:grey"  size="17")
 					| &nbsp;&nbsp;Agenda
 			li
 				a(ui-sref="core.user.collectionTraining")
-					ng-md-icon(icon="local_library" style="fill:grey"  size="17" ng-click="true")
+					ng-md-icon(icon="local_library" style="fill:grey"  size="17")
 					| &nbsp;&nbsp;Coleção Treinos
 			li
 				p.line
 			li
-				ng-md-icon(icon="settings" style="fill:grey"  size="17" ng-click="true")
+				ng-md-icon(icon="settings" style="fill:grey"  size="17")
 				| &nbsp;&nbsp;Configurações
 			li
-				ng-md-icon(icon="shopping_cart" style="fill:grey"  size="17" ng-click="true")
+				ng-md-icon(icon="shopping_cart" style="fill:grey"  size="17")
 				| &nbsp;&nbsp;Plano
 			li
 				p.line
 			li
-				ng-md-icon(icon="vpn_key" style="fill:grey"  size="17" ng-click="true")
+				ng-md-icon(icon="vpn_key" style="fill:grey"  size="17")
 				| &nbsp;&nbsp;Alterar Senha
 			li(ng-click='logout();')
-				ng-md-icon(icon="settings_power" style="fill:grey"  size="17" ng-click="true")
+				ng-md-icon(icon="settings_power" style="fill:grey"  size="17")
 				| &nbsp;&nbsp;Sair

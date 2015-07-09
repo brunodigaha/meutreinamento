@@ -11350,6 +11350,41 @@ a:link {
 a:visited {
   text-decoration: none;
 }
+.ds-training {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 60px;
+  padding: 9px 2px 3px 2px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  margin: 5px;
+}
+.ds-training p {
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (min-width: 400px) and (max-width: 1050px) {
+  .ds-training {
+    zoom: 0.8;
+  }
+}
+.ds-training .ds-header {
+  box-sizing: border-box;
+  line-height: 10px;
+  vertical-align: middle;
+  color: #757575;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 4px;
+}
+.ds-training .ds-name-training {
+  box-sizing: border-box;
+  line-height: 37px;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-size: 32px;
+}
 .login-wrap {
   *zoom: 1;
   float: left;
@@ -13166,7 +13201,8 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   margin-left: 0%;
   margin-right: 0%;
   box-sizing: border-box;
-  padding: 2em;
+  padding-top: 2em;
+  text-align: center;
 }
 .plan-wrap .plan-dashboard .plan-graf:before,
 .plan-wrap .plan-dashboard .plan-graf:after {
@@ -13187,6 +13223,7 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   width: 66.66666666666666%;
   margin-left: 0%;
   margin-right: 0%;
+  text-align: center;
 }
 .plan-wrap .plan-dashboard .plan-overview:before,
 .plan-wrap .plan-dashboard .plan-overview:after {
@@ -14695,39 +14732,4 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
 }
 .history-wrap .history-content:last-child {
   margin-right: 0%;
-}
-.ds-training {
-  box-sizing: border-box;
-  display: inline-block;
-  width: 60px;
-  padding: 9px 2px 3px 2px;
-  border: 1px solid #e0e0e0;
-  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
-  text-align: center;
-  margin: 5px;
-}
-.ds-training p {
-  margin: 0;
-  padding: 0;
-}
-@media only screen and (min-width: 400px) and (max-width: 1050px) {
-  .ds-training {
-    zoom: 0.8;
-  }
-}
-.ds-training .ds-header {
-  box-sizing: border-box;
-  line-height: 10px;
-  vertical-align: middle;
-  color: #757575;
-  font-size: 16px;
-  text-align: center;
-  margin-bottom: 4px;
-}
-.ds-training .ds-name-training {
-  box-sizing: border-box;
-  line-height: 37px;
-  vertical-align: middle;
-  text-transform: uppercase;
-  font-size: 32px;
 }

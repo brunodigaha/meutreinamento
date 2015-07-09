@@ -16,6 +16,7 @@ angular
 	require('angularFire').name,
 	require('angularHolderjs').name,
 	require('angularUploadcare').name,
+	require('./appDirectives').name,
 	require('./auth').name,
 	require('./core').name,
 	require('./user').name,
