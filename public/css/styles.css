@@ -11084,6 +11084,7 @@ span.icon-notification:before {
   margin-right: 0%;
   position: relative;
   left: 8.333333333333332%;
+  box-sizing: border-box;
   background-color: #fafafa;
 }
 .content-main:before,
@@ -11257,20 +11258,22 @@ span.icon-notification:before {
 .content-main .content md-content.md-default-theme,
 .content-main-open .content md-content.md-default-theme {
   background-color: transparent;
+  box-sizing: border-box;
 }
-.content-main .content md-content.md-default-theme md-card,
-.content-main-open .content md-content.md-default-theme md-card {
+.content-main .content md-content.md-default-theme md-card.grid,
+.content-main-open .content md-content.md-default-theme md-card.grid {
+  box-sizing: border-box;
   min-height: 83vh;
 }
 @media only screen and (min-width: 400px) and (max-width: 1050px) and (orientation: portrait) {
-  .content-main .content md-content.md-default-theme md-card,
-  .content-main-open .content md-content.md-default-theme md-card {
+  .content-main .content md-content.md-default-theme md-card.grid,
+  .content-main-open .content md-content.md-default-theme md-card.grid {
     min-height: 90vh;
   }
 }
 @media only screen and (min-width: 1050px) {
-  .content-main .content md-content.md-default-theme md-card,
-  .content-main-open .content md-content.md-default-theme md-card {
+  .content-main .content md-content.md-default-theme md-card.grid,
+  .content-main-open .content md-content.md-default-theme md-card.grid {
     min-height: 87vh;
   }
 }
@@ -13114,30 +13117,249 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
 .home-wrap .home-content-wrap:last-child {
   margin-right: 0%;
 }
-section.plan-wrap {
+.plan-wrap {
   *zoom: 1;
   float: left;
   clear: none;
   text-align: inherit;
-  width: 83.33333333333334%;
+  width: 100%;
   margin-left: 0%;
   margin-right: 0%;
-  position: relative;
-  left: 8.333333333333332%;
 }
-section.plan-wrap:before,
-section.plan-wrap:after {
+.plan-wrap:before,
+.plan-wrap:after {
   content: '';
   display: table;
 }
-section.plan-wrap:after {
+.plan-wrap:after {
   clear: both;
 }
-section.plan-wrap:last-child {
+.plan-wrap:last-child {
   margin-right: 0%;
 }
-section.plan-wrap h1 {
-  color: #008000;
+.plan-wrap .plan-dashboard {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.plan-wrap .plan-dashboard:before,
+.plan-wrap .plan-dashboard:after {
+  content: '';
+  display: table;
+}
+.plan-wrap .plan-dashboard:after {
+  clear: both;
+}
+.plan-wrap .plan-dashboard:last-child {
+  margin-right: 0%;
+}
+.plan-wrap .plan-dashboard .plan-graf {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 33.33333333333333%;
+  margin-left: 0%;
+  margin-right: 0%;
+  box-sizing: border-box;
+  padding: 2em;
+}
+.plan-wrap .plan-dashboard .plan-graf:before,
+.plan-wrap .plan-dashboard .plan-graf:after {
+  content: '';
+  display: table;
+}
+.plan-wrap .plan-dashboard .plan-graf:after {
+  clear: both;
+}
+.plan-wrap .plan-dashboard .plan-graf:last-child {
+  margin-right: 0%;
+}
+.plan-wrap .plan-dashboard .plan-overview {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 66.66666666666666%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.plan-wrap .plan-dashboard .plan-overview:before,
+.plan-wrap .plan-dashboard .plan-overview:after {
+  content: '';
+  display: table;
+}
+.plan-wrap .plan-dashboard .plan-overview:after {
+  clear: both;
+}
+.plan-wrap .plan-dashboard .plan-overview:last-child {
+  margin-right: 0%;
+}
+.plan-wrap .plan-dashboard .plan-overview .plan-goal {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.plan-wrap .plan-dashboard .plan-overview .plan-goal:before,
+.plan-wrap .plan-dashboard .plan-overview .plan-goal:after {
+  content: '';
+  display: table;
+}
+.plan-wrap .plan-dashboard .plan-overview .plan-goal:after {
+  clear: both;
+}
+.plan-wrap .plan-dashboard .plan-overview .plan-goal:last-child {
+  margin-right: 0%;
+}
+.plan-wrap .plan-dashboard .plan-overview .plan-time {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.plan-wrap .plan-dashboard .plan-overview .plan-time:before,
+.plan-wrap .plan-dashboard .plan-overview .plan-time:after {
+  content: '';
+  display: table;
+}
+.plan-wrap .plan-dashboard .plan-overview .plan-time:after {
+  clear: both;
+}
+.plan-wrap .plan-dashboard .plan-overview .plan-time:last-child {
+  margin-right: 0%;
+}
+.plan-wrap .plan-cards {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.plan-wrap .plan-cards:before,
+.plan-wrap .plan-cards:after {
+  content: '';
+  display: table;
+}
+.plan-wrap .plan-cards:after {
+  clear: both;
+}
+.plan-wrap .plan-cards:last-child {
+  margin-right: 0%;
+}
+@media only screen and (min-width: 1050px) {
+  .plan-wrap .plan-cards {
+    margin-top: 5%;
+  }
+}
+.plan-wrap .plan-cards .plan-trainings {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.plan-wrap .plan-cards .plan-trainings:before,
+.plan-wrap .plan-cards .plan-trainings:after {
+  content: '';
+  display: table;
+}
+.plan-wrap .plan-cards .plan-trainings:after {
+  clear: both;
+}
+.plan-wrap .plan-cards .plan-trainings:last-child {
+  margin-right: 0%;
+}
+.plan-wrap .plan-cards .plan-trainings md-card {
+  position: relative;
+  border: 1px solid #eee;
+}
+.plan-wrap .plan-cards .plan-trainings md-card md-card-content {
+  min-height: 26vh;
+}
+.plan-wrap .plan-cards .plan-trainings md-card md-card-content h3 {
+  text-align: center;
+  margin: 0;
+}
+@media only screen and (min-width: 1050px) {
+  .plan-wrap .plan-cards .plan-trainings md-card md-card-content {
+    min-height: 35vh;
+  }
+}
+.plan-wrap .plan-cards .plan-trainings md-card md-card-content .md-subheader .md-subheader-inner {
+  padding: 2px 0px 2px 3px;
+}
+.plan-wrap .plan-cards .plan-trainings md-card md-card-content md-content {
+  height: 22vh;
+  text-align: center;
+}
+@media only screen and (min-width: 1050px) {
+  .plan-wrap .plan-cards .plan-trainings md-card md-card-content md-content {
+    height: 30vh;
+  }
+}
+.plan-wrap .plan-cards .plan-trainings md-card md-card-content md-content training {
+  margin: 0.5em;
+}
+.plan-wrap .plan-cards .plan-historical {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.plan-wrap .plan-cards .plan-historical:before,
+.plan-wrap .plan-cards .plan-historical:after {
+  content: '';
+  display: table;
+}
+.plan-wrap .plan-cards .plan-historical:after {
+  clear: both;
+}
+.plan-wrap .plan-cards .plan-historical:last-child {
+  margin-right: 0%;
+}
+.plan-wrap .plan-cards .plan-historical md-card {
+  border: 1px solid #eee;
+}
+.plan-wrap .plan-cards .plan-historical md-card md-card-content {
+  min-height: 26vh;
+}
+.plan-wrap .plan-cards .plan-historical md-card md-card-content h3 {
+  text-align: center;
+  margin: 0;
+}
+@media only screen and (min-width: 1050px) {
+  .plan-wrap .plan-cards .plan-historical md-card md-card-content {
+    min-height: 35vh;
+  }
+}
+.plan-wrap .plan-cards .plan-historical md-card md-card-content .md-subheader .md-subheader-inner {
+  padding: 2px 0px 2px 3px;
+}
+.plan-wrap .plan-cards .plan-historical md-card md-card-content md-content {
+  height: 22vh;
+}
+@media only screen and (min-width: 1050px) {
+  .plan-wrap .plan-cards .plan-historical md-card md-card-content md-content {
+    height: 30vh;
+  }
 }
 .training {
   *zoom: 1;
@@ -14488,10 +14710,12 @@ section.plan-wrap h1 {
 .ds-training {
   box-sizing: border-box;
   display: inline-block;
-  width: 58px;
-  padding: 7px 2px 6px 2px;
-  border: 1px solid #bdbdbd;
+  width: 60px;
+  padding: 9px 2px 3px 2px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
   text-align: center;
+  margin: 5px;
 }
 .ds-training p {
   margin: 0;
@@ -14506,15 +14730,15 @@ section.plan-wrap h1 {
   box-sizing: border-box;
   line-height: 10px;
   vertical-align: middle;
-  color: #9e9e9e;
-  font-weight: bold;
-  font-size: 15px;
+  color: #757575;
+  font-size: 16px;
   text-align: center;
+  margin-bottom: 4px;
 }
 .ds-training .ds-name-training {
   box-sizing: border-box;
-  line-height: 39px;
+  line-height: 37px;
   vertical-align: middle;
   text-transform: uppercase;
-  font-size: 37px;
+  font-size: 32px;
 }

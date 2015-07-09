@@ -1,5 +1,58 @@
-section.plan-wrap
-	col(10/12,gutter:0)
-	shift(1/12,gutter:0)
-	h1
-		color green
+.plan-wrap
+	col(12/12,gutter:0)
+	.plan-dashboard
+		col(12/12,gutter:0)
+		.plan-graf
+			col(4/12,gutter:0)
+			box-sizing border-box
+			padding 2em
+		.plan-overview
+			col(8/12,gutter:0)
+			.plan-goal
+				col(8/8,gutter:0)
+			.plan-time
+				col(8/8,gutter:0)
+	.plan-cards
+		col(12/12,gutter:0)
+		+desktop()
+			margin-top 5%
+		.plan-trainings
+			col(6/12,gutter:0)
+			md-card
+				position relative
+				border 1px solid palette('Grey','200')
+				md-card-content
+					h3
+						text-align center
+						margin 0
+					min-height 26vh 
+					+desktop()
+						min-height 35vh 
+					.md-subheader
+						.md-subheader-inner
+							 padding 2px 0px 2px 3px
+					md-content
+						height:22vh
+						+desktop()
+							height:30vh
+						text-align center
+						training
+							margin .5em
+		.plan-historical
+			col(6/12,gutter:0)
+			md-card
+				border 1px solid palette('Grey','200')
+				md-card-content
+					h3
+						text-align center
+						margin 0
+					min-height 26vh 
+					+desktop()
+						min-height 35vh 
+					.md-subheader
+						.md-subheader-inner
+							 padding 2px 0px 2px 3px
+					md-content
+						height:22vh
+						+desktop()
+							height:30vh
