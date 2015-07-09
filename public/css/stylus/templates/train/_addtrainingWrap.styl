@@ -42,7 +42,7 @@
 				bottom .9em
 				font-size 140%
 				line-height 35px
-				// color palette('Grey', '100')
+				color palette('Grey', '700')
 				text-align left
 				font-weight bold
 			.breadcrumb-add
@@ -51,7 +51,7 @@
 				left 5.5em
 				bottom -.1em
 				text-align right
-				color black
+				color palette('Grey', '700')
 				font-size 97%
 			.actions-add
 				col(2/5,gutter:0)
@@ -247,6 +247,8 @@
 								margin-top 2px
 								md-content
 									height:40vh !important
+									+tablet(orientation: portrait)
+										height:49vh !important
 									+desktop()
 										height:49vh !important
 									ul

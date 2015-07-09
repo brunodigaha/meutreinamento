@@ -3,12 +3,12 @@
 	.plan-dashboard
 		col(12/12,gutter:0)
 		.plan-graf
-			col(4/12,gutter:0)
+			col(3/12,gutter:0)
 			box-sizing border-box
 			padding-top 2em
 			text-align center
 		.plan-overview
-			col(8/12,gutter:0)
+			col(9/12,gutter:0)
 			text-align center
 			.plan-goal
 				col(8/8,gutter:0)
@@ -45,6 +45,8 @@
 							cursor pointer
 				md-content
 					height:22vh
+					+tablet(orientation: portrait)
+						height:27vh
 					+desktop()
 						height:30vh
 					text-align center
