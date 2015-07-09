@@ -123,7 +123,11 @@
 					box-sizing border-box
 					md-card
 						min-height:29vh !important
+						position relative
 						md-card-content
+							.md-subheader
+								.md-subheader-inner
+									 padding 3px 0px 2px 3px
 							.background-wrap
 								position fixed
 								top 0
@@ -239,7 +243,8 @@
 							.content-add
 								col(6/6,gutter:0)
 								box-sizing border-box
-								padding 1em
+								// padding 1em
+								margin-top 2px
 								md-content
 									height:40vh !important
 									+desktop()
@@ -252,6 +257,7 @@
 											shift(1/6,gutter:0)
 										margin 0
 										padding 0
+										margin-top 1em
 										font-size 90%
 										// color palette('Blue', '500')
 										// text-align center
@@ -289,13 +295,13 @@
 										.sv-candidate
 											opacity 0.5
 										li
-											&.ng-leave
-												-webkit-animation 1s zoomOut
-												-moz-animation 1s zoomOut
-												-o-animation 1s zoomOut
-												animation 1s zoomOut
-												background-color palette('Blue Grey','50')
-												opacity 1
+											// &.ng-leave
+											// 	-webkit-animation 1s zoomOut
+											// 	-moz-animation 1s zoomOut
+											// 	-o-animation 1s zoomOut
+											// 	animation 1s zoomOut
+											// 	background-color palette('Blue Grey','50')
+											// 	opacity 1
 											// &.ng-leave-active
 											// 	opacity 0
 											// 	@keyframes zoomOut {

@@ -4,6 +4,10 @@
 	margin-top 1em
 	position relative
 	md-card
+		position relative
+		.md-subheader
+			.md-subheader-inner
+				 padding 2px 0px 2px 3px
 		min-height:49vh !important
 		.header-add
 			col(3/5,gutter:0)
@@ -76,11 +80,10 @@
 		.content-add
 			col(5/5,gutter:0)
 			box-sizing border-box
-			margin-top .5em
+			margin-top 2px
 			padding-left 1em
 			padding-right 1em
 			+desktop()
-				margin-top 1.5em
 				padding-left 1.7em
 				padding-right 1.7em
 			md-content

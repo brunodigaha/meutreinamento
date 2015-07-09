@@ -13505,7 +13505,11 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   margin-right: 0%;
 }
 .train md-card {
+  position: relative;
   min-height: 49vh !important;
+}
+.train md-card .md-subheader .md-subheader-inner {
+  padding: 2px 0px 2px 3px;
 }
 .train md-card .header-add {
   *zoom: 1;
@@ -13648,7 +13652,7 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   margin-left: 0%;
   margin-right: 0%;
   box-sizing: border-box;
-  margin-top: 0.5em;
+  margin-top: 2px;
   padding-left: 1em;
   padding-right: 1em;
 }
@@ -13665,7 +13669,6 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
 }
 @media only screen and (min-width: 1050px) {
   .train md-card .content-add {
-    margin-top: 1.5em;
     padding-left: 1.7em;
     padding-right: 1.7em;
   }
@@ -14098,6 +14101,10 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
 }
 .addtraining md-content md-card md-card-content .new-training md-card {
   min-height: 29vh !important;
+  position: relative;
+}
+.addtraining md-content md-card md-card-content .new-training md-card md-card-content .md-subheader .md-subheader-inner {
+  padding: 3px 0px 2px 3px;
 }
 .addtraining md-content md-card md-card-content .new-training md-card md-card-content .background-wrap {
   position: fixed;
@@ -14365,7 +14372,7 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   margin-left: 0%;
   margin-right: 0%;
   box-sizing: border-box;
-  padding: 1em;
+  margin-top: 2px;
 }
 .addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add:before,
 .addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add:after {
@@ -14398,6 +14405,7 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   left: 8.333333333333332%;
   margin: 0;
   padding: 0;
+  margin-top: 1em;
   font-size: 90%;
   list-style: none;
 }
@@ -14465,14 +14473,6 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
 }
 .addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content .sv-candidate {
   opacity: 0.5;
-}
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li.ng-leave {
-  -webkit-animation: 1s zoomOut;
-  -moz-animation: 1s zoomOut;
-  -o-animation: 1s zoomOut;
-  animation: 1s zoomOut;
-  background-color: #eceff1;
-  opacity: 1;
 }
 .addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content li {
   border: 1px solid #cfd8dc;
