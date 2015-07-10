@@ -12162,6 +12162,16 @@ a:visited {
   margin-top: 0.8em;
   margin-left: 0.5em;
 }
+.perfil .menu .menu-content .plan-header .title-plan ng-md-icon svg {
+  width: 8%;
+  height: 8%;
+}
+@media only screen and (min-width: 1050px) {
+  .perfil .menu .menu-content .plan-header .title-plan ng-md-icon svg {
+    width: 7%;
+    height: 7%;
+  }
+}
 .perfil .menu .menu-content .plan-header .edit-plan {
   *zoom: 1;
   float: left;
