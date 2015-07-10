@@ -11,12 +11,15 @@
 			margin-top .4em
 			cursor pointer
 		.icon-home
-			col(.3/5,gutter:0)
+			col(.2/4,gutter:0)
 			position absolute
 			left 5.5em
-			top .6em
+			top .8em
+			+below(890px)
+				top .3em
 			+desktop()
-				top .9em
+				top 1em
+				left 5.3em
 			text-align left
 			cursor pointer
 		.user-name
@@ -25,7 +28,7 @@
 			color palette('Grey', '700')
 			font-weight bold
 			position absolute
-			left 5.5em
+			left 5.2em
 			top -1.2em
 			text-align left
 		.breadcrumb

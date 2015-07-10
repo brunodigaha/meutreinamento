@@ -11343,6 +11343,7 @@ body {
 a {
   text-decoration: none;
   color: #03a9f4;
+  color: inherit;
 }
 a:link {
   text-decoration: none;
@@ -11359,7 +11360,11 @@ a:visited {
   border-radius: 4%;
   box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
   text-align: center;
-  margin: 5px;
+  margin: 10px;
+}
+.ds-training.ds-training-disable {
+  opacity: 0.6;
+  color: rgba(0,0,0,0.26);
 }
 .ds-training p {
   margin: 0;
@@ -11736,12 +11741,12 @@ a:visited {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 6%;
+  width: 5%;
   margin-left: 0%;
   margin-right: 0%;
   position: absolute;
   left: 5.5em;
-  top: 0.6em;
+  top: 0.8em;
   text-align: left;
   cursor: pointer;
 }
@@ -11756,9 +11761,15 @@ a:visited {
 .perfil .user .icon-home:last-child {
   margin-right: 0%;
 }
+@media only screen and (max-width: 890px) {
+  .perfil .user .icon-home {
+    top: 0.3em;
+  }
+}
 @media only screen and (min-width: 1050px) {
   .perfil .user .icon-home {
-    top: 0.9em;
+    top: 1em;
+    left: 5.3em;
   }
 }
 .perfil .user .user-name {
@@ -11773,7 +11784,7 @@ a:visited {
   color: #616161;
   font-weight: bold;
   position: absolute;
-  left: 5.5em;
+  left: 5.2em;
   top: -1.2em;
   text-align: left;
 }
@@ -13235,7 +13246,7 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   margin-left: 0%;
   margin-right: 0%;
   box-sizing: border-box;
-  padding-top: 2em;
+  padding-top: 0.3em;
   text-align: center;
 }
 .plan-wrap .plan-dashboard .plan-graf:before,
@@ -13339,6 +13350,19 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   position: relative;
   border: 1px solid #eee;
 }
+.plan-wrap .plan-cards md-card div.md-actions {
+  box-sizing: border-box;
+  padding-bottom: 8px;
+  padding-right: 2em;
+}
+.plan-wrap .plan-cards md-card div.md-actions button.md-button {
+  margin: 0;
+  width: 35%;
+  min-width: 15px;
+  min-height: 33px;
+  line-height: 33px;
+  font-size: 95%;
+}
 .plan-wrap .plan-cards md-card md-card-content {
   padding-top: 4px;
   min-height: 26vh;
@@ -13351,11 +13375,11 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
 .plan-wrap .plan-cards md-card md-card-content .md-subheader .md-subheader-inner {
   padding: 2px 0px 2px 3px;
 }
-.plan-wrap .plan-cards md-card md-card-content h3 {
+.plan-wrap .plan-cards md-card md-card-content h4 {
   text-align: center;
   margin: 0;
 }
-.plan-wrap .plan-cards md-card md-card-content h3 ng-md-icon svg {
+.plan-wrap .plan-cards md-card md-card-content h4 ng-md-icon svg {
   width: 6%;
   height: 6%;
   margin-left: 3px;
@@ -13364,7 +13388,7 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   cursor: pointer;
 }
 @media only screen and (min-width: 1050px) {
-  .plan-wrap .plan-cards md-card md-card-content h3 ng-md-icon svg {
+  .plan-wrap .plan-cards md-card md-card-content h4 ng-md-icon svg {
     width: 4%;
     height: 4%;
   }
@@ -13383,8 +13407,96 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
     height: 30vh;
   }
 }
-.plan-wrap .plan-cards md-card md-card-content md-content training {
-  margin: 0.5em;
+.plan-wrap .plan-cards md-card md-card-content md-content ds-training {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 16.666666666666664%;
+  margin-left: 12%;
+  margin-right: 0%;
+}
+.plan-wrap .plan-cards md-card md-card-content md-content ds-training:before,
+.plan-wrap .plan-cards md-card md-card-content md-content ds-training:after {
+  content: '';
+  display: table;
+}
+.plan-wrap .plan-cards md-card md-card-content md-content ds-training:after {
+  clear: both;
+}
+.plan-wrap .plan-cards md-card md-card-content md-content ds-training:nth-child(3n) {
+  float: right;
+}
+.plan-wrap .plan-cards md-card md-card-content md-content ds-training:nth-child(3n + 1) {
+  clear: both;
+}
+.plan-wrap .plan-cards md-card md-card-content md-content ds-training:nth-child(1n) {
+  float: left;
+}
+.plan-wrap .plan-cards md-card md-card-content md-content ds-training:nth-child(1n + 1) {
+  clear: none;
+}
+@media only screen and (max-width: 700px) {
+  .plan-wrap .plan-cards md-card md-card-content md-content ds-training {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 33.33333333333333%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .plan-wrap .plan-cards md-card md-card-content md-content ds-training:before,
+  .plan-wrap .plan-cards md-card md-card-content md-content ds-training:after {
+    content: '';
+    display: table;
+  }
+  .plan-wrap .plan-cards md-card md-card-content md-content ds-training:after {
+    clear: both;
+  }
+  .plan-wrap .plan-cards md-card md-card-content md-content ds-training:nth-child(3n) {
+    float: right;
+  }
+  .plan-wrap .plan-cards md-card md-card-content md-content ds-training:nth-child(3n + 1) {
+    clear: both;
+  }
+  .plan-wrap .plan-cards md-card md-card-content md-content ds-training:nth-child(1n) {
+    float: left;
+  }
+  .plan-wrap .plan-cards md-card md-card-content md-content ds-training:nth-child(1n + 1) {
+    clear: none;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .plan-wrap .plan-cards md-card md-card-content md-content ds-training {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 25%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .plan-wrap .plan-cards md-card md-card-content md-content ds-training:before,
+  .plan-wrap .plan-cards md-card md-card-content md-content ds-training:after {
+    content: '';
+    display: table;
+  }
+  .plan-wrap .plan-cards md-card md-card-content md-content ds-training:after {
+    clear: both;
+  }
+  .plan-wrap .plan-cards md-card md-card-content md-content ds-training:nth-child(4n) {
+    float: right;
+  }
+  .plan-wrap .plan-cards md-card md-card-content md-content ds-training:nth-child(4n + 1) {
+    clear: both;
+  }
+  .plan-wrap .plan-cards md-card md-card-content md-content ds-training:nth-child(1n) {
+    float: left;
+  }
+  .plan-wrap .plan-cards md-card md-card-content md-content ds-training:nth-child(1n + 1) {
+    clear: none;
+  }
 }
 .plan-wrap .plan-cards .plan-trainings {
   *zoom: 1;
@@ -13406,6 +13518,28 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
 .plan-wrap .plan-cards .plan-trainings:last-child {
   margin-right: 0%;
 }
+@media only screen and (min-width: 1050px) {
+  .plan-wrap .plan-cards .plan-trainings {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 45.83333333333333%;
+    margin-left: 4.166666666666666%;
+    margin-right: 0%;
+  }
+  .plan-wrap .plan-cards .plan-trainings:before,
+  .plan-wrap .plan-cards .plan-trainings:after {
+    content: '';
+    display: table;
+  }
+  .plan-wrap .plan-cards .plan-trainings:after {
+    clear: both;
+  }
+  .plan-wrap .plan-cards .plan-trainings:last-child {
+    margin-right: 0%;
+  }
+}
 .plan-wrap .plan-cards .plan-historical {
   *zoom: 1;
   float: left;
@@ -13425,6 +13559,28 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
 }
 .plan-wrap .plan-cards .plan-historical:last-child {
   margin-right: 0%;
+}
+@media only screen and (min-width: 1050px) {
+  .plan-wrap .plan-cards .plan-historical {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 45.83333333333333%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .plan-wrap .plan-cards .plan-historical:before,
+  .plan-wrap .plan-cards .plan-historical:after {
+    content: '';
+    display: table;
+  }
+  .plan-wrap .plan-cards .plan-historical:after {
+    clear: both;
+  }
+  .plan-wrap .plan-cards .plan-historical:last-child {
+    margin-right: 0%;
+  }
 }
 .training {
   *zoom: 1;

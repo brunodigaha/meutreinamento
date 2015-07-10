@@ -1,7 +1,7 @@
 section.plan-wrap
 	section.plan-dashboard
 		section.plan-graf
-			ng-md-icon(icon="track_changes" style="fill:grey"  size="170")
+			ng-md-icon(icon="track_changes" style="fill:grey"  size="150")
 		section.plan-overview
 			section.plan-goal
 				h1 
@@ -29,48 +29,30 @@ section.plan-wrap
 			md-card
 				md-card-content
 					a(ui-sref="core.user.listTraining")
-						h3 Treinos
+						h4 Treinos
 							ng-md-icon(icon="launch" style="fill:silver"  size="24")
 					md-content
 						md-subheader
-						ds-training(name="A")
-						ds-training(name="b")
+						ds-training(name="A" disable="true")
+						ds-training(name="B")
 						ds-training(name="C")
-						ds-training(name="d")
-						ds-training(name="e")
-						ds-training(name="f")
-						ds-training(name="f")
-						ds-training(name="f")
-						ds-training(name="b")
-						ds-training(name="C")
-						ds-training(name="d")
-						ds-training(name="f")
-						ds-training(name="f")
-						ds-training(name="f")
-						ds-training(name="f")
-						ds-training(name="f")
-						ds-training(name="f")
-						ds-training(name="g")
-						ds-training(name="h")
-						ds-training(name="g")
-						ds-training(name="h")
-						ds-training(name="g")
-						ds-training(name="h")
-						ds-training(name="g")
-						ds-training(name="h")
-						ds-training(name="g")
-						ds-training(name="h")
+						ds-training(name="D")
+						ds-training(name="E")
+						ds-training(name="F")
+						ds-training(name="G")
+						ds-training(name="H")
 				div.md-actions(layout="row", layout-align="end center")
-					a(ui-sref-active="sdd" ui-sref="core.user.addtraining")
-						md-button(class="md-raised md-primary") Inserir Treino
+					md-button(class="md-raised md-primary")
+						a(ui-sref-active="sdd" ui-sref="core.user.addtraining") Inserir Treino
 		section.plan-historical
 			md-card
 				md-card-content
 					a(ui-sref="core.user.trainingHistory")
-						h3 Histórico Treinamentos
+						h4 Histórico Treinamentos
 							ng-md-icon(icon="launch" style="fill:silver"  size="24")
 					md-content
 						md-subheader
 						p conteudo
 				div.md-actions(layout="row", layout-align="end center")
-					md-button(class="md-raised md-primary") Treinar
+					md-button(class="md-raised md-primary")
+						a Treinar

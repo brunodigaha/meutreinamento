@@ -5,7 +5,7 @@
 		.plan-graf
 			col(3/12,gutter:0)
 			box-sizing border-box
-			padding-top 2em
+			padding-top .3em
 			text-align center
 		.plan-overview
 			col(9/12,gutter:0)
@@ -21,6 +21,18 @@
 		md-card
 			position relative
 			border 1px solid palette('Grey','200')
+			div.md-actions
+				box-sizing border-box
+				padding-bottom 8px
+				padding-right 2em
+				// background-color palette('Grey','50')
+				button.md-button
+					margin 0
+					width 35%
+					min-width 15px
+					min-height 33px
+					line-height 33px
+					font-size 95%
 			md-card-content
 				padding-top 4px
 				min-height 26vh 
@@ -29,7 +41,7 @@
 				.md-subheader
 					.md-subheader-inner
 						 padding 2px 0px 2px 3px
-				h3
+				h4
 					text-align center
 					margin 0
 					ng-md-icon
@@ -50,9 +62,17 @@
 					+desktop()
 						height:30vh
 					text-align center
-					training
-						margin .5em
+					ds-training
+						span(1/6,.6/5,cycle:3,uncycle:1,gutter:0)
+						+below(700px)
+							span(1/3,cycle:3,uncycle:1,gutter:0)
+						+hd()
+							span(1/4,cycle:4,uncycle:1,gutter:0)
 		.plan-trainings
 			col(6/12,gutter:0)
+			+desktop()
+				col(5.5/12,.5/12 -.5/12,gutter:0)
 		.plan-historical
 			col(6/12,gutter:0)
+			+desktop()
+				col(5.5/12,gutter:0)
