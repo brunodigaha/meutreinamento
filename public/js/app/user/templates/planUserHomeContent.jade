@@ -1,29 +1,27 @@
 section.plan-wrap
 	section.plan-dashboard
-		section.plan-graf
-			ng-md-icon(icon="track_changes" style="fill:grey"  size="150")
-		section.plan-overview
-			section.plan-goal
-				h1 
-					ng-md-icon(icon="gps_fixed" style="fill:grey"  size="25")
-					| Ganho de Peso
-			section.plan-time
-				section.card
-					ds-info
-						section.ds-title
-							span Duração
-						section.ds-content
-							span 5 semanas
-					ds-info
-						section.ds-title
-							span Frequência Semanal
-						section.ds-content
-							span 5x
-					ds-info
-						section.ds-title
-							span N&#176; Treinamentos Realizados
-						section.ds-content
-							span 7
+		md-card
+			md-card-content
+				section.plan-graf
+					// ng-md-icon(icon="track_changes" style="fill:grey"  size="150")
+					canvas#pie.chart.chart-pie(data='data',chart-options="options", labels='labels')
+				section.plan-overview
+					section.plan-goal
+						h1 
+							// ng-md-icon(icon="gps_fixed" style="fill:grey"  size="25")
+							| Ganho de Peso
+					section.plan-time
+						section.card
+							ds-info
+								section.ds-title
+									span Duração
+								section.ds-content
+									span 5 semanas
+							ds-info
+								section.ds-title
+									span Frequência Semanal
+								section.ds-content
+									span 5x
 	section.plan-cards
 		section.plan-trainings
 			md-card

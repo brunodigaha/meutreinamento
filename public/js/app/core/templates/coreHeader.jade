@@ -2,10 +2,8 @@ section.perfil(ui-view="perfil")
 	section.user
 		section.user-img
 			img(class="img-responsive" ng-click="coreEvents.toggle_menu();" holder='holder.js/80x80?auto=yes&theme=vine&text=BRU')
-		section.icon-home
-			a(ui-sref="core.user.home.planTraining")
-				ng-md-icon(icon="home" style="fill:grey"  size="60")
-		h3.user-name Bruno
+		a(ui-sref="core.user.home.planTraining")
+			h3.user-name Bruno
 		span.breadcrumb
 			ng-md-icon(icon="place" style="fill:grey"  size="20")
 			span(ncy-breadcrumb-last="") &nbsp;{{getStatesChain}}

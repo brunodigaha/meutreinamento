@@ -5,6 +5,7 @@ module.exports = function (gulp,plugins){
 	function browserifyShare(){
 		// you need to pass these three config option to browserify
 		var b = plugins.browserify('./public/js/app/app.js',{
+			// debug: true,
 			cache: {},
 			packageCache: {},
 			fullPaths: true

@@ -35,7 +35,8 @@
     "angular-uploadcare": "~0.1.2",
     "angular-breadcrumb": "~0.4.0",
     "angular-sortable-view": "~0.0.13",
-    "angular-scroll-glue": "~2.0.6"
+    "angular-scroll-glue": "~2.0.6",
+    "angular-chart.js": "~0.7.2"
   },
   "resolutions": {
     "angular-material": "master"

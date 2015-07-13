@@ -2,25 +2,39 @@
 	col(12/12,gutter:0)
 	.plan-dashboard
 		col(12/12,gutter:0)
-		.plan-graf
-			col(3/12,gutter:0)
-			box-sizing border-box
-			padding-top .3em
-			text-align center
-		.plan-overview
-			col(9/12,gutter:0)
-			text-align center
-			.plan-goal
-				col(8/8,gutter:0)
-			.plan-time
-				col(8/8,gutter:0)
+		margin-top 1em
+		+desktop()
+			margin-top 3em
+		md-card
+			// box-shadow none 
+			box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.098), 0px 1px 5px 0px rgba(0, 0, 0, 0.084);
+			md-card-content
+				padding-bottom 4px
+				border 1px solid palette('Grey','200')
+				.plan-graf
+					col(4/12,gutter:0)
+					box-sizing border-box
+					text-align center
+				.plan-overview
+					margin-top 1%
+					+desktop()
+						margin-top 2%
+					col(8/12,gutter:0)
+					text-align center
+					.plan-goal
+						col(8/8,gutter:0)
+						h1
+							margin 0
+					.plan-time
+						col(8/8,gutter:0)
 	.plan-cards
 		col(12/12,gutter:0)
 		+desktop()
-			margin-top 5%
+			margin-top 1em
 		md-card
 			position relative
 			border 1px solid palette('Grey','200')
+			box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.09), 0px 2px 2px 0px rgba(0, 0, 0, 0.098), 0px 1px 5px 0px rgba(0, 0, 0, 0.084);
 			div.md-actions
 				box-sizing border-box
 				padding-bottom 8px
@@ -70,9 +84,5 @@
 							span(1/4,cycle:4,uncycle:1,gutter:0)
 		.plan-trainings
 			col(6/12,gutter:0)
-			+desktop()
-				col(5.5/12,.5/12 -.5/12,gutter:0)
 		.plan-historical
 			col(6/12,gutter:0)
-			+desktop()
-				col(5.5/12,gutter:0)

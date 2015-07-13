@@ -63,6 +63,8 @@
   "browser": {
     "angular": "./public/bower_components/angular/angular.js",
     "angularCookies": "./public/bower_components/angular-cookies/angular-cookies.js",
+    "chart": "./public/bower_components/Chart.js/Chart.min.js",
+    "angularChart": "./public/bower_components/angular-chart.js/dist/angular-chart.min.js",
     "angularSortableView": "./public/bower_components/angular-sortable-view/src/angular-sortable-view.min.js",
     "angularScroll": "./public/bower_components/angular-scroll-glue/src/scrollglue.js",
     "restAngular": "./public/bower_components/restangular/dist/restangular.js",
@@ -125,6 +127,17 @@
     "firebase": {
       "exports": "firebase",
       "depends": null
+    },
+    "chart": {
+      "exports": "chart",
+      "depends": null
+    },
+    "angularChart": {
+      "exports": "angular.module('chart.js')",
+      "depends": [
+        "chart",
+        "angular"
+      ]
     },
     "angularFire": {
       "exports": "angular.module('firebase')",

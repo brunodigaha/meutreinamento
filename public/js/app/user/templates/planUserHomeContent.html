@@ -1,32 +1,33 @@
 
 <section class="plan-wrap">
   <section class="plan-dashboard">
-    <section class="plan-graf">
-      <ng-md-icon icon="track_changes" style="fill:grey" size="150"></ng-md-icon>
-    </section>
-    <section class="plan-overview">
-      <section class="plan-goal">
-        <h1> 
-          <ng-md-icon icon="gps_fixed" style="fill:grey" size="25"></ng-md-icon>Ganho de Peso
-        </h1>
-      </section>
-      <section class="plan-time">
-        <section class="card">
-          <ds-info>
-            <section class="ds-title"><span>Duração</span></section>
-            <section class="ds-content"><span>5 semanas</span></section>
-          </ds-info>
-          <ds-info>
-            <section class="ds-title"><span>Frequência Semanal</span></section>
-            <section class="ds-content"><span>5x</span></section>
-          </ds-info>
-          <ds-info>
-            <section class="ds-title"><span>N&#176; Treinamentos Realizados</span></section>
-            <section class="ds-content"><span>7</span></section>
-          </ds-info>
+    <md-card>
+      <md-card-content>
+        <section class="plan-graf">
+          <!-- ng-md-icon(icon="track_changes" style="fill:grey"  size="150")-->
+          <canvas id="pie" data="data" chart-options="options" labels="labels" class="chart chart-pie"></canvas>
         </section>
-      </section>
-    </section>
+        <section class="plan-overview">
+          <section class="plan-goal">
+            <h1> 
+              <!-- ng-md-icon(icon="gps_fixed" style="fill:grey"  size="25")-->Ganho de Peso
+            </h1>
+          </section>
+          <section class="plan-time">
+            <section class="card">
+              <ds-info>
+                <section class="ds-title"><span>Duração</span></section>
+                <section class="ds-content"><span>5 semanas</span></section>
+              </ds-info>
+              <ds-info>
+                <section class="ds-title"><span>Frequência Semanal</span></section>
+                <section class="ds-content"><span>5x</span></section>
+              </ds-info>
+            </section>
+          </section>
+        </section>
+      </md-card-content>
+    </md-card>
   </section>
   <section class="plan-cards">
     <section class="plan-trainings">

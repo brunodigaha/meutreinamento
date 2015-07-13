@@ -14,6 +14,7 @@ angular
 	require('angularIcons').name,
 	require('angularMaterial').name,
 	require('angularFire').name,
+	require('angularChart').name,
 	require('angularHolderjs').name,
 	require('angularUploadcare').name,
 	require('./appDirectives').name,

@@ -1,6 +1,6 @@
 var fs = require('fs');
 
-module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider,$breadcrumbProvider, $mdThemingProvider) {
+module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider,$breadcrumbProvider,ChartJsProvider, $mdThemingProvider) {
 	$locationProvider.html5Mode(false);
 	$urlRouterProvider.otherwise('/user/12/training-history');
 	// $urlRouterProvider.when('/home', '/home/index');
@@ -49,4 +49,9 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider,$
 	// $breadcrumbProvider.setOptions({
 	// 	template : '<p> Bruno ng-repeat="step in steps | limitTo:-1"</p> <span> {{ng-bind-html="step.ncyBreadcrumbLabel"}} </span>'
 	// });
+	
+    ChartJsProvider.setOptions({
+      colours: ['#E57373', '#64B5F6'],
+       animation: false
+    });	
 };

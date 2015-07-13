@@ -1,10 +1,8 @@
 
 <section ui-view="perfil" class="perfil">
   <section class="user">
-    <section class="user-img"><img ng-click="coreEvents.toggle_menu();" holder="holder.js/80x80?auto=yes&amp;theme=vine&amp;text=BRU" class="img-responsive"/></section>
-    <section class="icon-home"><a ui-sref="core.user.home.planTraining">
-        <ng-md-icon icon="home" style="fill:grey" size="60"></ng-md-icon></a></section>
-    <h3 class="user-name">Bruno</h3><span class="breadcrumb">
+    <section class="user-img"><img ng-click="coreEvents.toggle_menu();" holder="holder.js/80x80?auto=yes&amp;theme=vine&amp;text=BRU" class="img-responsive"/></section><a ui-sref="core.user.home.planTraining">
+      <h3 class="user-name">Bruno</h3></a><span class="breadcrumb">
       <ng-md-icon icon="place" style="fill:grey" size="20"></ng-md-icon><span ncy-breadcrumb-last="">&nbsp;{{getStatesChain}}</span></span>
   </section>
   <section ng-if="(coreEvents.menu || coreEvents.options)" ng-click="coreEvents.close_all();" class="close"></section>
