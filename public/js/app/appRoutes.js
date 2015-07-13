@@ -51,7 +51,7 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider,$
 	// });
 	
     ChartJsProvider.setOptions({
-      colours: ['#E57373', '#64B5F6'],
-       animation: false
+      colours: ['#2196F3', '#BBDEFB'],
+       // animation: false
     });	
 };

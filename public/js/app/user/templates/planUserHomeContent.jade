@@ -5,11 +5,15 @@ section.plan-wrap
 				section.plan-graf
 					// ng-md-icon(icon="track_changes" style="fill:grey"  size="150")
 					canvas#pie.chart.chart-pie(data='data',chart-options="options", labels='labels')
+					span.one 
+					span &nbsp;Dias Restantes 33%&nbsp;&nbsp;&nbsp;&nbsp;
+					span.two 
+					span &nbsp;Dias Decorridos 66%
 				section.plan-overview
 					section.plan-goal
 						h1 
-							// ng-md-icon(icon="gps_fixed" style="fill:grey"  size="25")
-							| Ganho de Peso
+							ng-md-icon(icon="gps_fixed" style="fill:grey"  size="25")
+							| &nbsp;Ganho de Peso
 					section.plan-time
 						section.card
 							ds-info

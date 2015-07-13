@@ -2,24 +2,48 @@
 	col(12/12,gutter:0)
 	.plan-dashboard
 		col(12/12,gutter:0)
-		margin-top 1em
+		margin-top .7em
 		+desktop()
-			margin-top 3em
+			margin-top 1em
 		md-card
-			// box-shadow none 
 			box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.098), 0px 1px 5px 0px rgba(0, 0, 0, 0.084);
+			border 1px solid palette('Grey','200')
 			md-card-content
-				padding-bottom 4px
-				border 1px solid palette('Grey','200')
+				+tablet()
+					padding-top 7px
+					padding-bottom 7px
 				.plan-graf
-					col(4/12,gutter:0)
+					col(4.5/12,gutter:0)
 					box-sizing border-box
 					text-align center
+					// box-shadow: 0px 1px 1px -2px rgba(0, 0, 0, 0.06), 0px 2px 2px 0px rgba(0, 0, 0, 0.068), 0px 1px 5px 0px rgba(0, 0, 0, 0.064);
+					padding 7px
+					span
+						font-size 65%
+						+hd()
+							font-size 85%
+						+below(800px)
+							display none
+						vertical-align middle
+					.one
+						background-color palette('Blue','100')
+						width 16 px
+						height 16 px
+						display inline-block
+						+below(800px)
+							display none
+					.two
+						background-color palette('Blue','500')
+						width 16 px
+						height 16 px
+						display inline-block
+						+below(800px)
+							display none
 				.plan-overview
-					margin-top 1%
+					margin-top 2%
 					+desktop()
-						margin-top 2%
-					col(8/12,gutter:0)
+						margin-top 3%
+					col(7.5/12,gutter:0)
 					text-align center
 					.plan-goal
 						col(8/8,gutter:0)
@@ -29,8 +53,6 @@
 						col(8/8,gutter:0)
 	.plan-cards
 		col(12/12,gutter:0)
-		+desktop()
-			margin-top 1em
 		md-card
 			position relative
 			border 1px solid palette('Grey','200')
@@ -51,7 +73,7 @@
 				padding-top 4px
 				min-height 26vh 
 				+desktop()
-					min-height 35vh 
+					min-height 33vh 
 				.md-subheader
 					.md-subheader-inner
 						 padding 2px 0px 2px 3px
@@ -73,8 +95,6 @@
 					height:22vh
 					+tablet(orientation: portrait)
 						height:27vh
-					+desktop()
-						height:30vh
 					text-align center
 					ds-training
 						span(1/6,.6/5,cycle:3,uncycle:1,gutter:0)
