@@ -4,7 +4,7 @@
 var gulp    = require('gulp');
 
 var plugins = require('gulp-load-plugins')({
-    pattern: ['gulp-*','browser-sync', 'browserify', 'vinyl-source-stream','css-sprite','brfs']
+    pattern: ['gulp-*','browser-sync', 'browserify','watchify', 'vinyl-source-stream','css-sprite','brfs']
 });
 
 function getTask(task) {
@@ -25,8 +25,7 @@ gulp.task('watch', function(){
 	gulp.watch(['public/css/stylus/**/*.styl'],['stylus']);
 	gulp.watch(['public/js/app/**/*.jade'],['jade']);
 	gulp.watch(['public/images/files/**/*.png'],['sprite']);
-	gulp.watch(['public/js/app/**/*.js','public/js/app/**/*.html'],['js-watch']);
-	// gulp.watch(['public/js/*.js',['js-watch']]);
+	// gulp.watch(['public/js/app/**/*.js','public/js/app/**/*.html'],['js-watch']);
 });
 
 // Task development
