@@ -1,23 +1,26 @@
 .training
 	col(8/8,gutter:0)
-	+desktop()
+	+hd()
 		col(7/8,gutter:0)
 		shift(.5/8,gutter:0)
-	+hd()
-		col(6/8,gutter:0)
-		shift(1/8,gutter:0)
 	.trainings
 		col(2/8,gutter:0)
 		box-sizing border-box
+		padding-left .5em
 		p
 			font-size 90%
 			margin 0
-			color #aaaaaa
-			font-weight bold
+			color palette('Grey','600')
 			margin-top 2.5em
 			// margin-left .5em
 		md-radio-button
-			padding-left .5em
+			padding-left 1.5em
+			span
+				color black
+				font-size 125%
+			.md-off
+				border-color black
+				border-color palette('Grey','400')
 	.training-wrap
 		col(5.9/8,gutter:0)
 		position relative

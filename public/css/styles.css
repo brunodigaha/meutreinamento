@@ -11273,6 +11273,13 @@ span.icon-notification:before {
     min-height: 90vh;
   }
 }
+@media only screen and (min-width: 400px) and (max-width: 1050px) {
+  .content-main .content md-content.md-default-theme md-card.grid md-card-content,
+  .content-main-open .content md-content.md-default-theme md-card.grid md-card-content {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+}
 @media only screen and (min-width: 1050px) {
   .content-main .content,
   .content-main-open .content {
@@ -12123,19 +12130,19 @@ a:visited {
 .perfil .menu .menu-content .plan-header .title-plan p {
   box-sizing: border-box;
   margin: 0;
-  color: #2196f3;
+  color: #757575;
   cursor: pointer;
   margin-top: 0.8em;
   margin-left: 0.5em;
 }
 .perfil .menu .menu-content .plan-header .title-plan ng-md-icon svg {
-  width: 8%;
-  height: 8%;
+  width: 7%;
+  height: 7%;
 }
 @media only screen and (min-width: 1050px) {
   .perfil .menu .menu-content .plan-header .title-plan ng-md-icon svg {
-    width: 7%;
-    height: 7%;
+    width: 6%;
+    height: 6%;
   }
 }
 .perfil .menu .menu-content .plan-header .edit-plan {
@@ -12312,7 +12319,7 @@ a:visited {
   margin-left: 0%;
   margin-right: 0%;
   position: relative;
-  left: 43.333333333333336%;
+  left: 41.333333333333336%;
   position: fixed;
   box-sizing: border-box;
   padding-left: 0.3em;
@@ -12331,7 +12338,7 @@ a:visited {
   margin-right: 0%;
 }
 .actions button.md-button {
-  width: 37%;
+  width: 38%;
   min-width: 15px;
   min-height: 33px;
   line-height: 33px;
@@ -13345,6 +13352,9 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
 .plan-wrap .plan-dashboard md-card md-card-content .plan-overview .plan-goal h1 {
   margin: 0;
 }
+.plan-wrap .plan-dashboard md-card md-card-content .plan-overview .plan-goal span {
+  font-size: 85%;
+}
 .plan-wrap .plan-dashboard md-card md-card-content .plan-overview .plan-time {
   *zoom: 1;
   float: left;
@@ -13397,7 +13407,7 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
 }
 .plan-wrap .plan-cards md-card div.md-actions button.md-button {
   margin: 0;
-  width: 35%;
+  width: 37%;
   min-width: 15px;
   min-height: 33px;
   line-height: 33px;
@@ -13418,6 +13428,7 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
 .plan-wrap .plan-cards md-card md-card-content h4 {
   text-align: center;
   margin: 0;
+  color: #757575;
 }
 .plan-wrap .plan-cards md-card md-card-content h4 ng-md-icon svg {
   width: 6%;
@@ -13593,7 +13604,7 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
 .training:last-child {
   margin-right: 0%;
 }
-@media only screen and (min-width: 1050px) {
+@media only screen and (min-width: 1800px) {
   .training {
     *zoom: 1;
     float: left;
@@ -13617,30 +13628,6 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
     margin-right: 0%;
   }
 }
-@media only screen and (min-width: 1800px) {
-  .training {
-    *zoom: 1;
-    float: left;
-    clear: none;
-    text-align: inherit;
-    width: 75%;
-    margin-left: 0%;
-    margin-right: 0%;
-    position: relative;
-    left: 12.5%;
-  }
-  .training:before,
-  .training:after {
-    content: '';
-    display: table;
-  }
-  .training:after {
-    clear: both;
-  }
-  .training:last-child {
-    margin-right: 0%;
-  }
-}
 .training .trainings {
   *zoom: 1;
   float: left;
@@ -13650,6 +13637,7 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   margin-left: 0%;
   margin-right: 0%;
   box-sizing: border-box;
+  padding-left: 0.5em;
 }
 .training .trainings:before,
 .training .trainings:after {
@@ -13665,12 +13653,19 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
 .training .trainings p {
   font-size: 90%;
   margin: 0;
-  color: #aaa;
-  font-weight: bold;
+  color: #757575;
   margin-top: 2.5em;
 }
 .training .trainings md-radio-button {
-  padding-left: 0.5em;
+  padding-left: 1.5em;
+}
+.training .trainings md-radio-button span {
+  color: #000;
+  font-size: 125%;
+}
+.training .trainings md-radio-button .md-off {
+  border-color: #000;
+  border-color: #bdbdbd;
 }
 .training .training-wrap {
   *zoom: 1;
@@ -14690,7 +14685,7 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   opacity: 0.9;
 }
 .addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul .sv-candidate {
-  opacity: 0.4;
+  opacity: 0.5;
 }
 .addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li.ng-leave {
   -webkit-transition: all linear 0.3s;

@@ -31,7 +31,7 @@ module.exports = {
 		planTraining : {
 			authenticate: true,
 			ncyBreadcrumb: {
-				label: 'Plano Treino'
+				label: 'Painel Inicial'
 			},
 			views: {
 				'home-content@core.user.home': {
