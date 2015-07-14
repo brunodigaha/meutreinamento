@@ -22,6 +22,9 @@ module.exports = {
 					controller:'listTrainingController',
 					template: fs.readFileSync(__dirname + '/templates/listTrainingContent.html')
 				},
+				'actions@core': {
+					template: fs.readFileSync(__dirname + '/templates/listTrainingActions.html')
+				},
 			}
 		},
 		training : {

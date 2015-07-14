@@ -11755,7 +11755,6 @@ a:visited {
   margin-right: 0%;
   border-bottom: 1px solid #bdbdbd;
   color: #616161;
-  font-weight: bold;
   position: absolute;
   left: 3.5em;
   top: -1.2em;
@@ -12323,7 +12322,7 @@ a:visited {
   position: fixed;
   box-sizing: border-box;
   padding-left: 0.3em;
-  padding-top: 1.3em;
+  padding-top: 1.2em;
   text-align: center;
 }
 .actions:before,
@@ -12336,6 +12335,15 @@ a:visited {
 }
 .actions:last-child {
   margin-right: 0%;
+}
+.actions p {
+  font-size: 200%;
+  margin: 0;
+}
+@media only screen and (min-width: 1050px) {
+  .actions p {
+    font-size: 210%;
+  }
 }
 .actions button.md-button {
   width: 38%;

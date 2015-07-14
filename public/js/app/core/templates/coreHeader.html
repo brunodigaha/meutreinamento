@@ -61,8 +61,11 @@
     </section>
   </section>
 </section>
-<section class="actions"><a ui-sref-active="sdd" ui-sref="core.user.addtraining">
-    <md-button class="md-raised md-primary">Inserir Treino</md-button></a></section>
+<section ui-view="actions" class="actions">
+  <!-- a(ui-sref-active="sdd" ui-sref="core.user.addtraining")-->
+  <!-- 	md-button(class="md-raised md-primary") Inserir Treino-->
+  <p>Fit Academia</p>
+</section>
 <section ui-view="user-admin" class="user-admin">
   <section class="notification-admin">
     <ng-md-icon icon="notifications_none" style="fill:grey" size="40"></ng-md-icon>

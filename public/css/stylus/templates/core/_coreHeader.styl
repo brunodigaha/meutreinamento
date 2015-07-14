@@ -14,7 +14,6 @@
 			col(1/5,gutter:0)
 			border-bottom 1px solid palette('Grey', '400')
 			color palette('Grey', '700')
-			font-weight bold
 			position absolute
 			left 3.5em
 			top -1.2em
@@ -201,8 +200,13 @@
 	position fixed
 	box-sizing border-box
 	padding-left .3em
-	padding-top 1.3em
+	padding-top 1.2em
 	text-align center
+	p
+		font-size 200%
+		+desktop()
+			font-size 210%
+		margin 0
 	button.md-button
 		width 38%
 		min-width 15px

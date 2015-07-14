@@ -57,9 +57,10 @@ section.perfil(ui-view="perfil")
 					ng-md-icon(icon="play_arrow" style="fill:white"  size="25")
 					| &nbsp;&nbsp;Treinar
 
-section.actions
-	a(ui-sref-active="sdd" ui-sref="core.user.addtraining")
-		md-button(class="md-raised md-primary") Inserir Treino
+section.actions(ui-view="actions")
+	// a(ui-sref-active="sdd" ui-sref="core.user.addtraining")
+	// 	md-button(class="md-raised md-primary") Inserir Treino
+	p Fit Academia
 
 section.user-admin(ui-view="user-admin")
 	section.notification-admin
