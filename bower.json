@@ -25,7 +25,7 @@
     "angular-cookies": "~1.4.1",
     "restangular": "~1.5.1",
     "angular-holderjs": "~1.1.0",
-    "angular-material": "master",
+    "angular-material": "0.10.1-rc1",
     "angular-messages": "~1.4.1",
     "firebase": "~2.2.4",
     "angularfire": "~1.1.1",
@@ -37,8 +37,5 @@
     "angular-sortable-view": "~0.0.13",
     "angular-scroll-glue": "~2.0.6",
     "angular-chart.js": "~0.7.2"
-  },
-  "resolutions": {
-    "angular-material": "master"
   }
 }
