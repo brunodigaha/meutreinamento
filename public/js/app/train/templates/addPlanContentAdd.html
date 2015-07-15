@@ -1,4 +1,43 @@
 
 <section class="add-plan-content">
-  <p>Plano de treinamento </p>
+  <md-card>
+    <md-card-content>
+      <section class="slider-wrap">
+        <section class="slider-content">
+          <div layout="row">
+            <div flex="20" layout="" layout-align="center center"><span class="md-body-1">Duração&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+            <md-slider id="blue-slider" flex="" ng-model="duracao" min="1" max="12" aria-label="blue" class="md-primary"></md-slider>
+            <div flex="10" layout="" layout-align="center center">
+              <input type="number" ng-model="duracao" aria-label="blue" aria-controls="blue-slider"/>
+            </div>
+          </div>
+        </section>
+        <section class="slider-title"><span>Semanas</span></section>
+        <section class="slider-content">
+          <div layout="row">
+            <div flex="20" layout="" layout-align="center center"><span class="md-body-1">Frequência</span></div>
+            <md-slider id="blue-slider" flex="" ng-model="frequencia" min="1" max="7" aria-label="blue" class="md-primary"></md-slider>
+            <div flex="10" layout="" layout-align="center center">
+              <input type="number" ng-model="frequencia" aria-label="blue" aria-controls="blue-slider"/>
+            </div>
+          </div>
+        </section>
+        <section class="slider-title"><span>Vezes por Semana</span></section>
+      </section>
+      <section class="add-inputs">
+        <md-input-container>
+          <label>Data de Inicio</label>
+          <input type="date" ng-model="searchModel.nascimento"/>
+        </md-input-container>
+        <md-input-container flex="">
+          <label>Objetivo</label>
+          <input ng-model="searchModel.nome"/>
+        </md-input-container>
+        <md-input-container>
+          <label>Anotações</label>
+          <textarea ng-model="user.biography" columns="1" md-maxlength="150"></textarea>
+        </md-input-container>
+      </section>
+    </md-card-content>
+  </md-card>
 </section>

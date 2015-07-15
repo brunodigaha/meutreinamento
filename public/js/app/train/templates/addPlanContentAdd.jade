@@ -1,2 +1,33 @@
 section.add-plan-content
-	p Plano de treinamento 
+	md-card
+		md-card-content
+			section.slider-wrap
+				section.slider-content
+					div(layout="row")
+						div(flex="20", layout="", layout-align="center center")
+							span.md-body-1 Duração&nbsp;&nbsp;&nbsp;&nbsp;
+						md-slider#blue-slider.md-primary(flex="", ng-model="duracao", min="1", max="12", aria-label="blue")
+						div(flex="10", layout="", layout-align="center center")
+							input(type="number", ng-model="duracao", aria-label="blue", aria-controls="blue-slider")
+				section.slider-title
+					span Semanas
+				section.slider-content
+					div(layout="row")
+						div(flex="20", layout="", layout-align="center center")
+							span.md-body-1 Frequência
+						md-slider#blue-slider.md-primary(flex="", ng-model="frequencia", min="1", max="7", aria-label="blue")
+						div(flex="10", layout="", layout-align="center center")
+							input(type="number", ng-model="frequencia", aria-label="blue", aria-controls="blue-slider")
+				section.slider-title
+					span Vezes por Semana
+			section.add-inputs
+				md-input-container
+					label Data de Inicio
+					input(type="date", ng-model="searchModel.nascimento")
+
+				md-input-container(flex='')
+					label Objetivo
+					input(ng-model="searchModel.nome")
+				md-input-container
+					label Anotações
+					textarea(ng-model="user.biography", columns="1", md-maxlength="150")

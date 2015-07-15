@@ -1,4 +1,34 @@
 .add-plan-content
 	col(12/12,gutter:0)
-	p
-		color red
+	box-sizing border-box
+	margin-top 4em
+	+desktop()
+		padding-left 2em
+		padding-right 2em
+	+hd()
+		padding-left 8em
+		padding-right 8em
+	md-card
+		min-height 30vh !important
+		.slider-wrap
+			col(12/12,gutter:0)
+			.slider-content
+				col(9/12,gutter:0)
+				span.md-body-1
+					font-size 122%
+				input[type="number"]
+					width 3.3em
+					margin-left 8px
+					text-align right
+			.slider-title
+				col(3/12,gutter:0)
+				box-sizing border-box
+				padding-left .5em
+				text-align left
+				span
+					line-height 50px
+					vertical-align middle
+		.add-inputs
+			col(11/12,.1/12,gutter:0)
+			box-sizing border-box
+

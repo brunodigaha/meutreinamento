@@ -9,7 +9,8 @@ md-dialog(aria-label="Mango (Fruit)")
 		md-dialog-content
 			section.content-wrap
 				section.action(layout="row")
-					md-button(class="md-raised md-primary") Novo Plano
+					a(ui-sref-active="sdd" ui-sref="core.user.edit.addPlan")
+						md-button(class="md-raised md-primary") Inserir Plano
 				section.content
 					div(layout="row")
 						div(flex="20", layout="", layout-align="center center")
