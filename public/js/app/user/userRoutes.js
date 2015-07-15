@@ -35,7 +35,7 @@ module.exports = {
 			},
 			views: {
 				'home-content@core.user.home': {
-					controller:'planController',
+					controller:'addPlanController',
 					template: fs.readFileSync(__dirname + '/templates/planUserHomeContent.html')  
 				}
 			},

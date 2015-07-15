@@ -76971,7 +76971,10 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider,$
 				{url:'/{trainId:int}'},require('./train/trainRoutes.js').train.training))
 
 		.state('core.user.edit.addtraining',angular.extend(
-				{url:'/training/add'},require('./train/trainRoutes.js').train.addtraining))
+				{url:'/training/add-training'},require('./train/trainRoutes.js').train.addtraining))
+
+		.state('core.user.edit.addPlan',angular.extend(
+				{url:'/add-plan'},require('./train/trainRoutes.js').train.addPlan))
 
 		.state('core.user.trainingHistory',angular.extend(
 				{url:'/training-history'},require('./train/trainRoutes.js').train.trainingHistory))
@@ -77461,6 +77464,11 @@ module.exports = function($scope, coreEventsService,$state,$stateParams,$mdDialo
 	};
 };
 
+},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/addPlanController.js":[function(require,module,exports){
+module.exports = function($scope) {
+
+};
+
 },{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/addTrainingController.js":[function(require,module,exports){
 (function (Buffer){
 
@@ -77876,10 +77884,7 @@ module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$sta
 
 }).call(this,require("buffer").Buffer)
 },{"buffer":"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/index.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/collectionTrainingController.js":[function(require,module,exports){
-module.exports = function($scope) {
-
-};
-
+arguments[4]["/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/addPlanController.js"][0].apply(exports,arguments)
 },{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/historyTrainingController.js":[function(require,module,exports){
 module.exports = function ($scope) {
 
@@ -77910,11 +77915,12 @@ module.exports = angular.module('train',[])
 		.controller('listTrainingController', require('./controllers/listTrainingController.js'))
 		.controller('trainingTrainingController', require('./controllers/trainingTrainingController.js'))
 		.controller('addTrainingController', require('./controllers/addTrainingController.js'))
+		.controller('addPlanController', require('./controllers/addPlanController.js'))
 		.controller('historyTrainingController', require('./controllers/historyTrainingController.js'))
 		.controller('collectionTrainingController', require('./controllers/collectionTrainingController.js'))
 		.controller('ImportDialogController', require('./controllers/ImportDialogController.js'));
 
-},{"./controllers/ImportDialogController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/ImportDialogController.js","./controllers/addTrainingController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/addTrainingController.js","./controllers/collectionTrainingController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/collectionTrainingController.js","./controllers/historyTrainingController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/historyTrainingController.js","./controllers/listTrainingController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/listTrainingController.js","./controllers/trainingTrainingController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/trainingTrainingController.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/trainRoutes.js":[function(require,module,exports){
+},{"./controllers/ImportDialogController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/ImportDialogController.js","./controllers/addPlanController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/addPlanController.js","./controllers/addTrainingController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/addTrainingController.js","./controllers/collectionTrainingController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/collectionTrainingController.js","./controllers/historyTrainingController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/historyTrainingController.js","./controllers/listTrainingController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/listTrainingController.js","./controllers/trainingTrainingController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/trainingTrainingController.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/trainRoutes.js":[function(require,module,exports){
 (function (Buffer){
 
 module.exports = {
@@ -77972,6 +77978,21 @@ module.exports = {
 				}
 			}
 		},
+		addPlan : {
+			authenticate: true,
+			ncyBreadcrumb: {
+				label: 'Inserir Plano'
+			},
+			views: {
+				'actions-add@core.user.edit': {
+					template: Buffer("PGEgdWktc3JlZi1hY3RpdmU9InNkZCIgdWktc3JlZj0iY29yZS51c2VyLmxpc3RUcmFpbmluZyI+CiAgPG1kLWJ1dHRvbj5DYW5jZWxhcjwvbWQtYnV0dG9uPjwvYT4KPG1kLWJ1dHRvbiBpZD0iYWN0aW9uIiBjbGFzcz0ibWQtcmFpc2VkIG1kLXByaW1hcnkiPlNhbHZhciBQbGFubzwvbWQtYnV0dG9uPg==","base64")
+				},
+				'content-add@core.user.edit': {
+					controller: 'addPlanController',  
+					template: Buffer("CjxzZWN0aW9uIGNsYXNzPSJhZGQtcGxhbi1jb250ZW50Ij4KICA8cD5QbGFubyBkZSB0cmVpbmFtZW50byA8L3A+Cjwvc2VjdGlvbj4=","base64")
+				}
+			}
+		},
 		trainingHistory : {
 			authenticate: true,
 			ncyBreadcrumb: {
@@ -78012,7 +78033,7 @@ $scope.options =  {
 };
 
 },{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/user/controllers/scheduleController.js":[function(require,module,exports){
-arguments[4]["/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/collectionTrainingController.js"][0].apply(exports,arguments)
+arguments[4]["/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/addPlanController.js"][0].apply(exports,arguments)
 },{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/user/index.js":[function(require,module,exports){
 module.exports = angular.module('user',[])
 		.controller('planController', require('./controllers/planController.js'))
@@ -78059,7 +78080,7 @@ module.exports = {
 			},
 			views: {
 				'home-content@core.user.home': {
-					controller:'planController',
+					controller:'addPlanController',
 					template: Buffer("CjxzZWN0aW9uIGNsYXNzPSJwbGFuLXdyYXAiPgogIDxzZWN0aW9uIGNsYXNzPSJwbGFuLWRhc2hib2FyZCI+CiAgICA8bWQtY2FyZD4KICAgICAgPG1kLWNhcmQtY29udGVudD4KICAgICAgICA8c2VjdGlvbiBjbGFzcz0icGxhbi1ncmFmIj4KICAgICAgICAgIDwhLS0gbmctbWQtaWNvbihpY29uPSJ0cmFja19jaGFuZ2VzIiBzdHlsZT0iZmlsbDpncmV5IiAgc2l6ZT0iMTUwIiktLT4KICAgICAgICAgIDxjYW52YXMgaWQ9InBpZSIgZGF0YT0iZGF0YSIgY2hhcnQtb3B0aW9ucz0ib3B0aW9ucyIgbGFiZWxzPSJsYWJlbHMiIGNsYXNzPSJjaGFydCBjaGFydC1waWUiPjwvY2FudmFzPjxzcGFuIGNsYXNzPSJvbmUiPiA8L3NwYW4+PHNwYW4+Jm5ic3A7RGlhcyBSZXN0YW50ZXMgMzMlJm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7PC9zcGFuPjxzcGFuIGNsYXNzPSJ0d28iPiA8L3NwYW4+PHNwYW4+Jm5ic3A7RGlhcyBEZWNvcnJpZG9zIDY2JTwvc3Bhbj4KICAgICAgICA8L3NlY3Rpb24+CiAgICAgICAgPHNlY3Rpb24gY2xhc3M9InBsYW4tb3ZlcnZpZXciPgogICAgICAgICAgPHNlY3Rpb24gY2xhc3M9InBsYW4tZ29hbCI+CiAgICAgICAgICAgIDxoMT4gCiAgICAgICAgICAgICAgPG5nLW1kLWljb24gaWNvbj0iZ3BzX2ZpeGVkIiBzdHlsZT0iZmlsbDpncmV5IiBzaXplPSIyNSI+PC9uZy1tZC1pY29uPiZuYnNwO0dhbmhvIGRlIFBlc28KICAgICAgICAgICAgPC9oMT48c3Bhbj4yMS8wNC8xNSBhdMOpIDE0LzA1LzE1PC9zcGFuPgogICAgICAgICAgPC9zZWN0aW9uPgogICAgICAgICAgPHNlY3Rpb24gY2xhc3M9InBsYW4tdGltZSI+CiAgICAgICAgICAgIDxzZWN0aW9uIGNsYXNzPSJjYXJkIj4KICAgICAgICAgICAgICA8ZHMtaW5mbz4KICAgICAgICAgICAgICAgIDxzZWN0aW9uIGNsYXNzPSJkcy10aXRsZSI+PHNwYW4+RHVyYcOnw6NvPC9zcGFuPjwvc2VjdGlvbj4KICAgICAgICAgICAgICAgIDxzZWN0aW9uIGNsYXNzPSJkcy1jb250ZW50Ij48c3Bhbj41IHNlbWFuYXM8L3NwYW4+PC9zZWN0aW9uPgogICAgICAgICAgICAgIDwvZHMtaW5mbz4KICAgICAgICAgICAgICA8ZHMtaW5mbz4KICAgICAgICAgICAgICAgIDxzZWN0aW9uIGNsYXNzPSJkcy10aXRsZSI+PHNwYW4+RnJlcXXDqm5jaWEgU2VtYW5hbDwvc3Bhbj48L3NlY3Rpb24+CiAgICAgICAgICAgICAgICA8c2VjdGlvbiBjbGFzcz0iZHMtY29udGVudCI+PHNwYW4+NXg8L3NwYW4+PC9zZWN0aW9uPgogICAgICAgICAgICAgIDwvZHMtaW5mbz4KICAgICAgICAgICAgPC9zZWN0aW9uPgogICAgICAgICAgPC9zZWN0aW9uPgogICAgICAgIDwvc2VjdGlvbj4KICAgICAgPC9tZC1jYXJkLWNvbnRlbnQ+CiAgICA8L21kLWNhcmQ+CiAgPC9zZWN0aW9uPgogIDxzZWN0aW9uIGNsYXNzPSJwbGFuLWNhcmRzIj4KICAgIDxzZWN0aW9uIGNsYXNzPSJwbGFuLXRyYWluaW5ncyI+CiAgICAgIDxtZC1jYXJkPgogICAgICAgIDxtZC1jYXJkLWNvbnRlbnQ+PGEgdWktc3JlZj0iY29yZS51c2VyLmxpc3RUcmFpbmluZyI+CiAgICAgICAgICAgIDxoND5UcmVpbm9zCiAgICAgICAgICAgICAgPG5nLW1kLWljb24gaWNvbj0ibGF1bmNoIiBzdHlsZT0iZmlsbDpzaWx2ZXIiIHNpemU9IjIzIj48L25nLW1kLWljb24+CiAgICAgICAgICAgIDwvaDQ+PC9hPgogICAgICAgICAgPG1kLWNvbnRlbnQ+CiAgICAgICAgICAgIDxtZC1zdWJoZWFkZXI+PC9tZC1zdWJoZWFkZXI+CiAgICAgICAgICAgIDxkcy10cmFpbmluZyBuYW1lPSJBIiBkaXNhYmxlPSJ0cnVlIj48L2RzLXRyYWluaW5nPgogICAgICAgICAgICA8ZHMtdHJhaW5pbmcgbmFtZT0iQiI+PC9kcy10cmFpbmluZz4KICAgICAgICAgICAgPGRzLXRyYWluaW5nIG5hbWU9IkMiPjwvZHMtdHJhaW5pbmc+CiAgICAgICAgICAgIDxkcy10cmFpbmluZyBuYW1lPSJEIj48L2RzLXRyYWluaW5nPgogICAgICAgICAgICA8ZHMtdHJhaW5pbmcgbmFtZT0iRSI+PC9kcy10cmFpbmluZz4KICAgICAgICAgICAgPGRzLXRyYWluaW5nIG5hbWU9IkYiPjwvZHMtdHJhaW5pbmc+CiAgICAgICAgICAgIDxkcy10cmFpbmluZyBuYW1lPSJHIj48L2RzLXRyYWluaW5nPgogICAgICAgICAgICA8ZHMtdHJhaW5pbmcgbmFtZT0iSCI+PC9kcy10cmFpbmluZz4KICAgICAgICAgIDwvbWQtY29udGVudD4KICAgICAgICA8L21kLWNhcmQtY29udGVudD4KICAgICAgICA8ZGl2IGxheW91dD0icm93IiBsYXlvdXQtYWxpZ249ImVuZCBjZW50ZXIiIGNsYXNzPSJtZC1hY3Rpb25zIj4KICAgICAgICAgIDxtZC1idXR0b24gY2xhc3M9Im1kLXJhaXNlZCBtZC1wcmltYXJ5Ij48YSB1aS1zcmVmLWFjdGl2ZT0ic2RkIiB1aS1zcmVmPSJjb3JlLnVzZXIuZWRpdC5hZGR0cmFpbmluZyI+SW5zZXJpciBUcmVpbm88L2E+PC9tZC1idXR0b24+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvbWQtY2FyZD4KICAgIDwvc2VjdGlvbj4KICAgIDxzZWN0aW9uIGNsYXNzPSJwbGFuLWhpc3RvcmljYWwiPgogICAgICA8bWQtY2FyZD4KICAgICAgICA8bWQtY2FyZC1jb250ZW50PjxhIHVpLXNyZWY9ImNvcmUudXNlci50cmFpbmluZ0hpc3RvcnkiPgogICAgICAgICAgICA8aDQ+SGlzdMOzcmljbyBUcmVpbmFtZW50b3MKICAgICAgICAgICAgICA8bmctbWQtaWNvbiBpY29uPSJsYXVuY2giIHN0eWxlPSJmaWxsOnNpbHZlciIgc2l6ZT0iMjQiPjwvbmctbWQtaWNvbj4KICAgICAgICAgICAgPC9oND48L2E+CiAgICAgICAgICA8bWQtY29udGVudD4KICAgICAgICAgICAgPG1kLXN1YmhlYWRlcj48L21kLXN1YmhlYWRlcj4KICAgICAgICAgICAgPHA+Y29udGV1ZG88L3A+CiAgICAgICAgICA8L21kLWNvbnRlbnQ+CiAgICAgICAgPC9tZC1jYXJkLWNvbnRlbnQ+CiAgICAgICAgPGRpdiBsYXlvdXQ9InJvdyIgbGF5b3V0LWFsaWduPSJlbmQgY2VudGVyIiBjbGFzcz0ibWQtYWN0aW9ucyI+CiAgICAgICAgICA8bWQtYnV0dG9uIGNsYXNzPSJtZC1yYWlzZWQgbWQtcHJpbWFyeSI+PGE+VHJlaW5hcjwvYT48L21kLWJ1dHRvbj4KICAgICAgICA8L2Rpdj4KICAgICAgPC9tZC1jYXJkPgogICAgPC9zZWN0aW9uPgogIDwvc2VjdGlvbj4KPC9zZWN0aW9uPg==","base64")  
 				}
 			},

@@ -54,6 +54,21 @@ module.exports = {
 				}
 			}
 		},
+		addPlan : {
+			authenticate: true,
+			ncyBreadcrumb: {
+				label: 'Inserir Plano'
+			},
+			views: {
+				'actions-add@core.user.edit': {
+					template: fs.readFileSync(__dirname + '/templates/addPlanActionsAdd.html')
+				},
+				'content-add@core.user.edit': {
+					controller: 'addPlanController',  
+					template: fs.readFileSync(__dirname + '/templates/addPlanContentAdd.html')
+				}
+			}
+		},
 		trainingHistory : {
 			authenticate: true,
 			ncyBreadcrumb: {

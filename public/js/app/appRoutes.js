@@ -29,7 +29,10 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider,$
 				{url:'/{trainId:int}'},require('./train/trainRoutes.js').train.training))
 
 		.state('core.user.edit.addtraining',angular.extend(
-				{url:'/training/add'},require('./train/trainRoutes.js').train.addtraining))
+				{url:'/training/add-training'},require('./train/trainRoutes.js').train.addtraining))
+
+		.state('core.user.edit.addPlan',angular.extend(
+				{url:'/add-plan'},require('./train/trainRoutes.js').train.addPlan))
 
 		.state('core.user.trainingHistory',angular.extend(
 				{url:'/training-history'},require('./train/trainRoutes.js').train.trainingHistory))
