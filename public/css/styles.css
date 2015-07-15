@@ -13104,6 +13104,211 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   margin: 0;
   padding-left: 1em;
 }
+.edit-wrap-content {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  box-sizing: border-box;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin-top: 4em;
+}
+.edit-wrap-content:before,
+.edit-wrap-content:after {
+  content: '';
+  display: table;
+}
+.edit-wrap-content:after {
+  clear: both;
+}
+.edit-wrap-content:last-child {
+  margin-right: 0%;
+}
+@media only screen and (min-width: 1050px) {
+  .edit-wrap-content {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .edit-wrap-content {
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+}
+.edit-wrap-content .user-add {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.edit-wrap-content .user-add:before,
+.edit-wrap-content .user-add:after {
+  content: '';
+  display: table;
+}
+.edit-wrap-content .user-add:after {
+  clear: both;
+}
+.edit-wrap-content .user-add:last-child {
+  margin-right: 0%;
+}
+.edit-wrap-content .user-add .menu-add {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  z-index: 3;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3.9em;
+  border-bottom: 1px solid #e0e0e0;
+}
+.edit-wrap-content .user-add .menu-add:before,
+.edit-wrap-content .user-add .menu-add:after {
+  content: '';
+  display: table;
+}
+.edit-wrap-content .user-add .menu-add:after {
+  clear: both;
+}
+.edit-wrap-content .user-add .menu-add:last-child {
+  margin-right: 0%;
+}
+.edit-wrap-content .user-add .menu-add .user-img-add {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 8%;
+  margin-left: 0%;
+  margin-right: 0%;
+  position: absolute;
+  left: 0.8em;
+  bottom: 0;
+}
+.edit-wrap-content .user-add .menu-add .user-img-add:before,
+.edit-wrap-content .user-add .menu-add .user-img-add:after {
+  content: '';
+  display: table;
+}
+.edit-wrap-content .user-add .menu-add .user-img-add:after {
+  clear: both;
+}
+.edit-wrap-content .user-add .menu-add .user-img-add:last-child {
+  margin-right: 0%;
+}
+.edit-wrap-content .user-add .menu-add .user-name-add {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 20%;
+  margin-left: 0%;
+  margin-right: 0%;
+  border-bottom: 1px solid #bdbdbd;
+  position: absolute;
+  left: 3.7em;
+  bottom: 0.9em;
+  font-size: 140%;
+  line-height: 35px;
+  color: #616161;
+  text-align: left;
+  font-weight: bold;
+}
+.edit-wrap-content .user-add .menu-add .user-name-add:before,
+.edit-wrap-content .user-add .menu-add .user-name-add:after {
+  content: '';
+  display: table;
+}
+.edit-wrap-content .user-add .menu-add .user-name-add:after {
+  clear: both;
+}
+.edit-wrap-content .user-add .menu-add .user-name-add:last-child {
+  margin-right: 0%;
+}
+.edit-wrap-content .user-add .menu-add .breadcrumb-add {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 20%;
+  margin-left: 0%;
+  margin-right: 0%;
+  position: absolute;
+  left: 5.5em;
+  bottom: -0.1em;
+  text-align: right;
+  color: #616161;
+  font-size: 97%;
+}
+.edit-wrap-content .user-add .menu-add .breadcrumb-add:before,
+.edit-wrap-content .user-add .menu-add .breadcrumb-add:after {
+  content: '';
+  display: table;
+}
+.edit-wrap-content .user-add .menu-add .breadcrumb-add:after {
+  clear: both;
+}
+.edit-wrap-content .user-add .menu-add .breadcrumb-add:last-child {
+  margin-right: 0%;
+}
+.edit-wrap-content .user-add .menu-add .actions-add {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 40%;
+  margin-left: 0%;
+  margin-right: 0%;
+  position: absolute;
+  text-align: right;
+  right: 5.1em;
+  bottom: 1.1em;
+}
+.edit-wrap-content .user-add .menu-add .actions-add:before,
+.edit-wrap-content .user-add .menu-add .actions-add:after {
+  content: '';
+  display: table;
+}
+.edit-wrap-content .user-add .menu-add .actions-add:after {
+  clear: both;
+}
+.edit-wrap-content .user-add .menu-add .actions-add:last-child {
+  margin-right: 0%;
+}
+.edit-wrap-content .user-add .menu-add .actions-add button.md-button {
+  width: 35%;
+  min-width: 15px;
+  min-height: 30px;
+  line-height: 30px;
+  font-size: 90%;
+  margin: 0;
+}
+.edit-wrap-content md-content {
+  background-color: transparent;
+}
+.edit-wrap-content md-content md-card {
+  min-height: 88vh;
+}
+@media only screen and (min-width: 1050px) {
+  .edit-wrap-content md-content md-card {
+    min-height: 90vh;
+  }
+}
 .schedule-wrap h1 {
   color: #00f;
 }
@@ -14020,212 +14225,7 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
 .train md-card .content-add md-content ul li .weight:last-child {
   margin-right: 0%;
 }
-.addtraining {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 100%;
-  margin-left: 0%;
-  margin-right: 0%;
-  box-sizing: border-box;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  margin-top: 4em;
-}
-.addtraining:before,
-.addtraining:after {
-  content: '';
-  display: table;
-}
-.addtraining:after {
-  clear: both;
-}
-.addtraining:last-child {
-  margin-right: 0%;
-}
-@media only screen and (min-width: 1050px) {
-  .addtraining {
-    padding-left: 8%;
-    padding-right: 8%;
-  }
-}
-@media only screen and (min-width: 1800px) {
-  .addtraining {
-    padding-left: 12%;
-    padding-right: 12%;
-  }
-}
-.addtraining .user-add {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 100%;
-  margin-left: 0%;
-  margin-right: 0%;
-}
-.addtraining .user-add:before,
-.addtraining .user-add:after {
-  content: '';
-  display: table;
-}
-.addtraining .user-add:after {
-  clear: both;
-}
-.addtraining .user-add:last-child {
-  margin-right: 0%;
-}
-.addtraining .user-add .menu-add {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 100%;
-  margin-left: 0%;
-  margin-right: 0%;
-  z-index: 3;
-  background: #fff;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 3.9em;
-  border-bottom: 1px solid #e0e0e0;
-}
-.addtraining .user-add .menu-add:before,
-.addtraining .user-add .menu-add:after {
-  content: '';
-  display: table;
-}
-.addtraining .user-add .menu-add:after {
-  clear: both;
-}
-.addtraining .user-add .menu-add:last-child {
-  margin-right: 0%;
-}
-.addtraining .user-add .menu-add .user-img-add {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 8%;
-  margin-left: 0%;
-  margin-right: 0%;
-  position: absolute;
-  left: 0.8em;
-  bottom: 0;
-}
-.addtraining .user-add .menu-add .user-img-add:before,
-.addtraining .user-add .menu-add .user-img-add:after {
-  content: '';
-  display: table;
-}
-.addtraining .user-add .menu-add .user-img-add:after {
-  clear: both;
-}
-.addtraining .user-add .menu-add .user-img-add:last-child {
-  margin-right: 0%;
-}
-.addtraining .user-add .menu-add .user-name-add {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 20%;
-  margin-left: 0%;
-  margin-right: 0%;
-  border-bottom: 1px solid #bdbdbd;
-  position: absolute;
-  left: 3.7em;
-  bottom: 0.9em;
-  font-size: 140%;
-  line-height: 35px;
-  color: #616161;
-  text-align: left;
-  font-weight: bold;
-}
-.addtraining .user-add .menu-add .user-name-add:before,
-.addtraining .user-add .menu-add .user-name-add:after {
-  content: '';
-  display: table;
-}
-.addtraining .user-add .menu-add .user-name-add:after {
-  clear: both;
-}
-.addtraining .user-add .menu-add .user-name-add:last-child {
-  margin-right: 0%;
-}
-.addtraining .user-add .menu-add .breadcrumb-add {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 20%;
-  margin-left: 0%;
-  margin-right: 0%;
-  position: absolute;
-  left: 5.5em;
-  bottom: -0.1em;
-  text-align: right;
-  color: #616161;
-  font-size: 97%;
-}
-.addtraining .user-add .menu-add .breadcrumb-add:before,
-.addtraining .user-add .menu-add .breadcrumb-add:after {
-  content: '';
-  display: table;
-}
-.addtraining .user-add .menu-add .breadcrumb-add:after {
-  clear: both;
-}
-.addtraining .user-add .menu-add .breadcrumb-add:last-child {
-  margin-right: 0%;
-}
-.addtraining .user-add .menu-add .actions-add {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 40%;
-  margin-left: 0%;
-  margin-right: 0%;
-  position: absolute;
-  text-align: right;
-  right: 5.1em;
-  bottom: 1.1em;
-}
-.addtraining .user-add .menu-add .actions-add:before,
-.addtraining .user-add .menu-add .actions-add:after {
-  content: '';
-  display: table;
-}
-.addtraining .user-add .menu-add .actions-add:after {
-  clear: both;
-}
-.addtraining .user-add .menu-add .actions-add:last-child {
-  margin-right: 0%;
-}
-.addtraining .user-add .menu-add .actions-add button.md-button {
-  width: 35%;
-  min-width: 15px;
-  min-height: 30px;
-  line-height: 30px;
-  font-size: 90%;
-  margin: 0;
-}
-.addtraining md-content {
-  background-color: transparent;
-}
-.addtraining md-content md-card {
-  min-height: 88vh;
-}
-@media only screen and (min-width: 1050px) {
-  .addtraining md-content md-card {
-    min-height: 90vh;
-  }
-}
-.addtraining md-content md-card md-card-content .tabs {
+md-card-content .tabs {
   *zoom: 1;
   float: left;
   clear: none;
@@ -14235,23 +14235,23 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   margin-right: 0%;
   min-height: 19vh;
 }
-.addtraining md-content md-card md-card-content .tabs:before,
-.addtraining md-content md-card md-card-content .tabs:after {
+md-card-content .tabs:before,
+md-card-content .tabs:after {
   content: '';
   display: table;
 }
-.addtraining md-content md-card md-card-content .tabs:after {
+md-card-content .tabs:after {
   clear: both;
 }
-.addtraining md-content md-card md-card-content .tabs:last-child {
+md-card-content .tabs:last-child {
   margin-right: 0%;
 }
-.addtraining md-content md-card md-card-content .tabs md-chips md-content .item-select,
-.addtraining md-content md-card md-card-content .tabs md-tab-content md-content .item-select {
+md-card-content .tabs md-chips md-content .item-select,
+md-card-content .tabs md-tab-content md-content .item-select {
   background-color: #eceff1;
 }
-.addtraining md-content md-card md-card-content .tabs md-chips md-content span,
-.addtraining md-content md-card md-card-content .tabs md-tab-content md-content span {
+md-card-content .tabs md-chips md-content span,
+md-card-content .tabs md-tab-content md-content span {
   cursor: pointer;
   border-radius: 16px;
   padding-right: 7px;
@@ -14267,18 +14267,18 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   font-size: 75%;
   color: #424242;
 }
-.addtraining md-content md-card md-card-content .tabs md-chips md-content span:hover,
-.addtraining md-content md-card md-card-content .tabs md-tab-content md-content span:hover {
+md-card-content .tabs md-chips md-content span:hover,
+md-card-content .tabs md-tab-content md-content span:hover {
   background: #eceff1;
 }
 @media only screen and (min-width: 400px) and (max-width: 1050px) {
-  .addtraining md-content md-card md-card-content .tabs md-tab-item.md-tab {
+  md-card-content .tabs md-tab-item.md-tab {
     padding: 8px 8px;
     line-height: 32px;
     font-size: 12px;
   }
 }
-.addtraining md-content md-card md-card-content .new-training {
+md-card-content .new-training {
   *zoom: 1;
   float: left;
   clear: none;
@@ -14292,37 +14292,37 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   position: relative;
   box-sizing: border-box;
 }
-.addtraining md-content md-card md-card-content .new-training:before,
-.addtraining md-content md-card md-card-content .new-training:after {
+md-card-content .new-training:before,
+md-card-content .new-training:after {
   content: '';
   display: table;
 }
-.addtraining md-content md-card md-card-content .new-training:after {
+md-card-content .new-training:after {
   clear: both;
 }
-.addtraining md-content md-card md-card-content .new-training:last-child {
+md-card-content .new-training:last-child {
   margin-right: 0%;
 }
 @media only screen and (min-width: 1050px) {
-  .addtraining md-content md-card md-card-content .new-training {
+  md-card-content .new-training {
     padding-left: 3em;
     padding-right: 3em;
   }
 }
 @media only screen and (min-width: 1800px) {
-  .addtraining md-content md-card md-card-content .new-training {
+  md-card-content .new-training {
     padding-left: 8em;
     padding-right: 8em;
   }
 }
-.addtraining md-content md-card md-card-content .new-training md-card {
+md-card-content .new-training md-card {
   min-height: 29vh !important;
   position: relative;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .md-subheader .md-subheader-inner {
+md-card-content .new-training md-card md-card-content .md-subheader .md-subheader-inner {
   padding: 3px 0px 2px 3px;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .background-wrap {
+md-card-content .new-training md-card md-card-content .background-wrap {
   position: fixed;
   top: 0;
   left: 0;
@@ -14332,11 +14332,11 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   background-color: #616161;
   opacity: 0.1;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .weight-add {
+md-card-content .new-training md-card md-card-content .weight-add {
   position: fixed;
   z-index: 6;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .weight-add .weight-content {
+md-card-content .new-training md-card md-card-content .weight-add .weight-content {
   *zoom: 1;
   float: left;
   clear: none;
@@ -14354,18 +14354,18 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   background-color: #fff;
   border: 1px solid #eceff1;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .weight-add .weight-content:before,
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .weight-add .weight-content:after {
+md-card-content .new-training md-card md-card-content .weight-add .weight-content:before,
+md-card-content .new-training md-card md-card-content .weight-add .weight-content:after {
   content: '';
   display: table;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .weight-add .weight-content:after {
+md-card-content .new-training md-card md-card-content .weight-add .weight-content:after {
   clear: both;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .weight-add .weight-content:last-child {
+md-card-content .new-training md-card md-card-content .weight-add .weight-content:last-child {
   margin-right: 0%;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .weight-add .weight-content .plus {
+md-card-content .new-training md-card md-card-content .weight-add .weight-content .plus {
   *zoom: 1;
   float: left;
   clear: none;
@@ -14376,21 +14376,21 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   font-size: 190%;
   cursor: pointer;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .weight-add .weight-content .plus:before,
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .weight-add .weight-content .plus:after {
+md-card-content .new-training md-card md-card-content .weight-add .weight-content .plus:before,
+md-card-content .new-training md-card md-card-content .weight-add .weight-content .plus:after {
   content: '';
   display: table;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .weight-add .weight-content .plus:after {
+md-card-content .new-training md-card md-card-content .weight-add .weight-content .plus:after {
   clear: both;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .weight-add .weight-content .plus:last-child {
+md-card-content .new-training md-card md-card-content .weight-add .weight-content .plus:last-child {
   margin-right: 0%;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .weight-add .weight-content .plus ng-md-icon svg {
+md-card-content .new-training md-card md-card-content .weight-add .weight-content .plus ng-md-icon svg {
   margin-top: 4%;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .weight-add .weight-content .left {
+md-card-content .new-training md-card md-card-content .weight-add .weight-content .left {
   *zoom: 1;
   float: left;
   clear: none;
@@ -14402,18 +14402,18 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   background-color: #fff;
   border: 1px solid #cfd8dc;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .weight-add .weight-content .left:before,
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .weight-add .weight-content .left:after {
+md-card-content .new-training md-card md-card-content .weight-add .weight-content .left:before,
+md-card-content .new-training md-card md-card-content .weight-add .weight-content .left:after {
   content: '';
   display: table;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .weight-add .weight-content .left:after {
+md-card-content .new-training md-card md-card-content .weight-add .weight-content .left:after {
   clear: both;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .weight-add .weight-content .left:last-child {
+md-card-content .new-training md-card md-card-content .weight-add .weight-content .left:last-child {
   margin-right: 0%;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .weight-add .weight-content .middle {
+md-card-content .new-training md-card md-card-content .weight-add .weight-content .middle {
   *zoom: 1;
   float: left;
   clear: none;
@@ -14422,18 +14422,18 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   margin-left: 0%;
   margin-right: 0%;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .weight-add .weight-content .middle:before,
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .weight-add .weight-content .middle:after {
+md-card-content .new-training md-card md-card-content .weight-add .weight-content .middle:before,
+md-card-content .new-training md-card md-card-content .weight-add .weight-content .middle:after {
   content: '';
   display: table;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .weight-add .weight-content .middle:after {
+md-card-content .new-training md-card md-card-content .weight-add .weight-content .middle:after {
   clear: both;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .weight-add .weight-content .middle:last-child {
+md-card-content .new-training md-card md-card-content .weight-add .weight-content .middle:last-child {
   margin-right: 0%;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .weight-add .weight-content .right {
+md-card-content .new-training md-card md-card-content .weight-add .weight-content .right {
   *zoom: 1;
   float: left;
   clear: none;
@@ -14447,18 +14447,18 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   background-color: #fff;
   box-sizing: border-box;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .weight-add .weight-content .right:before,
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .weight-add .weight-content .right:after {
+md-card-content .new-training md-card md-card-content .weight-add .weight-content .right:before,
+md-card-content .new-training md-card md-card-content .weight-add .weight-content .right:after {
   content: '';
   display: table;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .weight-add .weight-content .right:after {
+md-card-content .new-training md-card md-card-content .weight-add .weight-content .right:after {
   clear: both;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .weight-add .weight-content .right:last-child {
+md-card-content .new-training md-card md-card-content .weight-add .weight-content .right:last-child {
   margin-right: 0%;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .weight-add .weight-content .minus {
+md-card-content .new-training md-card md-card-content .weight-add .weight-content .minus {
   *zoom: 1;
   float: left;
   clear: none;
@@ -14469,25 +14469,25 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   font-size: 250%;
   cursor: pointer;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .weight-add .weight-content .minus:before,
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .weight-add .weight-content .minus:after {
+md-card-content .new-training md-card md-card-content .weight-add .weight-content .minus:before,
+md-card-content .new-training md-card md-card-content .weight-add .weight-content .minus:after {
   content: '';
   display: table;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .weight-add .weight-content .minus:after {
+md-card-content .new-training md-card md-card-content .weight-add .weight-content .minus:after {
   clear: both;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .weight-add .weight-content .minus:last-child {
+md-card-content .new-training md-card md-card-content .weight-add .weight-content .minus:last-child {
   margin-right: 0%;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .weight-add .weight-content .minus ng-md-icon svg {
+md-card-content .new-training md-card md-card-content .weight-add .weight-content .minus ng-md-icon svg {
   margin-top: 6%;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .weight-add .weight-content .border-red {
+md-card-content .new-training md-card md-card-content .weight-add .weight-content .border-red {
   border: 1px solid #d32f2f;
   color: #d32f2f;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .header-add {
+md-card-content .new-training md-card md-card-content .header-add {
   *zoom: 1;
   float: left;
   clear: none;
@@ -14501,29 +14501,29 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   border-bottom: 3px solid #2196f3;
   height: 55px;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .header-add:before,
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .header-add:after {
+md-card-content .new-training md-card md-card-content .header-add:before,
+md-card-content .new-training md-card md-card-content .header-add:after {
   content: '';
   display: table;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .header-add:after {
+md-card-content .new-training md-card md-card-content .header-add:after {
   clear: both;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .header-add:last-child {
+md-card-content .new-training md-card md-card-content .header-add:last-child {
   margin-right: 0%;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .header-add md-select {
+md-card-content .new-training md-card md-card-content .header-add md-select {
   padding-top: 0.3em;
   margin: 0;
   font-size: 155%;
 }
 @media only screen and (min-width: 1050px) {
-  .addtraining md-content md-card md-card-content .new-training md-card md-card-content .header-add md-select {
+  md-card-content .new-training md-card md-card-content .header-add md-select {
     padding-top: 0.2em;
     font-size: 140%;
   }
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .options-add {
+md-card-content .new-training md-card md-card-content .options-add {
   *zoom: 1;
   float: left;
   clear: none;
@@ -14539,26 +14539,26 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   padding-right: 1.3em;
   text-align: right;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .options-add:before,
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .options-add:after {
+md-card-content .new-training md-card md-card-content .options-add:before,
+md-card-content .new-training md-card md-card-content .options-add:after {
   content: '';
   display: table;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .options-add:after {
+md-card-content .new-training md-card md-card-content .options-add:after {
   clear: both;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .options-add:last-child {
+md-card-content .new-training md-card md-card-content .options-add:last-child {
   margin-right: 0%;
 }
 @media only screen and (min-width: 1050px) {
-  .addtraining md-content md-card md-card-content .new-training md-card md-card-content .options-add {
+  md-card-content .new-training md-card md-card-content .options-add {
     padding-top: 0.5em;
   }
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .options-add ng-md-icon {
+md-card-content .new-training md-card md-card-content .options-add ng-md-icon {
   padding-left: 1em;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .options-add button.md-button {
+md-card-content .new-training md-card md-card-content .options-add button.md-button {
   width: 38%;
   min-width: 15px;
   min-height: 27px;
@@ -14566,11 +14566,11 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   font-size: 80%;
   margin: 0;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .options-add button.md-button span {
+md-card-content .new-training md-card md-card-content .options-add button.md-button span {
   color: #03a9f4;
 }
 @media only screen and (min-width: 1050px) {
-  .addtraining md-content md-card md-card-content .new-training md-card md-card-content .options-add button.md-button {
+  md-card-content .new-training md-card md-card-content .options-add button.md-button {
     width: 40%;
     min-width: 15px;
     min-height: 31px;
@@ -14579,7 +14579,7 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
     margin: 0;
   }
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add {
+md-card-content .new-training md-card md-card-content .content-add {
   *zoom: 1;
   float: left;
   clear: none;
@@ -14590,31 +14590,31 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   box-sizing: border-box;
   margin-top: 2px;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add:before,
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add:after {
+md-card-content .new-training md-card md-card-content .content-add:before,
+md-card-content .new-training md-card md-card-content .content-add:after {
   content: '';
   display: table;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add:after {
+md-card-content .new-training md-card md-card-content .content-add:after {
   clear: both;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add:last-child {
+md-card-content .new-training md-card md-card-content .content-add:last-child {
   margin-right: 0%;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content {
+md-card-content .new-training md-card md-card-content .content-add md-content {
   height: 40vh !important;
 }
 @media only screen and (min-width: 400px) and (max-width: 1050px) and (orientation: portrait) {
-  .addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content {
+  md-card-content .new-training md-card md-card-content .content-add md-content {
     height: 49vh !important;
   }
 }
 @media only screen and (min-width: 1050px) {
-  .addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content {
+  md-card-content .new-training md-card md-card-content .content-add md-content {
     height: 49vh !important;
   }
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul {
+md-card-content .new-training md-card md-card-content .content-add md-content ul {
   *zoom: 1;
   float: left;
   clear: none;
@@ -14630,19 +14630,19 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   font-size: 90%;
   list-style: none;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul:before,
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul:after {
+md-card-content .new-training md-card md-card-content .content-add md-content ul:before,
+md-card-content .new-training md-card md-card-content .content-add md-content ul:after {
   content: '';
   display: table;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul:after {
+md-card-content .new-training md-card md-card-content .content-add md-content ul:after {
   clear: both;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul:last-child {
+md-card-content .new-training md-card md-card-content .content-add md-content ul:last-child {
   margin-right: 0%;
 }
 @media only screen and (min-width: 1050px) {
-  .addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul {
+  md-card-content .new-training md-card md-card-content .content-add md-content ul {
     *zoom: 1;
     float: left;
     clear: none;
@@ -14653,24 +14653,24 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
     position: relative;
     left: 16.666666666666664%;
   }
-  .addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul:before,
-  .addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul:after {
+  md-card-content .new-training md-card md-card-content .content-add md-content ul:before,
+  md-card-content .new-training md-card md-card-content .content-add md-content ul:after {
     content: '';
     display: table;
   }
-  .addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul:after {
+  md-card-content .new-training md-card md-card-content .content-add md-content ul:after {
     clear: both;
   }
-  .addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul:last-child {
+  md-card-content .new-training md-card md-card-content .content-add md-content ul:last-child {
     margin-right: 0%;
   }
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul .exerc-select {
+md-card-content .new-training md-card md-card-content .content-add md-content ul .exerc-select {
   background-color: #eceff1;
   color: #000;
   border: 1px solid #b0bec5;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li.ng-enter {
+md-card-content .new-training md-card md-card-content .content-add md-content ul li.ng-enter {
   -webkit-animation: 0.8s pulse;
   -moz-animation: 0.8s pulse;
   -o-animation: 0.8s pulse;
@@ -14680,11 +14680,11 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   border: 1px solid #b0bec5;
   color: #000;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li.ng-enter.ng-enter-active,
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li.ng-move.ng-move-active {
+md-card-content .new-training md-card md-card-content .content-add md-content ul li.ng-enter.ng-enter-active,
+md-card-content .new-training md-card md-card-content .content-add md-content ul li.ng-move.ng-move-active {
   opacity: 1;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul .sv-helper {
+md-card-content .new-training md-card md-card-content .content-add md-content ul .sv-helper {
   font-size: 120%;
   color: #000;
   line-height: 38px;
@@ -14692,10 +14692,10 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   border: 1px solid #b0bec5;
   opacity: 0.9;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul .sv-candidate {
+md-card-content .new-training md-card md-card-content .content-add md-content ul .sv-candidate {
   opacity: 0.5;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li.ng-leave {
+md-card-content .new-training md-card md-card-content .content-add md-content ul li.ng-leave {
   -webkit-transition: all linear 0.3s;
   -moz-transition: all linear 0.3s;
   -o-transition: all linear 0.3s;
@@ -14704,7 +14704,7 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   left: 5px;
   opacity: 0.2;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li {
+md-card-content .new-training md-card md-card-content .content-add md-content ul li {
   border: 1px solid #cfd8dc;
   background-color: #fff;
   box-sizing: border-box;
@@ -14719,18 +14719,18 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   text-align: center;
   color: #424242;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li:before,
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li:after {
+md-card-content .new-training md-card md-card-content .content-add md-content ul li:before,
+md-card-content .new-training md-card md-card-content .content-add md-content ul li:after {
   content: '';
   display: table;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li:after {
+md-card-content .new-training md-card md-card-content .content-add md-content ul li:after {
   clear: both;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li:last-child {
+md-card-content .new-training md-card md-card-content .content-add md-content ul li:last-child {
   margin-right: 0%;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .drag {
+md-card-content .new-training md-card md-card-content .content-add md-content ul li .drag {
   *zoom: 1;
   float: left;
   clear: none;
@@ -14741,24 +14741,24 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   margin-left: 0.5em;
   cursor: pointer;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .drag:before,
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .drag:after {
+md-card-content .new-training md-card md-card-content .content-add md-content ul li .drag:before,
+md-card-content .new-training md-card md-card-content .content-add md-content ul li .drag:after {
   content: '';
   display: table;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .drag:after {
+md-card-content .new-training md-card md-card-content .content-add md-content ul li .drag:after {
   clear: both;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .drag:last-child {
+md-card-content .new-training md-card md-card-content .content-add md-content ul li .drag:last-child {
   margin-right: 0%;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .drag:hover {
+md-card-content .new-training md-card md-card-content .content-add md-content ul li .drag:hover {
   zoom: 1.1;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .drag ng-md-icon svg {
+md-card-content .new-training md-card md-card-content .content-add md-content ul li .drag ng-md-icon svg {
   vertical-align: middle;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .exerc {
+md-card-content .new-training md-card md-card-content .content-add md-content ul li .exerc {
   *zoom: 1;
   float: left;
   clear: none;
@@ -14770,18 +14770,18 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   text-align: left;
   margin-left: 0.9em;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .exerc:before,
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .exerc:after {
+md-card-content .new-training md-card md-card-content .content-add md-content ul li .exerc:before,
+md-card-content .new-training md-card md-card-content .content-add md-content ul li .exerc:after {
   content: '';
   display: table;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .exerc:after {
+md-card-content .new-training md-card md-card-content .content-add md-content ul li .exerc:after {
   clear: both;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .exerc:last-child {
+md-card-content .new-training md-card md-card-content .content-add md-content ul li .exerc:last-child {
   margin-right: 0%;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .volume {
+md-card-content .new-training md-card md-card-content .content-add md-content ul li .volume {
   *zoom: 1;
   float: left;
   clear: none;
@@ -14790,18 +14790,18 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   margin-left: 0%;
   margin-right: 0%;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .volume:before,
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .volume:after {
+md-card-content .new-training md-card md-card-content .content-add md-content ul li .volume:before,
+md-card-content .new-training md-card md-card-content .content-add md-content ul li .volume:after {
   content: '';
   display: table;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .volume:after {
+md-card-content .new-training md-card md-card-content .content-add md-content ul li .volume:after {
   clear: both;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .volume:last-child {
+md-card-content .new-training md-card md-card-content .content-add md-content ul li .volume:last-child {
   margin-right: 0%;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .delete {
+md-card-content .new-training md-card md-card-content .content-add md-content ul li .delete {
   *zoom: 1;
   float: left;
   clear: none;
@@ -14811,22 +14811,22 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   margin-right: 0%;
   margin-left: 0.5em;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .delete:before,
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .delete:after {
+md-card-content .new-training md-card md-card-content .content-add md-content ul li .delete:before,
+md-card-content .new-training md-card md-card-content .content-add md-content ul li .delete:after {
   content: '';
   display: table;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .delete:after {
+md-card-content .new-training md-card md-card-content .content-add md-content ul li .delete:after {
   clear: both;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .delete:last-child {
+md-card-content .new-training md-card md-card-content .content-add md-content ul li .delete:last-child {
   margin-right: 0%;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .delete ng-md-icon svg {
+md-card-content .new-training md-card md-card-content .content-add md-content ul li .delete ng-md-icon svg {
   vertical-align: middle;
   cursor: pointer;
 }
-.addtraining md-content md-card md-card-content .new-training md-card md-card-content .content-add md-content ul li .delete ng-md-icon svg:hover {
+md-card-content .new-training md-card md-card-content .content-add md-content ul li .delete ng-md-icon svg:hover {
   zoom: 1.3;
 }
 .collection-wrap h1 {

@@ -45,9 +45,12 @@ module.exports = {
 				label: 'Inserir Treino'
 			},
 			views: {
-				'wrap@': {
-					controller: 'addTrainingController',
-					template: fs.readFileSync(__dirname + '/templates/addtrainingWrap.html')
+				'actions-add@core.user.edit': {
+					template: fs.readFileSync(__dirname + '/templates/addTrainingActionsAdd.html')
+				},
+				'content-add@core.user.edit': {
+					controller: 'addTrainingController',  
+					template: fs.readFileSync(__dirname + '/templates/addTrainingContentAdd.html')
 				}
 			}
 		},

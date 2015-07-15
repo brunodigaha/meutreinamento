@@ -1,0 +1,71 @@
+
+<md-card-content>
+  <section class="tabs">
+    <md-tabs md-dynamic-height="true" md-border-bottom="false">
+      <!-- md-tab(label="Geral")-->
+      <!-- 	md-content.md-paddin-->
+      <!-- 	section.autocompletedemoCustomTemplate-->
+      <!-- 		md-autocomplete(ng-disabled="isDisabled", md-no-cache="noCache", md-selected-item="selectedItem", md-search-text-change="searchTextChange(searchText)", md-search-text="searchText", md-selected-item-change="selectedItemChange(item)", md-items="item in querySearch(searchText)", md-item-text="item.display", md-min-length="0", placeholder="Digite aqui o nome do exercício que deseja inserir" md-menu-class="autocomplete-custom-template")-->
+      <!-- 			md-item-template-->
+      <!-- 				span.item-title-->
+      <!-- 					md-icon(md-svg-icon="img/icons/octicon-repo.svg")-->
+      <!-- 					span  {{item.name}} -->
+      <!-- 				span.item-metadata-->
+      <!-- 					span.item-metastat-->
+      <!-- 						strong {{item.watchers}}-->
+      <!-- 						| watchers-->
+      <!-- 					span.item-metastat-->
+      <!-- 						strong {{item.forks}}-->
+      <md-tab label="{{list.grupo}}" ng-repeat=" list in list_exercicios">
+        <md-content class="md-padding">
+          <section><span ng-click="insert($index, list);" ng-class="{'item-select animated pulse': exerc.select }" ng-repeat="exerc in list.exercicios">{{exerc.nome}}</span></section>
+        </md-content>
+      </md-tab>
+    </md-tabs>
+  </section>
+  <section class="new-training">
+    <md-card>
+      <md-card-content>
+        <section class="header-add">
+          <md-select placeholder="Nome do Treino" ng-model="plan" style="min-width:250px;">
+            <md-option ng-repeat="plan in plans" value="{{plan}}">{{plan}}</md-option>
+          </md-select>
+        </section>
+        <section class="options-add">
+          <!-- ng-md-icon(icon="launch" style="fill:white"  size="22" ng-click="true")-->
+          <!-- ng-md-icon(icon="expand_more" style="fill:white"  size="27" ng-click="true")-->
+          <md-button ng-click="importTraining($event);" class="md-raised">Importar Treino</md-button>
+        </section>
+        <section sv-root="" sv-part="exercicios" class="content-add">
+          <md-content scroll-glue="scroll.glued">
+            <md-subheader></md-subheader>
+            <ul>
+              <li ng-repeat="exercicio in exercicios" sv-element="opts" ng-class="{'exerc-select': $index==index}">
+                <section sv-handle="" class="drag">
+                  <ng-md-icon icon="open_with" style="fill:black" size="20"></ng-md-icon>
+                </section>
+                <section class="exerc"><span>{{exercicio.nome}}</span></section>
+                <section class="volume"><span ng-click="weight_add($event,exercicio,$index);">{{exercicio.serie}}x{{exercicio.repeticao}}</span></section>
+                <section class="delete">
+                  <ng-md-icon icon="close" ng-click="remove($index);" style="fill:black" size="20"></ng-md-icon>
+                </section>
+              </li>
+            </ul>
+          </md-content>
+          <section ng-show="close_all" ng-click="close();" class="background-wrap"></section>
+          <section style="top:{{position.y - 50}}px;left:{{position.x - 48}}px;" class="weight-add">
+            <section class="weight-content">
+              <section ng-click="plus_weight();" class="plus"><span>
+                  <ng-md-icon icon="keyboard_arrow_up" style="fill:black" size="25"></ng-md-icon></span></section>
+              <section ng-class="{'border-red': alt=='serie'}" ng-click="toggle_volume();" class="left">  <span>{{exercicio_select.serie}}</span></section>
+              <section class="middle"><span>:</span></section>
+              <section ng-class="{'border-red': alt=='repeticao'}" ng-click="toggle_volume();" class="right"> <span>{{exercicio_select.repeticao}}</span></section>
+              <section ng-click="minus_weight();" class="minus"><span>
+                  <ng-md-icon icon="expand_more" style="fill:black" size="25"></ng-md-icon></span></section>
+            </section>
+          </section>
+        </section>
+      </md-card-content>
+    </md-card>
+  </section>
+</md-card-content>

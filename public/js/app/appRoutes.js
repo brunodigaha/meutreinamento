@@ -8,6 +8,8 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider,$
 
 		.state('core',require('./core/coreRoutes.js').core.core) 
 
+		.state('core.user.edit',require('./core/coreRoutes.js').core.edit) 
+
 		.state('core.user',angular.extend(
 				{url:'/user/{userId:int}'},require('./user/userRoutes.js').user.user))
 
@@ -26,7 +28,7 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider,$
 		.state('core.user.listTraining.training',angular.extend(
 				{url:'/{trainId:int}'},require('./train/trainRoutes.js').train.training))
 
-		.state('core.user.addtraining',angular.extend(
+		.state('core.user.edit.addtraining',angular.extend(
 				{url:'/training/add'},require('./train/trainRoutes.js').train.addtraining))
 
 		.state('core.user.trainingHistory',angular.extend(

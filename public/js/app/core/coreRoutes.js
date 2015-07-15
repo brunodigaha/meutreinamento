@@ -28,6 +28,16 @@ module.exports = {
 					template: fs.readFileSync(__dirname + '/templates/coreContentSearch.html')	
 				}
 			}
+		},
+		edit : {
+			authenticate: true,
+			abstract: true,
+			views: {
+				'wrap@': {
+					// controller: 'addTrainingController',
+					template: fs.readFileSync(__dirname + '/templates/editWrap.html')
+				}
+			},
 		}
 	}
 };

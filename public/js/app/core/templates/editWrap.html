@@ -1,0 +1,17 @@
+
+<section class="edit-wrap-content">
+  <section class="user-add">
+    <section class="menu-add">
+      <!-- section.user-img-add-->
+      <!-- 	img(class="img-responsive" ng-click="coreEvents.toggle_menu();" holder='holder.js/80x80?auto=yes&theme=sky&text=BRU')-->
+      <h5 class="user-name-add">Bruno</h5><span class="breadcrumb-add">
+        <ng-md-icon icon="place" style="fill:grey" size="20"></ng-md-icon><span ncy-breadcrumb-last="">&nbsp;{{getStatesChain}}</span></span>
+      <section ui-view="actions-add" class="actions-add"></section>
+    </section>
+  </section>
+  <md-content>
+    <md-card>
+      <md-card-content ui-view="content-add"></md-card-content>
+    </md-card>
+  </md-content>
+</section>

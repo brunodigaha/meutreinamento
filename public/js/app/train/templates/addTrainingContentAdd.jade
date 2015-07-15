@@ -1,0 +1,62 @@
+md-card-content
+	section.tabs
+				md-tabs(md-dynamic-height="true" md-border-bottom="false")
+					// md-tab(label="Geral")
+					// 	md-content.md-paddin
+					// 	section.autocompletedemoCustomTemplate
+					// 		md-autocomplete(ng-disabled="isDisabled", md-no-cache="noCache", md-selected-item="selectedItem", md-search-text-change="searchTextChange(searchText)", md-search-text="searchText", md-selected-item-change="selectedItemChange(item)", md-items="item in querySearch(searchText)", md-item-text="item.display", md-min-length="0", placeholder="Digite aqui o nome do exercício que deseja inserir" md-menu-class="autocomplete-custom-template")
+					// 			md-item-template
+					// 				span.item-title
+					// 					md-icon(md-svg-icon="img/icons/octicon-repo.svg")
+					// 					span  {{item.name}} 
+					// 				span.item-metadata
+					// 					span.item-metastat
+					// 						strong {{item.watchers}}
+					// 						| watchers
+					// 					span.item-metastat
+					// 						strong {{item.forks}}
+					md-tab(label="{{list.grupo}}" ng-repeat=" list in list_exercicios" )
+						md-content.md-padding
+							section
+								span(ng-click="insert($index, list);" ng-class="{'item-select animated pulse': exerc.select }" ng-repeat="exerc in list.exercicios")
+									| {{exerc.nome}}
+	section.new-training
+			md-card
+				md-card-content
+					section.header-add
+						md-select(placeholder='Nome do Treino', ng-model='plan' style="min-width:250px;")
+							md-option(ng-repeat='plan in plans', value='{{plan}}') {{plan}}
+					section.options-add
+						// ng-md-icon(icon="launch" style="fill:white"  size="22" ng-click="true")
+						// ng-md-icon(icon="expand_more" style="fill:white"  size="27" ng-click="true")
+						md-button(class="md-raised"  ng-click="importTraining($event);") Importar Treino
+					section.content-add(sv-root="" sv-part="exercicios")
+						md-content(scroll-glue="scroll.glued")
+							md-subheader
+							ul
+								li(ng-repeat="exercicio in exercicios" sv-element="opts" ng-class="{'exerc-select': $index==index}")
+									section.drag(sv-handle="")
+										ng-md-icon(icon="open_with" style="fill:black" size="20")
+									section.exerc
+										span {{exercicio.nome}}
+									section.volume
+										span(ng-click="weight_add($event,exercicio,$index);") {{exercicio.serie}}x{{exercicio.repeticao}}
+									section.delete
+										ng-md-icon(icon="close" ng-click="remove($index);" style="fill:black" size="20")
+						section.background-wrap(ng-show="close_all" ng-click="close();")
+						section.weight-add(style="top:{{position.y - 50}}px;left:{{position.x - 48}}px;")
+							section.weight-content
+								section.plus(ng-click="plus_weight();")
+									span
+										ng-md-icon(icon="keyboard_arrow_up" style="fill:black"  size="25")
+								section.left(ng-class="{'border-red': alt=='serie'}" ng-click="toggle_volume();")   
+									span {{exercicio_select.serie}}
+								section.middle
+									span :
+								section.right(ng-class="{'border-red': alt=='repeticao'}" ng-click="toggle_volume();")  
+									span {{exercicio_select.repeticao}}
+								section.minus(ng-click="minus_weight();")
+									span
+										ng-md-icon(icon="expand_more" style="fill:black"  size="25")
+
+
