@@ -11431,6 +11431,126 @@ a:visited {
   font-weight: bold;
   vertical-align: middle;
 }
+.ds-plan .ds-plan-card {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  box-sizing: border-box;
+  border: 1px solid #eee;
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.09), 0px 2px 2px 0px rgba(0,0,0,0.098), 0px 1px 5px 0px rgba(0,0,0,0.084);
+  margin-bottom: 25px;
+}
+.ds-plan .ds-plan-card:before,
+.ds-plan .ds-plan-card:after {
+  content: '';
+  display: table;
+}
+.ds-plan .ds-plan-card:after {
+  clear: both;
+}
+.ds-plan .ds-plan-card:last-child {
+  margin-right: 0%;
+}
+.ds-plan .ds-plan-card .ds-plan-card-content p {
+  padding: 0;
+  margin: 0;
+}
+.ds-plan .ds-plan-card .ds-plan-card-content .ds-plan-title {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 66.66666666666666%;
+  margin-left: 0%;
+  margin-right: 0%;
+  box-sizing: border-box;
+}
+.ds-plan .ds-plan-card .ds-plan-card-content .ds-plan-title:before,
+.ds-plan .ds-plan-card .ds-plan-card-content .ds-plan-title:after {
+  content: '';
+  display: table;
+}
+.ds-plan .ds-plan-card .ds-plan-card-content .ds-plan-title:after {
+  clear: both;
+}
+.ds-plan .ds-plan-card .ds-plan-card-content .ds-plan-title:last-child {
+  margin-right: 0%;
+}
+.ds-plan .ds-plan-card .ds-plan-card-content .ds-plan-title p {
+  font-size: 125%;
+  padding-left: 3%;
+  padding-top: 3%;
+}
+.ds-plan .ds-plan-card .ds-plan-card-content .ds-plan-actions {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 33.33333333333333%;
+  margin-left: 0%;
+  margin-right: 0%;
+  text-align: right;
+}
+.ds-plan .ds-plan-card .ds-plan-card-content .ds-plan-actions:before,
+.ds-plan .ds-plan-card .ds-plan-card-content .ds-plan-actions:after {
+  content: '';
+  display: table;
+}
+.ds-plan .ds-plan-card .ds-plan-card-content .ds-plan-actions:after {
+  clear: both;
+}
+.ds-plan .ds-plan-card .ds-plan-card-content .ds-plan-actions:last-child {
+  margin-right: 0%;
+}
+.ds-plan .ds-plan-card .ds-plan-card-content .ds-plan-content {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  text-align: center;
+  margin-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #eee;
+}
+.ds-plan .ds-plan-card .ds-plan-card-content .ds-plan-content:before,
+.ds-plan .ds-plan-card .ds-plan-card-content .ds-plan-content:after {
+  content: '';
+  display: table;
+}
+.ds-plan .ds-plan-card .ds-plan-card-content .ds-plan-content:after {
+  clear: both;
+}
+.ds-plan .ds-plan-card .ds-plan-card-content .ds-plan-content:last-child {
+  margin-right: 0%;
+}
+.ds-plan .ds-plan-card .ds-plan-card-content .ds-plan-footer {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding-left: 2%;
+}
+.ds-plan .ds-plan-card .ds-plan-card-content .ds-plan-footer:before,
+.ds-plan .ds-plan-card .ds-plan-card-content .ds-plan-footer:after {
+  content: '';
+  display: table;
+}
+.ds-plan .ds-plan-card .ds-plan-card-content .ds-plan-footer:after {
+  clear: both;
+}
+.ds-plan .ds-plan-card .ds-plan-card-content .ds-plan-footer:last-child {
+  margin-right: 0%;
+}
 .login-wrap {
   *zoom: 1;
   float: left;
@@ -15034,7 +15154,122 @@ md-card-content .new-training md-card md-card-content .content-add md-content ul
   }
 }
 .plans_wrap {
-  background-color: #f00;
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.plans_wrap:before,
+.plans_wrap:after {
+  content: '';
+  display: table;
+}
+.plans_wrap:after {
+  clear: both;
+}
+.plans_wrap:last-child {
+  margin-right: 0%;
+}
+.plans_wrap .plans-card {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-top: 1em;
+}
+.plans_wrap .plans-card:before,
+.plans_wrap .plans-card:after {
+  content: '';
+  display: table;
+}
+.plans_wrap .plans-card:after {
+  clear: both;
+}
+.plans_wrap .plans-card:last-child {
+  margin-right: 0%;
+}
+@media only screen and (min-width: 1800px) {
+  .plans_wrap .plans-card {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 91.66666666666666%;
+    margin-left: 0%;
+    margin-right: 0%;
+    position: relative;
+    left: 4.166666666666666%;
+    margin-top: 2em;
+  }
+  .plans_wrap .plans-card:before,
+  .plans_wrap .plans-card:after {
+    content: '';
+    display: table;
+  }
+  .plans_wrap .plans-card:after {
+    clear: both;
+  }
+  .plans_wrap .plans-card:last-child {
+    margin-right: 0%;
+  }
+}
+.plans_wrap .plans-card ds-plan {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 49%;
+  margin-left: 0%;
+  margin-right: 2%;
+}
+.plans_wrap .plans-card ds-plan:before,
+.plans_wrap .plans-card ds-plan:after {
+  content: '';
+  display: table;
+}
+.plans_wrap .plans-card ds-plan:after {
+  clear: both;
+}
+.plans_wrap .plans-card ds-plan:nth-child(2n) {
+  margin-right: 0%;
+  float: right;
+}
+.plans_wrap .plans-card ds-plan:nth-child(2n+1) {
+  clear: both;
+}
+.plans_wrap .plans-card ds-plan .ds-plan-footer ng-md-icon svg {
+  top: 4px;
+  position: relative;
+}
+.plans_wrap .plans-card ds-plan ds-info {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.plans_wrap .plans-card ds-plan ds-info:before,
+.plans_wrap .plans-card ds-plan ds-info:after {
+  content: '';
+  display: table;
+}
+.plans_wrap .plans-card ds-plan ds-info:after {
+  clear: both;
+}
+.plans_wrap .plans-card ds-plan ds-info:nth-child(2n) {
+  margin-right: 0%;
+  float: right;
+}
+.plans_wrap .plans-card ds-plan ds-info:nth-child(2n+1) {
+  clear: both;
 }
 .collection-wrap h1 {
   font-size: 50px;

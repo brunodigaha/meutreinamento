@@ -1,2 +1,19 @@
 .plans_wrap
-	background-color red
+	col(12/12,gutter:0)
+	.plans-card
+		col(12/12,gutter:0)
+		margin-top 1em
+		+hd()
+			col(11/12,gutter:0)
+			shift(.5/12,gutter:0)
+			margin-top 2em
+		ds-plan
+			col(1/2,cycle:2,gutter:2)
+			.ds-plan-footer
+				ng-md-icon
+					svg
+						top 4px
+						position relative
+
+			ds-info
+				col(1/2,cycle:2,gutter:0)
