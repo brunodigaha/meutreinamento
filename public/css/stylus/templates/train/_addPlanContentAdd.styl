@@ -12,23 +12,28 @@
 		min-height 30vh !important
 		.slider-wrap
 			col(12/12,gutter:0)
+			box-sizing border-box
 			.slider-content
 				col(9/12,gutter:0)
 				span.md-body-1
-					font-size 122%
+					font-size 112%
 				input[type="number"]
-					width 3.3em
+					width 3.5em
 					margin-left 8px
-					text-align right
+					text-align center
 			.slider-title
 				col(3/12,gutter:0)
 				box-sizing border-box
 				padding-left .5em
+				+desktop()
+					padding-left 1em
 				text-align left
 				span
 					line-height 50px
 					vertical-align middle
 		.add-inputs
-			col(11/12,.1/12,gutter:0)
+			col(11.7/12,.2/12,gutter:0)
+			+desktop()
+				col(11/12,.1/12,gutter:0)
 			box-sizing border-box
 

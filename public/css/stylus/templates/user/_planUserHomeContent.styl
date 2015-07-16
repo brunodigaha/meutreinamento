@@ -1,5 +1,9 @@
 .plan-wrap
 	col(12/12,gutter:0)
+	box-sizing border-box
+	+hd()
+		padding-left 2em
+		padding-right 2em
 	.plan-dashboard
 		col(12/12,gutter:0)
 		margin-top .7em
@@ -9,9 +13,32 @@
 			box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.098), 0px 1px 5px 0px rgba(0, 0, 0, 0.084);
 			border 1px solid palette('Grey','200')
 			md-card-content
+				position relative
 				+tablet()
 					padding-top 7px
 					padding-bottom 7px
+				.plan-header-options
+					position absolute
+					right 0
+					bottom 0
+					margin-right 2%
+					margin-bottom 1%
+					button.md-button
+						span
+							color palette('Light Blue', '500') 
+						width 89px
+						min-width 15px
+						min-height 27px
+						line-height 27px
+						font-size 80%
+						margin 0
+						+desktop()
+							width 115px
+							min-width 15px
+							min-height 31px
+							line-height 31px
+							font-size 85%
+							margin 0
 				.plan-graf
 					col(4.5/12,gutter:0)
 					box-sizing border-box
@@ -47,6 +74,7 @@
 					text-align center
 					.plan-goal
 						col(8/8,gutter:0)
+						// margin-top 1em
 						h1
 							margin 0
 						span
@@ -62,7 +90,7 @@
 			div.md-actions
 				box-sizing border-box
 				padding-bottom 8px
-				padding-right 2em
+				padding-right .8em
 				// background-color palette('Grey','50')
 				button.md-button
 					margin 0
@@ -77,6 +105,8 @@
 				+desktop()
 					min-height 33vh 
 				.md-subheader
+					+tablet()
+						display none
 					.md-subheader-inner
 						 padding 2px 0px 2px 3px
 				h4
@@ -97,6 +127,8 @@
 				md-content
 					height:22vh
 					+tablet(orientation: portrait)
+						height:27vh
+					+desktop()
 						height:27vh
 					text-align center
 					ds-training

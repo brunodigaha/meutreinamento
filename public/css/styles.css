@@ -13408,6 +13408,7 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   width: 100%;
   margin-left: 0%;
   margin-right: 0%;
+  box-sizing: border-box;
 }
 .plan-wrap:before,
 .plan-wrap:after {
@@ -13419,6 +13420,12 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
 }
 .plan-wrap:last-child {
   margin-right: 0%;
+}
+@media only screen and (min-width: 1800px) {
+  .plan-wrap {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
 }
 .plan-wrap .plan-dashboard {
   *zoom: 1;
@@ -13450,10 +13457,41 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.08), 0px 2px 2px 0px rgba(0,0,0,0.098), 0px 1px 5px 0px rgba(0,0,0,0.084);
   border: 1px solid #eee;
 }
+.plan-wrap .plan-dashboard md-card md-card-content {
+  position: relative;
+}
 @media only screen and (min-width: 400px) and (max-width: 1050px) {
   .plan-wrap .plan-dashboard md-card md-card-content {
     padding-top: 7px;
     padding-bottom: 7px;
+  }
+}
+.plan-wrap .plan-dashboard md-card md-card-content .plan-header-options {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-right: 2%;
+  margin-bottom: 1%;
+}
+.plan-wrap .plan-dashboard md-card md-card-content .plan-header-options button.md-button {
+  width: 89px;
+  min-width: 15px;
+  min-height: 27px;
+  line-height: 27px;
+  font-size: 80%;
+  margin: 0;
+}
+.plan-wrap .plan-dashboard md-card md-card-content .plan-header-options button.md-button span {
+  color: #03a9f4;
+}
+@media only screen and (min-width: 1050px) {
+  .plan-wrap .plan-dashboard md-card md-card-content .plan-header-options button.md-button {
+    width: 115px;
+    min-width: 15px;
+    min-height: 31px;
+    line-height: 31px;
+    font-size: 85%;
+    margin: 0;
   }
 }
 .plan-wrap .plan-dashboard md-card md-card-content .plan-graf {
@@ -13616,7 +13654,7 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
 .plan-wrap .plan-cards md-card div.md-actions {
   box-sizing: border-box;
   padding-bottom: 8px;
-  padding-right: 2em;
+  padding-right: 0.8em;
 }
 .plan-wrap .plan-cards md-card div.md-actions button.md-button {
   margin: 0;
@@ -13633,6 +13671,11 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
 @media only screen and (min-width: 1050px) {
   .plan-wrap .plan-cards md-card md-card-content {
     min-height: 33vh;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 1050px) {
+  .plan-wrap .plan-cards md-card md-card-content .md-subheader {
+    display: none;
   }
 }
 .plan-wrap .plan-cards md-card md-card-content .md-subheader .md-subheader-inner {
@@ -13662,6 +13705,11 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   text-align: center;
 }
 @media only screen and (min-width: 400px) and (max-width: 1050px) and (orientation: portrait) {
+  .plan-wrap .plan-cards md-card md-card-content md-content {
+    height: 27vh;
+  }
+}
+@media only screen and (min-width: 1050px) {
   .plan-wrap .plan-cards md-card md-card-content md-content {
     height: 27vh;
   }
@@ -14874,6 +14922,7 @@ md-card-content .new-training md-card md-card-content .content-add md-content ul
   width: 100%;
   margin-left: 0%;
   margin-right: 0%;
+  box-sizing: border-box;
 }
 .add-plan-content md-card .slider-wrap:before,
 .add-plan-content md-card .slider-wrap:after {
@@ -14907,12 +14956,12 @@ md-card-content .new-training md-card md-card-content .content-add md-content ul
   margin-right: 0%;
 }
 .add-plan-content md-card .slider-wrap .slider-content span.md-body-1 {
-  font-size: 122%;
+  font-size: 112%;
 }
 .add-plan-content md-card .slider-wrap .slider-content input[type="number"] {
-  width: 3.3em;
+  width: 3.5em;
   margin-left: 8px;
-  text-align: right;
+  text-align: center;
 }
 .add-plan-content md-card .slider-wrap .slider-title {
   *zoom: 1;
@@ -14937,6 +14986,11 @@ md-card-content .new-training md-card md-card-content .content-add md-content ul
 .add-plan-content md-card .slider-wrap .slider-title:last-child {
   margin-right: 0%;
 }
+@media only screen and (min-width: 1050px) {
+  .add-plan-content md-card .slider-wrap .slider-title {
+    padding-left: 1em;
+  }
+}
 .add-plan-content md-card .slider-wrap .slider-title span {
   line-height: 50px;
   vertical-align: middle;
@@ -14946,8 +15000,8 @@ md-card-content .new-training md-card md-card-content .content-add md-content ul
   float: left;
   clear: none;
   text-align: inherit;
-  width: 91.66666666666666%;
-  margin-left: 0.833333333333333%;
+  width: 97.5%;
+  margin-left: 1.666666666666667%;
   margin-right: 0%;
   box-sizing: border-box;
 }
@@ -14961,6 +15015,28 @@ md-card-content .new-training md-card md-card-content .content-add md-content ul
 }
 .add-plan-content md-card .add-inputs:last-child {
   margin-right: 0%;
+}
+@media only screen and (min-width: 1050px) {
+  .add-plan-content md-card .add-inputs {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 91.66666666666666%;
+    margin-left: 0.833333333333333%;
+    margin-right: 0%;
+  }
+  .add-plan-content md-card .add-inputs:before,
+  .add-plan-content md-card .add-inputs:after {
+    content: '';
+    display: table;
+  }
+  .add-plan-content md-card .add-inputs:after {
+    clear: both;
+  }
+  .add-plan-content md-card .add-inputs:last-child {
+    margin-right: 0%;
+  }
 }
 .collection-wrap h1 {
   font-size: 50px;
