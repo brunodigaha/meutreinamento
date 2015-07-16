@@ -13427,6 +13427,11 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
     padding-right: 2em;
   }
 }
+@media only screen and (min-width: 400px) and (max-width: 1050px) and (orientation: portrait) {
+  .plan-wrap {
+    margin-top: 2em;
+  }
+}
 .plan-wrap .plan-dashboard {
   *zoom: 1;
   float: left;
@@ -13474,7 +13479,7 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   margin-bottom: 1%;
 }
 .plan-wrap .plan-dashboard md-card md-card-content .plan-header-options button.md-button {
-  width: 89px;
+  width: 95px;
   min-width: 15px;
   min-height: 27px;
   line-height: 27px;
@@ -13701,18 +13706,8 @@ md-dialog .edit-plan-wrap md-dialog-content .content-wrap .action button.md-butt
   }
 }
 .plan-wrap .plan-cards md-card md-card-content md-content {
-  height: 22vh;
+  height: 27vh;
   text-align: center;
-}
-@media only screen and (min-width: 400px) and (max-width: 1050px) and (orientation: portrait) {
-  .plan-wrap .plan-cards md-card md-card-content md-content {
-    height: 27vh;
-  }
-}
-@media only screen and (min-width: 1050px) {
-  .plan-wrap .plan-cards md-card md-card-content md-content {
-    height: 27vh;
-  }
 }
 .plan-wrap .plan-cards md-card md-card-content md-content ds-training {
   *zoom: 1;
