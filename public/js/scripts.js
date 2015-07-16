@@ -76922,6 +76922,22 @@ module.exports = function() {
 };
 
 }).call(this,require("buffer").Buffer)
+},{"buffer":"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/index.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/appDirectives/directives/dsPlanDirective.js":[function(require,module,exports){
+(function (Buffer){
+
+module.exports = function() {
+	return{
+		template: Buffer("CjxoMT5kaXJldGl2YSBwbGFubzwvaDE+","base64"),
+		// transclude:true
+		// scope: {
+		// 	title: "@",
+		// 	content: "@"
+		// }
+
+	};
+};
+
+}).call(this,require("buffer").Buffer)
 },{"buffer":"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/index.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/appDirectives/directives/dsTrainingDirective.js":[function(require,module,exports){
 (function (Buffer){
 
@@ -76940,9 +76956,10 @@ module.exports = function() {
 },{"buffer":"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/index.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/appDirectives/index.js":[function(require,module,exports){
 module.exports = angular.module('appDirectives',[])
 		.directive('dsTraining', require('./directives/dsTrainingDirective.js'))
+		.directive('dsPlan', require('./directives/dsPlanDirective.js'))
 		.directive('dsInfo', require('./directives/dsInfoDirective.js'));
 
-},{"./directives/dsInfoDirective.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/appDirectives/directives/dsInfoDirective.js","./directives/dsTrainingDirective.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/appDirectives/directives/dsTrainingDirective.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/appRoutes.js":[function(require,module,exports){
+},{"./directives/dsInfoDirective.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/appDirectives/directives/dsInfoDirective.js","./directives/dsPlanDirective.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/appDirectives/directives/dsPlanDirective.js","./directives/dsTrainingDirective.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/appDirectives/directives/dsTrainingDirective.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/appRoutes.js":[function(require,module,exports){
 
 
 module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider,$breadcrumbProvider,ChartJsProvider, $mdThemingProvider) {
@@ -78013,7 +78030,7 @@ module.exports = {
 			views: {
 				'content@core': {
 					controller: 'plansController',
-					template: Buffer("CjxzZWN0aW9uIGNsYXNzPSJwbGFuc193cmFwIj4KICA8cD5QbGFub3MgPC9wPgo8L3NlY3Rpb24+","base64")
+					template: Buffer("CjxzZWN0aW9uIGNsYXNzPSJwbGFuc193cmFwIj4KICA8cD5QbGFub3MgPC9wPgogIDxkcy1wbGFuPjwvZHMtcGxhbj4KPC9zZWN0aW9uPg==","base64")
 				}
 			}
 		},
