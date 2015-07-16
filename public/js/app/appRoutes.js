@@ -15,9 +15,11 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider,$
 
 		.state('core.user.home',require('./user/userRoutes.js').user.home)
 
+		.state('core.user.plans',angular.extend(
+				{url:'/plans'},require('./train/trainRoutes.js').train.plans))
+
 		.state('core.user.home.planTraining',angular.extend(
 				{url:'/plan-training'},require('./user/userRoutes.js').user.planTraining))
-
 
 		.state('core.user.schedule',angular.extend(
 				{url:'/schedule'},require('./user/userRoutes.js').user.schedule))

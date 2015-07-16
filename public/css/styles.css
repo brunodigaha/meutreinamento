@@ -15033,6 +15033,9 @@ md-card-content .new-training md-card md-card-content .content-add md-content ul
     margin-right: 0%;
   }
 }
+.plans_wrap {
+  background-color: #f00;
+}
 .collection-wrap h1 {
   font-size: 50px;
   color: #008000;

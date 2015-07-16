@@ -69,6 +69,18 @@ module.exports = {
 				}
 			}
 		},
+		plans : {
+			authenticate: true,
+			ncyBreadcrumb: {
+				label: 'Planos'
+			},
+			views: {
+				'content@core': {
+					controller: 'plansController',
+					template: fs.readFileSync(__dirname + '/templates/plansContent.html')
+				}
+			}
+		},
 		trainingHistory : {
 			authenticate: true,
 			ncyBreadcrumb: {
