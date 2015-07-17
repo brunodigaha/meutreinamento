@@ -10962,6 +10962,11 @@ td {
   max-width: 100%;
   height: auto;
 }
+.smoothing,
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 .icon {
   background-image: url("../images/sprites.png");
 }
