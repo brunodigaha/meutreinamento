@@ -1,4 +1,4 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/index.js":[function(require,module,exports){
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({"/home/williamalonco/Documentos/meutreinamento/node_modules/browserify/node_modules/buffer/index.js":[function(require,module,exports){
 /*!
  * The buffer module from node.js, for the browser.
  *
@@ -1437,7 +1437,7 @@ function decodeUtf8Char (str) {
   }
 }
 
-},{"base64-js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/node_modules/base64-js/lib/b64.js","ieee754":"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/node_modules/ieee754/index.js","is-array":"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/node_modules/is-array/index.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/node_modules/base64-js/lib/b64.js":[function(require,module,exports){
+},{"base64-js":"/home/williamalonco/Documentos/meutreinamento/node_modules/browserify/node_modules/buffer/node_modules/base64-js/lib/b64.js","ieee754":"/home/williamalonco/Documentos/meutreinamento/node_modules/browserify/node_modules/buffer/node_modules/ieee754/index.js","is-array":"/home/williamalonco/Documentos/meutreinamento/node_modules/browserify/node_modules/buffer/node_modules/is-array/index.js"}],"/home/williamalonco/Documentos/meutreinamento/node_modules/browserify/node_modules/buffer/node_modules/base64-js/lib/b64.js":[function(require,module,exports){
 var lookup = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
 
 ;(function (exports) {
@@ -1563,7 +1563,7 @@ var lookup = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
 	exports.fromByteArray = uint8ToBase64
 }(typeof exports === 'undefined' ? (this.base64js = {}) : exports))
 
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/node_modules/ieee754/index.js":[function(require,module,exports){
+},{}],"/home/williamalonco/Documentos/meutreinamento/node_modules/browserify/node_modules/buffer/node_modules/ieee754/index.js":[function(require,module,exports){
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
   var e, m
   var eLen = nBytes * 8 - mLen - 1
@@ -1649,7 +1649,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
   buffer[offset + i - d] |= s * 128
 }
 
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/node_modules/is-array/index.js":[function(require,module,exports){
+},{}],"/home/williamalonco/Documentos/meutreinamento/node_modules/browserify/node_modules/buffer/node_modules/is-array/index.js":[function(require,module,exports){
 
 /**
  * isArray
@@ -1684,7 +1684,7 @@ module.exports = isArray || function (val) {
   return !! val && '[object Array]' == str.call(val);
 };
 
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/Chart.js/Chart.min.js":[function(require,module,exports){
+},{}],"/home/williamalonco/Documentos/meutreinamento/public/bower_components/Chart.js/Chart.min.js":[function(require,module,exports){
 (function (global){
 ; var __browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
 /*!
@@ -1703,10 +1703,10 @@ module.exports = isArray || function (val) {
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-animate/angular-animate.js":[function(require,module,exports){
+},{}],"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular-animate/angular-animate.js":[function(require,module,exports){
 (function (global){
 
-; require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js");
+; require("/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js");
 ; var __browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
 /**
  * @license AngularJS v1.4.3
@@ -5435,10 +5435,10 @@ angular.module('ngAnimate', [])
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-aria/angular-aria.js":[function(require,module,exports){
+},{"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js":"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js"}],"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular-aria/angular-aria.js":[function(require,module,exports){
 (function (global){
 
-; require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js");
+; require("/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js");
 ; var __browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
 /**
  * @license AngularJS v1.4.3
@@ -5839,10 +5839,10 @@ ngAriaModule.directive('ngShow', ['$aria', function($aria) {
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-breadcrumb/dist/angular-breadcrumb.min.js":[function(require,module,exports){
+},{"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js":"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js"}],"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular-breadcrumb/dist/angular-breadcrumb.min.js":[function(require,module,exports){
 (function (global){
 
-; require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js");
+; require("/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js");
 ; var __browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
 /*! angular-breadcrumb - v0.3.3-dev-2015-05-02
 * http://ncuillery.github.io/angular-breadcrumb
@@ -5853,11 +5853,11 @@ ngAriaModule.directive('ngShow', ['$aria', function($aria) {
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-chart.js/dist/angular-chart.min.js":[function(require,module,exports){
+},{"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js":"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js"}],"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular-chart.js/dist/angular-chart.min.js":[function(require,module,exports){
 (function (global){
 
-; require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/Chart.js/Chart.min.js");
-require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js");
+; require("/home/williamalonco/Documentos/meutreinamento/public/bower_components/Chart.js/Chart.min.js");
+require("/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js");
 ; var __browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
 !function(t){"use strict";"function"==typeof define&&define.amd?define(["angular","chart.js"],t):"object"==typeof exports?module.exports=t(__browserify_shim_require__("angular"),__browserify_shim_require__("chart.js")):t(angular,Chart)}(function(t,e){"use strict";function n(){var n={},r={Chart:e,getOptions:function(e){var r=e&&n[e]||{};return t.extend({},n,r)}};this.setOptions=function(e,r){return r?(n[e]=t.extend(n[e]||{},r),void 0):(r=e,n=t.extend(n,r),void 0)},this.$get=function(){return r}}function r(n){function r(t,e){return t&&e&&t.length&&e.length?Array.isArray(t[0])?t.length===e.length&&t[0].length===e[0].length:e.reduce(a,0)>0?t.length===e.length:!1:!1}function a(t,e){return t+e}function o(e,r,a){if(r.data&&r.data.length){r.getColour="function"==typeof r.getColour?r.getColour:l,r.colours=c(e,r);var o=a[0],u=o.getContext("2d"),s=Array.isArray(r.data[0])?g(r.labels,r.data,r.series||[],r.colours):p(r.labels,r.data,r.colours),f=t.extend({},n.getOptions(e),r.options),h=new n.Chart(u)[e](s,f);return r.$emit("create",h),["hover","click"].forEach(function(t){r[t]&&(o["click"===t?"onclick":"onmousemove"]=i(r,h,t))}),r.legend&&"false"!==r.legend&&v(a,h),h}}function i(t,e,n){return function(r){var a=e.getPointsAtEvent||e.getBarsAtEvent||e.getSegmentsAtEvent;if(a){var o=a.call(e,r);t[n](o,r),t.$apply()}}}function c(r,a){for(var o=t.copy(a.colours||n.getOptions(r).colours||e.defaults.global.colours);o.length<a.data.length;)o.push(a.getColour());return o.map(u)}function u(t){return"object"==typeof t&&null!==t?t:"string"==typeof t&&"#"===t[0]?s(d(t.substr(1))):l()}function l(){var t=[f(0,255),f(0,255),f(0,255)];return s(t)}function s(t){return{fillColor:h(t,.2),strokeColor:h(t,1),pointColor:h(t,1),pointStrokeColor:"#fff",pointHighlightFill:"#fff",pointHighlightStroke:h(t,.8)}}function f(t,e){return Math.floor(Math.random()*(e-t+1))+t}function h(t,e){return"rgba("+t.concat(e).join(",")+")"}function d(t){var e=parseInt(t,16),n=e>>16&255,r=e>>8&255,a=255&e;return[n,r,a]}function g(e,n,r,a){return{labels:e,datasets:n.map(function(e,n){return t.extend({},a[n],{label:r[n],data:e})})}}function p(e,n,r){return e.map(function(e,a){return t.extend({},r[a],{label:e,value:n[a],color:r[a].strokeColor,highlight:r[a].pointHighlightStroke})})}function v(t,e){var n=t.parent(),r=n.find("chart-legend"),a="<chart-legend>"+e.generateLegend()+"</chart-legend>";r.length?r.replaceWith(a):n.append(a)}function y(t,e,n){Array.isArray(n.data[0])?t.datasets.forEach(function(t,n){(t.points||t.bars).forEach(function(t,r){t.value=e[n][r]})}):t.segments.forEach(function(t,n){t.value=e[n]}),t.update(),n.$emit("update",t)}function C(t){return!t||Array.isArray(t)&&!t.length||"object"==typeof t&&!Object.keys(t).length}return function(e){return{restrict:"CA",scope:{data:"=",labels:"=",options:"=",series:"=",colours:"=?",getColour:"=?",chartType:"=",legend:"@",click:"=",hover:"="},link:function(n,a){function i(r,i){if(!C(r)&&!t.equals(r,i)){var u=e||n.chartType;u&&(c&&c.destroy(),c=o(u,n,a))}}var c,u=document.createElement("div");u.className="chart-container",a.replaceWith(u),u.appendChild(a[0]),"object"==typeof window.G_vmlCanvasManager&&null!==window.G_vmlCanvasManager&&"function"==typeof window.G_vmlCanvasManager.initElement&&window.G_vmlCanvasManager.initElement(a[0]),n.$watch("data",function(t,i){if(t&&t.length&&(!Array.isArray(t[0])||t[0].length)){var u=e||n.chartType;if(u){if(c){if(r(t,i))return y(c,t,n);c.destroy()}c=o(u,n,a)}}},!0),n.$watch("series",i,!0),n.$watch("labels",i,!0),n.$watch("options",i,!0),n.$watch("colours",i,!0),n.$watch("chartType",function(e,r){C(e)||t.equals(e,r)||(c&&c.destroy(),c=o(e,n,a))}),n.$on("$destroy",function(){c&&c.destroy()})}}}}e.defaults.global.responsive=!0,e.defaults.global.multiTooltipTemplate="<%if (datasetLabel){%><%=datasetLabel%>: <%}%><%= value %>",e.defaults.global.colours=["#97BBCD","#DCDCDC","#F7464A","#46BFBD","#FDB45C","#949FB1","#4D5360"],t.module("chart.js",[]).provider("ChartJs",n).factory("ChartJsFactory",["ChartJs",r]).directive("chartBase",["ChartJsFactory",function(t){return new t}]).directive("chartLine",["ChartJsFactory",function(t){return new t("Line")}]).directive("chartBar",["ChartJsFactory",function(t){return new t("Bar")}]).directive("chartRadar",["ChartJsFactory",function(t){return new t("Radar")}]).directive("chartDoughnut",["ChartJsFactory",function(t){return new t("Doughnut")}]).directive("chartPie",["ChartJsFactory",function(t){return new t("Pie")}]).directive("chartPolarArea",["ChartJsFactory",function(t){return new t("PolarArea")}])});
 
@@ -5866,10 +5866,10 @@ require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_compone
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/Chart.js/Chart.min.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/Chart.js/Chart.min.js","/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-cookies/angular-cookies.js":[function(require,module,exports){
+},{"/home/williamalonco/Documentos/meutreinamento/public/bower_components/Chart.js/Chart.min.js":"/home/williamalonco/Documentos/meutreinamento/public/bower_components/Chart.js/Chart.min.js","/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js":"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js"}],"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular-cookies/angular-cookies.js":[function(require,module,exports){
 (function (global){
 
-; require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js");
+; require("/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js");
 ; var __browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
 /**
  * @license AngularJS v1.4.3
@@ -6198,11 +6198,11 @@ angular.module('ngCookies').provider('$$cookieWriter', function $$CookieWriterPr
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-holderjs/src/holder.js":[function(require,module,exports){
+},{"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js":"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js"}],"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular-holderjs/src/holder.js":[function(require,module,exports){
 (function (global){
 
-; require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js");
-require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/holderjs/holder.js");
+; require("/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js");
+require("/home/williamalonco/Documentos/meutreinamento/public/bower_components/holderjs/holder.js");
 ; var __browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
 (function(window, angular, undefined) {
 'use strict';
@@ -6227,10 +6227,10 @@ module.directive('holder', [
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js","/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/holderjs/holder.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/holderjs/holder.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-material-icons/angular-material-icons.min.js":[function(require,module,exports){
+},{"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js":"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js","/home/williamalonco/Documentos/meutreinamento/public/bower_components/holderjs/holder.js":"/home/williamalonco/Documentos/meutreinamento/public/bower_components/holderjs/holder.js"}],"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular-material-icons/angular-material-icons.min.js":[function(require,module,exports){
 (function (global){
 
-; require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js");
+; require("/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js");
 ; var __browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
 angular.module("ngMdIcons",[]).directive("ngMdIcon",function(){var e={amazon:'<path d="M13.23 10.56V10c-1.94 0-3.99.39-3.99 2.67 0 1.16.61 1.95 1.63 1.95.76 0 1.43-.47 1.86-1.22.52-.93.5-1.8.5-2.84m2.7 6.53c-.18.16-.43.17-.63.06-.89-.74-1.05-1.08-1.54-1.79-1.47 1.5-2.51 1.95-4.42 1.95-2.25 0-4.01-1.39-4.01-4.17 0-2.18 1.17-3.64 2.86-4.38 1.46-.64 3.49-.76 5.04-.93V7.5c0-.66.05-1.41-.33-1.96-.32-.49-.95-.7-1.5-.7-1.02 0-1.93.53-2.15 1.61-.05.24-.25.48-.47.49l-2.6-.28c-.22-.05-.46-.22-.4-.56.6-3.15 3.45-4.1 6-4.1 1.3 0 3 .35 4.03 1.33C17.11 4.55 17 6.18 17 7.95v4.17c0 1.25.5 1.81 1 2.48.17.25.21.54 0 .71l-2.06 1.78h-.01"/><path d="M20.16 19.54C18 21.14 14.82 22 12.1 22c-3.81 0-7.25-1.41-9.85-3.76-.2-.18-.02-.43.25-.29 2.78 1.63 6.25 2.61 9.83 2.61 2.41 0 5.07-.5 7.51-1.53.37-.16.66.24.32.51"/><path d="M21.07 18.5c-.28-.36-1.85-.17-2.57-.08-.19.02-.22-.16-.03-.3 1.24-.88 3.29-.62 3.53-.33.24.3-.07 2.35-1.24 3.32-.18.16-.35.07-.26-.11.26-.67.85-2.14.57-2.5z"/>',
 apple:'<path d="M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83"/>',"facebook-box":'<path d="M19 4v3h-2a1 1 0 0 0-1 1v2h3v3h-3v7h-3v-7h-2v-3h2V7.5C13 5.56 14.57 4 16.5 4M20 2H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V4c0-1.11-.9-2-2-2z"/>',
@@ -6516,12 +6516,12 @@ a&&(c=a[1],b=a[2])}else c="help";void 0===e[c]&&(c="help");void 0!==d.size?b=d.s
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-material/angular-material.js":[function(require,module,exports){
+},{"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js":"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js"}],"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular-material/angular-material.js":[function(require,module,exports){
 (function (global){
 
-; require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js");
-require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-animate/angular-animate.js");
-require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-aria/angular-aria.js");
+; require("/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js");
+require("/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular-animate/angular-animate.js");
+require("/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular-aria/angular-aria.js");
 ; var __browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
 /*!
  * Angular Material Design
@@ -23046,10 +23046,10 @@ angular.module("material.core").constant("$MD_THEME_CSS", "/* mixin definition ;
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-animate/angular-animate.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-animate/angular-animate.js","/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-aria/angular-aria.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-aria/angular-aria.js","/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-messages/angular-messages.js":[function(require,module,exports){
+},{"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular-animate/angular-animate.js":"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular-animate/angular-animate.js","/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular-aria/angular-aria.js":"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular-aria/angular-aria.js","/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js":"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js"}],"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular-messages/angular-messages.js":[function(require,module,exports){
 (function (global){
 
-; require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js");
+; require("/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js");
 ; var __browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
 /**
  * @license AngularJS v1.4.3
@@ -23735,10 +23735,10 @@ function ngMessageDirectiveFactory(restrict) {
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-scroll-glue/src/scrollglue.js":[function(require,module,exports){
+},{"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js":"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js"}],"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular-scroll-glue/src/scrollglue.js":[function(require,module,exports){
 (function (global){
 
-; require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js");
+; require("/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js");
 ; var __browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
 /* angularjs Scroll Glue
  * version 2.0.6
@@ -23878,10 +23878,10 @@ function ngMessageDirectiveFactory(restrict) {
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-sortable-view/src/angular-sortable-view.min.js":[function(require,module,exports){
+},{"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js":"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js"}],"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular-sortable-view/src/angular-sortable-view.min.js":[function(require,module,exports){
 (function (global){
 
-; require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js");
+; require("/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js");
 ; var __browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
 /*
 	Copyright Kamil Pękala http://github.com/kamilkp
@@ -23893,10 +23893,10 @@ function ngMessageDirectiveFactory(restrict) {
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-ui-router/release/angular-ui-router.js":[function(require,module,exports){
+},{"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js":"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js"}],"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular-ui-router/release/angular-ui-router.js":[function(require,module,exports){
 (function (global){
 
-; require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js");
+; require("/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js");
 ; var __browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
 /**
  * State-based routing for AngularJS
@@ -28273,10 +28273,10 @@ angular.module('ui.router.state')
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-uploadcare/angular-uploadcare.js":[function(require,module,exports){
+},{"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js":"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js"}],"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular-uploadcare/angular-uploadcare.js":[function(require,module,exports){
 (function (global){
 
-; require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js");
+; require("/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js");
 ; var __browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
 'use strict';
 
@@ -28320,7 +28320,7 @@ angular.module('ng-uploadcare', [])
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":[function(require,module,exports){
+},{"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js":"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js"}],"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js":[function(require,module,exports){
 (function (global){
 ; var __browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
 /**
@@ -56692,11 +56692,11 @@ var minlengthDirective = function() {
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angularfire/dist/angularfire.js":[function(require,module,exports){
+},{}],"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angularfire/dist/angularfire.js":[function(require,module,exports){
 (function (global){
 
-; require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js");
-require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/firebase/firebase.js");
+; require("/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js");
+require("/home/williamalonco/Documentos/meutreinamento/public/bower_components/firebase/firebase.js");
 ; var __browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
 /*!
  * AngularFire is the officially supported AngularJS binding for Firebase. Firebase
@@ -58981,7 +58981,7 @@ if ( typeof Object.getPrototypeOf !== "function" ) {
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js","/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/firebase/firebase.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/firebase/firebase.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/firebase/firebase.js":[function(require,module,exports){
+},{"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js":"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js","/home/williamalonco/Documentos/meutreinamento/public/bower_components/firebase/firebase.js":"/home/williamalonco/Documentos/meutreinamento/public/bower_components/firebase/firebase.js"}],"/home/williamalonco/Documentos/meutreinamento/public/bower_components/firebase/firebase.js":[function(require,module,exports){
 (function (global){
 ; var __browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
 /*! @license Firebase v2.2.7
@@ -59253,7 +59253,7 @@ function Nc(a,b){J(!b||!0===a||!1===a,"Can't turn on custom loggers persistently
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/holderjs/holder.js":[function(require,module,exports){
+},{}],"/home/williamalonco/Documentos/meutreinamento/public/bower_components/holderjs/holder.js":[function(require,module,exports){
 (function (global){
 ; var __browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
 /*!
@@ -61733,7 +61733,7 @@ return /******/ (function(modules) { // webpackBootstrap
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/lodash/lodash.js":[function(require,module,exports){
+},{}],"/home/williamalonco/Documentos/meutreinamento/public/bower_components/lodash/lodash.js":[function(require,module,exports){
 (function (global){
 ; var __browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
 /**
@@ -74093,7 +74093,7 @@ return /******/ (function(modules) { // webpackBootstrap
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/modernizr/modernizr.js":[function(require,module,exports){
+},{}],"/home/williamalonco/Documentos/meutreinamento/public/bower_components/modernizr/modernizr.js":[function(require,module,exports){
 (function (global){
 ; var __browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
 /*!
@@ -75508,11 +75508,11 @@ window.Modernizr = (function( window, document, undefined ) {
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/restangular/dist/restangular.js":[function(require,module,exports){
+},{}],"/home/williamalonco/Documentos/meutreinamento/public/bower_components/restangular/dist/restangular.js":[function(require,module,exports){
 (function (global){
 
-; require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js");
-require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/lodash/lodash.js");
+; require("/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js");
+require("/home/williamalonco/Documentos/meutreinamento/public/bower_components/lodash/lodash.js");
 ; var __browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
 /**
  * Restful Resources service for AngularJS apps
@@ -76875,7 +76875,7 @@ restangular.provider('Restangular', function() {
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js","/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/lodash/lodash.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/lodash/lodash.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/app.js":[function(require,module,exports){
+},{"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js":"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js","/home/williamalonco/Documentos/meutreinamento/public/bower_components/lodash/lodash.js":"/home/williamalonco/Documentos/meutreinamento/public/bower_components/lodash/lodash.js"}],"/home/williamalonco/Documentos/meutreinamento/public/js/app/app.js":[function(require,module,exports){
 //other dependencies
 require('modernizr');
 require('angular');
@@ -76906,7 +76906,7 @@ angular
 
 
 
-},{"./appDirectives":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/appDirectives/index.js","./appRoutes.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/appRoutes.js","./appRun.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/appRun.js","./auth":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/auth/index.js","./core":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/core/index.js","./train":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/index.js","./user":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/user/index.js","angular":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js","angularBreadcrumb":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-breadcrumb/dist/angular-breadcrumb.min.js","angularChart":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-chart.js/dist/angular-chart.min.js","angularCookies":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-cookies/angular-cookies.js","angularFire":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angularfire/dist/angularfire.js","angularHolderjs":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-holderjs/src/holder.js","angularIcons":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-material-icons/angular-material-icons.min.js","angularMaterial":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-material/angular-material.js","angularMessages":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-messages/angular-messages.js","angularScroll":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-scroll-glue/src/scrollglue.js","angularSortableView":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-sortable-view/src/angular-sortable-view.min.js","angularUploadcare":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-uploadcare/angular-uploadcare.js","modernizr":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/modernizr/modernizr.js","restAngular":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/restangular/dist/restangular.js","ui-router":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-ui-router/release/angular-ui-router.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/appDirectives/directives/dsInfoDirective.js":[function(require,module,exports){
+},{"./appDirectives":"/home/williamalonco/Documentos/meutreinamento/public/js/app/appDirectives/index.js","./appRoutes.js":"/home/williamalonco/Documentos/meutreinamento/public/js/app/appRoutes.js","./appRun.js":"/home/williamalonco/Documentos/meutreinamento/public/js/app/appRun.js","./auth":"/home/williamalonco/Documentos/meutreinamento/public/js/app/auth/index.js","./core":"/home/williamalonco/Documentos/meutreinamento/public/js/app/core/index.js","./train":"/home/williamalonco/Documentos/meutreinamento/public/js/app/train/index.js","./user":"/home/williamalonco/Documentos/meutreinamento/public/js/app/user/index.js","angular":"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular/angular.js","angularBreadcrumb":"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular-breadcrumb/dist/angular-breadcrumb.min.js","angularChart":"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular-chart.js/dist/angular-chart.min.js","angularCookies":"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular-cookies/angular-cookies.js","angularFire":"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angularfire/dist/angularfire.js","angularHolderjs":"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular-holderjs/src/holder.js","angularIcons":"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular-material-icons/angular-material-icons.min.js","angularMaterial":"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular-material/angular-material.js","angularMessages":"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular-messages/angular-messages.js","angularScroll":"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular-scroll-glue/src/scrollglue.js","angularSortableView":"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular-sortable-view/src/angular-sortable-view.min.js","angularUploadcare":"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular-uploadcare/angular-uploadcare.js","modernizr":"/home/williamalonco/Documentos/meutreinamento/public/bower_components/modernizr/modernizr.js","restAngular":"/home/williamalonco/Documentos/meutreinamento/public/bower_components/restangular/dist/restangular.js","ui-router":"/home/williamalonco/Documentos/meutreinamento/public/bower_components/angular-ui-router/release/angular-ui-router.js"}],"/home/williamalonco/Documentos/meutreinamento/public/js/app/appDirectives/directives/dsInfoDirective.js":[function(require,module,exports){
 (function (Buffer){
 
 module.exports = function() {
@@ -76922,7 +76922,7 @@ module.exports = function() {
 };
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/index.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/appDirectives/directives/dsPlanDirective.js":[function(require,module,exports){
+},{"buffer":"/home/williamalonco/Documentos/meutreinamento/node_modules/browserify/node_modules/buffer/index.js"}],"/home/williamalonco/Documentos/meutreinamento/public/js/app/appDirectives/directives/dsPlanDirective.js":[function(require,module,exports){
 (function (Buffer){
 
 module.exports = function() {
@@ -76938,7 +76938,7 @@ module.exports = function() {
 };
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/index.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/appDirectives/directives/dsTrainingDirective.js":[function(require,module,exports){
+},{"buffer":"/home/williamalonco/Documentos/meutreinamento/node_modules/browserify/node_modules/buffer/index.js"}],"/home/williamalonco/Documentos/meutreinamento/public/js/app/appDirectives/directives/dsTrainingDirective.js":[function(require,module,exports){
 (function (Buffer){
 
 module.exports = function() {
@@ -76953,13 +76953,13 @@ module.exports = function() {
 };
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/index.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/appDirectives/index.js":[function(require,module,exports){
+},{"buffer":"/home/williamalonco/Documentos/meutreinamento/node_modules/browserify/node_modules/buffer/index.js"}],"/home/williamalonco/Documentos/meutreinamento/public/js/app/appDirectives/index.js":[function(require,module,exports){
 module.exports = angular.module('appDirectives',[])
 		.directive('dsTraining', require('./directives/dsTrainingDirective.js'))
 		.directive('dsPlan', require('./directives/dsPlanDirective.js'))
 		.directive('dsInfo', require('./directives/dsInfoDirective.js'));
 
-},{"./directives/dsInfoDirective.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/appDirectives/directives/dsInfoDirective.js","./directives/dsPlanDirective.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/appDirectives/directives/dsPlanDirective.js","./directives/dsTrainingDirective.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/appDirectives/directives/dsTrainingDirective.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/appRoutes.js":[function(require,module,exports){
+},{"./directives/dsInfoDirective.js":"/home/williamalonco/Documentos/meutreinamento/public/js/app/appDirectives/directives/dsInfoDirective.js","./directives/dsPlanDirective.js":"/home/williamalonco/Documentos/meutreinamento/public/js/app/appDirectives/directives/dsPlanDirective.js","./directives/dsTrainingDirective.js":"/home/williamalonco/Documentos/meutreinamento/public/js/app/appDirectives/directives/dsTrainingDirective.js"}],"/home/williamalonco/Documentos/meutreinamento/public/js/app/appRoutes.js":[function(require,module,exports){
 
 
 module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider,$breadcrumbProvider,ChartJsProvider, $mdThemingProvider) {
@@ -77025,7 +77025,7 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider,$
     });	
 };
 
-},{"./auth/authRoutes.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/auth/authRoutes.js","./core/coreRoutes.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/core/coreRoutes.js","./train/trainRoutes.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/trainRoutes.js","./user/userRoutes.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/user/userRoutes.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/appRun.js":[function(require,module,exports){
+},{"./auth/authRoutes.js":"/home/williamalonco/Documentos/meutreinamento/public/js/app/auth/authRoutes.js","./core/coreRoutes.js":"/home/williamalonco/Documentos/meutreinamento/public/js/app/core/coreRoutes.js","./train/trainRoutes.js":"/home/williamalonco/Documentos/meutreinamento/public/js/app/train/trainRoutes.js","./user/userRoutes.js":"/home/williamalonco/Documentos/meutreinamento/public/js/app/user/userRoutes.js"}],"/home/williamalonco/Documentos/meutreinamento/public/js/app/appRun.js":[function(require,module,exports){
 module.exports = function ($rootScope, $state,$stateParams,coreEventsService, authModelService) {
 	$rootScope.$on("$stateChangeStart", function (event, toState, toParams, fromState, fromParams) {
 		// console.log('$stateChangeStart to '+toState.to+'- fired when the transition begins. toState,toParams : \n',toState, toParams);
@@ -77068,7 +77068,7 @@ module.exports = function ($rootScope, $state,$stateParams,coreEventsService, au
 	// });
 };
 
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/auth/authRoutes.js":[function(require,module,exports){
+},{}],"/home/williamalonco/Documentos/meutreinamento/public/js/app/auth/authRoutes.js":[function(require,module,exports){
 (function (Buffer){
 
 module.exports = {
@@ -77095,7 +77095,7 @@ module.exports = {
 
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/index.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/auth/controllers/loginController.js":[function(require,module,exports){
+},{"buffer":"/home/williamalonco/Documentos/meutreinamento/node_modules/browserify/node_modules/buffer/index.js"}],"/home/williamalonco/Documentos/meutreinamento/public/js/app/auth/controllers/loginController.js":[function(require,module,exports){
 module.exports = function ($scope,$timeout, authModelService,$firebaseArray) {
 	var userModel = $scope.userModel = authModelService;
 	// var URL = new Firebase("https://vitta.firebaseio.com/");
@@ -77121,12 +77121,12 @@ module.exports = function ($scope,$timeout, authModelService,$firebaseArray) {
 	};
 };
 
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/auth/index.js":[function(require,module,exports){
+},{}],"/home/williamalonco/Documentos/meutreinamento/public/js/app/auth/index.js":[function(require,module,exports){
 module.exports = angular.module('auth',[])
 			.factory('authModelService', require('./services/authModelService.js'))
 			.controller('loginController', require('./controllers/loginController.js'));
 
-},{"./controllers/loginController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/auth/controllers/loginController.js","./services/authModelService.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/auth/services/authModelService.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/auth/services/authModelService.js":[function(require,module,exports){
+},{"./controllers/loginController.js":"/home/williamalonco/Documentos/meutreinamento/public/js/app/auth/controllers/loginController.js","./services/authModelService.js":"/home/williamalonco/Documentos/meutreinamento/public/js/app/auth/services/authModelService.js"}],"/home/williamalonco/Documentos/meutreinamento/public/js/app/auth/services/authModelService.js":[function(require,module,exports){
 module.exports = function ($state,$cookies, RestangularCustom) {
 	var authModel = {
 		currentUser: {},
@@ -77194,7 +77194,7 @@ module.exports = function ($state,$cookies, RestangularCustom) {
 	return authModel;
 };
 
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/core/controllers/asideController.js":[function(require,module,exports){
+},{}],"/home/williamalonco/Documentos/meutreinamento/public/js/app/core/controllers/asideController.js":[function(require,module,exports){
 module.exports = function($scope, coreEventsService, RestangularCustom, $mdDialog, $mdToast, $animate) {
 	var coreEvents = $scope.coreEvents = coreEventsService;
 	// $scope.user = RestangularCustom.all('usuario').getList().$object;
@@ -77227,7 +77227,7 @@ module.exports = function($scope, coreEventsService, RestangularCustom, $mdDialo
 
 };
 
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/core/controllers/editPlanDialogController.js":[function(require,module,exports){
+},{}],"/home/williamalonco/Documentos/meutreinamento/public/js/app/core/controllers/editPlanDialogController.js":[function(require,module,exports){
 module.exports = function($scope, coreEventsService,$state,$stateParams,$mdDialog) {
 	$scope.duracao=2;
 	$scope.frequencia=3;
@@ -77243,7 +77243,7 @@ module.exports = function($scope, coreEventsService,$state,$stateParams,$mdDialo
 
 };
 
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/core/controllers/headerController.js":[function(require,module,exports){
+},{}],"/home/williamalonco/Documentos/meutreinamento/public/js/app/core/controllers/headerController.js":[function(require,module,exports){
 (function (Buffer){
 
 module.exports = function ($scope,$mdDialog, coreEventsService, authModelService) {
@@ -77281,7 +77281,7 @@ module.exports = function ($scope,$mdDialog, coreEventsService, authModelService
 };
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/index.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/core/controllers/searchController.js":[function(require,module,exports){
+},{"buffer":"/home/williamalonco/Documentos/meutreinamento/node_modules/browserify/node_modules/buffer/index.js"}],"/home/williamalonco/Documentos/meutreinamento/public/js/app/core/controllers/searchController.js":[function(require,module,exports){
 (function (Buffer){
 
 module.exports = function($scope,$mdDialog, $mdToast,$animate) {
@@ -77327,7 +77327,7 @@ module.exports = function($scope,$mdDialog, $mdToast,$animate) {
 };
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/index.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/core/controllers/searchDialogController.js":[function(require,module,exports){
+},{"buffer":"/home/williamalonco/Documentos/meutreinamento/node_modules/browserify/node_modules/buffer/index.js"}],"/home/williamalonco/Documentos/meutreinamento/public/js/app/core/controllers/searchDialogController.js":[function(require,module,exports){
 module.exports = function($scope, coreEventsService,$state,$stateParams,$mdDialog) {
 	$scope.onUCUploadComplete = function (info){
 		console.log(info);
@@ -77347,7 +77347,7 @@ module.exports = function($scope, coreEventsService,$state,$stateParams,$mdDialo
 	};
 };
 
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/core/coreRoutes.js":[function(require,module,exports){
+},{}],"/home/williamalonco/Documentos/meutreinamento/public/js/app/core/coreRoutes.js":[function(require,module,exports){
 (function (Buffer){
 
 module.exports = {
@@ -77396,7 +77396,7 @@ module.exports = {
 
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/index.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/core/index.js":[function(require,module,exports){
+},{"buffer":"/home/williamalonco/Documentos/meutreinamento/node_modules/browserify/node_modules/buffer/index.js"}],"/home/williamalonco/Documentos/meutreinamento/public/js/app/core/index.js":[function(require,module,exports){
 module.exports = angular.module('core',[])
 		.controller('headerController', require('./controllers/headerController.js'))
 		.controller('searchController', require('./controllers/searchController.js'))
@@ -77406,7 +77406,7 @@ module.exports = angular.module('core',[])
 		.factory('coreEventsService', require('./services/coreEventsService.js'))
 		.factory('RestangularCustom', require('./services/restangularCustom.js'));
 
-},{"./controllers/asideController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/core/controllers/asideController.js","./controllers/editPlanDialogController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/core/controllers/editPlanDialogController.js","./controllers/headerController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/core/controllers/headerController.js","./controllers/searchController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/core/controllers/searchController.js","./controllers/searchDialogController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/core/controllers/searchDialogController.js","./services/coreEventsService.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/core/services/coreEventsService.js","./services/restangularCustom.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/core/services/restangularCustom.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/core/services/coreEventsService.js":[function(require,module,exports){
+},{"./controllers/asideController.js":"/home/williamalonco/Documentos/meutreinamento/public/js/app/core/controllers/asideController.js","./controllers/editPlanDialogController.js":"/home/williamalonco/Documentos/meutreinamento/public/js/app/core/controllers/editPlanDialogController.js","./controllers/headerController.js":"/home/williamalonco/Documentos/meutreinamento/public/js/app/core/controllers/headerController.js","./controllers/searchController.js":"/home/williamalonco/Documentos/meutreinamento/public/js/app/core/controllers/searchController.js","./controllers/searchDialogController.js":"/home/williamalonco/Documentos/meutreinamento/public/js/app/core/controllers/searchDialogController.js","./services/coreEventsService.js":"/home/williamalonco/Documentos/meutreinamento/public/js/app/core/services/coreEventsService.js","./services/restangularCustom.js":"/home/williamalonco/Documentos/meutreinamento/public/js/app/core/services/restangularCustom.js"}],"/home/williamalonco/Documentos/meutreinamento/public/js/app/core/services/coreEventsService.js":[function(require,module,exports){
 module.exports = function () {
 	var eventsService = {
 		search: false,
@@ -77434,7 +77434,7 @@ module.exports = function () {
 	return eventsService;
 };
 
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/core/services/restangularCustom.js":[function(require,module,exports){
+},{}],"/home/williamalonco/Documentos/meutreinamento/public/js/app/core/services/restangularCustom.js":[function(require,module,exports){
 module.exports = function ($state,$location,Restangular) {
 	return Restangular.withConfig(function(RestangularConfigurer){
 		RestangularConfigurer.setErrorInterceptor(function (response) {
@@ -77473,7 +77473,7 @@ module.exports = function ($state,$location,Restangular) {
 	});
 };
 
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/ImportDialogController.js":[function(require,module,exports){
+},{}],"/home/williamalonco/Documentos/meutreinamento/public/js/app/train/controllers/ImportDialogController.js":[function(require,module,exports){
 module.exports = function($scope, coreEventsService,$state,$stateParams,$mdDialog) {
 	$scope.hide = function() {
 		$mdDialog.hide();
@@ -77486,13 +77486,13 @@ module.exports = function($scope, coreEventsService,$state,$stateParams,$mdDialo
 	};
 };
 
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/addPlanController.js":[function(require,module,exports){
+},{}],"/home/williamalonco/Documentos/meutreinamento/public/js/app/train/controllers/addPlanController.js":[function(require,module,exports){
 module.exports = function($scope) {
 	$scope.duracao = 3;
 	$scope.frequencia =4;
 };
 
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/addTrainingController.js":[function(require,module,exports){
+},{}],"/home/williamalonco/Documentos/meutreinamento/public/js/app/train/controllers/addTrainingController.js":[function(require,module,exports){
 (function (Buffer){
 
 module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$stateParams,$mdDialog) {
@@ -77906,17 +77906,17 @@ module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$sta
 };
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/index.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/collectionTrainingController.js":[function(require,module,exports){
+},{"buffer":"/home/williamalonco/Documentos/meutreinamento/node_modules/browserify/node_modules/buffer/index.js"}],"/home/williamalonco/Documentos/meutreinamento/public/js/app/train/controllers/collectionTrainingController.js":[function(require,module,exports){
 module.exports = function($scope) {
 
 };
 
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/historyTrainingController.js":[function(require,module,exports){
+},{}],"/home/williamalonco/Documentos/meutreinamento/public/js/app/train/controllers/historyTrainingController.js":[function(require,module,exports){
 module.exports = function ($scope) {
 
 };
 
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/listTrainingController.js":[function(require,module,exports){
+},{}],"/home/williamalonco/Documentos/meutreinamento/public/js/app/train/controllers/listTrainingController.js":[function(require,module,exports){
 module.exports =  function($scope,$mdBottomSheet,$timeout, coreEventsService,$state,$stateParams) {
 	$scope.params = $stateParams;
 	$scope.state = $state.current;
@@ -77924,9 +77924,9 @@ module.exports =  function($scope,$mdBottomSheet,$timeout, coreEventsService,$st
 	// $scope.eventsService= eventsService;
 };
 
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/plansController.js":[function(require,module,exports){
-arguments[4]["/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/collectionTrainingController.js"][0].apply(exports,arguments)
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/trainingTrainingController.js":[function(require,module,exports){
+},{}],"/home/williamalonco/Documentos/meutreinamento/public/js/app/train/controllers/plansController.js":[function(require,module,exports){
+arguments[4]["/home/williamalonco/Documentos/meutreinamento/public/js/app/train/controllers/collectionTrainingController.js"][0].apply(exports,arguments)
+},{}],"/home/williamalonco/Documentos/meutreinamento/public/js/app/train/controllers/trainingTrainingController.js":[function(require,module,exports){
 module.exports = function($scope) {
 	$scope.train_menu= {menu: false};
 	$scope.close_train_menu = function(){
@@ -77938,7 +77938,7 @@ module.exports = function($scope) {
 
 };
 
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/index.js":[function(require,module,exports){
+},{}],"/home/williamalonco/Documentos/meutreinamento/public/js/app/train/index.js":[function(require,module,exports){
 module.exports = angular.module('train',[])
 		.controller('listTrainingController', require('./controllers/listTrainingController.js'))
 		.controller('trainingTrainingController', require('./controllers/trainingTrainingController.js'))
@@ -77949,7 +77949,7 @@ module.exports = angular.module('train',[])
 		.controller('collectionTrainingController', require('./controllers/collectionTrainingController.js'))
 		.controller('ImportDialogController', require('./controllers/ImportDialogController.js'));
 
-},{"./controllers/ImportDialogController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/ImportDialogController.js","./controllers/addPlanController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/addPlanController.js","./controllers/addTrainingController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/addTrainingController.js","./controllers/collectionTrainingController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/collectionTrainingController.js","./controllers/historyTrainingController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/historyTrainingController.js","./controllers/listTrainingController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/listTrainingController.js","./controllers/plansController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/plansController.js","./controllers/trainingTrainingController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/trainingTrainingController.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/trainRoutes.js":[function(require,module,exports){
+},{"./controllers/ImportDialogController.js":"/home/williamalonco/Documentos/meutreinamento/public/js/app/train/controllers/ImportDialogController.js","./controllers/addPlanController.js":"/home/williamalonco/Documentos/meutreinamento/public/js/app/train/controllers/addPlanController.js","./controllers/addTrainingController.js":"/home/williamalonco/Documentos/meutreinamento/public/js/app/train/controllers/addTrainingController.js","./controllers/collectionTrainingController.js":"/home/williamalonco/Documentos/meutreinamento/public/js/app/train/controllers/collectionTrainingController.js","./controllers/historyTrainingController.js":"/home/williamalonco/Documentos/meutreinamento/public/js/app/train/controllers/historyTrainingController.js","./controllers/listTrainingController.js":"/home/williamalonco/Documentos/meutreinamento/public/js/app/train/controllers/listTrainingController.js","./controllers/plansController.js":"/home/williamalonco/Documentos/meutreinamento/public/js/app/train/controllers/plansController.js","./controllers/trainingTrainingController.js":"/home/williamalonco/Documentos/meutreinamento/public/js/app/train/controllers/trainingTrainingController.js"}],"/home/williamalonco/Documentos/meutreinamento/public/js/app/train/trainRoutes.js":[function(require,module,exports){
 (function (Buffer){
 
 module.exports = {
@@ -78065,22 +78065,22 @@ module.exports = {
 };
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/index.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/user/controllers/planController.js":[function(require,module,exports){
+},{"buffer":"/home/williamalonco/Documentos/meutreinamento/node_modules/browserify/node_modules/buffer/index.js"}],"/home/williamalonco/Documentos/meutreinamento/public/js/app/user/controllers/planController.js":[function(require,module,exports){
 module.exports = function($scope) {
  $scope.labels = ["Dias Decorridos", "Dias Restantes"];
   $scope.data = [14,7];
 };
 
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/user/controllers/scheduleController.js":[function(require,module,exports){
-arguments[4]["/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/collectionTrainingController.js"][0].apply(exports,arguments)
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/user/index.js":[function(require,module,exports){
+},{}],"/home/williamalonco/Documentos/meutreinamento/public/js/app/user/controllers/scheduleController.js":[function(require,module,exports){
+arguments[4]["/home/williamalonco/Documentos/meutreinamento/public/js/app/train/controllers/collectionTrainingController.js"][0].apply(exports,arguments)
+},{}],"/home/williamalonco/Documentos/meutreinamento/public/js/app/user/index.js":[function(require,module,exports){
 module.exports = angular.module('user',[])
 		.controller('planController', require('./controllers/planController.js'))
 		.controller('scheduleController', require('./controllers/scheduleController.js'));
 		// .factory('userModel', require('./services/userModel.js'))
 		// .factory('RestangularCustom', require('./services/restangularCustom.js'));
 
-},{"./controllers/planController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/user/controllers/planController.js","./controllers/scheduleController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/user/controllers/scheduleController.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/user/userRoutes.js":[function(require,module,exports){
+},{"./controllers/planController.js":"/home/williamalonco/Documentos/meutreinamento/public/js/app/user/controllers/planController.js","./controllers/scheduleController.js":"/home/williamalonco/Documentos/meutreinamento/public/js/app/user/controllers/scheduleController.js"}],"/home/williamalonco/Documentos/meutreinamento/public/js/app/user/userRoutes.js":[function(require,module,exports){
 (function (Buffer){
 
 module.exports = {
@@ -78141,4 +78141,4 @@ module.exports = {
 };
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/index.js"}]},{},["/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/app.js"]);
+},{"buffer":"/home/williamalonco/Documentos/meutreinamento/node_modules/browserify/node_modules/buffer/index.js"}]},{},["/home/williamalonco/Documentos/meutreinamento/public/js/app/app.js"]);
