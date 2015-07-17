@@ -1,7 +1,40 @@
+// Mixin Typographic
 typographic()
 
+// Mixin Prefixer
 prefixer(property, value)
 	-webkit-{property} value
 	-moz-{property} value
 	-ms-{property} value
 	{property} value
+		
+// Mixin Font
+font($font-family, $font-name, $font-weight)
+	@font-face
+		font-family $font-family
+		src url($font-path + $font-name + ".woff2") format("woff2"), 
+			url($font-path + $font-name + ".woff") format("woff"), 
+			url($font-path + $font-name + ".ttf") format("truetype")
+		font-weight $font-weight
+				
+font(Roboto-Thin, 'Roboto-Thin', 200)
+font(Roboto-Light, 'Roboto-Light', 300)
+font(Roboto-Regular, 'Roboto-Regular', 400)
+font(Roboto-Medium, 'Roboto-Medium', 500)
+font(Roboto-Bold, 'Roboto-Bold', 700)
+
+Roboto-Thin()
+	font-family: 'Roboto-Thin'
+	font-weight: 200
+Roboto-Light()
+	font-family: 'Roboto-Light'
+	font-weight: 300
+Roboto-Regular()
+	font-family: 'Roboto-Regular'
+	font-weight: 400
+Roboto-Medium()
+	font-family: 'Roboto-Medium'
+	font-weight: 500
+Roboto-Bold()
+	font-family: 'Roboto-Bold'
+	font-weight: 700
