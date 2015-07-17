@@ -4,31 +4,43 @@
 		box-sizing border-box
 		border 1px solid palette('Grey','200')
 		box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.09), 0px 2px 2px 0px rgba(0, 0, 0, 0.098), 0px 1px 5px 0px rgba(0, 0, 0, 0.084);
-		// padding 7px
-		margin-bottom 25px
+		margin-bottom 2em
 		.ds-plan-card-content
 			p
 				padding 0
 				margin 0
 			.ds-plan-title
+				col(12/12,gutter:0)
+				box-sizing border-box
+				padding 7px
+				text-align center
+				h3
+					margin 0
+			.ds-plan-content
+				col(11/12,gutter:0)
+				text-align center
+				padding-bottom 3%
+			.ds-plan-footer
 				col(8/12,gutter:0)
+				border-top 1px solid palette('Grey','200')
 				box-sizing border-box
 				p
-					font-size 125%
-					padding-left 3%
-					padding-top 3%
+					padding-left 1%
+					padding-top 1%
+					+desktop()
+						padding-top 6px
 			.ds-plan-actions
 				col(4/12,gutter:0)
-				text-align right
-			.ds-plan-content
-				col(12/12,gutter:0)
+				box-sizing border-box
+				padding-top 5px
+				padding-bottom 5px
 				text-align center
-				margin-top 1em
-				padding-bottom 1em
-				// ds-info
-				// 	zoom .9
-				border-bottom 1px solid palette('Grey','200')
-			.ds-plan-footer
-				col(12/12,gutter:0)
-				padding-left 2%
-
+				border-top 1px solid palette('Grey','200')
+				text-align center
+				button.md-button
+					margin 0
+					width 75%
+					min-width 15px
+					min-height 33px
+					line-height 33px
+					font-size 95%

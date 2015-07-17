@@ -78,7 +78,10 @@ module.exports = {
 				'content@core': {
 					controller: 'plansController',
 					template: fs.readFileSync(__dirname + '/templates/plansContent.html')
-				}
+				},
+				'actions@core': {
+					template: fs.readFileSync(__dirname + '/templates/plansActions.html')
+				},
 			}
 		},
 		trainingHistory : {
