@@ -14,6 +14,13 @@ module.exports = {
 		auth: false,
         id:'images'
     },
+    fonts: {
+        handler: {
+            directory: { path: './public/fonts' }
+        },
+		auth: false,
+        id:'fonts'
+    },
     css: {
         handler: {
             directory: { path: './public/css' }

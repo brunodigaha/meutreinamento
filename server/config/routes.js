@@ -23,6 +23,7 @@ module.exports = [
 	// Server static files
     {        method: 'GET',        path: '/partials/{path*}',         config : controller.assets.partials    },
     {        method: 'GET',        path: '/images/{path*}',           config : controller.assets.images    },
+    {        method: 'GET',        path: '/fonts/{path*}',            config : controller.assets.fonts    },
     {        method: 'GET',        path: '/css/{path*}',              config : controller.assets.css    },
     {        method: 'GET',        path: '/js/{path*}',               config : controller.assets.js    },
     {        method: 'GET',        path: '/bower_components/{path*}', config : controller.assets.bower    }
