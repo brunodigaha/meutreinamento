@@ -31,7 +31,7 @@
               <ng-md-icon icon="launch" style="fill:silver" size="25"></ng-md-icon>
             </p></a></section>
         <section class="edit-plan">
-          <p ng-click="edit_plan($event);">Trocar Plano</p>
+          <p><a ui-sref-active="sdd" ui-sref="core.user.plans">Trocar Plano</a></p>
         </section>
         <!-- md-select(placeholder='Plano', ng-model='plan' style="min-width:250px;")-->
         <!-- 	md-option(ng-repeat='plan in plans', value='{{plan}}') {{plan}}-->
@@ -54,7 +54,7 @@
         </section>
       </section>
       <section class="btn-train">
-        <md-button id="btn-treinar" class="md-raised md-primary">
+        <md-button ng-click="train_dialog_open($event);" id="btn-treinar" class="md-raised md-primary">
           <ng-md-icon icon="play_arrow" style="fill:white" size="25"></ng-md-icon>&nbsp;&nbsp;Treinar
         </md-button>
       </section>

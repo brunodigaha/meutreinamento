@@ -1,0 +1,23 @@
+
+<md-dialog aria-label="treinar">
+  <section class="train-dialog-wrap">
+    <md-toolbar md-theme="default"> 
+      <div class="md-toolbar-tools">
+        <h1>Iniciar Treinamento</h1><span flex=""></span>
+        <md-button ng-click="answer('not applicable')">Fechar</md-button>
+        <!-- ng-md-icon(icon="close" ng-click="answer('not applicable')" style="fill:white" size="25")-->
+      </div>
+    </md-toolbar>
+    <md-dialog-content>
+      <section class="train-dialog-content">
+        <section class="action"><a ui-sref-active="sdd" ui-sref="core.user.edit.addtraining" ng-click="answer('not applicable')">
+            <md-button class="md-raised md-primary">Inserir Treino</md-button></a></section>
+      </section>
+    </md-dialog-content>
+    <div layout="row" class="md-actions"><span flex=""></span>
+      <!-- md-button.md-primary(ng-click="answer('not useful')")-->
+      <!-- 	| Cancelar-->
+      <md-button ng-click="answer('useful')" class="md-primary">Cancelar</md-button>
+    </div>
+  </section>
+</md-dialog>

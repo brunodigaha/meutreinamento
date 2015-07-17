@@ -33,7 +33,8 @@ section.perfil(ui-view="perfil")
 						p Plano de Treinamento
 							ng-md-icon(icon="launch" style="fill:silver"  size="25")
 				section.edit-plan
-					p(ng-click="edit_plan($event);") Trocar Plano
+					p
+						a(ui-sref-active="sdd" ui-sref="core.user.plans") Trocar Plano
 				// md-select(placeholder='Plano', ng-model='plan' style="min-width:250px;")
 				// 	md-option(ng-repeat='plan in plans', value='{{plan}}') {{plan}}
 				// ng-md-icon(icon="launch" style="fill:silver"  size="25" ng-click="true")
@@ -53,7 +54,7 @@ section.perfil(ui-view="perfil")
 					ng-md-icon(icon="straighten" style="fill:grey"  size="40")
 					p Medidas
 			section.btn-train
-				md-button(class="md-raised md-primary"  id="btn-treinar")
+				md-button(class="md-raised md-primary" ng-click="train_dialog_open($event);"  id="btn-treinar")
 					ng-md-icon(icon="play_arrow" style="fill:white"  size="25")
 					| &nbsp;&nbsp;Treinar
 

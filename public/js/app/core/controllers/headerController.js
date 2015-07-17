@@ -16,11 +16,10 @@ module.exports = function ($scope,$mdDialog, coreEventsService, authModelService
 	$scope.toggle_options = function () {
 		coreEventsService.toggle_options();
 	};
-	$scope.edit_plan = function(ev) {
+	$scope.train_dialog_open = function(ev) {
 		$mdDialog.show({
-			controller: 'editPlanDialogController',
-			// templateUrl: 'dialog1.tmpl.html',
-			template: fs.readFileSync(__dirname + '/../templates/editPlanDialogTemplate.html'),
+			controller: 'trainDialogController',
+			template: fs.readFileSync(__dirname + '/../templates/trainDialogTemplate.html'),
 			parent: angular.element(document.body),
 			targetEvent: ev,
 		})
