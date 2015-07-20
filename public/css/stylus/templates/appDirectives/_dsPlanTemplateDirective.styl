@@ -16,12 +16,19 @@
 				box-sizing border-box
 				padding 7px
 				text-align center
-				h3
+				h1, h2, h3, h4, h5, h6
 					margin 0
 			.ds-plan-content
 				col(11/12,gutter:0)
+				position relative
 				text-align center
 				padding-bottom 3%
+				.md-subheader
+					+tablet()
+						display none
+					margin-right 2em
+					.md-subheader-inner
+						 padding 2px 0px 2px 3px
 			.ds-plan-footer
 				col(8/12,gutter:0)
 				border-top 1px solid palette('Grey','200')

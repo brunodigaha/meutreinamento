@@ -105,7 +105,10 @@ module.exports = {
 				'content@core': {
 					controller: 'collectionTrainingController',
 					template: fs.readFileSync(__dirname + '/templates/collectionTrainingContent.html')
-				}
+				},
+				'actions@core': {
+					template: fs.readFileSync(__dirname + '/templates/collectionActions.html')
+				},
 			}
 		}
 	}
