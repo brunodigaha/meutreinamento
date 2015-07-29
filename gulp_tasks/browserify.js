@@ -14,7 +14,7 @@ module.exports = function (gulp,plugins){
 			cache: {},
 			packageCache: {}
 		});
-		b = plugins.watchify(b,{delay:600});
+		b = plugins.watchify(b,{delay:600,poll:200});
 		b.on('update', function(){
 			bundleShare(b);
 			// plugins.util.log(plugins.util.colors.green('Watchfy[UPDATE]'));
