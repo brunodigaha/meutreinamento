@@ -13,6 +13,7 @@ module.exports = function (gulp,plugins){
 		b = plugins.watchify(b);
 		b.on('update', function(){
 			bundleShare(b);
+			plugins.util.log(plugins.util.colors.green('passsouuuuuuuuuuuuuuuuuuuuuuuu'));
 		});
 		b.on('log',plugins.util.log);
 		b.on('time', function(time){plugins.util.log(plugins.util.colors.green('Browserify [watchify]'), plugins.util.colors.blue('in ' + time + ' ms'));});
