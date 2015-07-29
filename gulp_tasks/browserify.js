@@ -4,18 +4,22 @@ module.exports = function (gulp,plugins){
 
 	function browserifyShare(){
 		// you need to pass these three config option to browserify
-		var b = plugins.browserify('./public/js/app/app.js',{
+		var b = plugins.browserify('public/js/app/app.js',{
 			// debug: true,
+			// fullPaths: true, 
+			transform : [
+				"browserify-shim",
+				"brfs"
+			],
 			cache: {},
-			packageCache: {},
-			fullPaths: true
+			packageCache: {}
 		});
-		b = plugins.watchify(b);
+		b = plugins.watchify(b,{delay:600});
 		b.on('update', function(){
 			bundleShare(b);
-			plugins.util.log(plugins.util.colors.green('passsouuuuuuuuuuuuuuuuuuuuuuuu'));
+			// plugins.util.log(plugins.util.colors.green('Watchfy[UPDATE]'));
 		});
-		b.on('log',plugins.util.log);
+		// b.on('log',plugins.util.log);
 		b.on('time', function(time){plugins.util.log(plugins.util.colors.green('Browserify [watchify]'), plugins.util.colors.blue('in ' + time + ' ms'));});
 		b.on('error',plugins.notify.onError(function(error) {
 			return error.message;

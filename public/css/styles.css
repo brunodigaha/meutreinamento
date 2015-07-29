@@ -14520,8 +14520,8 @@ md-card-content .new-training {
   margin-left: 0%;
   margin-right: 0%;
   box-sizing: border-box;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
   position: relative;
   box-sizing: border-box;
 }
@@ -14538,14 +14538,14 @@ md-card-content .new-training:last-child {
 }
 @media only screen and (min-width: 1050px) {
   md-card-content .new-training {
-    padding-left: 3em;
-    padding-right: 3em;
+    padding-left: 2em;
+    padding-right: 2em;
   }
 }
 @media only screen and (min-width: 1800px) {
   md-card-content .new-training {
-    padding-left: 8em;
-    padding-right: 8em;
+    padding-left: 5em;
+    padding-right: 5em;
   }
 }
 md-card-content .new-training md-card {
@@ -14732,7 +14732,7 @@ md-card-content .new-training md-card md-card-content .header-add {
   padding-left: 2em;
   padding-right: 30%;
   border-bottom: 3px solid #2196f3;
-  height: 55px;
+  height: 48px;
 }
 md-card-content .new-training md-card md-card-content .header-add:before,
 md-card-content .new-training md-card md-card-content .header-add:after {
@@ -14746,13 +14746,11 @@ md-card-content .new-training md-card md-card-content .header-add:last-child {
   margin-right: 0%;
 }
 md-card-content .new-training md-card md-card-content .header-add md-select {
-  padding-top: 0.3em;
   margin: 0;
   font-size: 155%;
 }
 @media only screen and (min-width: 1050px) {
   md-card-content .new-training md-card md-card-content .header-add md-select {
-    padding-top: 0.2em;
     font-size: 140%;
   }
 }
@@ -14766,8 +14764,7 @@ md-card-content .new-training md-card md-card-content .options-add {
   margin-right: 0%;
   box-sizing: border-box;
   border-bottom: 3px solid #2196f3;
-  height: 55px;
-  padding-top: 0.5em;
+  height: 48px;
   border-top-right-radius: 3px;
   padding-right: 1.3em;
   text-align: right;
@@ -14783,27 +14780,25 @@ md-card-content .new-training md-card md-card-content .options-add:after {
 md-card-content .new-training md-card md-card-content .options-add:last-child {
   margin-right: 0%;
 }
-@media only screen and (min-width: 1050px) {
-  md-card-content .new-training md-card md-card-content .options-add {
-    padding-top: 0.5em;
-  }
-}
 md-card-content .new-training md-card md-card-content .options-add ng-md-icon {
   padding-left: 1em;
 }
-md-card-content .new-training md-card md-card-content .options-add button.md-button {
+md-card-content .new-training md-card md-card-content .options-add button.md-button.sec {
+  margin-right: 20px;
+}
+md-card-content .new-training md-card md-card-content .options-add button.md-button.sec span {
+  color: #03a9f4;
+}
+md-card-content .new-training md-card md-card-content .options-add button {
   width: 38%;
   min-width: 15px;
-  min-height: 27px;
-  line-height: 27px;
+  min-height: 30px;
+  line-height: 30px;
   font-size: 80%;
   margin: 0;
 }
-md-card-content .new-training md-card md-card-content .options-add button.md-button span {
-  color: #03a9f4;
-}
 @media only screen and (min-width: 1050px) {
-  md-card-content .new-training md-card md-card-content .options-add button.md-button {
+  md-card-content .new-training md-card md-card-content .options-add button {
     width: 40%;
     min-width: 15px;
     min-height: 31px;

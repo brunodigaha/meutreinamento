@@ -54,12 +54,6 @@
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.3.0"
   },
-  "browserify": {
-    "transform": [
-      "browserify-shim",
-      "brfs"
-    ]
-  },
   "browser": {
     "angular": "./public/bower_components/angular/angular.js",
     "angularCookies": "./public/bower_components/angular-cookies/angular-cookies.js",

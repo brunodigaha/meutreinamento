@@ -1,4 +1,4 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/index.js":[function(require,module,exports){
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 /*!
  * The buffer module from node.js, for the browser.
  *
@@ -1437,7 +1437,7 @@ function decodeUtf8Char (str) {
   }
 }
 
-},{"base64-js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/node_modules/base64-js/lib/b64.js","ieee754":"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/node_modules/ieee754/index.js","is-array":"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/node_modules/is-array/index.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/node_modules/base64-js/lib/b64.js":[function(require,module,exports){
+},{"base64-js":2,"ieee754":3,"is-array":4}],2:[function(require,module,exports){
 var lookup = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
 
 ;(function (exports) {
@@ -1563,7 +1563,7 @@ var lookup = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
 	exports.fromByteArray = uint8ToBase64
 }(typeof exports === 'undefined' ? (this.base64js = {}) : exports))
 
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/node_modules/ieee754/index.js":[function(require,module,exports){
+},{}],3:[function(require,module,exports){
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
   var e, m
   var eLen = nBytes * 8 - mLen - 1
@@ -1649,7 +1649,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
   buffer[offset + i - d] |= s * 128
 }
 
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/node_modules/is-array/index.js":[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 
 /**
  * isArray
@@ -1684,7 +1684,7 @@ module.exports = isArray || function (val) {
   return !! val && '[object Array]' == str.call(val);
 };
 
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/Chart.js/Chart.min.js":[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 (function (global){
 ; var __browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
 /*!
@@ -1703,7 +1703,7 @@ module.exports = isArray || function (val) {
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-animate/angular-animate.js":[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 (function (global){
 
 ; require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js");
@@ -5435,7 +5435,7 @@ angular.module('ngAnimate', [])
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-aria/angular-aria.js":[function(require,module,exports){
+},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":19}],7:[function(require,module,exports){
 (function (global){
 
 ; require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js");
@@ -5839,7 +5839,7 @@ ngAriaModule.directive('ngShow', ['$aria', function($aria) {
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-breadcrumb/dist/angular-breadcrumb.min.js":[function(require,module,exports){
+},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":19}],8:[function(require,module,exports){
 (function (global){
 
 ; require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js");
@@ -5853,7 +5853,7 @@ ngAriaModule.directive('ngShow', ['$aria', function($aria) {
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-chart.js/dist/angular-chart.min.js":[function(require,module,exports){
+},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":19}],9:[function(require,module,exports){
 (function (global){
 
 ; require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/Chart.js/Chart.min.js");
@@ -5866,7 +5866,7 @@ require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_compone
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/Chart.js/Chart.min.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/Chart.js/Chart.min.js","/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-cookies/angular-cookies.js":[function(require,module,exports){
+},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/Chart.js/Chart.min.js":5,"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":19}],10:[function(require,module,exports){
 (function (global){
 
 ; require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js");
@@ -6198,7 +6198,7 @@ angular.module('ngCookies').provider('$$cookieWriter', function $$CookieWriterPr
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-holderjs/src/holder.js":[function(require,module,exports){
+},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":19}],11:[function(require,module,exports){
 (function (global){
 
 ; require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js");
@@ -6227,7 +6227,7 @@ module.directive('holder', [
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js","/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/holderjs/holder.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/holderjs/holder.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-material-icons/angular-material-icons.min.js":[function(require,module,exports){
+},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":19,"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/holderjs/holder.js":22}],12:[function(require,module,exports){
 (function (global){
 
 ; require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js");
@@ -6516,7 +6516,7 @@ a&&(c=a[1],b=a[2])}else c="help";void 0===e[c]&&(c="help");void 0!==d.size?b=d.s
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-material/angular-material.js":[function(require,module,exports){
+},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":19}],13:[function(require,module,exports){
 (function (global){
 
 ; require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js");
@@ -23046,7 +23046,7 @@ angular.module("material.core").constant("$MD_THEME_CSS", "/* mixin definition ;
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-animate/angular-animate.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-animate/angular-animate.js","/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-aria/angular-aria.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-aria/angular-aria.js","/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-messages/angular-messages.js":[function(require,module,exports){
+},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-animate/angular-animate.js":6,"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-aria/angular-aria.js":7,"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":19}],14:[function(require,module,exports){
 (function (global){
 
 ; require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js");
@@ -23735,7 +23735,7 @@ function ngMessageDirectiveFactory(restrict) {
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-scroll-glue/src/scrollglue.js":[function(require,module,exports){
+},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":19}],15:[function(require,module,exports){
 (function (global){
 
 ; require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js");
@@ -23878,7 +23878,7 @@ function ngMessageDirectiveFactory(restrict) {
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-sortable-view/src/angular-sortable-view.min.js":[function(require,module,exports){
+},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":19}],16:[function(require,module,exports){
 (function (global){
 
 ; require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js");
@@ -23893,7 +23893,7 @@ function ngMessageDirectiveFactory(restrict) {
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-ui-router/release/angular-ui-router.js":[function(require,module,exports){
+},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":19}],17:[function(require,module,exports){
 (function (global){
 
 ; require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js");
@@ -28273,7 +28273,7 @@ angular.module('ui.router.state')
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-uploadcare/angular-uploadcare.js":[function(require,module,exports){
+},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":19}],18:[function(require,module,exports){
 (function (global){
 
 ; require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js");
@@ -28320,7 +28320,7 @@ angular.module('ng-uploadcare', [])
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":[function(require,module,exports){
+},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":19}],19:[function(require,module,exports){
 (function (global){
 ; var __browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
 /**
@@ -56692,7 +56692,7 @@ var minlengthDirective = function() {
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angularfire/dist/angularfire.js":[function(require,module,exports){
+},{}],20:[function(require,module,exports){
 (function (global){
 
 ; require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js");
@@ -58981,7 +58981,7 @@ if ( typeof Object.getPrototypeOf !== "function" ) {
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js","/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/firebase/firebase.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/firebase/firebase.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/firebase/firebase.js":[function(require,module,exports){
+},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":19,"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/firebase/firebase.js":21}],21:[function(require,module,exports){
 (function (global){
 ; var __browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
 /*! @license Firebase v2.2.7
@@ -59253,7 +59253,7 @@ function Nc(a,b){J(!b||!0===a||!1===a,"Can't turn on custom loggers persistently
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/holderjs/holder.js":[function(require,module,exports){
+},{}],22:[function(require,module,exports){
 (function (global){
 ; var __browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
 /*!
@@ -61733,7 +61733,7 @@ return /******/ (function(modules) { // webpackBootstrap
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/lodash/lodash.js":[function(require,module,exports){
+},{}],23:[function(require,module,exports){
 (function (global){
 ; var __browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
 /**
@@ -74093,7 +74093,7 @@ return /******/ (function(modules) { // webpackBootstrap
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/modernizr/modernizr.js":[function(require,module,exports){
+},{}],24:[function(require,module,exports){
 (function (global){
 ; var __browserify_shim_require__=require;(function browserifyShim(module, exports, require, define, browserify_shim__define__module__export__) {
 /*!
@@ -75508,7 +75508,7 @@ window.Modernizr = (function( window, document, undefined ) {
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/restangular/dist/restangular.js":[function(require,module,exports){
+},{}],25:[function(require,module,exports){
 (function (global){
 
 ; require("/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js");
@@ -76875,7 +76875,7 @@ restangular.provider('Restangular', function() {
 }).call(global, undefined, undefined, undefined, undefined, function defineExport(ex) { module.exports = ex; });
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js","/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/lodash/lodash.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/lodash/lodash.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/app.js":[function(require,module,exports){
+},{"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js":19,"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/lodash/lodash.js":23}],26:[function(require,module,exports){
 //other dependencies
 require('modernizr');
 require('angular');
@@ -76906,7 +76906,7 @@ angular
 
 
 
-},{"./appDirectives":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/appDirectives/index.js","./appRoutes.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/appRoutes.js","./appRun.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/appRun.js","./auth":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/auth/index.js","./core":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/core/index.js","./train":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/index.js","./user":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/user/index.js","angular":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular/angular.js","angularBreadcrumb":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-breadcrumb/dist/angular-breadcrumb.min.js","angularChart":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-chart.js/dist/angular-chart.min.js","angularCookies":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-cookies/angular-cookies.js","angularFire":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angularfire/dist/angularfire.js","angularHolderjs":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-holderjs/src/holder.js","angularIcons":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-material-icons/angular-material-icons.min.js","angularMaterial":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-material/angular-material.js","angularMessages":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-messages/angular-messages.js","angularScroll":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-scroll-glue/src/scrollglue.js","angularSortableView":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-sortable-view/src/angular-sortable-view.min.js","angularUploadcare":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-uploadcare/angular-uploadcare.js","modernizr":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/modernizr/modernizr.js","restAngular":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/restangular/dist/restangular.js","ui-router":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/bower_components/angular-ui-router/release/angular-ui-router.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/appDirectives/directives/dsInfoDirective.js":[function(require,module,exports){
+},{"./appDirectives":30,"./appRoutes.js":31,"./appRun.js":32,"./auth":35,"./core":43,"./train":54,"./user":58,"angular":19,"angularBreadcrumb":8,"angularChart":9,"angularCookies":10,"angularFire":20,"angularHolderjs":11,"angularIcons":12,"angularMaterial":13,"angularMessages":14,"angularScroll":15,"angularSortableView":16,"angularUploadcare":18,"modernizr":24,"restAngular":25,"ui-router":17}],27:[function(require,module,exports){
 (function (Buffer){
 
 module.exports = function() {
@@ -76922,7 +76922,7 @@ module.exports = function() {
 };
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/index.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/appDirectives/directives/dsPlanDirective.js":[function(require,module,exports){
+},{"buffer":1}],28:[function(require,module,exports){
 (function (Buffer){
 
 module.exports = function() {
@@ -76938,7 +76938,7 @@ module.exports = function() {
 };
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/index.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/appDirectives/directives/dsTrainingDirective.js":[function(require,module,exports){
+},{"buffer":1}],29:[function(require,module,exports){
 (function (Buffer){
 
 module.exports = function() {
@@ -76953,13 +76953,13 @@ module.exports = function() {
 };
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/index.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/appDirectives/index.js":[function(require,module,exports){
+},{"buffer":1}],30:[function(require,module,exports){
 module.exports = angular.module('appDirectives',[])
 		.directive('dsTraining', require('./directives/dsTrainingDirective.js'))
 		.directive('dsPlan', require('./directives/dsPlanDirective.js'))
 		.directive('dsInfo', require('./directives/dsInfoDirective.js'));
 
-},{"./directives/dsInfoDirective.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/appDirectives/directives/dsInfoDirective.js","./directives/dsPlanDirective.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/appDirectives/directives/dsPlanDirective.js","./directives/dsTrainingDirective.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/appDirectives/directives/dsTrainingDirective.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/appRoutes.js":[function(require,module,exports){
+},{"./directives/dsInfoDirective.js":27,"./directives/dsPlanDirective.js":28,"./directives/dsTrainingDirective.js":29}],31:[function(require,module,exports){
 
 
 module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider,$breadcrumbProvider,ChartJsProvider, $mdThemingProvider) {
@@ -77025,7 +77025,7 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider,$
     });	
 };
 
-},{"./auth/authRoutes.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/auth/authRoutes.js","./core/coreRoutes.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/core/coreRoutes.js","./train/trainRoutes.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/trainRoutes.js","./user/userRoutes.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/user/userRoutes.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/appRun.js":[function(require,module,exports){
+},{"./auth/authRoutes.js":33,"./core/coreRoutes.js":42,"./train/trainRoutes.js":55,"./user/userRoutes.js":59}],32:[function(require,module,exports){
 module.exports = function ($rootScope, $state,$stateParams,coreEventsService, authModelService) {
 	$rootScope.$on("$stateChangeStart", function (event, toState, toParams, fromState, fromParams) {
 		// console.log('$stateChangeStart to '+toState.to+'- fired when the transition begins. toState,toParams : \n',toState, toParams);
@@ -77068,7 +77068,7 @@ module.exports = function ($rootScope, $state,$stateParams,coreEventsService, au
 	// });
 };
 
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/auth/authRoutes.js":[function(require,module,exports){
+},{}],33:[function(require,module,exports){
 (function (Buffer){
 
 module.exports = {
@@ -77095,7 +77095,7 @@ module.exports = {
 
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/index.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/auth/controllers/loginController.js":[function(require,module,exports){
+},{"buffer":1}],34:[function(require,module,exports){
 module.exports = function ($scope,$timeout, authModelService,$firebaseArray) {
 	var userModel = $scope.userModel = authModelService;
 	// var URL = new Firebase("https://vitta.firebaseio.com/");
@@ -77121,12 +77121,12 @@ module.exports = function ($scope,$timeout, authModelService,$firebaseArray) {
 	};
 };
 
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/auth/index.js":[function(require,module,exports){
+},{}],35:[function(require,module,exports){
 module.exports = angular.module('auth',[])
 			.factory('authModelService', require('./services/authModelService.js'))
 			.controller('loginController', require('./controllers/loginController.js'));
 
-},{"./controllers/loginController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/auth/controllers/loginController.js","./services/authModelService.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/auth/services/authModelService.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/auth/services/authModelService.js":[function(require,module,exports){
+},{"./controllers/loginController.js":34,"./services/authModelService.js":36}],36:[function(require,module,exports){
 module.exports = function ($state,$cookies, RestangularCustom) {
 	var authModel = {
 		currentUser: {},
@@ -77194,7 +77194,7 @@ module.exports = function ($state,$cookies, RestangularCustom) {
 	return authModel;
 };
 
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/core/controllers/asideController.js":[function(require,module,exports){
+},{}],37:[function(require,module,exports){
 module.exports = function($scope, coreEventsService, RestangularCustom, $mdDialog, $mdToast, $animate) {
 	var coreEvents = $scope.coreEvents = coreEventsService;
 	// $scope.user = RestangularCustom.all('usuario').getList().$object;
@@ -77227,7 +77227,7 @@ module.exports = function($scope, coreEventsService, RestangularCustom, $mdDialo
 
 };
 
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/core/controllers/headerController.js":[function(require,module,exports){
+},{}],38:[function(require,module,exports){
 (function (Buffer){
 
 module.exports = function ($scope,$mdDialog, coreEventsService, authModelService) {
@@ -77264,7 +77264,7 @@ module.exports = function ($scope,$mdDialog, coreEventsService, authModelService
 };
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/index.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/core/controllers/searchController.js":[function(require,module,exports){
+},{"buffer":1}],39:[function(require,module,exports){
 (function (Buffer){
 
 module.exports = function($scope,$mdDialog, $mdToast,$animate) {
@@ -77310,7 +77310,7 @@ module.exports = function($scope,$mdDialog, $mdToast,$animate) {
 };
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/index.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/core/controllers/searchDialogController.js":[function(require,module,exports){
+},{"buffer":1}],40:[function(require,module,exports){
 module.exports = function($scope, coreEventsService,$state,$stateParams,$mdDialog) {
 	$scope.onUCUploadComplete = function (info){
 		console.log(info);
@@ -77330,7 +77330,7 @@ module.exports = function($scope, coreEventsService,$state,$stateParams,$mdDialo
 	};
 };
 
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/core/controllers/trainDialogController.js":[function(require,module,exports){
+},{}],41:[function(require,module,exports){
 module.exports = function($scope, coreEventsService,$state,$stateParams,$mdDialog) {
 	$scope.duracao=2;
 	$scope.frequencia=3;
@@ -77346,7 +77346,7 @@ module.exports = function($scope, coreEventsService,$state,$stateParams,$mdDialo
 
 };
 
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/core/coreRoutes.js":[function(require,module,exports){
+},{}],42:[function(require,module,exports){
 (function (Buffer){
 
 module.exports = {
@@ -77395,7 +77395,7 @@ module.exports = {
 
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/index.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/core/index.js":[function(require,module,exports){
+},{"buffer":1}],43:[function(require,module,exports){
 module.exports = angular.module('core',[])
 		.controller('headerController', require('./controllers/headerController.js'))
 		.controller('searchController', require('./controllers/searchController.js'))
@@ -77405,7 +77405,7 @@ module.exports = angular.module('core',[])
 		.factory('coreEventsService', require('./services/coreEventsService.js'))
 		.factory('RestangularCustom', require('./services/restangularCustom.js'));
 
-},{"./controllers/asideController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/core/controllers/asideController.js","./controllers/headerController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/core/controllers/headerController.js","./controllers/searchController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/core/controllers/searchController.js","./controllers/searchDialogController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/core/controllers/searchDialogController.js","./controllers/trainDialogController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/core/controllers/trainDialogController.js","./services/coreEventsService.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/core/services/coreEventsService.js","./services/restangularCustom.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/core/services/restangularCustom.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/core/services/coreEventsService.js":[function(require,module,exports){
+},{"./controllers/asideController.js":37,"./controllers/headerController.js":38,"./controllers/searchController.js":39,"./controllers/searchDialogController.js":40,"./controllers/trainDialogController.js":41,"./services/coreEventsService.js":44,"./services/restangularCustom.js":45}],44:[function(require,module,exports){
 module.exports = function () {
 	var eventsService = {
 		search: false,
@@ -77433,7 +77433,7 @@ module.exports = function () {
 	return eventsService;
 };
 
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/core/services/restangularCustom.js":[function(require,module,exports){
+},{}],45:[function(require,module,exports){
 module.exports = function ($state,$location,Restangular) {
 	return Restangular.withConfig(function(RestangularConfigurer){
 		RestangularConfigurer.setErrorInterceptor(function (response) {
@@ -77472,7 +77472,7 @@ module.exports = function ($state,$location,Restangular) {
 	});
 };
 
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/ImportDialogController.js":[function(require,module,exports){
+},{}],46:[function(require,module,exports){
 module.exports = function($scope, coreEventsService,$state,$stateParams,$mdDialog) {
 	$scope.hide = function() {
 		$mdDialog.hide();
@@ -77485,13 +77485,13 @@ module.exports = function($scope, coreEventsService,$state,$stateParams,$mdDialo
 	};
 };
 
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/addPlanController.js":[function(require,module,exports){
+},{}],47:[function(require,module,exports){
 module.exports = function($scope) {
 	$scope.duracao = 3;
 	$scope.frequencia =4;
 };
 
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/addTrainingController.js":[function(require,module,exports){
+},{}],48:[function(require,module,exports){
 (function (Buffer){
 
 module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$stateParams,$mdDialog) {
@@ -77905,17 +77905,17 @@ module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$sta
 };
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/index.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/collectionTrainingController.js":[function(require,module,exports){
+},{"buffer":1}],49:[function(require,module,exports){
 module.exports = function($scope) {
 
 };
 
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/historyTrainingController.js":[function(require,module,exports){
+},{}],50:[function(require,module,exports){
 module.exports = function ($scope) {
 
 };
 
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/listTrainingController.js":[function(require,module,exports){
+},{}],51:[function(require,module,exports){
 module.exports =  function($scope,$mdBottomSheet,$timeout, coreEventsService,$state,$stateParams) {
 	$scope.params = $stateParams;
 	$scope.state = $state.current;
@@ -77923,9 +77923,9 @@ module.exports =  function($scope,$mdBottomSheet,$timeout, coreEventsService,$st
 	// $scope.eventsService= eventsService;
 };
 
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/plansController.js":[function(require,module,exports){
-arguments[4]["/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/collectionTrainingController.js"][0].apply(exports,arguments)
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/trainingTrainingController.js":[function(require,module,exports){
+},{}],52:[function(require,module,exports){
+arguments[4][49][0].apply(exports,arguments)
+},{"dup":49}],53:[function(require,module,exports){
 module.exports = function($scope) {
 	$scope.train_menu= {menu: false};
 	$scope.close_train_menu = function(){
@@ -77937,7 +77937,7 @@ module.exports = function($scope) {
 
 };
 
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/index.js":[function(require,module,exports){
+},{}],54:[function(require,module,exports){
 module.exports = angular.module('train',[])
 		.controller('listTrainingController', require('./controllers/listTrainingController.js'))
 		.controller('trainingTrainingController', require('./controllers/trainingTrainingController.js'))
@@ -77948,7 +77948,7 @@ module.exports = angular.module('train',[])
 		.controller('collectionTrainingController', require('./controllers/collectionTrainingController.js'))
 		.controller('ImportDialogController', require('./controllers/ImportDialogController.js'));
 
-},{"./controllers/ImportDialogController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/ImportDialogController.js","./controllers/addPlanController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/addPlanController.js","./controllers/addTrainingController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/addTrainingController.js","./controllers/collectionTrainingController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/collectionTrainingController.js","./controllers/historyTrainingController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/historyTrainingController.js","./controllers/listTrainingController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/listTrainingController.js","./controllers/plansController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/plansController.js","./controllers/trainingTrainingController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/trainingTrainingController.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/trainRoutes.js":[function(require,module,exports){
+},{"./controllers/ImportDialogController.js":46,"./controllers/addPlanController.js":47,"./controllers/addTrainingController.js":48,"./controllers/collectionTrainingController.js":49,"./controllers/historyTrainingController.js":50,"./controllers/listTrainingController.js":51,"./controllers/plansController.js":52,"./controllers/trainingTrainingController.js":53}],55:[function(require,module,exports){
 (function (Buffer){
 
 module.exports = {
@@ -78002,7 +78002,7 @@ module.exports = {
 				},
 				'content-add@core.user.edit': {
 					controller: 'addTrainingController',  
-					template: Buffer("CjxtZC1jYXJkLWNvbnRlbnQ+CiAgPHNlY3Rpb24gY2xhc3M9InRhYnMiPgogICAgPG1kLXRhYnMgbWQtZHluYW1pYy1oZWlnaHQ9InRydWUiIG1kLWJvcmRlci1ib3R0b209ImZhbHNlIj4KICAgICAgPCEtLSBtZC10YWIobGFiZWw9IkdlcmFsIiktLT4KICAgICAgPCEtLSAJbWQtY29udGVudC5tZC1wYWRkaW4tLT4KICAgICAgPCEtLSAJc2VjdGlvbi5hdXRvY29tcGxldGVkZW1vQ3VzdG9tVGVtcGxhdGUtLT4KICAgICAgPCEtLSAJCW1kLWF1dG9jb21wbGV0ZShuZy1kaXNhYmxlZD0iaXNEaXNhYmxlZCIsIG1kLW5vLWNhY2hlPSJub0NhY2hlIiwgbWQtc2VsZWN0ZWQtaXRlbT0ic2VsZWN0ZWRJdGVtIiwgbWQtc2VhcmNoLXRleHQtY2hhbmdlPSJzZWFyY2hUZXh0Q2hhbmdlKHNlYXJjaFRleHQpIiwgbWQtc2VhcmNoLXRleHQ9InNlYXJjaFRleHQiLCBtZC1zZWxlY3RlZC1pdGVtLWNoYW5nZT0ic2VsZWN0ZWRJdGVtQ2hhbmdlKGl0ZW0pIiwgbWQtaXRlbXM9Iml0ZW0gaW4gcXVlcnlTZWFyY2goc2VhcmNoVGV4dCkiLCBtZC1pdGVtLXRleHQ9Iml0ZW0uZGlzcGxheSIsIG1kLW1pbi1sZW5ndGg9IjAiLCBwbGFjZWhvbGRlcj0iRGlnaXRlIGFxdWkgbyBub21lIGRvIGV4ZXJjw61jaW8gcXVlIGRlc2VqYSBpbnNlcmlyIiBtZC1tZW51LWNsYXNzPSJhdXRvY29tcGxldGUtY3VzdG9tLXRlbXBsYXRlIiktLT4KICAgICAgPCEtLSAJCQltZC1pdGVtLXRlbXBsYXRlLS0+CiAgICAgIDwhLS0gCQkJCXNwYW4uaXRlbS10aXRsZS0tPgogICAgICA8IS0tIAkJCQkJbWQtaWNvbihtZC1zdmctaWNvbj0iaW1nL2ljb25zL29jdGljb24tcmVwby5zdmciKS0tPgogICAgICA8IS0tIAkJCQkJc3BhbiAge3tpdGVtLm5hbWV9fSAtLT4KICAgICAgPCEtLSAJCQkJc3Bhbi5pdGVtLW1ldGFkYXRhLS0+CiAgICAgIDwhLS0gCQkJCQlzcGFuLml0ZW0tbWV0YXN0YXQtLT4KICAgICAgPCEtLSAJCQkJCQlzdHJvbmcge3tpdGVtLndhdGNoZXJzfX0tLT4KICAgICAgPCEtLSAJCQkJCQl8IHdhdGNoZXJzLS0+CiAgICAgIDwhLS0gCQkJCQlzcGFuLml0ZW0tbWV0YXN0YXQtLT4KICAgICAgPCEtLSAJCQkJCQlzdHJvbmcge3tpdGVtLmZvcmtzfX0tLT4KICAgICAgPG1kLXRhYiBsYWJlbD0ie3tsaXN0LmdydXBvfX0iIG5nLXJlcGVhdD0iIGxpc3QgaW4gbGlzdF9leGVyY2ljaW9zIj4KICAgICAgICA8bWQtY29udGVudCBjbGFzcz0ibWQtcGFkZGluZyI+CiAgICAgICAgICA8c2VjdGlvbj48c3BhbiBuZy1jbGljaz0iaW5zZXJ0KCRpbmRleCwgbGlzdCk7IiBuZy1jbGFzcz0ieydpdGVtLXNlbGVjdCBhbmltYXRlZCBwdWxzZSc6IGV4ZXJjLnNlbGVjdCB9IiBuZy1yZXBlYXQ9ImV4ZXJjIGluIGxpc3QuZXhlcmNpY2lvcyI+e3tleGVyYy5ub21lfX08L3NwYW4+PC9zZWN0aW9uPgogICAgICAgIDwvbWQtY29udGVudD4KICAgICAgPC9tZC10YWI+CiAgICA8L21kLXRhYnM+CiAgPC9zZWN0aW9uPgogIDxzZWN0aW9uIGNsYXNzPSJuZXctdHJhaW5pbmciPgogICAgPG1kLWNhcmQ+CiAgICAgIDxtZC1jYXJkLWNvbnRlbnQ+CiAgICAgICAgPHNlY3Rpb24gY2xhc3M9ImhlYWRlci1hZGQiPgogICAgICAgICAgPG1kLXNlbGVjdCBwbGFjZWhvbGRlcj0iTm9tZSBkbyBUcmVpbm8iIG5nLW1vZGVsPSJwbGFuIiBzdHlsZT0ibWluLXdpZHRoOjI1MHB4OyI+CiAgICAgICAgICAgIDxtZC1vcHRpb24gbmctcmVwZWF0PSJwbGFuIGluIHBsYW5zIiB2YWx1ZT0ie3twbGFufX0iPnt7cGxhbn19PC9tZC1vcHRpb24+CiAgICAgICAgICA8L21kLXNlbGVjdD4KICAgICAgICA8L3NlY3Rpb24+CiAgICAgICAgPHNlY3Rpb24gY2xhc3M9Im9wdGlvbnMtYWRkIj4KICAgICAgICAgIDwhLS0gbmctbWQtaWNvbihpY29uPSJsYXVuY2giIHN0eWxlPSJmaWxsOndoaXRlIiAgc2l6ZT0iMjIiIG5nLWNsaWNrPSJ0cnVlIiktLT4KICAgICAgICAgIDwhLS0gbmctbWQtaWNvbihpY29uPSJleHBhbmRfbW9yZSIgc3R5bGU9ImZpbGw6d2hpdGUiICBzaXplPSIyNyIgbmctY2xpY2s9InRydWUiKS0tPgogICAgICAgICAgPG1kLWJ1dHRvbiBuZy1jbGljaz0iaW1wb3J0VHJhaW5pbmcoJGV2ZW50KTsiIGNsYXNzPSJtZC1yYWlzZWQiPkltcG9ydGFyIFRyZWlubzwvbWQtYnV0dG9uPgogICAgICAgIDwvc2VjdGlvbj4KICAgICAgICA8c2VjdGlvbiBzdi1yb290PSIiIHN2LXBhcnQ9ImV4ZXJjaWNpb3MiIGNsYXNzPSJjb250ZW50LWFkZCI+CiAgICAgICAgICA8bWQtY29udGVudCBzY3JvbGwtZ2x1ZT0ic2Nyb2xsLmdsdWVkIj4KICAgICAgICAgICAgPG1kLXN1YmhlYWRlcj48L21kLXN1YmhlYWRlcj4KICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgIDxsaSBuZy1yZXBlYXQ9ImV4ZXJjaWNpbyBpbiBleGVyY2ljaW9zIiBzdi1lbGVtZW50PSJvcHRzIiBuZy1jbGFzcz0ieydleGVyYy1zZWxlY3QnOiAkaW5kZXg9PWluZGV4fSI+CiAgICAgICAgICAgICAgICA8c2VjdGlvbiBzdi1oYW5kbGU9IiIgY2xhc3M9ImRyYWciPgogICAgICAgICAgICAgICAgICA8bmctbWQtaWNvbiBpY29uPSJvcGVuX3dpdGgiIHN0eWxlPSJmaWxsOmJsYWNrIiBzaXplPSIyMCI+PC9uZy1tZC1pY29uPgogICAgICAgICAgICAgICAgPC9zZWN0aW9uPgogICAgICAgICAgICAgICAgPHNlY3Rpb24gY2xhc3M9ImV4ZXJjIj48c3Bhbj57e2V4ZXJjaWNpby5ub21lfX08L3NwYW4+PC9zZWN0aW9uPgogICAgICAgICAgICAgICAgPHNlY3Rpb24gY2xhc3M9InZvbHVtZSI+PHNwYW4gbmctY2xpY2s9IndlaWdodF9hZGQoJGV2ZW50LGV4ZXJjaWNpbywkaW5kZXgpOyI+e3tleGVyY2ljaW8uc2VyaWV9fXh7e2V4ZXJjaWNpby5yZXBldGljYW99fTwvc3Bhbj48L3NlY3Rpb24+CiAgICAgICAgICAgICAgICA8c2VjdGlvbiBjbGFzcz0iZGVsZXRlIj4KICAgICAgICAgICAgICAgICAgPG5nLW1kLWljb24gaWNvbj0iY2xvc2UiIG5nLWNsaWNrPSJyZW1vdmUoJGluZGV4KTsiIHN0eWxlPSJmaWxsOmJsYWNrIiBzaXplPSIyMCI+PC9uZy1tZC1pY29uPgogICAgICAgICAgICAgICAgPC9zZWN0aW9uPgogICAgICAgICAgICAgIDwvbGk+CiAgICAgICAgICAgIDwvdWw+CiAgICAgICAgICA8L21kLWNvbnRlbnQ+CiAgICAgICAgICA8c2VjdGlvbiBuZy1zaG93PSJjbG9zZV9hbGwiIG5nLWNsaWNrPSJjbG9zZSgpOyIgY2xhc3M9ImJhY2tncm91bmQtd3JhcCI+PC9zZWN0aW9uPgogICAgICAgICAgPHNlY3Rpb24gc3R5bGU9InRvcDp7e3Bvc2l0aW9uLnkgLSA1MH19cHg7bGVmdDp7e3Bvc2l0aW9uLnggLSA0OH19cHg7IiBjbGFzcz0id2VpZ2h0LWFkZCI+CiAgICAgICAgICAgIDxzZWN0aW9uIGNsYXNzPSJ3ZWlnaHQtY29udGVudCI+CiAgICAgICAgICAgICAgPHNlY3Rpb24gbmctY2xpY2s9InBsdXNfd2VpZ2h0KCk7IiBjbGFzcz0icGx1cyI+PHNwYW4+CiAgICAgICAgICAgICAgICAgIDxuZy1tZC1pY29uIGljb249ImtleWJvYXJkX2Fycm93X3VwIiBzdHlsZT0iZmlsbDpibGFjayIgc2l6ZT0iMjUiPjwvbmctbWQtaWNvbj48L3NwYW4+PC9zZWN0aW9uPgogICAgICAgICAgICAgIDxzZWN0aW9uIG5nLWNsYXNzPSJ7J2JvcmRlci1yZWQnOiBhbHQ9PSdzZXJpZSd9IiBuZy1jbGljaz0idG9nZ2xlX3ZvbHVtZSgpOyIgY2xhc3M9ImxlZnQiPiAgPHNwYW4+e3tleGVyY2ljaW9fc2VsZWN0LnNlcmllfX08L3NwYW4+PC9zZWN0aW9uPgogICAgICAgICAgICAgIDxzZWN0aW9uIGNsYXNzPSJtaWRkbGUiPjxzcGFuPjo8L3NwYW4+PC9zZWN0aW9uPgogICAgICAgICAgICAgIDxzZWN0aW9uIG5nLWNsYXNzPSJ7J2JvcmRlci1yZWQnOiBhbHQ9PSdyZXBldGljYW8nfSIgbmctY2xpY2s9InRvZ2dsZV92b2x1bWUoKTsiIGNsYXNzPSJyaWdodCI+IDxzcGFuPnt7ZXhlcmNpY2lvX3NlbGVjdC5yZXBldGljYW99fTwvc3Bhbj48L3NlY3Rpb24+CiAgICAgICAgICAgICAgPHNlY3Rpb24gbmctY2xpY2s9Im1pbnVzX3dlaWdodCgpOyIgY2xhc3M9Im1pbnVzIj48c3Bhbj4KICAgICAgICAgICAgICAgICAgPG5nLW1kLWljb24gaWNvbj0iZXhwYW5kX21vcmUiIHN0eWxlPSJmaWxsOmJsYWNrIiBzaXplPSIyNSI+PC9uZy1tZC1pY29uPjwvc3Bhbj48L3NlY3Rpb24+CiAgICAgICAgICAgIDwvc2VjdGlvbj4KICAgICAgICAgIDwvc2VjdGlvbj4KICAgICAgICA8L3NlY3Rpb24+CiAgICAgIDwvbWQtY2FyZC1jb250ZW50PgogICAgPC9tZC1jYXJkPgogIDwvc2VjdGlvbj4KPC9tZC1jYXJkLWNvbnRlbnQ+","base64")
+					template: Buffer("CjxtZC1jYXJkLWNvbnRlbnQ+CiAgPCEtLSBzZWN0aW9uLnRhYnMtLT4KICA8IS0tIAkJCW1kLXRhYnMobWQtZHluYW1pYy1oZWlnaHQ9InRydWUiIG1kLWJvcmRlci1ib3R0b209ImZhbHNlIiktLT4KICA8IS0tIAkJCQkvLyBtZC10YWIobGFiZWw9IkdlcmFsIiktLT4KICA8IS0tIAkJCQkvLyAJbWQtY29udGVudC5tZC1wYWRkaW4tLT4KICA8IS0tIAkJCQkvLyAJc2VjdGlvbi5hdXRvY29tcGxldGVkZW1vQ3VzdG9tVGVtcGxhdGUtLT4KICA8IS0tIAkJCQkvLyAJCW1kLWF1dG9jb21wbGV0ZShuZy1kaXNhYmxlZD0iaXNEaXNhYmxlZCIsIG1kLW5vLWNhY2hlPSJub0NhY2hlIiwgbWQtc2VsZWN0ZWQtaXRlbT0ic2VsZWN0ZWRJdGVtIiwgbWQtc2VhcmNoLXRleHQtY2hhbmdlPSJzZWFyY2hUZXh0Q2hhbmdlKHNlYXJjaFRleHQpIiwgbWQtc2VhcmNoLXRleHQ9InNlYXJjaFRleHQiLCBtZC1zZWxlY3RlZC1pdGVtLWNoYW5nZT0ic2VsZWN0ZWRJdGVtQ2hhbmdlKGl0ZW0pIiwgbWQtaXRlbXM9Iml0ZW0gaW4gcXVlcnlTZWFyY2goc2VhcmNoVGV4dCkiLCBtZC1pdGVtLXRleHQ9Iml0ZW0uZGlzcGxheSIsIG1kLW1pbi1sZW5ndGg9IjAiLCBwbGFjZWhvbGRlcj0iRGlnaXRlIGFxdWkgbyBub21lIGRvIGV4ZXJjw61jaW8gcXVlIGRlc2VqYSBpbnNlcmlyIiBtZC1tZW51LWNsYXNzPSJhdXRvY29tcGxldGUtY3VzdG9tLXRlbXBsYXRlIiktLT4KICA8IS0tIAkJCQkvLyAJCQltZC1pdGVtLXRlbXBsYXRlLS0+CiAgPCEtLSAJCQkJLy8gCQkJCXNwYW4uaXRlbS10aXRsZS0tPgogIDwhLS0gCQkJCS8vIAkJCQkJbWQtaWNvbihtZC1zdmctaWNvbj0iaW1nL2ljb25zL29jdGljb24tcmVwby5zdmciKS0tPgogIDwhLS0gCQkJCS8vIAkJCQkJc3BhbiAge3tpdGVtLm5hbWV9fSAtLT4KICA8IS0tIAkJCQkvLyAJCQkJc3Bhbi5pdGVtLW1ldGFkYXRhLS0+CiAgPCEtLSAJCQkJLy8gCQkJCQlzcGFuLml0ZW0tbWV0YXN0YXQtLT4KICA8IS0tIAkJCQkvLyAJCQkJCQlzdHJvbmcge3tpdGVtLndhdGNoZXJzfX0tLT4KICA8IS0tIAkJCQkvLyAJCQkJCQl8IHdhdGNoZXJzLS0+CiAgPCEtLSAJCQkJLy8gCQkJCQlzcGFuLml0ZW0tbWV0YXN0YXQtLT4KICA8IS0tIAkJCQkvLyAJCQkJCQlzdHJvbmcge3tpdGVtLmZvcmtzfX0tLT4KICA8IS0tIAkJCQltZC10YWIobGFiZWw9Int7bGlzdC5ncnVwb319IiBuZy1yZXBlYXQ9IiBsaXN0IGluIGxpc3RfZXhlcmNpY2lvcyIgKS0tPgogIDwhLS0gCQkJCQltZC1jb250ZW50Lm1kLXBhZGRpbmctLT4KICA8IS0tIAkJCQkJCXNlY3Rpb24tLT4KICA8IS0tIAkJCQkJCQlzcGFuKG5nLWNsaWNrPSJpbnNlcnQoJGluZGV4LCBsaXN0KTsiIG5nLWNsYXNzPSJ7J2l0ZW0tc2VsZWN0IGFuaW1hdGVkIHB1bHNlJzogZXhlcmMuc2VsZWN0IH0iIG5nLXJlcGVhdD0iZXhlcmMgaW4gbGlzdC5leGVyY2ljaW9zIiktLT4KICA8IS0tIAkJCQkJCQkJfCB7e2V4ZXJjLm5vbWV9fS0tPgogIDxzZWN0aW9uIGNsYXNzPSJuZXctdHJhaW5pbmciPgogICAgPG1kLWNhcmQ+CiAgICAgIDxtZC1jYXJkLWNvbnRlbnQ+CiAgICAgICAgPHNlY3Rpb24gY2xhc3M9ImhlYWRlci1hZGQiPgogICAgICAgICAgPG1kLXNlbGVjdCBwbGFjZWhvbGRlcj0iTm9tZSBkbyBUcmVpbm8iIG5nLW1vZGVsPSJwbGFuIiBzdHlsZT0ibWluLXdpZHRoOjI1MHB4OyI+CiAgICAgICAgICAgIDxtZC1vcHRpb24gbmctcmVwZWF0PSJwbGFuIGluIHBsYW5zIiB2YWx1ZT0ie3twbGFufX0iPnt7cGxhbn19PC9tZC1vcHRpb24+CiAgICAgICAgICA8L21kLXNlbGVjdD4KICAgICAgICA8L3NlY3Rpb24+CiAgICAgICAgPHNlY3Rpb24gY2xhc3M9Im9wdGlvbnMtYWRkIj4KICAgICAgICAgIDwhLS0gbmctbWQtaWNvbihpY29uPSJsYXVuY2giIHN0eWxlPSJmaWxsOndoaXRlIiAgc2l6ZT0iMjIiIG5nLWNsaWNrPSJ0cnVlIiktLT4KICAgICAgICAgIDwhLS0gbmctbWQtaWNvbihpY29uPSJleHBhbmRfbW9yZSIgc3R5bGU9ImZpbGw6d2hpdGUiICBzaXplPSIyNyIgbmctY2xpY2s9InRydWUiKS0tPgogICAgICAgICAgPG1kLWJ1dHRvbiBuZy1jbGljaz0iaW1wb3J0VHJhaW5pbmcoJGV2ZW50KTsiIGNsYXNzPSJtZC1yYWlzZWQgc2VjIj5JbXBvcnRhciBUcmVpbm88L21kLWJ1dHRvbj4KICAgICAgICAgIDxtZC1idXR0b24gY2xhc3M9Im1kLXJhaXNlZCBtZC1wcmltYXJ5Ij5JbnNlcmlyIEV4ZXJjw61jaW88L21kLWJ1dHRvbj4KICAgICAgICA8L3NlY3Rpb24+CiAgICAgICAgPHNlY3Rpb24gc3Ytcm9vdD0iIiBzdi1wYXJ0PSJleGVyY2ljaW9zIiBjbGFzcz0iY29udGVudC1hZGQiPgogICAgICAgICAgPG1kLWNvbnRlbnQgc2Nyb2xsLWdsdWU9InNjcm9sbC5nbHVlZCI+CiAgICAgICAgICAgIDxtZC1zdWJoZWFkZXI+PC9tZC1zdWJoZWFkZXI+CiAgICAgICAgICAgIDx1bD4KICAgICAgICAgICAgICA8bGkgbmctcmVwZWF0PSJleGVyY2ljaW8gaW4gZXhlcmNpY2lvcyIgc3YtZWxlbWVudD0ib3B0cyIgbmctY2xhc3M9InsnZXhlcmMtc2VsZWN0JzogJGluZGV4PT1pbmRleH0iPgogICAgICAgICAgICAgICAgPHNlY3Rpb24gc3YtaGFuZGxlPSIiIGNsYXNzPSJkcmFnIj4KICAgICAgICAgICAgICAgICAgPG5nLW1kLWljb24gaWNvbj0ib3Blbl93aXRoIiBzdHlsZT0iZmlsbDpibGFjayIgc2l6ZT0iMjAiPjwvbmctbWQtaWNvbj4KICAgICAgICAgICAgICAgIDwvc2VjdGlvbj4KICAgICAgICAgICAgICAgIDxzZWN0aW9uIGNsYXNzPSJleGVyYyI+PHNwYW4+e3tleGVyY2ljaW8ubm9tZX19PC9zcGFuPjwvc2VjdGlvbj4KICAgICAgICAgICAgICAgIDxzZWN0aW9uIGNsYXNzPSJ2b2x1bWUiPjxzcGFuIG5nLWNsaWNrPSJ3ZWlnaHRfYWRkKCRldmVudCxleGVyY2ljaW8sJGluZGV4KTsiPnt7ZXhlcmNpY2lvLnNlcmllfX14e3tleGVyY2ljaW8ucmVwZXRpY2FvfX08L3NwYW4+PC9zZWN0aW9uPgogICAgICAgICAgICAgICAgPHNlY3Rpb24gY2xhc3M9ImRlbGV0ZSI+CiAgICAgICAgICAgICAgICAgIDxuZy1tZC1pY29uIGljb249ImNsb3NlIiBuZy1jbGljaz0icmVtb3ZlKCRpbmRleCk7IiBzdHlsZT0iZmlsbDpibGFjayIgc2l6ZT0iMjAiPjwvbmctbWQtaWNvbj4KICAgICAgICAgICAgICAgIDwvc2VjdGlvbj4KICAgICAgICAgICAgICA8L2xpPgogICAgICAgICAgICA8L3VsPgogICAgICAgICAgPC9tZC1jb250ZW50PgogICAgICAgICAgPHNlY3Rpb24gbmctc2hvdz0iY2xvc2VfYWxsIiBuZy1jbGljaz0iY2xvc2UoKTsiIGNsYXNzPSJiYWNrZ3JvdW5kLXdyYXAiPjwvc2VjdGlvbj4KICAgICAgICAgIDxzZWN0aW9uIHN0eWxlPSJ0b3A6e3twb3NpdGlvbi55IC0gNTB9fXB4O2xlZnQ6e3twb3NpdGlvbi54IC0gNDh9fXB4OyIgY2xhc3M9IndlaWdodC1hZGQiPgogICAgICAgICAgICA8c2VjdGlvbiBjbGFzcz0id2VpZ2h0LWNvbnRlbnQiPgogICAgICAgICAgICAgIDxzZWN0aW9uIG5nLWNsaWNrPSJwbHVzX3dlaWdodCgpOyIgY2xhc3M9InBsdXMiPjxzcGFuPgogICAgICAgICAgICAgICAgICA8bmctbWQtaWNvbiBpY29uPSJrZXlib2FyZF9hcnJvd191cCIgc3R5bGU9ImZpbGw6YmxhY2siIHNpemU9IjI1Ij48L25nLW1kLWljb24+PC9zcGFuPjwvc2VjdGlvbj4KICAgICAgICAgICAgICA8c2VjdGlvbiBuZy1jbGFzcz0ieydib3JkZXItcmVkJzogYWx0PT0nc2VyaWUnfSIgbmctY2xpY2s9InRvZ2dsZV92b2x1bWUoKTsiIGNsYXNzPSJsZWZ0Ij4gIDxzcGFuPnt7ZXhlcmNpY2lvX3NlbGVjdC5zZXJpZX19PC9zcGFuPjwvc2VjdGlvbj4KICAgICAgICAgICAgICA8c2VjdGlvbiBjbGFzcz0ibWlkZGxlIj48c3Bhbj46PC9zcGFuPjwvc2VjdGlvbj4KICAgICAgICAgICAgICA8c2VjdGlvbiBuZy1jbGFzcz0ieydib3JkZXItcmVkJzogYWx0PT0ncmVwZXRpY2FvJ30iIG5nLWNsaWNrPSJ0b2dnbGVfdm9sdW1lKCk7IiBjbGFzcz0icmlnaHQiPiA8c3Bhbj57e2V4ZXJjaWNpb19zZWxlY3QucmVwZXRpY2FvfX08L3NwYW4+PC9zZWN0aW9uPgogICAgICAgICAgICAgIDxzZWN0aW9uIG5nLWNsaWNrPSJtaW51c193ZWlnaHQoKTsiIGNsYXNzPSJtaW51cyI+PHNwYW4+CiAgICAgICAgICAgICAgICAgIDxuZy1tZC1pY29uIGljb249ImV4cGFuZF9tb3JlIiBzdHlsZT0iZmlsbDpibGFjayIgc2l6ZT0iMjUiPjwvbmctbWQtaWNvbj48L3NwYW4+PC9zZWN0aW9uPgogICAgICAgICAgICA8L3NlY3Rpb24+CiAgICAgICAgICA8L3NlY3Rpb24+CiAgICAgICAgPC9zZWN0aW9uPgogICAgICA8L21kLWNhcmQtY29udGVudD4KICAgIDwvbWQtY2FyZD4KICA8L3NlY3Rpb24+CjwvbWQtY2FyZC1jb250ZW50Pg==","base64")
 				}
 			}
 		},
@@ -78067,22 +78067,22 @@ module.exports = {
 };
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/index.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/user/controllers/planController.js":[function(require,module,exports){
+},{"buffer":1}],56:[function(require,module,exports){
 module.exports = function($scope) {
  $scope.labels = ["Dias Decorridos", "Dias Restantes"];
   $scope.data = [14,7];
 };
 
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/user/controllers/scheduleController.js":[function(require,module,exports){
-arguments[4]["/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/train/controllers/collectionTrainingController.js"][0].apply(exports,arguments)
-},{}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/user/index.js":[function(require,module,exports){
+},{}],57:[function(require,module,exports){
+arguments[4][49][0].apply(exports,arguments)
+},{"dup":49}],58:[function(require,module,exports){
 module.exports = angular.module('user',[])
 		.controller('planController', require('./controllers/planController.js'))
 		.controller('scheduleController', require('./controllers/scheduleController.js'));
 		// .factory('userModel', require('./services/userModel.js'))
 		// .factory('RestangularCustom', require('./services/restangularCustom.js'));
 
-},{"./controllers/planController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/user/controllers/planController.js","./controllers/scheduleController.js":"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/user/controllers/scheduleController.js"}],"/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/user/userRoutes.js":[function(require,module,exports){
+},{"./controllers/planController.js":56,"./controllers/scheduleController.js":57}],59:[function(require,module,exports){
 (function (Buffer){
 
 module.exports = {
@@ -78143,4 +78143,4 @@ module.exports = {
 };
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":"/home/bruno/ProjNode/meutreinamento/meutreinamento/node_modules/browserify/node_modules/buffer/index.js"}]},{},["/home/bruno/ProjNode/meutreinamento/meutreinamento/public/js/app/app.js"]);
+},{"buffer":1}]},{},[26]);

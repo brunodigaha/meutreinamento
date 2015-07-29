@@ -33,15 +33,15 @@ md-card-content
 	.new-training
 		col(6/6,gutter:0)
 		box-sizing border-box
-		padding-left 2em
-		padding-right 2em
+		padding-left .2em
+		padding-right .2em
 		position relative
 		+desktop()
-			padding-left 3em
-			padding-right 3em
+			padding-left 2em
+			padding-right 2em
 		+hd()
-			padding-left 8em
-			padding-right 8em
+			padding-left 5em
+			padding-right 5em
 
 		// margin-top 6em
 		box-sizing border-box
@@ -114,14 +114,14 @@ md-card-content
 					padding-left 2em
 					padding-right 30%
 					border-bottom 3px solid palette('Blue','500')
-					height 55px
+					height 48px
 					// border-top-left-radius 3px
 					md-select
-						padding-top .3em
+						// padding-top .3em
 						margin 0
 						font-size 155%
 						+desktop()
-							padding-top .2em
+							// padding-top .2em
 							font-size 140%
 					// md-select-label.md-select-label
 					// 	padding-top 0
@@ -138,23 +138,24 @@ md-card-content
 					col(3/6,gutter:0)
 					box-sizing border-box
 					border-bottom 3px solid palette('Blue','500')
-					height 55px
-					padding-top .5em
+					height 48px
+					// padding-top .5em
+					// +desktop()
+					// 	padding-top .5em
 					border-top-right-radius 3px
-					+desktop()
-						padding-top .5em
 					padding-right 1.3em
 					text-align right
 					ng-md-icon
 						padding-left 1em
-					button.md-button
+					button.md-button.sec
+						margin-right 20px 
 						span
 							color palette('Light Blue', '500') 
-							// font-weight bold
+					button
 						width 38%
 						min-width 15px
-						min-height 27px
-						line-height 27px
+						min-height 30px
+						line-height 30px
 						font-size 80%
 						margin 0
 						+desktop()
