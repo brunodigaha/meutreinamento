@@ -35,33 +35,53 @@
           <md-button ng-click="importTraining($event);" class="md-raised sec">Importar Treino</md-button>
           <md-button class="md-raised md-primary">Inserir Exercício</md-button>
         </section>
-        <section sv-root="" sv-part="exercicios" class="content-add">
-          <md-content scroll-glue="scroll.glued">
-            <md-subheader></md-subheader>
-            <ul>
-              <li ng-repeat="exercicio in exercicios" sv-element="opts" ng-class="{'exerc-select': $index==index}">
-                <section sv-handle="" class="drag">
-                  <ng-md-icon icon="open_with" style="fill:black" size="20"></ng-md-icon>
-                </section>
-                <section class="exerc"><span>{{exercicio.nome}}</span></section>
-                <section class="volume"><span ng-click="weight_add($event,exercicio,$index);">{{exercicio.serie}}x{{exercicio.repeticao}}</span></section>
-                <section class="delete">
-                  <ng-md-icon icon="close" ng-click="remove($index);" style="fill:black" size="20"></ng-md-icon>
-                </section>
-              </li>
-            </ul>
-          </md-content>
-          <section ng-show="close_all" ng-click="close();" class="background-wrap"></section>
-          <section style="top:{{position.y - 50}}px;left:{{position.x - 48}}px;" class="weight-add">
-            <section class="weight-content">
-              <section ng-click="plus_weight();" class="plus"><span>
-                  <ng-md-icon icon="keyboard_arrow_up" style="fill:black" size="25"></ng-md-icon></span></section>
-              <section ng-class="{'border-red': alt=='serie'}" ng-click="toggle_volume();" class="left">  <span>{{exercicio_select.serie}}</span></section>
-              <section class="middle"><span>:</span></section>
-              <section ng-class="{'border-red': alt=='repeticao'}" ng-click="toggle_volume();" class="right"> <span>{{exercicio_select.repeticao}}</span></section>
-              <section ng-click="minus_weight();" class="minus"><span>
-                  <ng-md-icon icon="expand_more" style="fill:black" size="25"></ng-md-icon></span></section>
-            </section>
+        <section class="content-add">
+          <sections sv-root="" sv-part="exercicios" class="list-trainings">
+            <md-content scroll-glue="scroll.glued">
+              <md-subheader></md-subheader>
+              <ul>
+                <li ng-repeat="exercicio in exercicios" sv-element="opts" ng-class="{'exerc-select': $index==index}">
+                  <section sv-handle="" class="drag">
+                    <ng-md-icon icon="open_with" style="fill:black" size="20"></ng-md-icon>
+                  </section>
+                  <section class="exerc"><span>{{exercicio.nome}}</span><span>{{exercicio.nome}}</span></section>
+                  <!-- section.volume-->
+                  <!-- 	// span(ng-click="weight_add($event,exercicio,$index);") {{exercicio.serie}}x{{exercicio.repeticao}}-->
+                  <!-- 	span {{exercicio.serie}}x{{exercicio.repeticao}}-->
+                  <!-- section.delete-->
+                  <!-- 	ng-md-icon(icon="close" ng-click="remove($index);" style="fill:black" size="20")-->
+                </li>
+              </ul>
+            </md-content>
+            <!-- section.background-wrap(ng-show="close_all" ng-click="close();")-->
+            <!-- section.weight-add(style="top:{{position.y - 50}}px;left:{{position.x - 48}}px;")-->
+            <!-- 	section.weight-content-->
+            <!-- 		section.plus(ng-click="plus_weight();")-->
+            <!-- 			span-->
+            <!-- 				ng-md-icon(icon="keyboard_arrow_up" style="fill:black"  size="25")-->
+            <!-- 		section.left(ng-class="{'border-red': alt=='serie'}" ng-click="toggle_volume();")   -->
+            <!-- 			span {{exercicio_select.serie}}-->
+            <!-- 		section.middle-->
+            <!-- 			span :-->
+            <!-- 		section.right(ng-class="{'border-red': alt=='repeticao'}" ng-click="toggle_volume();")  -->
+            <!-- 			span {{exercicio_select.repeticao}}-->
+            <!-- 		section.minus(ng-click="minus_weight();")-->
+            <!-- 			span-->
+            <!-- 				ng-md-icon(icon="expand_more" style="fill:black"  size="25")-->
+          </sections>
+          <section class="aside-info-training">
+            <ds-info>
+              <section class="ds-title"><span>Total de Exercícios</span></section>
+              <section class="ds-content"><span>5</span></section>
+            </ds-info>
+            <ds-info>
+              <section class="ds-title"><span>Volume do Treino</span></section>
+              <section class="ds-content"><span>220.000 kg</span></section>
+            </ds-info>
+            <ds-info>
+              <section class="ds-title"><span>Grupos Musculares Atingidos</span></section>
+              <section class="ds-content"><span>Costa</span><span>Perna</span><span>Perna</span><span>Perna</span><span>Costa</span><span>Costa</span><span>Costa</span><span>Perna</span><span>Ombro</span></section>
+            </ds-info>
           </section>
         </section>
       </md-card-content>

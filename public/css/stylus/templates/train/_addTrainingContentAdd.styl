@@ -1,34 +1,34 @@
 md-card-content
-	.tabs
-		col(6/6,gutter:0)
-		min-height 19vh
-		md-chips
-		md-tab-content
-			md-content
-				.item-select
-					background-color palette('Blue Grey','50')
-				span
-					cursor pointer
-					border-radius 16px
-					padding-right 7px
-					padding-left 7px
-					margin-right 9px
-					line-height 26px
-					vertical-align middle
-					margin-top 7px
-					text-align left
-					display inline-block
-					background-color white
-					border 1px solid palette('Blue Grey', '100')
-					font-size 75%
-					color palette('Grey','800')
-					&:hover
-						background palette('Blue Grey','50')
-		md-tab-item.md-tab
-			+tablet()
-				padding 8px 8px
-				line-height 32px
-				font-size 12px
+	// .tabs
+	// 	col(6/6,gutter:0)
+	// 	min-height 19vh
+	// 	md-chips
+	// 	md-tab-content
+	// 		md-content
+	// 			.item-select
+	// 				background-color palette('Blue Grey','50')
+	// 			span
+	// 				cursor pointer
+	// 				border-radius 16px
+	// 				padding-right 7px
+	// 				padding-left 7px
+	// 				margin-right 9px
+	// 				line-height 26px
+	// 				vertical-align middle
+	// 				margin-top 7px
+	// 				text-align left
+	// 				display inline-block
+	// 				background-color white
+	// 				border 1px solid palette('Blue Grey', '100')
+	// 				font-size 75%
+	// 				color palette('Grey','800')
+	// 				&:hover
+	// 					background palette('Blue Grey','50')
+	// 	md-tab-item.md-tab
+	// 		+tablet()
+	// 			padding 8px 8px
+	// 			line-height 32px
+	// 			font-size 12px
 			
 	.new-training
 		col(6/6,gutter:0)
@@ -46,68 +46,69 @@ md-card-content
 		// margin-top 6em
 		box-sizing border-box
 		md-card
+			// border 1px solid palette('Grey','200')
 			min-height:29vh !important
 			position relative
 			md-card-content
 				.md-subheader
 					.md-subheader-inner
 						 padding 3px 0px 2px 3px
-				.background-wrap
-					position fixed
-					top 0
-					left 0
-					height 100%
-					width 100%
-					z-index 4
-					background-color palette('Grey','700')
-					opacity .1
-				.weight-add
-					position fixed
-					z-index 6
-				.weight-add
-					.weight-content
-						col(1.2/12,gutter:0)
-						position fixed
-						max-width 120px
-						box-sizing border-box
-						padding-left .7%
-						padding-right .7%
-						text-align center
-						font-size 70%
-						// background-color palette('Blue Grey','50') 
-						background-color white
-						border 1px solid palette('Blue Grey','50')  
-						.plus
-							col(12/12,gutter:0)
-							font-size 190%
-							cursor pointer
-							ng-md-icon
-								svg
-									margin-top 4%
-						.left
-							col(5/12,gutter:0)
-							box-sizing border-box
-							background-color white
-							border 1px solid palette('Blue Grey','100')  
-						.middle
-							col(2/12,gutter:0)
-						.right
-							col(5/12,gutter:0)
-							border 1px solid palette('Blue Grey','100')  
-							box-sizing border-box
-							background-color white
-							background-color white
-							box-sizing border-box
-						.minus
-							col(12/12,gutter:0)
-							font-size 250%
-							cursor pointer
-							ng-md-icon
-								svg
-									margin-top 6%
-						.border-red
-							border 1px solid palette('Red','700')  
-							color palette('Red','700')  
+				// .background-wrap
+				// 	position fixed
+				// 	top 0
+				// 	left 0
+				// 	height 100%
+				// 	width 100%
+				// 	z-index 4
+				// 	background-color palette('Grey','700')
+				// 	opacity .1
+				// .weight-add
+				// 	position fixed
+				// 	z-index 6
+				// .weight-add
+				// 	.weight-content
+				// 		col(1.2/12,gutter:0)
+				// 		position fixed
+				// 		max-width 120px
+				// 		box-sizing border-box
+				// 		padding-left .7%
+				// 		padding-right .7%
+				// 		text-align center
+				// 		font-size 70%
+				// 		// background-color palette('Blue Grey','50') 
+				// 		background-color white
+				// 		border 1px solid palette('Blue Grey','50')  
+				// 		.plus
+				// 			col(12/12,gutter:0)
+				// 			font-size 190%
+				// 			cursor pointer
+				// 			ng-md-icon
+				// 				svg
+				// 					margin-top 4%
+				// 		.left
+				// 			col(5/12,gutter:0)
+				// 			box-sizing border-box
+				// 			background-color white
+				// 			border 1px solid palette('Blue Grey','100')  
+				// 		.middle
+				// 			col(2/12,gutter:0)
+				// 		.right
+				// 			col(5/12,gutter:0)
+				// 			border 1px solid palette('Blue Grey','100')  
+				// 			box-sizing border-box
+				// 			background-color white
+				// 			background-color white
+				// 			box-sizing border-box
+				// 		.minus
+				// 			col(12/12,gutter:0)
+				// 			font-size 250%
+				// 			cursor pointer
+				// 			ng-md-icon
+				// 				svg
+				// 					margin-top 6%
+				// 		.border-red
+				// 			border 1px solid palette('Red','700')  
+				// 			color palette('Red','700')  
 				.header-add
 					col(3/6,gutter:0)
 					box-sizing border-box
@@ -166,110 +167,151 @@ md-card-content
 							font-size 85%
 							margin 0
 				.content-add
-					col(6/6,gutter:0)
+					col(9/9,gutter:0)
 					box-sizing border-box
-					// padding 1em
-					margin-top 2px
-					md-content
-						height:40vh !important
-						+tablet(orientation: portrait)
-							height:49vh !important
-						+desktop()
-							height:49vh !important
-						ul
-							col(5/6,gutter:0)
-							shift(.5/6,gutter:0)
+					padding-right .5em
+					padding-left .5em
+					padding-top 1em
+					padding-bottom .3em
+					.list-trainings
+						col(7.5/9,gutter:0)
+						box-sizing border-box
+						md-content
+							height:59vh !important
+							+tablet(orientation: portrait)
+								height:68vh !important
 							+desktop()
-								col(4/6,gutter:0)
-								shift(1/6,gutter:0)
-							margin 0
-							padding 0
-							margin-top 1em
-							font-size 90%
-							// color palette('Blue', '500')
-							// text-align center
-							list-style none
-							.exerc-select
-								background-color palette('Blue Grey','50')
-								color black
-								border 1px solid palette('Blue Grey','200')  
+								height:68vh !important
+							ul
+								margin 0
+								padding 0
+								padding-right .5em
+								margin-top .7em
+								+desktop()
+									padding-left 2em
+									padding-right 2em
+								font-size 90%
+								list-style none
+								.exerc-select
+									background-color palette('Blue Grey','50')
+									color black
+									border 1px solid palette('Blue Grey','200')  
 
-							li.ng-enter
-								-webkit-animation 0.8s pulse
-								-moz-animation 0.8s pulse
-								-o-animation 0.8s pulse
-								animation 0.8s pulse
-								opacity 0
-								background-color palette('Blue Grey','50')
-								border 1px solid palette('Blue Grey','200')  
-								color black
-							// li.ng-move
-							// 	-webkit-transition:0.5s linear all;
-							// 	-moz-transition:0.5s linear all;
-							// 	-o-transition:0.5s linear all;
-							// 	transition:0.5s linear all;
-							// 	opacity:0;
-							li.ng-enter.ng-enter-active,
-							li.ng-move.ng-move-active
-								opacity 1
-							.sv-helper
-								font-size 120%
-								color black
-								line-height 38px
-								background-color palette('Blue Grey','50')
-								border 1px solid palette('Blue Grey','200')  
-								opacity 0.9
-							.sv-candidate
-								opacity 0.5
-							li.ng-leave
-								-webkit-transition all linear 0.3s
-								-moz-transition all linear 0.3s
-								-o-transition all linear 0.3s
-								transition all linear 0.3s
-								position relative
-								left 5px
-								opacity .2
-								// &.ng-leave-active
-								// 	opacity 0
-								// 	@keyframes zoomOut {
-								// 		from { opacity:1; }
-								// 		to { opacity:0; }
-								// 	}
-							li
-								border 1px solid palette('Blue Grey','100')
-								background-color white
-								box-sizing border-box
-								margin-bottom .5em
-								col(12/12,gutter:0)
-								text-align center
-								color palette('Grey','800')
-								// background-color palette('Grey','50')
-								// &:hover
-								// 	background palette('Blue Grey','50')
-								.drag
-									col(1/11,gutter:0)
-									margin-left .5em
-									cursor pointer
-									&:hover
-										zoom 1.1
-									ng-md-icon
-										svg
-											vertical-align middle
-								.exerc
-									col(5.5/11,gutter:0)
+								li.ng-enter
+									-webkit-animation 0.8s pulse
+									-moz-animation 0.8s pulse
+									-o-animation 0.8s pulse
+									animation 0.8s pulse
+									opacity 0
+									background-color palette('Blue Grey','50')
+									border 1px solid palette('Blue Grey','200')  
+									color black
+								// li.ng-move
+								// 	-webkit-transition:0.5s linear all;
+								// 	-moz-transition:0.5s linear all;
+								// 	-o-transition:0.5s linear all;
+								// 	transition:0.5s linear all;
+								// 	opacity:0;
+								li.ng-enter.ng-enter-active,
+								li.ng-move.ng-move-active
+									opacity 1
+								.sv-helper
+									font-size 120%
+									color black
+									line-height 38px
+									background-color palette('Blue Grey','50')
+									border 1px solid palette('Blue Grey','200')  
+									opacity 0.9
+								.sv-candidate
+									opacity 0.5
+								li.ng-leave
+									-webkit-transition all linear 0.3s
+									-moz-transition all linear 0.3s
+									-o-transition all linear 0.3s
+									transition all linear 0.3s
+									position relative
+									left 5px
+									opacity .2
+									// &.ng-leave-active
+									// 	opacity 0
+									// 	@keyframes zoomOut {
+									// 		from { opacity:1; }
+									// 		to { opacity:0; }
+									// 	}
+								li
+									border 1px solid palette('Grey','400')
+									background-color white
 									box-sizing border-box
-									text-align left
-									margin-left .9em
-								.volume
-									col(3/11,gutter:0)
-								.delete
-									col(.5/11,gutter:0)
-									margin-left .5em
-									ng-md-icon
-										svg
-											vertical-align middle
-											&:hover
-												// background palette('Red','50')
-												zoom 1.3
-											cursor pointer
+									margin-bottom .5em
+									col(12/12,gutter:0)
+									text-align center
+									color palette('Grey','800')
+									// background-color palette('Grey','50')
+									// &:hover
+									// 	background palette('Blue Grey','50')
+									.drag
+										col(1/11,gutter:0)
+										margin-left .5em
+										cursor pointer
+										&:hover
+											zoom 1.1
+										ng-md-icon
+											svg
+												vertical-align middle
+									.exerc
+										col(5.5/11,gutter:0)
+										box-sizing border-box
+										text-align left
+										margin-left .9em
+										span
+											display inline-block
+											margin-right 2%
+											padding 3px 8px 3px 8px
+											+desktop()
+												padding 5px 11px 5px 11px
+												line-height 11px
+											font-size 83%
+											border 1px solid palette('Grey','500')
+											border-radius 16px
+											line-height 10px
+											// background-color palette('Grey','50')
+											color black
+											
+
+									.volume
+										col(3/11,gutter:0)
+									.delete
+										col(.5/11,gutter:0)
+										margin-left .5em
+										ng-md-icon
+											svg
+												vertical-align middle
+												&:hover
+													// background palette('Red','50')
+													zoom 1.3
+												cursor pointer
+					.aside-info-training
+						col(1.5/9,gutter:0)
+						box-sizing border-box
+						text-align center
+						padding 5px
+						// box-shadow: 0 2px 3px rgba(0,0,0,.15)
+						border 1px solid palette('Grey','300')
+						.ds-info
+							margin-top 1em
+							background-color palette('Grey','50')
+							+tablet(orientation: portrait)
+								margin-top 3em
+							.ds-info-content
+								max-height 205px
+								+desktop()
+									max-height 380px
+								+tablet(orientation: portrait)
+									max-height 300px
+								overflow auto
+						height 59 vh
+						+tablet(orientation: portrait)
+							height:68vh !important
+						+desktop()
+							height:68vh !important
 

@@ -31,33 +31,60 @@ md-card-content
 						// ng-md-icon(icon="expand_more" style="fill:white"  size="27" ng-click="true")
 						md-button(class="md-raised sec"  ng-click="importTraining($event);") Importar Treino
 						md-button(class="md-raised md-primary") Inserir Exercício
-					section.content-add(sv-root="" sv-part="exercicios")
-						md-content(scroll-glue="scroll.glued")
-							md-subheader
-							ul
-								li(ng-repeat="exercicio in exercicios" sv-element="opts" ng-class="{'exerc-select': $index==index}")
-									section.drag(sv-handle="")
-										ng-md-icon(icon="open_with" style="fill:black" size="20")
-									section.exerc
-										span {{exercicio.nome}}
-									section.volume
-										span(ng-click="weight_add($event,exercicio,$index);") {{exercicio.serie}}x{{exercicio.repeticao}}
-									section.delete
-										ng-md-icon(icon="close" ng-click="remove($index);" style="fill:black" size="20")
-						section.background-wrap(ng-show="close_all" ng-click="close();")
-						section.weight-add(style="top:{{position.y - 50}}px;left:{{position.x - 48}}px;")
-							section.weight-content
-								section.plus(ng-click="plus_weight();")
-									span
-										ng-md-icon(icon="keyboard_arrow_up" style="fill:black"  size="25")
-								section.left(ng-class="{'border-red': alt=='serie'}" ng-click="toggle_volume();")   
-									span {{exercicio_select.serie}}
-								section.middle
-									span :
-								section.right(ng-class="{'border-red': alt=='repeticao'}" ng-click="toggle_volume();")  
-									span {{exercicio_select.repeticao}}
-								section.minus(ng-click="minus_weight();")
-									span
-										ng-md-icon(icon="expand_more" style="fill:black"  size="25")
+					section.content-add
+						sections.list-trainings(sv-root="" sv-part="exercicios")
+							md-content(scroll-glue="scroll.glued")
+								md-subheader
+								ul
+									li(ng-repeat="exercicio in exercicios" sv-element="opts" ng-class="{'exerc-select': $index==index}")
+										section.drag(sv-handle="")
+											ng-md-icon(icon="open_with" style="fill:black" size="20")
+										section.exerc
+											span {{exercicio.nome}}
+											span {{exercicio.nome}}
+										// section.volume
+										// 	// span(ng-click="weight_add($event,exercicio,$index);") {{exercicio.serie}}x{{exercicio.repeticao}}
+										// 	span {{exercicio.serie}}x{{exercicio.repeticao}}
+										// section.delete
+										// 	ng-md-icon(icon="close" ng-click="remove($index);" style="fill:black" size="20")
+							// section.background-wrap(ng-show="close_all" ng-click="close();")
+							// section.weight-add(style="top:{{position.y - 50}}px;left:{{position.x - 48}}px;")
+							// 	section.weight-content
+							// 		section.plus(ng-click="plus_weight();")
+							// 			span
+							// 				ng-md-icon(icon="keyboard_arrow_up" style="fill:black"  size="25")
+							// 		section.left(ng-class="{'border-red': alt=='serie'}" ng-click="toggle_volume();")   
+							// 			span {{exercicio_select.serie}}
+							// 		section.middle
+							// 			span :
+							// 		section.right(ng-class="{'border-red': alt=='repeticao'}" ng-click="toggle_volume();")  
+							// 			span {{exercicio_select.repeticao}}
+							// 		section.minus(ng-click="minus_weight();")
+							// 			span
+							// 				ng-md-icon(icon="expand_more" style="fill:black"  size="25")
+						section.aside-info-training
+							ds-info
+								section.ds-title
+									span Total de Exercícios
+								section.ds-content
+									span 5
+							ds-info
+								section.ds-title
+									span Volume do Treino
+								section.ds-content
+									span 220.000 kg
+							ds-info
+								section.ds-title
+									span Grupos Musculares Atingidos
+								section.ds-content
+									span Costa
+									span Perna
+									span Perna
+									span Perna
+									span Costa
+									span Costa
+									span Costa
+									span Perna
+									span Ombro
 
 
