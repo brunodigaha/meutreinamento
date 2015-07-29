@@ -1,0 +1,10 @@
+{
+  "firebase": "vitta",
+  "public": "public",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+	"public/index.jade",
+    "**/node_modules/**"
+  ]
+}
