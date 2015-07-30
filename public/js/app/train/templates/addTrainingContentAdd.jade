@@ -1,4 +1,4 @@
-md-card-content
+section.addtraining-wrap
 	// section.tabs
 	// 			md-tabs(md-dynamic-height="true" md-border-bottom="false")
 	// 				// md-tab(label="Geral")
@@ -37,11 +37,45 @@ md-card-content
 								md-subheader
 								ul
 									li(ng-repeat="exercicio in exercicios" sv-element="opts" ng-class="{'exerc-select': $index==index}")
-										section.drag(sv-handle="")
-											ng-md-icon(icon="open_with" style="fill:black" size="20")
-										section.exerc
-											span {{exercicio.nome}}
-											span {{exercicio.nome}}
+										section.viw-exerc(ng-if="!$index == 1")  
+											section.drag(sv-handle="")
+												ng-md-icon(icon="open_with" style="fill:black" size="20")
+											section.exerc
+												span {{exercicio.nome}}
+												span {{exercicio.nome}}
+												span {{exercicio.nome}}
+												span ...
+										section.edit-exerc(ng-if="$index == 1")
+											section.header-exerc
+												section.series
+													span Biset com 3 series
+												section.break-time
+													span 20 segundos
+												section.exerc-options
+													ng-md-icon(icon="settings" style="fill:black" size="20")
+													ng-md-icon(icon="close" ng-click="remove($index);" style="fill:black" size="20")
+											section.content-exerc
+												section.list-steps
+													section.step-content
+														section.position-step
+															span 1º
+														section.list-exerc
+															section.exer-name
+																span Supino Reto
+															section.exerc-repts
+																span 10 Repts
+															section.exerc-weight
+																span 20kg
+													section.step-content
+														section.position-step
+															span 2º
+														section.list-exerc
+															section.exer-name
+																span Polia
+															section.exerc-repts
+																span 12 Repts
+															section.exerc-weight
+																span 25kg
 										// section.volume
 										// 	// span(ng-click="weight_add($event,exercicio,$index);") {{exercicio.serie}}x{{exercicio.repeticao}}
 										// 	span {{exercicio.serie}}x{{exercicio.repeticao}}
