@@ -1,11 +1,48 @@
-md-dialog(aria-label="Mango (Fruit)")
+md-dialog(flex="90" aria-label="Mango (Fruit)")
 	md-toolbar
 		.md-toolbar-tools
 			h2 Inserir Exercício
 			span(flex="")
 			md-button(ng-click="answer('not applicable')") Cancelar
-	section.taining-dialog-content
-		p conteudo
+	md-dialog-content
+		section.taining-dialog-content
+			section.way-training
+				md-select(placeholder='Método de Treino', ng-model='plan' style="min-width:250px;")
+					md-option(ng-repeat='plan in plans', value='{{plan}}') {{plan}}
+			section.slider-wrap-insert
+				section.slider-content-insert
+					div(layout="row")
+						div(flex="20", layout="", layout-align="center center")
+							span.md-body-1 Série&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						md-slider#blue-slider.md-primary(flex="", ng-model="serie", min="1", max="8", aria-label="blue")
+						div(flex="10", layout="", layout-align="center center")
+							input(type="number", ng-model="serie", aria-label="blue", aria-controls="blue-slider")
+				section.slider-title-insert
+					span Séries
+				section.slider-content-insert
+					div(layout="row")
+						div(flex="20", layout="", layout-align="center center")
+							span.md-body-1 Descanso
+						md-slider#blue-slider.md-primary(flex="", ng-model="descanso", min="0", max="180", aria-label="blue")
+						div(flex="10", layout="", layout-align="center center")
+							input(type="number", ng-model="descanso", aria-label="blue", aria-controls="blue-slider")
+				section.slider-title-insert
+					span Segundos
+			section.insert-exercise-wrap
+				section.insert-exercise-header
+					section.insert-exercise-action
+						span Abrir
+					section.insert-exercise-bar
+						span pesquisar
+				section.insert-exercise-content
+					section.exercise-adds
+						span Supino Reto
+						span Polia
+					section.exercise-view
+						span Pre Visualização
+			md-input-container
+				label Observação do Exercício
+				input(type="text")
 	.md-actions(layout="row")
 		span(flex="")
 		md-button.md-primary(ng-click="answer('not useful')")

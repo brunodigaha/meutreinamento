@@ -15864,6 +15864,279 @@ md-dialog .train-dialog-wrap md-dialog-content .train-dialog-content .action but
 .history-wrap .history-content:last-child {
   margin-right: 0%;
 }
-.taining-dialog-content {
-  background-color: #f00;
+md-dialog {
+  max-width: 95%;
+}
+@media only screen and (min-width: 1050px) {
+  md-dialog {
+    max-width: 70%;
+  }
+}
+md-dialog .taining-dialog-content {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+md-dialog .taining-dialog-content:before,
+md-dialog .taining-dialog-content:after {
+  content: '';
+  display: table;
+}
+md-dialog .taining-dialog-content:after {
+  clear: both;
+}
+md-dialog .taining-dialog-content:last-child {
+  margin-right: 0%;
+}
+md-dialog .taining-dialog-content .way-training {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+md-dialog .taining-dialog-content .way-training:before,
+md-dialog .taining-dialog-content .way-training:after {
+  content: '';
+  display: table;
+}
+md-dialog .taining-dialog-content .way-training:after {
+  clear: both;
+}
+md-dialog .taining-dialog-content .way-training:last-child {
+  margin-right: 0%;
+}
+md-dialog .taining-dialog-content .slider-wrap-insert {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  box-sizing: border-box;
+}
+md-dialog .taining-dialog-content .slider-wrap-insert:before,
+md-dialog .taining-dialog-content .slider-wrap-insert:after {
+  content: '';
+  display: table;
+}
+md-dialog .taining-dialog-content .slider-wrap-insert:after {
+  clear: both;
+}
+md-dialog .taining-dialog-content .slider-wrap-insert:last-child {
+  margin-right: 0%;
+}
+md-dialog .taining-dialog-content .slider-wrap-insert .slider-content-insert {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 87.5%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+md-dialog .taining-dialog-content .slider-wrap-insert .slider-content-insert:before,
+md-dialog .taining-dialog-content .slider-wrap-insert .slider-content-insert:after {
+  content: '';
+  display: table;
+}
+md-dialog .taining-dialog-content .slider-wrap-insert .slider-content-insert:after {
+  clear: both;
+}
+md-dialog .taining-dialog-content .slider-wrap-insert .slider-content-insert:last-child {
+  margin-right: 0%;
+}
+md-dialog .taining-dialog-content .slider-wrap-insert .slider-content-insert span.md-body-1 {
+  font-size: 112%;
+}
+md-dialog .taining-dialog-content .slider-wrap-insert .slider-content-insert input[type="number"] {
+  width: 3.5em;
+  margin-left: 8px;
+  text-align: center;
+}
+md-dialog .taining-dialog-content .slider-wrap-insert .slider-title-insert {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 12.5%;
+  margin-left: 0%;
+  margin-right: 0%;
+  box-sizing: border-box;
+  font-size: 80%;
+  padding-left: 0.3em;
+  text-align: left;
+}
+md-dialog .taining-dialog-content .slider-wrap-insert .slider-title-insert:before,
+md-dialog .taining-dialog-content .slider-wrap-insert .slider-title-insert:after {
+  content: '';
+  display: table;
+}
+md-dialog .taining-dialog-content .slider-wrap-insert .slider-title-insert:after {
+  clear: both;
+}
+md-dialog .taining-dialog-content .slider-wrap-insert .slider-title-insert:last-child {
+  margin-right: 0%;
+}
+@media only screen and (min-width: 1050px) {
+  md-dialog .taining-dialog-content .slider-wrap-insert .slider-title-insert {
+    padding-left: 0.5em;
+  }
+}
+md-dialog .taining-dialog-content .slider-wrap-insert .slider-title-insert span {
+  line-height: 50px;
+  vertical-align: middle;
+}
+md-dialog .taining-dialog-content .insert-exercise-wrap {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  box-sizing: border-box;
+  border: 1px solid #9e9e9e;
+  min-height: 10vh;
+}
+md-dialog .taining-dialog-content .insert-exercise-wrap:before,
+md-dialog .taining-dialog-content .insert-exercise-wrap:after {
+  content: '';
+  display: table;
+}
+md-dialog .taining-dialog-content .insert-exercise-wrap:after {
+  clear: both;
+}
+md-dialog .taining-dialog-content .insert-exercise-wrap:last-child {
+  margin-right: 0%;
+}
+md-dialog .taining-dialog-content .insert-exercise-wrap .insert-exercise-header {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+md-dialog .taining-dialog-content .insert-exercise-wrap .insert-exercise-header:before,
+md-dialog .taining-dialog-content .insert-exercise-wrap .insert-exercise-header:after {
+  content: '';
+  display: table;
+}
+md-dialog .taining-dialog-content .insert-exercise-wrap .insert-exercise-header:after {
+  clear: both;
+}
+md-dialog .taining-dialog-content .insert-exercise-wrap .insert-exercise-header:last-child {
+  margin-right: 0%;
+}
+md-dialog .taining-dialog-content .insert-exercise-wrap .insert-exercise-header .insert-exercise-action {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 16.666666666666664%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+md-dialog .taining-dialog-content .insert-exercise-wrap .insert-exercise-header .insert-exercise-action:before,
+md-dialog .taining-dialog-content .insert-exercise-wrap .insert-exercise-header .insert-exercise-action:after {
+  content: '';
+  display: table;
+}
+md-dialog .taining-dialog-content .insert-exercise-wrap .insert-exercise-header .insert-exercise-action:after {
+  clear: both;
+}
+md-dialog .taining-dialog-content .insert-exercise-wrap .insert-exercise-header .insert-exercise-action:last-child {
+  margin-right: 0%;
+}
+md-dialog .taining-dialog-content .insert-exercise-wrap .insert-exercise-header .insert-exercise-bar {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 83.33333333333334%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+md-dialog .taining-dialog-content .insert-exercise-wrap .insert-exercise-header .insert-exercise-bar:before,
+md-dialog .taining-dialog-content .insert-exercise-wrap .insert-exercise-header .insert-exercise-bar:after {
+  content: '';
+  display: table;
+}
+md-dialog .taining-dialog-content .insert-exercise-wrap .insert-exercise-header .insert-exercise-bar:after {
+  clear: both;
+}
+md-dialog .taining-dialog-content .insert-exercise-wrap .insert-exercise-header .insert-exercise-bar:last-child {
+  margin-right: 0%;
+}
+md-dialog .taining-dialog-content .insert-exercise-wrap .insert-exercise-content {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+md-dialog .taining-dialog-content .insert-exercise-wrap .insert-exercise-content:before,
+md-dialog .taining-dialog-content .insert-exercise-wrap .insert-exercise-content:after {
+  content: '';
+  display: table;
+}
+md-dialog .taining-dialog-content .insert-exercise-wrap .insert-exercise-content:after {
+  clear: both;
+}
+md-dialog .taining-dialog-content .insert-exercise-wrap .insert-exercise-content:last-child {
+  margin-right: 0%;
+}
+md-dialog .taining-dialog-content .insert-exercise-wrap .insert-exercise-content .exercise-adds {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 33.33333333333333%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+md-dialog .taining-dialog-content .insert-exercise-wrap .insert-exercise-content .exercise-adds:before,
+md-dialog .taining-dialog-content .insert-exercise-wrap .insert-exercise-content .exercise-adds:after {
+  content: '';
+  display: table;
+}
+md-dialog .taining-dialog-content .insert-exercise-wrap .insert-exercise-content .exercise-adds:after {
+  clear: both;
+}
+md-dialog .taining-dialog-content .insert-exercise-wrap .insert-exercise-content .exercise-adds:last-child {
+  margin-right: 0%;
+}
+md-dialog .taining-dialog-content .insert-exercise-wrap .insert-exercise-content .exercise-view {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 66.66666666666666%;
+  margin-left: 0%;
+  margin-right: 0%;
+  box-sizing: border-box;
+  text-align: center;
+  border: 1px solid #9e9e9e;
+}
+md-dialog .taining-dialog-content .insert-exercise-wrap .insert-exercise-content .exercise-view:before,
+md-dialog .taining-dialog-content .insert-exercise-wrap .insert-exercise-content .exercise-view:after {
+  content: '';
+  display: table;
+}
+md-dialog .taining-dialog-content .insert-exercise-wrap .insert-exercise-content .exercise-view:after {
+  clear: both;
+}
+md-dialog .taining-dialog-content .insert-exercise-wrap .insert-exercise-content .exercise-view:last-child {
+  margin-right: 0%;
 }

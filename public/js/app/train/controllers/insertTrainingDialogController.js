@@ -8,4 +8,11 @@ module.exports = function($scope, coreEventsService,$state,$stateParams,$mdDialo
 	$scope.answer = function(answer) {
 		$mdDialog.hide(answer);
 	};
+	$scope.plans = [
+		"Sequencial",
+		"Biset",
+		"Triset"
+	];
+	$scope.serie= 3;
+	$scope.descanso=20;
 };

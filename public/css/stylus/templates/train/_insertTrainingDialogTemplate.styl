@@ -1,2 +1,52 @@
-.taining-dialog-content
-	background-color red
+md-dialog
+	max-width 95%
+	+desktop()
+		max-width 70%
+	// md-toolbar.md-toolbar-tools
+	// 	color white
+	.taining-dialog-content
+		col(12/12,gutter:0)
+		.way-training
+			col(12/12,gutter:0)
+		.slider-wrap-insert
+			col(12/12,gutter:0)
+			box-sizing border-box
+			.slider-content-insert
+				col(10.5/12,gutter:0)
+				span.md-body-1
+					font-size 112%
+				input[type="number"]
+					width 3.5em
+					margin-left 8px
+					text-align center
+			.slider-title-insert
+				col(1.5/12,gutter:0)
+				box-sizing border-box
+				font-size 80%
+				padding-left .3em
+				+desktop()
+					padding-left .5em
+				text-align left
+				span
+					line-height 50px
+					vertical-align middle
+		.insert-exercise-wrap
+			col(12/12,gutter:0)
+			box-sizing border-box
+			border 1px solid palette('Grey','500')
+			min-height 10vh
+			.insert-exercise-header
+				col(12/12,gutter:0)
+				.insert-exercise-action
+					col(2/12,gutter:0)
+				.insert-exercise-bar
+					col(10/12,gutter:0)
+			.insert-exercise-content
+				col(12/12,gutter:0)
+				.exercise-adds
+					col(4/12,gutter:0)
+				.exercise-view
+					col(8/12,gutter:0)
+					box-sizing border-box
+					text-align center
+					border 1px solid palette('Grey','500')

@@ -1,14 +1,56 @@
 
-<md-dialog aria-label="Mango (Fruit)">
+<md-dialog flex="90" aria-label="Mango (Fruit)">
   <md-toolbar>
     <div class="md-toolbar-tools">
       <h2>Inserir Exercício</h2><span flex=""></span>
       <md-button ng-click="answer('not applicable')">Cancelar</md-button>
     </div>
   </md-toolbar>
-  <section class="taining-dialog-content">
-    <p>conteudo</p>
-  </section>
+  <md-dialog-content>
+    <section class="taining-dialog-content">
+      <section class="way-training">
+        <md-select placeholder="Método de Treino" ng-model="plan" style="min-width:250px;">
+          <md-option ng-repeat="plan in plans" value="{{plan}}">{{plan}}</md-option>
+        </md-select>
+      </section>
+      <section class="slider-wrap-insert">
+        <section class="slider-content-insert">
+          <div layout="row">
+            <div flex="20" layout="" layout-align="center center"><span class="md-body-1">Série&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+            <md-slider id="blue-slider" flex="" ng-model="serie" min="1" max="8" aria-label="blue" class="md-primary"></md-slider>
+            <div flex="10" layout="" layout-align="center center">
+              <input type="number" ng-model="serie" aria-label="blue" aria-controls="blue-slider"/>
+            </div>
+          </div>
+        </section>
+        <section class="slider-title-insert"><span>Séries</span></section>
+        <section class="slider-content-insert">
+          <div layout="row">
+            <div flex="20" layout="" layout-align="center center"><span class="md-body-1">Descanso</span></div>
+            <md-slider id="blue-slider" flex="" ng-model="descanso" min="0" max="180" aria-label="blue" class="md-primary"></md-slider>
+            <div flex="10" layout="" layout-align="center center">
+              <input type="number" ng-model="descanso" aria-label="blue" aria-controls="blue-slider"/>
+            </div>
+          </div>
+        </section>
+        <section class="slider-title-insert"><span>Segundos</span></section>
+      </section>
+      <section class="insert-exercise-wrap">
+        <section class="insert-exercise-header">
+          <section class="insert-exercise-action"><span>Abrir</span></section>
+          <section class="insert-exercise-bar"><span>pesquisar</span></section>
+        </section>
+        <section class="insert-exercise-content">
+          <section class="exercise-adds"><span>Supino Reto</span><span>Polia</span></section>
+          <section class="exercise-view"><span>Pre Visualização</span></section>
+        </section>
+      </section>
+      <md-input-container>
+        <label>Observação do Exercício</label>
+        <input type="text"/>
+      </md-input-container>
+    </section>
+  </md-dialog-content>
   <div layout="row" class="md-actions"><span flex=""></span>
     <md-button ng-click="answer('not useful')" class="md-primary">Cancelar</md-button>
     <md-button ng-click="answer('useful')" class="md-primary">Inserir Exercício</md-button>
