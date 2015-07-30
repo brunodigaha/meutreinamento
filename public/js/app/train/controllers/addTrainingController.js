@@ -418,5 +418,18 @@ module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$sta
 			$scope.alert = 'You cancelled the dialog.';
 		});
 	};
+	$scope.insertTraining = function(ev) {
+		$mdDialog.show({
+			controller: 'insertTrainingDialogController',
+			template: fs.readFileSync(__dirname + '/../templates/insertTrainingDialogTemplate.html'),
+			parent: angular.element(document.body),
+			targetEvent: ev,
+		})
+		.then(function(answer) {
+			$scope.alert = 'You said the information was "' + answer + '".';
+		}, function() {
+			$scope.alert = 'You cancelled the dialog.';
+		});
+	};
 
 };

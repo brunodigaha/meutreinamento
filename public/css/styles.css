@@ -15864,3 +15864,6 @@ md-dialog .train-dialog-wrap md-dialog-content .train-dialog-content .action but
 .history-wrap .history-content:last-child {
   margin-right: 0%;
 }
+.taining-dialog-content {
+  background-color: #f00;
+}

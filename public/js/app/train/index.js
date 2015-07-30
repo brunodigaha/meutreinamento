@@ -6,4 +6,5 @@ module.exports = angular.module('train',[])
 		.controller('plansController', require('./controllers/plansController.js'))
 		.controller('historyTrainingController', require('./controllers/historyTrainingController.js'))
 		.controller('collectionTrainingController', require('./controllers/collectionTrainingController.js'))
+		.controller('insertTrainingDialogController', require('./controllers/insertTrainingDialogController.js'))
 		.controller('ImportDialogController', require('./controllers/ImportDialogController.js'));

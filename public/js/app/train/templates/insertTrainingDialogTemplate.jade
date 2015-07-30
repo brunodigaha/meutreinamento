@@ -1,0 +1,15 @@
+md-dialog(aria-label="Mango (Fruit)")
+	md-toolbar
+		.md-toolbar-tools
+			h2 Inserir Exercício
+			span(flex="")
+			md-button(ng-click="answer('not applicable')") Cancelar
+	section.taining-dialog-content
+		p conteudo
+	.md-actions(layout="row")
+		span(flex="")
+		md-button.md-primary(ng-click="answer('not useful')")
+			| Cancelar
+		md-button.md-primary(ng-click="answer('useful')")
+			| Inserir Exercício
+
