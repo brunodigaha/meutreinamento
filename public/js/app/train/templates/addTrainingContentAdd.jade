@@ -36,8 +36,9 @@ section.addtraining-wrap
 							md-content(scroll-glue="scroll.glued")
 								md-subheader
 								ul
+									// li(ng-repeat="exercicio in exercicios" sv-element="opts" ng-style="estilo" ng-init="estilo=$index==1 ? {'margin-top':'1em'} : {}" ng-class="{'exerc-select': $index==index}")
 									li(ng-repeat="exercicio in exercicios" sv-element="opts" ng-class="{'exerc-select': $index==index}")
-										section.viw-exerc(ng-if="!$index == 1")  
+										section.viw-exerc(ng-if="$index != 3")  
 											section.drag(sv-handle="")
 												ng-md-icon(icon="open_with" style="fill:black" size="20")
 											section.exerc
@@ -45,37 +46,72 @@ section.addtraining-wrap
 												span {{exercicio.nome}}
 												span {{exercicio.nome}}
 												span ...
-										section.edit-exerc(ng-if="$index == 1")
+										section.edit-exerc(ng-if="$index == 3")
 											section.header-exerc
 												section.series
-													span Biset com 3 series
+													span Biset com 3 séries
 												section.break-time
-													span 20 segundos
+													span Descanso 20 seg
 												section.exerc-options
-													ng-md-icon(icon="settings" style="fill:black" size="20")
-													ng-md-icon(icon="close" ng-click="remove($index);" style="fill:black" size="20")
+													ng-md-icon(icon="settings" style="fill:white" size="22")
+													ng-md-icon(icon="close" ng-click="remove($index);" style="fill:white" size="22")
 											section.content-exerc
-												section.list-steps
-													section.step-content
-														section.position-step
-															span 1º
-														section.list-exerc
-															section.exer-name
-																span Supino Reto
-															section.exerc-repts
-																span 10 Repts
-															section.exerc-weight
-																span 20kg
-													section.step-content
-														section.position-step
-															span 2º
-														section.list-exerc
-															section.exer-name
-																span Polia
-															section.exerc-repts
-																span 12 Repts
-															section.exerc-weight
-																span 25kg
+												md-content.exerc
+													section.list-steps
+														section.step-content
+															section.position-step
+																span 1ª
+															section.list-exerc
+																section.list-exerc-item
+																	section.exer-name
+																		span Supino Reto
+																	section.exerc-repts
+																		span 10 Repts
+																	section.exerc-weight
+																		span 20kg
+																section.list-exerc-item
+																	section.exer-name
+																		span Supino Reto
+																	section.exerc-repts
+																		span 10 Repts
+																	section.exerc-weight
+																		span 20kg
+														section.step-content
+															section.position-step
+																span 2ª
+															section.list-exerc
+																section.list-exerc-item
+																	section.exer-name
+																		span Supino Reto
+																	section.exerc-repts
+																		span 10 Repts
+																	section.exerc-weight
+																		span 20kg
+																section.list-exerc-item
+																	section.exer-name
+																		span Supino Reto
+																	section.exerc-repts
+																		span 10 Repts
+																	section.exerc-weight
+																		span 20kg
+														section.step-content
+															section.position-step
+																span 3ª
+															section.list-exerc
+																section.list-exerc-item
+																	section.exer-name
+																		span Supino Reto
+																	section.exerc-repts
+																		span 10 Repts
+																	section.exerc-weight
+																		span 20kg
+																section.list-exerc-item
+																	section.exer-name
+																		span Supino Reto
+																	section.exerc-repts
+																		span 10 Repts
+																	section.exerc-weight
+																		span 20kg
 										// section.volume
 										// 	// span(ng-click="weight_add($event,exercicio,$index);") {{exercicio.serie}}x{{exercicio.repeticao}}
 										// 	span {{exercicio.serie}}x{{exercicio.repeticao}}

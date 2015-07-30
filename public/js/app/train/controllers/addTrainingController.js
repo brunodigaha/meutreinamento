@@ -302,10 +302,22 @@ module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$sta
 			repeticao: 12
 		},
 		{
-			ordem:2,
+			ordem:3,
 			nome:'Supino Inclinado',
 			serie: 3,
 			repeticao: 10
+		},
+		{
+			ordem:4,
+			nome:'Polia',
+			serie: 3,
+			repeticao: 12
+		},
+		{
+			ordem:5,
+			nome:'Puxada Costas Aberta',
+			serie: 3,
+			repeticao: 12
 		}
 	];
 

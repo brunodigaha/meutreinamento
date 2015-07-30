@@ -179,15 +179,15 @@
 						col(7.5/9,gutter:0)
 						box-sizing border-box
 						md-content
-							height:59vh !important
+							height:65vh !important
 							+tablet(orientation: portrait)
-								height:68vh !important
+								height:74vh !important
 							+desktop()
-								height:68vh !important
+								height:74vh !important
 							ul
 								margin 0
 								padding 0
-								padding-right .5em
+								padding-right .7em
 								margin-top .7em
 								+desktop()
 									padding-left 2em
@@ -288,19 +288,31 @@
 											col(12/12,gutter:0)
 											box-sizing border-box
 											border-bottom 1px solid palette('Blue Grey','300')
-											background-color palette('Blue Grey','50')
-											padding-left 5px
+											background-color palette('Blue Grey','300')
+											padding-left 8px
 											padding-right 5px
+											color white
 											.series
 												col(4/12,gutter:0)
 												text-align left
+												font-weight bold
 											.break-time
 												col(4/12,gutter:0)
 											.exerc-options
 												col(4/12,gutter:0)
 												text-align right
+												ng-md-icon
+													svg
+														vertical-align middle
+														margin-right 15px
 										.content-exerc
 											col(12/12,gutter:0)
+											md-content.exerc
+												height:15vh !important
+												+tablet(orientation: portrait)
+													height:23vh !important
+												+desktop()
+													height:23vh !important
 											.list-steps
 												col(12/12,gutter:0)
 												box-sizing border-box
@@ -310,21 +322,31 @@
 													margin-bottom 8px
 													.position-step
 														col(1/12,gutter:0)
+														position relative
+														top -4px
 													.list-exerc
 														col(11/12,gutter:0)
 														box-sizing border-box
 														border 1px solid palette('Blue Grey','300')
-														.exer-name
-															col(6/12,gutter:0)
-															box-sizing border-box
-															text-align left
-															padding-left 5px
-														.exerc-repts
-															col(3/12,gutter:0)
-															text-align right
-														.exerc-weight
-															col(3/12,gutter:0)
-															text-align center
+														.list-exerc-item
+															col(11/12,gutter:0)
+															padding 3px
+															line-height 20px
+															vertical-align middle
+															+desktop()
+																padding 3px
+																line-height 20px
+															.exer-name
+																col(7/12,gutter:0)
+																box-sizing border-box
+																text-align center
+																padding-left 5px
+															.exerc-repts
+																col(3/12,gutter:0)
+																text-align right
+															.exerc-weight
+																col(2/12,gutter:0)
+																text-align center
 										// display none
 									// .volume
 									// 	col(3/11,gutter:0)

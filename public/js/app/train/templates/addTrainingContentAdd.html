@@ -40,41 +40,73 @@
             <md-content scroll-glue="scroll.glued">
               <md-subheader></md-subheader>
               <ul>
+                <!-- li(ng-repeat="exercicio in exercicios" sv-element="opts" ng-style="estilo" ng-init="estilo=$index==1 ? {'margin-top':'1em'} : {}" ng-class="{'exerc-select': $index==index}")-->
                 <li ng-repeat="exercicio in exercicios" sv-element="opts" ng-class="{'exerc-select': $index==index}">
-                  <section ng-if="!$index == 1" class="viw-exerc"> 
+                  <section ng-if="$index != 3" class="viw-exerc"> 
                     <section sv-handle="" class="drag">
                       <ng-md-icon icon="open_with" style="fill:black" size="20"></ng-md-icon>
                     </section>
                     <section class="exerc"><span>{{exercicio.nome}}</span><span>{{exercicio.nome}}</span><span>{{exercicio.nome}}</span><span>...</span></section>
                   </section>
-                  <section ng-if="$index == 1" class="edit-exerc">
+                  <section ng-if="$index == 3" class="edit-exerc">
                     <section class="header-exerc">
-                      <section class="series"><span>Biset com 3 series</span></section>
-                      <section class="break-time"><span>20 segundos</span></section>
+                      <section class="series"><span>Biset com 3 séries</span></section>
+                      <section class="break-time"><span>Descanso 20 seg</span></section>
                       <section class="exerc-options">
-                        <ng-md-icon icon="settings" style="fill:black" size="20"></ng-md-icon>
-                        <ng-md-icon icon="close" ng-click="remove($index);" style="fill:black" size="20"></ng-md-icon>
+                        <ng-md-icon icon="settings" style="fill:white" size="22"></ng-md-icon>
+                        <ng-md-icon icon="close" ng-click="remove($index);" style="fill:white" size="22"></ng-md-icon>
                       </section>
                     </section>
                     <section class="content-exerc">
-                      <section class="list-steps">
-                        <section class="step-content">
-                          <section class="position-step"><span>1º</span></section>
-                          <section class="list-exerc">
-                            <section class="exer-name"><span>Supino Reto</span></section>
-                            <section class="exerc-repts"><span>10 Repts</span></section>
-                            <section class="exerc-weight"><span>20kg</span></section>
+                      <md-content class="exerc">
+                        <section class="list-steps">
+                          <section class="step-content">
+                            <section class="position-step"><span>1ª</span></section>
+                            <section class="list-exerc">
+                              <section class="list-exerc-item">
+                                <section class="exer-name"><span>Supino Reto</span></section>
+                                <section class="exerc-repts"><span>10 Repts</span></section>
+                                <section class="exerc-weight"><span>20kg</span></section>
+                              </section>
+                              <section class="list-exerc-item">
+                                <section class="exer-name"><span>Supino Reto</span></section>
+                                <section class="exerc-repts"><span>10 Repts</span></section>
+                                <section class="exerc-weight"><span>20kg</span></section>
+                              </section>
+                            </section>
+                          </section>
+                          <section class="step-content">
+                            <section class="position-step"><span>2ª</span></section>
+                            <section class="list-exerc">
+                              <section class="list-exerc-item">
+                                <section class="exer-name"><span>Supino Reto</span></section>
+                                <section class="exerc-repts"><span>10 Repts</span></section>
+                                <section class="exerc-weight"><span>20kg</span></section>
+                              </section>
+                              <section class="list-exerc-item">
+                                <section class="exer-name"><span>Supino Reto</span></section>
+                                <section class="exerc-repts"><span>10 Repts</span></section>
+                                <section class="exerc-weight"><span>20kg</span></section>
+                              </section>
+                            </section>
+                          </section>
+                          <section class="step-content">
+                            <section class="position-step"><span>3ª</span></section>
+                            <section class="list-exerc">
+                              <section class="list-exerc-item">
+                                <section class="exer-name"><span>Supino Reto</span></section>
+                                <section class="exerc-repts"><span>10 Repts</span></section>
+                                <section class="exerc-weight"><span>20kg</span></section>
+                              </section>
+                              <section class="list-exerc-item">
+                                <section class="exer-name"><span>Supino Reto</span></section>
+                                <section class="exerc-repts"><span>10 Repts</span></section>
+                                <section class="exerc-weight"><span>20kg</span></section>
+                              </section>
+                            </section>
                           </section>
                         </section>
-                        <section class="step-content">
-                          <section class="position-step"><span>2º</span></section>
-                          <section class="list-exerc">
-                            <section class="exer-name"><span>Polia</span></section>
-                            <section class="exerc-repts"><span>12 Repts</span></section>
-                            <section class="exerc-weight"><span>25kg</span></section>
-                          </section>
-                        </section>
-                      </section>
+                      </md-content>
                     </section>
                   </section>
                   <!-- section.volume-->
