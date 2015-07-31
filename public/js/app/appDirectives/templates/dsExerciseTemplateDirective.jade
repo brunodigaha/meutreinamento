@@ -11,13 +11,14 @@ section.ds-exercise
 	section.ds-content-exerc
 		md-content.exerc
 			section.ds-list-steps
-				section.ds-step-content(ng-repeat="person in [1,2,3] track by $index")
+				section.ds-step-content(ng-repeat="person in [1,2,3,4] track by $index")
 					section.ds-position-step
 						span {{$index+1}}
 					section.ds-list-exerc
 						section.ds-list-exerc-item
 							section.ds-exer-name
-								span {{exercicio.nome}}
+								// span {{exercicio.nome}}
+								span Polia
 							section.ds-exerc-repts
 								span 10 Repts
 							section.ds-exerc-weight

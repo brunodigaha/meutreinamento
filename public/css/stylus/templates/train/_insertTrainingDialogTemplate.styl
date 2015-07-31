@@ -7,89 +7,91 @@ md-dialog
 		font-size 130% !important
 	// md-toolbar.md-toolbar-tools
 	// 	color white
-	.taining-dialog-content
-		col(12/12,gutter:0)
-		.way-training
-			col(4/12,gutter:0)
-			text-align center
-		.way-add
-			col(8/12,gutter:0)
-			ng-md-icon
-				svg
-					position relative
-					top 30px
-					left 10px
-					background palette('Blue','500')
-		.slider-wrap-insert
+	md-dialog-content
+		padding 0px 20px 5px 20px
+		.taining-dialog-content
 			col(12/12,gutter:0)
-			box-sizing border-box
-			.slider-content-insert
-				col(10.5/12,gutter:0)
-				span.md-body-1
-					font-size 112%
-				input[type="number"]
-					width 3.5em
-					margin-left 8px
-					text-align center
-			.slider-title-insert
-				col(1.5/12,gutter:0)
+			.way-training
+				col(4/12,gutter:0)
+				text-align center
+			.way-add
+				col(8/12,gutter:0)
+				ng-md-icon
+					svg
+						position relative
+						top 30px
+						left 10px
+						background palette('Blue','500')
+			.slider-wrap-insert
+				col(12/12,gutter:0)
 				box-sizing border-box
-				font-size 80%
-				padding-left .3em
-				+desktop()
-					padding-left .5em
-				text-align left
-				span
-					line-height 50px
-					vertical-align middle
-		.insert-exercise-wrap
-			col(12/12,gutter:0)
-			box-sizing border-box
-			padding 7px
-			border 1px solid palette('Grey','500')
-			min-height 10vh
-			margin-top .9em
-			.insert-exercise-header
-				col(12/12,gutter:0)
-				.insert-exercise-action
-					col(2/12,gutter:0)
+				.slider-content-insert
+					col(10.5/12,gutter:0)
+					span.md-body-1
+						font-size 112%
+					input[type="number"]
+						width 3.5em
+						margin-left 8px
+						text-align center
+				.slider-title-insert
+					col(1.5/12,gutter:0)
 					box-sizing border-box
-					padding-left 2%
-					padding-top 3px
-					text-align center
-					button
-						width 25%
-						min-width 15px
-						min-height 30px
-						line-height 30px
-						font-size 80%
-						margin 0
-						+desktop()
-							width 35%
-							min-width 15px
-							min-height 31px
-							line-height 31px
-							font-size 85%
-							margin 0
-					ng-md-icon
-						svg
-							vertical-align middle
-				.insert-exercise-bar
-					col(10/12,gutter:0)
-					input
-						line-height 32px
+					font-size 80%
+					padding-left .3em
+					+desktop()
+						padding-left .5em
+					text-align left
+					span
+						line-height 50px
 						vertical-align middle
-			.insert-exercise-content
+			.insert-exercise-wrap
 				col(12/12,gutter:0)
-				.exercise-adds
-					col(4/12,gutter:0)
-				.exercise-view
-					col(8/12,gutter:0)
-					box-sizing border-box
-					text-align center
-					border 1px solid palette('Grey','500')
-		.insert-details
-			col(12/12,gutter:0)
-			box-sizing border-box
-			input[type="text"]
-				padding 0
+				box-sizing border-box
+				padding 7px
+				border 1px solid palette('Grey','500')
+				min-height 10vh
+				margin-top .9em
+				.insert-exercise-header
+					col(12/12,gutter:0)
+					.insert-exercise-action
+						col(2/12,gutter:0)
+						box-sizing border-box
+						padding-left 2%
+						padding-top 3px
+						text-align center
+						button
+							width 25%
+							min-width 15px
+							min-height 30px
+							line-height 30px
+							font-size 80%
+							margin 0
+							+desktop()
+								width 35%
+								min-width 15px
+								min-height 31px
+								line-height 31px
+								font-size 85%
+								margin 0
+						ng-md-icon
+							svg
+								vertical-align middle
+					.insert-exercise-bar
+						col(10/12,gutter:0)
+						input
+							line-height 32px
+							vertical-align middle
+				.insert-exercise-content
+					col(12/12,gutter:0)
+					.exercise-adds
+						col(4/12,gutter:0)
+					.exercise-view
+						col(8/12,gutter:0)
+						box-sizing border-box
+						text-align center
+						border 1px solid palette('Grey','500')
+			.insert-details
+				col(12/12,gutter:0)
+				box-sizing border-box
+				input[type="text"]
+					padding 0
