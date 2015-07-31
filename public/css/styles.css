@@ -11626,6 +11626,333 @@ a:visited {
   line-height: 33px;
   font-size: 95%;
 }
+.ds-exercise {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.ds-exercise:before,
+.ds-exercise:after {
+  content: '';
+  display: table;
+}
+.ds-exercise:after {
+  clear: both;
+}
+.ds-exercise:last-child {
+  margin-right: 0%;
+}
+.ds-exercise .ds-header-exerc {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  box-sizing: border-box;
+  border-bottom: 1px solid #90a4ae;
+  background-color: #90a4ae;
+  padding-left: 8px;
+  padding-right: 5px;
+  color: #fff;
+}
+.ds-exercise .ds-header-exerc:before,
+.ds-exercise .ds-header-exerc:after {
+  content: '';
+  display: table;
+}
+.ds-exercise .ds-header-exerc:after {
+  clear: both;
+}
+.ds-exercise .ds-header-exerc:last-child {
+  margin-right: 0%;
+}
+.ds-exercise .ds-header-exerc .ds-series {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 33.33333333333333%;
+  margin-left: 0%;
+  margin-right: 0%;
+  text-align: left;
+  font-weight: bold;
+}
+.ds-exercise .ds-header-exerc .ds-series:before,
+.ds-exercise .ds-header-exerc .ds-series:after {
+  content: '';
+  display: table;
+}
+.ds-exercise .ds-header-exerc .ds-series:after {
+  clear: both;
+}
+.ds-exercise .ds-header-exerc .ds-series:last-child {
+  margin-right: 0%;
+}
+.ds-exercise .ds-header-exerc .ds-break-time {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 33.33333333333333%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.ds-exercise .ds-header-exerc .ds-break-time:before,
+.ds-exercise .ds-header-exerc .ds-break-time:after {
+  content: '';
+  display: table;
+}
+.ds-exercise .ds-header-exerc .ds-break-time:after {
+  clear: both;
+}
+.ds-exercise .ds-header-exerc .ds-break-time:last-child {
+  margin-right: 0%;
+}
+.ds-exercise .ds-header-exerc .ds-exerc-options {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 33.33333333333333%;
+  margin-left: 0%;
+  margin-right: 0%;
+  text-align: right;
+}
+.ds-exercise .ds-header-exerc .ds-exerc-options:before,
+.ds-exercise .ds-header-exerc .ds-exerc-options:after {
+  content: '';
+  display: table;
+}
+.ds-exercise .ds-header-exerc .ds-exerc-options:after {
+  clear: both;
+}
+.ds-exercise .ds-header-exerc .ds-exerc-options:last-child {
+  margin-right: 0%;
+}
+.ds-exercise .ds-header-exerc .ds-exerc-options ng-md-icon svg {
+  vertical-align: middle;
+  margin-right: 15px;
+}
+.ds-exercise .ds-content-exerc {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.ds-exercise .ds-content-exerc:before,
+.ds-exercise .ds-content-exerc:after {
+  content: '';
+  display: table;
+}
+.ds-exercise .ds-content-exerc:after {
+  clear: both;
+}
+.ds-exercise .ds-content-exerc:last-child {
+  margin-right: 0%;
+}
+.ds-exercise .ds-content-exerc md-content.exerc {
+  max-height: 16vh;
+}
+@media only screen and (min-width: 400px) and (max-width: 1050px) and (orientation: portrait) {
+  .ds-exercise .ds-content-exerc md-content.exerc {
+    max-height: 23vh;
+  }
+}
+@media only screen and (min-width: 1050px) {
+  .ds-exercise .ds-content-exerc md-content.exerc {
+    max-height: 23vh;
+  }
+}
+.ds-exercise .ds-content-exerc .ds-list-steps {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.ds-exercise .ds-content-exerc .ds-list-steps:before,
+.ds-exercise .ds-content-exerc .ds-list-steps:after {
+  content: '';
+  display: table;
+}
+.ds-exercise .ds-content-exerc .ds-list-steps:after {
+  clear: both;
+}
+.ds-exercise .ds-content-exerc .ds-list-steps:last-child {
+  margin-right: 0%;
+}
+.ds-exercise .ds-content-exerc .ds-list-steps .ds-step-content {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-bottom: 8px;
+}
+.ds-exercise .ds-content-exerc .ds-list-steps .ds-step-content:before,
+.ds-exercise .ds-content-exerc .ds-list-steps .ds-step-content:after {
+  content: '';
+  display: table;
+}
+.ds-exercise .ds-content-exerc .ds-list-steps .ds-step-content:after {
+  clear: both;
+}
+.ds-exercise .ds-content-exerc .ds-list-steps .ds-step-content:last-child {
+  margin-right: 0%;
+}
+.ds-exercise .ds-content-exerc .ds-list-steps .ds-step-content .ds-position-step {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 8.333333333333332%;
+  margin-left: 0%;
+  margin-right: 0%;
+  position: relative;
+  top: -4px;
+}
+.ds-exercise .ds-content-exerc .ds-list-steps .ds-step-content .ds-position-step:before,
+.ds-exercise .ds-content-exerc .ds-list-steps .ds-step-content .ds-position-step:after {
+  content: '';
+  display: table;
+}
+.ds-exercise .ds-content-exerc .ds-list-steps .ds-step-content .ds-position-step:after {
+  clear: both;
+}
+.ds-exercise .ds-content-exerc .ds-list-steps .ds-step-content .ds-position-step:last-child {
+  margin-right: 0%;
+}
+.ds-exercise .ds-content-exerc .ds-list-steps .ds-step-content .ds-list-exerc {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 91.66666666666666%;
+  margin-left: 0%;
+  margin-right: 0%;
+  box-sizing: border-box;
+  border: 1px solid #90a4ae;
+}
+.ds-exercise .ds-content-exerc .ds-list-steps .ds-step-content .ds-list-exerc:before,
+.ds-exercise .ds-content-exerc .ds-list-steps .ds-step-content .ds-list-exerc:after {
+  content: '';
+  display: table;
+}
+.ds-exercise .ds-content-exerc .ds-list-steps .ds-step-content .ds-list-exerc:after {
+  clear: both;
+}
+.ds-exercise .ds-content-exerc .ds-list-steps .ds-step-content .ds-list-exerc:last-child {
+  margin-right: 0%;
+}
+.ds-exercise .ds-content-exerc .ds-list-steps .ds-step-content .ds-list-exerc .ds-list-exerc-item {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 91.66666666666666%;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding: 3px;
+  line-height: 20px;
+  vertical-align: middle;
+}
+.ds-exercise .ds-content-exerc .ds-list-steps .ds-step-content .ds-list-exerc .ds-list-exerc-item:before,
+.ds-exercise .ds-content-exerc .ds-list-steps .ds-step-content .ds-list-exerc .ds-list-exerc-item:after {
+  content: '';
+  display: table;
+}
+.ds-exercise .ds-content-exerc .ds-list-steps .ds-step-content .ds-list-exerc .ds-list-exerc-item:after {
+  clear: both;
+}
+.ds-exercise .ds-content-exerc .ds-list-steps .ds-step-content .ds-list-exerc .ds-list-exerc-item:last-child {
+  margin-right: 0%;
+}
+@media only screen and (min-width: 1050px) {
+  .ds-exercise .ds-content-exerc .ds-list-steps .ds-step-content .ds-list-exerc .ds-list-exerc-item {
+    padding: 3px;
+    line-height: 20px;
+  }
+}
+.ds-exercise .ds-content-exerc .ds-list-steps .ds-step-content .ds-list-exerc .ds-list-exerc-item .ds-exer-name {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 58.333333333333336%;
+  margin-left: 0%;
+  margin-right: 0%;
+  box-sizing: border-box;
+  text-align: center;
+  padding-left: 5px;
+}
+.ds-exercise .ds-content-exerc .ds-list-steps .ds-step-content .ds-list-exerc .ds-list-exerc-item .ds-exer-name:before,
+.ds-exercise .ds-content-exerc .ds-list-steps .ds-step-content .ds-list-exerc .ds-list-exerc-item .ds-exer-name:after {
+  content: '';
+  display: table;
+}
+.ds-exercise .ds-content-exerc .ds-list-steps .ds-step-content .ds-list-exerc .ds-list-exerc-item .ds-exer-name:after {
+  clear: both;
+}
+.ds-exercise .ds-content-exerc .ds-list-steps .ds-step-content .ds-list-exerc .ds-list-exerc-item .ds-exer-name:last-child {
+  margin-right: 0%;
+}
+.ds-exercise .ds-content-exerc .ds-list-steps .ds-step-content .ds-list-exerc .ds-list-exerc-item .ds-exerc-repts {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 25%;
+  margin-left: 0%;
+  margin-right: 0%;
+  text-align: right;
+}
+.ds-exercise .ds-content-exerc .ds-list-steps .ds-step-content .ds-list-exerc .ds-list-exerc-item .ds-exerc-repts:before,
+.ds-exercise .ds-content-exerc .ds-list-steps .ds-step-content .ds-list-exerc .ds-list-exerc-item .ds-exerc-repts:after {
+  content: '';
+  display: table;
+}
+.ds-exercise .ds-content-exerc .ds-list-steps .ds-step-content .ds-list-exerc .ds-list-exerc-item .ds-exerc-repts:after {
+  clear: both;
+}
+.ds-exercise .ds-content-exerc .ds-list-steps .ds-step-content .ds-list-exerc .ds-list-exerc-item .ds-exerc-repts:last-child {
+  margin-right: 0%;
+}
+.ds-exercise .ds-content-exerc .ds-list-steps .ds-step-content .ds-list-exerc .ds-list-exerc-item .ds-exerc-weight {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 16.666666666666664%;
+  margin-left: 0%;
+  margin-right: 0%;
+  text-align: center;
+}
+.ds-exercise .ds-content-exerc .ds-list-steps .ds-step-content .ds-list-exerc .ds-list-exerc-item .ds-exerc-weight:before,
+.ds-exercise .ds-content-exerc .ds-list-steps .ds-step-content .ds-list-exerc .ds-list-exerc-item .ds-exerc-weight:after {
+  content: '';
+  display: table;
+}
+.ds-exercise .ds-content-exerc .ds-list-steps .ds-step-content .ds-list-exerc .ds-list-exerc-item .ds-exerc-weight:after {
+  clear: both;
+}
+.ds-exercise .ds-content-exerc .ds-list-steps .ds-step-content .ds-list-exerc .ds-list-exerc-item .ds-exerc-weight:last-child {
+  margin-right: 0%;
+}
 .login-wrap {
   *zoom: 1;
   float: left;
@@ -14657,20 +14984,20 @@ md-dialog .train-dialog-wrap md-dialog-content .train-dialog-content .action but
 .addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings:last-child {
   margin-right: 0%;
 }
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content {
-  height: 65vh !important;
+.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining {
+  height: 65vh;
 }
 @media only screen and (min-width: 400px) and (max-width: 1050px) and (orientation: portrait) {
-  .addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content {
-    height: 74vh !important;
+  .addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining {
+    height: 74vh;
   }
 }
 @media only screen and (min-width: 1050px) {
-  .addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content {
-    height: 74vh !important;
+  .addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining {
+    height: 74vh;
   }
 }
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul {
+.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul {
   margin: 0;
   padding: 0;
   padding-right: 0.7em;
@@ -14679,17 +15006,17 @@ md-dialog .train-dialog-wrap md-dialog-content .train-dialog-content .action but
   list-style: none;
 }
 @media only screen and (min-width: 1050px) {
-  .addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul {
+  .addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul {
     padding-left: 2em;
     padding-right: 2em;
   }
 }
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul .exerc-select {
+.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul .exerc-select {
   background-color: #eceff1;
   color: #000;
   border: 1px solid #b0bec5;
 }
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li.ng-enter {
+.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li.ng-enter {
   -webkit-animation: 0.8s pulse;
   -moz-animation: 0.8s pulse;
   -o-animation: 0.8s pulse;
@@ -14699,11 +15026,11 @@ md-dialog .train-dialog-wrap md-dialog-content .train-dialog-content .action but
   border: 1px solid #b0bec5;
   color: #000;
 }
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li.ng-enter.ng-enter-active,
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li.ng-move.ng-move-active {
+.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li.ng-enter.ng-enter-active,
+.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li.ng-move.ng-move-active {
   opacity: 1;
 }
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul .sv-helper {
+.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul .sv-helper {
   font-size: 120%;
   color: #000;
   line-height: 38px;
@@ -14711,10 +15038,10 @@ md-dialog .train-dialog-wrap md-dialog-content .train-dialog-content .action but
   border: 1px solid #607d8b;
   opacity: 0.9;
 }
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul .sv-candidate {
+.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul .sv-candidate {
   opacity: 0.5;
 }
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li.ng-leave {
+.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li.ng-leave {
   -webkit-transition: all linear 0.3s;
   -moz-transition: all linear 0.3s;
   -o-transition: all linear 0.3s;
@@ -14723,7 +15050,7 @@ md-dialog .train-dialog-wrap md-dialog-content .train-dialog-content .action but
   left: 5px;
   opacity: 0.2;
 }
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li {
+.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li {
   border: 1px solid #90a4ae;
   background-color: #fff;
   box-sizing: border-box;
@@ -14738,18 +15065,18 @@ md-dialog .train-dialog-wrap md-dialog-content .train-dialog-content .action but
   text-align: center;
   color: #424242;
 }
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li:before,
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li:after {
+.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li:before,
+.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li:after {
   content: '';
   display: table;
 }
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li:after {
+.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li:after {
   clear: both;
 }
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li:last-child {
+.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li:last-child {
   margin-right: 0%;
 }
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .viw-exerc {
+.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc {
   *zoom: 1;
   float: left;
   clear: none;
@@ -14758,18 +15085,18 @@ md-dialog .train-dialog-wrap md-dialog-content .train-dialog-content .action but
   margin-left: 0%;
   margin-right: 0%;
 }
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .viw-exerc:before,
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .viw-exerc:after {
+.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc:before,
+.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc:after {
   content: '';
   display: table;
 }
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .viw-exerc:after {
+.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc:after {
   clear: both;
 }
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .viw-exerc:last-child {
+.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc:last-child {
   margin-right: 0%;
 }
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .viw-exerc .drag {
+.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc .drag {
   *zoom: 1;
   float: left;
   clear: none;
@@ -14781,24 +15108,24 @@ md-dialog .train-dialog-wrap md-dialog-content .train-dialog-content .action but
   padding-left: 0.5em;
   cursor: pointer;
 }
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .viw-exerc .drag:before,
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .viw-exerc .drag:after {
+.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc .drag:before,
+.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc .drag:after {
   content: '';
   display: table;
 }
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .viw-exerc .drag:after {
+.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc .drag:after {
   clear: both;
 }
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .viw-exerc .drag:last-child {
+.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc .drag:last-child {
   margin-right: 0%;
 }
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .viw-exerc .drag:hover {
+.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc .drag:hover {
   zoom: 1.1;
 }
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .viw-exerc .drag ng-md-icon svg {
+.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc .drag ng-md-icon svg {
   vertical-align: middle;
 }
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .viw-exerc .exerc {
+.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc .exerc {
   *zoom: 1;
   float: left;
   clear: none;
@@ -14810,18 +15137,18 @@ md-dialog .train-dialog-wrap md-dialog-content .train-dialog-content .action but
   text-align: left;
   padding-left: 0.9em;
 }
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .viw-exerc .exerc:before,
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .viw-exerc .exerc:after {
+.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc .exerc:before,
+.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc .exerc:after {
   content: '';
   display: table;
 }
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .viw-exerc .exerc:after {
+.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc .exerc:after {
   clear: both;
 }
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .viw-exerc .exerc:last-child {
+.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc .exerc:last-child {
   margin-right: 0%;
 }
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .viw-exerc .exerc span {
+.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc .exerc span {
   display: inline-block;
   margin-right: 2%;
   padding: 3px 8px 3px 8px;
@@ -14832,337 +15159,10 @@ md-dialog .train-dialog-wrap md-dialog-content .train-dialog-content .action but
   color: #000;
 }
 @media only screen and (min-width: 1050px) {
-  .addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .viw-exerc .exerc span {
+  .addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc .exerc span {
     padding: 5px 11px 5px 11px;
     line-height: 11px;
   }
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 100%;
-  margin-left: 0%;
-  margin-right: 0%;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc:before,
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc:after {
-  content: '';
-  display: table;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc:after {
-  clear: both;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc:last-child {
-  margin-right: 0%;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .header-exerc {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 100%;
-  margin-left: 0%;
-  margin-right: 0%;
-  box-sizing: border-box;
-  border-bottom: 1px solid #90a4ae;
-  background-color: #90a4ae;
-  padding-left: 8px;
-  padding-right: 5px;
-  color: #fff;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .header-exerc:before,
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .header-exerc:after {
-  content: '';
-  display: table;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .header-exerc:after {
-  clear: both;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .header-exerc:last-child {
-  margin-right: 0%;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .header-exerc .series {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 33.33333333333333%;
-  margin-left: 0%;
-  margin-right: 0%;
-  text-align: left;
-  font-weight: bold;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .header-exerc .series:before,
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .header-exerc .series:after {
-  content: '';
-  display: table;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .header-exerc .series:after {
-  clear: both;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .header-exerc .series:last-child {
-  margin-right: 0%;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .header-exerc .break-time {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 33.33333333333333%;
-  margin-left: 0%;
-  margin-right: 0%;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .header-exerc .break-time:before,
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .header-exerc .break-time:after {
-  content: '';
-  display: table;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .header-exerc .break-time:after {
-  clear: both;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .header-exerc .break-time:last-child {
-  margin-right: 0%;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .header-exerc .exerc-options {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 33.33333333333333%;
-  margin-left: 0%;
-  margin-right: 0%;
-  text-align: right;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .header-exerc .exerc-options:before,
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .header-exerc .exerc-options:after {
-  content: '';
-  display: table;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .header-exerc .exerc-options:after {
-  clear: both;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .header-exerc .exerc-options:last-child {
-  margin-right: 0%;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .header-exerc .exerc-options ng-md-icon svg {
-  vertical-align: middle;
-  margin-right: 15px;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 100%;
-  margin-left: 0%;
-  margin-right: 0%;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc:before,
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc:after {
-  content: '';
-  display: table;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc:after {
-  clear: both;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc:last-child {
-  margin-right: 0%;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc md-content.exerc {
-  height: 15vh !important;
-}
-@media only screen and (min-width: 400px) and (max-width: 1050px) and (orientation: portrait) {
-  .addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc md-content.exerc {
-    height: 23vh !important;
-  }
-}
-@media only screen and (min-width: 1050px) {
-  .addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc md-content.exerc {
-    height: 23vh !important;
-  }
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 100%;
-  margin-left: 0%;
-  margin-right: 0%;
-  box-sizing: border-box;
-  padding: 15px;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps:before,
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps:after {
-  content: '';
-  display: table;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps:after {
-  clear: both;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps:last-child {
-  margin-right: 0%;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps .step-content {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 100%;
-  margin-left: 0%;
-  margin-right: 0%;
-  margin-bottom: 8px;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps .step-content:before,
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps .step-content:after {
-  content: '';
-  display: table;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps .step-content:after {
-  clear: both;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps .step-content:last-child {
-  margin-right: 0%;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps .step-content .position-step {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 8.333333333333332%;
-  margin-left: 0%;
-  margin-right: 0%;
-  position: relative;
-  top: -4px;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps .step-content .position-step:before,
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps .step-content .position-step:after {
-  content: '';
-  display: table;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps .step-content .position-step:after {
-  clear: both;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps .step-content .position-step:last-child {
-  margin-right: 0%;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps .step-content .list-exerc {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 91.66666666666666%;
-  margin-left: 0%;
-  margin-right: 0%;
-  box-sizing: border-box;
-  border: 1px solid #90a4ae;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps .step-content .list-exerc:before,
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps .step-content .list-exerc:after {
-  content: '';
-  display: table;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps .step-content .list-exerc:after {
-  clear: both;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps .step-content .list-exerc:last-child {
-  margin-right: 0%;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps .step-content .list-exerc .list-exerc-item {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 91.66666666666666%;
-  margin-left: 0%;
-  margin-right: 0%;
-  padding: 3px;
-  line-height: 20px;
-  vertical-align: middle;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps .step-content .list-exerc .list-exerc-item:before,
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps .step-content .list-exerc .list-exerc-item:after {
-  content: '';
-  display: table;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps .step-content .list-exerc .list-exerc-item:after {
-  clear: both;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps .step-content .list-exerc .list-exerc-item:last-child {
-  margin-right: 0%;
-}
-@media only screen and (min-width: 1050px) {
-  .addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps .step-content .list-exerc .list-exerc-item {
-    padding: 3px;
-    line-height: 20px;
-  }
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps .step-content .list-exerc .list-exerc-item .exer-name {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 58.333333333333336%;
-  margin-left: 0%;
-  margin-right: 0%;
-  box-sizing: border-box;
-  text-align: center;
-  padding-left: 5px;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps .step-content .list-exerc .list-exerc-item .exer-name:before,
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps .step-content .list-exerc .list-exerc-item .exer-name:after {
-  content: '';
-  display: table;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps .step-content .list-exerc .list-exerc-item .exer-name:after {
-  clear: both;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps .step-content .list-exerc .list-exerc-item .exer-name:last-child {
-  margin-right: 0%;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps .step-content .list-exerc .list-exerc-item .exerc-repts {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 25%;
-  margin-left: 0%;
-  margin-right: 0%;
-  text-align: right;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps .step-content .list-exerc .list-exerc-item .exerc-repts:before,
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps .step-content .list-exerc .list-exerc-item .exerc-repts:after {
-  content: '';
-  display: table;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps .step-content .list-exerc .list-exerc-item .exerc-repts:after {
-  clear: both;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps .step-content .list-exerc .list-exerc-item .exerc-repts:last-child {
-  margin-right: 0%;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps .step-content .list-exerc .list-exerc-item .exerc-weight {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 16.666666666666664%;
-  margin-left: 0%;
-  margin-right: 0%;
-  text-align: center;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps .step-content .list-exerc .list-exerc-item .exerc-weight:before,
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps .step-content .list-exerc .list-exerc-item .exerc-weight:after {
-  content: '';
-  display: table;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps .step-content .list-exerc .list-exerc-item .exerc-weight:after {
-  clear: both;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content ul li .edit-exerc .content-exerc .list-steps .step-content .list-exerc .list-exerc-item .exerc-weight:last-child {
-  margin-right: 0%;
 }
 .addtraining-wrap .new-training md-card md-card-content .content-add .aside-info-training {
   *zoom: 1;

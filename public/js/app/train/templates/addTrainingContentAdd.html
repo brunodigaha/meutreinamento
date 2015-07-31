@@ -37,7 +37,7 @@
         </section>
         <section class="content-add">
           <sections sv-root="" sv-part="exercicios" class="list-trainings">
-            <md-content scroll-glue="scroll.glued">
+            <md-content scroll-glue="scroll.glued" class="scroll-addtraining">
               <md-subheader></md-subheader>
               <ul>
                 <!-- li(ng-repeat="exercicio in exercicios" sv-element="opts" ng-style="estilo" ng-init="estilo=$index==1 ? {'margin-top':'1em'} : {}" ng-class="{'exerc-select': $index==index}")-->
@@ -48,83 +48,7 @@
                     </section>
                     <section class="exerc"><span>{{exercicio.nome}}</span><span>{{exercicio.nome}}</span><span>{{exercicio.nome}}</span><span>...</span></section>
                   </section>
-                  <section ng-if="$index == 3" class="edit-exerc">
-                    <section sv-handle="" style="display:none;" class="mov"></section>
-                    <section class="header-exerc">
-                      <section class="series"><span>Biset com 4 séries</span></section>
-                      <section class="break-time"><span>Descanso 20 seg</span></section>
-                      <section class="exerc-options">
-                        <ng-md-icon icon="settings" style="fill:white" size="22"></ng-md-icon>
-                        <ng-md-icon icon="close" ng-click="remove($index);" style="fill:white" size="22"></ng-md-icon>
-                      </section>
-                    </section>
-                    <section class="content-exerc">
-                      <md-content class="exerc">
-                        <section class="list-steps">
-                          <section class="step-content">
-                            <section class="position-step"><span>1ª</span></section>
-                            <section class="list-exerc">
-                              <section class="list-exerc-item">
-                                <section class="exer-name"><span>Supino Reto</span></section>
-                                <section class="exerc-repts"><span>10 Repts</span></section>
-                                <section class="exerc-weight"><span>20kg</span></section>
-                              </section>
-                              <section class="list-exerc-item">
-                                <section class="exer-name"><span>Supino Reto</span></section>
-                                <section class="exerc-repts"><span>10 Repts</span></section>
-                                <section class="exerc-weight"><span>20kg</span></section>
-                              </section>
-                            </section>
-                          </section>
-                          <section class="step-content">
-                            <section class="position-step"><span>2ª</span></section>
-                            <section class="list-exerc">
-                              <section class="list-exerc-item">
-                                <section class="exer-name"><span>Supino Reto</span></section>
-                                <section class="exerc-repts"><span>10 Repts</span></section>
-                                <section class="exerc-weight"><span>20kg</span></section>
-                              </section>
-                              <section class="list-exerc-item">
-                                <section class="exer-name"><span>Supino Reto</span></section>
-                                <section class="exerc-repts"><span>10 Repts</span></section>
-                                <section class="exerc-weight"><span>20kg</span></section>
-                              </section>
-                            </section>
-                          </section>
-                          <section class="step-content">
-                            <section class="position-step"><span>3ª</span></section>
-                            <section class="list-exerc">
-                              <section class="list-exerc-item">
-                                <section class="exer-name"><span>Supino Reto</span></section>
-                                <section class="exerc-repts"><span>10 Repts</span></section>
-                                <section class="exerc-weight"><span>20kg</span></section>
-                              </section>
-                              <section class="list-exerc-item">
-                                <section class="exer-name"><span>Supino Reto</span></section>
-                                <section class="exerc-repts"><span>10 Repts</span></section>
-                                <section class="exerc-weight"><span>20kg</span></section>
-                              </section>
-                            </section>
-                          </section>
-                          <section class="step-content">
-                            <section class="position-step"><span>4ª</span></section>
-                            <section class="list-exerc">
-                              <section class="list-exerc-item">
-                                <section class="exer-name"><span>Supino Reto</span></section>
-                                <section class="exerc-repts"><span>10 Repts</span></section>
-                                <section class="exerc-weight"><span>20kg</span></section>
-                              </section>
-                              <section class="list-exerc-item">
-                                <section class="exer-name"><span>Supino Reto</span></section>
-                                <section class="exerc-repts"><span>10 Repts</span></section>
-                                <section class="exerc-weight"><span>20kg</span></section>
-                              </section>
-                            </section>
-                          </section>
-                        </section>
-                      </md-content>
-                    </section>
-                  </section>
+                  <ds-exercise exercicio="exercicio" ng-if="$index == 3"></ds-exercise>
                   <!-- section.volume-->
                   <!-- 	// span(ng-click="weight_add($event,exercicio,$index);") {{exercicio.serie}}x{{exercicio.repeticao}}-->
                   <!-- 	span {{exercicio.serie}}x{{exercicio.repeticao}}-->

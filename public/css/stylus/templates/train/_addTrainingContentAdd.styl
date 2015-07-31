@@ -178,12 +178,12 @@
 					.list-trainings
 						col(7.5/9,gutter:0)
 						box-sizing border-box
-						md-content
-							height:65vh !important
+						md-content.scroll-addtraining
+							height:65vh 
 							+tablet(orientation: portrait)
-								height:74vh !important
+								height:74vh 
 							+desktop()
-								height:74vh !important
+								height:74vh 
 							ul
 								margin 0
 								padding 0
@@ -282,72 +282,6 @@
 												line-height 10px
 												// background-color palette('Grey','50')
 												color black
-									.edit-exerc
-										col(12/12,gutter:0)
-										.header-exerc
-											col(12/12,gutter:0)
-											box-sizing border-box
-											border-bottom 1px solid palette('Blue Grey','300')
-											background-color palette('Blue Grey','300')
-											padding-left 8px
-											padding-right 5px
-											color white
-											.series
-												col(4/12,gutter:0)
-												text-align left
-												font-weight bold
-											.break-time
-												col(4/12,gutter:0)
-											.exerc-options
-												col(4/12,gutter:0)
-												text-align right
-												ng-md-icon
-													svg
-														vertical-align middle
-														margin-right 15px
-										.content-exerc
-											col(12/12,gutter:0)
-											md-content.exerc
-												height:15vh !important
-												+tablet(orientation: portrait)
-													height:23vh !important
-												+desktop()
-													height:23vh !important
-											.list-steps
-												col(12/12,gutter:0)
-												box-sizing border-box
-												padding 15px
-												.step-content
-													col(12/12,gutter:0)
-													margin-bottom 8px
-													.position-step
-														col(1/12,gutter:0)
-														position relative
-														top -4px
-													.list-exerc
-														col(11/12,gutter:0)
-														box-sizing border-box
-														border 1px solid palette('Blue Grey','300')
-														.list-exerc-item
-															col(11/12,gutter:0)
-															padding 3px
-															line-height 20px
-															vertical-align middle
-															+desktop()
-																padding 3px
-																line-height 20px
-															.exer-name
-																col(7/12,gutter:0)
-																box-sizing border-box
-																text-align center
-																padding-left 5px
-															.exerc-repts
-																col(3/12,gutter:0)
-																text-align right
-															.exerc-weight
-																col(2/12,gutter:0)
-																text-align center
-										// display none
 									// .volume
 									// 	col(3/11,gutter:0)
 									// .delete
