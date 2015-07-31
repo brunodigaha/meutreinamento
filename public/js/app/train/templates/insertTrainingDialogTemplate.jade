@@ -1,7 +1,7 @@
 md-dialog(flex="90" aria-label="Mango (Fruit)")
 	md-toolbar
 		.md-toolbar-tools
-			h2 Inserir Exercício
+			h1 Inserir Exercício
 			span(flex="")
 			md-button(ng-click="answer('not applicable')") Cancelar
 	md-dialog-content
@@ -9,6 +9,8 @@ md-dialog(flex="90" aria-label="Mango (Fruit)")
 			section.way-training
 				md-select(placeholder='Método de Treino', ng-model='plan' style="min-width:250px;")
 					md-option(ng-repeat='plan in plans', value='{{plan}}') {{plan}}
+			section.way-add
+					ng-md-icon(icon="add" style="fill:white"  size="25")
 			section.slider-wrap-insert
 				section.slider-content-insert
 					div(layout="row")
@@ -31,18 +33,21 @@ md-dialog(flex="90" aria-label="Mango (Fruit)")
 			section.insert-exercise-wrap
 				section.insert-exercise-header
 					section.insert-exercise-action
-						span Abrir
+						md-button(class="md-raised md-primary")
+							ng-md-icon(icon="exposure_plus_1" style="fill:white"  size="28")
 					section.insert-exercise-bar
-						span pesquisar
+						md-input-container(md-no-float='')
+							input(placeholder='Pesquisar Exercício')
 				section.insert-exercise-content
 					section.exercise-adds
 						span Supino Reto
 						span Polia
 					section.exercise-view
 						span Pre Visualização
-			md-input-container
-				label Observação do Exercício
-				input(type="text")
+			section.insert-details
+				md-input-container(flex="")
+					label Observação do Exercício
+					input(ng-model="oberservacao" type="text")
 	.md-actions(layout="row")
 		span(flex="")
 		md-button.md-primary(ng-click="answer('not useful')")

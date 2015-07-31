@@ -2,7 +2,7 @@
 <md-dialog flex="90" aria-label="Mango (Fruit)">
   <md-toolbar>
     <div class="md-toolbar-tools">
-      <h2>Inserir Exercício</h2><span flex=""></span>
+      <h1>Inserir Exercício</h1><span flex=""></span>
       <md-button ng-click="answer('not applicable')">Cancelar</md-button>
     </div>
   </md-toolbar>
@@ -12,6 +12,9 @@
         <md-select placeholder="Método de Treino" ng-model="plan" style="min-width:250px;">
           <md-option ng-repeat="plan in plans" value="{{plan}}">{{plan}}</md-option>
         </md-select>
+      </section>
+      <section class="way-add">
+        <ng-md-icon icon="add" style="fill:white" size="25"></ng-md-icon>
       </section>
       <section class="slider-wrap-insert">
         <section class="slider-content-insert">
@@ -37,18 +40,28 @@
       </section>
       <section class="insert-exercise-wrap">
         <section class="insert-exercise-header">
-          <section class="insert-exercise-action"><span>Abrir</span></section>
-          <section class="insert-exercise-bar"><span>pesquisar</span></section>
+          <section class="insert-exercise-action">
+            <md-button class="md-raised md-primary">
+              <ng-md-icon icon="exposure_plus_1" style="fill:white" size="28"></ng-md-icon>
+            </md-button>
+          </section>
+          <section class="insert-exercise-bar">
+            <md-input-container md-no-float="">
+              <input placeholder="Pesquisar Exercício"/>
+            </md-input-container>
+          </section>
         </section>
         <section class="insert-exercise-content">
           <section class="exercise-adds"><span>Supino Reto</span><span>Polia</span></section>
           <section class="exercise-view"><span>Pre Visualização</span></section>
         </section>
       </section>
-      <md-input-container>
-        <label>Observação do Exercício</label>
-        <input type="text"/>
-      </md-input-container>
+      <section class="insert-details">
+        <md-input-container flex="">
+          <label>Observação do Exercício</label>
+          <input ng-model="oberservacao" type="text"/>
+        </md-input-container>
+      </section>
     </section>
   </md-dialog-content>
   <div layout="row" class="md-actions"><span flex=""></span>
