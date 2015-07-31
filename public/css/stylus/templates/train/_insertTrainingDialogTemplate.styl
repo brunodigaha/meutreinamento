@@ -1,5 +1,6 @@
 md-dialog
 	max-width 95%
+	max-height 90%
 	+desktop()
 		max-width 70%
 	h1
@@ -9,13 +10,28 @@ md-dialog
 	// 	color white
 	md-dialog-content
 		padding 0px 20px 5px 20px
+		position relative
 		.taining-dialog-content
 			col(12/12,gutter:0)
+			.open-tabs
+				width 100%
+				height 100%
+				background-color palette('Grey','50')
+				position absolute
+				top 0
+				left 0
+				z-index 25
+				opacity .8
+				display none
 			.way-training
 				col(4/12,gutter:0)
 				text-align center
 			.way-add
 				col(8/12,gutter:0)
+				span 
+					font-size 80%
+					color palette('Grey','700')
+					line-height 30px
 				ng-md-icon
 					svg
 						position relative
@@ -47,10 +63,12 @@ md-dialog
 			.insert-exercise-wrap
 				col(12/12,gutter:0)
 				box-sizing border-box
-				padding 7px
+				padding 8px 22px 8px 22px
 				border 1px solid palette('Grey','500')
 				min-height 10vh
 				margin-top .9em
+				position relative
+				z-index 30
 				.insert-exercise-header
 					col(12/12,gutter:0)
 					.insert-exercise-action
@@ -84,12 +102,73 @@ md-dialog
 				.insert-exercise-content
 					col(12/12,gutter:0)
 					.exercise-adds
-						col(4/12,gutter:0)
+						col(2/12,gutter:0)
 					.exercise-view
-						col(8/12,gutter:0)
+						col(10/12,gutter:0)
 						box-sizing border-box
 						text-align center
 						border 1px solid palette('Grey','500')
+				.insert-exercise-tabs
+					col(12.2/12,gutter:0)
+					box-sizing border-box
+					position absolute
+					top 3.5em
+					left -.5em
+					padding 7px 10px 7px 10px
+					height 40 vh
+					background-color white
+					// z-index 30
+					border 1px solid palette('Grey', '300')
+					box-shadow 0 2px 4px 1px rgba(0,0,0,.1)
+					display none
+					.chat-bubble-arrow-border
+						border-color transparent transparent palette('Grey', '300') transparent
+						border-style solid
+						border-width 1em
+						height 0
+						width 0
+						position absolute
+						top -2em
+						left 4.6em
+					.chat-bubble-arrow
+						border-color transparent transparent #fff transparent
+						border-style solid
+						border-width 1em
+						height 0
+						width 0
+						position absolute
+						top -1.9em
+						left 4.6em
+					.tabs
+						col(6/6,gutter:0)
+						min-height 19vh
+						md-chips
+						md-tab-content
+							md-content
+								.item-select
+									background-color palette('Blue Grey','50')
+								span
+									cursor pointer
+									border-radius 16px
+									padding-right 7px
+									padding-left 7px
+									margin-right 9px
+									line-height 26px
+									vertical-align middle
+									margin-top 7px
+									text-align left
+									display inline-block
+									background-color white
+									border 1px solid palette('Blue Grey', '100')
+									font-size 75%
+									color palette('Grey','800')
+									&:hover
+										background palette('Blue Grey','50')
+						md-tab-item.md-tab
+							+tablet()
+								padding 8px 8px
+								line-height 32px
+								font-size 12px
 			.insert-details
 				col(12/12,gutter:0)
 				box-sizing border-box

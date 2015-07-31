@@ -11760,16 +11760,16 @@ a:visited {
   margin-right: 0%;
 }
 .ds-exercise .ds-content-exerc md-content.exerc {
-  max-height: 16vh;
+  max-height: 22vh;
 }
 @media only screen and (min-width: 400px) and (max-width: 1050px) and (orientation: portrait) {
   .ds-exercise .ds-content-exerc md-content.exerc {
-    max-height: 23vh;
+    max-height: 29vh;
   }
 }
 @media only screen and (min-width: 1050px) {
   .ds-exercise .ds-content-exerc md-content.exerc {
-    max-height: 23vh;
+    max-height: 29vh;
   }
 }
 .ds-exercise .ds-content-exerc .ds-list-steps {
@@ -15866,6 +15866,7 @@ md-dialog .train-dialog-wrap md-dialog-content .train-dialog-content .action but
 }
 md-dialog {
   max-width: 95%;
+  max-height: 90%;
 }
 @media only screen and (min-width: 1050px) {
   md-dialog {
@@ -15878,6 +15879,7 @@ md-dialog h1 {
 }
 md-dialog md-dialog-content {
   padding: 0px 20px 5px 20px;
+  position: relative;
 }
 md-dialog md-dialog-content .taining-dialog-content {
   *zoom: 1;
@@ -15898,6 +15900,17 @@ md-dialog md-dialog-content .taining-dialog-content:after {
 }
 md-dialog md-dialog-content .taining-dialog-content:last-child {
   margin-right: 0%;
+}
+md-dialog md-dialog-content .taining-dialog-content .open-tabs {
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 25;
+  opacity: 0.8;
+  display: none;
 }
 md-dialog md-dialog-content .taining-dialog-content .way-training {
   *zoom: 1;
@@ -15939,6 +15952,11 @@ md-dialog md-dialog-content .taining-dialog-content .way-add:after {
 }
 md-dialog md-dialog-content .taining-dialog-content .way-add:last-child {
   margin-right: 0%;
+}
+md-dialog md-dialog-content .taining-dialog-content .way-add span {
+  font-size: 80%;
+  color: #616161;
+  line-height: 30px;
 }
 md-dialog md-dialog-content .taining-dialog-content .way-add ng-md-icon svg {
   position: relative;
@@ -16037,10 +16055,12 @@ md-dialog md-dialog-content .taining-dialog-content .insert-exercise-wrap {
   margin-left: 0%;
   margin-right: 0%;
   box-sizing: border-box;
-  padding: 7px;
+  padding: 8px 22px 8px 22px;
   border: 1px solid #9e9e9e;
   min-height: 10vh;
   margin-top: 0.9em;
+  position: relative;
+  z-index: 30;
 }
 md-dialog md-dialog-content .taining-dialog-content .insert-exercise-wrap:before,
 md-dialog md-dialog-content .taining-dialog-content .insert-exercise-wrap:after {
@@ -16167,7 +16187,7 @@ md-dialog md-dialog-content .taining-dialog-content .insert-exercise-wrap .inser
   float: left;
   clear: none;
   text-align: inherit;
-  width: 33.33333333333333%;
+  width: 16.666666666666664%;
   margin-left: 0%;
   margin-right: 0%;
 }
@@ -16187,7 +16207,7 @@ md-dialog md-dialog-content .taining-dialog-content .insert-exercise-wrap .inser
   float: left;
   clear: none;
   text-align: inherit;
-  width: 66.66666666666666%;
+  width: 83.33333333333334%;
   margin-left: 0%;
   margin-right: 0%;
   box-sizing: border-box;
@@ -16204,6 +16224,109 @@ md-dialog md-dialog-content .taining-dialog-content .insert-exercise-wrap .inser
 }
 md-dialog md-dialog-content .taining-dialog-content .insert-exercise-wrap .insert-exercise-content .exercise-view:last-child {
   margin-right: 0%;
+}
+md-dialog md-dialog-content .taining-dialog-content .insert-exercise-wrap .insert-exercise-tabs {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 101.66666666666666%;
+  margin-left: 0%;
+  margin-right: 0%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 3.5em;
+  left: -0.5em;
+  padding: 7px 10px 7px 10px;
+  height: 40vh;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px 1px rgba(0,0,0,0.1);
+  display: none;
+}
+md-dialog md-dialog-content .taining-dialog-content .insert-exercise-wrap .insert-exercise-tabs:before,
+md-dialog md-dialog-content .taining-dialog-content .insert-exercise-wrap .insert-exercise-tabs:after {
+  content: '';
+  display: table;
+}
+md-dialog md-dialog-content .taining-dialog-content .insert-exercise-wrap .insert-exercise-tabs:after {
+  clear: both;
+}
+md-dialog md-dialog-content .taining-dialog-content .insert-exercise-wrap .insert-exercise-tabs:last-child {
+  margin-right: 0%;
+}
+md-dialog md-dialog-content .taining-dialog-content .insert-exercise-wrap .insert-exercise-tabs .chat-bubble-arrow-border {
+  border-color: transparent transparent #e0e0e0 transparent;
+  border-style: solid;
+  border-width: 1em;
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: -2em;
+  left: 4.6em;
+}
+md-dialog md-dialog-content .taining-dialog-content .insert-exercise-wrap .insert-exercise-tabs .chat-bubble-arrow {
+  border-color: transparent transparent #fff transparent;
+  border-style: solid;
+  border-width: 1em;
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: -1.9em;
+  left: 4.6em;
+}
+md-dialog md-dialog-content .taining-dialog-content .insert-exercise-wrap .insert-exercise-tabs .tabs {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  min-height: 19vh;
+}
+md-dialog md-dialog-content .taining-dialog-content .insert-exercise-wrap .insert-exercise-tabs .tabs:before,
+md-dialog md-dialog-content .taining-dialog-content .insert-exercise-wrap .insert-exercise-tabs .tabs:after {
+  content: '';
+  display: table;
+}
+md-dialog md-dialog-content .taining-dialog-content .insert-exercise-wrap .insert-exercise-tabs .tabs:after {
+  clear: both;
+}
+md-dialog md-dialog-content .taining-dialog-content .insert-exercise-wrap .insert-exercise-tabs .tabs:last-child {
+  margin-right: 0%;
+}
+md-dialog md-dialog-content .taining-dialog-content .insert-exercise-wrap .insert-exercise-tabs .tabs md-chips md-content .item-select,
+md-dialog md-dialog-content .taining-dialog-content .insert-exercise-wrap .insert-exercise-tabs .tabs md-tab-content md-content .item-select {
+  background-color: #eceff1;
+}
+md-dialog md-dialog-content .taining-dialog-content .insert-exercise-wrap .insert-exercise-tabs .tabs md-chips md-content span,
+md-dialog md-dialog-content .taining-dialog-content .insert-exercise-wrap .insert-exercise-tabs .tabs md-tab-content md-content span {
+  cursor: pointer;
+  border-radius: 16px;
+  padding-right: 7px;
+  padding-left: 7px;
+  margin-right: 9px;
+  line-height: 26px;
+  vertical-align: middle;
+  margin-top: 7px;
+  text-align: left;
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid #cfd8dc;
+  font-size: 75%;
+  color: #424242;
+}
+md-dialog md-dialog-content .taining-dialog-content .insert-exercise-wrap .insert-exercise-tabs .tabs md-chips md-content span:hover,
+md-dialog md-dialog-content .taining-dialog-content .insert-exercise-wrap .insert-exercise-tabs .tabs md-tab-content md-content span:hover {
+  background: #eceff1;
+}
+@media only screen and (min-width: 400px) and (max-width: 1050px) {
+  md-dialog md-dialog-content .taining-dialog-content .insert-exercise-wrap .insert-exercise-tabs .tabs md-tab-item.md-tab {
+    padding: 8px 8px;
+    line-height: 32px;
+    font-size: 12px;
+  }
 }
 md-dialog md-dialog-content .taining-dialog-content .insert-details {
   *zoom: 1;
