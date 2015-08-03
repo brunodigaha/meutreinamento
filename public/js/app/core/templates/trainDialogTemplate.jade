@@ -1,19 +1,19 @@
 md-dialog(aria-label="treinar")
-	section.train-dialog-wrap
-		md-toolbar(md-theme="default") 
-			.md-toolbar-tools
-				h1 Iniciar Treinamento
-				span(flex="")
-				md-button(ng-click="answer('not applicable')") Fechar
-				// ng-md-icon(icon="close" ng-click="answer('not applicable')" style="fill:white" size="25")
-		md-dialog-content
+	md-toolbar(md-theme="default") 
+		.md-toolbar-tools
+			h1 Iniciar Treinamento
+			span(flex="")
+			md-button(ng-click="answer('not applicable')") Fechar
+			// ng-md-icon(icon="close" ng-click="answer('not applicable')" style="fill:white" size="25")
+	md-dialog-content
+		section.train-dialog-wrap
 			section.train-dialog-content
 				section.action
 					a(ui-sref-active="sdd" ui-sref="core.user.edit.addtraining" ng-click="answer('not applicable')")
 						md-button(class="md-raised md-primary") Inserir Treino
-		.md-actions(layout="row")
-			span(flex="")
-			// md-button.md-primary(ng-click="answer('not useful')")
-			// 	| Cancelar
-			md-button.md-primary(ng-click="answer('useful')")
-				| Cancelar
+	.md-actions(layout="row")
+		span(flex="")
+		// md-button.md-primary(ng-click="answer('not useful')")
+		// 	| Cancelar
+		md-button.md-primary(ng-click="answer('useful')")
+			| Cancelar

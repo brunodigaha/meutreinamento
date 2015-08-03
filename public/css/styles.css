@@ -11369,6 +11369,19 @@ p:focus {
 button.md-button {
   text-transform: none;
 }
+md-dialog {
+  max-width: 95%;
+  max-height: 85%;
+}
+@media only screen and (min-width: 1050px) {
+  md-dialog {
+    max-width: 70%;
+  }
+}
+md-dialog h1 {
+  color: #fff;
+  font-weight: bold;
+}
 body {
   font-family: 'Roboto-Light';
   font-weight: 300;
@@ -13468,111 +13481,7 @@ a:visited {
     zoom: 1.3;
   }
 }
-md-dialog {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 70%;
-  margin-left: 0%;
-  margin-right: 0%;
-}
-md-dialog:before,
-md-dialog:after {
-  content: '';
-  display: table;
-}
-md-dialog:after {
-  clear: both;
-}
-md-dialog:last-child {
-  margin-right: 0%;
-}
-@media only screen and (min-width: 1050px) {
-  md-dialog {
-    *zoom: 1;
-    float: left;
-    clear: none;
-    text-align: inherit;
-    width: 50%;
-    margin-left: 0%;
-    margin-right: 0%;
-  }
-  md-dialog:before,
-  md-dialog:after {
-    content: '';
-    display: table;
-  }
-  md-dialog:after {
-    clear: both;
-  }
-  md-dialog:last-child {
-    margin-right: 0%;
-  }
-}
-md-dialog md-toolbar {
-  border-bottom: 1px solid #e0e0e0;
-}
-md-dialog md-toolbar h1 {
-  color: #fff;
-  font-size: 130% !important;
-}
-md-dialog md-dialog-content .new-user .avatar {
-  text-align: center;
-}
-md-dialog md-dialog-content .new-user .avatar img {
-  max-width: 20%;
-}
-md-dialog md-dialog-content .new-user .avatar .uploadcare-widget-button-open {
-  background-color: #42a5f5;
-}
-md-dialog md-dialog-content .new-user .attributes {
-  margin-right: 7%;
-  margin-left: 7%;
-}
-md-dialog {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 70%;
-  margin-left: 0%;
-  margin-right: 0%;
-}
-md-dialog:before,
-md-dialog:after {
-  content: '';
-  display: table;
-}
-md-dialog:after {
-  clear: both;
-}
-md-dialog:last-child {
-  margin-right: 0%;
-}
-@media only screen and (min-width: 1050px) {
-  md-dialog {
-    *zoom: 1;
-    float: left;
-    clear: none;
-    text-align: inherit;
-    width: 50%;
-    margin-left: 0%;
-    margin-right: 0%;
-  }
-  md-dialog:before,
-  md-dialog:after {
-    content: '';
-    display: table;
-  }
-  md-dialog:after {
-    clear: both;
-  }
-  md-dialog:last-child {
-    margin-right: 0%;
-  }
-}
-md-dialog .train-dialog-wrap {
+md-dialog-content .new-user {
   *zoom: 1;
   float: left;
   clear: none;
@@ -13581,40 +13490,118 @@ md-dialog .train-dialog-wrap {
   margin-left: 0%;
   margin-right: 0%;
 }
-md-dialog .train-dialog-wrap:before,
-md-dialog .train-dialog-wrap:after {
+md-dialog-content .new-user:before,
+md-dialog-content .new-user:after {
   content: '';
   display: table;
 }
-md-dialog .train-dialog-wrap:after {
+md-dialog-content .new-user:after {
   clear: both;
 }
-md-dialog .train-dialog-wrap:last-child {
+md-dialog-content .new-user:last-child {
   margin-right: 0%;
 }
-md-dialog .train-dialog-wrap md-toolbar {
-  border-bottom: 1px solid #e0e0e0;
+md-dialog-content .new-user .avatar {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-top: 5%;
+  text-align: center;
 }
-md-dialog .train-dialog-wrap md-toolbar h1 {
-  color: #fff;
-  font-size: 130%;
+md-dialog-content .new-user .avatar:before,
+md-dialog-content .new-user .avatar:after {
+  content: '';
+  display: table;
 }
-md-dialog .train-dialog-wrap md-dialog-content {
-  padding: 0;
+md-dialog-content .new-user .avatar:after {
+  clear: both;
 }
-md-dialog .train-dialog-wrap md-dialog-content .train-dialog-content {
+md-dialog-content .new-user .avatar:last-child {
+  margin-right: 0%;
+}
+md-dialog-content .new-user .avatar img {
+  max-width: 20%;
+}
+md-dialog-content .new-user .avatar .uploadcare-widget-button-open {
+  background-color: #42a5f5;
+}
+md-dialog-content .new-user .attributes {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
   box-sizing: border-box;
-  padding: 1em;
+  padding-right: 3%;
+  padding-left: 3%;
 }
-md-dialog .train-dialog-wrap md-dialog-content .train-dialog-content .action {
+md-dialog-content .new-user .attributes:before,
+md-dialog-content .new-user .attributes:after {
+  content: '';
+  display: table;
+}
+md-dialog-content .new-user .attributes:after {
+  clear: both;
+}
+md-dialog-content .new-user .attributes:last-child {
+  margin-right: 0%;
+}
+md-dialog md-dialog-content .train-dialog-wrap {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+md-dialog md-dialog-content .train-dialog-wrap:before,
+md-dialog md-dialog-content .train-dialog-wrap:after {
+  content: '';
+  display: table;
+}
+md-dialog md-dialog-content .train-dialog-wrap:after {
+  clear: both;
+}
+md-dialog md-dialog-content .train-dialog-wrap:last-child {
+  margin-right: 0%;
+}
+md-dialog md-dialog-content .train-dialog-wrap .train-dialog-content {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  box-sizing: border-box;
+}
+md-dialog md-dialog-content .train-dialog-wrap .train-dialog-content:before,
+md-dialog md-dialog-content .train-dialog-wrap .train-dialog-content:after {
+  content: '';
+  display: table;
+}
+md-dialog md-dialog-content .train-dialog-wrap .train-dialog-content:after {
+  clear: both;
+}
+md-dialog md-dialog-content .train-dialog-wrap .train-dialog-content:last-child {
+  margin-right: 0%;
+}
+md-dialog md-dialog-content .train-dialog-wrap .train-dialog-content .action {
   text-align: right;
   display: block;
   margin-right: 5%;
   margin-top: 3%;
   margin-bottom: 8%;
 }
-md-dialog .train-dialog-wrap md-dialog-content .train-dialog-content .action button.md-button {
-  width: 35%;
+md-dialog md-dialog-content .train-dialog-wrap .train-dialog-content .action button.md-button {
+  width: 68%;
   min-width: 15px;
   min-height: 34px;
   line-height: 34px;
@@ -15863,19 +15850,6 @@ md-dialog .train-dialog-wrap md-dialog-content .train-dialog-content .action but
 }
 .history-wrap .history-content:last-child {
   margin-right: 0%;
-}
-md-dialog {
-  max-width: 95%;
-  max-height: 90%;
-}
-@media only screen and (min-width: 1050px) {
-  md-dialog {
-    max-width: 70%;
-  }
-}
-md-dialog h1 {
-  color: #fff;
-  font-size: 130% !important;
 }
 md-dialog md-dialog-content {
   padding: 0px 20px 5px 20px;
