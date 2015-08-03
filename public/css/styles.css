@@ -12095,6 +12095,85 @@ a:visited {
 .ds-exercise .ds-exercise-open .ds-content-exerc .ds-list-steps .ds-step-content .ds-list-exerc .ds-list-exerc-item .ds-exerc-weight:last-child {
   margin-right: 0%;
 }
+.ds-exercises ul {
+  margin: 0;
+  padding: 0;
+  padding-right: 0.7em;
+  margin-top: 0.7em;
+  font-size: 90%;
+  list-style: none;
+}
+@media only screen and (min-width: 1050px) {
+  .ds-exercises ul {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+.ds-exercises ul .exerc-select {
+  background-color: #eceff1;
+  color: #000;
+  border: 1px solid #b0bec5;
+}
+.ds-exercises ul li.ng-enter {
+  -webkit-animation: 0.8s pulse;
+  -moz-animation: 0.8s pulse;
+  -o-animation: 0.8s pulse;
+  animation: 0.8s pulse;
+  opacity: 0;
+  background-color: #eceff1;
+  border: 1px solid #b0bec5;
+  color: #000;
+}
+.ds-exercises ul li.ng-enter.ng-enter-active,
+.ds-exercises ul li.ng-move.ng-move-active {
+  opacity: 1;
+}
+.ds-exercises ul .sv-helper {
+  font-size: 120%;
+  color: #000;
+  line-height: 38px;
+  background-color: #f5f5f5;
+  border: 1px solid #78909c;
+  opacity: 0.9;
+}
+.ds-exercises ul .sv-candidate {
+  opacity: 0.5;
+}
+.ds-exercises ul li.ng-leave {
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+  position: relative;
+  left: 5px;
+  opacity: 0.2;
+}
+.ds-exercises ul li {
+  border: 1px solid #b0bec5;
+  background-color: #fff;
+  box-sizing: border-box;
+  margin-bottom: 0.6em;
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  text-align: center;
+  color: #424242;
+}
+.ds-exercises ul li:before,
+.ds-exercises ul li:after {
+  content: '';
+  display: table;
+}
+.ds-exercises ul li:after {
+  clear: both;
+}
+.ds-exercises ul li:last-child {
+  margin-right: 0%;
+}
 .login-wrap {
   *zoom: 1;
   float: left;
@@ -15112,85 +15191,6 @@ md-dialog md-dialog-content .train-dialog-wrap .train-dialog-content .action but
   .addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining {
     height: 74vh;
   }
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul {
-  margin: 0;
-  padding: 0;
-  padding-right: 0.7em;
-  margin-top: 0.7em;
-  font-size: 90%;
-  list-style: none;
-}
-@media only screen and (min-width: 1050px) {
-  .addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul {
-    padding-left: 2em;
-    padding-right: 2em;
-  }
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul .exerc-select {
-  background-color: #eceff1;
-  color: #000;
-  border: 1px solid #b0bec5;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li.ng-enter {
-  -webkit-animation: 0.8s pulse;
-  -moz-animation: 0.8s pulse;
-  -o-animation: 0.8s pulse;
-  animation: 0.8s pulse;
-  opacity: 0;
-  background-color: #eceff1;
-  border: 1px solid #b0bec5;
-  color: #000;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li.ng-enter.ng-enter-active,
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li.ng-move.ng-move-active {
-  opacity: 1;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul .sv-helper {
-  font-size: 120%;
-  color: #000;
-  line-height: 38px;
-  background-color: #f5f5f5;
-  border: 1px solid #78909c;
-  opacity: 0.9;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul .sv-candidate {
-  opacity: 0.5;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li.ng-leave {
-  -webkit-transition: all linear 0.3s;
-  -moz-transition: all linear 0.3s;
-  -o-transition: all linear 0.3s;
-  transition: all linear 0.3s;
-  position: relative;
-  left: 5px;
-  opacity: 0.2;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li {
-  border: 1px solid #b0bec5;
-  background-color: #fff;
-  box-sizing: border-box;
-  margin-bottom: 0.6em;
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 100%;
-  margin-left: 0%;
-  margin-right: 0%;
-  text-align: center;
-  color: #424242;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li:before,
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li:after {
-  content: '';
-  display: table;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li:after {
-  clear: both;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li:last-child {
-  margin-right: 0%;
 }
 .addtraining-wrap .new-training md-card md-card-content .content-add .aside-info-training {
   *zoom: 1;

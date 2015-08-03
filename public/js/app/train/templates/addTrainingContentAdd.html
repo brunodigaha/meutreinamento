@@ -18,17 +18,20 @@
           <sections sv-root="" sv-part="exercicios" class="list-trainings">
             <md-content scroll-glue="scroll.glued" class="scroll-addtraining">
               <md-subheader></md-subheader>
-              <ul>
-                <!-- li(ng-repeat="exercicio in exercicios" sv-element="opts" ng-style="estilo" ng-init="estilo=$index==1 ? {'margin-top':'1em'} : {}" ng-class="{'exerc-select': $index==index}")-->
-                <li ng-repeat="exercicio in exercicios" sv-element="opts" ng-class="{'exerc-select': $index==index}">
-                  <ds-exercise exercicio="exercicio"></ds-exercise>
-                  <!-- section.volume-->
-                  <!-- 	// span(ng-click="weight_add($event,exercicio,$index);") {{exercicio.serie}}x{{exercicio.repeticao}}-->
-                  <!-- 	span {{exercicio.serie}}x{{exercicio.repeticao}}-->
-                  <!-- section.delete-->
-                  <!-- 	ng-md-icon(icon="close" ng-click="remove($index);" style="fill:black" size="20")-->
-                </li>
-              </ul>
+              <!-- ul-->
+              <!-- 	// li(ng-repeat="exercicio in exercicios" sv-element="opts" ng-style="estilo" ng-init="estilo=$index==1 ? {'margin-top':'1em'} : {}" ng-class="{'exerc-select': $index==index}")-->
+              <!-- 	li(ng-repeat="exercicio in exercicios" sv-element="opts" ng-class="{'exerc-select': $index==index}")-->
+              <!-- 		ds-exercise(exercicio="exercicio")-->
+              <ds-exercises exercicios="exercicios"> 
+                <!-- ds-exercise(exercicio="exercicio")-->
+                <!-- ds-exercise
+                // section.volume
+                // 	// span(ng-click="weight_add($event,exercicio,$index);") {{exercicio.serie}}x{{exercicio.repeticao}}
+                // 	span {{exercicio.serie}}x{{exercicio.repeticao}}
+                // section.delete
+                // 	ng-md-icon(icon="close" ng-click="remove($index);" style="fill:black" size="20")
+                -->
+              </ds-exercises>
             </md-content>
             <!-- section.background-wrap(ng-show="close_all" ng-click="close();")-->
             <!-- section.weight-add(style="top:{{position.y - 50}}px;left:{{position.x - 48}}px;")-->

@@ -14,10 +14,13 @@ section.addtraining-wrap
 						sections.list-trainings(sv-root="" sv-part="exercicios")
 							md-content.scroll-addtraining(scroll-glue="scroll.glued")
 								md-subheader
-								ul
-									// li(ng-repeat="exercicio in exercicios" sv-element="opts" ng-style="estilo" ng-init="estilo=$index==1 ? {'margin-top':'1em'} : {}" ng-class="{'exerc-select': $index==index}")
-									li(ng-repeat="exercicio in exercicios" sv-element="opts" ng-class="{'exerc-select': $index==index}")
-										ds-exercise(exercicio="exercicio")
+								// ul
+								// 	// li(ng-repeat="exercicio in exercicios" sv-element="opts" ng-style="estilo" ng-init="estilo=$index==1 ? {'margin-top':'1em'} : {}" ng-class="{'exerc-select': $index==index}")
+								// 	li(ng-repeat="exercicio in exercicios" sv-element="opts" ng-class="{'exerc-select': $index==index}")
+								// 		ds-exercise(exercicio="exercicio")
+								ds-exercises(exercicios="exercicios") 
+									// ds-exercise(exercicio="exercicio")
+									// ds-exercise
 										// section.volume
 										// 	// span(ng-click="weight_add($event,exercicio,$index);") {{exercicio.serie}}x{{exercicio.repeticao}}
 										// 	span {{exercicio.serie}}x{{exercicio.repeticao}}

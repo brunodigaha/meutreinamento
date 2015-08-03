@@ -76906,27 +76906,58 @@ angular
 
 
 
-},{"./appDirectives":31,"./appRoutes.js":32,"./appRun.js":33,"./auth":36,"./core":44,"./train":56,"./user":60,"angular":19,"angularBreadcrumb":8,"angularChart":9,"angularCookies":10,"angularFire":20,"angularHolderjs":11,"angularIcons":12,"angularMaterial":13,"angularMessages":14,"angularScroll":15,"angularSortableView":16,"angularUploadcare":18,"modernizr":24,"restAngular":25,"ui-router":17}],27:[function(require,module,exports){
+},{"./appDirectives":32,"./appRoutes.js":33,"./appRun.js":34,"./auth":37,"./core":45,"./train":57,"./user":61,"angular":19,"angularBreadcrumb":8,"angularChart":9,"angularCookies":10,"angularFire":20,"angularHolderjs":11,"angularIcons":12,"angularMaterial":13,"angularMessages":14,"angularScroll":15,"angularSortableView":16,"angularUploadcare":18,"modernizr":24,"restAngular":25,"ui-router":17}],27:[function(require,module,exports){
 (function (Buffer){
 
 module.exports = function() {
 	return{
-		template: Buffer("CjxzZWN0aW9uIGNsYXNzPSJkcy1leGVyY2lzZSI+CiAgPCEtLSBzZWN0aW9uLmRzLW1vdihzdi1oYW5kbGU9IiIgc3R5bGU9ImRpc3BsYXk6bm9uZTsiKS0tPgogIDxzZWN0aW9uIG5nLWhpZGU9ImlzT3BlbmVkIiBuZy1jbGljaz0idG9nZ2xlX2V4ZXJjKCkiIGNsYXNzPSJkcy1leGVyY2lzZS1jbG9zZSI+CiAgICA8c2VjdGlvbiBjbGFzcz0iZHMtdml3LWV4ZXJjIj4KICAgICAgPHNlY3Rpb24gc3YtaGFuZGxlPSIiIGNsYXNzPSJkcy1kcmFnIj4KICAgICAgICA8bmctbWQtaWNvbiBpY29uPSJvcGVuX3dpdGgiIHN0eWxlPSJmaWxsOmJsYWNrIiBzaXplPSIyMCI+PC9uZy1tZC1pY29uPgogICAgICA8L3NlY3Rpb24+CiAgICAgIDxzZWN0aW9uIGNsYXNzPSJkcy1leGVyYyI+PHNwYW4+e3tleGVyY2ljaW8ubm9tZX19PC9zcGFuPjxzcGFuPnt7ZXhlcmNpY2lvLm5vbWV9fTwvc3Bhbj48c3Bhbj57e2V4ZXJjaWNpby5ub21lfX08L3NwYW4+PHNwYW4+Li4uPC9zcGFuPjwvc2VjdGlvbj4KICAgIDwvc2VjdGlvbj4KICA8L3NlY3Rpb24+CiAgPHNlY3Rpb24gbmctc2hvdz0iaXNPcGVuZWQiIG5nLWNsaWNrPSJ0b2dnbGVfZXhlcmMoKSIgY2xhc3M9ImRzLWV4ZXJjaXNlLW9wZW4iPgogICAgPHNlY3Rpb24gY2xhc3M9ImRzLWhlYWRlci1leGVyYyI+CiAgICAgIDxzZWN0aW9uIGNsYXNzPSJkcy1zZXJpZXMiPjxzcGFuPkJpc2V0IGNvbSA0IHPDqXJpZXM8L3NwYW4+PC9zZWN0aW9uPgogICAgICA8c2VjdGlvbiBjbGFzcz0iZHMtYnJlYWstdGltZSI+PHNwYW4+RGVzY2Fuc28gMjAgc2VnPC9zcGFuPjwvc2VjdGlvbj4KICAgICAgPHNlY3Rpb24gY2xhc3M9ImRzLWV4ZXJjLW9wdGlvbnMiPgogICAgICAgIDxuZy1tZC1pY29uIGljb249InNldHRpbmdzIiBzdHlsZT0iZmlsbDp3aGl0ZSIgc2l6ZT0iMjIiPjwvbmctbWQtaWNvbj4KICAgICAgICA8bmctbWQtaWNvbiBpY29uPSJjbG9zZSIgbmctY2xpY2s9InJlbW92ZSgkaW5kZXgpOyIgc3R5bGU9ImZpbGw6d2hpdGUiIHNpemU9IjIyIj48L25nLW1kLWljb24+CiAgICAgIDwvc2VjdGlvbj4KICAgIDwvc2VjdGlvbj4KICAgIDxzZWN0aW9uIGNsYXNzPSJkcy1jb250ZW50LWV4ZXJjIj4KICAgICAgPG1kLWNvbnRlbnQgY2xhc3M9ImV4ZXJjIj4KICAgICAgICA8c2VjdGlvbiBjbGFzcz0iZHMtbGlzdC1zdGVwcyI+CiAgICAgICAgICA8c2VjdGlvbiBuZy1yZXBlYXQ9InBlcnNvbiBpbiBbMSwyLDMsNF0gdHJhY2sgYnkgJGluZGV4IiBjbGFzcz0iZHMtc3RlcC1jb250ZW50Ij4KICAgICAgICAgICAgPHNlY3Rpb24gY2xhc3M9ImRzLXBvc2l0aW9uLXN0ZXAiPjxzcGFuPnt7JGluZGV4KzF9fcKqPC9zcGFuPjwvc2VjdGlvbj4KICAgICAgICAgICAgPHNlY3Rpb24gY2xhc3M9ImRzLWxpc3QtZXhlcmMiPgogICAgICAgICAgICAgIDxzZWN0aW9uIGNsYXNzPSJkcy1saXN0LWV4ZXJjLWl0ZW0iPgogICAgICAgICAgICAgICAgPHNlY3Rpb24gY2xhc3M9ImRzLWV4ZXItbmFtZSI+PHNwYW4+e3tleGVyY2ljaW8ubm9tZX19PC9zcGFuPjwvc2VjdGlvbj4KICAgICAgICAgICAgICAgIDxzZWN0aW9uIGNsYXNzPSJkcy1leGVyYy1yZXB0cyI+PHNwYW4+MTAgUmVwdHM8L3NwYW4+PC9zZWN0aW9uPgogICAgICAgICAgICAgICAgPHNlY3Rpb24gY2xhc3M9ImRzLWV4ZXJjLXdlaWdodCI+PHNwYW4+MjBrZzwvc3Bhbj48L3NlY3Rpb24+CiAgICAgICAgICAgICAgPC9zZWN0aW9uPgogICAgICAgICAgICAgIDxzZWN0aW9uIGNsYXNzPSJkcy1saXN0LWV4ZXJjLWl0ZW0iPgogICAgICAgICAgICAgICAgPHNlY3Rpb24gY2xhc3M9ImRzLWV4ZXItbmFtZSI+PHNwYW4+U3VwaW5vIFJldG88L3NwYW4+PC9zZWN0aW9uPgogICAgICAgICAgICAgICAgPHNlY3Rpb24gY2xhc3M9ImRzLWV4ZXJjLXJlcHRzIj48c3Bhbj4xMCBSZXB0czwvc3Bhbj48L3NlY3Rpb24+CiAgICAgICAgICAgICAgICA8c2VjdGlvbiBjbGFzcz0iZHMtZXhlcmMtd2VpZ2h0Ij48c3Bhbj4yMGtnPC9zcGFuPjwvc2VjdGlvbj4KICAgICAgICAgICAgICA8L3NlY3Rpb24+CiAgICAgICAgICAgIDwvc2VjdGlvbj4KICAgICAgICAgIDwvc2VjdGlvbj4KICAgICAgICA8L3NlY3Rpb24+CiAgICAgIDwvbWQtY29udGVudD4KICAgIDwvc2VjdGlvbj4KICA8L3NlY3Rpb24+Cjwvc2VjdGlvbj4=","base64"),
-		// transclude:true
+		template: Buffer("CjxzZWN0aW9uIGNsYXNzPSJkcy1leGVyY2lzZSI+CiAgPCEtLSBzZWN0aW9uLmRzLW1vdihzdi1oYW5kbGU9IiIgc3R5bGU9ImRpc3BsYXk6bm9uZTsiKS0tPgogIDxzZWN0aW9uIG5nLWhpZGU9ImlzT3BlbmVkIiBuZy1jbGljaz0ib3Blbl9leGVyYygpIiBjbGFzcz0iZHMtZXhlcmNpc2UtY2xvc2UiPgogICAgPHNlY3Rpb24gY2xhc3M9ImRzLXZpdy1leGVyYyI+CiAgICAgIDxzZWN0aW9uIHN2LWhhbmRsZT0iIiBjbGFzcz0iZHMtZHJhZyI+CiAgICAgICAgPG5nLW1kLWljb24gaWNvbj0ib3Blbl93aXRoIiBzdHlsZT0iZmlsbDpibGFjayIgc2l6ZT0iMjAiPjwvbmctbWQtaWNvbj4KICAgICAgPC9zZWN0aW9uPgogICAgICA8c2VjdGlvbiBjbGFzcz0iZHMtZXhlcmMiPjxzcGFuPnt7ZXhlcmNpY2lvLm5vbWV9fTwvc3Bhbj48c3Bhbj57e2V4ZXJjaWNpby5ub21lfX08L3NwYW4+PHNwYW4+e3tleGVyY2ljaW8ubm9tZX19PC9zcGFuPjxzcGFuPi4uLjwvc3Bhbj48L3NlY3Rpb24+CiAgICA8L3NlY3Rpb24+CiAgPC9zZWN0aW9uPgogIDxzZWN0aW9uIG5nLXNob3c9ImlzT3BlbmVkIiBuZy1jbGljaz0iY2xvc2VfZXhlcmMoKSIgY2xhc3M9ImRzLWV4ZXJjaXNlLW9wZW4iPgogICAgPHNlY3Rpb24gY2xhc3M9ImRzLWhlYWRlci1leGVyYyI+CiAgICAgIDxzZWN0aW9uIGNsYXNzPSJkcy1zZXJpZXMiPjxzcGFuPkJpc2V0IGNvbSA0IHPDqXJpZXM8L3NwYW4+PC9zZWN0aW9uPgogICAgICA8c2VjdGlvbiBjbGFzcz0iZHMtYnJlYWstdGltZSI+PHNwYW4+RGVzY2Fuc28gMjAgc2VnPC9zcGFuPjwvc2VjdGlvbj4KICAgICAgPHNlY3Rpb24gY2xhc3M9ImRzLWV4ZXJjLW9wdGlvbnMiPgogICAgICAgIDxuZy1tZC1pY29uIGljb249InNldHRpbmdzIiBzdHlsZT0iZmlsbDp3aGl0ZSIgc2l6ZT0iMjIiPjwvbmctbWQtaWNvbj4KICAgICAgICA8bmctbWQtaWNvbiBpY29uPSJjbG9zZSIgbmctY2xpY2s9InJlbW92ZSgkaW5kZXgpOyIgc3R5bGU9ImZpbGw6d2hpdGUiIHNpemU9IjIyIj48L25nLW1kLWljb24+CiAgICAgIDwvc2VjdGlvbj4KICAgIDwvc2VjdGlvbj4KICAgIDxzZWN0aW9uIGNsYXNzPSJkcy1jb250ZW50LWV4ZXJjIj4KICAgICAgPG1kLWNvbnRlbnQgY2xhc3M9ImV4ZXJjIj4KICAgICAgICA8c2VjdGlvbiBjbGFzcz0iZHMtbGlzdC1zdGVwcyI+CiAgICAgICAgICA8c2VjdGlvbiBuZy1yZXBlYXQ9InBlcnNvbiBpbiBbMSwyLDMsNF0gdHJhY2sgYnkgJGluZGV4IiBjbGFzcz0iZHMtc3RlcC1jb250ZW50Ij4KICAgICAgICAgICAgPHNlY3Rpb24gY2xhc3M9ImRzLXBvc2l0aW9uLXN0ZXAiPjxzcGFuPnt7JGluZGV4KzF9fcKqPC9zcGFuPjwvc2VjdGlvbj4KICAgICAgICAgICAgPHNlY3Rpb24gY2xhc3M9ImRzLWxpc3QtZXhlcmMiPgogICAgICAgICAgICAgIDxzZWN0aW9uIG5nLXJlcGVhdD0icGVyc29uIGluIFsxLDJdIHRyYWNrIGJ5ICRpbmRleCIgY2xhc3M9ImRzLWxpc3QtZXhlcmMtaXRlbSI+CiAgICAgICAgICAgICAgICA8c2VjdGlvbiBjbGFzcz0iZHMtZXhlci1uYW1lIj48c3Bhbj57e2V4ZXJjaWNpby5ub21lfX08L3NwYW4+PC9zZWN0aW9uPgogICAgICAgICAgICAgICAgPHNlY3Rpb24gY2xhc3M9ImRzLWV4ZXJjLXJlcHRzIj48c3Bhbj4xMCBSZXB0czwvc3Bhbj48L3NlY3Rpb24+CiAgICAgICAgICAgICAgICA8c2VjdGlvbiBjbGFzcz0iZHMtZXhlcmMtd2VpZ2h0Ij48c3Bhbj4yMGtnPC9zcGFuPjwvc2VjdGlvbj4KICAgICAgICAgICAgICA8L3NlY3Rpb24+CiAgICAgICAgICAgIDwvc2VjdGlvbj4KICAgICAgICAgIDwvc2VjdGlvbj4KICAgICAgICA8L3NlY3Rpb24+CiAgICAgIDwvbWQtY29udGVudD4KICAgIDwvc2VjdGlvbj4KICA8L3NlY3Rpb24+Cjwvc2VjdGlvbj4=","base64"),
+		transclude:true,
 		scope: {
 			exercicio: "="
 		},
+		require: "^dsExercises",
 		link :function(scope, element,attrs,ctrl) {
-			scope.toggle_exerc= function () {
-				scope.isOpened = !scope.isOpened;
+			ctrl.registerExercise(scope);
+			scope.open_exerc= function () {
+				ctrl.close_all();
+				scope.isOpened = true;
+			};
+			scope.close_exerc= function () {
+				scope.isOpened = false;
 			};
 		}
-
 	};
 };
 
 }).call(this,require("buffer").Buffer)
 },{"buffer":1}],28:[function(require,module,exports){
+(function (Buffer){
+
+module.exports = function() {
+	return{
+		template: Buffer("CjxzZWN0aW9uIGNsYXNzPSJkcy1leGVyY2lzZXMiPgogIDx1bD4KICAgIDxsaSBuZy1yZXBlYXQ9ImV4ZXJjaWNpbyBpbiBleGVyY2ljaW9zIiBzdi1lbGVtZW50PSJvcHRzIiBuZy1jbGFzcz0ieydleGVyYy1zZWxlY3QnOiAkaW5kZXg9PWluZGV4fSI+CiAgICAgIDxkcy1leGVyY2lzZSBleGVyY2ljaW89ImV4ZXJjaWNpbyI+PC9kcy1leGVyY2lzZT4KICAgIDwvbGk+CiAgPC91bD4KPC9zZWN0aW9uPg==","base64"),
+		// transclude:true,
+		scope: {
+			exercicios: "="
+		},
+		controller: function($scope,$element,$attrs){
+			// console.log($scope.exercicios);
+			var exercises = [];
+			this.registerExercise = function(exercise){
+				exercises.push(exercise);
+			};
+			this.close_all = function (){
+				exercises.forEach(function(exercise){
+					exercise.isOpened = false;
+				});
+			};
+		}
+	};
+};
+
+}).call(this,require("buffer").Buffer)
+},{"buffer":1}],29:[function(require,module,exports){
 (function (Buffer){
 
 module.exports = function() {
@@ -76942,7 +76973,7 @@ module.exports = function() {
 };
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":1}],29:[function(require,module,exports){
+},{"buffer":1}],30:[function(require,module,exports){
 (function (Buffer){
 
 module.exports = function() {
@@ -76958,7 +76989,7 @@ module.exports = function() {
 };
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":1}],30:[function(require,module,exports){
+},{"buffer":1}],31:[function(require,module,exports){
 (function (Buffer){
 
 module.exports = function() {
@@ -76973,14 +77004,15 @@ module.exports = function() {
 };
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":1}],31:[function(require,module,exports){
+},{"buffer":1}],32:[function(require,module,exports){
 module.exports = angular.module('appDirectives',[])
 		.directive('dsTraining', require('./directives/dsTrainingDirective.js'))
+		.directive('dsExercises', require('./directives/dsExercisesDirective.js'))
 		.directive('dsExercise', require('./directives/dsExerciseDirective.js'))
 		.directive('dsPlan', require('./directives/dsPlanDirective.js'))
 		.directive('dsInfo', require('./directives/dsInfoDirective.js'));
 
-},{"./directives/dsExerciseDirective.js":27,"./directives/dsInfoDirective.js":28,"./directives/dsPlanDirective.js":29,"./directives/dsTrainingDirective.js":30}],32:[function(require,module,exports){
+},{"./directives/dsExerciseDirective.js":27,"./directives/dsExercisesDirective.js":28,"./directives/dsInfoDirective.js":29,"./directives/dsPlanDirective.js":30,"./directives/dsTrainingDirective.js":31}],33:[function(require,module,exports){
 
 
 module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider,$breadcrumbProvider,ChartJsProvider, $mdThemingProvider) {
@@ -77046,7 +77078,7 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider,$
     });	
 };
 
-},{"./auth/authRoutes.js":34,"./core/coreRoutes.js":43,"./train/trainRoutes.js":57,"./user/userRoutes.js":61}],33:[function(require,module,exports){
+},{"./auth/authRoutes.js":35,"./core/coreRoutes.js":44,"./train/trainRoutes.js":58,"./user/userRoutes.js":62}],34:[function(require,module,exports){
 module.exports = function ($rootScope, $state,$stateParams,coreEventsService, authModelService) {
 	$rootScope.$on("$stateChangeStart", function (event, toState, toParams, fromState, fromParams) {
 		// console.log('$stateChangeStart to '+toState.to+'- fired when the transition begins. toState,toParams : \n',toState, toParams);
@@ -77089,7 +77121,7 @@ module.exports = function ($rootScope, $state,$stateParams,coreEventsService, au
 	// });
 };
 
-},{}],34:[function(require,module,exports){
+},{}],35:[function(require,module,exports){
 (function (Buffer){
 
 module.exports = {
@@ -77116,7 +77148,7 @@ module.exports = {
 
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":1}],35:[function(require,module,exports){
+},{"buffer":1}],36:[function(require,module,exports){
 module.exports = function ($scope,$timeout, authModelService,$firebaseArray) {
 	var userModel = $scope.userModel = authModelService;
 	// var URL = new Firebase("https://vitta.firebaseio.com/");
@@ -77142,12 +77174,12 @@ module.exports = function ($scope,$timeout, authModelService,$firebaseArray) {
 	};
 };
 
-},{}],36:[function(require,module,exports){
+},{}],37:[function(require,module,exports){
 module.exports = angular.module('auth',[])
 			.factory('authModelService', require('./services/authModelService.js'))
 			.controller('loginController', require('./controllers/loginController.js'));
 
-},{"./controllers/loginController.js":35,"./services/authModelService.js":37}],37:[function(require,module,exports){
+},{"./controllers/loginController.js":36,"./services/authModelService.js":38}],38:[function(require,module,exports){
 module.exports = function ($state,$cookies, RestangularCustom) {
 	var authModel = {
 		currentUser: {},
@@ -77215,7 +77247,7 @@ module.exports = function ($state,$cookies, RestangularCustom) {
 	return authModel;
 };
 
-},{}],38:[function(require,module,exports){
+},{}],39:[function(require,module,exports){
 module.exports = function($scope, coreEventsService, RestangularCustom, $mdDialog, $mdToast, $animate) {
 	var coreEvents = $scope.coreEvents = coreEventsService;
 	// $scope.user = RestangularCustom.all('usuario').getList().$object;
@@ -77248,7 +77280,7 @@ module.exports = function($scope, coreEventsService, RestangularCustom, $mdDialo
 
 };
 
-},{}],39:[function(require,module,exports){
+},{}],40:[function(require,module,exports){
 (function (Buffer){
 
 module.exports = function ($scope,$mdDialog, coreEventsService, authModelService) {
@@ -77285,7 +77317,7 @@ module.exports = function ($scope,$mdDialog, coreEventsService, authModelService
 };
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":1}],40:[function(require,module,exports){
+},{"buffer":1}],41:[function(require,module,exports){
 (function (Buffer){
 
 module.exports = function($scope,$mdDialog, $mdToast,$animate) {
@@ -77331,7 +77363,7 @@ module.exports = function($scope,$mdDialog, $mdToast,$animate) {
 };
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":1}],41:[function(require,module,exports){
+},{"buffer":1}],42:[function(require,module,exports){
 module.exports = function($scope, coreEventsService,$state,$stateParams,$mdDialog) {
 	$scope.onUCUploadComplete = function (info){
 		console.log(info);
@@ -77351,7 +77383,7 @@ module.exports = function($scope, coreEventsService,$state,$stateParams,$mdDialo
 	};
 };
 
-},{}],42:[function(require,module,exports){
+},{}],43:[function(require,module,exports){
 module.exports = function($scope, coreEventsService,$state,$stateParams,$mdDialog) {
 	$scope.duracao=2;
 	$scope.frequencia=3;
@@ -77367,7 +77399,7 @@ module.exports = function($scope, coreEventsService,$state,$stateParams,$mdDialo
 
 };
 
-},{}],43:[function(require,module,exports){
+},{}],44:[function(require,module,exports){
 (function (Buffer){
 
 module.exports = {
@@ -77416,7 +77448,7 @@ module.exports = {
 
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":1}],44:[function(require,module,exports){
+},{"buffer":1}],45:[function(require,module,exports){
 module.exports = angular.module('core',[])
 		.controller('headerController', require('./controllers/headerController.js'))
 		.controller('searchController', require('./controllers/searchController.js'))
@@ -77426,7 +77458,7 @@ module.exports = angular.module('core',[])
 		.factory('coreEventsService', require('./services/coreEventsService.js'))
 		.factory('RestangularCustom', require('./services/restangularCustom.js'));
 
-},{"./controllers/asideController.js":38,"./controllers/headerController.js":39,"./controllers/searchController.js":40,"./controllers/searchDialogController.js":41,"./controllers/trainDialogController.js":42,"./services/coreEventsService.js":45,"./services/restangularCustom.js":46}],45:[function(require,module,exports){
+},{"./controllers/asideController.js":39,"./controllers/headerController.js":40,"./controllers/searchController.js":41,"./controllers/searchDialogController.js":42,"./controllers/trainDialogController.js":43,"./services/coreEventsService.js":46,"./services/restangularCustom.js":47}],46:[function(require,module,exports){
 module.exports = function () {
 	var eventsService = {
 		search: false,
@@ -77454,7 +77486,7 @@ module.exports = function () {
 	return eventsService;
 };
 
-},{}],46:[function(require,module,exports){
+},{}],47:[function(require,module,exports){
 module.exports = function ($state,$location,Restangular) {
 	return Restangular.withConfig(function(RestangularConfigurer){
 		RestangularConfigurer.setErrorInterceptor(function (response) {
@@ -77493,7 +77525,7 @@ module.exports = function ($state,$location,Restangular) {
 	});
 };
 
-},{}],47:[function(require,module,exports){
+},{}],48:[function(require,module,exports){
 module.exports = function($scope, coreEventsService,$state,$stateParams,$mdDialog) {
 	$scope.hide = function() {
 		$mdDialog.hide();
@@ -77506,13 +77538,13 @@ module.exports = function($scope, coreEventsService,$state,$stateParams,$mdDialo
 	};
 };
 
-},{}],48:[function(require,module,exports){
+},{}],49:[function(require,module,exports){
 module.exports = function($scope) {
 	$scope.duracao = 3;
 	$scope.frequencia =4;
 };
 
-},{}],49:[function(require,module,exports){
+},{}],50:[function(require,module,exports){
 (function (Buffer){
 
 module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$stateParams,$mdDialog) {
@@ -77729,17 +77761,17 @@ module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$sta
 };
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":1}],50:[function(require,module,exports){
+},{"buffer":1}],51:[function(require,module,exports){
 module.exports = function($scope) {
 
 };
 
-},{}],51:[function(require,module,exports){
+},{}],52:[function(require,module,exports){
 module.exports = function ($scope) {
 
 };
 
-},{}],52:[function(require,module,exports){
+},{}],53:[function(require,module,exports){
 module.exports = function($scope, coreEventsService,$state,$stateParams,$mdDialog) {
 	$scope.hide = function() {
 		$mdDialog.hide();
@@ -77982,7 +78014,7 @@ module.exports = function($scope, coreEventsService,$state,$stateParams,$mdDialo
 
 };
 
-},{}],53:[function(require,module,exports){
+},{}],54:[function(require,module,exports){
 module.exports =  function($scope,$mdBottomSheet,$timeout, coreEventsService,$state,$stateParams) {
 	$scope.params = $stateParams;
 	$scope.state = $state.current;
@@ -77990,9 +78022,9 @@ module.exports =  function($scope,$mdBottomSheet,$timeout, coreEventsService,$st
 	// $scope.eventsService= eventsService;
 };
 
-},{}],54:[function(require,module,exports){
-arguments[4][50][0].apply(exports,arguments)
-},{"dup":50}],55:[function(require,module,exports){
+},{}],55:[function(require,module,exports){
+arguments[4][51][0].apply(exports,arguments)
+},{"dup":51}],56:[function(require,module,exports){
 module.exports = function($scope) {
 	$scope.train_menu= {menu: false};
 	$scope.close_train_menu = function(){
@@ -78004,7 +78036,7 @@ module.exports = function($scope) {
 
 };
 
-},{}],56:[function(require,module,exports){
+},{}],57:[function(require,module,exports){
 module.exports = angular.module('train',[])
 		.controller('listTrainingController', require('./controllers/listTrainingController.js'))
 		.controller('trainingTrainingController', require('./controllers/trainingTrainingController.js'))
@@ -78016,7 +78048,7 @@ module.exports = angular.module('train',[])
 		.controller('insertTrainingDialogController', require('./controllers/insertTrainingDialogController.js'))
 		.controller('ImportDialogController', require('./controllers/ImportDialogController.js'));
 
-},{"./controllers/ImportDialogController.js":47,"./controllers/addPlanController.js":48,"./controllers/addTrainingController.js":49,"./controllers/collectionTrainingController.js":50,"./controllers/historyTrainingController.js":51,"./controllers/insertTrainingDialogController.js":52,"./controllers/listTrainingController.js":53,"./controllers/plansController.js":54,"./controllers/trainingTrainingController.js":55}],57:[function(require,module,exports){
+},{"./controllers/ImportDialogController.js":48,"./controllers/addPlanController.js":49,"./controllers/addTrainingController.js":50,"./controllers/collectionTrainingController.js":51,"./controllers/historyTrainingController.js":52,"./controllers/insertTrainingDialogController.js":53,"./controllers/listTrainingController.js":54,"./controllers/plansController.js":55,"./controllers/trainingTrainingController.js":56}],58:[function(require,module,exports){
 (function (Buffer){
 
 module.exports = {
@@ -78070,7 +78102,7 @@ module.exports = {
 				},
 				'content-add@core.user.edit': {
 					controller: 'addTrainingController',  
-					template: Buffer("CjxzZWN0aW9uIGNsYXNzPSJhZGR0cmFpbmluZy13cmFwIj4KICA8c2VjdGlvbiBjbGFzcz0ibmV3LXRyYWluaW5nIj4KICAgIDxtZC1jYXJkPgogICAgICA8bWQtY2FyZC1jb250ZW50PgogICAgICAgIDxzZWN0aW9uIGNsYXNzPSJoZWFkZXItYWRkIj4KICAgICAgICAgIDxtZC1zZWxlY3QgcGxhY2Vob2xkZXI9Ik5vbWUgZG8gVHJlaW5vIiBuZy1tb2RlbD0icGxhbiIgc3R5bGU9Im1pbi13aWR0aDoyNTBweDsiPgogICAgICAgICAgICA8bWQtb3B0aW9uIG5nLXJlcGVhdD0icGxhbiBpbiBwbGFucyIgdmFsdWU9Int7cGxhbn19Ij57e3BsYW59fTwvbWQtb3B0aW9uPgogICAgICAgICAgPC9tZC1zZWxlY3Q+CiAgICAgICAgPC9zZWN0aW9uPgogICAgICAgIDxzZWN0aW9uIGNsYXNzPSJvcHRpb25zLWFkZCI+CiAgICAgICAgICA8IS0tIG5nLW1kLWljb24oaWNvbj0ibGF1bmNoIiBzdHlsZT0iZmlsbDp3aGl0ZSIgIHNpemU9IjIyIiBuZy1jbGljaz0idHJ1ZSIpLS0+CiAgICAgICAgICA8IS0tIG5nLW1kLWljb24oaWNvbj0iZXhwYW5kX21vcmUiIHN0eWxlPSJmaWxsOndoaXRlIiAgc2l6ZT0iMjciIG5nLWNsaWNrPSJ0cnVlIiktLT4KICAgICAgICAgIDxtZC1idXR0b24gbmctY2xpY2s9ImltcG9ydFRyYWluaW5nKCRldmVudCk7IiBjbGFzcz0ibWQtcmFpc2VkIHNlYyI+SW1wb3J0YXIgVHJlaW5vPC9tZC1idXR0b24+CiAgICAgICAgICA8bWQtYnV0dG9uIG5nLWNsaWNrPSJpbnNlcnRUcmFpbmluZygkZXZlbnQpOyIgY2xhc3M9Im1kLXJhaXNlZCBtZC1wcmltYXJ5Ij5JbnNlcmlyIEV4ZXJjw61jaW88L21kLWJ1dHRvbj4KICAgICAgICA8L3NlY3Rpb24+CiAgICAgICAgPHNlY3Rpb24gY2xhc3M9ImNvbnRlbnQtYWRkIj4KICAgICAgICAgIDxzZWN0aW9ucyBzdi1yb290PSIiIHN2LXBhcnQ9ImV4ZXJjaWNpb3MiIGNsYXNzPSJsaXN0LXRyYWluaW5ncyI+CiAgICAgICAgICAgIDxtZC1jb250ZW50IHNjcm9sbC1nbHVlPSJzY3JvbGwuZ2x1ZWQiIGNsYXNzPSJzY3JvbGwtYWRkdHJhaW5pbmciPgogICAgICAgICAgICAgIDxtZC1zdWJoZWFkZXI+PC9tZC1zdWJoZWFkZXI+CiAgICAgICAgICAgICAgPHVsPgogICAgICAgICAgICAgICAgPCEtLSBsaShuZy1yZXBlYXQ9ImV4ZXJjaWNpbyBpbiBleGVyY2ljaW9zIiBzdi1lbGVtZW50PSJvcHRzIiBuZy1zdHlsZT0iZXN0aWxvIiBuZy1pbml0PSJlc3RpbG89JGluZGV4PT0xID8geydtYXJnaW4tdG9wJzonMWVtJ30gOiB7fSIgbmctY2xhc3M9InsnZXhlcmMtc2VsZWN0JzogJGluZGV4PT1pbmRleH0iKS0tPgogICAgICAgICAgICAgICAgPGxpIG5nLXJlcGVhdD0iZXhlcmNpY2lvIGluIGV4ZXJjaWNpb3MiIHN2LWVsZW1lbnQ9Im9wdHMiIG5nLWNsYXNzPSJ7J2V4ZXJjLXNlbGVjdCc6ICRpbmRleD09aW5kZXh9Ij4KICAgICAgICAgICAgICAgICAgPGRzLWV4ZXJjaXNlIGV4ZXJjaWNpbz0iZXhlcmNpY2lvIj48L2RzLWV4ZXJjaXNlPgogICAgICAgICAgICAgICAgICA8IS0tIHNlY3Rpb24udm9sdW1lLS0+CiAgICAgICAgICAgICAgICAgIDwhLS0gCS8vIHNwYW4obmctY2xpY2s9IndlaWdodF9hZGQoJGV2ZW50LGV4ZXJjaWNpbywkaW5kZXgpOyIpIHt7ZXhlcmNpY2lvLnNlcmllfX14e3tleGVyY2ljaW8ucmVwZXRpY2FvfX0tLT4KICAgICAgICAgICAgICAgICAgPCEtLSAJc3BhbiB7e2V4ZXJjaWNpby5zZXJpZX19eHt7ZXhlcmNpY2lvLnJlcGV0aWNhb319LS0+CiAgICAgICAgICAgICAgICAgIDwhLS0gc2VjdGlvbi5kZWxldGUtLT4KICAgICAgICAgICAgICAgICAgPCEtLSAJbmctbWQtaWNvbihpY29uPSJjbG9zZSIgbmctY2xpY2s9InJlbW92ZSgkaW5kZXgpOyIgc3R5bGU9ImZpbGw6YmxhY2siIHNpemU9IjIwIiktLT4KICAgICAgICAgICAgICAgIDwvbGk+CiAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgPC9tZC1jb250ZW50PgogICAgICAgICAgICA8IS0tIHNlY3Rpb24uYmFja2dyb3VuZC13cmFwKG5nLXNob3c9ImNsb3NlX2FsbCIgbmctY2xpY2s9ImNsb3NlKCk7IiktLT4KICAgICAgICAgICAgPCEtLSBzZWN0aW9uLndlaWdodC1hZGQoc3R5bGU9InRvcDp7e3Bvc2l0aW9uLnkgLSA1MH19cHg7bGVmdDp7e3Bvc2l0aW9uLnggLSA0OH19cHg7IiktLT4KICAgICAgICAgICAgPCEtLSAJc2VjdGlvbi53ZWlnaHQtY29udGVudC0tPgogICAgICAgICAgICA8IS0tIAkJc2VjdGlvbi5wbHVzKG5nLWNsaWNrPSJwbHVzX3dlaWdodCgpOyIpLS0+CiAgICAgICAgICAgIDwhLS0gCQkJc3Bhbi0tPgogICAgICAgICAgICA8IS0tIAkJCQluZy1tZC1pY29uKGljb249ImtleWJvYXJkX2Fycm93X3VwIiBzdHlsZT0iZmlsbDpibGFjayIgIHNpemU9IjI1IiktLT4KICAgICAgICAgICAgPCEtLSAJCXNlY3Rpb24ubGVmdChuZy1jbGFzcz0ieydib3JkZXItcmVkJzogYWx0PT0nc2VyaWUnfSIgbmctY2xpY2s9InRvZ2dsZV92b2x1bWUoKTsiKSAgIC0tPgogICAgICAgICAgICA8IS0tIAkJCXNwYW4ge3tleGVyY2ljaW9fc2VsZWN0LnNlcmllfX0tLT4KICAgICAgICAgICAgPCEtLSAJCXNlY3Rpb24ubWlkZGxlLS0+CiAgICAgICAgICAgIDwhLS0gCQkJc3BhbiA6LS0+CiAgICAgICAgICAgIDwhLS0gCQlzZWN0aW9uLnJpZ2h0KG5nLWNsYXNzPSJ7J2JvcmRlci1yZWQnOiBhbHQ9PSdyZXBldGljYW8nfSIgbmctY2xpY2s9InRvZ2dsZV92b2x1bWUoKTsiKSAgLS0+CiAgICAgICAgICAgIDwhLS0gCQkJc3BhbiB7e2V4ZXJjaWNpb19zZWxlY3QucmVwZXRpY2FvfX0tLT4KICAgICAgICAgICAgPCEtLSAJCXNlY3Rpb24ubWludXMobmctY2xpY2s9Im1pbnVzX3dlaWdodCgpOyIpLS0+CiAgICAgICAgICAgIDwhLS0gCQkJc3Bhbi0tPgogICAgICAgICAgICA8IS0tIAkJCQluZy1tZC1pY29uKGljb249ImV4cGFuZF9tb3JlIiBzdHlsZT0iZmlsbDpibGFjayIgIHNpemU9IjI1IiktLT4KICAgICAgICAgIDwvc2VjdGlvbnM+CiAgICAgICAgICA8c2VjdGlvbiBjbGFzcz0iYXNpZGUtaW5mby10cmFpbmluZyI+CiAgICAgICAgICAgIDxkcy1pbmZvPgogICAgICAgICAgICAgIDxzZWN0aW9uIGNsYXNzPSJkcy10aXRsZSI+PHNwYW4+VG90YWwgZGUgRXhlcmPDrWNpb3M8L3NwYW4+PC9zZWN0aW9uPgogICAgICAgICAgICAgIDxzZWN0aW9uIGNsYXNzPSJkcy1jb250ZW50Ij48c3Bhbj41PC9zcGFuPjwvc2VjdGlvbj4KICAgICAgICAgICAgPC9kcy1pbmZvPgogICAgICAgICAgICA8ZHMtaW5mbz4KICAgICAgICAgICAgICA8c2VjdGlvbiBjbGFzcz0iZHMtdGl0bGUiPjxzcGFuPlZvbHVtZSBkbyBUcmVpbm88L3NwYW4+PC9zZWN0aW9uPgogICAgICAgICAgICAgIDxzZWN0aW9uIGNsYXNzPSJkcy1jb250ZW50Ij48c3Bhbj4yMjAuMDAwIGtnPC9zcGFuPjwvc2VjdGlvbj4KICAgICAgICAgICAgPC9kcy1pbmZvPgogICAgICAgICAgICA8ZHMtaW5mbz4KICAgICAgICAgICAgICA8c2VjdGlvbiBjbGFzcz0iZHMtdGl0bGUiPjxzcGFuPkdydXBvcyBNdXNjdWxhcmVzIEF0aW5naWRvczwvc3Bhbj48L3NlY3Rpb24+CiAgICAgICAgICAgICAgPHNlY3Rpb24gY2xhc3M9ImRzLWNvbnRlbnQiPjxzcGFuPkNvc3RhPC9zcGFuPjxzcGFuPlBlcm5hPC9zcGFuPjxzcGFuPlBlcm5hPC9zcGFuPjxzcGFuPlBlcm5hPC9zcGFuPjxzcGFuPkNvc3RhPC9zcGFuPjxzcGFuPkNvc3RhPC9zcGFuPjxzcGFuPkNvc3RhPC9zcGFuPjxzcGFuPlBlcm5hPC9zcGFuPjxzcGFuPk9tYnJvPC9zcGFuPjwvc2VjdGlvbj4KICAgICAgICAgICAgPC9kcy1pbmZvPgogICAgICAgICAgPC9zZWN0aW9uPgogICAgICAgIDwvc2VjdGlvbj4KICAgICAgPC9tZC1jYXJkLWNvbnRlbnQ+CiAgICA8L21kLWNhcmQ+CiAgPC9zZWN0aW9uPgo8L3NlY3Rpb24+","base64")
+					template: Buffer("CjxzZWN0aW9uIGNsYXNzPSJhZGR0cmFpbmluZy13cmFwIj4KICA8c2VjdGlvbiBjbGFzcz0ibmV3LXRyYWluaW5nIj4KICAgIDxtZC1jYXJkPgogICAgICA8bWQtY2FyZC1jb250ZW50PgogICAgICAgIDxzZWN0aW9uIGNsYXNzPSJoZWFkZXItYWRkIj4KICAgICAgICAgIDxtZC1zZWxlY3QgcGxhY2Vob2xkZXI9Ik5vbWUgZG8gVHJlaW5vIiBuZy1tb2RlbD0icGxhbiIgc3R5bGU9Im1pbi13aWR0aDoyNTBweDsiPgogICAgICAgICAgICA8bWQtb3B0aW9uIG5nLXJlcGVhdD0icGxhbiBpbiBwbGFucyIgdmFsdWU9Int7cGxhbn19Ij57e3BsYW59fTwvbWQtb3B0aW9uPgogICAgICAgICAgPC9tZC1zZWxlY3Q+CiAgICAgICAgPC9zZWN0aW9uPgogICAgICAgIDxzZWN0aW9uIGNsYXNzPSJvcHRpb25zLWFkZCI+CiAgICAgICAgICA8IS0tIG5nLW1kLWljb24oaWNvbj0ibGF1bmNoIiBzdHlsZT0iZmlsbDp3aGl0ZSIgIHNpemU9IjIyIiBuZy1jbGljaz0idHJ1ZSIpLS0+CiAgICAgICAgICA8IS0tIG5nLW1kLWljb24oaWNvbj0iZXhwYW5kX21vcmUiIHN0eWxlPSJmaWxsOndoaXRlIiAgc2l6ZT0iMjciIG5nLWNsaWNrPSJ0cnVlIiktLT4KICAgICAgICAgIDxtZC1idXR0b24gbmctY2xpY2s9ImltcG9ydFRyYWluaW5nKCRldmVudCk7IiBjbGFzcz0ibWQtcmFpc2VkIHNlYyI+SW1wb3J0YXIgVHJlaW5vPC9tZC1idXR0b24+CiAgICAgICAgICA8bWQtYnV0dG9uIG5nLWNsaWNrPSJpbnNlcnRUcmFpbmluZygkZXZlbnQpOyIgY2xhc3M9Im1kLXJhaXNlZCBtZC1wcmltYXJ5Ij5JbnNlcmlyIEV4ZXJjw61jaW88L21kLWJ1dHRvbj4KICAgICAgICA8L3NlY3Rpb24+CiAgICAgICAgPHNlY3Rpb24gY2xhc3M9ImNvbnRlbnQtYWRkIj4KICAgICAgICAgIDxzZWN0aW9ucyBzdi1yb290PSIiIHN2LXBhcnQ9ImV4ZXJjaWNpb3MiIGNsYXNzPSJsaXN0LXRyYWluaW5ncyI+CiAgICAgICAgICAgIDxtZC1jb250ZW50IHNjcm9sbC1nbHVlPSJzY3JvbGwuZ2x1ZWQiIGNsYXNzPSJzY3JvbGwtYWRkdHJhaW5pbmciPgogICAgICAgICAgICAgIDxtZC1zdWJoZWFkZXI+PC9tZC1zdWJoZWFkZXI+CiAgICAgICAgICAgICAgPCEtLSB1bC0tPgogICAgICAgICAgICAgIDwhLS0gCS8vIGxpKG5nLXJlcGVhdD0iZXhlcmNpY2lvIGluIGV4ZXJjaWNpb3MiIHN2LWVsZW1lbnQ9Im9wdHMiIG5nLXN0eWxlPSJlc3RpbG8iIG5nLWluaXQ9ImVzdGlsbz0kaW5kZXg9PTEgPyB7J21hcmdpbi10b3AnOicxZW0nfSA6IHt9IiBuZy1jbGFzcz0ieydleGVyYy1zZWxlY3QnOiAkaW5kZXg9PWluZGV4fSIpLS0+CiAgICAgICAgICAgICAgPCEtLSAJbGkobmctcmVwZWF0PSJleGVyY2ljaW8gaW4gZXhlcmNpY2lvcyIgc3YtZWxlbWVudD0ib3B0cyIgbmctY2xhc3M9InsnZXhlcmMtc2VsZWN0JzogJGluZGV4PT1pbmRleH0iKS0tPgogICAgICAgICAgICAgIDwhLS0gCQlkcy1leGVyY2lzZShleGVyY2ljaW89ImV4ZXJjaWNpbyIpLS0+CiAgICAgICAgICAgICAgPGRzLWV4ZXJjaXNlcyBleGVyY2ljaW9zPSJleGVyY2ljaW9zIj4gCiAgICAgICAgICAgICAgICA8IS0tIGRzLWV4ZXJjaXNlKGV4ZXJjaWNpbz0iZXhlcmNpY2lvIiktLT4KICAgICAgICAgICAgICAgIDwhLS0gZHMtZXhlcmNpc2UKICAgICAgICAgICAgICAgIC8vIHNlY3Rpb24udm9sdW1lCiAgICAgICAgICAgICAgICAvLyAJLy8gc3BhbihuZy1jbGljaz0id2VpZ2h0X2FkZCgkZXZlbnQsZXhlcmNpY2lvLCRpbmRleCk7Iikge3tleGVyY2ljaW8uc2VyaWV9fXh7e2V4ZXJjaWNpby5yZXBldGljYW99fQogICAgICAgICAgICAgICAgLy8gCXNwYW4ge3tleGVyY2ljaW8uc2VyaWV9fXh7e2V4ZXJjaWNpby5yZXBldGljYW99fQogICAgICAgICAgICAgICAgLy8gc2VjdGlvbi5kZWxldGUKICAgICAgICAgICAgICAgIC8vIAluZy1tZC1pY29uKGljb249ImNsb3NlIiBuZy1jbGljaz0icmVtb3ZlKCRpbmRleCk7IiBzdHlsZT0iZmlsbDpibGFjayIgc2l6ZT0iMjAiKQogICAgICAgICAgICAgICAgLS0+CiAgICAgICAgICAgICAgPC9kcy1leGVyY2lzZXM+CiAgICAgICAgICAgIDwvbWQtY29udGVudD4KICAgICAgICAgICAgPCEtLSBzZWN0aW9uLmJhY2tncm91bmQtd3JhcChuZy1zaG93PSJjbG9zZV9hbGwiIG5nLWNsaWNrPSJjbG9zZSgpOyIpLS0+CiAgICAgICAgICAgIDwhLS0gc2VjdGlvbi53ZWlnaHQtYWRkKHN0eWxlPSJ0b3A6e3twb3NpdGlvbi55IC0gNTB9fXB4O2xlZnQ6e3twb3NpdGlvbi54IC0gNDh9fXB4OyIpLS0+CiAgICAgICAgICAgIDwhLS0gCXNlY3Rpb24ud2VpZ2h0LWNvbnRlbnQtLT4KICAgICAgICAgICAgPCEtLSAJCXNlY3Rpb24ucGx1cyhuZy1jbGljaz0icGx1c193ZWlnaHQoKTsiKS0tPgogICAgICAgICAgICA8IS0tIAkJCXNwYW4tLT4KICAgICAgICAgICAgPCEtLSAJCQkJbmctbWQtaWNvbihpY29uPSJrZXlib2FyZF9hcnJvd191cCIgc3R5bGU9ImZpbGw6YmxhY2siICBzaXplPSIyNSIpLS0+CiAgICAgICAgICAgIDwhLS0gCQlzZWN0aW9uLmxlZnQobmctY2xhc3M9InsnYm9yZGVyLXJlZCc6IGFsdD09J3NlcmllJ30iIG5nLWNsaWNrPSJ0b2dnbGVfdm9sdW1lKCk7IikgICAtLT4KICAgICAgICAgICAgPCEtLSAJCQlzcGFuIHt7ZXhlcmNpY2lvX3NlbGVjdC5zZXJpZX19LS0+CiAgICAgICAgICAgIDwhLS0gCQlzZWN0aW9uLm1pZGRsZS0tPgogICAgICAgICAgICA8IS0tIAkJCXNwYW4gOi0tPgogICAgICAgICAgICA8IS0tIAkJc2VjdGlvbi5yaWdodChuZy1jbGFzcz0ieydib3JkZXItcmVkJzogYWx0PT0ncmVwZXRpY2FvJ30iIG5nLWNsaWNrPSJ0b2dnbGVfdm9sdW1lKCk7IikgIC0tPgogICAgICAgICAgICA8IS0tIAkJCXNwYW4ge3tleGVyY2ljaW9fc2VsZWN0LnJlcGV0aWNhb319LS0+CiAgICAgICAgICAgIDwhLS0gCQlzZWN0aW9uLm1pbnVzKG5nLWNsaWNrPSJtaW51c193ZWlnaHQoKTsiKS0tPgogICAgICAgICAgICA8IS0tIAkJCXNwYW4tLT4KICAgICAgICAgICAgPCEtLSAJCQkJbmctbWQtaWNvbihpY29uPSJleHBhbmRfbW9yZSIgc3R5bGU9ImZpbGw6YmxhY2siICBzaXplPSIyNSIpLS0+CiAgICAgICAgICA8L3NlY3Rpb25zPgogICAgICAgICAgPHNlY3Rpb24gY2xhc3M9ImFzaWRlLWluZm8tdHJhaW5pbmciPgogICAgICAgICAgICA8ZHMtaW5mbz4KICAgICAgICAgICAgICA8c2VjdGlvbiBjbGFzcz0iZHMtdGl0bGUiPjxzcGFuPlRvdGFsIGRlIEV4ZXJjw61jaW9zPC9zcGFuPjwvc2VjdGlvbj4KICAgICAgICAgICAgICA8c2VjdGlvbiBjbGFzcz0iZHMtY29udGVudCI+PHNwYW4+NTwvc3Bhbj48L3NlY3Rpb24+CiAgICAgICAgICAgIDwvZHMtaW5mbz4KICAgICAgICAgICAgPGRzLWluZm8+CiAgICAgICAgICAgICAgPHNlY3Rpb24gY2xhc3M9ImRzLXRpdGxlIj48c3Bhbj5Wb2x1bWUgZG8gVHJlaW5vPC9zcGFuPjwvc2VjdGlvbj4KICAgICAgICAgICAgICA8c2VjdGlvbiBjbGFzcz0iZHMtY29udGVudCI+PHNwYW4+MjIwLjAwMCBrZzwvc3Bhbj48L3NlY3Rpb24+CiAgICAgICAgICAgIDwvZHMtaW5mbz4KICAgICAgICAgICAgPGRzLWluZm8+CiAgICAgICAgICAgICAgPHNlY3Rpb24gY2xhc3M9ImRzLXRpdGxlIj48c3Bhbj5HcnVwb3MgTXVzY3VsYXJlcyBBdGluZ2lkb3M8L3NwYW4+PC9zZWN0aW9uPgogICAgICAgICAgICAgIDxzZWN0aW9uIGNsYXNzPSJkcy1jb250ZW50Ij48c3Bhbj5Db3N0YTwvc3Bhbj48c3Bhbj5QZXJuYTwvc3Bhbj48c3Bhbj5QZXJuYTwvc3Bhbj48c3Bhbj5QZXJuYTwvc3Bhbj48c3Bhbj5Db3N0YTwvc3Bhbj48c3Bhbj5Db3N0YTwvc3Bhbj48c3Bhbj5Db3N0YTwvc3Bhbj48c3Bhbj5QZXJuYTwvc3Bhbj48c3Bhbj5PbWJybzwvc3Bhbj48L3NlY3Rpb24+CiAgICAgICAgICAgIDwvZHMtaW5mbz4KICAgICAgICAgIDwvc2VjdGlvbj4KICAgICAgICA8L3NlY3Rpb24+CiAgICAgIDwvbWQtY2FyZC1jb250ZW50PgogICAgPC9tZC1jYXJkPgogIDwvc2VjdGlvbj4KPC9zZWN0aW9uPg==","base64")
 				}
 			}
 		},
@@ -78135,22 +78167,22 @@ module.exports = {
 };
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":1}],58:[function(require,module,exports){
+},{"buffer":1}],59:[function(require,module,exports){
 module.exports = function($scope) {
  $scope.labels = ["Dias Decorridos", "Dias Restantes"];
   $scope.data = [14,7];
 };
 
-},{}],59:[function(require,module,exports){
-arguments[4][50][0].apply(exports,arguments)
-},{"dup":50}],60:[function(require,module,exports){
+},{}],60:[function(require,module,exports){
+arguments[4][51][0].apply(exports,arguments)
+},{"dup":51}],61:[function(require,module,exports){
 module.exports = angular.module('user',[])
 		.controller('planController', require('./controllers/planController.js'))
 		.controller('scheduleController', require('./controllers/scheduleController.js'));
 		// .factory('userModel', require('./services/userModel.js'))
 		// .factory('RestangularCustom', require('./services/restangularCustom.js'));
 
-},{"./controllers/planController.js":58,"./controllers/scheduleController.js":59}],61:[function(require,module,exports){
+},{"./controllers/planController.js":59,"./controllers/scheduleController.js":60}],62:[function(require,module,exports){
 (function (Buffer){
 
 module.exports = {
