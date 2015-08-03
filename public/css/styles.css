@@ -11382,6 +11382,14 @@ md-dialog h1 {
   color: #fff;
   font-weight: bold;
 }
+[ng:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+  display: none !important;
+}
 body {
   font-family: 'Roboto-Light';
   font-weight: 300;

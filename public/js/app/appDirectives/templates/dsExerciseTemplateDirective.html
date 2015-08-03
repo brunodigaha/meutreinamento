@@ -1,5 +1,5 @@
 
-<section class="ds-exercise">
+<section ng-cloak="" class="ds-exercise">
   <!-- section.ds-mov(sv-handle="" style="display:none;")-->
   <section ng-hide="isOpened" ng-click="open_exerc()" class="ds-exercise-close">
     <section class="ds-viw-exerc">
@@ -15,7 +15,7 @@
       <section class="ds-break-time"><span>Descanso 20 seg</span></section>
       <section class="ds-exerc-options">
         <ng-md-icon icon="settings" style="fill:white" size="22"></ng-md-icon>
-        <ng-md-icon icon="close" ng-click="remove($index);" style="fill:white" size="22"></ng-md-icon>
+        <ng-md-icon icon="close" ng-click="remove(exercicio); $event.stopPropagation();" style="fill:white" size="22"></ng-md-icon>
       </section>
     </section>
     <section class="ds-content-exerc">

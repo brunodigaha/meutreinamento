@@ -167,12 +167,13 @@ module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$sta
 		$scope.position.y=-500;
 		$scope.index = null;
 	};
-	$scope.remove = function($index){
-		// var idx = $scope.exercicios.indexOf(exercicio);
-		// $scope.exercicios.splice(idx,1);
-		$scope.exercicios.splice($index,1);
+	$scope.$on('remove_exercise',function(event,exercicio){
+		var idx = $scope.exercicios.indexOf(exercicio);
+		$scope.exercicios.splice(idx,1);
+		// console.log(exercicio);
+		// $scope.exercicios.splice($index,1);
 
-	};
+	});
 
 	$scope.weight_add = function(ev,exercicio,index) {
 		$scope.index = index;

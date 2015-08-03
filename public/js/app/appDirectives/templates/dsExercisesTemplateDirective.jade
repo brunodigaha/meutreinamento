@@ -1,4 +1,4 @@
 section.ds-exercises
-	ul
+	ul(sv-root="" sv-part="exercicios")
 		li(ng-repeat="exercicio in exercicios" sv-element="opts" ng-class="{'exerc-select': $index==index}")
 			ds-exercise(exercicio="exercicio")
