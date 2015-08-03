@@ -1,32 +1,41 @@
 section.ds-exercise
-	section.ds-mov(sv-handle="" style="display:none;")
-	section.ds-header-exerc
-		section.ds-series
-			span Biset com 4 séries
-		section.ds-break-time
-			span Descanso 20 seg
-		section.ds-exerc-options
-			ng-md-icon(icon="settings" style="fill:white" size="22")
-			ng-md-icon(icon="close" ng-click="remove($index);" style="fill:white" size="22")
-	section.ds-content-exerc
-		md-content.exerc
-			section.ds-list-steps
-				section.ds-step-content(ng-repeat="person in [1,2,3,4] track by $index")
-					section.ds-position-step
-						span {{$index+1}}ª
-					section.ds-list-exerc
-						section.ds-list-exerc-item
-							section.ds-exer-name
-								// span {{exercicio.nome}}
-								span Polia
-							section.ds-exerc-repts
-								span 10 Repts
-							section.ds-exerc-weight
-								span 20kg
-						section.ds-list-exerc-item
-							section.ds-exer-name
-								span Supino Reto
-							section.ds-exerc-repts
-								span 10 Repts
-							section.ds-exerc-weight
-								span 20kg
+	// section.ds-mov(sv-handle="" style="display:none;")
+	section.ds-exercise-close(ng-hide="isOpened" ng-click="toggle_exerc()")
+		section.viw-exerc
+			section.drag(sv-handle="")
+				ng-md-icon(icon="open_with" style="fill:black" size="20")
+			section.exerc
+				span {{exercicio.nome}}
+				span {{exercicio.nome}}
+				span {{exercicio.nome}}
+				span ...
+	section.ds-exercise-open(ng-show="isOpened" ng-click="toggle_exerc()")
+		section.ds-header-exerc
+			section.ds-series
+				span Biset com 4 séries
+			section.ds-break-time
+				span Descanso 20 seg
+			section.ds-exerc-options
+				ng-md-icon(icon="settings" style="fill:white" size="22")
+				ng-md-icon(icon="close" ng-click="remove($index);" style="fill:white" size="22")
+		section.ds-content-exerc
+			md-content.exerc
+				section.ds-list-steps
+					section.ds-step-content(ng-repeat="person in [1,2,3,4] track by $index")
+						section.ds-position-step
+							span {{$index+1}}ª
+						section.ds-list-exerc
+							section.ds-list-exerc-item
+								section.ds-exer-name
+									span {{exercicio.nome}}
+								section.ds-exerc-repts
+									span 10 Repts
+								section.ds-exerc-weight
+									span 20kg
+							section.ds-list-exerc-item
+								section.ds-exer-name
+									span Supino Reto
+								section.ds-exerc-repts
+									span 10 Repts
+								section.ds-exerc-weight
+									span 20kg

@@ -1,35 +1,43 @@
 
 <section class="ds-exercise">
-  <section sv-handle="" style="display:none;" class="ds-mov"></section>
-  <section class="ds-header-exerc">
-    <section class="ds-series"><span>Biset com 4 séries</span></section>
-    <section class="ds-break-time"><span>Descanso 20 seg</span></section>
-    <section class="ds-exerc-options">
-      <ng-md-icon icon="settings" style="fill:white" size="22"></ng-md-icon>
-      <ng-md-icon icon="close" ng-click="remove($index);" style="fill:white" size="22"></ng-md-icon>
+  <!-- section.ds-mov(sv-handle="" style="display:none;")-->
+  <section ng-hide="isOpened" ng-click="toggle_exerc()" class="ds-exercise-close">
+    <section class="viw-exerc">
+      <section sv-handle="" class="drag">
+        <ng-md-icon icon="open_with" style="fill:black" size="20"></ng-md-icon>
+      </section>
+      <section class="exerc"><span>{{exercicio.nome}}</span><span>{{exercicio.nome}}</span><span>{{exercicio.nome}}</span><span>...</span></section>
     </section>
   </section>
-  <section class="ds-content-exerc">
-    <md-content class="exerc">
-      <section class="ds-list-steps">
-        <section ng-repeat="person in [1,2,3,4] track by $index" class="ds-step-content">
-          <section class="ds-position-step"><span>{{$index+1}}ª</span></section>
-          <section class="ds-list-exerc">
-            <section class="ds-list-exerc-item">
-              <section class="ds-exer-name">
-                <!-- span {{exercicio.nome}}--><span>Polia</span>
+  <section ng-show="isOpened" ng-click="toggle_exerc()" class="ds-exercise-open">
+    <section class="ds-header-exerc">
+      <section class="ds-series"><span>Biset com 4 séries</span></section>
+      <section class="ds-break-time"><span>Descanso 20 seg</span></section>
+      <section class="ds-exerc-options">
+        <ng-md-icon icon="settings" style="fill:white" size="22"></ng-md-icon>
+        <ng-md-icon icon="close" ng-click="remove($index);" style="fill:white" size="22"></ng-md-icon>
+      </section>
+    </section>
+    <section class="ds-content-exerc">
+      <md-content class="exerc">
+        <section class="ds-list-steps">
+          <section ng-repeat="person in [1,2,3,4] track by $index" class="ds-step-content">
+            <section class="ds-position-step"><span>{{$index+1}}ª</span></section>
+            <section class="ds-list-exerc">
+              <section class="ds-list-exerc-item">
+                <section class="ds-exer-name"><span>{{exercicio.nome}}</span></section>
+                <section class="ds-exerc-repts"><span>10 Repts</span></section>
+                <section class="ds-exerc-weight"><span>20kg</span></section>
               </section>
-              <section class="ds-exerc-repts"><span>10 Repts</span></section>
-              <section class="ds-exerc-weight"><span>20kg</span></section>
-            </section>
-            <section class="ds-list-exerc-item">
-              <section class="ds-exer-name"><span>Supino Reto</span></section>
-              <section class="ds-exerc-repts"><span>10 Repts</span></section>
-              <section class="ds-exerc-weight"><span>20kg</span></section>
+              <section class="ds-list-exerc-item">
+                <section class="ds-exer-name"><span>Supino Reto</span></section>
+                <section class="ds-exerc-repts"><span>10 Repts</span></section>
+                <section class="ds-exerc-weight"><span>20kg</span></section>
+              </section>
             </section>
           </section>
         </section>
-      </section>
-    </md-content>
+      </md-content>
+    </section>
   </section>
 </section>

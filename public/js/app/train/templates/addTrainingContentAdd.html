@@ -21,13 +21,7 @@
               <ul>
                 <!-- li(ng-repeat="exercicio in exercicios" sv-element="opts" ng-style="estilo" ng-init="estilo=$index==1 ? {'margin-top':'1em'} : {}" ng-class="{'exerc-select': $index==index}")-->
                 <li ng-repeat="exercicio in exercicios" sv-element="opts" ng-class="{'exerc-select': $index==index}">
-                  <section ng-if="$index != 3" class="viw-exerc"> 
-                    <section sv-handle="" ng-if="$index != 3" class="drag">
-                      <ng-md-icon icon="open_with" style="fill:black" size="20"></ng-md-icon>
-                    </section>
-                    <section class="exerc"><span>{{exercicio.nome}}</span><span>{{exercicio.nome}}</span><span>{{exercicio.nome}}</span><span>...</span></section>
-                  </section>
-                  <ds-exercise exercicio="exercicio" ng-if="$index == 3"></ds-exercise>
+                  <ds-exercise exercicio="exercicio"></ds-exercise>
                   <!-- section.volume-->
                   <!-- 	// span(ng-click="weight_add($event,exercicio,$index);") {{exercicio.serie}}x{{exercicio.repeticao}}-->
                   <!-- 	span {{exercicio.serie}}x{{exercicio.repeticao}}-->

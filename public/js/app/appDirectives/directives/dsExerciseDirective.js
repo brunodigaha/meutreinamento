@@ -5,6 +5,11 @@ module.exports = function() {
 		// transclude:true
 		scope: {
 			exercicio: "="
+		},
+		link :function(scope, element,attrs,ctrl) {
+			scope.toggle_exerc= function () {
+				scope.isOpened = !scope.isOpened;
+			};
 		}
 
 	};

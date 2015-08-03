@@ -17,15 +17,7 @@ section.addtraining-wrap
 								ul
 									// li(ng-repeat="exercicio in exercicios" sv-element="opts" ng-style="estilo" ng-init="estilo=$index==1 ? {'margin-top':'1em'} : {}" ng-class="{'exerc-select': $index==index}")
 									li(ng-repeat="exercicio in exercicios" sv-element="opts" ng-class="{'exerc-select': $index==index}")
-										section.viw-exerc(ng-if="$index != 3")  
-											section.drag(sv-handle="" ng-if="$index != 3")
-												ng-md-icon(icon="open_with" style="fill:black" size="20")
-											section.exerc
-												span {{exercicio.nome}}
-												span {{exercicio.nome}}
-												span {{exercicio.nome}}
-												span ...
-										ds-exercise(exercicio="exercicio" ng-if="$index == 3")
+										ds-exercise(exercicio="exercicio")
 										// section.volume
 										// 	// span(ng-click="weight_add($event,exercicio,$index);") {{exercicio.serie}}x{{exercicio.repeticao}}
 										// 	span {{exercicio.serie}}x{{exercicio.repeticao}}
