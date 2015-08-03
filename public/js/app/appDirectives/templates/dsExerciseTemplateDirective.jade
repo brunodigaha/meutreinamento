@@ -3,13 +3,13 @@ section.ds-exercise(ng-cloak='')
 	section.ds-exercise-close(ng-hide="isOpened" ng-click="open_exerc()")
 		section.ds-viw-exerc
 			section.ds-drag(sv-handle="")
-				ng-md-icon(icon="open_with" style="fill:black" size="20")
+				ng-md-icon(icon="open_with" style="fill:black" size="22")
 			section.ds-exerc
 				span {{exercicio.nome}}
 				span {{exercicio.nome}}
 				span {{exercicio.nome}}
 				span ...
-	section.ds-exercise-open(ng-show="isOpened" ng-click="close_exerc()")
+	section.ds-exercise-open(ng-show="isOpened" ng-class="{'animated fadeIn': isOpened}" ng-click="close_exerc()")
 		section.ds-header-exerc
 			section.ds-series
 				span Biset com 4 séries

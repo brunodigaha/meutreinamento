@@ -7,10 +7,11 @@
 			.ds-drag
 				col(1/11,gutter:0)
 				box-sizing border-box
-				padding-left .5em
-				cursor pointer
+				// padding-left .2em
+				cursor move
+				background-color palette('Blue Grey','200')
 				&:hover
-					zoom 1.1
+					zoom 1.2
 				ng-md-icon
 					svg
 						vertical-align middle
@@ -20,6 +21,7 @@
 				box-sizing border-box
 				text-align left
 				padding-left .9em
+				cursor pointer
 				span
 					display inline-block
 					margin-right 2%
@@ -28,12 +30,19 @@
 						padding 5px 11px 5px 11px
 						line-height 11px
 					font-size 83%
-					border 1px solid palette('Blue Grey','200')
+					border 1px solid palette('Blue Grey','400')
 					border-radius 16px
 					line-height 10px
-					// background-color palette('Grey','50')
+					// background-color palette('Blue Grey','50')
+					// box-shadow: 0 2px 3px rgba(0,0,0,.15)
 					color black
-
+	// .ds-exercise-open.ng-hide-add.ng-hide-add-active,
+	// .ds-exercise-open.ng-hide-remove
+	// 	-webkit-transition all linear 0.5s
+	// 	transition all linear 0.5s
+	// 	animation 3s fadeIn
+	// .ds-exercise-open.ng-hide-remove.ng-hide-remove-active
+	// 	animation 3s fadeIn
 	.ds-exercise-open
 		col(12/12,gutter:0)
 		.ds-header-exerc
@@ -43,29 +52,37 @@
 			background-color palette('Blue Grey','300')
 			padding-left 8px
 			padding-right 5px
-			line-height 2.4em
+			line-height 2.6em
 			color white
 			.ds-series
 				col(4/12,gutter:0)
 				text-align left
 				font-weight bold
+				cursor pointer
 			.ds-break-time
-				col(4/12,gutter:0)
+				col(5.5/12,gutter:0)
+				cursor pointer
 			.ds-exerc-options
-				col(4/12,gutter:0)
+				col(2.5/12,gutter:0)
 				text-align right
 				ng-md-icon
+					cursor pointer
 					svg
 						vertical-align middle
 						margin-right 15px
 		.ds-content-exerc
 			col(12/12,gutter:0)
+			box-sizing border-box
+			border-left 2px solid palette('Blue Grey','300')
+			border-right 2px solid palette('Blue Grey','300')
+			border-bottom 2px solid palette('Blue Grey','300')
+			background-color white
 			md-content.exerc
 				max-height:22vh 
 				+tablet(orientation: portrait)
-					max-height:29vh 
+					max-height:30vh 
 				+desktop()
-					max-height:29vh 
+					max-height:30vh 
 			.ds-list-steps
 				col(12/12,gutter:0)
 				box-sizing border-box
@@ -77,10 +94,13 @@
 						col(1/12,gutter:0)
 						position relative
 						top -4px
+						color black
 					.ds-list-exerc
 						col(11/12,gutter:0)
 						box-sizing border-box
 						border 1px solid palette('Blue Grey','300')
+						&:hover
+							background palette('Grey','50')
 						.ds-list-exerc-item
 							col(11/12,gutter:0)
 							padding 3px

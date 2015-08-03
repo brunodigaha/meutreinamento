@@ -4,12 +4,12 @@
   <section ng-hide="isOpened" ng-click="open_exerc()" class="ds-exercise-close">
     <section class="ds-viw-exerc">
       <section sv-handle="" class="ds-drag">
-        <ng-md-icon icon="open_with" style="fill:black" size="20"></ng-md-icon>
+        <ng-md-icon icon="open_with" style="fill:black" size="22"></ng-md-icon>
       </section>
       <section class="ds-exerc"><span>{{exercicio.nome}}</span><span>{{exercicio.nome}}</span><span>{{exercicio.nome}}</span><span>...</span></section>
     </section>
   </section>
-  <section ng-show="isOpened" ng-click="close_exerc()" class="ds-exercise-open">
+  <section ng-show="isOpened" ng-class="{'animated fadeIn': isOpened}" ng-click="close_exerc()" class="ds-exercise-open">
     <section class="ds-header-exerc">
       <section class="ds-series"><span>Biset com 4 séries</span></section>
       <section class="ds-break-time"><span>Descanso 20 seg</span></section>
