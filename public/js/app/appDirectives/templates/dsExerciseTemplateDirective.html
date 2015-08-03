@@ -2,11 +2,11 @@
 <section class="ds-exercise">
   <!-- section.ds-mov(sv-handle="" style="display:none;")-->
   <section ng-hide="isOpened" ng-click="toggle_exerc()" class="ds-exercise-close">
-    <section class="viw-exerc">
-      <section sv-handle="" class="drag">
+    <section class="ds-viw-exerc">
+      <section sv-handle="" class="ds-drag">
         <ng-md-icon icon="open_with" style="fill:black" size="20"></ng-md-icon>
       </section>
-      <section class="exerc"><span>{{exercicio.nome}}</span><span>{{exercicio.nome}}</span><span>{{exercicio.nome}}</span><span>...</span></section>
+      <section class="ds-exerc"><span>{{exercicio.nome}}</span><span>{{exercicio.nome}}</span><span>{{exercicio.nome}}</span><span>...</span></section>
     </section>
   </section>
   <section ng-show="isOpened" ng-click="toggle_exerc()" class="ds-exercise-open">

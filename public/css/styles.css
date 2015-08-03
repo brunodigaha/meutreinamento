@@ -11679,6 +11679,94 @@ a:visited {
 .ds-exercise .ds-exercise-close:last-child {
   margin-right: 0%;
 }
+.ds-exercise .ds-exercise-close .ds-viw-exerc {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.ds-exercise .ds-exercise-close .ds-viw-exerc:before,
+.ds-exercise .ds-exercise-close .ds-viw-exerc:after {
+  content: '';
+  display: table;
+}
+.ds-exercise .ds-exercise-close .ds-viw-exerc:after {
+  clear: both;
+}
+.ds-exercise .ds-exercise-close .ds-viw-exerc:last-child {
+  margin-right: 0%;
+}
+.ds-exercise .ds-exercise-close .ds-viw-exerc .ds-drag {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 9.090909090909092%;
+  margin-left: 0%;
+  margin-right: 0%;
+  box-sizing: border-box;
+  padding-left: 0.5em;
+  cursor: pointer;
+}
+.ds-exercise .ds-exercise-close .ds-viw-exerc .ds-drag:before,
+.ds-exercise .ds-exercise-close .ds-viw-exerc .ds-drag:after {
+  content: '';
+  display: table;
+}
+.ds-exercise .ds-exercise-close .ds-viw-exerc .ds-drag:after {
+  clear: both;
+}
+.ds-exercise .ds-exercise-close .ds-viw-exerc .ds-drag:last-child {
+  margin-right: 0%;
+}
+.ds-exercise .ds-exercise-close .ds-viw-exerc .ds-drag:hover {
+  zoom: 1.1;
+}
+.ds-exercise .ds-exercise-close .ds-viw-exerc .ds-drag ng-md-icon svg {
+  vertical-align: middle;
+}
+.ds-exercise .ds-exercise-close .ds-viw-exerc .ds-exerc {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 90.9090909090909%;
+  margin-left: 0%;
+  margin-right: 0%;
+  box-sizing: border-box;
+  text-align: left;
+  padding-left: 0.9em;
+}
+.ds-exercise .ds-exercise-close .ds-viw-exerc .ds-exerc:before,
+.ds-exercise .ds-exercise-close .ds-viw-exerc .ds-exerc:after {
+  content: '';
+  display: table;
+}
+.ds-exercise .ds-exercise-close .ds-viw-exerc .ds-exerc:after {
+  clear: both;
+}
+.ds-exercise .ds-exercise-close .ds-viw-exerc .ds-exerc:last-child {
+  margin-right: 0%;
+}
+.ds-exercise .ds-exercise-close .ds-viw-exerc .ds-exerc span {
+  display: inline-block;
+  margin-right: 2%;
+  padding: 3px 8px 3px 8px;
+  font-size: 83%;
+  border: 1px solid #b0bec5;
+  border-radius: 16px;
+  line-height: 10px;
+  color: #000;
+}
+@media only screen and (min-width: 1050px) {
+  .ds-exercise .ds-exercise-close .ds-viw-exerc .ds-exerc span {
+    padding: 5px 11px 5px 11px;
+    line-height: 11px;
+  }
+}
 .ds-exercise .ds-exercise-open {
   *zoom: 1;
   float: left;
@@ -15103,94 +15191,6 @@ md-dialog md-dialog-content .train-dialog-wrap .train-dialog-content .action but
 }
 .addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li:last-child {
   margin-right: 0%;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 100%;
-  margin-left: 0%;
-  margin-right: 0%;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc:before,
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc:after {
-  content: '';
-  display: table;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc:after {
-  clear: both;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc:last-child {
-  margin-right: 0%;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc .drag {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 9.090909090909092%;
-  margin-left: 0%;
-  margin-right: 0%;
-  box-sizing: border-box;
-  padding-left: 0.5em;
-  cursor: pointer;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc .drag:before,
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc .drag:after {
-  content: '';
-  display: table;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc .drag:after {
-  clear: both;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc .drag:last-child {
-  margin-right: 0%;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc .drag:hover {
-  zoom: 1.1;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc .drag ng-md-icon svg {
-  vertical-align: middle;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc .exerc {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 90.9090909090909%;
-  margin-left: 0%;
-  margin-right: 0%;
-  box-sizing: border-box;
-  text-align: left;
-  padding-left: 0.9em;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc .exerc:before,
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc .exerc:after {
-  content: '';
-  display: table;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc .exerc:after {
-  clear: both;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc .exerc:last-child {
-  margin-right: 0%;
-}
-.addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc .exerc span {
-  display: inline-block;
-  margin-right: 2%;
-  padding: 3px 8px 3px 8px;
-  font-size: 83%;
-  border: 1px solid #b0bec5;
-  border-radius: 16px;
-  line-height: 10px;
-  color: #000;
-}
-@media only screen and (min-width: 1050px) {
-  .addtraining-wrap .new-training md-card md-card-content .content-add .list-trainings md-content.scroll-addtraining ul li .viw-exerc .exerc span {
-    padding: 5px 11px 5px 11px;
-    line-height: 11px;
-  }
 }
 .addtraining-wrap .new-training md-card md-card-content .content-add .aside-info-training {
   *zoom: 1;
