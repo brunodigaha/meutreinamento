@@ -15262,13 +15262,8 @@ md-dialog md-dialog-content .train-dialog-wrap .train-dialog-content .action but
   }
 }
 .addtraining-wrap .new-training md-card md-card-content .content-add .aside-info-training .ds-info .ds-info-content {
-  max-height: 350px;
+  max-height: 230px;
   overflow: auto;
-}
-@media only screen and (max-width: 890px) {
-  .addtraining-wrap .new-training md-card md-card-content .content-add .aside-info-training .ds-info .ds-info-content {
-    max-height: 200px;
-  }
 }
 @media only screen and (min-width: 1050px) {
   .addtraining-wrap .new-training md-card md-card-content .content-add .aside-info-training .ds-info .ds-info-content {

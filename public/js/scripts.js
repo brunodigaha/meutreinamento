@@ -76939,7 +76939,7 @@ module.exports = function() {
 
 module.exports = function() {
 	return{
-		template: Buffer("CjxzZWN0aW9uIGNsYXNzPSJkcy1leGVyY2lzZXMiPgogIDx1bCBzdi1yb290PSIiIHN2LXBhcnQ9ImV4ZXJjaWNpb3MiPgogICAgPGxpIG5nLXJlcGVhdD0iZXhlcmNpY2lvIGluIGV4ZXJjaWNpb3MiIHN2LWVsZW1lbnQ9Im9wdHMiIG5nLWNsYXNzPSJ7J2V4ZXJjLXNlbGVjdCc6ICRpbmRleD09aW5kZXh9Ij4KICAgICAgPGRzLWV4ZXJjaXNlIGV4ZXJjaWNpbz0iZXhlcmNpY2lvIj48L2RzLWV4ZXJjaXNlPgogICAgPC9saT4KICA8L3VsPgo8L3NlY3Rpb24+","base64"),
+		template: Buffer("CjxzZWN0aW9uIGNsYXNzPSJkcy1leGVyY2lzZXMiPgogIDx1bCBzdi1yb290PSIiIHN2LXBhcnQ9ImV4ZXJjaWNpb3MiPgogICAgPGxpIG5nLXJlcGVhdD0iZXhlcmNpY2lvIGluIGV4ZXJjaWNpb3MiIHN2LWVsZW1lbnQ9Im9wdHMiIG5nLWNsYXNzPSJ7J2V4ZXJjLXNlbGVjdCc6ICRpbmRleD09aW5kZXh9IiBjbGFzcz0iYW5ndWxhci1hbmltYXRlIj4KICAgICAgPGRzLWV4ZXJjaXNlIGV4ZXJjaWNpbz0iZXhlcmNpY2lvIj48L2RzLWV4ZXJjaXNlPgogICAgPC9saT4KICA8L3VsPgo8L3NlY3Rpb24+","base64"),
 		// transclude:true,
 		scope: {
 			exercicios: "="
@@ -77018,7 +77018,7 @@ module.exports = angular.module('appDirectives',[])
 },{"./directives/dsExerciseDirective.js":27,"./directives/dsExercisesDirective.js":28,"./directives/dsInfoDirective.js":29,"./directives/dsPlanDirective.js":30,"./directives/dsTrainingDirective.js":31}],33:[function(require,module,exports){
 
 
-module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider,$breadcrumbProvider,ChartJsProvider, $mdThemingProvider) {
+module.exports = function ($stateProvider,$animateProvider,$locationProvider,$urlRouterProvider,$breadcrumbProvider,ChartJsProvider, $mdThemingProvider) {
 	$locationProvider.html5Mode(false);
 	$urlRouterProvider.otherwise('/user/12/training-history');
 	// $urlRouterProvider.when('/home', '/home/index');
@@ -77075,6 +77075,8 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider,$
 	// 	template : '<p> Bruno ng-repeat="step in steps | limitTo:-1"</p> <span> {{ng-bind-html="step.ncyBreadcrumbLabel"}} </span>'
 	// });
 	
+	$animateProvider.classNameFilter(/angular-animate/);
+
     ChartJsProvider.setOptions({
       colours: ['#2196F3', '#BBDEFB'],
        // animation: false

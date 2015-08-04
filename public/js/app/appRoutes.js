@@ -1,6 +1,6 @@
 var fs = require('fs');
 
-module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider,$breadcrumbProvider,ChartJsProvider, $mdThemingProvider) {
+module.exports = function ($stateProvider,$animateProvider,$locationProvider,$urlRouterProvider,$breadcrumbProvider,ChartJsProvider, $mdThemingProvider) {
 	$locationProvider.html5Mode(false);
 	$urlRouterProvider.otherwise('/user/12/training-history');
 	// $urlRouterProvider.when('/home', '/home/index');
@@ -57,6 +57,8 @@ module.exports = function ($stateProvider,$locationProvider,$urlRouterProvider,$
 	// 	template : '<p> Bruno ng-repeat="step in steps | limitTo:-1"</p> <span> {{ng-bind-html="step.ncyBreadcrumbLabel"}} </span>'
 	// });
 	
+	$animateProvider.classNameFilter(/angular-animate/);
+
     ChartJsProvider.setOptions({
       colours: ['#2196F3', '#BBDEFB'],
        // animation: false
