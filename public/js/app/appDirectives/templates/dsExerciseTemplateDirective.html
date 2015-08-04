@@ -1,7 +1,7 @@
 
-<section ng-cloak="" class="ds-exercise">
+<section class="ds-exercise">
   <!-- section.ds-mov(sv-handle="" style="display:none;")-->
-  <section ng-hide="isOpened" ng-click="open_exerc()" class="ds-exercise-close">
+  <section ng-hide="isOpened" ng-cloak="" ng-click="open_exerc()" class="ds-exercise-close">
     <section class="ds-viw-exerc">
       <section sv-handle="" class="ds-drag">
         <ng-md-icon icon="open_with" style="fill:black" size="22"></ng-md-icon>
@@ -9,7 +9,7 @@
       <section class="ds-exerc"><span>{{exercicio.nome}}</span><span>{{exercicio.nome}}</span><span>{{exercicio.nome}}</span><span>...</span></section>
     </section>
   </section>
-  <section ng-show="isOpened" ng-class="{'animated fadeIn': isOpened}" ng-click="close_exerc()" class="ds-exercise-open">
+  <section ng-show="isOpened" ng-cloak="" ng-class="{'animated fadeIn': isOpened}" ng-click="close_exerc()" class="ds-exercise-open">
     <section class="ds-header-exerc">
       <section class="ds-series"><span>Biset com 4 séries</span></section>
       <section class="ds-break-time"><span>Descanso 20 seg</span></section>

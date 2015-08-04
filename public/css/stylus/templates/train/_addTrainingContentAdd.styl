@@ -158,23 +158,25 @@
 						box-sizing border-box
 						text-align center
 						padding 5px
-						// box-shadow: 0 2px 3px rgba(0,0,0,.15)
+						// box-shadow: 0 2px 5px rgba(0,0,0,.18)
 						border 1px solid palette('Blue Grey','300')
 						.ds-info
-							margin-top 1em
+							margin-top 1.3em
 							background-color palette('Grey','50')
 							+tablet(orientation: portrait)
 								margin-top 2em
 							.ds-info-content
-								max-height 205px
+								max-height 350px
+								+below(890px)
+									max-height 200px
 								+desktop()
-									max-height 380px
+									max-height 400px
 								+tablet(orientation: portrait)
-									max-height 300px
+									max-height 400px
 								overflow auto
-						height 59 vh
+						height 65 vh
 						+tablet(orientation: portrait)
-							height:68vh !important
+							height:74vh 
 						+desktop()
-							height:68vh !important
+							height:74vh 
 
