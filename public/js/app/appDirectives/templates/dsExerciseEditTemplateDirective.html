@@ -1,4 +1,20 @@
 
 <section class="ds-exercise-edit">
-  <p>Exercicio editado</p>
+  <section class="ds-exercise-edit-header">
+    <section class="ds-exercise-edit-way">
+      <md-select placeholder="Método do Exercício" ng-model="plan" style="min-width:250px;">
+        <md-option ng-repeat="plan in plans" value="{{plan}}">{{plan}}</md-option>
+      </md-select>
+    </section>
+    <section class="ds-exercise-edit-series"><span>3 Séries</span></section>
+    <section class="ds-exercise-edit-action">
+      <md-button ng-click="insertTraining($event);" class="md-raised md-primary">Adicionar Série</md-button>
+    </section>
+  </section>
+  <section class="ds-exercise-edit-content">
+    <!-- ul(sv-root="" sv-part="series")-->
+    <!-- 	li(ng-repeat="serie in series" class="angular-animate" sv-element="opts" ng-class="{'exerc-select': $index==index}")-->
+    <!-- 		ds-serie-->
+    <ds-serie></ds-serie>
+  </section>
 </section>

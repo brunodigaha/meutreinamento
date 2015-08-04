@@ -1,2 +1,56 @@
 .ds-serie
-	background red
+	col(12/12,gutter:0)
+	.ds-serie-view
+		col(12/12,gutter:0)
+		box-sizing border-box
+		border-left 2px solid palette('Blue Grey','300')
+		border-right 2px solid palette('Blue Grey','300')
+		border-bottom 2px solid palette('Blue Grey','300')
+		background-color white
+		md-content.serie
+			max-height:27vh 
+			+tablet(orientation: portrait)
+				max-height:35vh 
+			+desktop()
+				max-height:35vh 
+			.ds-serie-steps
+				col(12/12,gutter:0)
+				box-sizing border-box
+				padding-left 6em
+				padding-right 8em
+				padding-top 25px
+				.ds-serie-step-content
+					col(12/12,gutter:0)
+					margin-bottom 8px
+					.ds-serie-position-step
+						col(1/12,gutter:0)
+						position relative
+						top -4px
+						color black
+					.ds-serie-list
+						col(11/12,gutter:0)
+						box-sizing border-box
+						border 1px solid palette('Blue Grey','300')
+						&:hover
+							background palette('Grey','50')
+						.ds-serie-list-item
+							col(11/11,gutter:0)
+							padding 3px
+							line-height 20px
+							vertical-align middle
+							+desktop()
+								padding 3px
+								line-height 20px
+							.ds-serie-exerc
+								col(7/11,gutter:0)
+								box-sizing border-box
+								text-align center
+								padding-left 5px
+							.ds-serie-repts
+								col(2/11,gutter:0)
+								text-align right
+							.ds-serie-weight
+								col(2/11,gutter:0)
+								text-align center
+	// .ds-serie-edit
+

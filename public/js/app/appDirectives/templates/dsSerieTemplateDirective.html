@@ -1,4 +1,20 @@
 
 <section class="ds-serie">
-  <p>series</p>
+  <section class="ds-serie-view">
+    <md-content class="serie">
+      <section class="ds-serie-steps">
+        <section ng-repeat="person in [1,2,3,4] track by $index" class="ds-serie-step-content">
+          <section class="ds-serie-position-step"><span>{{$index+1}}ª</span></section>
+          <section class="ds-serie-list">
+            <section ng-repeat="person in [1,2] track by $index" class="ds-serie-list-item">
+              <section class="ds-serie-exerc"><span>Supino Reto</span></section>
+              <section class="ds-serie-repts"><span>10 Repts</span></section>
+              <section class="ds-serie-weight"><span>20kg</span></section>
+            </section>
+          </section>
+        </section>
+      </section>
+    </md-content>
+  </section>
+  <!-- section.ds-serie-edit-->
 </section>
