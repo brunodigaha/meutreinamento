@@ -1,6 +1,7 @@
 .ds-exercise-edit
 	col(12/12,gutter:0)
 	box-sizing border-box
+	position relative
 	// padding 10px
 	.ds-exercise-edit-header
 		col(12/12,gutter:0)
@@ -27,44 +28,44 @@
 	.ds-exercise-edit-content
 		col(12/12,gutter:0)
 		box-sizing border-box
-		padding-top 40px
-		padding-bottom 40px
+		padding-top 20px
+		padding-bottom 20px
 		min-height 60vh
 		border-left 2px solid palette('Blue Grey','300')
 		border-right 2px solid palette('Blue Grey','300')
 		border-bottom 2px solid palette('Blue Grey','300')
 		md-content.series
 			box-sizing border-box
-			padding-left 7em
-			padding-right 7em
-			+desktop()
-				padding-left 10em
-				padding-right 10em
+			padding-left 5em
+			padding-right 5em
+			+hd()
+				padding-left 8em
+				padding-right 8em
 			max-height:35vh 
 			+tablet(orientation: portrait)
 				max-height:43vh 
 			+desktop()
 				max-height:43vh 
-			// ul
-			// 	margin 0
-			// 	padding 0
-			// 	font-size 100%
-			// 	list-style none
-			// 	// .sv-helper
-			// 	// 	font-size 120%
-			// 	// 	color black
-			// 	// 	line-height 2.4em
-			// 	// 	+desktop()
-			// 	// 		line-height 2.2em
-			// 	// 	background-color palette('Grey','100')
-			// 	// 	// border 1px solid palette('Blue Grey','400')
-			// 	// 	opacity 0.9
-			// 	// .sv-candidate
-			// 	// 	opacity 0.5
-			// 	li
-			// 		col(12/12,gutter:0)
-			// 		box-sizing border-box
-			// 		margin-bottom .5em
+			ul
+				margin 0
+				padding 0
+				font-size 100%
+				list-style none
+				// .sv-helper
+				// 	font-size 120%
+				// 	color black
+				// 	line-height 2.4em
+				// 	+desktop()
+				// 		line-height 2.2em
+				// 	background-color palette('Grey','100')
+				// 	// border 1px solid palette('Blue Grey','400')
+				// 	opacity 0.9
+				// .sv-candidate
+				// 	opacity 0.5
+				li
+					col(12/12,gutter:0)
+					box-sizing border-box
+					// margin-bottom .5em
 		.insert-details
 			col(12/12,gutter:0)
 			box-sizing border-box
