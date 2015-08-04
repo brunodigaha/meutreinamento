@@ -11717,12 +11717,12 @@ a:visited {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 9.090909090909092%;
+  width: 6.363636363636363%;
   margin-left: 0%;
   margin-right: 0%;
   box-sizing: border-box;
   cursor: move;
-  background-color: #cfd8dc;
+  background-color: #90a4ae;
 }
 .ds-exercise .ds-exercise-close .ds-viw-exerc .ds-drag:before,
 .ds-exercise .ds-exercise-close .ds-viw-exerc .ds-drag:after {
@@ -11746,7 +11746,7 @@ a:visited {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 90.9090909090909%;
+  width: 93.63636363636364%;
   margin-left: 0%;
   margin-right: 0%;
   box-sizing: border-box;
@@ -12161,7 +12161,7 @@ a:visited {
   color: #000;
   line-height: 2.4em;
   background-color: #f5f5f5;
-  border: 1px solid #78909c;
+  border: 2px solid #78909c;
   opacity: 0.9;
 }
 @media only screen and (min-width: 1050px) {
@@ -12194,7 +12194,7 @@ a:visited {
   line-height: 2.3em;
   color: #424242;
   margin-bottom: 0.8em;
-  border: 1px solid #90a4ae;
+  border: 2px solid #90a4ae;
   background-color: #fff;
 }
 .ds-exercises ul li:before,
