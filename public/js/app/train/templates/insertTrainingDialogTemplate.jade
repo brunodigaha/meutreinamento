@@ -6,7 +6,7 @@ md-dialog(flex="90" aria-label="insertir treino")
 	// 		md-button(ng-click="answer('not applicable')") Cancelar
 	md-dialog-content
 		section.taining-dialog-content
-			ds-exercise-edit
+			ds-exercise-edit(exercise="plans" plans="plans")
 			// .open-tabs
 			// 	// p teste
 			// section.way-training
@@ -73,10 +73,6 @@ md-dialog(flex="90" aria-label="insertir treino")
 			// 						section
 			// 							span(ng-click="insert($index, list);" ng-class="{'item-select animated pulse': exerc.select }" ng-repeat="exerc in list.exercicios")
 			// 								| {{exerc.nome}}
-			section.insert-details
-				md-input-container(flex="")
-					label Observação do Exercício
-					input(ng-model="oberservacao" type="text")
 	.md-actions(layout="row")
 		span(flex="")
 		md-button.md-primary(ng-click="answer('not useful')")

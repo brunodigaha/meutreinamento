@@ -1,16 +1,14 @@
 section.ds-serie
 	section.ds-serie-view
-		md-content.serie
-			section.ds-serie-steps
-				section.ds-serie-step-content(ng-repeat="person in [1,2,3,4] track by $index")
-					section.ds-serie-position-step
-						span {{$index+1}}ª
-					section.ds-serie-list
-						section.ds-serie-list-item(ng-repeat="person in [1,2] track by $index")
-							section.ds-serie-exerc
-								span Supino Reto
-							section.ds-serie-repts
-								span 10 Repts
-							section.ds-serie-weight
-								span 20kg
+		section.ds-serie-step-content
+			section.ds-serie-position-step(sv-handle="")
+				span {{position}}ª
+			section.ds-serie-list
+				section.ds-serie-list-item(ng-repeat="person in [1,2] track by $index")
+					section.ds-serie-exerc
+						span {{serie.name}}
+					section.ds-serie-repts
+						span 10 Repts
+					section.ds-serie-weight
+						span 20kg
 	// section.ds-serie-edit

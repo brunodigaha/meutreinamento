@@ -3,9 +3,10 @@ module.exports = function() {
 	return{
 		template: fs.readFileSync(__dirname + '/../templates/dsExerciseEditTemplateDirective.html'),
 		// transclude:true,
-		// scope: {
-		// 	exercicio: "="
-		// },
+		scope: {
+			exercise: "=",
+			plans:"="
+		},
 		// require: "^dsExercises",
 		// link :function(scope, element,attrs,ctrl) {
 		// 	ctrl.registerExercise(scope);

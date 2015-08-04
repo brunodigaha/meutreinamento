@@ -11,6 +11,8 @@ module.exports = function($scope, coreEventsService,$state,$stateParams,$mdDialo
 	$scope.plans = [
 		"Sequencial",
 		"Biset",
+		"Circuito",
+		"Piramide",
 		"Triset"
 	];
 	$scope.serie= 3;

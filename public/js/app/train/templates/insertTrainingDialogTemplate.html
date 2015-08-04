@@ -7,7 +7,7 @@
   <!-- 		md-button(ng-click="answer('not applicable')") Cancelar-->
   <md-dialog-content>
     <section class="taining-dialog-content">
-      <ds-exercise-edit></ds-exercise-edit>
+      <ds-exercise-edit exercise="plans" plans="plans"></ds-exercise-edit>
       <!-- .open-tabs-->
       <!-- 	// p teste-->
       <!-- section.way-training-->
@@ -74,12 +74,6 @@
       <!-- 						section-->
       <!-- 							span(ng-click="insert($index, list);" ng-class="{'item-select animated pulse': exerc.select }" ng-repeat="exerc in list.exercicios")-->
       <!-- 								| {{exerc.nome}}-->
-      <section class="insert-details">
-        <md-input-container flex="">
-          <label>Observação do Exercício</label>
-          <input ng-model="oberservacao" type="text"/>
-        </md-input-container>
-      </section>
     </section>
   </md-dialog-content>
   <div layout="row" class="md-actions"><span flex=""></span>

@@ -12,9 +12,18 @@
     </section>
   </section>
   <section class="ds-exercise-edit-content">
-    <!-- ul(sv-root="" sv-part="series")-->
-    <!-- 	li(ng-repeat="serie in series" class="angular-animate" sv-element="opts" ng-class="{'exerc-select': $index==index}")-->
-    <!-- 		ds-serie-->
-    <ds-serie></ds-serie>
+    <md-content class="series">
+      <ds-serie serie="{name:'bruno'}" position="{{$index+1}}" ng-repeat="serie in exercise"></ds-serie>
+      <!-- ul(sv-root="serie" sv-part="exercise")-->
+      <!-- 	li(ng-repeat="serie in exercise" sv-element="serie")-->
+      <!-- 		ds-serie(serie="{name:'bruno'}" position="{{$index+1}}")-->
+    </md-content>
+    <section class="insert-details">
+      <md-input-container flex="">
+        <label>Observação do Exercício</label>
+        <input ng-model="oberservacao" type="text"/>
+      </md-input-container>
+    </section>
+    <!-- ds-serie-->
   </section>
 </section>
