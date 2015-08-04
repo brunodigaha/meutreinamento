@@ -1,93 +1,80 @@
 
 <md-dialog flex="90" aria-label="insertir treino">
-  <md-toolbar>
-    <div class="md-toolbar-tools">
-      <h1>Inserir Exercício</h1><span flex=""></span>
-      <md-button ng-click="answer('not applicable')">Cancelar</md-button>
-    </div>
-  </md-toolbar>
+  <!-- md-toolbar-->
+  <!-- 	.md-toolbar-tools-->
+  <!-- 		h1 Inserir Exercício-->
+  <!-- 		span(flex="")-->
+  <!-- 		md-button(ng-click="answer('not applicable')") Cancelar-->
   <md-dialog-content>
     <section class="taining-dialog-content">
-      <div class="open-tabs">
-        <!-- p teste-->
-      </div>
-      <section class="way-training">
-        <md-select placeholder="Método do Exercício" ng-model="plan" style="min-width:250px;">
-          <md-option ng-repeat="plan in plans" value="{{plan}}">{{plan}}</md-option>
-        </md-select>
-      </section>
-      <section class="way-add">
-        <ng-md-icon icon="add" style="fill:white" size="25"></ng-md-icon><span>Dois exercícios executados sem descanso.</span>
-      </section>
-      <section class="slider-wrap-insert">
-        <section class="slider-content-insert">
-          <div layout="row">
-            <div flex="20" layout="" layout-align="center center"><span class="md-body-1">Série&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
-            <md-slider id="blue-slider" flex="" ng-model="serie" min="1" max="8" aria-label="blue" class="md-primary"></md-slider>
-            <div flex="10" layout="" layout-align="center center">
-              <input type="number" ng-model="serie" aria-label="blue" aria-controls="blue-slider"/>
-            </div>
-          </div>
-        </section>
-        <section class="slider-title-insert"><span>Séries</span></section>
-        <section class="slider-content-insert">
-          <div layout="row">
-            <div flex="20" layout="" layout-align="center center"><span class="md-body-1">Descanso</span></div>
-            <md-slider id="blue-slider" flex="" ng-model="descanso" min="0" max="180" aria-label="blue" class="md-primary"></md-slider>
-            <div flex="10" layout="" layout-align="center center">
-              <input type="number" ng-model="descanso" aria-label="blue" aria-controls="blue-slider"/>
-            </div>
-          </div>
-        </section>
-        <section class="slider-title-insert"><span>Segundos</span></section>
-      </section>
-      <section class="insert-exercise-wrap">
-        <section class="insert-exercise-header">
-          <section class="insert-exercise-action">
-            <md-button class="md-raised md-primary">
-              <ng-md-icon icon="archive" aria-label="exercicio" style="fill:white" size="28"></ng-md-icon>
-            </md-button>
-          </section>
-          <section class="insert-exercise-bar">
-            <md-input-container md-no-float="">
-              <input placeholder="Pesquisar Exercício"/>
-            </md-input-container>
-          </section>
-        </section>
-        <section class="insert-exercise-content">
-          <section class="exercise-adds"><span>Supino Reto</span><span>Polia</span></section>
-          <section class="exercise-view">
-            <ds-exercise></ds-exercise>
-          </section>
-        </section>
-        <section class="insert-exercise-tabs">
-          <section class="chat-bubble-arrow-border"></section>
-          <section class="chat-bubble-arrow"></section>
-          <section class="tabs">
-            <md-tabs md-dynamic-height="true" md-border-bottom="false">
-              <!-- md-tab(label="Geral")-->
-              <!-- 	md-content.md-paddin-->
-              <!-- 	section.autocompletedemoCustomTemplate-->
-              <!-- 		md-autocomplete(ng-disabled="isDisabled", md-no-cache="noCache", md-selected-item="selectedItem", md-search-text-change="searchTextChange(searchText)", md-search-text="searchText", md-selected-item-change="selectedItemChange(item)", md-items="item in querySearch(searchText)", md-item-text="item.display", md-min-length="0", placeholder="Digite aqui o nome do exercício que deseja inserir" md-menu-class="autocomplete-custom-template")-->
-              <!-- 			md-item-template-->
-              <!-- 				span.item-title-->
-              <!-- 					md-icon(md-svg-icon="img/icons/octicon-repo.svg")-->
-              <!-- 					span  {{item.name}} -->
-              <!-- 				span.item-metadata-->
-              <!-- 					span.item-metastat-->
-              <!-- 						strong {{item.watchers}}-->
-              <!-- 						| watchers-->
-              <!-- 					span.item-metastat-->
-              <!-- 						strong {{item.forks}}-->
-              <md-tab label="{{list.grupo}}" ng-repeat=" list in list_exercicios">
-                <md-content class="md-padding">
-                  <section><span ng-click="insert($index, list);" ng-class="{'item-select animated pulse': exerc.select }" ng-repeat="exerc in list.exercicios">{{exerc.nome}}</span></section>
-                </md-content>
-              </md-tab>
-            </md-tabs>
-          </section>
-        </section>
-      </section>
+      <ds-exercise-edit></ds-exercise-edit>
+      <ds-serie></ds-serie>
+      <!-- .open-tabs-->
+      <!-- 	// p teste-->
+      <!-- section.way-training-->
+      <!-- 	md-select(placeholder='Método do Exercício', ng-model='plan' style="min-width:250px;")-->
+      <!-- 		md-option(ng-repeat='plan in plans', value='{{plan}}') {{plan}}-->
+      <!-- section.way-add-->
+      <!-- 		ng-md-icon(icon="add" style="fill:white"  size="25")-->
+      <!-- 		span Dois exercícios executados sem descanso.-->
+      <!-- section.slider-wrap-insert-->
+      <!-- 	section.slider-content-insert-->
+      <!-- 		div(layout="row")-->
+      <!-- 			div(flex="20", layout="", layout-align="center center")-->
+      <!-- 				span.md-body-1 Série&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+      <!-- 			md-slider#blue-slider.md-primary(flex="", ng-model="serie", min="1", max="8", aria-label="blue")-->
+      <!-- 			div(flex="10", layout="", layout-align="center center")-->
+      <!-- 				input(type="number", ng-model="serie", aria-label="blue", aria-controls="blue-slider")-->
+      <!-- 	section.slider-title-insert-->
+      <!-- 		span Séries-->
+      <!-- 	section.slider-content-insert-->
+      <!-- 		div(layout="row")-->
+      <!-- 			div(flex="20", layout="", layout-align="center center")-->
+      <!-- 				span.md-body-1 Descanso-->
+      <!-- 			md-slider#blue-slider.md-primary(flex="", ng-model="descanso", min="0", max="180", aria-label="blue")-->
+      <!-- 			div(flex="10", layout="", layout-align="center center")-->
+      <!-- 				input(type="number", ng-model="descanso", aria-label="blue", aria-controls="blue-slider")-->
+      <!-- 	section.slider-title-insert-->
+      <!-- 		span Segundos-->
+      <!-- section.insert-exercise-wrap-->
+      <!-- 	section.insert-exercise-header-->
+      <!-- 		section.insert-exercise-action-->
+      <!-- 			md-button(class="md-raised md-primary")-->
+      <!-- 				ng-md-icon(icon="archive" aria-label="exercicio" style="fill:white"  size="28")-->
+      <!-- 		section.insert-exercise-bar-->
+      <!-- 			md-input-container(md-no-float='')-->
+      <!-- 				input(placeholder='Pesquisar Exercício')-->
+      <!-- 	section.insert-exercise-content-->
+      <!-- 		section.exercise-adds-->
+      <!-- 			span Supino Reto-->
+      <!-- 			span Polia-->
+      <!-- 		section.exercise-view-->
+      <!-- 			ds-exercises-->
+      <!-- 				ds-exercise-->
+      <!-- 	section.insert-exercise-tabs-->
+      <!-- 		section.chat-bubble-arrow-border-->
+      <!-- 		section.chat-bubble-arrow-->
+      <!-- 		section.tabs-->
+      <!-- 			md-tabs(md-dynamic-height="true" md-border-bottom="false")-->
+      <!-- 				// md-tab(label="Geral")-->
+      <!-- 				// 	md-content.md-paddin-->
+      <!-- 				// 	section.autocompletedemoCustomTemplate-->
+      <!-- 				// 		md-autocomplete(ng-disabled="isDisabled", md-no-cache="noCache", md-selected-item="selectedItem", md-search-text-change="searchTextChange(searchText)", md-search-text="searchText", md-selected-item-change="selectedItemChange(item)", md-items="item in querySearch(searchText)", md-item-text="item.display", md-min-length="0", placeholder="Digite aqui o nome do exercício que deseja inserir" md-menu-class="autocomplete-custom-template")-->
+      <!-- 				// 			md-item-template-->
+      <!-- 				// 				span.item-title-->
+      <!-- 				// 					md-icon(md-svg-icon="img/icons/octicon-repo.svg")-->
+      <!-- 				// 					span  {{item.name}} -->
+      <!-- 				// 				span.item-metadata-->
+      <!-- 				// 					span.item-metastat-->
+      <!-- 				// 						strong {{item.watchers}}-->
+      <!-- 				// 						| watchers-->
+      <!-- 				// 					span.item-metastat-->
+      <!-- 				// 						strong {{item.forks}}-->
+      <!-- 				md-tab(label="{{list.grupo}}" ng-repeat=" list in list_exercicios" )-->
+      <!-- 					md-content.md-padding-->
+      <!-- 						section-->
+      <!-- 							span(ng-click="insert($index, list);" ng-class="{'item-select animated pulse': exerc.select }" ng-repeat="exerc in list.exercicios")-->
+      <!-- 								| {{exerc.nome}}-->
       <section class="insert-details">
         <md-input-container flex="">
           <label>Observação do Exercício</label>
