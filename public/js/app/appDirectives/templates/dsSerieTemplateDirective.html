@@ -4,13 +4,26 @@
     <section class="ds-serie-step-content">
       <section sv-handle="" class="ds-serie-position-step"><span>{{position}}ª</span></section>
       <section class="ds-serie-list">
-        <section ng-repeat="person in [1,2] track by $index" class="ds-serie-list-item">
+        <section ng-repeat="person in [2,2,3,4,5,5] track by $index" class="ds-serie-list-item ds-serie-list-item--active">
           <section class="ds-serie-exerc"><span>{{serie.name}}</span></section>
           <section class="ds-serie-repts"><span>10 Repts</span></section>
           <section class="ds-serie-weight"><span>20kg</span></section>
         </section>
+        <section class="ds-serie-edit">
+          <section class="ds-serie-edit-clone">
+            <!-- md-button(class="md-raised sec"  ng-click="importTraining($event);") Clonar-->
+            <ng-md-icon icon="content_copy" style="fill:grey" size="30"></ng-md-icon>clonar
+          </section>
+          <section class="ds-serie-edit-edit">
+            <!-- md-button(class="md-raised sec"  ng-click="importTraining($event);") Clonar-->
+            <ng-md-icon icon="settings" style="fill:grey" size="31"></ng-md-icon>Editar
+          </section>
+          <section class="ed-serie-edit-delete">
+            <!-- md-button(class="md-raised sec"  ng-click="importTraining($event);") Clonar-->
+            <ng-md-icon icon="close" style="fill:grey" size="34"></ng-md-icon>Excluir
+          </section>
+        </section>
       </section>
     </section>
   </section>
-  <!-- section.ds-serie-edit-->
 </section>

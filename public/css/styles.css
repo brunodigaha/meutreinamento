@@ -12530,6 +12530,7 @@ a:visited {
   margin-right: 0%;
   box-sizing: border-box;
   border: 1px solid #90a4ae;
+  position: relative;
 }
 .ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list:before,
 .ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list:after {
@@ -12545,6 +12546,10 @@ a:visited {
 .ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list:hover {
   background: #fafafa;
 }
+.ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list .ds-serie-list-item--active {
+  opacity: 0.1;
+  background-color: #e0e0e0;
+}
 .ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list .ds-serie-list-item {
   *zoom: 1;
   float: left;
@@ -12554,9 +12559,6 @@ a:visited {
   margin-left: 0%;
   margin-right: 0%;
   box-sizing: border-box;
-  padding: 3px;
-  line-height: 20px;
-  vertical-align: middle;
 }
 .ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list .ds-serie-list-item:before,
 .ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list .ds-serie-list-item:after {
@@ -12568,12 +12570,6 @@ a:visited {
 }
 .ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list .ds-serie-list-item:last-child {
   margin-right: 0%;
-}
-@media only screen and (min-width: 1050px) {
-  .ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list .ds-serie-list-item {
-    padding: 3px;
-    line-height: 20px;
-  }
 }
 .ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list .ds-serie-list-item .ds-serie-exerc {
   *zoom: 1;
@@ -12639,6 +12635,143 @@ a:visited {
 }
 .ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list .ds-serie-list-item .ds-serie-weight:last-child {
   margin-right: 0%;
+}
+.ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list .ds-serie-edit {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 50%;
+  margin: auto;
+  background-color: transparent;
+  text-align: center;
+}
+.ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list .ds-serie-edit:before,
+.ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list .ds-serie-edit:after {
+  content: '';
+  display: table;
+}
+.ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list .ds-serie-edit:after {
+  clear: both;
+}
+.ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list .ds-serie-edit:last-child {
+  margin-right: 0%;
+}
+.ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list .ds-serie-edit ng-md-icon {
+  cursor: pointer;
+}
+.ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list .ds-serie-edit ng-md-icon svg {
+  vertical-align: middle;
+  padding-right: 5px;
+  position: relative;
+  top: -9px;
+}
+@media only screen and (min-width: 400px) and (max-width: 1050px) {
+  .ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list .ds-serie-edit ng-md-icon svg {
+    width: 13%;
+    height: 13%;
+  }
+}
+@media only screen and (min-width: 1050px) {
+  .ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list .ds-serie-edit ng-md-icon svg:hover {
+    zoom: 1.2;
+  }
+}
+.ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list .ds-serie-edit button.md-button {
+  width: 38%;
+  min-width: 15px;
+  min-height: 30px;
+  line-height: 30px;
+  font-size: 80%;
+  margin: 0;
+}
+@media only screen and (min-width: 1050px) {
+  .ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list .ds-serie-edit button.md-button {
+    width: 60%;
+    min-width: 15px;
+    min-height: 30px;
+    line-height: 30px;
+    font-size: 85%;
+    margin: 0;
+  }
+}
+.ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list .ds-serie-edit button.md-button span {
+  color: #03a9f4;
+}
+.ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list .ds-serie-edit .ds-serie-edit-clone {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 33.33333333333333%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list .ds-serie-edit .ds-serie-edit-clone:before,
+.ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list .ds-serie-edit .ds-serie-edit-clone:after {
+  content: '';
+  display: table;
+}
+.ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list .ds-serie-edit .ds-serie-edit-clone:after {
+  clear: both;
+}
+.ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list .ds-serie-edit .ds-serie-edit-clone:last-child {
+  margin-right: 0%;
+}
+.ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list .ds-serie-edit .ds-serie-edit-edit {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 33.33333333333333%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list .ds-serie-edit .ds-serie-edit-edit:before,
+.ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list .ds-serie-edit .ds-serie-edit-edit:after {
+  content: '';
+  display: table;
+}
+.ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list .ds-serie-edit .ds-serie-edit-edit:after {
+  clear: both;
+}
+.ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list .ds-serie-edit .ds-serie-edit-edit:last-child {
+  margin-right: 0%;
+}
+.ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list .ds-serie-edit .ed-serie-edit-delete {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 33.33333333333333%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list .ds-serie-edit .ed-serie-edit-delete:before,
+.ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list .ds-serie-edit .ed-serie-edit-delete:after {
+  content: '';
+  display: table;
+}
+.ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list .ds-serie-edit .ed-serie-edit-delete:after {
+  clear: both;
+}
+.ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list .ds-serie-edit .ed-serie-edit-delete:last-child {
+  margin-right: 0%;
+}
+.ds-serie .ds-serie-view .ds-serie-step-content .ds-serie-list .ds-serie-edit .ed-serie-edit-delete ng-md-icon svg {
+  vertical-align: middle;
+  padding-right: 5px;
+  position: relative;
+  top: -7px;
 }
 .login-wrap {
   *zoom: 1;

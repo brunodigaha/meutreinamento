@@ -4,11 +4,23 @@ section.ds-serie
 			section.ds-serie-position-step(sv-handle="")
 				span {{position}}ª
 			section.ds-serie-list
-				section.ds-serie-list-item(ng-repeat="person in [1,2] track by $index")
+				section.ds-serie-list-item(class="ds-serie-list-item--active" ng-repeat="person in [2,2,3,4,5,5] track by $index")
 					section.ds-serie-exerc
 						span {{serie.name}}
 					section.ds-serie-repts
 						span 10 Repts
 					section.ds-serie-weight
 						span 20kg
-	// section.ds-serie-edit
+				section.ds-serie-edit
+					section.ds-serie-edit-clone
+						// md-button(class="md-raised sec"  ng-click="importTraining($event);") Clonar
+						ng-md-icon(icon="content_copy" style="fill:grey"  size="30")
+						| clonar
+					section.ds-serie-edit-edit
+						// md-button(class="md-raised sec"  ng-click="importTraining($event);") Clonar
+						ng-md-icon(icon="settings" style="fill:grey"  size="31")
+						| Editar
+					section.ed-serie-edit-delete
+						// md-button(class="md-raised sec"  ng-click="importTraining($event);") Clonar
+						ng-md-icon(icon="close" style="fill:grey"  size="34")
+						| Excluir
