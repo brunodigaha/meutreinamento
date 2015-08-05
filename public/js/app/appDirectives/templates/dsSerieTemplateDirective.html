@@ -15,17 +15,17 @@
             <section class="ds-serie-weight"><span>20kg</span></section>
           </section>
         </section>
-        <section ng-show="isOpened" class="ds-serie-edit-wrap">
-          <section ng-class="{'animated flipInX': isOpened}" class="ds-serie-edit">
-            <section class="ds-serie-edit-clone">
+        <section ng-show="isOpened" class="ds-serie-view-wrap">
+          <section ng-class="{'animated flipInX': isOpened}" class="ds-serie-view">
+            <section class="ds-serie-view-clone">
               <!-- md-button(class="md-raised sec"  ng-click="importTraining($event);") Clonar-->
               <ng-md-icon icon="content_copy" style="fill:grey" size="30"></ng-md-icon><span>Duplicar</span>
             </section>
-            <section ng-click="dial()" class="ds-serie-edit-edit">
+            <section ng-click="dial()" class="ds-serie-view-edit">
               <!-- md-button(class="md-raised sec"  ng-click="importTraining($event);") Editar-->
               <ng-md-icon icon="settings" style="fill:grey" size="32"></ng-md-icon><span>Editar</span>
             </section>
-            <section class="ed-serie-edit-delete">
+            <section class="ed-serie-view-delete">
               <!-- md-button(class="md-raised sec"  ng-click="importTraining($event);") Excluir-->
               <ng-md-icon icon="close" style="fill:grey" size="35"></ng-md-icon><span>Excluir</span>
             </section>

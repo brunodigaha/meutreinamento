@@ -15,17 +15,17 @@ section.ds-serie
 							span 10 Repts
 						section.ds-serie-weight
 							span 20kg
-				section.ds-serie-edit-wrap(ng-show="isOpened")
-					section.ds-serie-edit(ng-class="{'animated flipInX': isOpened}")
-						section.ds-serie-edit-clone
+				section.ds-serie-view-wrap(ng-show="isOpened")
+					section.ds-serie-view(ng-class="{'animated flipInX': isOpened}")
+						section.ds-serie-view-clone
 							// md-button(class="md-raised sec"  ng-click="importTraining($event);") Clonar
 							ng-md-icon(icon="content_copy" style="fill:grey"  size="30")
 							span Duplicar
-						section.ds-serie-edit-edit(ng-click="dial()")
+						section.ds-serie-view-edit(ng-click="dial()")
 							// md-button(class="md-raised sec"  ng-click="importTraining($event);") Editar
 							ng-md-icon(icon="settings" style="fill:grey"  size="32")
 							span Editar
-						section.ed-serie-edit-delete
+						section.ed-serie-view-delete
 							// md-button(class="md-raised sec"  ng-click="importTraining($event);") Excluir
 							ng-md-icon(icon="close" style="fill:grey"  size="35")
 							span Excluir
