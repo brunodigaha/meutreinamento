@@ -16516,6 +16516,10 @@ md-dialog md-dialog-content .train-dialog-wrap .train-dialog-content .action but
 .history-wrap .history-content:last-child {
   margin-right: 0%;
 }
+md-dialog.md-transition-in {
+  -webkit-transform: none !important;
+  transform: none !important;
+}
 md-dialog md-dialog-content {
   padding: 0;
   position: relative;
