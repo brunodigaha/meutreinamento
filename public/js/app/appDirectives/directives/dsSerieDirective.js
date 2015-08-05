@@ -5,7 +5,8 @@ module.exports = function() {
 		// transclude:true,
 		scope: {
 			serie: "=",
-			position: "@"
+			position: "@",
+			dial: "&"
 		},
 		require: "^dsExerciseEdit",
 		link :function(scope, element,attrs,ctrl) {

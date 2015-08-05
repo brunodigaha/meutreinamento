@@ -9,6 +9,10 @@ module.exports = function() {
 		},
 		controller: function($scope,$element,$attrs){
 			// console.log($scope.exercicios);
+			// this = $scope;
+			$scope.exerciseEdit = {
+				edit : false
+			};
 			var series = [];
 			this.registerSerie = function(serie){
 				series.push(serie);
@@ -17,6 +21,11 @@ module.exports = function() {
 				series.forEach(function(serie){
 					serie.isOpened = false;
 				});
+			};
+			$scope.edit_serie = function() {
+				// console.log("editar serie (exerciseEditDirective)");
+				$scope.exerciseEdit.edit = true;
+
 			};
 		}
 		// require: "^dsExercises",

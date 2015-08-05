@@ -7,6 +7,11 @@ module.exports = function() {
 		// 	serie: "=",
 		// 	position: "@"
 		// },
+		controller: function($scope,$element,$attrs){
+			// this.edit_serie = function(serie){
+			// 	console.log("edit serie em editar serie diretiva");
+			// };
+		}
 		// require: "^dsExerciseEdit",
 		// link :function(scope, element,attrs,ctrl) {
 		// 	ctrl.registerSerie(scope);

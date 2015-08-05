@@ -16,12 +16,16 @@
       <!-- ds-serie(serie="{name:'bruno'}" position="{{$index+1}}" ng-repeat="serie in exercise")-->
       <ul sv-root="serie" sv-part="exercise">
         <li ng-repeat="serie in exercise" sv-element="serie">
-          <ds-serie serie="{name:'bruno'}" position="{{$index+1}}"></ds-serie>
+          <ds-serie serie="{name:'bruno'}" dial="edit_serie()" position="{{$index+1}}"></ds-serie>
         </li>
       </ul>
     </md-content>
-    <section class="ds-exercise-edit-serie">
+    <section ng-if="exerciseEdit.edit" class="ds-exercise-edit-serie">
+      <!-- ds-serie-edit(dial="edit_serie()")-->
       <ds-serie-edit></ds-serie-edit>
+      <section ng-click="edit_serie();"> 
+        <p>bruno</p>
+      </section>
     </section>
     <section class="insert-details">
       <!-- section(sv-root="plan" sv-part="plans")-->
