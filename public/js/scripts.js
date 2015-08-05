@@ -76906,7 +76906,7 @@ angular
 
 
 
-},{"./appDirectives":34,"./appRoutes.js":35,"./appRun.js":36,"./auth":39,"./core":47,"./train":59,"./user":63,"angular":19,"angularBreadcrumb":8,"angularChart":9,"angularCookies":10,"angularFire":20,"angularHolderjs":11,"angularIcons":12,"angularMaterial":13,"angularMessages":14,"angularScroll":15,"angularSortableView":16,"angularUploadcare":18,"modernizr":24,"restAngular":25,"ui-router":17}],27:[function(require,module,exports){
+},{"./appDirectives":35,"./appRoutes.js":36,"./appRun.js":37,"./auth":40,"./core":48,"./train":60,"./user":64,"angular":19,"angularBreadcrumb":8,"angularChart":9,"angularCookies":10,"angularFire":20,"angularHolderjs":11,"angularIcons":12,"angularMaterial":13,"angularMessages":14,"angularScroll":15,"angularSortableView":16,"angularUploadcare":18,"modernizr":24,"restAngular":25,"ui-router":17}],27:[function(require,module,exports){
 (function (Buffer){
 
 module.exports = function() {
@@ -76939,7 +76939,7 @@ module.exports = function() {
 
 module.exports = function() {
 	return{
-		template: Buffer("CjxzZWN0aW9uIGNsYXNzPSJkcy1leGVyY2lzZS1lZGl0Ij4KICA8c2VjdGlvbiBjbGFzcz0iZHMtZXhlcmNpc2UtZWRpdC1oZWFkZXIiPgogICAgPHNlY3Rpb24gY2xhc3M9ImRzLWV4ZXJjaXNlLWVkaXQtd2F5Ij4KICAgICAgPG1kLXNlbGVjdCBwbGFjZWhvbGRlcj0iTcOpdG9kbyBkbyBFeGVyY8OtY2lvIiBuZy1tb2RlbD0icGxhbiIgc3R5bGU9Im1pbi13aWR0aDoyNTBweDsiPgogICAgICAgIDxtZC1vcHRpb24gbmctcmVwZWF0PSJwbGFuIGluIHBsYW5zIiB2YWx1ZT0ie3twbGFufX0iPnt7cGxhbn19PC9tZC1vcHRpb24+CiAgICAgIDwvbWQtc2VsZWN0PgogICAgPC9zZWN0aW9uPgogICAgPHNlY3Rpb24gY2xhc3M9ImRzLWV4ZXJjaXNlLWVkaXQtc2VyaWVzIj48c3Bhbj4zIFPDqXJpZXM8L3NwYW4+PC9zZWN0aW9uPgogICAgPHNlY3Rpb24gY2xhc3M9ImRzLWV4ZXJjaXNlLWVkaXQtYWN0aW9uIj4KICAgICAgPG1kLWJ1dHRvbiBuZy1jbGljaz0iaW5zZXJ0VHJhaW5pbmcoJGV2ZW50KTsiIGNsYXNzPSJtZC1yYWlzZWQgbWQtcHJpbWFyeSI+QWRpY2lvbmFyIFPDqXJpZTwvbWQtYnV0dG9uPgogICAgPC9zZWN0aW9uPgogIDwvc2VjdGlvbj4KICA8c2VjdGlvbiBjbGFzcz0iZHMtZXhlcmNpc2UtZWRpdC1jb250ZW50Ij4KICAgIDxtZC1jb250ZW50IGNsYXNzPSJzZXJpZXMiPgogICAgICA8IS0tIGRzLXNlcmllKHNlcmllPSJ7bmFtZTonYnJ1bm8nfSIgcG9zaXRpb249Int7JGluZGV4KzF9fSIgbmctcmVwZWF0PSJzZXJpZSBpbiBleGVyY2lzZSIpLS0+CiAgICAgIDx1bCBzdi1yb290PSJzZXJpZSIgc3YtcGFydD0iZXhlcmNpc2UiPgogICAgICAgIDxsaSBuZy1yZXBlYXQ9InNlcmllIGluIGV4ZXJjaXNlIiBzdi1lbGVtZW50PSJzZXJpZSI+CiAgICAgICAgICA8ZHMtc2VyaWUgc2VyaWU9IntuYW1lOidicnVubyd9IiBwb3NpdGlvbj0ie3skaW5kZXgrMX19Ij48L2RzLXNlcmllPgogICAgICAgIDwvbGk+CiAgICAgIDwvdWw+CiAgICA8L21kLWNvbnRlbnQ+CiAgICA8c2VjdGlvbiBjbGFzcz0iaW5zZXJ0LWRldGFpbHMiPgogICAgICA8IS0tIHNlY3Rpb24oc3Ytcm9vdD0icGxhbiIgc3YtcGFydD0icGxhbnMiKS0tPgogICAgICA8IS0tIAlzZWN0aW9uKG5nLXJlcGVhdD0icGxhbiBpbiBwbGFucyIgc3YtZWxlbWVudD0icGxhbiIpLS0+CiAgICAgIDwhLS0gCQlwIHt7cGxhbn19LS0+CiAgICAgIDxtZC1pbnB1dC1jb250YWluZXIgZmxleD0iIj4KICAgICAgICA8bGFiZWw+T2JzZXJ2YcOnw6NvIGRvIEV4ZXJjw61jaW88L2xhYmVsPgogICAgICAgIDxpbnB1dCBuZy1tb2RlbD0ib2JlcnNlcnZhY2FvIiB0eXBlPSJ0ZXh0Ii8+CiAgICAgIDwvbWQtaW5wdXQtY29udGFpbmVyPgogICAgPC9zZWN0aW9uPgogICAgPCEtLSBkcy1zZXJpZS0tPgogIDwvc2VjdGlvbj4KPC9zZWN0aW9uPg==","base64"),
+		template: Buffer("CjxzZWN0aW9uIGNsYXNzPSJkcy1leGVyY2lzZS1lZGl0Ij4KICA8c2VjdGlvbiBjbGFzcz0iZHMtZXhlcmNpc2UtZWRpdC1oZWFkZXIiPgogICAgPHNlY3Rpb24gY2xhc3M9ImRzLWV4ZXJjaXNlLWVkaXQtd2F5Ij4KICAgICAgPG1kLXNlbGVjdCBwbGFjZWhvbGRlcj0iTcOpdG9kbyBkbyBFeGVyY8OtY2lvIiBuZy1tb2RlbD0icGxhbiIgc3R5bGU9Im1pbi13aWR0aDoyNTBweDsiPgogICAgICAgIDxtZC1vcHRpb24gbmctcmVwZWF0PSJwbGFuIGluIHBsYW5zIiB2YWx1ZT0ie3twbGFufX0iPnt7cGxhbn19PC9tZC1vcHRpb24+CiAgICAgIDwvbWQtc2VsZWN0PgogICAgPC9zZWN0aW9uPgogICAgPHNlY3Rpb24gY2xhc3M9ImRzLWV4ZXJjaXNlLWVkaXQtc2VyaWVzIj48c3Bhbj4zIFPDqXJpZXM8L3NwYW4+PC9zZWN0aW9uPgogICAgPHNlY3Rpb24gY2xhc3M9ImRzLWV4ZXJjaXNlLWVkaXQtYWN0aW9uIj4KICAgICAgPG1kLWJ1dHRvbiBuZy1jbGljaz0iaW5zZXJ0VHJhaW5pbmcoJGV2ZW50KTsiIGNsYXNzPSJtZC1yYWlzZWQgbWQtcHJpbWFyeSI+QWRpY2lvbmFyIFPDqXJpZTwvbWQtYnV0dG9uPgogICAgPC9zZWN0aW9uPgogIDwvc2VjdGlvbj4KICA8c2VjdGlvbiBjbGFzcz0iZHMtZXhlcmNpc2UtZWRpdC1jb250ZW50Ij4KICAgIDxtZC1jb250ZW50IGNsYXNzPSJzZXJpZXMiPgogICAgICA8IS0tIGRzLXNlcmllKHNlcmllPSJ7bmFtZTonYnJ1bm8nfSIgcG9zaXRpb249Int7JGluZGV4KzF9fSIgbmctcmVwZWF0PSJzZXJpZSBpbiBleGVyY2lzZSIpLS0+CiAgICAgIDx1bCBzdi1yb290PSJzZXJpZSIgc3YtcGFydD0iZXhlcmNpc2UiPgogICAgICAgIDxsaSBuZy1yZXBlYXQ9InNlcmllIGluIGV4ZXJjaXNlIiBzdi1lbGVtZW50PSJzZXJpZSI+CiAgICAgICAgICA8ZHMtc2VyaWUgc2VyaWU9IntuYW1lOidicnVubyd9IiBwb3NpdGlvbj0ie3skaW5kZXgrMX19Ij48L2RzLXNlcmllPgogICAgICAgIDwvbGk+CiAgICAgIDwvdWw+CiAgICA8L21kLWNvbnRlbnQ+CiAgICA8c2VjdGlvbiBjbGFzcz0iZHMtZXhlcmNpc2UtZWRpdC1zZXJpZSI+CiAgICAgIDxkcy1zZXJpZS1lZGl0PjwvZHMtc2VyaWUtZWRpdD4KICAgIDwvc2VjdGlvbj4KICAgIDxzZWN0aW9uIGNsYXNzPSJpbnNlcnQtZGV0YWlscyI+CiAgICAgIDwhLS0gc2VjdGlvbihzdi1yb290PSJwbGFuIiBzdi1wYXJ0PSJwbGFucyIpLS0+CiAgICAgIDwhLS0gCXNlY3Rpb24obmctcmVwZWF0PSJwbGFuIGluIHBsYW5zIiBzdi1lbGVtZW50PSJwbGFuIiktLT4KICAgICAgPCEtLSAJCXAge3twbGFufX0tLT4KICAgICAgPG1kLWlucHV0LWNvbnRhaW5lciBmbGV4PSIiPgogICAgICAgIDxsYWJlbD5PYnNlcnZhw6fDo28gZG8gRXhlcmPDrWNpbzwvbGFiZWw+CiAgICAgICAgPGlucHV0IG5nLW1vZGVsPSJvYmVyc2VydmFjYW8iIHR5cGU9InRleHQiLz4KICAgICAgPC9tZC1pbnB1dC1jb250YWluZXI+CiAgICA8L3NlY3Rpb24+CiAgICA8IS0tIGRzLXNlcmllLS0+CiAgPC9zZWN0aW9uPgo8L3NlY3Rpb24+","base64"),
 		// transclude:true,
 		scope: {
 			exercise: "=",
@@ -77038,7 +77038,7 @@ module.exports = function() {
 
 module.exports = function() {
 	return{
-		template: Buffer("CjxzZWN0aW9uIGNsYXNzPSJkcy1zZXJpZSI+CiAgPHNlY3Rpb24gY2xhc3M9ImRzLXNlcmllLXZpZXciPgogICAgPHNlY3Rpb24gY2xhc3M9ImRzLXNlcmllLXN0ZXAtY29udGVudCI+CiAgICAgIDxzZWN0aW9uIHN2LWhhbmRsZT0iIiBjbGFzcz0iZHMtc2VyaWUtcG9zaXRpb24tc3RlcCI+PHNwYW4+e3twb3NpdGlvbn19wqo8L3NwYW4+PC9zZWN0aW9uPgogICAgICA8c2VjdGlvbiBjbGFzcz0iZHMtc2VyaWUtbGlzdCI+CiAgICAgICAgPHNlY3Rpb24gbmctTW91c2VlbnRlcj0ib3Blbl9zZXJpZSgpOyIgY2xhc3M9ImRzLXNlcmllLWxpc3QtaXRlbS13cmFwIj4KICAgICAgICAgIDwhLS0gc2VjdGlvbi5kcy1zZXJpZS1saXN0LWl0ZW0obmctcmVwZWF0PSJwZXJzb24gaW4gWzIsMiwzLDQsNSw2XSB0cmFjayBieSAkaW5kZXgiKS0tPgogICAgICAgICAgPCEtLSBzZWN0aW9uKHVpLXZpZXc9ImNvbnRlbnRNYWluIiBuZy1jbGFzcz0ieydjb250ZW50LW1haW4nOiFjb3JlRXZlbnRzLnNlYXJjaCwgJ2NvbnRlbnQtbWFpbi1vcGVuIGFuaW1hdGVkIHpvb21JblVwJzogY29yZUV2ZW50cy5zZWFyY2h9IiApLS0+CiAgICAgICAgICA8c2VjdGlvbiBuZy1jbGFzcz0ieydkcy1zZXJpZS1saXN0LWl0ZW0tLWFjdGl2ZSc6IGlzT3BlbmVkfSIgbmctcmVwZWF0PSJwZXJzb24gaW4gWzQsNSw2XSB0cmFjayBieSAkaW5kZXgiIGNsYXNzPSJkcy1zZXJpZS1saXN0LWl0ZW0iPgogICAgICAgICAgICA8c2VjdGlvbiBjbGFzcz0iZHMtc2VyaWUtZXhlcmMiPgogICAgICAgICAgICAgIDwhLS0gc3BhbiB7e3NlcmllLm5hbWV9fS0tPjxzcGFuPlN1cGlubyBSZXRvIEFiZXJ0bzwvc3Bhbj4KICAgICAgICAgICAgPC9zZWN0aW9uPgogICAgICAgICAgICA8c2VjdGlvbiBjbGFzcz0iZHMtc2VyaWUtcmVwdHMiPjxzcGFuPjEwIFJlcHRzPC9zcGFuPjwvc2VjdGlvbj4KICAgICAgICAgICAgPHNlY3Rpb24gY2xhc3M9ImRzLXNlcmllLXdlaWdodCI+PHNwYW4+MjBrZzwvc3Bhbj48L3NlY3Rpb24+CiAgICAgICAgICA8L3NlY3Rpb24+CiAgICAgICAgPC9zZWN0aW9uPgogICAgICAgIDxzZWN0aW9uIG5nLXNob3c9ImlzT3BlbmVkIiBjbGFzcz0iZHMtc2VyaWUtZWRpdC13cmFwIj4KICAgICAgICAgIDxzZWN0aW9uIG5nLWNsYXNzPSJ7J2FuaW1hdGVkIGZsaXBJblgnOiBpc09wZW5lZH0iIGNsYXNzPSJkcy1zZXJpZS1lZGl0Ij4KICAgICAgICAgICAgPHNlY3Rpb24gY2xhc3M9ImRzLXNlcmllLWVkaXQtY2xvbmUiPgogICAgICAgICAgICAgIDwhLS0gbWQtYnV0dG9uKGNsYXNzPSJtZC1yYWlzZWQgc2VjIiAgbmctY2xpY2s9ImltcG9ydFRyYWluaW5nKCRldmVudCk7IikgQ2xvbmFyLS0+CiAgICAgICAgICAgICAgPG5nLW1kLWljb24gaWNvbj0iY29udGVudF9jb3B5IiBzdHlsZT0iZmlsbDpncmV5IiBzaXplPSIzMCI+PC9uZy1tZC1pY29uPjxzcGFuPkR1cGxpY2FyPC9zcGFuPgogICAgICAgICAgICA8L3NlY3Rpb24+CiAgICAgICAgICAgIDxzZWN0aW9uIGNsYXNzPSJkcy1zZXJpZS1lZGl0LWVkaXQiPgogICAgICAgICAgICAgIDwhLS0gbWQtYnV0dG9uKGNsYXNzPSJtZC1yYWlzZWQgc2VjIiAgbmctY2xpY2s9ImltcG9ydFRyYWluaW5nKCRldmVudCk7IikgRWRpdGFyLS0+CiAgICAgICAgICAgICAgPG5nLW1kLWljb24gaWNvbj0ic2V0dGluZ3MiIHN0eWxlPSJmaWxsOmdyZXkiIHNpemU9IjMyIj48L25nLW1kLWljb24+PHNwYW4+RWRpdGFyPC9zcGFuPgogICAgICAgICAgICA8L3NlY3Rpb24+CiAgICAgICAgICAgIDxzZWN0aW9uIGNsYXNzPSJlZC1zZXJpZS1lZGl0LWRlbGV0ZSI+CiAgICAgICAgICAgICAgPCEtLSBtZC1idXR0b24oY2xhc3M9Im1kLXJhaXNlZCBzZWMiICBuZy1jbGljaz0iaW1wb3J0VHJhaW5pbmcoJGV2ZW50KTsiKSBFeGNsdWlyLS0+CiAgICAgICAgICAgICAgPG5nLW1kLWljb24gaWNvbj0iY2xvc2UiIHN0eWxlPSJmaWxsOmdyZXkiIHNpemU9IjM1Ij48L25nLW1kLWljb24+PHNwYW4+RXhjbHVpcjwvc3Bhbj4KICAgICAgICAgICAgPC9zZWN0aW9uPgogICAgICAgICAgPC9zZWN0aW9uPgogICAgICAgIDwvc2VjdGlvbj4KICAgICAgPC9zZWN0aW9uPgogICAgPC9zZWN0aW9uPgogIDwvc2VjdGlvbj4KPC9zZWN0aW9uPg==","base64"),
+		template: Buffer("CjxzZWN0aW9uIGNsYXNzPSJkcy1zZXJpZSI+CiAgPHNlY3Rpb24gY2xhc3M9ImRzLXNlcmllLXZpZXciPgogICAgPHNlY3Rpb24gY2xhc3M9ImRzLXNlcmllLXN0ZXAtY29udGVudCI+CiAgICAgIDxzZWN0aW9uIHN2LWhhbmRsZT0iIiBuZy1Nb3VzZWVudGVyPSJjbG9zZV9zZXJpZSgpOyIgY2xhc3M9ImRzLXNlcmllLXBvc2l0aW9uLXN0ZXAiPjxzcGFuPnt7cG9zaXRpb259fcKqPC9zcGFuPjwvc2VjdGlvbj4KICAgICAgPHNlY3Rpb24gY2xhc3M9ImRzLXNlcmllLWxpc3QiPgogICAgICAgIDxzZWN0aW9uIG5nLU1vdXNlZW50ZXI9Im9wZW5fc2VyaWUoKTsiIGNsYXNzPSJkcy1zZXJpZS1saXN0LWl0ZW0td3JhcCI+CiAgICAgICAgICA8IS0tIHNlY3Rpb24uZHMtc2VyaWUtbGlzdC1pdGVtKG5nLXJlcGVhdD0icGVyc29uIGluIFsyLDIsMyw0LDUsNl0gdHJhY2sgYnkgJGluZGV4IiktLT4KICAgICAgICAgIDwhLS0gc2VjdGlvbih1aS12aWV3PSJjb250ZW50TWFpbiIgbmctY2xhc3M9InsnY29udGVudC1tYWluJzohY29yZUV2ZW50cy5zZWFyY2gsICdjb250ZW50LW1haW4tb3BlbiBhbmltYXRlZCB6b29tSW5VcCc6IGNvcmVFdmVudHMuc2VhcmNofSIgKS0tPgogICAgICAgICAgPHNlY3Rpb24gbmctY2xhc3M9InsnZHMtc2VyaWUtbGlzdC1pdGVtLS1hY3RpdmUnOiBpc09wZW5lZH0iIG5nLXJlcGVhdD0icGVyc29uIGluIFs0LDUsNl0gdHJhY2sgYnkgJGluZGV4IiBjbGFzcz0iZHMtc2VyaWUtbGlzdC1pdGVtIj4KICAgICAgICAgICAgPHNlY3Rpb24gY2xhc3M9ImRzLXNlcmllLWV4ZXJjIj4KICAgICAgICAgICAgICA8IS0tIHNwYW4ge3tzZXJpZS5uYW1lfX0tLT48c3Bhbj5TdXBpbm8gUmV0byBBYmVydG88L3NwYW4+CiAgICAgICAgICAgIDwvc2VjdGlvbj4KICAgICAgICAgICAgPHNlY3Rpb24gY2xhc3M9ImRzLXNlcmllLXJlcHRzIj48c3Bhbj4xMCBSZXB0czwvc3Bhbj48L3NlY3Rpb24+CiAgICAgICAgICAgIDxzZWN0aW9uIGNsYXNzPSJkcy1zZXJpZS13ZWlnaHQiPjxzcGFuPjIwa2c8L3NwYW4+PC9zZWN0aW9uPgogICAgICAgICAgPC9zZWN0aW9uPgogICAgICAgIDwvc2VjdGlvbj4KICAgICAgICA8c2VjdGlvbiBuZy1zaG93PSJpc09wZW5lZCIgY2xhc3M9ImRzLXNlcmllLWVkaXQtd3JhcCI+CiAgICAgICAgICA8c2VjdGlvbiBuZy1jbGFzcz0ieydhbmltYXRlZCBmbGlwSW5YJzogaXNPcGVuZWR9IiBjbGFzcz0iZHMtc2VyaWUtZWRpdCI+CiAgICAgICAgICAgIDxzZWN0aW9uIGNsYXNzPSJkcy1zZXJpZS1lZGl0LWNsb25lIj4KICAgICAgICAgICAgICA8IS0tIG1kLWJ1dHRvbihjbGFzcz0ibWQtcmFpc2VkIHNlYyIgIG5nLWNsaWNrPSJpbXBvcnRUcmFpbmluZygkZXZlbnQpOyIpIENsb25hci0tPgogICAgICAgICAgICAgIDxuZy1tZC1pY29uIGljb249ImNvbnRlbnRfY29weSIgc3R5bGU9ImZpbGw6Z3JleSIgc2l6ZT0iMzAiPjwvbmctbWQtaWNvbj48c3Bhbj5EdXBsaWNhcjwvc3Bhbj4KICAgICAgICAgICAgPC9zZWN0aW9uPgogICAgICAgICAgICA8c2VjdGlvbiBjbGFzcz0iZHMtc2VyaWUtZWRpdC1lZGl0Ij4KICAgICAgICAgICAgICA8IS0tIG1kLWJ1dHRvbihjbGFzcz0ibWQtcmFpc2VkIHNlYyIgIG5nLWNsaWNrPSJpbXBvcnRUcmFpbmluZygkZXZlbnQpOyIpIEVkaXRhci0tPgogICAgICAgICAgICAgIDxuZy1tZC1pY29uIGljb249InNldHRpbmdzIiBzdHlsZT0iZmlsbDpncmV5IiBzaXplPSIzMiI+PC9uZy1tZC1pY29uPjxzcGFuPkVkaXRhcjwvc3Bhbj4KICAgICAgICAgICAgPC9zZWN0aW9uPgogICAgICAgICAgICA8c2VjdGlvbiBjbGFzcz0iZWQtc2VyaWUtZWRpdC1kZWxldGUiPgogICAgICAgICAgICAgIDwhLS0gbWQtYnV0dG9uKGNsYXNzPSJtZC1yYWlzZWQgc2VjIiAgbmctY2xpY2s9ImltcG9ydFRyYWluaW5nKCRldmVudCk7IikgRXhjbHVpci0tPgogICAgICAgICAgICAgIDxuZy1tZC1pY29uIGljb249ImNsb3NlIiBzdHlsZT0iZmlsbDpncmV5IiBzaXplPSIzNSI+PC9uZy1tZC1pY29uPjxzcGFuPkV4Y2x1aXI8L3NwYW4+CiAgICAgICAgICAgIDwvc2VjdGlvbj4KICAgICAgICAgIDwvc2VjdGlvbj4KICAgICAgICA8L3NlY3Rpb24+CiAgICAgIDwvc2VjdGlvbj4KICAgIDwvc2VjdGlvbj4KICA8L3NlY3Rpb24+Cjwvc2VjdGlvbj4=","base64"),
 		// transclude:true,
 		scope: {
 			serie: "=",
@@ -77065,6 +77065,33 @@ module.exports = function() {
 
 module.exports = function() {
 	return{
+		template: Buffer("CjxzZWN0aW9uIGNsYXNzPSJkcy1zZXJpZS1lZGl0Ij4KICA8cD5zZXJpZSBlZGl0YXI8L3A+Cjwvc2VjdGlvbj4=","base64"),
+		// transclude:true,
+		// scope: {
+		// 	serie: "=",
+		// 	position: "@"
+		// },
+		// require: "^dsExerciseEdit",
+		// link :function(scope, element,attrs,ctrl) {
+		// 	ctrl.registerSerie(scope);
+		// 	scope.isOpened= false;
+		// 	scope.open_serie= function () {
+		// 		ctrl.close_all();
+		// 		scope.isOpened = true;
+		// 	};
+		// 	scope.close_serie= function () {
+		// 		scope.isOpened = false;
+		// 	};
+		// }
+	};
+};
+
+}).call(this,require("buffer").Buffer)
+},{"buffer":1}],34:[function(require,module,exports){
+(function (Buffer){
+
+module.exports = function() {
+	return{
 		template: Buffer("CjxzZWN0aW9uIG5nLWNsYXNzPSJ7J2RzLXRyYWluaW5nLWRpc2FibGUnOiBkaXNhYmxlfSIgY2xhc3M9ImRzLXRyYWluaW5nIj4KICA8cCBjbGFzcz0iZHMtaGVhZGVyIj5UcmVpbm88L3A+CiAgPHAgY2xhc3M9ImRzLW5hbWUtdHJhaW5pbmciPnt7bmFtZX19PC9wPgo8L3NlY3Rpb24+","base64"),
 		scope: {
 			name: "@",
@@ -77075,17 +77102,18 @@ module.exports = function() {
 };
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":1}],34:[function(require,module,exports){
+},{"buffer":1}],35:[function(require,module,exports){
 module.exports = angular.module('appDirectives',[])
 		.directive('dsTraining', require('./directives/dsTrainingDirective.js'))
 		.directive('dsExercises', require('./directives/dsExercisesDirective.js'))
 		.directive('dsExercise', require('./directives/dsExerciseDirective.js'))
 		.directive('dsExerciseEdit', require('./directives/dsExerciseEditDirective.js'))
 		.directive('dsSerie', require('./directives/dsSerieDirective.js'))
+		.directive('dsSerieEdit', require('./directives/dsSerieEditDirective.js'))
 		.directive('dsPlan', require('./directives/dsPlanDirective.js'))
 		.directive('dsInfo', require('./directives/dsInfoDirective.js'));
 
-},{"./directives/dsExerciseDirective.js":27,"./directives/dsExerciseEditDirective.js":28,"./directives/dsExercisesDirective.js":29,"./directives/dsInfoDirective.js":30,"./directives/dsPlanDirective.js":31,"./directives/dsSerieDirective.js":32,"./directives/dsTrainingDirective.js":33}],35:[function(require,module,exports){
+},{"./directives/dsExerciseDirective.js":27,"./directives/dsExerciseEditDirective.js":28,"./directives/dsExercisesDirective.js":29,"./directives/dsInfoDirective.js":30,"./directives/dsPlanDirective.js":31,"./directives/dsSerieDirective.js":32,"./directives/dsSerieEditDirective.js":33,"./directives/dsTrainingDirective.js":34}],36:[function(require,module,exports){
 
 
 module.exports = function ($stateProvider,$animateProvider,$locationProvider,$urlRouterProvider,$breadcrumbProvider,ChartJsProvider, $mdThemingProvider) {
@@ -77153,7 +77181,7 @@ module.exports = function ($stateProvider,$animateProvider,$locationProvider,$ur
     });	
 };
 
-},{"./auth/authRoutes.js":37,"./core/coreRoutes.js":46,"./train/trainRoutes.js":60,"./user/userRoutes.js":64}],36:[function(require,module,exports){
+},{"./auth/authRoutes.js":38,"./core/coreRoutes.js":47,"./train/trainRoutes.js":61,"./user/userRoutes.js":65}],37:[function(require,module,exports){
 module.exports = function ($rootScope, $state,$stateParams,coreEventsService, authModelService) {
 	$rootScope.$on("$stateChangeStart", function (event, toState, toParams, fromState, fromParams) {
 		// console.log('$stateChangeStart to '+toState.to+'- fired when the transition begins. toState,toParams : \n',toState, toParams);
@@ -77196,7 +77224,7 @@ module.exports = function ($rootScope, $state,$stateParams,coreEventsService, au
 	// });
 };
 
-},{}],37:[function(require,module,exports){
+},{}],38:[function(require,module,exports){
 (function (Buffer){
 
 module.exports = {
@@ -77223,7 +77251,7 @@ module.exports = {
 
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":1}],38:[function(require,module,exports){
+},{"buffer":1}],39:[function(require,module,exports){
 module.exports = function ($scope,$timeout, authModelService,$firebaseArray) {
 	var userModel = $scope.userModel = authModelService;
 	// var URL = new Firebase("https://vitta.firebaseio.com/");
@@ -77249,12 +77277,12 @@ module.exports = function ($scope,$timeout, authModelService,$firebaseArray) {
 	};
 };
 
-},{}],39:[function(require,module,exports){
+},{}],40:[function(require,module,exports){
 module.exports = angular.module('auth',[])
 			.factory('authModelService', require('./services/authModelService.js'))
 			.controller('loginController', require('./controllers/loginController.js'));
 
-},{"./controllers/loginController.js":38,"./services/authModelService.js":40}],40:[function(require,module,exports){
+},{"./controllers/loginController.js":39,"./services/authModelService.js":41}],41:[function(require,module,exports){
 module.exports = function ($state,$cookies, RestangularCustom) {
 	var authModel = {
 		currentUser: {},
@@ -77322,7 +77350,7 @@ module.exports = function ($state,$cookies, RestangularCustom) {
 	return authModel;
 };
 
-},{}],41:[function(require,module,exports){
+},{}],42:[function(require,module,exports){
 module.exports = function($scope, coreEventsService, RestangularCustom, $mdDialog, $mdToast, $animate) {
 	var coreEvents = $scope.coreEvents = coreEventsService;
 	// $scope.user = RestangularCustom.all('usuario').getList().$object;
@@ -77355,7 +77383,7 @@ module.exports = function($scope, coreEventsService, RestangularCustom, $mdDialo
 
 };
 
-},{}],42:[function(require,module,exports){
+},{}],43:[function(require,module,exports){
 (function (Buffer){
 
 module.exports = function ($scope,$mdDialog, coreEventsService, authModelService) {
@@ -77392,7 +77420,7 @@ module.exports = function ($scope,$mdDialog, coreEventsService, authModelService
 };
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":1}],43:[function(require,module,exports){
+},{"buffer":1}],44:[function(require,module,exports){
 (function (Buffer){
 
 module.exports = function($scope,$mdDialog, $mdToast,$animate) {
@@ -77438,7 +77466,7 @@ module.exports = function($scope,$mdDialog, $mdToast,$animate) {
 };
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":1}],44:[function(require,module,exports){
+},{"buffer":1}],45:[function(require,module,exports){
 module.exports = function($scope, coreEventsService,$state,$stateParams,$mdDialog) {
 	$scope.onUCUploadComplete = function (info){
 		console.log(info);
@@ -77458,7 +77486,7 @@ module.exports = function($scope, coreEventsService,$state,$stateParams,$mdDialo
 	};
 };
 
-},{}],45:[function(require,module,exports){
+},{}],46:[function(require,module,exports){
 module.exports = function($scope, coreEventsService,$state,$stateParams,$mdDialog) {
 	$scope.duracao=2;
 	$scope.frequencia=3;
@@ -77474,7 +77502,7 @@ module.exports = function($scope, coreEventsService,$state,$stateParams,$mdDialo
 
 };
 
-},{}],46:[function(require,module,exports){
+},{}],47:[function(require,module,exports){
 (function (Buffer){
 
 module.exports = {
@@ -77523,7 +77551,7 @@ module.exports = {
 
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":1}],47:[function(require,module,exports){
+},{"buffer":1}],48:[function(require,module,exports){
 module.exports = angular.module('core',[])
 		.controller('headerController', require('./controllers/headerController.js'))
 		.controller('searchController', require('./controllers/searchController.js'))
@@ -77533,7 +77561,7 @@ module.exports = angular.module('core',[])
 		.factory('coreEventsService', require('./services/coreEventsService.js'))
 		.factory('RestangularCustom', require('./services/restangularCustom.js'));
 
-},{"./controllers/asideController.js":41,"./controllers/headerController.js":42,"./controllers/searchController.js":43,"./controllers/searchDialogController.js":44,"./controllers/trainDialogController.js":45,"./services/coreEventsService.js":48,"./services/restangularCustom.js":49}],48:[function(require,module,exports){
+},{"./controllers/asideController.js":42,"./controllers/headerController.js":43,"./controllers/searchController.js":44,"./controllers/searchDialogController.js":45,"./controllers/trainDialogController.js":46,"./services/coreEventsService.js":49,"./services/restangularCustom.js":50}],49:[function(require,module,exports){
 module.exports = function () {
 	var eventsService = {
 		search: false,
@@ -77561,7 +77589,7 @@ module.exports = function () {
 	return eventsService;
 };
 
-},{}],49:[function(require,module,exports){
+},{}],50:[function(require,module,exports){
 module.exports = function ($state,$location,Restangular) {
 	return Restangular.withConfig(function(RestangularConfigurer){
 		RestangularConfigurer.setErrorInterceptor(function (response) {
@@ -77600,7 +77628,7 @@ module.exports = function ($state,$location,Restangular) {
 	});
 };
 
-},{}],50:[function(require,module,exports){
+},{}],51:[function(require,module,exports){
 module.exports = function($scope, coreEventsService,$state,$stateParams,$mdDialog) {
 	$scope.hide = function() {
 		$mdDialog.hide();
@@ -77613,13 +77641,13 @@ module.exports = function($scope, coreEventsService,$state,$stateParams,$mdDialo
 	};
 };
 
-},{}],51:[function(require,module,exports){
+},{}],52:[function(require,module,exports){
 module.exports = function($scope) {
 	$scope.duracao = 3;
 	$scope.frequencia =4;
 };
 
-},{}],52:[function(require,module,exports){
+},{}],53:[function(require,module,exports){
 (function (Buffer){
 
 module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$stateParams,$mdDialog) {
@@ -77837,17 +77865,17 @@ module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$sta
 };
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":1}],53:[function(require,module,exports){
+},{"buffer":1}],54:[function(require,module,exports){
 module.exports = function($scope) {
 
 };
 
-},{}],54:[function(require,module,exports){
+},{}],55:[function(require,module,exports){
 module.exports = function ($scope) {
 
 };
 
-},{}],55:[function(require,module,exports){
+},{}],56:[function(require,module,exports){
 module.exports = function($scope, coreEventsService,$state,$stateParams,$mdDialog) {
 	$scope.hide = function() {
 		$mdDialog.hide();
@@ -78092,7 +78120,7 @@ module.exports = function($scope, coreEventsService,$state,$stateParams,$mdDialo
 
 };
 
-},{}],56:[function(require,module,exports){
+},{}],57:[function(require,module,exports){
 module.exports =  function($scope,$mdBottomSheet,$timeout, coreEventsService,$state,$stateParams) {
 	$scope.params = $stateParams;
 	$scope.state = $state.current;
@@ -78100,9 +78128,9 @@ module.exports =  function($scope,$mdBottomSheet,$timeout, coreEventsService,$st
 	// $scope.eventsService= eventsService;
 };
 
-},{}],57:[function(require,module,exports){
-arguments[4][53][0].apply(exports,arguments)
-},{"dup":53}],58:[function(require,module,exports){
+},{}],58:[function(require,module,exports){
+arguments[4][54][0].apply(exports,arguments)
+},{"dup":54}],59:[function(require,module,exports){
 module.exports = function($scope) {
 	$scope.train_menu= {menu: false};
 	$scope.close_train_menu = function(){
@@ -78114,7 +78142,7 @@ module.exports = function($scope) {
 
 };
 
-},{}],59:[function(require,module,exports){
+},{}],60:[function(require,module,exports){
 module.exports = angular.module('train',[])
 		.controller('listTrainingController', require('./controllers/listTrainingController.js'))
 		.controller('trainingTrainingController', require('./controllers/trainingTrainingController.js'))
@@ -78126,7 +78154,7 @@ module.exports = angular.module('train',[])
 		.controller('insertTrainingDialogController', require('./controllers/insertTrainingDialogController.js'))
 		.controller('ImportDialogController', require('./controllers/ImportDialogController.js'));
 
-},{"./controllers/ImportDialogController.js":50,"./controllers/addPlanController.js":51,"./controllers/addTrainingController.js":52,"./controllers/collectionTrainingController.js":53,"./controllers/historyTrainingController.js":54,"./controllers/insertTrainingDialogController.js":55,"./controllers/listTrainingController.js":56,"./controllers/plansController.js":57,"./controllers/trainingTrainingController.js":58}],60:[function(require,module,exports){
+},{"./controllers/ImportDialogController.js":51,"./controllers/addPlanController.js":52,"./controllers/addTrainingController.js":53,"./controllers/collectionTrainingController.js":54,"./controllers/historyTrainingController.js":55,"./controllers/insertTrainingDialogController.js":56,"./controllers/listTrainingController.js":57,"./controllers/plansController.js":58,"./controllers/trainingTrainingController.js":59}],61:[function(require,module,exports){
 (function (Buffer){
 
 module.exports = {
@@ -78245,22 +78273,22 @@ module.exports = {
 };
 
 }).call(this,require("buffer").Buffer)
-},{"buffer":1}],61:[function(require,module,exports){
+},{"buffer":1}],62:[function(require,module,exports){
 module.exports = function($scope) {
  $scope.labels = ["Dias Decorridos", "Dias Restantes"];
   $scope.data = [14,7];
 };
 
-},{}],62:[function(require,module,exports){
-arguments[4][53][0].apply(exports,arguments)
-},{"dup":53}],63:[function(require,module,exports){
+},{}],63:[function(require,module,exports){
+arguments[4][54][0].apply(exports,arguments)
+},{"dup":54}],64:[function(require,module,exports){
 module.exports = angular.module('user',[])
 		.controller('planController', require('./controllers/planController.js'))
 		.controller('scheduleController', require('./controllers/scheduleController.js'));
 		// .factory('userModel', require('./services/userModel.js'))
 		// .factory('RestangularCustom', require('./services/restangularCustom.js'));
 
-},{"./controllers/planController.js":61,"./controllers/scheduleController.js":62}],64:[function(require,module,exports){
+},{"./controllers/planController.js":62,"./controllers/scheduleController.js":63}],65:[function(require,module,exports){
 (function (Buffer){
 
 module.exports = {

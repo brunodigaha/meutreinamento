@@ -13,6 +13,8 @@ section.ds-exercise-edit
 			ul(sv-root="serie" sv-part="exercise")
 				li(ng-repeat="serie in exercise" sv-element="serie")
 					ds-serie(serie="{name:'bruno'}" position="{{$index+1}}")
+		section.ds-exercise-edit-serie
+			ds-serie-edit
 		section.insert-details
 			// section(sv-root="plan" sv-part="plans")
 			// 	section(ng-repeat="plan in plans" sv-element="plan")

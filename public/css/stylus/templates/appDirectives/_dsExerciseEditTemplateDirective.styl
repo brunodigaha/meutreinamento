@@ -31,6 +31,7 @@
 		padding-top 20px
 		padding-bottom 20px
 		min-height 60vh
+		position relative
 		border-left 2px solid palette('Blue Grey','300')
 		border-right 2px solid palette('Blue Grey','300')
 		border-bottom 2px solid palette('Blue Grey','300')
@@ -51,21 +52,31 @@
 				padding 0
 				font-size 100%
 				list-style none
-				// .sv-helper
-				// 	font-size 120%
-				// 	color black
-				// 	line-height 2.4em
-				// 	+desktop()
-				// 		line-height 2.2em
-				// 	background-color palette('Grey','100')
-				// 	// border 1px solid palette('Blue Grey','400')
-				// 	opacity 0.9
-				// .sv-candidate
-				// 	opacity 0.5
+				.sv-helper
+					font-size 115%
+					color black
+					// line-height 2.4em
+					// +desktop()
+					// 	line-height 2.2em
+					// background-color palette('Grey','100')
+					// border 1px solid palette('Blue Grey','400')
+					opacity 0.9
+				.sv-candidate
+					opacity 0.5
 				li
 					col(12/12,gutter:0)
 					box-sizing border-box
 					// margin-bottom .5em
+		.ds-exercise-edit-serie
+			col(11.5/12,gutter:0)
+			box-sizing border-box
+			position absolute
+			top 0
+			left .7em
+			height 100%
+			padding 10px
+			background-color red
+			// display none
 		.insert-details
 			col(12/12,gutter:0)
 			box-sizing border-box
