@@ -76945,6 +76945,18 @@ module.exports = function() {
 			exercise: "=",
 			plans:"="
 		},
+		controller: function($scope,$element,$attrs){
+			// console.log($scope.exercicios);
+			var series = [];
+			this.registerSerie = function(serie){
+				series.push(serie);
+			};
+			this.close_all = function (){
+				series.forEach(function(serie){
+					serie.isOpened = false;
+				});
+			};
+		}
 		// require: "^dsExercises",
 		// link :function(scope, element,attrs,ctrl) {
 		// 	ctrl.registerExercise(scope);
@@ -77026,26 +77038,24 @@ module.exports = function() {
 
 module.exports = function() {
 	return{
-		template: Buffer("CjxzZWN0aW9uIGNsYXNzPSJkcy1zZXJpZSI+CiAgPHNlY3Rpb24gY2xhc3M9ImRzLXNlcmllLXZpZXciPgogICAgPHNlY3Rpb24gY2xhc3M9ImRzLXNlcmllLXN0ZXAtY29udGVudCI+CiAgICAgIDxzZWN0aW9uIHN2LWhhbmRsZT0iIiBjbGFzcz0iZHMtc2VyaWUtcG9zaXRpb24tc3RlcCI+PHNwYW4+e3twb3NpdGlvbn19wqo8L3NwYW4+PC9zZWN0aW9uPgogICAgICA8c2VjdGlvbiBjbGFzcz0iZHMtc2VyaWUtbGlzdCI+CiAgICAgICAgPHNlY3Rpb24gbmctcmVwZWF0PSJwZXJzb24gaW4gWzIsMiwzLDQsNSw1XSB0cmFjayBieSAkaW5kZXgiIGNsYXNzPSJkcy1zZXJpZS1saXN0LWl0ZW0gZHMtc2VyaWUtbGlzdC1pdGVtLS1hY3RpdmUiPgogICAgICAgICAgPHNlY3Rpb24gY2xhc3M9ImRzLXNlcmllLWV4ZXJjIj48c3Bhbj57e3NlcmllLm5hbWV9fTwvc3Bhbj48L3NlY3Rpb24+CiAgICAgICAgICA8c2VjdGlvbiBjbGFzcz0iZHMtc2VyaWUtcmVwdHMiPjxzcGFuPjEwIFJlcHRzPC9zcGFuPjwvc2VjdGlvbj4KICAgICAgICAgIDxzZWN0aW9uIGNsYXNzPSJkcy1zZXJpZS13ZWlnaHQiPjxzcGFuPjIwa2c8L3NwYW4+PC9zZWN0aW9uPgogICAgICAgIDwvc2VjdGlvbj4KICAgICAgICA8c2VjdGlvbiBjbGFzcz0iZHMtc2VyaWUtZWRpdCI+CiAgICAgICAgICA8c2VjdGlvbiBjbGFzcz0iZHMtc2VyaWUtZWRpdC1jbG9uZSI+CiAgICAgICAgICAgIDwhLS0gbWQtYnV0dG9uKGNsYXNzPSJtZC1yYWlzZWQgc2VjIiAgbmctY2xpY2s9ImltcG9ydFRyYWluaW5nKCRldmVudCk7IikgQ2xvbmFyLS0+CiAgICAgICAgICAgIDxuZy1tZC1pY29uIGljb249ImNvbnRlbnRfY29weSIgc3R5bGU9ImZpbGw6Z3JleSIgc2l6ZT0iMzAiPjwvbmctbWQtaWNvbj5jbG9uYXIKICAgICAgICAgIDwvc2VjdGlvbj4KICAgICAgICAgIDxzZWN0aW9uIGNsYXNzPSJkcy1zZXJpZS1lZGl0LWVkaXQiPgogICAgICAgICAgICA8IS0tIG1kLWJ1dHRvbihjbGFzcz0ibWQtcmFpc2VkIHNlYyIgIG5nLWNsaWNrPSJpbXBvcnRUcmFpbmluZygkZXZlbnQpOyIpIENsb25hci0tPgogICAgICAgICAgICA8bmctbWQtaWNvbiBpY29uPSJzZXR0aW5ncyIgc3R5bGU9ImZpbGw6Z3JleSIgc2l6ZT0iMzEiPjwvbmctbWQtaWNvbj5FZGl0YXIKICAgICAgICAgIDwvc2VjdGlvbj4KICAgICAgICAgIDxzZWN0aW9uIGNsYXNzPSJlZC1zZXJpZS1lZGl0LWRlbGV0ZSI+CiAgICAgICAgICAgIDwhLS0gbWQtYnV0dG9uKGNsYXNzPSJtZC1yYWlzZWQgc2VjIiAgbmctY2xpY2s9ImltcG9ydFRyYWluaW5nKCRldmVudCk7IikgQ2xvbmFyLS0+CiAgICAgICAgICAgIDxuZy1tZC1pY29uIGljb249ImNsb3NlIiBzdHlsZT0iZmlsbDpncmV5IiBzaXplPSIzNCI+PC9uZy1tZC1pY29uPkV4Y2x1aXIKICAgICAgICAgIDwvc2VjdGlvbj4KICAgICAgICA8L3NlY3Rpb24+CiAgICAgIDwvc2VjdGlvbj4KICAgIDwvc2VjdGlvbj4KICA8L3NlY3Rpb24+Cjwvc2VjdGlvbj4=","base64"),
+		template: Buffer("CjxzZWN0aW9uIGNsYXNzPSJkcy1zZXJpZSI+CiAgPHNlY3Rpb24gY2xhc3M9ImRzLXNlcmllLXZpZXciPgogICAgPHNlY3Rpb24gY2xhc3M9ImRzLXNlcmllLXN0ZXAtY29udGVudCI+CiAgICAgIDxzZWN0aW9uIHN2LWhhbmRsZT0iIiBjbGFzcz0iZHMtc2VyaWUtcG9zaXRpb24tc3RlcCI+PHNwYW4+e3twb3NpdGlvbn19wqo8L3NwYW4+PC9zZWN0aW9uPgogICAgICA8c2VjdGlvbiBjbGFzcz0iZHMtc2VyaWUtbGlzdCI+CiAgICAgICAgPHNlY3Rpb24gbmctTW91c2VlbnRlcj0ib3Blbl9zZXJpZSgpOyIgY2xhc3M9ImRzLXNlcmllLWxpc3QtaXRlbS13cmFwIj4KICAgICAgICAgIDwhLS0gc2VjdGlvbi5kcy1zZXJpZS1saXN0LWl0ZW0obmctcmVwZWF0PSJwZXJzb24gaW4gWzIsMiwzLDQsNSw2XSB0cmFjayBieSAkaW5kZXgiKS0tPgogICAgICAgICAgPCEtLSBzZWN0aW9uKHVpLXZpZXc9ImNvbnRlbnRNYWluIiBuZy1jbGFzcz0ieydjb250ZW50LW1haW4nOiFjb3JlRXZlbnRzLnNlYXJjaCwgJ2NvbnRlbnQtbWFpbi1vcGVuIGFuaW1hdGVkIHpvb21JblVwJzogY29yZUV2ZW50cy5zZWFyY2h9IiApLS0+CiAgICAgICAgICA8c2VjdGlvbiBuZy1jbGFzcz0ieydkcy1zZXJpZS1saXN0LWl0ZW0tLWFjdGl2ZSc6IGlzT3BlbmVkfSIgbmctcmVwZWF0PSJwZXJzb24gaW4gWzQsNSw2XSB0cmFjayBieSAkaW5kZXgiIGNsYXNzPSJkcy1zZXJpZS1saXN0LWl0ZW0iPgogICAgICAgICAgICA8c2VjdGlvbiBjbGFzcz0iZHMtc2VyaWUtZXhlcmMiPgogICAgICAgICAgICAgIDwhLS0gc3BhbiB7e3NlcmllLm5hbWV9fS0tPjxzcGFuPlN1cGlubyBSZXRvIEFiZXJ0bzwvc3Bhbj4KICAgICAgICAgICAgPC9zZWN0aW9uPgogICAgICAgICAgICA8c2VjdGlvbiBjbGFzcz0iZHMtc2VyaWUtcmVwdHMiPjxzcGFuPjEwIFJlcHRzPC9zcGFuPjwvc2VjdGlvbj4KICAgICAgICAgICAgPHNlY3Rpb24gY2xhc3M9ImRzLXNlcmllLXdlaWdodCI+PHNwYW4+MjBrZzwvc3Bhbj48L3NlY3Rpb24+CiAgICAgICAgICA8L3NlY3Rpb24+CiAgICAgICAgPC9zZWN0aW9uPgogICAgICAgIDxzZWN0aW9uIG5nLXNob3c9ImlzT3BlbmVkIiBjbGFzcz0iZHMtc2VyaWUtZWRpdC13cmFwIj4KICAgICAgICAgIDxzZWN0aW9uIG5nLWNsYXNzPSJ7J2FuaW1hdGVkIGZsaXBJblgnOiBpc09wZW5lZH0iIGNsYXNzPSJkcy1zZXJpZS1lZGl0Ij4KICAgICAgICAgICAgPHNlY3Rpb24gY2xhc3M9ImRzLXNlcmllLWVkaXQtY2xvbmUiPgogICAgICAgICAgICAgIDwhLS0gbWQtYnV0dG9uKGNsYXNzPSJtZC1yYWlzZWQgc2VjIiAgbmctY2xpY2s9ImltcG9ydFRyYWluaW5nKCRldmVudCk7IikgQ2xvbmFyLS0+CiAgICAgICAgICAgICAgPG5nLW1kLWljb24gaWNvbj0iY29udGVudF9jb3B5IiBzdHlsZT0iZmlsbDpncmV5IiBzaXplPSIzMCI+PC9uZy1tZC1pY29uPjxzcGFuPkNsb25hcjwvc3Bhbj4KICAgICAgICAgICAgPC9zZWN0aW9uPgogICAgICAgICAgICA8c2VjdGlvbiBjbGFzcz0iZHMtc2VyaWUtZWRpdC1lZGl0Ij4KICAgICAgICAgICAgICA8IS0tIG1kLWJ1dHRvbihjbGFzcz0ibWQtcmFpc2VkIHNlYyIgIG5nLWNsaWNrPSJpbXBvcnRUcmFpbmluZygkZXZlbnQpOyIpIEVkaXRhci0tPgogICAgICAgICAgICAgIDxuZy1tZC1pY29uIGljb249InNldHRpbmdzIiBzdHlsZT0iZmlsbDpncmV5IiBzaXplPSIzMiI+PC9uZy1tZC1pY29uPjxzcGFuPkVkaXRhcjwvc3Bhbj4KICAgICAgICAgICAgPC9zZWN0aW9uPgogICAgICAgICAgICA8c2VjdGlvbiBjbGFzcz0iZWQtc2VyaWUtZWRpdC1kZWxldGUiPgogICAgICAgICAgICAgIDwhLS0gbWQtYnV0dG9uKGNsYXNzPSJtZC1yYWlzZWQgc2VjIiAgbmctY2xpY2s9ImltcG9ydFRyYWluaW5nKCRldmVudCk7IikgRXhjbHVpci0tPgogICAgICAgICAgICAgIDxuZy1tZC1pY29uIGljb249ImNsb3NlIiBzdHlsZT0iZmlsbDpncmV5IiBzaXplPSIzNSI+PC9uZy1tZC1pY29uPjxzcGFuPkV4Y2x1aXI8L3NwYW4+CiAgICAgICAgICAgIDwvc2VjdGlvbj4KICAgICAgICAgIDwvc2VjdGlvbj4KICAgICAgICA8L3NlY3Rpb24+CiAgICAgIDwvc2VjdGlvbj4KICAgIDwvc2VjdGlvbj4KICA8L3NlY3Rpb24+Cjwvc2VjdGlvbj4=","base64"),
 		// transclude:true,
 		scope: {
 			serie: "=",
 			position: "@"
 		},
-		// require: "^dsExercises",
-		// link :function(scope, element,attrs,ctrl) {
-		// 	ctrl.registerExercise(scope);
-		// 	scope.open_exerc= function () {
-		// 		ctrl.close_all();
-		// 		scope.isOpened = true;
-		// 	};
-		// 	scope.remove = function(exercicio){
-		// 		scope.$emit('remove_exercise',exercicio);
-		// 	};
-		// 	scope.close_exerc= function () {
-		// 		scope.isOpened = false;
-		// 	};
-		// }
+		require: "^dsExerciseEdit",
+		link :function(scope, element,attrs,ctrl) {
+			ctrl.registerSerie(scope);
+			scope.isOpened= false;
+			scope.open_serie= function () {
+				ctrl.close_all();
+				scope.isOpened = true;
+			};
+			scope.close_serie= function () {
+				scope.isOpened = false;
+			};
+		}
 	};
 };
 

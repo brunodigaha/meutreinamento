@@ -4,23 +4,31 @@
     <section class="ds-serie-step-content">
       <section sv-handle="" class="ds-serie-position-step"><span>{{position}}ª</span></section>
       <section class="ds-serie-list">
-        <section ng-repeat="person in [2,2,3,4,5,5] track by $index" class="ds-serie-list-item ds-serie-list-item--active">
-          <section class="ds-serie-exerc"><span>{{serie.name}}</span></section>
-          <section class="ds-serie-repts"><span>10 Repts</span></section>
-          <section class="ds-serie-weight"><span>20kg</span></section>
+        <section ng-Mouseenter="open_serie();" class="ds-serie-list-item-wrap">
+          <!-- section.ds-serie-list-item(ng-repeat="person in [2,2,3,4,5,6] track by $index")-->
+          <!-- section(ui-view="contentMain" ng-class="{'content-main':!coreEvents.search, 'content-main-open animated zoomInUp': coreEvents.search}" )-->
+          <section ng-class="{'ds-serie-list-item--active': isOpened}" ng-repeat="person in [4,5,6] track by $index" class="ds-serie-list-item">
+            <section class="ds-serie-exerc">
+              <!-- span {{serie.name}}--><span>Supino Reto Aberto</span>
+            </section>
+            <section class="ds-serie-repts"><span>10 Repts</span></section>
+            <section class="ds-serie-weight"><span>20kg</span></section>
+          </section>
         </section>
-        <section class="ds-serie-edit">
-          <section class="ds-serie-edit-clone">
-            <!-- md-button(class="md-raised sec"  ng-click="importTraining($event);") Clonar-->
-            <ng-md-icon icon="content_copy" style="fill:grey" size="30"></ng-md-icon>clonar
-          </section>
-          <section class="ds-serie-edit-edit">
-            <!-- md-button(class="md-raised sec"  ng-click="importTraining($event);") Clonar-->
-            <ng-md-icon icon="settings" style="fill:grey" size="31"></ng-md-icon>Editar
-          </section>
-          <section class="ed-serie-edit-delete">
-            <!-- md-button(class="md-raised sec"  ng-click="importTraining($event);") Clonar-->
-            <ng-md-icon icon="close" style="fill:grey" size="34"></ng-md-icon>Excluir
+        <section ng-show="isOpened" class="ds-serie-edit-wrap">
+          <section ng-class="{'animated flipInX': isOpened}" class="ds-serie-edit">
+            <section class="ds-serie-edit-clone">
+              <!-- md-button(class="md-raised sec"  ng-click="importTraining($event);") Clonar-->
+              <ng-md-icon icon="content_copy" style="fill:grey" size="30"></ng-md-icon><span>Clonar</span>
+            </section>
+            <section class="ds-serie-edit-edit">
+              <!-- md-button(class="md-raised sec"  ng-click="importTraining($event);") Editar-->
+              <ng-md-icon icon="settings" style="fill:grey" size="32"></ng-md-icon><span>Editar</span>
+            </section>
+            <section class="ed-serie-edit-delete">
+              <!-- md-button(class="md-raised sec"  ng-click="importTraining($event);") Excluir-->
+              <ng-md-icon icon="close" style="fill:grey" size="35"></ng-md-icon><span>Excluir</span>
+            </section>
           </section>
         </section>
       </section>

@@ -7,6 +7,18 @@ module.exports = function() {
 			exercise: "=",
 			plans:"="
 		},
+		controller: function($scope,$element,$attrs){
+			// console.log($scope.exercicios);
+			var series = [];
+			this.registerSerie = function(serie){
+				series.push(serie);
+			};
+			this.close_all = function (){
+				series.forEach(function(serie){
+					serie.isOpened = false;
+				});
+			};
+		}
 		// require: "^dsExercises",
 		// link :function(scope, element,attrs,ctrl) {
 		// 	ctrl.registerExercise(scope);

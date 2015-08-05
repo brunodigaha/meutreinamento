@@ -7,19 +7,17 @@ module.exports = function() {
 			serie: "=",
 			position: "@"
 		},
-		// require: "^dsExercises",
-		// link :function(scope, element,attrs,ctrl) {
-		// 	ctrl.registerExercise(scope);
-		// 	scope.open_exerc= function () {
-		// 		ctrl.close_all();
-		// 		scope.isOpened = true;
-		// 	};
-		// 	scope.remove = function(exercicio){
-		// 		scope.$emit('remove_exercise',exercicio);
-		// 	};
-		// 	scope.close_exerc= function () {
-		// 		scope.isOpened = false;
-		// 	};
-		// }
+		require: "^dsExerciseEdit",
+		link :function(scope, element,attrs,ctrl) {
+			ctrl.registerSerie(scope);
+			scope.isOpened= false;
+			scope.open_serie= function () {
+				ctrl.close_all();
+				scope.isOpened = true;
+			};
+			scope.close_serie= function () {
+				scope.isOpened = false;
+			};
+		}
 	};
 };
