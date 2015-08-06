@@ -22,7 +22,15 @@ button, svg, ng-md-icon, img, .admin-name, span, md-chip, section, p
 		outline 0
 button.md-button
 	text-transform none
+	// font-weight bold
+button.md-button.sec
+	margin-right 20px 
+	span
+		color palette('Light Blue', '500') 
 // a.md-button.md-primary.md-raised, a.md-button.md-primary.md-fab, .md-button.md-primary.md-raised, .md-button.md-primary.md-fab
+md-dialog.md-transition-in
+	-webkit-transform none !important
+	transform none !important
 md-dialog
 	max-width 95%
 	max-height 93%
@@ -33,6 +41,13 @@ md-dialog
 	h1
 		color white
 		font-weight bold
+	// md-dialog-content
+	// 	box-shadow  0px -1px 2px rgba(50, 50, 50, 0.12)
+	.md-actions
+		border-top 1px solid palette('Grey','100')
+		background-color palette('Grey', '50')
+		.button-silver
+			background-color rgba(158,158,158,0.2)
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak
 	display none !important
 body
