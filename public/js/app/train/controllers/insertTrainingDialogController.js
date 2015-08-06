@@ -5,6 +5,12 @@ module.exports = function($scope, coreEventsService,$state,$stateParams,$mdDialo
 	$scope.cancel = function() {
 		$mdDialog.cancel();
 	};
+	$scope.close_dialog = function(){
+		console.log(coreEventsService);
+		coreEventsService.open_modal();  
+		console.log(coreEventsService);
+		$mdDialog.cancel();
+	};
 	$scope.answer = function(answer) {
 		$mdDialog.hide(answer);
 	};

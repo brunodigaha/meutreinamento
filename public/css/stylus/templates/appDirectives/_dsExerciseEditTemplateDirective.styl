@@ -2,7 +2,6 @@
 	col(12/12,gutter:0)
 	box-sizing border-box
 	position relative
-	// padding 10px
 	.ds-exercise-edit-header
 		col(12/12,gutter:0)
 		background-color palette('Blue Grey','400')
@@ -17,7 +16,6 @@
 				font-size 120%
 				color white
 				line-height 30px
-				// font-weight bold
 		.ds-exercise-edit-series
 			col(2/12,gutter:0)
 			text-align left
@@ -29,11 +27,7 @@
 		box-sizing border-box
 		padding-top 20px
 		padding-bottom 20px
-		// min-height 60vh
 		position relative
-		// border-left 2px solid palette('Blue Grey','300')
-		// border-right 2px solid palette('Blue Grey','300')
-		// border-bottom 2px solid palette('Blue Grey','300')
 		md-content.series
 			min-height 35vh
 			max-height 55vh 
@@ -55,31 +49,34 @@
 				.sv-helper
 					font-size 115%
 					color black
-					// line-height 2.4em
-					// +desktop()
-					// 	line-height 2.2em
-					// background-color palette('Grey','100')
-					// border 1px solid palette('Blue Grey','400')
 					opacity 0.9
 				.sv-candidate
 					opacity 0.5
 				li
 					col(12/12,gutter:0)
 					box-sizing border-box
-					// margin-bottom .5em
-		.ds-exercise-edit-serie
-			col(11/12,gutter:0)
+		.ds-exercise-edit-serie-background
+			col(12/12,gutter:0)
 			box-sizing border-box
 			position absolute
-			top -3em
-			left 1.5em
-			// height 100%
-			// padding 10px
-			background-color white
+			top 0
+			left 0
+			height 100%
+			background-color palette('Grey','200')
+			opacity .8
 			z-index 2
-			border 1px solid palette('Grey','300')
-			box-shadow 0 3px 8px 3px rgba(0,0,0,.2)
-			// display none
+		.ds-exercise-edit-serie
+			col(10.5/12,gutter:0)
+			box-sizing border-box
+			position absolute
+			top 3em
+			// top -3em
+			left 3em
+			// height 100%
+			background-color white
+			z-index 3
+			// border 1px solid palette('Grey','300')
+			box-shadow 0 3px 16px 5px rgba(0,0,0,.28)
 		.insert-details
 			col(12/12,gutter:0)
 			box-sizing border-box

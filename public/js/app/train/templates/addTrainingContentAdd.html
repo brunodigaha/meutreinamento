@@ -14,7 +14,7 @@
           <md-button ng-click="importTraining($event);" class="md-raised sec">Importar Treino</md-button>
           <md-button ng-click="insertTraining($event);" class="md-raised md-primary">Inserir Exercício</md-button>
         </section>
-        <section class="content-add">
+        <section ng-if="coreEvents.modal;" class="content-add">
           <!-- section(sv-root="" sv-part="plans" style="z-index:444;")-->
           <!-- 	section(ng-repeat="plan in plans" sv-element="")-->
           <!-- 		p {{plan}}-->

@@ -13,6 +13,7 @@ section.ds-exercise-edit
 			ul(sv-root="serie" sv-part="exercise")
 				li(ng-repeat="serie in exercise" sv-element="serie")
 					ds-serie(serie="{name:'bruno'}" dial="edit_serie()" position="{{$index+1}}")
+		section.ds-exercise-edit-serie-background(ng-if="exerciseEdit.edit")
 		section.ds-exercise-edit-serie(ng-if="exerciseEdit.edit")
 			// ds-serie-edit(dial="edit_serie()")
 			ds-serie-edit

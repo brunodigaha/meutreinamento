@@ -130,6 +130,13 @@
 						max-height 35vh
 					+tablet(orientation: portrait)
 						max-height 35vh
+					.sv-helper
+						font-size 115%
+						background-color palette('Grey','100')
+						color black
+						opacity 0.9
+					.sv-candidate
+						opacity 0.5
 					.ds-serie-edit-exercise
 						col(11/12,gutter:0)
 						shift(.5/12,gutter:0)
@@ -138,7 +145,7 @@
 							shift(1/12,gutter:0)
 						box-sizing border-box
 						border 2px solid palette('Blue Grey','300')
-						background-color white
+						// background-color white
 						margin-top 1%
 						margin-bottom 1%
 						cursor pointer
@@ -179,12 +186,14 @@
 				col(12/12,gutter:0)
 				box-sizing border-box
 				border-top 1px solid palette('Blue Grey','100')
+				border-bottom 1px solid palette('Blue Grey','100')
 				background-color palette('Blue Grey','50')
 				.ds-serie-edit-exer-select
 					col(10.5/12,gutter:0)
 					text-align center
 					h4
 						margin 0
+						color palette('Grey','800')
 				.ds-serie-edit-slider-content
 					col(10.5/12,gutter:0)
 					span.md-body-1
@@ -208,7 +217,7 @@
 		col(12/12,gutter:0)
 		box-sizing border-box
 		line-height 45px
-		// background-color palette('Blue','500')
+		// background-color palette('Grey','50')
 		+desktop()
 			line-height 55px
 		text-align right

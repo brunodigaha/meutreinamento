@@ -86,7 +86,13 @@
 				padding 15px
 				.ds-step-content
 					col(12/12,gutter:0)
+					box-sizing border-box
 					margin-bottom 8px
+					padding-right 1.5em
+					// padding-left 1em
+					+desktop()
+						padding-right 3.5em
+						padding-left 2em
 					.ds-position-step
 						col(1/12,gutter:0)
 						position relative
@@ -99,17 +105,20 @@
 					.ds-list-exerc
 						col(11/12,gutter:0)
 						box-sizing border-box
-						border 1px solid palette('Blue Grey','300')
+						border 1px solid palette('Blue Grey','200')
 						&:hover
-							background palette('Grey','50')
+							background-color palette('Blue Grey','50')
+						// color black
 						.ds-list-exerc-item
-							col(11/12,gutter:0)
-							padding 3px
+							col(12/12,gutter:0)
+							box-sizing border-box
+							padding 4px
 							line-height 20px
 							vertical-align middle
+							// border 1px solid palette('Blue Grey','300')
+							// background-color palette('Grey','50')
 							+desktop()
-								padding 3px
-								line-height 20px
+								padding 6px
 							.ds-exer-name
 								col(7/12,gutter:0)
 								box-sizing border-box

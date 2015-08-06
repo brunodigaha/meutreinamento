@@ -17,8 +17,8 @@ md-dialog(flex="90" aria-label="insertir treino")
 			// 		span Dois exercícios executados sem descanso.
 	.md-actions(layout="row")
 		span(flex="")
-		md-button.md-primary(ng-click="answer('not useful')")
-			| Cancelar
-		md-button.md-primary.button-silver
+		// md-button.md-primary(ng-click="answer('not useful')")
+		// 	| Cancelar
+		md-button.md-primary.button-silver(ng-click="close_dialog();")
 			| Inserir Exercício
 

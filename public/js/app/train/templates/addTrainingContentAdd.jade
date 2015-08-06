@@ -10,7 +10,7 @@ section.addtraining-wrap
 						// ng-md-icon(icon="expand_more" style="fill:white"  size="27" ng-click="true")
 						md-button(class="md-raised sec"  ng-click="importTraining($event);") Importar Treino
 						md-button(class="md-raised md-primary" ng-click="insertTraining($event);") Inserir Exercício
-					section.content-add
+					section.content-add(ng-if="coreEvents.modal;")
 						// section(sv-root="" sv-part="plans" style="z-index:444;")
 						// 	section(ng-repeat="plan in plans" sv-element="")
 						// 		p {{plan}}
