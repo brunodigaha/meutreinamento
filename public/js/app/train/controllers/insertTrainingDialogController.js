@@ -15,8 +15,6 @@ module.exports = function($scope, coreEventsService,$state,$stateParams,$mdDialo
 		"Piramide",
 		"Triset"
 	];
-	$scope.serie= 3;
-	$scope.descanso=20;
 	$scope.list_exercicios = [
 		{
 			grupo: "Bíceps",

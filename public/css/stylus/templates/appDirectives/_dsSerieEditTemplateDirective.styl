@@ -1,3 +1,43 @@
 .ds-serie-edit
 	col(12/12,gutter:0)
-	background blue
+	box-sizing border-box
+	border 2px solid palette('Blue Grey','400')
+	.ds-serie-edit-wrap
+		col(12/12,gutter:0)
+		.ds-serie-edit-select
+			col(12/12,gutter:0)
+		.ds-serie-edit-content
+			col(12/12,gutter:0)
+			.ds-serie-edit-exercises
+				col(12/12,gutter:0)
+			.ds-serie-edit-sliders
+				col(12/12,gutter:0)
+				box-sizing border-box
+				border-top 1px solid palette('Blue Grey','400')
+				.ds-serie-edit-exer-select
+					col(10.5/12,gutter:0)
+					text-align center
+					h5
+						margin 0
+				.ds-serie-edit-slider-content
+					col(10.5/12,gutter:0)
+					span.md-body-1
+						font-size 112%
+					input[type="number"]
+						width 3.5em
+						margin-left 8px
+						text-align center
+				.ds-serie-edit-slider-title
+					col(1.5/12,gutter:0)
+					box-sizing border-box
+					font-size 80%
+					padding-left .3em
+					+desktop()
+						padding-left .5em
+					text-align left
+					span
+						line-height 50px
+						vertical-align middle
+
+
+

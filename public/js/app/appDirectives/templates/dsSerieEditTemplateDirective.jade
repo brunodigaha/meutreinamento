@@ -1,5 +1,34 @@
 section.ds-serie-edit
-	p serie editar
-	section(ng-click="edit_serie();")
-		p editar serie diretiva
-		p {{exerciseEdit.edit}}
+	section.ds-serie-edit-wrap
+		section.ds-serie-edit-select
+			p selecionar
+		section.ds-serie-edit-content
+			section.ds-serie-edit-exercises
+				p supino
+				p polia
+			section.ds-serie-edit-sliders
+				section.ds-serie-edit-exer-select
+					h5 Supino Reto
+				section.ds-serie-edit-slider-content
+					div(layout="row")
+						div(flex="20", layout="", layout-align="center center")
+							span.md-body-1 Repetição
+						md-slider#blue-slider.md-primary(flex="", ng-model="repeticao", min="1", max="40", aria-label="blue")
+						div(flex="10", layout="", layout-align="center center")
+							input(type="number", ng-model="repeticao", aria-label="blue", aria-controls="blue-slider")
+				section.ds-serie-edit-slider-title
+					span Repetições
+				section.ds-serie-edit-slider-content
+					div(layout="row")
+						div(flex="20", layout="", layout-align="center center")
+							span.md-body-1 Peso&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						md-slider#blue-slider.md-primary(flex="",ng-disabled="true", ng-model="peso", min="0", max="280", aria-label="blue")
+						div(flex="10", layout="", layout-align="center center")
+							input(type="number", ng-model="peso", ng-disabled="true", aria-label="blue", aria-controls="blue-slider")
+				section.ds-serie-edit-slider-title
+					span Quilos
+
+		// p serie editar
+		// section(ng-click="edit_serie();")
+		// 	p editar serie diretiva
+		// 	p {{exerciseEdit.edit}}

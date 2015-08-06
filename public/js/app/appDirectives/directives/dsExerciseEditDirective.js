@@ -27,6 +27,8 @@ module.exports = function() {
 				$scope.exerciseEdit.edit = true;
 
 			};
+			$scope.repeticao= 3;
+			$scope.peso=80;
 		}
 		// require: "^dsExercises",
 		// link :function(scope, element,attrs,ctrl) {

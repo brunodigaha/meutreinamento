@@ -1,8 +1,43 @@
 
 <section class="ds-serie-edit">
-  <p>serie editar</p>
-  <section ng-click="edit_serie();">
-    <p>editar serie diretiva</p>
-    <p>{{exerciseEdit.edit}}</p>
+  <section class="ds-serie-edit-wrap">
+    <section class="ds-serie-edit-select">
+      <p>selecionar</p>
+    </section>
+    <section class="ds-serie-edit-content">
+      <section class="ds-serie-edit-exercises">
+        <p>supino</p>
+        <p>polia</p>
+      </section>
+      <section class="ds-serie-edit-sliders">
+        <section class="ds-serie-edit-exer-select">
+          <h5>Supino Reto</h5>
+        </section>
+        <section class="ds-serie-edit-slider-content">
+          <div layout="row">
+            <div flex="20" layout="" layout-align="center center"><span class="md-body-1">Repetição</span></div>
+            <md-slider id="blue-slider" flex="" ng-model="repeticao" min="1" max="40" aria-label="blue" class="md-primary"></md-slider>
+            <div flex="10" layout="" layout-align="center center">
+              <input type="number" ng-model="repeticao" aria-label="blue" aria-controls="blue-slider"/>
+            </div>
+          </div>
+        </section>
+        <section class="ds-serie-edit-slider-title"><span>Repetições</span></section>
+        <section class="ds-serie-edit-slider-content">
+          <div layout="row">
+            <div flex="20" layout="" layout-align="center center"><span class="md-body-1">Peso&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+            <md-slider id="blue-slider" flex="" ng-disabled="true" ng-model="peso" min="0" max="280" aria-label="blue" class="md-primary"></md-slider>
+            <div flex="10" layout="" layout-align="center center">
+              <input type="number" ng-model="peso" ng-disabled="true" aria-label="blue" aria-controls="blue-slider"/>
+            </div>
+          </div>
+        </section>
+        <section class="ds-serie-edit-slider-title"><span>Quilos</span></section>
+      </section>
+    </section>
+    <!-- p serie editar-->
+    <!-- section(ng-click="edit_serie();")-->
+    <!-- 	p editar serie diretiva-->
+    <!-- 	p {{exerciseEdit.edit}}-->
   </section>
 </section>
