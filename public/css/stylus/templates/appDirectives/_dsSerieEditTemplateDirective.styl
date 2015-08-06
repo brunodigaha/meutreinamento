@@ -1,7 +1,7 @@
 .ds-serie-edit
 	col(12/12,gutter:0)
 	box-sizing border-box
-	border 2px solid palette('Blue Grey','400')
+	// border 2px solid palette('Blue Grey','400')
 	.ds-serie-edit-wrap
 		col(12/12,gutter:0)
 		.ds-serie-edit-select
@@ -11,10 +11,10 @@
 				box-sizing border-box
 				// padding 8px 22px 8px 22px
 				// border 1px solid palette('Grey','500')
-				min-height 10vh
-				margin-top .9em
+				// min-height 10vh
+				margin-top .3em
 				position relative
-				z-index 30
+				// z-index 30
 				.ds-serie-edit-select-header
 					col(12/12,gutter:0)
 					.ds-serie-edit-select-action
@@ -57,7 +57,7 @@
 					padding 7px 10px 7px 10px
 					height 43 vh
 					background-color white
-					// z-index 30
+					z-index 2
 					border 1px solid palette('Grey', '300')
 					box-shadow 0 2px 4px 1px rgba(0,0,0,.1)
 					// display none
@@ -112,11 +112,47 @@
 		.ds-serie-edit-content
 			col(12/12,gutter:0)
 			.ds-serie-edit-exercises
-				col(12/12,gutter:0)
+				col(8/12,gutter:0)
+				shift(2/12,gutter:0)
+				box-sizing border-box
+				margin-top 1em
+				margin-bottom 1em
+				.ds-serie-edit-exercise
+					col(12/12,gutter:0)
+					border 2px solid palette('Blue Grey','300')
+					background-color white
+					margin-top 1%
+					margin-bottom 1%
+					cursor pointer
+					.ds-serie-edit-drag-item
+						col(1/12,gutter:0)
+						text-align center
+						box-sizing border-box
+						cursor move
+						background-color palette('Blue Grey','300')
+						+desktop()
+							&:hover
+								zoom 1.2
+						ng-md-icon
+							svg
+								vertical-align middle
+					.ds-serie-edit-exercise-item
+						col(6/12,gutter:0)
+						box-sizing border-box
+						text-align left
+						padding-left 12px
+					.ds-serie-edit-rept-item
+						col(3/12,gutter:0)
+						box-sizing border-box
+					.ds-serie-edit-weight-item
+						col(2/12,gutter:0)
+						box-sizing border-box
+
 			.ds-serie-edit-sliders
 				col(12/12,gutter:0)
 				box-sizing border-box
-				border-top 1px solid palette('Blue Grey','400')
+				border-top 1px solid palette('Blue Grey','100')
+				background-color palette('Blue Grey','50')
 				.ds-serie-edit-exer-select
 					col(10.5/12,gutter:0)
 					text-align center
@@ -134,13 +170,22 @@
 					col(1.5/12,gutter:0)
 					box-sizing border-box
 					font-size 80%
-					padding-left .3em
+					padding-left .4em
 					+desktop()
 						padding-left .5em
 					text-align left
 					span
 						line-height 50px
 						vertical-align middle
+	.ds-serie-edit-action-bottom
+		col(12/12,gutter:0)
+		box-sizing border-box
+		line-height 45px
+		// background-color palette('Blue','500')
+		+desktop()
+			line-height 55px
+		text-align right
+		padding-right 30px
 
 
 

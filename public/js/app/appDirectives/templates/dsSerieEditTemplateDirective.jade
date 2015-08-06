@@ -34,9 +34,17 @@ section.ds-serie-edit
 										span(ng-click="insert($index, list);" ng-class="{'item-select animated pulse': exerc.select }" ng-repeat="exerc in list.exercicios")
 											| {{exerc.nome}}
 		section.ds-serie-edit-content
-			section.ds-serie-edit-exercises
-				p supino
-				p polia
+			section.ds-serie-edit-exercises(sv-root="serieEdit" sv-part="seriesEdit")  
+				section.ds-serie-edit-exercise(ng-repeat="person in [4,5,6] track by $index" sv-element="serieEdit")
+					section.ds-serie-edit-drag-item(sv-handle="")
+						ng-md-icon(icon="open_with" style="fill:black" size="22")
+					section.ds-serie-edit-exercise-item
+						span {{exercicio.nome}}
+						span Supino Reto
+					section.ds-serie-edit-rept-item
+						span 10 Repts
+					section.ds-serie-edit-weight-item
+						span 10 kg
 			section.ds-serie-edit-sliders
 				section.ds-serie-edit-exer-select
 					h4 Supino Reto
@@ -58,6 +66,8 @@ section.ds-serie-edit
 							input(type="number", ng-model="peso", ng-disabled="true", aria-label="blue", aria-controls="blue-slider")
 				section.ds-serie-edit-slider-title
 					span Quilos
+	section.ds-serie-edit-action-bottom
+		md-button(class="md-raised md-primary" ng-click="exerciseEdit.edit=false") Salvar
 
 		// p serie editar
 		// section(ng-click="edit_serie();")

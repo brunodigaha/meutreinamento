@@ -45,9 +45,15 @@
       </section>
     </section>
     <section class="ds-serie-edit-content">
-      <section class="ds-serie-edit-exercises">
-        <p>supino</p>
-        <p>polia</p>
+      <section sv-root="serieEdit" sv-part="seriesEdit" class="ds-serie-edit-exercises"> 
+        <section ng-repeat="person in [4,5,6] track by $index" sv-element="serieEdit" class="ds-serie-edit-exercise">
+          <section sv-handle="" class="ds-serie-edit-drag-item">
+            <ng-md-icon icon="open_with" style="fill:black" size="22"></ng-md-icon>
+          </section>
+          <section class="ds-serie-edit-exercise-item"><span>{{exercicio.nome}}</span><span>Supino Reto</span></section>
+          <section class="ds-serie-edit-rept-item"><span>10 Repts</span></section>
+          <section class="ds-serie-edit-weight-item"><span>10 kg</span></section>
+        </section>
       </section>
       <section class="ds-serie-edit-sliders">
         <section class="ds-serie-edit-exer-select">
@@ -75,6 +81,9 @@
         <section class="ds-serie-edit-slider-title"><span>Quilos</span></section>
       </section>
     </section>
+  </section>
+  <section class="ds-serie-edit-action-bottom">
+    <md-button ng-click="exerciseEdit.edit=false" class="md-raised md-primary">Salvar</md-button>
     <!-- p serie editar-->
     <!-- section(ng-click="edit_serie();")-->
     <!-- 	p editar serie diretiva-->
