@@ -55,7 +55,7 @@
 					top 3.5em
 					left -.5em
 					padding 7px 10px 7px 10px
-					height 43 vh
+					height 34 vh
 					background-color white
 					z-index 2
 					border 1px solid palette('Grey', '300')
@@ -112,41 +112,68 @@
 		.ds-serie-edit-content
 			col(12/12,gutter:0)
 			.ds-serie-edit-exercises
-				col(8/12,gutter:0)
-				shift(2/12,gutter:0)
+				col(10/12,gutter:0)
+				shift(1/12,gutter:0)
 				box-sizing border-box
-				margin-top 1em
-				margin-bottom 1em
-				.ds-serie-edit-exercise
-					col(12/12,gutter:0)
-					border 2px solid palette('Blue Grey','300')
-					background-color white
-					margin-top 1%
-					margin-bottom 1%
-					cursor pointer
-					.ds-serie-edit-drag-item
-						col(1/12,gutter:0)
-						text-align center
-						box-sizing border-box
-						cursor move
-						background-color palette('Blue Grey','300')
+				// margin-top .3em
+				margin-bottom .5em
+				+desktop()
+					margin-top .3em
+					margin-bottom 2em
+				md-content.ds-serie-edit-scroll
+					// box-sizing border-box
+					padding-top .3em
+					padding-bottom .3em
+					min-height 15vh
+					max-height 30vh
+					+desktop()
+						max-height 35vh
+					+tablet(orientation: portrait)
+						max-height 35vh
+					.ds-serie-edit-exercise
+						col(11/12,gutter:0)
+						shift(.5/12,gutter:0)
 						+desktop()
-							&:hover
-								zoom 1.2
-						ng-md-icon
-							svg
-								vertical-align middle
-					.ds-serie-edit-exercise-item
-						col(6/12,gutter:0)
+							col(10/12,gutter:0)
+							shift(1/12,gutter:0)
 						box-sizing border-box
-						text-align left
-						padding-left 12px
-					.ds-serie-edit-rept-item
-						col(3/12,gutter:0)
-						box-sizing border-box
-					.ds-serie-edit-weight-item
-						col(2/12,gutter:0)
-						box-sizing border-box
+						border 2px solid palette('Blue Grey','300')
+						background-color white
+						margin-top 1%
+						margin-bottom 1%
+						cursor pointer
+						.ds-serie-edit-drag-item
+							col(1/12,gutter:0)
+							text-align center
+							box-sizing border-box
+							cursor move
+							background-color palette('Blue Grey','300')
+							+desktop()
+								&:hover
+									zoom 1.2
+							ng-md-icon
+								svg
+									vertical-align middle
+						.ds-serie-edit-exercise-item
+							col(5/12,gutter:0)
+							box-sizing border-box
+							text-align left
+							padding-left 12px
+						.ds-serie-edit-rept-item
+							col(3/12,gutter:0)
+							box-sizing border-box
+						.ds-serie-edit-weight-item
+							col(2/12,gutter:0)
+							box-sizing border-box
+						.ds-serie-edit-close-item
+							col(1/12,gutter:0)
+							box-sizing border-box
+							ng-md-icon
+								svg
+									vertical-align middle
+									+desktop()
+										&:hover
+											zoom 1.2
 
 			.ds-serie-edit-sliders
 				col(12/12,gutter:0)
@@ -185,7 +212,7 @@
 		+desktop()
 			line-height 55px
 		text-align right
-		padding-right 30px
+		padding-right 10px
 
 
 

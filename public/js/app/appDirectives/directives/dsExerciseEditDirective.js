@@ -49,7 +49,7 @@ module.exports = function() {
 				} 
 			};
 
-
+			$scope.scroll = {glued:false};
 			$scope.repeticao= 3;
 			$scope.peso=80;
 

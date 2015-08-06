@@ -29,28 +29,29 @@
 		box-sizing border-box
 		padding-top 20px
 		padding-bottom 20px
-		min-height 60vh
+		// min-height 60vh
 		position relative
 		// border-left 2px solid palette('Blue Grey','300')
 		// border-right 2px solid palette('Blue Grey','300')
 		// border-bottom 2px solid palette('Blue Grey','300')
 		md-content.series
-			box-sizing border-box
-			padding-left 5em
-			padding-right 5em
-			+hd()
-				padding-left 8em
-				padding-right 8em
-			max-height:35vh 
+			min-height 35vh
+			max-height 55vh 
 			+tablet(orientation: portrait)
-				max-height:43vh 
+				max-height 59vh 
 			+desktop()
-				max-height:43vh 
+				max-height 59vh 
 			ul
 				margin 0
 				padding 0
 				font-size 100%
 				list-style none
+				box-sizing border-box
+				padding-left 5em
+				padding-right 5em
+				+hd()
+					padding-left 8em
+					padding-right 8em
 				.sv-helper
 					font-size 115%
 					color black

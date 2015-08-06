@@ -8,7 +8,7 @@ section.ds-serie-edit
 							ng-md-icon(icon="add_box" aria-label="exercicio" style="fill:white"  size="28")
 					section.ds-serie-edit-select-bar
 						md-input-container(md-no-float='')
-							input(placeholder='Pesquisar Exercício' ng-model="pesquisar" ng-keypress="pesquisar_exercicio($event)")
+							input(placeholder='Pesquisar Exercício para Inserir' ng-model="pesquisar" ng-keypress="pesquisar_exercicio($event)")
 				section.ds-serie-edit-select-tabs(ng-if="tabOpened")
 					section.chat-bubble-arrow-border
 					section.chat-bubble-arrow
@@ -35,16 +35,19 @@ section.ds-serie-edit
 											| {{exerc.nome}}
 		section.ds-serie-edit-content
 			section.ds-serie-edit-exercises(sv-root="serieEdit" sv-part="seriesEdit")  
-				section.ds-serie-edit-exercise(ng-repeat="person in [4,5,6] track by $index" sv-element="serieEdit")
-					section.ds-serie-edit-drag-item(sv-handle="")
-						ng-md-icon(icon="open_with" style="fill:black" size="22")
-					section.ds-serie-edit-exercise-item
-						span {{exercicio.nome}}
-						span Supino Reto
-					section.ds-serie-edit-rept-item
-						span 10 Repts
-					section.ds-serie-edit-weight-item
-						span 10 kg
+				md-content.ds-serie-edit-scroll(scroll-glue="scroll.glued")
+					section.ds-serie-edit-exercise(ng-repeat="person in [2,3,5] track by $index" sv-element="serieEdit")
+						section.ds-serie-edit-drag-item(sv-handle="")
+							ng-md-icon(icon="open_with" style="fill:black" size="22")
+						section.ds-serie-edit-exercise-item
+							span {{exercicio.nome}}
+							span Supino Reto
+						section.ds-serie-edit-rept-item
+							span 10 Repts
+						section.ds-serie-edit-weight-item
+							span 10 kg
+						section.ds-serie-edit-close-item
+							ng-md-icon(icon="close" style="fill:grey"  size="24")
 			section.ds-serie-edit-sliders
 				section.ds-serie-edit-exer-select
 					h4 Supino Reto
