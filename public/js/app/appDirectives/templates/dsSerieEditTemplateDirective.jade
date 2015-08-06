@@ -1,14 +1,45 @@
 section.ds-serie-edit
 	section.ds-serie-edit-wrap
 		section.ds-serie-edit-select
-			p selecionar
+			section.ds-serie-edit-select-wrap
+				section.ds-serie-edit-select-header
+					section.ds-serie-edit-select-action(ng-click="toggle_tab();")
+						md-button(class="md-raised md-primary")
+							ng-md-icon(icon="add_box" aria-label="exercicio" style="fill:white"  size="28")
+					section.ds-serie-edit-select-bar
+						md-input-container(md-no-float='')
+							input(placeholder='Pesquisar Exercício' ng-model="pesquisar" ng-keypress="pesquisar_exercicio($event)")
+				section.ds-serie-edit-select-tabs(ng-if="tabOpened")
+					section.chat-bubble-arrow-border
+					section.chat-bubble-arrow
+					section.ds-serie-edit-select-tabs-wrap
+						md-tabs(md-dynamic-height="true" md-border-bottom="false")
+							// md-tab(label="Geral")
+							// 	md-content.md-paddin
+							// 	section.autocompletedemoCustomTemplate
+							// 		md-autocomplete(ng-disabled="isDisabled", md-no-cache="noCache", md-selected-item="selectedItem", md-search-text-change="searchTextChange(searchText)", md-search-text="searchText", md-selected-item-change="selectedItemChange(item)", md-items="item in querySearch(searchText)", md-item-text="item.display", md-min-length="0", placeholder="Digite aqui o nome do exercício que deseja inserir" md-menu-class="autocomplete-custom-template")
+							// 			md-item-template
+							// 				span.item-title
+							// 					md-icon(md-svg-icon="img/icons/octicon-repo.svg")
+							// 					span  {{item.name}} 
+							// 				span.item-metadata
+							// 					span.item-metastat
+							// 						strong {{item.watchers}}
+							// 						| watchers
+							// 					span.item-metastat
+							// 						strong {{item.forks}}
+							md-tab(label="{{list.grupo}}" ng-repeat=" list in list_exercicios" )
+								md-content.md-padding
+									section
+										span(ng-click="insert($index, list);" ng-class="{'item-select animated pulse': exerc.select }" ng-repeat="exerc in list.exercicios")
+											| {{exerc.nome}}
 		section.ds-serie-edit-content
 			section.ds-serie-edit-exercises
 				p supino
 				p polia
 			section.ds-serie-edit-sliders
 				section.ds-serie-edit-exer-select
-					h5 Supino Reto
+					h4 Supino Reto
 				section.ds-serie-edit-slider-content
 					div(layout="row")
 						div(flex="20", layout="", layout-align="center center")

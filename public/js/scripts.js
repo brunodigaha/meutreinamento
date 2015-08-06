@@ -76951,6 +76951,8 @@ module.exports = function() {
 			$scope.exerciseEdit = {
 				edit : false
 			};
+
+
 			var series = [];
 			this.registerSerie = function(serie){
 				series.push(serie);
@@ -76960,13 +76962,259 @@ module.exports = function() {
 					serie.isOpened = false;
 				});
 			};
-			$scope.edit_serie = function() {
-				// console.log("editar serie (exerciseEditDirective)");
-				$scope.exerciseEdit.edit = true;
 
+
+			$scope.edit_serie = function() {
+				$scope.exerciseEdit.edit = true;
 			};
+
+
+			$scope.tabOpened=false;
+			$scope.open_tab = function() {
+				$scope.tabOpened = true;
+			};
+			$scope.close_tab = function() {
+				$scope.tabOpened = false;
+			};
+			$scope.toggle_tab = function() {
+				$scope.tabOpened = !$scope.tabOpened;
+			};
+
+			$scope.pesquisar = '';
+			$scope.pesquisar_exercicio = function(event) {
+				if ($scope.pesquisar.lenght !== 0){
+					$scope.tabOpened = true;
+				} 
+			};
+
+
 			$scope.repeticao= 3;
 			$scope.peso=80;
+
+
+			$scope.list_exercicios = [
+				{
+					grupo: "Bíceps",
+					exercicios: [
+						{
+							nome:"Biceps Testa",
+							select: false
+						},
+						{
+							nome:"Bíceps Barra",
+							select: false
+						},
+						{
+							nome:"Bíceps Alternada",
+							select: false
+					
+						},
+						{
+							nome:"Bíceps Martelo",
+							select: false
+						}
+					]
+				},
+				{
+					grupo: "Tríceps",
+					exercicios: [
+						{
+							nome:"Tríceps Testa",
+							select: false
+						},
+						{
+							nome:"Tríceps Supinado",
+							select: false
+						},
+						{
+							nome:"Tríceps Corda",
+							select: false
+						}
+					]
+				},
+				{
+					grupo: "Ombro",
+					exercicios: [
+						{
+							nome:"Ombro Frontal",
+							select: false
+						},
+						{
+							nome:"Ombro Lateral",
+							select: false
+						},
+						{
+							nome:"Ombro Máquina",
+							select: false
+						}
+					]
+				},
+				{
+					grupo: "Costas",
+					exercicios: [
+						{
+							nome:"Polia Frontal",
+							select: false
+						},
+						{
+							nome:"Remada Alta",
+							select: false
+						},
+						{
+							nome:"Puxada Unilateral",
+							select: false
+						}
+					]
+				},
+				{
+					grupo: "Peito",
+					exercicios: [
+						{
+							nome:"Supino Reto",
+							select: false
+						},
+						{
+							nome:"Supino Inclinado",
+							select: false
+						},
+						{
+							nome:"Crucifixo",
+							select: false
+						}
+					]
+				},
+				{
+					grupo: "Perna",
+					exercicios: [
+						{
+							nome:"Leg Press",
+							select: false
+						},
+						{
+							nome:"Leg Press",
+							select: false
+						},
+						{
+							nome:"Leg Press",
+							select: false
+						},
+						{
+							nome:"Leg Press",
+							select: false
+						},
+						{
+							nome:"Leg Press",
+							select: false
+						},
+						{
+							nome:"Leg Press",
+							select: false
+						},
+						{
+							nome:"Leg Press",
+							select: false
+						},
+						{
+							nome:"Leg Press",
+							select: false
+						},
+						{
+							nome:"Leg Press",
+							select: false
+						},
+						{
+							nome:"Leg Press",
+							select: false
+						},
+						{
+							nome:"Leg Press",
+							select: false
+						},
+						{
+							nome:"Leg Press",
+							select: false
+						},
+						{
+							nome:"Leg Press",
+							select: false
+						},
+						{
+							nome:"Leg Press",
+							select: false
+						},
+						{
+							nome:"Leg Press",
+							select: false
+						},
+						{
+							nome:"Leg Press",
+							select: false
+						},
+						{
+							nome:"Leg Press",
+							select: false
+						},
+						{
+							nome:"Leg Press",
+							select: false
+						},
+						{
+							nome:"Leg Press",
+							select: false
+						},
+						{
+							nome:"Leg Press",
+							select: false
+						},
+						{
+							nome:"Leg Press",
+							select: false
+						},
+						{
+							nome:"Leg Press",
+							select: false
+						},
+						{
+							nome:"Leg Press",
+							select: false
+						},
+						{
+							nome:"Leg Press",
+							select: false
+						},
+						{
+							nome:"Agachamento",
+							select: false
+						},
+						{
+							nome:"Adução",
+							select: false
+						},
+						{
+							nome:"Abdução",
+							select: false
+						},
+						{
+							nome:"Extenção",
+							select: false
+						},
+						{
+							nome:"Flexão",
+							select: false
+						}
+					]
+				},
+				{
+					grupo: "Abdominal",
+					exercicios: [
+						{
+							nome:"Prancha",
+							select: false
+						}
+					]
+				}
+			];
+
 		}
 		// require: "^dsExercises",
 		// link :function(scope, element,attrs,ctrl) {
@@ -77077,7 +77325,7 @@ module.exports = function() {
 
 module.exports = function() {
 	return{
-		template: Buffer("CjxzZWN0aW9uIGNsYXNzPSJkcy1zZXJpZS1lZGl0Ij4KICA8c2VjdGlvbiBjbGFzcz0iZHMtc2VyaWUtZWRpdC13cmFwIj4KICAgIDxzZWN0aW9uIGNsYXNzPSJkcy1zZXJpZS1lZGl0LXNlbGVjdCI+CiAgICAgIDxwPnNlbGVjaW9uYXI8L3A+CiAgICA8L3NlY3Rpb24+CiAgICA8c2VjdGlvbiBjbGFzcz0iZHMtc2VyaWUtZWRpdC1jb250ZW50Ij4KICAgICAgPHNlY3Rpb24gY2xhc3M9ImRzLXNlcmllLWVkaXQtZXhlcmNpc2VzIj4KICAgICAgICA8cD5zdXBpbm88L3A+CiAgICAgICAgPHA+cG9saWE8L3A+CiAgICAgIDwvc2VjdGlvbj4KICAgICAgPHNlY3Rpb24gY2xhc3M9ImRzLXNlcmllLWVkaXQtc2xpZGVycyI+CiAgICAgICAgPHNlY3Rpb24gY2xhc3M9ImRzLXNlcmllLWVkaXQtZXhlci1zZWxlY3QiPgogICAgICAgICAgPGg1PlN1cGlubyBSZXRvPC9oNT4KICAgICAgICA8L3NlY3Rpb24+CiAgICAgICAgPHNlY3Rpb24gY2xhc3M9ImRzLXNlcmllLWVkaXQtc2xpZGVyLWNvbnRlbnQiPgogICAgICAgICAgPGRpdiBsYXlvdXQ9InJvdyI+CiAgICAgICAgICAgIDxkaXYgZmxleD0iMjAiIGxheW91dD0iIiBsYXlvdXQtYWxpZ249ImNlbnRlciBjZW50ZXIiPjxzcGFuIGNsYXNzPSJtZC1ib2R5LTEiPlJlcGV0acOnw6NvPC9zcGFuPjwvZGl2PgogICAgICAgICAgICA8bWQtc2xpZGVyIGlkPSJibHVlLXNsaWRlciIgZmxleD0iIiBuZy1tb2RlbD0icmVwZXRpY2FvIiBtaW49IjEiIG1heD0iNDAiIGFyaWEtbGFiZWw9ImJsdWUiIGNsYXNzPSJtZC1wcmltYXJ5Ij48L21kLXNsaWRlcj4KICAgICAgICAgICAgPGRpdiBmbGV4PSIxMCIgbGF5b3V0PSIiIGxheW91dC1hbGlnbj0iY2VudGVyIGNlbnRlciI+CiAgICAgICAgICAgICAgPGlucHV0IHR5cGU9Im51bWJlciIgbmctbW9kZWw9InJlcGV0aWNhbyIgYXJpYS1sYWJlbD0iYmx1ZSIgYXJpYS1jb250cm9scz0iYmx1ZS1zbGlkZXIiLz4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L3NlY3Rpb24+CiAgICAgICAgPHNlY3Rpb24gY2xhc3M9ImRzLXNlcmllLWVkaXQtc2xpZGVyLXRpdGxlIj48c3Bhbj5SZXBldGnDp8O1ZXM8L3NwYW4+PC9zZWN0aW9uPgogICAgICAgIDxzZWN0aW9uIGNsYXNzPSJkcy1zZXJpZS1lZGl0LXNsaWRlci1jb250ZW50Ij4KICAgICAgICAgIDxkaXYgbGF5b3V0PSJyb3ciPgogICAgICAgICAgICA8ZGl2IGZsZXg9IjIwIiBsYXlvdXQ9IiIgbGF5b3V0LWFsaWduPSJjZW50ZXIgY2VudGVyIj48c3BhbiBjbGFzcz0ibWQtYm9keS0xIj5QZXNvJm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7PC9zcGFuPjwvZGl2PgogICAgICAgICAgICA8bWQtc2xpZGVyIGlkPSJibHVlLXNsaWRlciIgZmxleD0iIiBuZy1kaXNhYmxlZD0idHJ1ZSIgbmctbW9kZWw9InBlc28iIG1pbj0iMCIgbWF4PSIyODAiIGFyaWEtbGFiZWw9ImJsdWUiIGNsYXNzPSJtZC1wcmltYXJ5Ij48L21kLXNsaWRlcj4KICAgICAgICAgICAgPGRpdiBmbGV4PSIxMCIgbGF5b3V0PSIiIGxheW91dC1hbGlnbj0iY2VudGVyIGNlbnRlciI+CiAgICAgICAgICAgICAgPGlucHV0IHR5cGU9Im51bWJlciIgbmctbW9kZWw9InBlc28iIG5nLWRpc2FibGVkPSJ0cnVlIiBhcmlhLWxhYmVsPSJibHVlIiBhcmlhLWNvbnRyb2xzPSJibHVlLXNsaWRlciIvPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvc2VjdGlvbj4KICAgICAgICA8c2VjdGlvbiBjbGFzcz0iZHMtc2VyaWUtZWRpdC1zbGlkZXItdGl0bGUiPjxzcGFuPlF1aWxvczwvc3Bhbj48L3NlY3Rpb24+CiAgICAgIDwvc2VjdGlvbj4KICAgIDwvc2VjdGlvbj4KICAgIDwhLS0gcCBzZXJpZSBlZGl0YXItLT4KICAgIDwhLS0gc2VjdGlvbihuZy1jbGljaz0iZWRpdF9zZXJpZSgpOyIpLS0+CiAgICA8IS0tIAlwIGVkaXRhciBzZXJpZSBkaXJldGl2YS0tPgogICAgPCEtLSAJcCB7e2V4ZXJjaXNlRWRpdC5lZGl0fX0tLT4KICA8L3NlY3Rpb24+Cjwvc2VjdGlvbj4=","base64"),
+		template: Buffer("CjxzZWN0aW9uIGNsYXNzPSJkcy1zZXJpZS1lZGl0Ij4KICA8c2VjdGlvbiBjbGFzcz0iZHMtc2VyaWUtZWRpdC13cmFwIj4KICAgIDxzZWN0aW9uIGNsYXNzPSJkcy1zZXJpZS1lZGl0LXNlbGVjdCI+CiAgICAgIDxzZWN0aW9uIGNsYXNzPSJkcy1zZXJpZS1lZGl0LXNlbGVjdC13cmFwIj4KICAgICAgICA8c2VjdGlvbiBjbGFzcz0iZHMtc2VyaWUtZWRpdC1zZWxlY3QtaGVhZGVyIj4KICAgICAgICAgIDxzZWN0aW9uIG5nLWNsaWNrPSJ0b2dnbGVfdGFiKCk7IiBjbGFzcz0iZHMtc2VyaWUtZWRpdC1zZWxlY3QtYWN0aW9uIj4KICAgICAgICAgICAgPG1kLWJ1dHRvbiBjbGFzcz0ibWQtcmFpc2VkIG1kLXByaW1hcnkiPgogICAgICAgICAgICAgIDxuZy1tZC1pY29uIGljb249ImFkZF9ib3giIGFyaWEtbGFiZWw9ImV4ZXJjaWNpbyIgc3R5bGU9ImZpbGw6d2hpdGUiIHNpemU9IjI4Ij48L25nLW1kLWljb24+CiAgICAgICAgICAgIDwvbWQtYnV0dG9uPgogICAgICAgICAgPC9zZWN0aW9uPgogICAgICAgICAgPHNlY3Rpb24gY2xhc3M9ImRzLXNlcmllLWVkaXQtc2VsZWN0LWJhciI+CiAgICAgICAgICAgIDxtZC1pbnB1dC1jb250YWluZXIgbWQtbm8tZmxvYXQ9IiI+CiAgICAgICAgICAgICAgPGlucHV0IHBsYWNlaG9sZGVyPSJQZXNxdWlzYXIgRXhlcmPDrWNpbyIgbmctbW9kZWw9InBlc3F1aXNhciIgbmcta2V5cHJlc3M9InBlc3F1aXNhcl9leGVyY2ljaW8oJGV2ZW50KSIvPgogICAgICAgICAgICA8L21kLWlucHV0LWNvbnRhaW5lcj4KICAgICAgICAgIDwvc2VjdGlvbj4KICAgICAgICA8L3NlY3Rpb24+CiAgICAgICAgPHNlY3Rpb24gbmctaWY9InRhYk9wZW5lZCIgY2xhc3M9ImRzLXNlcmllLWVkaXQtc2VsZWN0LXRhYnMiPgogICAgICAgICAgPHNlY3Rpb24gY2xhc3M9ImNoYXQtYnViYmxlLWFycm93LWJvcmRlciI+PC9zZWN0aW9uPgogICAgICAgICAgPHNlY3Rpb24gY2xhc3M9ImNoYXQtYnViYmxlLWFycm93Ij48L3NlY3Rpb24+CiAgICAgICAgICA8c2VjdGlvbiBjbGFzcz0iZHMtc2VyaWUtZWRpdC1zZWxlY3QtdGFicy13cmFwIj4KICAgICAgICAgICAgPG1kLXRhYnMgbWQtZHluYW1pYy1oZWlnaHQ9InRydWUiIG1kLWJvcmRlci1ib3R0b209ImZhbHNlIj4KICAgICAgICAgICAgICA8IS0tIG1kLXRhYihsYWJlbD0iR2VyYWwiKS0tPgogICAgICAgICAgICAgIDwhLS0gCW1kLWNvbnRlbnQubWQtcGFkZGluLS0+CiAgICAgICAgICAgICAgPCEtLSAJc2VjdGlvbi5hdXRvY29tcGxldGVkZW1vQ3VzdG9tVGVtcGxhdGUtLT4KICAgICAgICAgICAgICA8IS0tIAkJbWQtYXV0b2NvbXBsZXRlKG5nLWRpc2FibGVkPSJpc0Rpc2FibGVkIiwgbWQtbm8tY2FjaGU9Im5vQ2FjaGUiLCBtZC1zZWxlY3RlZC1pdGVtPSJzZWxlY3RlZEl0ZW0iLCBtZC1zZWFyY2gtdGV4dC1jaGFuZ2U9InNlYXJjaFRleHRDaGFuZ2Uoc2VhcmNoVGV4dCkiLCBtZC1zZWFyY2gtdGV4dD0ic2VhcmNoVGV4dCIsIG1kLXNlbGVjdGVkLWl0ZW0tY2hhbmdlPSJzZWxlY3RlZEl0ZW1DaGFuZ2UoaXRlbSkiLCBtZC1pdGVtcz0iaXRlbSBpbiBxdWVyeVNlYXJjaChzZWFyY2hUZXh0KSIsIG1kLWl0ZW0tdGV4dD0iaXRlbS5kaXNwbGF5IiwgbWQtbWluLWxlbmd0aD0iMCIsIHBsYWNlaG9sZGVyPSJEaWdpdGUgYXF1aSBvIG5vbWUgZG8gZXhlcmPDrWNpbyBxdWUgZGVzZWphIGluc2VyaXIiIG1kLW1lbnUtY2xhc3M9ImF1dG9jb21wbGV0ZS1jdXN0b20tdGVtcGxhdGUiKS0tPgogICAgICAgICAgICAgIDwhLS0gCQkJbWQtaXRlbS10ZW1wbGF0ZS0tPgogICAgICAgICAgICAgIDwhLS0gCQkJCXNwYW4uaXRlbS10aXRsZS0tPgogICAgICAgICAgICAgIDwhLS0gCQkJCQltZC1pY29uKG1kLXN2Zy1pY29uPSJpbWcvaWNvbnMvb2N0aWNvbi1yZXBvLnN2ZyIpLS0+CiAgICAgICAgICAgICAgPCEtLSAJCQkJCXNwYW4gIHt7aXRlbS5uYW1lfX0gLS0+CiAgICAgICAgICAgICAgPCEtLSAJCQkJc3Bhbi5pdGVtLW1ldGFkYXRhLS0+CiAgICAgICAgICAgICAgPCEtLSAJCQkJCXNwYW4uaXRlbS1tZXRhc3RhdC0tPgogICAgICAgICAgICAgIDwhLS0gCQkJCQkJc3Ryb25nIHt7aXRlbS53YXRjaGVyc319LS0+CiAgICAgICAgICAgICAgPCEtLSAJCQkJCQl8IHdhdGNoZXJzLS0+CiAgICAgICAgICAgICAgPCEtLSAJCQkJCXNwYW4uaXRlbS1tZXRhc3RhdC0tPgogICAgICAgICAgICAgIDwhLS0gCQkJCQkJc3Ryb25nIHt7aXRlbS5mb3Jrc319LS0+CiAgICAgICAgICAgICAgPG1kLXRhYiBsYWJlbD0ie3tsaXN0LmdydXBvfX0iIG5nLXJlcGVhdD0iIGxpc3QgaW4gbGlzdF9leGVyY2ljaW9zIj4KICAgICAgICAgICAgICAgIDxtZC1jb250ZW50IGNsYXNzPSJtZC1wYWRkaW5nIj4KICAgICAgICAgICAgICAgICAgPHNlY3Rpb24+PHNwYW4gbmctY2xpY2s9Imluc2VydCgkaW5kZXgsIGxpc3QpOyIgbmctY2xhc3M9InsnaXRlbS1zZWxlY3QgYW5pbWF0ZWQgcHVsc2UnOiBleGVyYy5zZWxlY3QgfSIgbmctcmVwZWF0PSJleGVyYyBpbiBsaXN0LmV4ZXJjaWNpb3MiPnt7ZXhlcmMubm9tZX19PC9zcGFuPjwvc2VjdGlvbj4KICAgICAgICAgICAgICAgIDwvbWQtY29udGVudD4KICAgICAgICAgICAgICA8L21kLXRhYj4KICAgICAgICAgICAgPC9tZC10YWJzPgogICAgICAgICAgPC9zZWN0aW9uPgogICAgICAgIDwvc2VjdGlvbj4KICAgICAgPC9zZWN0aW9uPgogICAgPC9zZWN0aW9uPgogICAgPHNlY3Rpb24gY2xhc3M9ImRzLXNlcmllLWVkaXQtY29udGVudCI+CiAgICAgIDxzZWN0aW9uIGNsYXNzPSJkcy1zZXJpZS1lZGl0LWV4ZXJjaXNlcyI+CiAgICAgICAgPHA+c3VwaW5vPC9wPgogICAgICAgIDxwPnBvbGlhPC9wPgogICAgICA8L3NlY3Rpb24+CiAgICAgIDxzZWN0aW9uIGNsYXNzPSJkcy1zZXJpZS1lZGl0LXNsaWRlcnMiPgogICAgICAgIDxzZWN0aW9uIGNsYXNzPSJkcy1zZXJpZS1lZGl0LWV4ZXItc2VsZWN0Ij4KICAgICAgICAgIDxoND5TdXBpbm8gUmV0bzwvaDQ+CiAgICAgICAgPC9zZWN0aW9uPgogICAgICAgIDxzZWN0aW9uIGNsYXNzPSJkcy1zZXJpZS1lZGl0LXNsaWRlci1jb250ZW50Ij4KICAgICAgICAgIDxkaXYgbGF5b3V0PSJyb3ciPgogICAgICAgICAgICA8ZGl2IGZsZXg9IjIwIiBsYXlvdXQ9IiIgbGF5b3V0LWFsaWduPSJjZW50ZXIgY2VudGVyIj48c3BhbiBjbGFzcz0ibWQtYm9keS0xIj5SZXBldGnDp8Ojbzwvc3Bhbj48L2Rpdj4KICAgICAgICAgICAgPG1kLXNsaWRlciBpZD0iYmx1ZS1zbGlkZXIiIGZsZXg9IiIgbmctbW9kZWw9InJlcGV0aWNhbyIgbWluPSIxIiBtYXg9IjQwIiBhcmlhLWxhYmVsPSJibHVlIiBjbGFzcz0ibWQtcHJpbWFyeSI+PC9tZC1zbGlkZXI+CiAgICAgICAgICAgIDxkaXYgZmxleD0iMTAiIGxheW91dD0iIiBsYXlvdXQtYWxpZ249ImNlbnRlciBjZW50ZXIiPgogICAgICAgICAgICAgIDxpbnB1dCB0eXBlPSJudW1iZXIiIG5nLW1vZGVsPSJyZXBldGljYW8iIGFyaWEtbGFiZWw9ImJsdWUiIGFyaWEtY29udHJvbHM9ImJsdWUtc2xpZGVyIi8+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9zZWN0aW9uPgogICAgICAgIDxzZWN0aW9uIGNsYXNzPSJkcy1zZXJpZS1lZGl0LXNsaWRlci10aXRsZSI+PHNwYW4+UmVwZXRpw6fDtWVzPC9zcGFuPjwvc2VjdGlvbj4KICAgICAgICA8c2VjdGlvbiBjbGFzcz0iZHMtc2VyaWUtZWRpdC1zbGlkZXItY29udGVudCI+CiAgICAgICAgICA8ZGl2IGxheW91dD0icm93Ij4KICAgICAgICAgICAgPGRpdiBmbGV4PSIyMCIgbGF5b3V0PSIiIGxheW91dC1hbGlnbj0iY2VudGVyIGNlbnRlciI+PHNwYW4gY2xhc3M9Im1kLWJvZHktMSI+UGVzbyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOzwvc3Bhbj48L2Rpdj4KICAgICAgICAgICAgPG1kLXNsaWRlciBpZD0iYmx1ZS1zbGlkZXIiIGZsZXg9IiIgbmctZGlzYWJsZWQ9InRydWUiIG5nLW1vZGVsPSJwZXNvIiBtaW49IjAiIG1heD0iMjgwIiBhcmlhLWxhYmVsPSJibHVlIiBjbGFzcz0ibWQtcHJpbWFyeSI+PC9tZC1zbGlkZXI+CiAgICAgICAgICAgIDxkaXYgZmxleD0iMTAiIGxheW91dD0iIiBsYXlvdXQtYWxpZ249ImNlbnRlciBjZW50ZXIiPgogICAgICAgICAgICAgIDxpbnB1dCB0eXBlPSJudW1iZXIiIG5nLW1vZGVsPSJwZXNvIiBuZy1kaXNhYmxlZD0idHJ1ZSIgYXJpYS1sYWJlbD0iYmx1ZSIgYXJpYS1jb250cm9scz0iYmx1ZS1zbGlkZXIiLz4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L3NlY3Rpb24+CiAgICAgICAgPHNlY3Rpb24gY2xhc3M9ImRzLXNlcmllLWVkaXQtc2xpZGVyLXRpdGxlIj48c3Bhbj5RdWlsb3M8L3NwYW4+PC9zZWN0aW9uPgogICAgICA8L3NlY3Rpb24+CiAgICA8L3NlY3Rpb24+CiAgICA8IS0tIHAgc2VyaWUgZWRpdGFyLS0+CiAgICA8IS0tIHNlY3Rpb24obmctY2xpY2s9ImVkaXRfc2VyaWUoKTsiKS0tPgogICAgPCEtLSAJcCBlZGl0YXIgc2VyaWUgZGlyZXRpdmEtLT4KICAgIDwhLS0gCXAge3tleGVyY2lzZUVkaXQuZWRpdH19LS0+CiAgPC9zZWN0aW9uPgo8L3NlY3Rpb24+","base64"),
 		// transclude:true,
 		// scope: {
 		// 	serie: "=",
@@ -77868,7 +78116,7 @@ module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$sta
 	$scope.insertTraining = function(ev) {
 		$mdDialog.show({
 			controller: 'insertTrainingDialogController',
-			template: Buffer("CjxtZC1kaWFsb2cgZmxleD0iOTAiIGFyaWEtbGFiZWw9Imluc2VydGlyIHRyZWlubyI+CiAgPCEtLSBtZC10b29sYmFyLS0+CiAgPCEtLSAJLm1kLXRvb2xiYXItdG9vbHMtLT4KICA8IS0tIAkJaDEgSW5zZXJpciBFeGVyY8OtY2lvLS0+CiAgPCEtLSAJCXNwYW4oZmxleD0iIiktLT4KICA8IS0tIAkJbWQtYnV0dG9uKG5nLWNsaWNrPSJhbnN3ZXIoJ25vdCBhcHBsaWNhYmxlJykiKSBDYW5jZWxhci0tPgogIDxtZC1kaWFsb2ctY29udGVudD4KICAgIDxzZWN0aW9uIGNsYXNzPSJ0YWluaW5nLWRpYWxvZy1jb250ZW50Ij4KICAgICAgPGRzLWV4ZXJjaXNlLWVkaXQgZXhlcmNpc2U9InBsYW5zIiBwbGFucz0icGxhbnMiPjwvZHMtZXhlcmNpc2UtZWRpdD4KICAgICAgPCEtLSAub3Blbi10YWJzLS0+CiAgICAgIDwhLS0gCS8vIHAgdGVzdGUtLT4KICAgICAgPCEtLSBzZWN0aW9uLndheS10cmFpbmluZy0tPgogICAgICA8IS0tIAltZC1zZWxlY3QocGxhY2Vob2xkZXI9J03DqXRvZG8gZG8gRXhlcmPDrWNpbycsIG5nLW1vZGVsPSdwbGFuJyBzdHlsZT0ibWluLXdpZHRoOjI1MHB4OyIpLS0+CiAgICAgIDwhLS0gCQltZC1vcHRpb24obmctcmVwZWF0PSdwbGFuIGluIHBsYW5zJywgdmFsdWU9J3t7cGxhbn19Jykge3twbGFufX0tLT4KICAgICAgPCEtLSBzZWN0aW9uLndheS1hZGQtLT4KICAgICAgPCEtLSAJCW5nLW1kLWljb24oaWNvbj0iYWRkIiBzdHlsZT0iZmlsbDp3aGl0ZSIgIHNpemU9IjI1IiktLT4KICAgICAgPCEtLSAJCXNwYW4gRG9pcyBleGVyY8OtY2lvcyBleGVjdXRhZG9zIHNlbSBkZXNjYW5zby4tLT4KICAgICAgPCEtLSBzZWN0aW9uLnNsaWRlci13cmFwLWluc2VydC0tPgogICAgICA8IS0tIAlzZWN0aW9uLnNsaWRlci1jb250ZW50LWluc2VydC0tPgogICAgICA8IS0tIAkJZGl2KGxheW91dD0icm93IiktLT4KICAgICAgPCEtLSAJCQlkaXYoZmxleD0iMjAiLCBsYXlvdXQ9IiIsIGxheW91dC1hbGlnbj0iY2VudGVyIGNlbnRlciIpLS0+CiAgICAgIDwhLS0gCQkJCXNwYW4ubWQtYm9keS0xIFPDqXJpZSZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOy0tPgogICAgICA8IS0tIAkJCW1kLXNsaWRlciNibHVlLXNsaWRlci5tZC1wcmltYXJ5KGZsZXg9IiIsIG5nLW1vZGVsPSJzZXJpZSIsIG1pbj0iMSIsIG1heD0iOCIsIGFyaWEtbGFiZWw9ImJsdWUiKS0tPgogICAgICA8IS0tIAkJCWRpdihmbGV4PSIxMCIsIGxheW91dD0iIiwgbGF5b3V0LWFsaWduPSJjZW50ZXIgY2VudGVyIiktLT4KICAgICAgPCEtLSAJCQkJaW5wdXQodHlwZT0ibnVtYmVyIiwgbmctbW9kZWw9InNlcmllIiwgYXJpYS1sYWJlbD0iYmx1ZSIsIGFyaWEtY29udHJvbHM9ImJsdWUtc2xpZGVyIiktLT4KICAgICAgPCEtLSAJc2VjdGlvbi5zbGlkZXItdGl0bGUtaW5zZXJ0LS0+CiAgICAgIDwhLS0gCQlzcGFuIFPDqXJpZXMtLT4KICAgICAgPCEtLSAJc2VjdGlvbi5zbGlkZXItY29udGVudC1pbnNlcnQtLT4KICAgICAgPCEtLSAJCWRpdihsYXlvdXQ9InJvdyIpLS0+CiAgICAgIDwhLS0gCQkJZGl2KGZsZXg9IjIwIiwgbGF5b3V0PSIiLCBsYXlvdXQtYWxpZ249ImNlbnRlciBjZW50ZXIiKS0tPgogICAgICA8IS0tIAkJCQlzcGFuLm1kLWJvZHktMSBEZXNjYW5zby0tPgogICAgICA8IS0tIAkJCW1kLXNsaWRlciNibHVlLXNsaWRlci5tZC1wcmltYXJ5KGZsZXg9IiIsIG5nLW1vZGVsPSJkZXNjYW5zbyIsIG1pbj0iMCIsIG1heD0iMTgwIiwgYXJpYS1sYWJlbD0iYmx1ZSIpLS0+CiAgICAgIDwhLS0gCQkJZGl2KGZsZXg9IjEwIiwgbGF5b3V0PSIiLCBsYXlvdXQtYWxpZ249ImNlbnRlciBjZW50ZXIiKS0tPgogICAgICA8IS0tIAkJCQlpbnB1dCh0eXBlPSJudW1iZXIiLCBuZy1tb2RlbD0iZGVzY2Fuc28iLCBhcmlhLWxhYmVsPSJibHVlIiwgYXJpYS1jb250cm9scz0iYmx1ZS1zbGlkZXIiKS0tPgogICAgICA8IS0tIAlzZWN0aW9uLnNsaWRlci10aXRsZS1pbnNlcnQtLT4KICAgICAgPCEtLSAJCXNwYW4gU2VndW5kb3MtLT4KICAgICAgPCEtLSBzZWN0aW9uLmluc2VydC1leGVyY2lzZS13cmFwLS0+CiAgICAgIDwhLS0gCXNlY3Rpb24uaW5zZXJ0LWV4ZXJjaXNlLWhlYWRlci0tPgogICAgICA8IS0tIAkJc2VjdGlvbi5pbnNlcnQtZXhlcmNpc2UtYWN0aW9uLS0+CiAgICAgIDwhLS0gCQkJbWQtYnV0dG9uKGNsYXNzPSJtZC1yYWlzZWQgbWQtcHJpbWFyeSIpLS0+CiAgICAgIDwhLS0gCQkJCW5nLW1kLWljb24oaWNvbj0iYXJjaGl2ZSIgYXJpYS1sYWJlbD0iZXhlcmNpY2lvIiBzdHlsZT0iZmlsbDp3aGl0ZSIgIHNpemU9IjI4IiktLT4KICAgICAgPCEtLSAJCXNlY3Rpb24uaW5zZXJ0LWV4ZXJjaXNlLWJhci0tPgogICAgICA8IS0tIAkJCW1kLWlucHV0LWNvbnRhaW5lcihtZC1uby1mbG9hdD0nJyktLT4KICAgICAgPCEtLSAJCQkJaW5wdXQocGxhY2Vob2xkZXI9J1Blc3F1aXNhciBFeGVyY8OtY2lvJyktLT4KICAgICAgPCEtLSAJc2VjdGlvbi5pbnNlcnQtZXhlcmNpc2UtY29udGVudC0tPgogICAgICA8IS0tIAkJc2VjdGlvbi5leGVyY2lzZS1hZGRzLS0+CiAgICAgIDwhLS0gCQkJc3BhbiBTdXBpbm8gUmV0by0tPgogICAgICA8IS0tIAkJCXNwYW4gUG9saWEtLT4KICAgICAgPCEtLSAJCXNlY3Rpb24uZXhlcmNpc2Utdmlldy0tPgogICAgICA8IS0tIAkJCWRzLWV4ZXJjaXNlcy0tPgogICAgICA8IS0tIAkJCQlkcy1leGVyY2lzZS0tPgogICAgICA8IS0tIAlzZWN0aW9uLmluc2VydC1leGVyY2lzZS10YWJzLS0+CiAgICAgIDwhLS0gCQlzZWN0aW9uLmNoYXQtYnViYmxlLWFycm93LWJvcmRlci0tPgogICAgICA8IS0tIAkJc2VjdGlvbi5jaGF0LWJ1YmJsZS1hcnJvdy0tPgogICAgICA8IS0tIAkJc2VjdGlvbi50YWJzLS0+CiAgICAgIDwhLS0gCQkJbWQtdGFicyhtZC1keW5hbWljLWhlaWdodD0idHJ1ZSIgbWQtYm9yZGVyLWJvdHRvbT0iZmFsc2UiKS0tPgogICAgICA8IS0tIAkJCQkvLyBtZC10YWIobGFiZWw9IkdlcmFsIiktLT4KICAgICAgPCEtLSAJCQkJLy8gCW1kLWNvbnRlbnQubWQtcGFkZGluLS0+CiAgICAgIDwhLS0gCQkJCS8vIAlzZWN0aW9uLmF1dG9jb21wbGV0ZWRlbW9DdXN0b21UZW1wbGF0ZS0tPgogICAgICA8IS0tIAkJCQkvLyAJCW1kLWF1dG9jb21wbGV0ZShuZy1kaXNhYmxlZD0iaXNEaXNhYmxlZCIsIG1kLW5vLWNhY2hlPSJub0NhY2hlIiwgbWQtc2VsZWN0ZWQtaXRlbT0ic2VsZWN0ZWRJdGVtIiwgbWQtc2VhcmNoLXRleHQtY2hhbmdlPSJzZWFyY2hUZXh0Q2hhbmdlKHNlYXJjaFRleHQpIiwgbWQtc2VhcmNoLXRleHQ9InNlYXJjaFRleHQiLCBtZC1zZWxlY3RlZC1pdGVtLWNoYW5nZT0ic2VsZWN0ZWRJdGVtQ2hhbmdlKGl0ZW0pIiwgbWQtaXRlbXM9Iml0ZW0gaW4gcXVlcnlTZWFyY2goc2VhcmNoVGV4dCkiLCBtZC1pdGVtLXRleHQ9Iml0ZW0uZGlzcGxheSIsIG1kLW1pbi1sZW5ndGg9IjAiLCBwbGFjZWhvbGRlcj0iRGlnaXRlIGFxdWkgbyBub21lIGRvIGV4ZXJjw61jaW8gcXVlIGRlc2VqYSBpbnNlcmlyIiBtZC1tZW51LWNsYXNzPSJhdXRvY29tcGxldGUtY3VzdG9tLXRlbXBsYXRlIiktLT4KICAgICAgPCEtLSAJCQkJLy8gCQkJbWQtaXRlbS10ZW1wbGF0ZS0tPgogICAgICA8IS0tIAkJCQkvLyAJCQkJc3Bhbi5pdGVtLXRpdGxlLS0+CiAgICAgIDwhLS0gCQkJCS8vIAkJCQkJbWQtaWNvbihtZC1zdmctaWNvbj0iaW1nL2ljb25zL29jdGljb24tcmVwby5zdmciKS0tPgogICAgICA8IS0tIAkJCQkvLyAJCQkJCXNwYW4gIHt7aXRlbS5uYW1lfX0gLS0+CiAgICAgIDwhLS0gCQkJCS8vIAkJCQlzcGFuLml0ZW0tbWV0YWRhdGEtLT4KICAgICAgPCEtLSAJCQkJLy8gCQkJCQlzcGFuLml0ZW0tbWV0YXN0YXQtLT4KICAgICAgPCEtLSAJCQkJLy8gCQkJCQkJc3Ryb25nIHt7aXRlbS53YXRjaGVyc319LS0+CiAgICAgIDwhLS0gCQkJCS8vIAkJCQkJCXwgd2F0Y2hlcnMtLT4KICAgICAgPCEtLSAJCQkJLy8gCQkJCQlzcGFuLml0ZW0tbWV0YXN0YXQtLT4KICAgICAgPCEtLSAJCQkJLy8gCQkJCQkJc3Ryb25nIHt7aXRlbS5mb3Jrc319LS0+CiAgICAgIDwhLS0gCQkJCW1kLXRhYihsYWJlbD0ie3tsaXN0LmdydXBvfX0iIG5nLXJlcGVhdD0iIGxpc3QgaW4gbGlzdF9leGVyY2ljaW9zIiApLS0+CiAgICAgIDwhLS0gCQkJCQltZC1jb250ZW50Lm1kLXBhZGRpbmctLT4KICAgICAgPCEtLSAJCQkJCQlzZWN0aW9uLS0+CiAgICAgIDwhLS0gCQkJCQkJCXNwYW4obmctY2xpY2s9Imluc2VydCgkaW5kZXgsIGxpc3QpOyIgbmctY2xhc3M9InsnaXRlbS1zZWxlY3QgYW5pbWF0ZWQgcHVsc2UnOiBleGVyYy5zZWxlY3QgfSIgbmctcmVwZWF0PSJleGVyYyBpbiBsaXN0LmV4ZXJjaWNpb3MiKS0tPgogICAgICA8IS0tIAkJCQkJCQkJfCB7e2V4ZXJjLm5vbWV9fS0tPgogICAgPC9zZWN0aW9uPgogIDwvbWQtZGlhbG9nLWNvbnRlbnQ+CiAgPGRpdiBsYXlvdXQ9InJvdyIgY2xhc3M9Im1kLWFjdGlvbnMiPjxzcGFuIGZsZXg9IiI+PC9zcGFuPgogICAgPG1kLWJ1dHRvbiBuZy1jbGljaz0iYW5zd2VyKCdub3QgdXNlZnVsJykiIGNsYXNzPSJtZC1wcmltYXJ5Ij5DYW5jZWxhcjwvbWQtYnV0dG9uPgogICAgPG1kLWJ1dHRvbiBuZy1jbGljaz0iYW5zd2VyKCd1c2VmdWwnKSIgY2xhc3M9Im1kLXByaW1hcnkiPkluc2VyaXIgRXhlcmPDrWNpbzwvbWQtYnV0dG9uPgogIDwvZGl2Pgo8L21kLWRpYWxvZz4=","base64"),
+			template: Buffer("CjxtZC1kaWFsb2cgZmxleD0iOTAiIGFyaWEtbGFiZWw9Imluc2VydGlyIHRyZWlubyI+CiAgPCEtLSBtZC10b29sYmFyLS0+CiAgPCEtLSAJLm1kLXRvb2xiYXItdG9vbHMtLT4KICA8IS0tIAkJaDEgSW5zZXJpciBFeGVyY8OtY2lvLS0+CiAgPCEtLSAJCXNwYW4oZmxleD0iIiktLT4KICA8IS0tIAkJbWQtYnV0dG9uKG5nLWNsaWNrPSJhbnN3ZXIoJ25vdCBhcHBsaWNhYmxlJykiKSBDYW5jZWxhci0tPgogIDxtZC1kaWFsb2ctY29udGVudD4KICAgIDxzZWN0aW9uIGNsYXNzPSJ0YWluaW5nLWRpYWxvZy1jb250ZW50Ij4KICAgICAgPGRzLWV4ZXJjaXNlLWVkaXQgZXhlcmNpc2U9InBsYW5zIiBwbGFucz0icGxhbnMiPjwvZHMtZXhlcmNpc2UtZWRpdD4KICAgICAgPCEtLSAub3Blbi10YWJzLS0+CiAgICAgIDwhLS0gCS8vIHAgdGVzdGUtLT4KICAgICAgPCEtLSBzZWN0aW9uLndheS10cmFpbmluZy0tPgogICAgICA8IS0tIAltZC1zZWxlY3QocGxhY2Vob2xkZXI9J03DqXRvZG8gZG8gRXhlcmPDrWNpbycsIG5nLW1vZGVsPSdwbGFuJyBzdHlsZT0ibWluLXdpZHRoOjI1MHB4OyIpLS0+CiAgICAgIDwhLS0gCQltZC1vcHRpb24obmctcmVwZWF0PSdwbGFuIGluIHBsYW5zJywgdmFsdWU9J3t7cGxhbn19Jykge3twbGFufX0tLT4KICAgICAgPCEtLSBzZWN0aW9uLndheS1hZGQtLT4KICAgICAgPCEtLSAJCW5nLW1kLWljb24oaWNvbj0iYWRkIiBzdHlsZT0iZmlsbDp3aGl0ZSIgIHNpemU9IjI1IiktLT4KICAgICAgPCEtLSAJCXNwYW4gRG9pcyBleGVyY8OtY2lvcyBleGVjdXRhZG9zIHNlbSBkZXNjYW5zby4tLT4KICAgIDwvc2VjdGlvbj4KICA8L21kLWRpYWxvZy1jb250ZW50PgogIDxkaXYgbGF5b3V0PSJyb3ciIGNsYXNzPSJtZC1hY3Rpb25zIj48c3BhbiBmbGV4PSIiPjwvc3Bhbj4KICAgIDxtZC1idXR0b24gbmctY2xpY2s9ImFuc3dlcignbm90IHVzZWZ1bCcpIiBjbGFzcz0ibWQtcHJpbWFyeSI+Q2FuY2VsYXI8L21kLWJ1dHRvbj4KICAgIDxtZC1idXR0b24gbmctY2xpY2s9ImFuc3dlcigndXNlZnVsJykiIGNsYXNzPSJtZC1wcmltYXJ5Ij5JbnNlcmlyIEV4ZXJjw61jaW88L21kLWJ1dHRvbj4KICA8L2Rpdj4KPC9tZC1kaWFsb2c+","base64"),
 			parent: angular.element(document.body),
 			targetEvent: ev,
 		})
@@ -77909,228 +78157,6 @@ module.exports = function($scope, coreEventsService,$state,$stateParams,$mdDialo
 		"Circuito",
 		"Piramide",
 		"Triset"
-	];
-	$scope.list_exercicios = [
-		{
-			grupo: "Bíceps",
-			exercicios: [
-				{
-					nome:"Biceps Testa",
-					select: false
-				},
-				{
-					nome:"Bíceps Barra",
-					select: false
-				},
-				{
-					nome:"Bíceps Alternada",
-					select: false
-			
-				},
-				{
-					nome:"Bíceps Martelo",
-					select: false
-				}
-			]
-		},
-		{
-			grupo: "Tríceps",
-			exercicios: [
-				{
-					nome:"Tríceps Testa",
-					select: false
-				},
-				{
-					nome:"Tríceps Supinado",
-					select: false
-				},
-				{
-					nome:"Tríceps Corda",
-					select: false
-				}
-			]
-		},
-		{
-			grupo: "Ombro",
-			exercicios: [
-				{
-					nome:"Ombro Frontal",
-					select: false
-				},
-				{
-					nome:"Ombro Lateral",
-					select: false
-				},
-				{
-					nome:"Ombro Máquina",
-					select: false
-				}
-			]
-		},
-		{
-			grupo: "Costas",
-			exercicios: [
-				{
-					nome:"Polia Frontal",
-					select: false
-				},
-				{
-					nome:"Remada Alta",
-					select: false
-				},
-				{
-					nome:"Puxada Unilateral",
-					select: false
-				}
-			]
-		},
-		{
-			grupo: "Peito",
-			exercicios: [
-				{
-					nome:"Supino Reto",
-					select: false
-				},
-				{
-					nome:"Supino Inclinado",
-					select: false
-				},
-				{
-					nome:"Crucifixo",
-					select: false
-				}
-			]
-		},
-		{
-			grupo: "Perna",
-			exercicios: [
-				{
-					nome:"Leg Press",
-					select: false
-				},
-				{
-					nome:"Leg Press",
-					select: false
-				},
-				{
-					nome:"Leg Press",
-					select: false
-				},
-				{
-					nome:"Leg Press",
-					select: false
-				},
-				{
-					nome:"Leg Press",
-					select: false
-				},
-				{
-					nome:"Leg Press",
-					select: false
-				},
-				{
-					nome:"Leg Press",
-					select: false
-				},
-				{
-					nome:"Leg Press",
-					select: false
-				},
-				{
-					nome:"Leg Press",
-					select: false
-				},
-				{
-					nome:"Leg Press",
-					select: false
-				},
-				{
-					nome:"Leg Press",
-					select: false
-				},
-				{
-					nome:"Leg Press",
-					select: false
-				},
-				{
-					nome:"Leg Press",
-					select: false
-				},
-				{
-					nome:"Leg Press",
-					select: false
-				},
-				{
-					nome:"Leg Press",
-					select: false
-				},
-				{
-					nome:"Leg Press",
-					select: false
-				},
-				{
-					nome:"Leg Press",
-					select: false
-				},
-				{
-					nome:"Leg Press",
-					select: false
-				},
-				{
-					nome:"Leg Press",
-					select: false
-				},
-				{
-					nome:"Leg Press",
-					select: false
-				},
-				{
-					nome:"Leg Press",
-					select: false
-				},
-				{
-					nome:"Leg Press",
-					select: false
-				},
-				{
-					nome:"Leg Press",
-					select: false
-				},
-				{
-					nome:"Leg Press",
-					select: false
-				},
-				{
-					nome:"Agachamento",
-					select: false
-				},
-				{
-					nome:"Adução",
-					select: false
-				},
-				{
-					nome:"Abdução",
-					select: false
-				},
-				{
-					nome:"Extenção",
-					select: false
-				},
-				{
-					nome:"Flexão",
-					select: false
-				}
-			]
-		},
-		{
-			grupo: "Abdominal",
-			exercicios: [
-				{
-					nome:"Prancha",
-					select: false
-				}
-			]
-		}
 	];
 
 };

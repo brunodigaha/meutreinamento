@@ -6,6 +6,109 @@
 		col(12/12,gutter:0)
 		.ds-serie-edit-select
 			col(12/12,gutter:0)
+			.ds-serie-edit-select-wrap
+				col(12/12,gutter:0)
+				box-sizing border-box
+				// padding 8px 22px 8px 22px
+				// border 1px solid palette('Grey','500')
+				min-height 10vh
+				margin-top .9em
+				position relative
+				z-index 30
+				.ds-serie-edit-select-header
+					col(12/12,gutter:0)
+					.ds-serie-edit-select-action
+						col(2/12,gutter:0)
+						box-sizing border-box
+						padding-top 4px
+						text-align center
+						button
+							width 50%
+							min-width 15px
+							min-height 31px
+							line-height 31px
+							font-size 80%
+							margin 0
+							+desktop()
+								width 45%
+								min-width 15px
+								min-height 37px
+								line-height 37px
+								font-size 85%
+								margin 0
+						ng-md-icon
+							svg
+								vertical-align middle
+								position relative
+								top -1px
+					.ds-serie-edit-select-bar
+						col(10/12,gutter:0)
+						box-sizing border-box
+						padding-right 6%
+						input
+							line-height 32px
+							vertical-align middle
+				.ds-serie-edit-select-tabs
+					col(12.3/12,gutter:0)
+					box-sizing border-box
+					position absolute
+					top 3.5em
+					left -.5em
+					padding 7px 10px 7px 10px
+					height 43 vh
+					background-color white
+					// z-index 30
+					border 1px solid palette('Grey', '300')
+					box-shadow 0 2px 4px 1px rgba(0,0,0,.1)
+					// display none
+					.chat-bubble-arrow-border
+						border-color transparent transparent palette('Grey', '300') transparent
+						border-style solid
+						border-width 1em
+						height 0
+						width 0
+						position absolute
+						top -2em
+						left 3.4em
+					.chat-bubble-arrow
+						border-color transparent transparent #fff transparent
+						border-style solid
+						border-width 1em
+						height 0
+						width 0
+						position absolute
+						top -1.9em
+						left 3.4em
+					.ds-serie-edit-select-tabs-wrap
+						col(6/6,gutter:0)
+						min-height 19vh
+						md-chips
+						md-tab-content
+							md-content
+								.item-select
+									background-color palette('Blue Grey','50')
+								span
+									cursor pointer
+									border-radius 16px
+									padding-right 7px
+									padding-left 7px
+									margin-right 9px
+									line-height 26px
+									vertical-align middle
+									margin-top 7px
+									text-align left
+									display inline-block
+									background-color white
+									border 1px solid palette('Blue Grey', '100')
+									font-size 75%
+									color palette('Grey','800')
+									&:hover
+										background palette('Blue Grey','50')
+						md-tab-item.md-tab
+							+tablet()
+								padding 8px 8px
+								line-height 32px
+								font-size 12px
 		.ds-serie-edit-content
 			col(12/12,gutter:0)
 			.ds-serie-edit-exercises
@@ -17,7 +120,7 @@
 				.ds-serie-edit-exer-select
 					col(10.5/12,gutter:0)
 					text-align center
-					h5
+					h4
 						margin 0
 				.ds-serie-edit-slider-content
 					col(10.5/12,gutter:0)
