@@ -1,6 +1,6 @@
 var fs = require('fs');
 
-module.exports = function ($stateProvider,$animateProvider,$locationProvider,$urlRouterProvider,$breadcrumbProvider,ChartJsProvider, $mdThemingProvider) {
+module.exports = function ($stateProvider,$compileProvider,$animateProvider,$locationProvider,$urlRouterProvider,$breadcrumbProvider,ChartJsProvider, $mdThemingProvider) {
 	$locationProvider.html5Mode(false);
 	$urlRouterProvider.otherwise('/user/12/training-history');
 	// $urlRouterProvider.when('/home', '/home/index');
@@ -58,6 +58,9 @@ module.exports = function ($stateProvider,$animateProvider,$locationProvider,$ur
 	// });
 	
 	$animateProvider.classNameFilter(/angular-animate/);
+
+	// User em modo production para ganho de performance
+	// $compileProvider.debugInfoEnabled(false);
 
     ChartJsProvider.setOptions({
       colours: ['#2196F3', '#BBDEFB'],

@@ -11,7 +11,7 @@
           </section>
           <section class="ds-serie-edit-select-bar">
             <md-input-container md-no-float="">
-              <input placeholder="Pesquisar Exercício para Inserir" ng-model="pesquisar" ng-keypress="pesquisar_exercicio($event)"/>
+              <input placeholder="Pesquisar Exercício para Inserir" ng-model="pesquisar" ng-model-options="{ debounce: 150 }" ng-keypress="pesquisar_exercicio($event)"/>
             </md-input-container>
           </section>
         </section>
@@ -34,9 +34,9 @@
               <!-- 						| watchers-->
               <!-- 					span.item-metastat-->
               <!-- 						strong {{item.forks}}-->
-              <md-tab label="{{list.grupo}}" ng-repeat=" list in list_exercicios">
+              <md-tab label="{{list.grupo}}" ng-repeat=" list in ::list_exercicios">
                 <md-content class="md-padding">
-                  <section><span ng-click="insert($index, list);" ng-class="{'item-select animated pulse': exerc.select }" ng-repeat="exerc in list.exercicios">{{exerc.nome}}</span></section>
+                  <section><span ng-click="insert($index, list);" ng-class="{'item-select animated pulse': exerc.select }" ng-repeat="exerc in ::list.exercicios">{{::exerc.nome}}</span></section>
                 </md-content>
               </md-tab>
             </md-tabs>
