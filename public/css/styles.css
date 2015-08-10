@@ -11368,7 +11368,7 @@ p:focus {
 }
 button.md-button {
   text-transform: none;
-  font-size: 85%;
+  font-size: 88%;
 }
 button.md-button.sec {
   margin-right: 20px;
@@ -12387,17 +12387,17 @@ a:visited {
   margin-right: 0%;
 }
 .ds-exercise-edit .ds-exercise-edit-content md-content.series {
-  min-height: 35vh;
-  max-height: 55vh;
+  min-height: 30vh;
+  max-height: 45vh;
 }
 @media only screen and (min-width: 400px) and (max-width: 1050px) and (orientation: portrait) {
   .ds-exercise-edit .ds-exercise-edit-content md-content.series {
-    max-height: 59vh;
+    max-height: 54vh;
   }
 }
 @media only screen and (min-width: 1050px) {
   .ds-exercise-edit .ds-exercise-edit-content md-content.series {
-    max-height: 59vh;
+    max-height: 54vh;
   }
 }
 .ds-exercise-edit .ds-exercise-edit-content md-content.series ul {
