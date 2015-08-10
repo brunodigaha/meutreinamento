@@ -197,9 +197,8 @@ module.exports = function($scope,$timeout,$q,$log, coreEventsService,$state,$sta
 			$scope.alert = 'You cancelled the dialog.';
 		});
 	};
-	var coreEvents = $scope.coreEvents = coreEventsService;
+	// var coreEvents = $scope.coreEvents = coreEventsService;
 	$scope.insertTraining = function(ev) {
-		$scope.coreEvents.close_modal();
 		$mdDialog.show({
 			controller: 'insertTrainingDialogController',
 			template: fs.readFileSync(__dirname + '/../templates/insertTrainingDialogTemplate.html'),

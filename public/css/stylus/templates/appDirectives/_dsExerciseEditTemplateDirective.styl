@@ -21,7 +21,9 @@
 			text-align left
 		.ds-exercise-edit-action
 			col(4/12,gutter:0)
+			box-sizing border-box
 			text-align right
+			padding-right 1em
 	.ds-exercise-edit-content
 		col(12/12,gutter:0)
 		box-sizing border-box
@@ -66,12 +68,14 @@
 			opacity .8
 			z-index 2
 		.ds-exercise-edit-serie
-			col(10.5/12,gutter:0)
+			col(11.5/12,gutter:0)
 			box-sizing border-box
 			position absolute
-			top 3em
-			// top -3em
-			left 3em
+			// top 3em
+			top -3.6em
+			+desktop()
+				top -3em
+			left 1.1em
 			// height 100%
 			background-color white
 			z-index 3

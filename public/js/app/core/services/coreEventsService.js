@@ -2,19 +2,11 @@ module.exports = function () {
 	var eventsService = {
 		search: false,
 		menu: false,
-		options: false,
-		modal: true
+		options: false
 	};
 	
 	eventsService.toggle_menu = function () {
 		eventsService.menu = !eventsService.menu;
-	};
-
-	eventsService.close_modal = function () {
-		eventsService.modal = false;
-	};
-	eventsService.open_modal = function () {
-		eventsService.modal = true;
 	};
 
 	eventsService.toggle_search = function () {

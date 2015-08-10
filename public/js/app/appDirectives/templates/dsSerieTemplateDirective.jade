@@ -2,7 +2,7 @@ section.ds-serie
 	section.ds-serie-view
 		section.ds-serie-step-content
 			section.ds-serie-position-step(sv-handle="" ng-Mouseenter="close_serie();")
-				span {{position}}ª
+				span(ng-bind-template="{{position}} ª")
 			section.ds-serie-list
 				section.ds-serie-list-item-wrap(ng-Mouseenter="open_serie();")
 					// section.ds-serie-list-item(ng-repeat="person in [2,2,3,4,5,6] track by $index")
